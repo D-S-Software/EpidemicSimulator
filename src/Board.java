@@ -4,8 +4,8 @@ public class Board {
 
 
 
-    private int XOrigin;
-    private int YOrigin;
+    private int xOrigin;
+    private int yOrigin;
     private int xLen;
     private int yLen;
     private ArrayList<Person> personArrayList;
@@ -13,25 +13,26 @@ public class Board {
 
     /** Primary Board constructor. A Board filled with clones of the modelPerson will be created.
      *   Person objects are given random positions inside the board grid.
-     * @param XOrigin
-     * @param YOrigin
+     * @param xOrigin
+     * @param yOrigin
      * @param xLen
      * @param yLen
      * @param personModel
      * @param numPeople
      */
-    public Board(int XOrigin, int YOrigin, int xLen, int yLen, Person personModel, int numPeople)
+
+    public Board(int xOrigin, int yOrigin, int xLen, int yLen, Person personModel, int numPeople)
     {
-        this.XOrigin = XOrigin;
-        this.YOrigin = YOrigin;
+        this.xOrigin = xOrigin;
+        this.yOrigin = yOrigin;
         this.xLen = xLen;
         this.yLen = yLen;
 
         personArrayList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
         {
-            int xPos = XOrigin + (int)(xLen*Math.random());
-            int yPos = YOrigin + (int)(yLen*Math.random());
+            int xPos = xOrigin + (int)(xLen*Math.random());
+            int yPos = yOrigin + (int)(yLen*Math.random());
 
             personArrayList.add(new Person(personModel, xPos, yPos));
         }
@@ -39,37 +40,43 @@ public class Board {
     }
 
     /** Secondary Board constructor. A Board filled with an already created ArrayList of Persons will  will be created.
-     * @param XOrigin
-     * @param YOrigin
+     * @param xOrigin
+     * @param yOrigin
      * @param xLen
      * @param yLen
      * @param personArrayList
      *
      */
-    public Board(int XOrigin, int YOrigin, int xLen, int yLen, ArrayList<Person> personArrayList)
+    public Board(int xOrigin, int yOrigin, int xLen, int yLen, ArrayList<Person> personArrayList)
     {
-        this.XOrigin = XOrigin;
-        this.YOrigin = YOrigin;
+        this.xOrigin = xOrigin;
+        this.yOrigin = yOrigin;
         this.xLen = xLen;
         this.yLen = yLen;
         this.personArrayList = personArrayList;
     }
 
-
-    public int getXOrigin() {
-        return XOrigin;
+    /**Default board with hardcoded parameters */
+    public Board()
+    {
+      this(0, 0, 1600, 900, new Person(20, false, 1, 1), 100);
     }
 
-    public void setXOrigin(int XOrigin) {
-        this.XOrigin = XOrigin;
+    
+    public int getXOrigin() {
+        return xOrigin;
+    }
+
+    public void setXOrigin(int xOrigin) {
+        this.xOrigin = xOrigin;
     }
 
     public int getYOrigin() {
-        return YOrigin;
+        return yOrigin;
     }
 
-    public void setYOrigin(int YOrigin) {
-        this.YOrigin = YOrigin;
+    public void setYOrigin(int yOrigin) {
+        this.yOrigin = yOrigin;
     }
 
     public int getXLen() {
