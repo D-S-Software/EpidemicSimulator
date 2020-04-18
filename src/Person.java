@@ -23,17 +23,27 @@ public class Person {
         personalSpreadRate *= 0.1*age;
     }
 
-    public Person(Person testSubject)
+    /** Copy constructor except for a different position*/
+    public Person(Person testSubject, int xPos, int yPos)
     {
         this.age = testSubject.age;
-        this.xPos = testSubject.xPos;
-        this.yPos = testSubject.yPos;
+        this.xPos = xPos;
+        this.yPos = yPos;
         this.hasDisease = testSubject.hasDisease;
         this.direction = testSubject.direction;
         this.isHealthy = testSubject.isHealthy;
         this.changeOfDirectionChange = testSubject.changeOfDirectionChange;
         this.personalSpreadRate = testSubject.personalSpreadRate;
+
     }
+
+    /**Copy Constructor */
+    public Person(Person testSubject)
+    {
+        this(testSubject, testSubject.xPos, testSubject.yPos);
+    }
+    
+
 
     public void movePerson()
     {
