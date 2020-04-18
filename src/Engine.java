@@ -1,15 +1,15 @@
 public class Engine {
 
-    private Board board;
+    private Board myBoard;
 
     public Engine()
     {
-        board = new Board();
+        mBoard = new Board();
     }
 
     public Board getBoard()
     {
-        return board;
+        return mBoard;
     }
 
     public static void main(String[] args)
