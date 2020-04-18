@@ -2,8 +2,6 @@ import java.util.ArrayList;
 
 public class Board {
 
-
-
     private int xOrigin;
     private int yOrigin;
     private int xLen;
@@ -62,7 +60,7 @@ public class Board {
       this(0, 0, 1600, 900, new Person(20, false, 1, 1), 100);
     }
 
-    
+
     public int getXOrigin() {
         return xOrigin;
     }
