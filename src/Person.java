@@ -69,7 +69,8 @@ public class Person {
     {
         if(Math.random() >= .5)
             directionAngle = (int)(360*Math.random());
-        if()
+        if(Math.abs(xPos - ))
+
         xPos += (int)(10*Math.cos(directionAngle));
         yPos += (int)(10*Math.sin(directionAngle));
     }
