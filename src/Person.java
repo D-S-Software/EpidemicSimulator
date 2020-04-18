@@ -42,7 +42,6 @@ public class Person {
     {
         this(testSubject, testSubject.xPos, testSubject.yPos);
     }
-    
 
 
     public void movePerson()
