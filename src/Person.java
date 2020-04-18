@@ -1,9 +1,16 @@
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int age, personalSpreadRate, xPos, yPos, direction;
+    private int age, spreadRate, xPos, yPos, directionAngle;
     private double changeOfDirectionChange;
 
+    /**
+     *
+     * @param age
+     * @param hasDisease
+     * @param xPos
+     * @param yPos
+     */
     public Person(int age, boolean hasDisease, int xPos, int yPos)
     {
         this.age = age;
@@ -15,37 +22,55 @@ public class Person {
         // If this person is starting with the disease, then they also start as sick
         if(hasDisease)
             isHealthy = false;
-        personalSpreadRate = 1;
+        spreadRate = 1;
     }
 
-    public void updatePersonalSpreadRate()
-    {
-        personalSpreadRate *= 0.1*age;
-    }
-
-    /** Copy constructor except for a different position*/
+    /** Copy constructor except for a different position
+     *
+     * @param testSubject
+     * @param xPos
+     * @param yPos
+     */
     public Person(Person testSubject, int xPos, int yPos)
     {
-        this.age = testSubject.age;
-        this.xPos = xPos;
-        this.yPos = yPos;
-        this.hasDisease = testSubject.hasDisease;
-        this.direction = testSubject.direction;
-        this.isHealthy = testSubject.isHealthy;
-        this.changeOfDirectionChange = testSubject.changeOfDirectionChange;
-        this.personalSpreadRate = testSubject.personalSpreadRate;
-
+        age = testSubject.age;
+        xPos = xPos;
+        yPos = yPos;
+        hasDisease = testSubject.hasDisease;
+        directionAngle = testSubject.directionAngle;
+        isHealthy = testSubject.isHealthy;
+        changeOfDirectionChange = testSubject.changeOfDirectionChange;
     }
 
-    /**Copy Constructor */
+    /**Copy Constructor
+     *
+     * @param testSubject
+     */
     public Person(Person testSubject)
     {
         this(testSubject, testSubject.xPos, testSubject.yPos);
     }
 
+    /**
+     *
+     * @param other
+     * @return
+     */
+    public double spreadRatePair(Person other)
+    {
+        double distanceFromOther = Math.sqrt(Math.pow((xPos - other.xPos), 2) + Math.pow((yPos - other.yPos), 2));
+        return spreadRate /= distanceFromOther;
+    }
 
+    /**
+     *
+     */
     public void movePerson()
     {
-
+        if(Math.random() >= .5)
+            directionAngle = (int)(360*Math.random());
+        if()
+        xPos += (int)(10*Math.cos(directionAngle));
+        yPos += (int)(10*Math.sin(directionAngle));
     }
 }
