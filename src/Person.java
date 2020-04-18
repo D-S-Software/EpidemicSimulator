@@ -15,11 +15,12 @@ public class Person {
         // If this person is starting with the disease, then they also start as sick
         if(hasDisease)
             isHealthy = false;
+        personalSpreadRate = 1;
     }
 
     public void updatePersonalSpreadRate()
     {
-
+        personalSpreadRate *= 0.1*age;
     }
 
     public Person(Person testSubject)
