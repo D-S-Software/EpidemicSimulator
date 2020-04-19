@@ -5,9 +5,9 @@ public class Frame extends JFrame {
 
     Panel panel;
 
-    public Frame(Timer t, ArrayList<Person> pList)
+    public Frame(ArrayList<Person> pList)
     {
-        panel = new Panel(t, pList);
+        panel = new Panel(pList);
 
     }
 }
