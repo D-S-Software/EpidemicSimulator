@@ -5,9 +5,12 @@ public class Frame extends JFrame {
 
     Panel panel;
 
-    public Frame(ArrayList<Person> pList)
+    public Frame(Board board)
     {
-        panel = new Panel(pList);
-
+        panel = new Panel(board);
+        this.setSize(board.boardDimensions.xLen, board.boardDimensions.yLen);
+        this.add(panel);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);
     }
 }

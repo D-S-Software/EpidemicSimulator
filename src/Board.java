@@ -1,8 +1,9 @@
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Board {
 
-   BoardDimensions boardDimensions;
+   public final BoardDimensions boardDimensions;
    private ArrayList<Person> pList;
 
 
@@ -43,6 +44,15 @@ public class Board {
       this(new BoardDimensions(), new Person(20, false, 1, 1), 100);
     }
 
+    public ArrayList<Person> getPList()
+    {
+        return pList;
+    }
+
+    public void draw(Graphics g)
+    {
+        g.fillRect(boardDimensions.xOrigin, boardDimensions.yOrigin, boardDimensions.xLen,boardDimensions.yLen);
+    }
 
 
 }

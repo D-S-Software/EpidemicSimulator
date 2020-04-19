@@ -1,8 +1,11 @@
+import java.awt.*;
+
 public class Person {
 
     private boolean hasDisease, isHealthy;
     private int age, spreadRate, xPos, yPos, directionAngle;
     private double changeOfDirectionChange;
+    private int circleRad = 3;
 
     /**
      *
@@ -65,7 +68,7 @@ public class Person {
     /**
      *
      */
-    public void movePerson()
+    public void move()
     {
         if(Math.random() >= .5)
             directionAngle = (int)(360*Math.random());
@@ -73,5 +76,18 @@ public class Person {
 
         xPos += (int)(10*Math.cos(directionAngle));
         yPos += (int)(10*Math.sin(directionAngle));
+    }
+
+
+    public void draw(Graphics g)
+    {
+        //maybe have Color be a field and its own method to update color
+        Color color;
+        if(hasDisease)
+            color = Color.RED;
+        else
+            color = Color.BLUE;
+
+        g.fillOval(xPos + circleRad,yPos + circleRad, circleRad, circleRad);
     }
 }
