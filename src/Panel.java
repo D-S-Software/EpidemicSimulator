@@ -11,7 +11,7 @@ public class Panel extends JPanel implements ActionListener
     public Panel(Timer t, ArrayList<Person> pList)
     {
         timer = t;
-        this.pList = pList;
+        this.pList = pList; //
 
     }
 
