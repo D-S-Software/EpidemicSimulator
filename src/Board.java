@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Board {
 
    BoardDimensions boardDimensions;
-   private ArrayList<Person> personArrayList;
+   private ArrayList<Person> pList;
 
 
     /** Primary Board constructor. A Board filled with clones of the modelPerson will be created.
@@ -16,25 +16,25 @@ public class Board {
     {
         this.boardDimensions = boardDimensions;
 
-        personArrayList = new ArrayList<>();
+        pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
         {
             int xPos = boardDimensions.xOrigin + (int)(boardDimensions.xLen*Math.random());
             int yPos = boardDimensions.yOrigin + (int)(boardDimensions.yLen*Math.random());
 
-            personArrayList.add(new Person(personModel, xPos, yPos));
+            pList.add(new Person(personModel, xPos, yPos));
         }
 
     }
 
     /** Secondary Board constructor. A Board filled with an already created ArrayList of Persons will  will be created.
-     * @param personArrayList
+     * @param pList
      *
      */
-    public Board(BoardDimensions boardDimensions, ArrayList<Person> personArrayList)
+    public Board(BoardDimensions boardDimensions, ArrayList<Person> pList)
     {
         this.boardDimensions = boardDimensions;
-        this.personArrayList = personArrayList;
+        this.pList = pList;
     }
 
     /**Default board with hardcoded parameters and default BoardDimensions constructed object */

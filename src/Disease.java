@@ -1,5 +1,3 @@
-package Diseases;
-
 public abstract class Disease {
 
     public static final double baseSpreadRate = 1;
