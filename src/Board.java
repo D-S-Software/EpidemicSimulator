@@ -31,43 +31,37 @@ public class Board {
         this(new BoardDimensions(), 100);
     }
 
-    public ArrayList<Person> getPList()
+    /**
+     * Finds the closest sick person to each healthy person and returns the distance between them
+     * Based on the default board size this is from 0 to 1000ish
+     */
+    public void updateDistanceFromSick()
     {
-        return pList;
-    }
-
-    public void sickComparison()
-    {
-        for(int i = 0; i < pList.size()-1; i++)
+        for(int i = 0; i < pList.size(); i++)
         {
-            for(int j = i+1; j < pList.size(); j++)
-            {
-                if(pList.get(i).getHasDisease())
-                {
-                    pList.get(j).willSpread(pList.get(i));
-                    pList.get(j).setCanGetSick(true);
-                }
-                else if(pList.get(j).getHasDisease())
-                {
-                    pList.get(i).willSpread(pList.get(j));
-                    pList.get(i).setCanGetSick(true);
-                }
-                else
-                {
-                    pList.get(i).setCanGetSick(false);
-                    pList.get(i).setCanGetSick(false);
-                }
-            }
+            double minDist = Math.sqrt(Math.pow(dimens.xLen, 2) + Math.pow(dimens.yLen, 2));
+
+            if(!pList.get(i).getHasDisease())
+                for(int j = 0; j < pList.size(); j++)
+                    if(i != j && pList.get(j).getHasDisease())
+                    {
+                        double distTest = Math.sqrt(Math.pow(pList.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pList.get(i).getYPos() - pList.get(j).getYPos(), 2));
+                        if(distTest < minDist)
+                            minDist = distTest;
+                    }
+            Double dist = minDist;
+            if(dist.equals(0))
+                minDist = 0.1;
+            pList.get(i).setDistanceFromSick(minDist);
         }
     }
-
 
     /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
     public void updatePerson()
     {
         for(int i = 0; i < pList.size(); i++)
         {
-            pList.get(i).checkSick();
+            pList.get(i).checkCondition();
             pList.get(i).move();
             if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
                 pList.remove(pList.get(i));
@@ -78,5 +72,10 @@ public class Board {
     {
         g2D.setColor(Color.WHITE);
         g2D.fillRect(dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen);
+    }
+
+    public ArrayList<Person> getPList()
+    {
+        return pList;
     }
 }

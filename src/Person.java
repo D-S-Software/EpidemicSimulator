@@ -2,13 +2,11 @@ import java.awt.*;
 
 public class Person {
 
-    private boolean hasDisease, isHealthy, canGetSick;
-    private int age, spreadRate, xPos, yPos, dx, dy, directionAngle;
-    private int circleRad = 5;
+    private boolean hasDisease, isHealthy;
+    private int age, baseSpreadRate, xPos, yPos, dx, dy, directionAngle;
+    private int circleRad = 5, recoverTime = 0, step = 2;
+    private double distanceFromSick;
     private BoardDimensions dimensions;
-    private int recoverTime = 0;
-    private int step = 2;
-    private double willSpread;
 
     /**
      *
@@ -22,7 +20,7 @@ public class Person {
         this.age = age;
         this.xPos = xPos;
         this.yPos = yPos;
-        spreadRate = 100;
+        baseSpreadRate = 1; // increase this to make the person more likely to be infected
         directionAngle = (int)(306*Math.random());
 
         if(Math.random() > .9)
@@ -35,21 +33,9 @@ public class Person {
         else isHealthy = true;
     }
 
-    public boolean getHasDisease()
-    {
-        return hasDisease;
-    }
-
-    public boolean getIsHealthy()
-    {
-        return isHealthy;
-    }
-
-    public void setCanGetSick(boolean bValue)
-    {
-        canGetSick = bValue;
-    }
-
+    /**
+     * Moves the person and decides if to change direction
+     */
     public void move()
     {
         if(Math.random() >= .95)
@@ -87,18 +73,13 @@ public class Person {
         }
     }
 
-    public void willSpread(Person other)
-    {
-        Double distanceFromOther = Math.sqrt(Math.pow((xPos - other.xPos), 2) + Math.pow((yPos - other.yPos), 2));
-        if(distanceFromOther.equals(0))
-            willSpread = spreadRate;
-        else willSpread = spreadRate / distanceFromOther; //distance varies from 0 to 1000ish
-    }
-
-    public void checkSick()
+    /**
+     * Checks each person if they should become sick / recover / die
+     */
+    public void checkCondition()
     {
         // if a person is within 100 pixels of infected --> 95% change of spread
-        if(!hasDisease && canGetSick && Math.random() > .05 && willSpread > (spreadRate / 100))
+        if(!hasDisease && Math.random() > .05 && distanceFromSick < 5 * baseSpreadRate)
         {
             hasDisease = true;
             isHealthy = false;
@@ -107,7 +88,6 @@ public class Person {
         {
             recoverTime++;
             //If sick for 30 sec has increasing chance to die / recover until guaranteed at 100 sec
-            // TODO is the timer going up by 100 or 1000 per sec (testing shows its 100)
             if(recoverTime >  3000 + (int)(8000*Math.random()))
             {
                 if((int)(2*Math.random()) > 0)
@@ -134,5 +114,32 @@ public class Person {
 
         g2D.setPaint(color);
         g2D.fillOval(xPos + circleRad,yPos + circleRad, circleRad, circleRad);
+    }
+
+    /** Getter and Setter Methods */
+
+    public boolean getHasDisease()
+    {
+        return hasDisease;
+    }
+
+    public boolean getIsHealthy()
+    {
+        return isHealthy;
+    }
+
+    public void setDistanceFromSick(double dist)
+    {
+        distanceFromSick = dist;
+    }
+
+    public int getXPos()
+    {
+        return xPos;
+    }
+
+    public int getYPos()
+    {
+        return yPos;
     }
 }
