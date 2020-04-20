@@ -2,7 +2,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class Statistics /**implements ActionListener*/ {
+public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList;
     private int time = 0;
@@ -11,7 +11,7 @@ public class Statistics /**implements ActionListener*/ {
     public Statistics(Board myBoard)
     {
         pList = myBoard.getPList();
-        // x.openFile(); --> this can be uncommented once we find a place to close the file
+        x.openFile();
     }
 
     public static CreateFile getCreateFile()
@@ -30,8 +30,6 @@ public class Statistics /**implements ActionListener*/ {
         return count / pList.size();
     }
 
-    /**
-    @Override
     public void actionPerformed(ActionEvent e)
     {
         time++;
@@ -39,8 +37,14 @@ public class Statistics /**implements ActionListener*/ {
         x.addDiseasePercent(findDiseasePercent());
         x.addTime(time);
         x.addSpace();
-        x.addDiseaseArray(pList);
+        //x.addDiseaseArray(pList);
         x.addSpace();
+
+        if(time > 1000)
+        {
+            x.closeFile();
+            System.exit(0);
+        }
     }
-    */ // This can be uncommented once the actionListener problem is solved (same with implements comment)
+     // This can be uncommented once the actionListener problem is solved (same with implements comment)
 }
