@@ -5,6 +5,7 @@ public class Engine {
     private Board myBoard;
     private Frame windowFrame;
     private Timer clock;
+    private Statistics stats;
 
     public Board getBoard()
     {
@@ -15,6 +16,7 @@ public class Engine {
     {
         myBoard = new Board();
         windowFrame = new Frame(myBoard);
+        stats = new Statistics(myBoard);
         this.clock = new Timer(10, windowFrame.getPanel());
     }
 
