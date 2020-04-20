@@ -14,13 +14,23 @@ public class Panel extends JPanel implements ActionListener
     {
         this.pList = board.getPList();
         this.board = board;
-
     }
 
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
         this.setBackground(Color.BLACK);
+
+        for(int i = 0; i < pList.size()-1; i++)
+        {
+            for(int j = i+1; j < pList.size(); j++)
+            {
+                if(pList.get(i).getHasDisease())
+                    pList.get(j).spreadRateUpdate(pList.get(i));
+                else if(pList.get(j).getHasDisease())
+                    pList.get(i).spreadRateUpdate(pList.get(j));
+            }
+        }
 
         for(int i = 0; i < pList.size(); i++)
         {
