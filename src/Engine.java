@@ -10,7 +10,7 @@ public class Engine {
     public Board getBoard()
     {
         return myBoard;
-    }
+    } //TODO: useless?
 
     public Engine()
     {
@@ -23,7 +23,6 @@ public class Engine {
     public static void main(String[] args)
     {
         Engine gameEngine = new Engine();
-        System.out.println(gameEngine.myBoard.getPList().get(2).getHasDisease());
         gameEngine.clock.start();
     }
 

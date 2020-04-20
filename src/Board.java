@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Board {
 
-   public final BoardDimensions boardDimensions;
+   public final BoardDimensions dimens;
    private ArrayList<Person> pList;
 
 
@@ -13,15 +13,15 @@ public class Board {
      * @param numPeople
      */
 
-    public Board(BoardDimensions boardDimensions, Person personModel, int numPeople)
+    public Board(BoardDimensions dimens, Person personModel, int numPeople)
     {
-        this.boardDimensions = boardDimensions;
+        this.dimens = dimens;
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
         {
-            int xPos = boardDimensions.xOrigin + (int)(boardDimensions.xLen*Math.random());
-            int yPos = boardDimensions.yOrigin + (int)(boardDimensions.yLen*Math.random());
+            int xPos = dimens.xOrigin + (int)(dimens.xLen*Math.random());
+            int yPos = dimens.yOrigin + (int)(dimens.yLen*Math.random());
 
             pList.add(new Person(personModel, xPos, yPos));
         }
@@ -32,9 +32,9 @@ public class Board {
      * @param pList
      *
      */
-    public Board(BoardDimensions boardDimensions, ArrayList<Person> pList)
+    public Board(BoardDimensions dimens, ArrayList<Person> pList)
     {
-        this.boardDimensions = boardDimensions;
+        this.dimens = dimens;
         this.pList = pList;
     }
 
@@ -68,15 +68,19 @@ public class Board {
         for(int i = 0; i < pList.size(); i++)
         {
             pList.get(i).move();
-            pList.get(i).checkSick();
-            if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
-                pList.remove(pList.get(i));
+            /*pList.get(i).checkSick();
+             * if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
+             *   pList.remove(pList.get(i));
+             * TODO: FIX These LINES
+             * */
+
+
         }
     }
 
-    public void draw(Graphics g)
+    public void draw(Graphics2D g2D)
     {
-        g.setColor(Color.WHITE);
-        g.fillRect(boardDimensions.xOrigin, boardDimensions.yOrigin, boardDimensions.xLen,boardDimensions.yLen);
+        g2D.setColor(Color.WHITE);
+        g2D.fillRect(dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen);
     }
 }

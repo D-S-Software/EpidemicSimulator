@@ -5,9 +5,10 @@ public class Person {
     private boolean hasDisease, isHealthy;
     private int age, spreadRate, xPos, yPos, directionAngle;
     private double changeOfDirectionChange;
-    private int circleRad = 3;
+    private int circleRad = 5;
     private BoardDimensions dimensions;
     private int recoverTime = 0;
+    private int step = 3;
 
     /**
      *
@@ -84,13 +85,13 @@ public class Person {
      */
     public void move()
     {
-        if(Math.random() >= .5)
+        if(Math.random() >= .5) //TODO: Maybe increase to straighten out movement
             directionAngle = (int)(360*Math.random());
         if(Math.abs(xPos - dimensions.xLen) < 10 || Math.abs(xPos - dimensions.xOrigin) < 10 || Math.abs(yPos - dimensions.yLen) < 10 || Math.abs(yPos - dimensions.yOrigin) < 10)
             directionAngle *= -1;
 
-        xPos += (int)(10*Math.cos(directionAngle));
-        yPos += (int)(10*Math.sin(directionAngle));
+        xPos += (int)(step*Math.cos(directionAngle));
+        yPos += (int)(step*Math.sin(directionAngle));
     }
 
     public void checkSick()
@@ -112,7 +113,7 @@ public class Person {
         }
     }
 
-    public void draw(Graphics g)
+    public void draw(Graphics2D g2D)
     {
         //maybe have Color be a field and its own method to update color
         Color color;
@@ -122,11 +123,12 @@ public class Person {
         {
             color = Color.BLUE;
         }
-        else if(hasDisease && isHealthy)
+        else // (hasDisease && isHealthy)
         {
             color = Color.GRAY;
         }
 
-        g.fillOval(xPos + circleRad,yPos + circleRad, circleRad, circleRad);
+        g2D.setPaint(color);
+        g2D.fillOval(xPos + circleRad,yPos + circleRad, circleRad, circleRad);
     }
 }

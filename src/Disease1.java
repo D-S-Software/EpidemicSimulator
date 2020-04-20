@@ -3,3 +3,4 @@ public class Disease1 extends Disease {
 
 
 }
+//TODO: Utilize Disease in the Person class

@@ -7,7 +7,7 @@ public class Frame extends JFrame {
     public Frame(Board board)
     {
         panel = new Panel(board);
-        this.setSize((int)(board.boardDimensions.xLen *1.25),(int)(1.25* board.boardDimensions.yLen));
+        this.setSize((int)(board.dimens.xLen *1.25),(int)(1.25* board.dimens.yLen));
         this.add(panel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);

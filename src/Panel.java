@@ -7,12 +7,10 @@ import java.util.ArrayList;
 public class Panel extends JPanel implements ActionListener
 {
 
-    ArrayList<Person> pList;
     Board board;
 
     public Panel(Board board)
     {
-        this.pList = board.getPList();
         this.board = board;
     }
 
@@ -21,16 +19,18 @@ public class Panel extends JPanel implements ActionListener
         super.paintComponent(g);
         this.setBackground(Color.BLACK);
 
-        //board.distanceCheck();
+        Graphics2D g2D = (Graphics2D)g;
+        board.distanceCheck(); //TODO: SEE if this is doing anything
 
+        board.draw(g2D);
         board.updateDiseaseAndMove();
 
-        for(int i = 0; i < pList.size(); i++)
+        for(int i = 0; i < board.getPList().size(); i++)
         {
-            pList.get(i).draw(g);
+            board.getPList().get(i).draw(g2D);
         }
 
-        board.draw(g);
+
     }
 
    public void actionPerformed(ActionEvent e)
