@@ -22,15 +22,16 @@ public class Panel extends JPanel implements ActionListener
         super.paintComponent(g);
         this.setBackground(Color.BLACK);
 
-        board.draw(g);
-
         for(int i = 0; i < pList.size(); i++)
         {
             pList.get(i).move();
+            pList.get(i).checkSick();
+            if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
+                pList.remove(pList.get(i));
             pList.get(i).draw(g);
-
-
         }
+
+        board.draw(g);
     }
 
     public void actionPerformed(ActionEvent e)

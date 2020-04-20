@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 public class Person {
 
@@ -7,6 +8,7 @@ public class Person {
     private double changeOfDirectionChange;
     private int circleRad = 3;
     private BoardDimensions dimensions;
+    private int recoverTime = 0;
 
     /**
      *
@@ -57,6 +59,16 @@ public class Person {
         this(testSubject, testSubject.xPos, testSubject.yPos);
     }
 
+    public boolean getHasDisease()
+    {
+        return hasDisease;
+    }
+
+    public boolean getIsHealthy()
+    {
+        return isHealthy;
+    }
+
     /**
      *
      * @param other
@@ -82,15 +94,39 @@ public class Person {
         yPos += (int)(10*Math.sin(directionAngle));
     }
 
+    public void checkSick()
+    {
+        if(!hasDisease && spreadRate * Math.random() > 5)
+        {
+            hasDisease = true;
+            isHealthy = false;
+        }
+        if(hasDisease)
+        {
+            recoverTime++;
+            if(recoverTime * Math.random() > 1000)
+            {
+                if((int)(2*Math.random()) >0)
+                    isHealthy = true;
+                else hasDisease = false;
+            }
+        }
+    }
 
     public void draw(Graphics g)
     {
         //maybe have Color be a field and its own method to update color
         Color color;
-        if(hasDisease)
+        if(hasDisease && !isHealthy)
             color = Color.RED;
-        else
+        else if(!hasDisease && isHealthy)
+        {
             color = Color.BLUE;
+        }
+        else if(hasDisease && isHealthy)
+        {
+            color = Color.GRAY;
+        }
 
         g.fillOval(xPos + circleRad,yPos + circleRad, circleRad, circleRad);
     }
