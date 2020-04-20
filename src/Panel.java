@@ -20,7 +20,7 @@ public class Panel extends JPanel implements ActionListener
 
         Graphics2D g2D = (Graphics2D)g;
 
-        board.distanceCheck();
+        board.sickComparison();
 
         board.updateDiseaseAndMove();
 

@@ -36,7 +36,7 @@ public class Board {
         return pList;
     }
 
-    public void distanceCheck()
+    public void sickComparison()
     {
         for(int i = 0; i < pList.size()-1; i++)
         {
