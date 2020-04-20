@@ -39,12 +39,11 @@ public class Statistics implements ActionListener {
         x.addSpace();
         x.addDiseaseArray(pList);
         x.addSpace();
-
+/**
         if(time >= 1000)
         {
             x.closeFile();
             System.exit(0);
-        }
+        }*/
     }
-     // This can be uncommented once the actionListener problem is solved (same with implements comment)
 }

@@ -79,7 +79,7 @@ public class Person {
     public void checkCondition()
     {
         // if a person is within 100 pixels of infected --> 95% change of spread
-        if(!hasDisease && Math.random() > .05 && distanceFromSick < 5 * baseSpreadRate)
+        if(!hasDisease && Math.random() > .05 && distanceFromSick < 1 * baseSpreadRate)
         {
             hasDisease = true;
             isHealthy = false;
@@ -90,7 +90,7 @@ public class Person {
             //If sick for 30 sec has increasing chance to die / recover until guaranteed at 100 sec
             if(recoverTime >  3000 + (int)(8000*Math.random()))
             {
-                if((int)(2*Math.random()) > 0)
+                if(Math.random() > .8)
                     isHealthy = true;    // Recovers
                 else hasDisease = false; //Dies
             }
