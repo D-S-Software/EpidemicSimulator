@@ -21,7 +21,7 @@ public class Panel extends JPanel implements ActionListener
         super.paintComponent(g);
         this.setBackground(Color.BLACK);
 
-        distanceCheck();
+        //distanceCheck();
 
         updateDiseaseAndMove(g);
 
@@ -54,9 +54,9 @@ public class Panel extends JPanel implements ActionListener
         }
     }
 
-    public void actionPerformed(ActionEvent e)
+   public void actionPerformed(ActionEvent e)
     {
-        repaint();
+      paintComponent(g);
     }
 
 }

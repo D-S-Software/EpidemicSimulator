@@ -23,6 +23,8 @@ public class Engine {
     public static void main(String[] args)
     {
         Engine gameEngine = new Engine();
+        System.out.println(gameEngine.myBoard.getPList().get(2).getHasDisease());
+        gameEngine.clock.start();
 
     }
 }

@@ -51,6 +51,7 @@ public class Board {
 
     public void draw(Graphics g)
     {
+        g.setColor(Color.WHITE);
         g.fillRect(boardDimensions.xOrigin, boardDimensions.yOrigin, boardDimensions.xLen,boardDimensions.yLen);
     }
 
