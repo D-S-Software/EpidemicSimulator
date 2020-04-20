@@ -6,7 +6,6 @@ public class Statistics /**implements ActionListener*/ {
 
     private ArrayList<Person> pList;
     private int time = 0;
-    private double percentInfected;
     private static CreateFile x = new CreateFile();
 
     public Statistics(Board myBoard)

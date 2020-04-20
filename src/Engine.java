@@ -25,6 +25,7 @@ public class Engine {
         Engine gameEngine = new Engine();
         System.out.println(gameEngine.myBoard.getPList().get(2).getHasDisease());
         gameEngine.clock.start();
-
     }
+
+    // NOTE: The 2 BoardDimensions constructor calls in Board class should be moved to engine constructor
 }

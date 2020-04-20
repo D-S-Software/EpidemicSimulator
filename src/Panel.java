@@ -21,42 +21,21 @@ public class Panel extends JPanel implements ActionListener
         super.paintComponent(g);
         this.setBackground(Color.BLACK);
 
-        //distanceCheck();
+        //board.distanceCheck();
 
-        updateDiseaseAndMove(g);
+        board.updateDiseaseAndMove();
+
+        for(int i = 0; i < pList.size(); i++)
+        {
+            pList.get(i).draw(g);
+        }
 
         board.draw(g);
     }
 
-    public void distanceCheck()
-    {
-        for(int i = 0; i < pList.size()-1; i++)
-        {
-            for(int j = i+1; j < pList.size(); j++)
-            {
-                if(pList.get(i).getHasDisease())
-                    pList.get(j).updateSpreadRate(pList.get(i));
-                else if(pList.get(j).getHasDisease())
-                    pList.get(i).updateSpreadRate(pList.get(j));
-            }
-        }
-    }
-
-    public void updateDiseaseAndMove(Graphics g)
-    {
-        for(int i = 0; i < pList.size(); i++)
-        {
-            pList.get(i).move();
-            pList.get(i).checkSick();
-            if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
-                pList.remove(pList.get(i));
-            pList.get(i).draw(g);
-        }
-    }
-
    public void actionPerformed(ActionEvent e)
     {
-      paintComponent(g);
+      repaint();
     }
 
 }

@@ -49,11 +49,34 @@ public class Board {
         return pList;
     }
 
+    public void distanceCheck()
+    {
+        for(int i = 0; i < pList.size()-1; i++)
+        {
+            for(int j = i+1; j < pList.size(); j++)
+            {
+                if(pList.get(i).getHasDisease())
+                    pList.get(j).updateSpreadRate(pList.get(i));
+                else if(pList.get(j).getHasDisease())
+                    pList.get(i).updateSpreadRate(pList.get(j));
+            }
+        }
+    }
+
+    public void updateDiseaseAndMove()
+    {
+        for(int i = 0; i < pList.size(); i++)
+        {
+            pList.get(i).move();
+            pList.get(i).checkSick();
+            if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
+                pList.remove(pList.get(i));
+        }
+    }
+
     public void draw(Graphics g)
     {
         g.setColor(Color.WHITE);
         g.fillRect(boardDimensions.xOrigin, boardDimensions.yOrigin, boardDimensions.xLen,boardDimensions.yLen);
     }
-
-
 }
