@@ -15,7 +15,8 @@ public class Engine {
         windowFrame = new Frame(myBoard);
 
         stats = new Statistics(myBoard);
-        this.clock = new Timer(10, windowFrame.getPanel());
+        clock = new Timer(10, windowFrame.getPanel());
+        clock.addActionListener(stats);
     }
 
     public static void main(String[] args)

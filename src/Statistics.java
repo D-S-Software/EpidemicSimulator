@@ -37,10 +37,10 @@ public class Statistics implements ActionListener {
         x.addDiseasePercent(findDiseasePercent());
         x.addTime(time);
         x.addSpace();
-        //x.addDiseaseArray(pList);
+        x.addDiseaseArray(pList);
         x.addSpace();
 
-        if(time > 1000)
+        if(time >= 1000)
         {
             x.closeFile();
             System.exit(0);
