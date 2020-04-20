@@ -41,7 +41,7 @@ public class Board {
     /**Default board with hardcoded parameters and default BoardDimensions constructed object */
     public Board()
     {
-      this(new BoardDimensions(), new Person(20, false, 1, 1), 100);
+      this(new BoardDimensions(), new Person(20, false, 1, 1, new BoardDimensions()), 100);
     }
 
     public ArrayList<Person> getPList()

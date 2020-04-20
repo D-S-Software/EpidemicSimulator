@@ -17,7 +17,10 @@ public class BoardDimensions {
 
     public BoardDimensions(BoardDimensions dimensions)
     {
-
+        this.xOrigin = dimensions.xOrigin;
+        this.yOrigin = dimensions.yOrigin;
+        this.xLen = dimensions.xLen;
+        this.yLen = dimensions.yLen;
     }
 
     /** Default board dimensions */
