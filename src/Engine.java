@@ -6,16 +6,14 @@ public class Engine {
     private Frame windowFrame;
     private Timer clock;
     private Statistics stats;
-
-    public Board getBoard()
-    {
-        return myBoard;
-    } //TODO: useless?
+    private BoardDimensions dimens;
 
     public Engine()
     {
+        dimens = new BoardDimensions();
         myBoard = new Board();
         windowFrame = new Frame(myBoard);
+
         stats = new Statistics(myBoard);
         this.clock = new Timer(10, windowFrame.getPanel());
     }
@@ -25,7 +23,4 @@ public class Engine {
         Engine gameEngine = new Engine();
         gameEngine.clock.start();
     }
-
-    // NOTE: The 2 BoardDimensions constructor calls in Board class should be moved to engine constructor
-    // THIS TO SHALL PASS
 }

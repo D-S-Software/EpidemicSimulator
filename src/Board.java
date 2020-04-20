@@ -6,42 +6,29 @@ public class Board {
    public final BoardDimensions dimens;
    private ArrayList<Person> pList;
 
-
-    /** Primary Board constructor. A Board filled with clones of the modelPerson will be created.
-     *   Person objects are given random positions inside the board grid.
-     * @param personModel
-     * @param numPeople
-     */
-
-    public Board(BoardDimensions dimens, Person personModel, int numPeople)
+    public Board(int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
     {
-        this.dimens = dimens;
+        this.dimens = new BoardDimensions(xOrigin, yOrigin, xLen, yLen);
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
         {
-            int xPos = dimens.xOrigin + (int)(dimens.xLen*Math.random());
-            int yPos = dimens.yOrigin + (int)(dimens.yLen*Math.random());
+            int xPos = xOrigin + (int)(xLen*Math.random());
+            int yPos = yOrigin + (int)(yLen*Math.random());
 
-            pList.add(new Person(personModel, xPos, yPos));
+            pList.add(new Person(20, xPos, yPos, dimens));
         }
-
     }
 
-    /** Secondary Board constructor. A Board filled with an already created ArrayList of Persons will  will be created.
-     * @param pList
-     *
-     */
-    public Board(BoardDimensions dimens, ArrayList<Person> pList)
+    public Board(BoardDimensions dimens, int numPeople)
     {
-        this.dimens = dimens;
-        this.pList = pList;
+        this(dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen, numPeople);
     }
 
     /**Default board with hardcoded parameters and default BoardDimensions constructed object */
     public Board()
     {
-      this(new BoardDimensions(), new Person(20, false, 1, 1, new BoardDimensions()), 100);
+        this(new BoardDimensions(), 100);
     }
 
     public ArrayList<Person> getPList()
@@ -56,9 +43,20 @@ public class Board {
             for(int j = i+1; j < pList.size(); j++)
             {
                 if(pList.get(i).getHasDisease())
-                    pList.get(j).updateSpreadRate(pList.get(i));
+                {
+                    pList.get(j).willSpread(pList.get(i));
+                    pList.get(j).setCanSpread(true);
+                }
                 else if(pList.get(j).getHasDisease())
-                    pList.get(i).updateSpreadRate(pList.get(j));
+                {
+                    pList.get(i).willSpread(pList.get(j));
+                    pList.get(i).setCanSpread(true);
+                }
+                else
+                {
+                    pList.get(i).setCanSpread(false);
+                    pList.get(i).setCanSpread(false);
+                }
             }
         }
     }
@@ -67,14 +65,10 @@ public class Board {
     {
         for(int i = 0; i < pList.size(); i++)
         {
+            pList.get(i).checkSick();
             pList.get(i).move();
-            /*pList.get(i).checkSick();
-             * if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
-             *   pList.remove(pList.get(i));
-             * TODO: FIX These LINES
-             * */
-
-
+            if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
+                pList.remove(pList.get(i));
         }
     }
 
