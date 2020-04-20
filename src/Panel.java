@@ -7,13 +7,16 @@ import java.util.ArrayList;
 public class Panel extends JPanel implements ActionListener
 {
 
-    ArrayList<Person> pList;
-    Board board;
+    private ArrayList<Person> pList;
+    private Board board;
 
-    public Panel(Board board)
+
+    public Panel(Board board, ActionListener actionListener)
     {
         this.pList = board.getPList();
         this.board = board;
+
+        }
 
     }
 
@@ -29,9 +32,10 @@ public class Panel extends JPanel implements ActionListener
             pList.get(i).move();
             pList.get(i).draw(g);
 
-
         }
     }
+
+
 
     public void actionPerformed(ActionEvent e)
     {
