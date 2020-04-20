@@ -6,7 +6,7 @@ public class Person {
     private int age, spreadRate, xPos, yPos, directionAngle;
     private double changeOfDirectionChange;
     private int circleRad = 3;
-    private BoardDimensions boardDimensions;
+    private BoardDimensions dimensions;
 
     /**
      *
@@ -15,8 +15,9 @@ public class Person {
      * @param xPos
      * @param yPos
      */
-    public Person(int age, boolean hasDisease, int xPos, int yPos, BoardDimensions bd)
+    public Person(int age, boolean hasDisease, int xPos, int yPos, BoardDimensions dimensions)
     {
+        this.dimensions = new BoardDimensions(dimensions);
         this.age = age;
         this.xPos = xPos;
         this.yPos = yPos;
@@ -27,8 +28,6 @@ public class Person {
         if(hasDisease)
             isHealthy = false;
         spreadRate = 1;
-
-        boardDimensions = bd;
     }
 
     /** Copy constructor except for a different position
@@ -37,7 +36,7 @@ public class Person {
      * @param xPos
      * @param yPos
      */
-    public Person(Person testSubject, int xPos, int yPos, BoardDimensions bd)
+    public Person(Person testSubject, int xPos, int yPos)
     {
         age = testSubject.age;
         xPos = xPos;
@@ -46,16 +45,15 @@ public class Person {
         directionAngle = testSubject.directionAngle;
         isHealthy = testSubject.isHealthy;
         changeOfDirectionChange = testSubject.changeOfDirectionChange;
-        boardDimensions = bd;
     }
 
     /**Copy Constructor
      *
      * @param testSubject
      */
-    public Person(Person testSubject, BoardDimensions bd)
+    public Person(Person testSubject)
     {
-        this(testSubject, testSubject.xPos, testSubject.yPos, bd);
+        this(testSubject, testSubject.xPos, testSubject.yPos);
     }
 
     /**

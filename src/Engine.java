@@ -4,12 +4,12 @@ public class Engine {
 
     public Engine()
     {
-        mBoard = new Board();
+        myBoard = new Board();
     }
 
     public Board getBoard()
     {
-        return mBoard;
+        return myBoard;
     }
 
     public static void main(String[] args)
