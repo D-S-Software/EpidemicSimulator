@@ -74,7 +74,7 @@ public class Person {
      * @param other
      * @return
      */
-    public double spreadRateUpdate(Person other)
+    public double updateSpreadRate(Person other)
     {
         double distanceFromOther = Math.sqrt(Math.pow((xPos - other.xPos), 2) + Math.pow((yPos - other.yPos), 2));
         return spreadRate /= distanceFromOther;
