@@ -5,7 +5,7 @@ public class Person {
     private boolean hasDisease, isHealthy;
     private int age, baseSpreadRate, xPos, yPos, dx, dy, directionAngle;
     private int circleRad = 5, recoverTime = 0, step = 2;
-    private double distanceFromSick;
+    private double distanceFromSick, contagiousPercent = .5;
     private BoardDimensions dimensions;
 
     /**
@@ -78,8 +78,8 @@ public class Person {
      */
     public void checkCondition()
     {
-        // if a person is within 100 pixels of infected --> 95% change of spread
-        if(!hasDisease && Math.random() > .05 && distanceFromSick < 1 * baseSpreadRate)
+        // if a person is within 10 pixel of infected --> --% change of spread
+        if(!hasDisease && Math.random() > contagiousPercent && distanceFromSick < 10 * baseSpreadRate)
         {
             hasDisease = true;
             isHealthy = false;
