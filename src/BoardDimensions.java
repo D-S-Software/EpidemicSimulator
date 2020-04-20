@@ -15,6 +15,11 @@ public class BoardDimensions {
         this.yLen = yLen;
     }
 
+    public BoardDimensions(BoardDimensions dimensions)
+    {
+
+    }
+
     /** Default board dimensions */
     public BoardDimensions()
     {

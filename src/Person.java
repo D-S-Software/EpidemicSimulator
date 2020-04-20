@@ -38,6 +38,7 @@ public class Person {
      */
     public Person(Person testSubject, int xPos, int yPos)
     {
+        this.dimensions = new BoardDimensions(testSubject.dimensions);
         age = testSubject.age;
         xPos = xPos;
         yPos = yPos;
