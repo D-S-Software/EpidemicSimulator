@@ -22,7 +22,7 @@ public class Panel extends JPanel implements ActionListener
 
         board.distanceCheck();
 
-        board.updateDiseaseAndMove();
+        board.updatePerson();
 
         board.draw(g2D);
 

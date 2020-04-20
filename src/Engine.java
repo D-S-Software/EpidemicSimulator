@@ -11,7 +11,7 @@ public class Engine {
     public Engine()
     {
         dimens = new BoardDimensions();
-        myBoard = new Board();
+        myBoard = new Board(dimens, 50);
         windowFrame = new Frame(myBoard);
 
         stats = new Statistics(myBoard);
