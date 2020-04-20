@@ -7,7 +7,10 @@ public class Engine {
         myBoard = new Board();
     }
 
-
+    public Board getBoard()
+    {
+        return myBoard;
+    }
 
     public static void main(String[] args)
     {
