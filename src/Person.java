@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class Person {
 
-    private boolean hasDisease, isHealthy, canSpread;
+    private boolean hasDisease, isHealthy, canGetSick;
     private int age, spreadRate, xPos, yPos, dx, dy, directionAngle;
     private int circleRad = 5;
     private BoardDimensions dimensions;
@@ -45,9 +45,9 @@ public class Person {
         return isHealthy;
     }
 
-    public void setCanSpread(boolean bValue)
+    public void setCanGetSick(boolean bValue)
     {
-        canSpread = bValue;
+        canGetSick = bValue;
     }
 
     public void move()
@@ -98,7 +98,7 @@ public class Person {
     public void checkSick()
     {
         // if a person is within 100 pixels of infected --> 95% change of spread
-        if(!hasDisease && canSpread && Math.random() > .05 && willSpread > (spreadRate / 100))
+        if(!hasDisease && canGetSick && Math.random() > .05 && willSpread > (spreadRate / 100))
         {
             hasDisease = true;
             isHealthy = false;

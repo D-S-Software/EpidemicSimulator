@@ -45,23 +45,25 @@ public class Board {
                 if(pList.get(i).getHasDisease())
                 {
                     pList.get(j).willSpread(pList.get(i));
-                    pList.get(j).setCanSpread(true);
+                    pList.get(j).setCanGetSick(true);
                 }
                 else if(pList.get(j).getHasDisease())
                 {
                     pList.get(i).willSpread(pList.get(j));
-                    pList.get(i).setCanSpread(true);
+                    pList.get(i).setCanGetSick(true);
                 }
                 else
                 {
-                    pList.get(i).setCanSpread(false);
-                    pList.get(i).setCanSpread(false);
+                    pList.get(i).setCanGetSick(false);
+                    pList.get(i).setCanGetSick(false);
                 }
             }
         }
     }
 
-    public void updateDiseaseAndMove()
+
+    /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
+    public void updatePerson()
     {
         for(int i = 0; i < pList.size(); i++)
         {
