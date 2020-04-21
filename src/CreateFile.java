@@ -29,14 +29,14 @@ public class CreateFile {
         resultsFile.format("%s", "" + time);
     }
 
-    public void addDiseasePercent(double decimal)
+    public void addFindAffectedPercent(double decimalPercent)
     {
         DecimalFormat df = new DecimalFormat("##.###");
         df.setRoundingMode(RoundingMode.CEILING);
 
-        decimal *= 100;
+        decimalPercent *= 100;
 
-        resultsFile.format("%s%s%s", "Has Disease ", df.format(decimal), "%");
+        resultsFile.format("%s%s%s", "Affected: ", df.format(decimalPercent), "%");
     }
 
     public void addSpace()

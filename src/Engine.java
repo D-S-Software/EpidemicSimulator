@@ -8,20 +8,20 @@ public class Engine {
     private Statistics stats;
     private BoardDimensions dimens;
 
-    public Engine()
+    public Engine(int numPeople)
     {
         dimens = new BoardDimensions();
-        myBoard = new Board(dimens, 500);
+        myBoard = new Board(dimens, numPeople);
         windowFrame = new Frame(myBoard);
 
-        stats = new Statistics(myBoard);
+        stats = new Statistics(myBoard, numPeople);
         clock = new Timer(10, windowFrame.getPeopleBoardPanel());
         clock.addActionListener(stats);
     }
 
     public static void main(String[] args)
     {
-        Engine gameEngine = new Engine();
+        Engine gameEngine = new Engine(1000);
         gameEngine.clock.start();
     }
 }
