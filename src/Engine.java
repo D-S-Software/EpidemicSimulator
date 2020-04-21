@@ -8,14 +8,17 @@ public class Engine {
     private Statistics stats;
     private Dimensions boardDimens;
     private Dimensions tallyDimens;
+    private Disease disease;
     private int buffer = 10;  //Buffer between boardPanel and tallyPanel
 
     public Engine(int numPeople)
     {
+        disease = new Disease1();
+
         boardDimens = new Dimensions();
         tallyDimens = new Dimensions(boardDimens.xOrigin + boardDimens.xLen + buffer, boardDimens.yOrigin + buffer, boardDimens.xLen/2, boardDimens.yLen);
 
-        myBoard = new Board(boardDimens, numPeople);
+        myBoard = new Board(disease, boardDimens, numPeople);
         windowFrame = new Frame(myBoard, tallyDimens);
 
         stats = new Statistics(myBoard, numPeople);

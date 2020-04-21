@@ -1,6 +1,7 @@
 public class Disease1 extends Disease {
-//inherits baseSpreadRate and baseMortalityRate from Disease
 
-
+    public Disease1()
+    {
+        super(5, .05, .5, .95);
+    }
 }
-//TODO: Utilize Disease in the Person class

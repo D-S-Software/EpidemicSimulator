@@ -5,10 +5,12 @@ public class Board {
 
    public final Dimensions dimens;
    private ArrayList<Person> pList;
+   private Disease disease;
 
-    public Board(int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
+    public Board(Disease disease, int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
     {
         this.dimens = new Dimensions(xOrigin, yOrigin, xLen, yLen);
+        this.disease = disease;
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
@@ -16,19 +18,19 @@ public class Board {
             int xPos = xOrigin + (int)(xLen*Math.random());
             int yPos = yOrigin + (int)(yLen*Math.random());
 
-            pList.add(new Person(20, xPos, yPos, dimens));
+            pList.add(new Person(20, false, xPos, yPos, dimens, disease));
         }
     }
 
-    public Board(Dimensions dimens, int numPeople)
+    public Board(Disease disease, Dimensions dimens, int numPeople)
     {
-        this(dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen, numPeople);
+        this(disease, dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen, numPeople);
     }
 
     /**Default board with hardcoded parameters and default Dimensions constructed object */
     public Board()
     {
-        this(new Dimensions(), 100);
+        this(new Disease1(), new Dimensions(), 100);
     }
 
     /**
@@ -77,5 +79,9 @@ public class Board {
     public ArrayList<Person> getPList()
     {
         return pList;
+    }
+    public Disease getDisease()
+    {
+        return disease;
     }
 }
