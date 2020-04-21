@@ -5,11 +5,9 @@ public class Frame extends JFrame {
     private BoardPanel peopleBoardPanel;
     private JPanel mainPanel;
     private JPanel tallyPanel;
-    private JLabel title;
 
     public Frame(Board board)
     {
-
         mainPanel = new JPanel();
         this.setSize((int)(board.dimens.xLen *1.25),(int)(1.25* board.dimens.yLen));
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.X_AXIS));
@@ -19,13 +17,9 @@ public class Frame extends JFrame {
 
         tallyPanel.setBounds(1000, 0, 50, 450);
 
-        title = new JLabel();
-
         mainPanel.add(peopleBoardPanel);
 
-
         add(mainPanel);
-        add(title);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
