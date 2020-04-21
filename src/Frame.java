@@ -19,7 +19,7 @@ public class Frame extends JFrame {
         tallyPanel.setBounds(1000, 0, 50, 450);
 
         mainPanel.add(peoplePanel);
-        mainPanel.add(tallyPanel);
+      //mainPanel.add(tallyPanel);
 
         add(mainPanel);
 

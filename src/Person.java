@@ -3,8 +3,8 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int age, baseSpreadRate, xPos, yPos, dx, dy, directionAngle;
-    private int circleRad = 5, recoverTime = 0, step = 2, contagiousRange = 5;
+    private int age, spreadRate, xPos, yPos, dx, dy, directionAngle;
+    private int circleRad = 8, recoverTime = 0, step = 2, contagiousRange = 5;
     private double distanceFromSick, contagiousPercent = .05;
     private BoardDimensions dimensions;
 
@@ -20,7 +20,7 @@ public class Person {
         this.age = age;
         this.xPos = xPos;
         this.yPos = yPos;
-        baseSpreadRate = 1; // increase this to make the person more likely to be infected
+        spreadRate = 1; // increase this to make the person more likely to be infected
         directionAngle = (int)(306*Math.random());
 
         if(Math.random() > .95)
@@ -79,7 +79,7 @@ public class Person {
     public void checkCondition()
     {
         // if a person is within -- pixels of infected --> --% change of spread
-        if(!hasDisease && Math.random() < contagiousPercent && distanceFromSick < contagiousRange * baseSpreadRate)
+        if(!hasDisease && Math.random() < contagiousPercent && distanceFromSick < contagiousRange * spreadRate)
         {
             hasDisease = true;
             isHealthy = false;
@@ -113,7 +113,8 @@ public class Person {
         }
 
         g2D.setPaint(color);
-        g2D.fillOval(xPos + circleRad,yPos + circleRad, circleRad, circleRad);
+
+        g2D.fillOval(xPos,yPos, circleRad, circleRad);
     }
 
     /** Getter and Setter Methods */
