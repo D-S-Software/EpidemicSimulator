@@ -9,12 +9,7 @@ public class Person {
     private Dimensions dimensions;
     private Disease disease;
 
-    /**
-     *
-     * @param age
-     * @param xPos
-     * @param yPos
-     */
+
     public Person(int age, boolean preExistingConditions, int xPos, int yPos, Dimensions dimensions, Disease disease)
     {
         this.dimensions = new Dimensions(dimensions);
