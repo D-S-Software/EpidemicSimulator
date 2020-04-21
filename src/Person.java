@@ -3,8 +3,8 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, directionAngle;
-    private int circleRad = 8, recoverTime = 0, step = 2;
+    private int xPos, yPos, dx, dy, directionAngle, minTimeSick, maxTimeSick;
+    private int circleRad = 8, timeSinceSick = 0, step = 2;
     private double distanceFromSick, mortalityRate;
     private Dimensions dimensions;
     private Disease disease;
@@ -16,7 +16,9 @@ public class Person {
         this.disease = disease;
         this.xPos = xPos;
         this.yPos = yPos;
-        mortalityRate = disease.getBaseMortalityRate(); // increase this to make the person more likely to die (0 --> 1) Use age and preExistingConditions
+        minTimeSick = disease.getBaseMinTimeSick(); //TODO change based on person age and preExistingConditions
+        maxTimeSick = disease.getBaseMaxTimeSick(); //TODO change based on person age and preExistingConditions
+        mortalityRate = disease.getBaseMortalityRate(); //TODO increase this to make the person more likely to die (0 --> 1) Use age and preExistingConditions
         directionAngle = (int)(306*Math.random());
 
         if(Math.random() > disease.getStartPercentHealthy())
@@ -82,9 +84,9 @@ public class Person {
         }
         if(hasDisease && !isHealthy) // if is sick
         {
-            recoverTime++;
-            //If sick for 10 sec has increasing chance to die / recover until guaranteed at 1 min
-            if(recoverTime >  1000 + (int)(5000*Math.random()))
+            timeSinceSick++;
+            //If sick for min time has increasing chance to die / recover until guaranteed at max time
+            if(timeSinceSick >  minTimeSick + (int)((maxTimeSick - minTimeSick)*Math.random()))
             {
                 if(Math.random() > mortalityRate)
                     isHealthy = true;    // Recovers
