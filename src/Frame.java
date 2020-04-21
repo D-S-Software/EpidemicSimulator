@@ -1,34 +1,38 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class Frame extends JFrame {
 
-    private Panel peoplePanel;
+    private BoardPanel peopleBoardPanel;
     private JPanel mainPanel;
     private JPanel tallyPanel;
+    private JLabel title;
 
     public Frame(Board board)
     {
+
         mainPanel = new JPanel();
         this.setSize((int)(board.dimens.xLen *1.25),(int)(1.25* board.dimens.yLen));
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.X_AXIS));
 
-        peoplePanel = new Panel(board);
+        peopleBoardPanel = new BoardPanel(board);
         tallyPanel = new JPanel();
 
         tallyPanel.setBounds(1000, 0, 50, 450);
 
-        mainPanel.add(peoplePanel);
-      //mainPanel.add(tallyPanel);
+        title = new JLabel();
+
+        mainPanel.add(peopleBoardPanel);
+
 
         add(mainPanel);
+        add(title);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
 
-    public Panel getPeoplePanel()
+    public BoardPanel getPeopleBoardPanel()
     {
-        return peoplePanel;
+        return peopleBoardPanel;
     }
 }

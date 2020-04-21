@@ -3,12 +3,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Panel extends JPanel implements ActionListener
+public class BoardPanel extends JPanel implements ActionListener
 {
 
     Board board;
 
-    public Panel(Board board)
+    public BoardPanel(Board board)
     {
         this.board = board;
         setBounds(board.dimens.xOrigin, board.dimens.yOrigin, board.dimens.xLen, board.dimens.yLen);

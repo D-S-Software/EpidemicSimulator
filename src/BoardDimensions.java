@@ -26,7 +26,7 @@ public class BoardDimensions {
     /** Default board dimensions */
     public BoardDimensions()
     {
-        this(0,0,800,450);
+        this(200,200,1600,900);
     }
 
 }

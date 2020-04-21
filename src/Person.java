@@ -72,7 +72,7 @@ public class Person {
             yPos += dy;
         }
     }
-
+    //TODO: Person objects should not phase through each other
     /**
      * Checks each person if they should become sick / recover / die
      */
