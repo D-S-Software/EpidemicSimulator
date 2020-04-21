@@ -11,6 +11,7 @@ public class Panel extends JPanel implements ActionListener
     public Panel(Board board)
     {
         this.board = board;
+        setBounds(board.dimens.xOrigin, board.dimens.yOrigin, board.dimens.xLen, board.dimens.yLen);
     }
 
     public void paintComponent(Graphics g)
