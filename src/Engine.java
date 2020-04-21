@@ -9,14 +9,18 @@ public class Engine {
     private Dimensions boardDimens;
     private Dimensions tallyDimens;
     private Disease disease;
-    private int buffer = 10;  //Buffer between boardPanel and tallyPanel
+    private int boardWidth;
+    private int personBoardHeight = 3* boardWidth / 4;
+    private int buffer = boardWidth / 12 ;  //Buffer between boardPanel and tallyPanel
 
-    public Engine(int numPeople)
+    public Engine(int numPeople, int boardWidth)
     {
+        this.boardWidth = boardWidth;
+
         disease = new Disease1();
 
-        boardDimens = new Dimensions(50,50,800,450);
-        tallyDimens = new Dimensions(boardDimens.xOrigin + boardDimens.xLen + buffer, boardDimens.yOrigin + buffer, boardDimens.xLen/2, boardDimens.yLen);
+        boardDimens = new Dimensions(buffer,3*buffer, boardWidth,3* boardWidth /4);
+        tallyDimens = new Dimensions(0,0,boardWidth/4, 3*boardWidth/16);
 
         myBoard = new Board(disease, boardDimens, numPeople);
         windowFrame = new Frame(myBoard, tallyDimens);
@@ -30,7 +34,7 @@ public class Engine {
 
     public static void main(String[] args)
     {
-        Engine gameEngine = new Engine(500);
+        Engine gameEngine = new Engine(500, 800);
         gameEngine.clock.start();
     }
 }

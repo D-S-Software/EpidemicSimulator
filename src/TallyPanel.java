@@ -10,7 +10,7 @@ public class TallyPanel extends JPanel implements ActionListener
     /** A Board object is required to the TalleyPanel can be placed based on the Board object's BoardDimensions */
     public TallyPanel(Dimensions tDimens)
     {
-        setBounds(tDimens.xOrigin,tDimens.yOrigin,tDimens.xLen,tDimens.yLen);
+        setBounds(tDimens.xOrigin,tDimens.yOrigin,tDimens.xOrigin + tDimens.xLen,tDimens.xOrigin + tDimens.yLen);
 
     }
 
