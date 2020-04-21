@@ -27,7 +27,7 @@ public class Statistics implements ActionListener {
             if(pList.get(i).getHasDisease())
                 count++;
         }
-        return count / pList.size();
+        return (double)count / pList.size();
     }
 
     public void actionPerformed(ActionEvent e)
@@ -35,15 +35,16 @@ public class Statistics implements ActionListener {
         time++;
 
         x.addDiseasePercent(findDiseasePercent());
+        x.addSpace();
         x.addTime(time);
         x.addSpace();
-        x.addDiseaseArray(pList);
-        x.addSpace();
-/**
-        if(time >= 1000)
+        //x.addDiseaseArray(pList);
+        //x.addSpace();
+
+        if(time >= 4000)
         {
             x.closeFile();
             System.exit(0);
-        }*/
+        }
     }
 }

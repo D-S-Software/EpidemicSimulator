@@ -4,8 +4,8 @@ public class Person {
 
     private boolean hasDisease, isHealthy;
     private int age, baseSpreadRate, xPos, yPos, dx, dy, directionAngle;
-    private int circleRad = 5, recoverTime = 0, step = 2;
-    private double distanceFromSick, contagiousPercent = .5;
+    private int circleRad = 5, recoverTime = 0, step = 2, contagiousRange = 5;
+    private double distanceFromSick, contagiousPercent = .05;
     private BoardDimensions dimensions;
 
     /**
@@ -23,7 +23,7 @@ public class Person {
         baseSpreadRate = 1; // increase this to make the person more likely to be infected
         directionAngle = (int)(306*Math.random());
 
-        if(Math.random() > .9)
+        if(Math.random() > .95)
             hasDisease = true;
         else hasDisease = false;
 
@@ -78,8 +78,8 @@ public class Person {
      */
     public void checkCondition()
     {
-        // if a person is within 10 pixel of infected --> --% change of spread
-        if(!hasDisease && Math.random() > contagiousPercent && distanceFromSick < 10 * baseSpreadRate)
+        // if a person is within -- pixels of infected --> --% change of spread
+        if(!hasDisease && Math.random() < contagiousPercent && distanceFromSick < contagiousRange * baseSpreadRate)
         {
             hasDisease = true;
             isHealthy = false;
@@ -87,7 +87,7 @@ public class Person {
         if(hasDisease && !isHealthy) // if is sick
         {
             recoverTime++;
-            //If sick for 30 sec has increasing chance to die / recover until guaranteed at 100 sec
+            //If sick for 30 sec has increasing chance to die / recover until guaranteed at 110 sec
             if(recoverTime >  3000 + (int)(8000*Math.random()))
             {
                 if(Math.random() > .8)

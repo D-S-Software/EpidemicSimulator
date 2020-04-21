@@ -31,7 +31,7 @@ public class CreateFile {
 
     public void addDiseasePercent(double decimal)
     {
-        DecimalFormat df = new DecimalFormat("#.##");
+        DecimalFormat df = new DecimalFormat("##.###");
         df.setRoundingMode(RoundingMode.CEILING);
 
         decimal *= 100;
