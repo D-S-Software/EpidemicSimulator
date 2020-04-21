@@ -6,17 +6,23 @@ public class Engine {
     private Frame windowFrame;
     private Timer clock;
     private Statistics stats;
-    private BoardDimensions dimens;
+    private Dimensions boardDimens;
+    private Dimensions tallyDimens;
+    private int buffer = 10;  //Buffer between boardPanel and tallyPanel
 
     public Engine(int numPeople)
     {
-        dimens = new BoardDimensions();
-        myBoard = new Board(dimens, numPeople);
-        windowFrame = new Frame(myBoard);
+        boardDimens = new Dimensions();
+        tallyDimens = new Dimensions(boardDimens.xOrigin + boardDimens.xLen + buffer, boardDimens.yOrigin + buffer, boardDimens.xLen/2, boardDimens.yLen);
+
+        myBoard = new Board(boardDimens, numPeople);
+        windowFrame = new Frame(myBoard, tallyDimens);
 
         stats = new Statistics(myBoard, numPeople);
-        clock = new Timer(10, windowFrame.getPeopleBoardPanel());
+
+        clock = new Timer(10, windowFrame.getBoardPanel());
         clock.addActionListener(stats);
+        //clock.addActionListener(windowFrame.getTallyPanel()); TODO Add this back in
     }
 
     public static void main(String[] args)
