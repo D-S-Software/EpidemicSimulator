@@ -35,7 +35,7 @@ public class Person {
 
     /**
      * Moves the person and decides if to change direction
-     */
+     *///TODO: Person objects should not phase through each other
     public void move()
     {
         if(Math.random() >= .95)
@@ -72,7 +72,7 @@ public class Person {
             yPos += dy;
         }
     }
-    //TODO: Person objects should not phase through each other
+
     /**
      * Checks each person if they should become sick / recover / die
      */
