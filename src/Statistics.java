@@ -39,11 +39,10 @@ public class Statistics implements ActionListener {
         numSick = sickCount;
         numHealthy = healthyCount;
         numDead = numPeople - numHealthy - numSick - numRecovered;
-
         time++;
 
         //TODO Remove when not needed for testing
-        System.out.println("H| " + numHealthy + " S| " + numSick + " R| " + numRecovered + " D| " + numDead + " T| " + time);
+        printResults();
 
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
         x.addSpace();
@@ -84,5 +83,21 @@ public class Statistics implements ActionListener {
     public int getTime()
     {
         return time;
+    }
+
+    // TODO Remove when not needed for testing
+    boolean lastPrint;
+    public void printResults()
+    {
+        if(numSick > 0)
+        {
+            System.out.println("H| " + numHealthy + " S| " + numSick + " R| " + numRecovered + " D| " + numDead + " T| " + time);
+            lastPrint = true;
+        }
+        else if(lastPrint && numSick == 0)
+        {
+            System.out.println("H| " + numHealthy + " S| " + numSick + " R| " + numRecovered + " D| " + numDead + " T| " + time);
+            lastPrint = false;
+        }
     }
 }
