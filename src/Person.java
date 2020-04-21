@@ -19,7 +19,7 @@ public class Person {
         minTimeSick = disease.getBaseMinTimeSick(); //TODO change based on person age and preExistingConditions
         maxTimeSick = disease.getBaseMaxTimeSick() ; //TODO change based on person age and preExistingConditions
         mortalityRate = disease.getBaseMortalityRate(); //TODO increase this to make the person more likely to die (0 --> 1) Use age and preExistingConditions
-        directionAngle = (int)(306*Math.random());
+        directionAngle = (int)(360*Math.random());
 
         if(Math.random() > disease.getStartPercentHealthy())
             hasDisease = true;
@@ -44,24 +44,24 @@ public class Person {
 
         if(xPos + dx > dimensions.xOrigin + dimensions.xLen - circleRad)
         {
-            xPos = dimensions.xLen - circleRad - 1;
+            xPos = dimensions.xOrigin + dimensions.xLen - circleRad - 1;
             directionAngle += 180;
         }
         if(xPos + dx < dimensions.xOrigin + circleRad)
         {
-            xPos = circleRad;
+            xPos = dimensions. xOrigin + circleRad;
             directionAngle += 180;
         }
         else xPos += dx;
 
         if(yPos + dy > dimensions.yOrigin + dimensions.yLen  - circleRad)
         {
-            yPos = dimensions.yLen - circleRad - 1;
+            yPos = dimensions.yOrigin + dimensions.yLen - circleRad - 1;
             directionAngle *= -1;
         }
         if(yPos + dy < dimensions.yOrigin + circleRad)
         {
-            yPos = circleRad;
+            yPos = dimensions.yOrigin + circleRad;
             directionAngle *= -1;
         }
         else
