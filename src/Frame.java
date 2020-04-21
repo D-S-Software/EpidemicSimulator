@@ -4,7 +4,7 @@ public class Frame extends JFrame {
 
     private BoardPanel boardPanel;
     private JPanel mainPanel;
-    private TallyPanel tallyPanel;
+    //private TallyPanel tallyPanel; TODO Add this back in
 
     public Frame(Board board, Dimensions tallyDimens)
     {
@@ -13,10 +13,10 @@ public class Frame extends JFrame {
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.X_AXIS));
 
         boardPanel = new BoardPanel(board);
-        tallyPanel = new TallyPanel(tallyDimens);
+        //tallyPanel = new TallyPanel(tallyDimens); TODO Add this back in
 
         mainPanel.add(boardPanel);
-       // mainPanel.add(tallyPanel); //TODO Add this back in
+       // mainPanel.add(tallyPanel); TODO Add this back in
 
         add(mainPanel);
 
@@ -29,8 +29,9 @@ public class Frame extends JFrame {
         return boardPanel;
     }
 
+    /** TODO Add this back in
     public TallyPanel getTallyPanel()
     {
         return tallyPanel;
-    }
+    }*/
 }
