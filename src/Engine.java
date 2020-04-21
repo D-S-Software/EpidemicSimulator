@@ -25,7 +25,7 @@ public class Engine {
 
         clock = new Timer(10, windowFrame.getBoardPanel());
         clock.addActionListener(stats);
-        //clock.addActionListener(windowFrame.getTallyPanel()); TODO Add this back in
+        clock.addActionListener(windowFrame.getTallyPanel());
     }
 
     public static void main(String[] args)
