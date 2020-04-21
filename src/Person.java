@@ -6,7 +6,7 @@ public class Person {
     private int age, spreadRate, xPos, yPos, dx, dy, directionAngle;
     private int circleRad = 8, recoverTime = 0, step = 2, contagiousRange = 5;
     private double distanceFromSick, contagiousPercent = .05;
-    private BoardDimensions dimensions;
+    private Dimensions dimensions;
 
     /**
      *
@@ -14,9 +14,9 @@ public class Person {
      * @param xPos
      * @param yPos
      */
-    public Person(int age, int xPos, int yPos, BoardDimensions dimensions)
+    public Person(int age, int xPos, int yPos, Dimensions dimensions)
     {
-        this.dimensions = new BoardDimensions(dimensions);
+        this.dimensions = new Dimensions(dimensions);
         this.age = age;
         this.xPos = xPos;
         this.yPos = yPos;

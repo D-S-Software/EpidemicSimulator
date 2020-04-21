@@ -3,12 +3,12 @@ import java.util.ArrayList;
 
 public class Board {
 
-   public final BoardDimensions dimens;
+   public final Dimensions dimens;
    private ArrayList<Person> pList;
 
     public Board(int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
     {
-        this.dimens = new BoardDimensions(xOrigin, yOrigin, xLen, yLen);
+        this.dimens = new Dimensions(xOrigin, yOrigin, xLen, yLen);
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
@@ -20,15 +20,15 @@ public class Board {
         }
     }
 
-    public Board(BoardDimensions dimens, int numPeople)
+    public Board(Dimensions dimens, int numPeople)
     {
         this(dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen, numPeople);
     }
 
-    /**Default board with hardcoded parameters and default BoardDimensions constructed object */
+    /**Default board with hardcoded parameters and default Dimensions constructed object */
     public Board()
     {
-        this(new BoardDimensions(), 100);
+        this(new Dimensions(), 100);
     }
 
     /**
