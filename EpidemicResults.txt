@@ -1,8998 +1,10815 @@
-Has Disease 5%
+Affected: 3.2%
 1
-Has Disease 5.1%
+Affected: 3.2%
 2
-Has Disease 5.3%
+Affected: 3.2%
 3
-Has Disease 5.4%
+Affected: 3.2%
 4
-Has Disease 5.4%
+Affected: 3.2%
 5
-Has Disease 5.4%
+Affected: 3.401%
 6
-Has Disease 5.5%
+Affected: 3.401%
 7
-Has Disease 5.601%
+Affected: 3.401%
 8
-Has Disease 5.601%
+Affected: 3.401%
 9
-Has Disease 5.601%
+Affected: 3.401%
 10
-Has Disease 5.601%
+Affected: 3.401%
 11
-Has Disease 5.601%
+Affected: 3.401%
 12
-Has Disease 5.601%
+Affected: 3.401%
 13
-Has Disease 5.601%
+Affected: 3.401%
 14
-Has Disease 5.601%
+Affected: 3.401%
 15
-Has Disease 5.601%
+Affected: 3.401%
 16
-Has Disease 5.7%
+Affected: 3.401%
 17
-Has Disease 5.801%
+Affected: 3.401%
 18
-Has Disease 5.9%
+Affected: 3.401%
 19
-Has Disease 5.9%
+Affected: 3.401%
 20
-Has Disease 5.9%
+Affected: 3.401%
 21
-Has Disease 6.1%
+Affected: 3.401%
 22
-Has Disease 6.1%
+Affected: 3.401%
 23
-Has Disease 6.1%
+Affected: 3.401%
 24
-Has Disease 6.2%
+Affected: 3.401%
 25
-Has Disease 6.5%
+Affected: 3.401%
 26
-Has Disease 6.5%
+Affected: 3.401%
 27
-Has Disease 6.5%
+Affected: 3.401%
 28
-Has Disease 6.601%
+Affected: 3.401%
 29
-Has Disease 6.601%
+Affected: 3.401%
 30
-Has Disease 6.7%
+Affected: 3.401%
 31
-Has Disease 6.7%
+Affected: 3.401%
 32
-Has Disease 6.801%
+Affected: 3.401%
 33
-Has Disease 6.9%
+Affected: 3.401%
 34
-Has Disease 7.001%
+Affected: 3.401%
 35
-Has Disease 7.2%
+Affected: 3.401%
 36
-Has Disease 7.3%
+Affected: 3.401%
 37
-Has Disease 7.3%
+Affected: 3.401%
 38
-Has Disease 7.3%
+Affected: 3.401%
 39
-Has Disease 7.4%
+Affected: 3.401%
 40
-Has Disease 7.5%
+Affected: 3.401%
 41
-Has Disease 7.6%
+Affected: 3.401%
 42
-Has Disease 7.6%
+Affected: 3.401%
 43
-Has Disease 7.6%
+Affected: 3.401%
 44
-Has Disease 7.6%
+Affected: 3.6%
 45
-Has Disease 7.7%
+Affected: 3.8%
 46
-Has Disease 7.8%
+Affected: 4%
 47
-Has Disease 7.8%
+Affected: 4%
 48
-Has Disease 7.8%
+Affected: 4%
 49
-Has Disease 7.8%
+Affected: 4%
 50
-Has Disease 7.8%
+Affected: 4%
 51
-Has Disease 7.9%
+Affected: 4%
 52
-Has Disease 7.9%
+Affected: 4%
 53
-Has Disease 7.9%
+Affected: 4%
 54
-Has Disease 7.9%
+Affected: 4%
 55
-Has Disease 8%
+Affected: 4%
 56
-Has Disease 8%
+Affected: 4%
 57
-Has Disease 8%
+Affected: 4%
 58
-Has Disease 8%
+Affected: 4.2%
 59
-Has Disease 8%
+Affected: 4.2%
 60
-Has Disease 8%
+Affected: 4.2%
 61
-Has Disease 8%
+Affected: 4.2%
 62
-Has Disease 8%
+Affected: 4.2%
 63
-Has Disease 8.201%
+Affected: 4.2%
 64
-Has Disease 8.201%
+Affected: 4.2%
 65
-Has Disease 8.201%
+Affected: 4.2%
 66
-Has Disease 8.201%
+Affected: 4.2%
 67
-Has Disease 8.201%
+Affected: 4.2%
 68
-Has Disease 8.3%
+Affected: 4.2%
 69
-Has Disease 8.4%
+Affected: 4.2%
 70
-Has Disease 8.5%
+Affected: 4.2%
 71
-Has Disease 8.6%
+Affected: 4.4%
 72
-Has Disease 8.6%
+Affected: 4.4%
 73
-Has Disease 8.7%
+Affected: 4.4%
 74
-Has Disease 8.7%
+Affected: 4.4%
 75
-Has Disease 8.9%
+Affected: 4.4%
 76
-Has Disease 8.9%
+Affected: 4.4%
 77
-Has Disease 9%
+Affected: 4.4%
 78
-Has Disease 9.3%
+Affected: 4.4%
 79
-Has Disease 9.3%
+Affected: 4.4%
 80
-Has Disease 9.5%
+Affected: 4.4%
 81
-Has Disease 9.8%
+Affected: 4.4%
 82
-Has Disease 9.8%
+Affected: 4.4%
 83
-Has Disease 9.8%
+Affected: 4.4%
 84
-Has Disease 9.9%
+Affected: 4.6%
 85
-Has Disease 10%
+Affected: 4.6%
 86
-Has Disease 10.101%
+Affected: 4.6%
 87
-Has Disease 10.2%
+Affected: 4.8%
 88
-Has Disease 10.3%
+Affected: 4.8%
 89
-Has Disease 10.4%
+Affected: 4.8%
 90
-Has Disease 10.5%
+Affected: 4.8%
 91
-Has Disease 10.6%
+Affected: 4.8%
 92
-Has Disease 10.7%
+Affected: 4.8%
 93
-Has Disease 10.7%
+Affected: 4.8%
 94
-Has Disease 10.7%
+Affected: 4.8%
 95
-Has Disease 10.7%
+Affected: 4.8%
 96
-Has Disease 10.8%
+Affected: 4.8%
 97
-Has Disease 11%
+Affected: 4.8%
 98
-Has Disease 11%
+Affected: 4.8%
 99
-Has Disease 11%
+Affected: 4.8%
 100
-Has Disease 11%
+Affected: 4.8%
 101
-Has Disease 11%
+Affected: 5%
 102
-Has Disease 11%
+Affected: 5%
 103
-Has Disease 11%
+Affected: 5%
 104
-Has Disease 11%
+Affected: 5%
 105
-Has Disease 11%
+Affected: 5%
 106
-Has Disease 11.201%
+Affected: 5%
 107
-Has Disease 11.201%
+Affected: 5%
 108
-Has Disease 11.201%
+Affected: 5%
 109
-Has Disease 11.201%
+Affected: 5.2%
 110
-Has Disease 11.201%
+Affected: 5.2%
 111
-Has Disease 11.201%
+Affected: 5.2%
 112
-Has Disease 11.201%
+Affected: 5.4%
 113
-Has Disease 11.4%
+Affected: 5.601%
 114
-Has Disease 11.4%
+Affected: 5.601%
 115
-Has Disease 11.5%
+Affected: 5.601%
 116
-Has Disease 11.601%
+Affected: 5.601%
 117
-Has Disease 11.601%
+Affected: 5.601%
 118
-Has Disease 11.601%
+Affected: 5.601%
 119
-Has Disease 11.701%
+Affected: 5.601%
 120
-Has Disease 11.8%
+Affected: 5.601%
 121
-Has Disease 12%
+Affected: 5.801%
 122
-Has Disease 12.2%
+Affected: 5.801%
 123
-Has Disease 12.4%
+Affected: 5.801%
 124
-Has Disease 12.6%
+Affected: 5.801%
 125
-Has Disease 12.6%
+Affected: 5.801%
 126
-Has Disease 12.8%
+Affected: 5.801%
 127
-Has Disease 12.9%
+Affected: 5.801%
 128
-Has Disease 12.9%
+Affected: 5.801%
 129
-Has Disease 12.9%
+Affected: 5.801%
 130
-Has Disease 13%
+Affected: 5.801%
 131
-Has Disease 13%
+Affected: 6%
 132
-Has Disease 13%
+Affected: 6%
 133
-Has Disease 13.101%
+Affected: 6%
 134
-Has Disease 13.5%
+Affected: 6%
 135
-Has Disease 13.5%
+Affected: 6%
 136
-Has Disease 13.601%
+Affected: 6%
 137
-Has Disease 13.701%
+Affected: 6%
 138
-Has Disease 13.901%
+Affected: 6%
 139
-Has Disease 13.901%
+Affected: 6%
 140
-Has Disease 14.001%
+Affected: 6%
 141
-Has Disease 14.001%
+Affected: 6%
 142
-Has Disease 14.001%
+Affected: 6%
 143
-Has Disease 14.1%
+Affected: 6.2%
 144
-Has Disease 14.1%
+Affected: 6.2%
 145
-Has Disease 14.2%
+Affected: 6.2%
 146
-Has Disease 14.2%
+Affected: 6.2%
 147
-Has Disease 14.2%
+Affected: 6.2%
 148
-Has Disease 14.2%
+Affected: 6.2%
 149
-Has Disease 14.3%
+Affected: 6.2%
 150
-Has Disease 14.4%
+Affected: 6.2%
 151
-Has Disease 14.4%
+Affected: 6.2%
 152
-Has Disease 14.7%
+Affected: 6.4%
 153
-Has Disease 14.7%
+Affected: 6.4%
 154
-Has Disease 14.7%
+Affected: 6.4%
 155
-Has Disease 14.8%
+Affected: 6.4%
 156
-Has Disease 15.1%
+Affected: 6.4%
 157
-Has Disease 15.1%
+Affected: 6.4%
 158
-Has Disease 15.2%
+Affected: 6.4%
 159
-Has Disease 15.2%
+Affected: 6.601%
 160
-Has Disease 15.3%
+Affected: 6.601%
 161
-Has Disease 15.4%
+Affected: 6.601%
 162
-Has Disease 15.5%
+Affected: 6.601%
 163
-Has Disease 15.7%
+Affected: 6.601%
 164
-Has Disease 15.8%
+Affected: 6.601%
 165
-Has Disease 15.8%
+Affected: 6.601%
 166
-Has Disease 15.8%
+Affected: 6.601%
 167
-Has Disease 15.8%
+Affected: 6.601%
 168
-Has Disease 15.8%
+Affected: 6.601%
 169
-Has Disease 15.9%
+Affected: 6.801%
 170
-Has Disease 16%
+Affected: 6.801%
 171
-Has Disease 16%
+Affected: 6.801%
 172
-Has Disease 16%
+Affected: 6.801%
 173
-Has Disease 16.2%
+Affected: 6.801%
 174
-Has Disease 16.3%
+Affected: 7.001%
 175
-Has Disease 16.6%
+Affected: 7.001%
 176
-Has Disease 16.7%
+Affected: 7.001%
 177
-Has Disease 16.7%
+Affected: 7.2%
 178
-Has Disease 17%
+Affected: 7.2%
 179
-Has Disease 17%
+Affected: 7.2%
 180
-Has Disease 17%
+Affected: 7.2%
 181
-Has Disease 17%
+Affected: 7.2%
 182
-Has Disease 17%
+Affected: 7.2%
 183
-Has Disease 17.2%
+Affected: 7.2%
 184
-Has Disease 17.2%
+Affected: 7.2%
 185
-Has Disease 17.4%
+Affected: 7.6%
 186
-Has Disease 17.6%
+Affected: 7.6%
 187
-Has Disease 17.8%
+Affected: 7.6%
 188
-Has Disease 18.1%
+Affected: 7.6%
 189
-Has Disease 18.2%
+Affected: 7.6%
 190
-Has Disease 18.4%
+Affected: 7.6%
 191
-Has Disease 18.4%
+Affected: 7.6%
 192
-Has Disease 18.4%
+Affected: 7.6%
 193
-Has Disease 18.4%
+Affected: 7.6%
 194
-Has Disease 18.9%
+Affected: 7.8%
 195
-Has Disease 18.9%
+Affected: 7.8%
 196
-Has Disease 18.9%
+Affected: 7.8%
 197
-Has Disease 19.1%
+Affected: 8%
 198
-Has Disease 19.2%
+Affected: 8.201%
 199
-Has Disease 19.3%
+Affected: 8.201%
 200
-Has Disease 19.401%
+Affected: 8.201%
 201
-Has Disease 19.6%
+Affected: 8.201%
 202
-Has Disease 19.7%
+Affected: 8.201%
 203
-Has Disease 19.8%
+Affected: 8.6%
 204
-Has Disease 19.901%
+Affected: 8.6%
 205
-Has Disease 19.901%
+Affected: 8.8%
 206
-Has Disease 20%
+Affected: 8.8%
 207
-Has Disease 20.1%
+Affected: 8.8%
 208
-Has Disease 20.3%
+Affected: 8.8%
 209
-Has Disease 20.6%
+Affected: 8.8%
 210
-Has Disease 20.7%
+Affected: 9%
 211
-Has Disease 20.8%
+Affected: 9%
 212
-Has Disease 21.4%
+Affected: 9%
 213
-Has Disease 21.4%
+Affected: 9%
 214
-Has Disease 21.4%
+Affected: 9.2%
 215
-Has Disease 21.5%
+Affected: 9.2%
 216
-Has Disease 21.6%
+Affected: 9.2%
 217
-Has Disease 21.6%
+Affected: 9.4%
 218
-Has Disease 21.8%
+Affected: 9.8%
 219
-Has Disease 22%
+Affected: 9.8%
 220
-Has Disease 22.1%
+Affected: 9.8%
 221
-Has Disease 22.1%
+Affected: 9.8%
 222
-Has Disease 22.401%
+Affected: 10%
 223
-Has Disease 22.5%
+Affected: 10%
 224
-Has Disease 22.7%
+Affected: 10.4%
 225
-Has Disease 22.8%
+Affected: 10.4%
 226
-Has Disease 23.3%
+Affected: 10.4%
 227
-Has Disease 23.3%
+Affected: 10.4%
 228
-Has Disease 23.7%
+Affected: 10.4%
 229
-Has Disease 23.7%
+Affected: 10.4%
 230
-Has Disease 23.8%
+Affected: 10.6%
 231
-Has Disease 23.9%
+Affected: 10.8%
 232
-Has Disease 24.3%
+Affected: 11.201%
 233
-Has Disease 24.4%
+Affected: 11.4%
 234
-Has Disease 24.4%
+Affected: 11.4%
 235
-Has Disease 24.4%
+Affected: 11.4%
 236
-Has Disease 24.5%
+Affected: 11.4%
 237
-Has Disease 24.7%
+Affected: 11.4%
 238
-Has Disease 24.7%
+Affected: 11.601%
 239
-Has Disease 24.9%
+Affected: 11.601%
 240
-Has Disease 24.9%
+Affected: 11.601%
 241
-Has Disease 25.1%
+Affected: 11.601%
 242
-Has Disease 25.4%
+Affected: 11.601%
 243
-Has Disease 25.7%
+Affected: 11.601%
 244
-Has Disease 25.8%
+Affected: 11.601%
 245
-Has Disease 25.901%
+Affected: 11.601%
 246
-Has Disease 26.1%
+Affected: 11.601%
 247
-Has Disease 26.3%
+Affected: 11.601%
 248
-Has Disease 26.401%
+Affected: 11.601%
 249
-Has Disease 26.5%
+Affected: 11.601%
 250
-Has Disease 26.901%
+Affected: 11.601%
 251
-Has Disease 27.1%
+Affected: 11.601%
 252
-Has Disease 27.801%
+Affected: 11.601%
 253
-Has Disease 27.801%
+Affected: 11.601%
 254
-Has Disease 27.801%
+Affected: 11.601%
 255
-Has Disease 27.801%
+Affected: 11.601%
 256
-Has Disease 28.2%
+Affected: 11.601%
 257
-Has Disease 28.3%
+Affected: 11.601%
 258
-Has Disease 28.5%
+Affected: 11.8%
 259
-Has Disease 28.8%
+Affected: 11.8%
 260
-Has Disease 28.8%
+Affected: 12%
 261
-Has Disease 28.9%
+Affected: 12.4%
 262
-Has Disease 29%
+Affected: 12.6%
 263
-Has Disease 29.2%
+Affected: 12.6%
 264
-Has Disease 29.3%
+Affected: 12.6%
 265
-Has Disease 29.6%
+Affected: 12.6%
 266
-Has Disease 29.8%
+Affected: 12.8%
 267
-Has Disease 30.1%
+Affected: 12.8%
 268
-Has Disease 30.3%
+Affected: 12.8%
 269
-Has Disease 30.3%
+Affected: 12.8%
 270
-Has Disease 30.5%
+Affected: 12.8%
 271
-Has Disease 30.7%
+Affected: 12.8%
 272
-Has Disease 30.9%
+Affected: 12.8%
 273
-Has Disease 31.2%
+Affected: 12.8%
 274
-Has Disease 31.5%
+Affected: 12.8%
 275
-Has Disease 31.7%
+Affected: 12.8%
 276
-Has Disease 31.8%
+Affected: 12.8%
 277
-Has Disease 31.8%
+Affected: 13%
 278
-Has Disease 32.301%
+Affected: 13%
 279
-Has Disease 32.301%
+Affected: 13%
 280
-Has Disease 32.4%
+Affected: 13%
 281
-Has Disease 32.7%
+Affected: 13.201%
 282
-Has Disease 33.1%
+Affected: 13.601%
 283
-Has Disease 33.2%
+Affected: 13.601%
 284
-Has Disease 33.2%
+Affected: 13.8%
 285
-Has Disease 33.6%
+Affected: 14.001%
 286
-Has Disease 33.801%
+Affected: 14.001%
 287
-Has Disease 33.901%
+Affected: 14.001%
 288
-Has Disease 34.1%
+Affected: 14.2%
 289
-Has Disease 34.4%
+Affected: 14.2%
 290
-Has Disease 34.6%
+Affected: 14.2%
 291
-Has Disease 34.6%
+Affected: 14.2%
 292
-Has Disease 34.8%
+Affected: 14.2%
 293
-Has Disease 34.8%
+Affected: 14.2%
 294
-Has Disease 34.9%
+Affected: 14.4%
 295
-Has Disease 34.9%
+Affected: 14.6%
 296
-Has Disease 35.2%
+Affected: 14.6%
 297
-Has Disease 35.3%
+Affected: 14.6%
 298
-Has Disease 35.7%
+Affected: 14.8%
 299
-Has Disease 35.7%
+Affected: 15.2%
 300
-Has Disease 35.9%
+Affected: 15.2%
 301
-Has Disease 36.2%
+Affected: 15.2%
 302
-Has Disease 36.4%
+Affected: 15.4%
 303
-Has Disease 36.7%
+Affected: 15.4%
 304
-Has Disease 36.8%
+Affected: 15.6%
 305
-Has Disease 37%
+Affected: 15.6%
 306
-Has Disease 37.3%
+Affected: 15.6%
 307
-Has Disease 37.6%
+Affected: 15.6%
 308
-Has Disease 38.1%
+Affected: 15.6%
 309
-Has Disease 38.2%
+Affected: 15.6%
 310
-Has Disease 38.3%
+Affected: 15.6%
 311
-Has Disease 38.5%
+Affected: 15.6%
 312
-Has Disease 38.9%
+Affected: 15.6%
 313
-Has Disease 39.2%
+Affected: 15.6%
 314
-Has Disease 39.6%
+Affected: 15.6%
 315
-Has Disease 39.6%
+Affected: 15.6%
 316
-Has Disease 39.6%
+Affected: 15.6%
 317
-Has Disease 40%
+Affected: 15.8%
 318
-Has Disease 40.1%
+Affected: 16%
 319
-Has Disease 40.5%
+Affected: 16%
 320
-Has Disease 40.5%
+Affected: 16.2%
 321
-Has Disease 40.6%
+Affected: 16.2%
 322
-Has Disease 40.9%
+Affected: 16.2%
 323
-Has Disease 41.1%
+Affected: 16.2%
 324
-Has Disease 41.3%
+Affected: 16.401%
 325
-Has Disease 41.6%
+Affected: 16.6%
 326
-Has Disease 41.7%
+Affected: 16.6%
 327
-Has Disease 41.9%
+Affected: 16.6%
 328
-Has Disease 42.3%
+Affected: 16.8%
 329
-Has Disease 42.5%
+Affected: 17%
 330
-Has Disease 42.7%
+Affected: 17%
 331
-Has Disease 43%
+Affected: 17%
 332
-Has Disease 43.2%
+Affected: 17%
 333
-Has Disease 43.4%
+Affected: 17%
 334
-Has Disease 43.7%
+Affected: 17%
 335
-Has Disease 44%
+Affected: 17%
 336
-Has Disease 44.4%
+Affected: 17%
 337
-Has Disease 44.4%
+Affected: 17%
 338
-Has Disease 44.5%
+Affected: 17%
 339
-Has Disease 44.7%
+Affected: 17.2%
 340
-Has Disease 44.7%
+Affected: 17.6%
 341
-Has Disease 45.1%
+Affected: 17.6%
 342
-Has Disease 45.301%
+Affected: 17.8%
 343
-Has Disease 45.7%
+Affected: 17.8%
 344
-Has Disease 45.7%
+Affected: 17.8%
 345
-Has Disease 46.2%
+Affected: 18%
 346
-Has Disease 46.301%
+Affected: 18%
 347
-Has Disease 46.6%
+Affected: 18%
 348
-Has Disease 46.9%
+Affected: 18.2%
 349
-Has Disease 47.2%
+Affected: 18.2%
 350
-Has Disease 47.4%
+Affected: 18.2%
 351
-Has Disease 47.6%
+Affected: 18.4%
 352
-Has Disease 47.8%
+Affected: 18.4%
 353
-Has Disease 48%
+Affected: 18.4%
 354
-Has Disease 48.2%
+Affected: 18.4%
 355
-Has Disease 48.5%
+Affected: 18.4%
 356
-Has Disease 48.5%
+Affected: 18.4%
 357
-Has Disease 48.6%
+Affected: 18.4%
 358
-Has Disease 48.6%
+Affected: 18.4%
 359
-Has Disease 48.6%
+Affected: 18.6%
 360
-Has Disease 48.8%
+Affected: 18.8%
 361
-Has Disease 48.9%
+Affected: 18.8%
 362
-Has Disease 49%
+Affected: 18.8%
 363
-Has Disease 49.5%
+Affected: 18.8%
 364
-Has Disease 49.5%
+Affected: 18.8%
 365
-Has Disease 49.6%
+Affected: 18.8%
 366
-Has Disease 49.8%
+Affected: 19%
 367
-Has Disease 50.1%
+Affected: 19.2%
 368
-Has Disease 50.4%
+Affected: 19.2%
 369
-Has Disease 50.5%
+Affected: 19.2%
 370
-Has Disease 50.9%
+Affected: 19.2%
 371
-Has Disease 51%
+Affected: 19.2%
 372
-Has Disease 51.1%
+Affected: 19.401%
 373
-Has Disease 51.301%
+Affected: 19.8%
 374
-Has Disease 51.4%
+Affected: 20%
 375
-Has Disease 51.6%
+Affected: 20%
 376
-Has Disease 51.801%
+Affected: 20%
 377
-Has Disease 52%
+Affected: 20%
 378
-Has Disease 52.2%
+Affected: 20.201%
 379
-Has Disease 52.7%
+Affected: 20.201%
 380
-Has Disease 52.7%
+Affected: 20.201%
 381
-Has Disease 52.901%
+Affected: 20.201%
 382
-Has Disease 53.301%
+Affected: 20.201%
 383
-Has Disease 53.5%
+Affected: 20.4%
 384
-Has Disease 53.5%
+Affected: 20.4%
 385
-Has Disease 53.7%
+Affected: 20.4%
 386
-Has Disease 53.801%
+Affected: 20.4%
 387
-Has Disease 53.801%
+Affected: 20.4%
 388
-Has Disease 54%
+Affected: 20.4%
 389
-Has Disease 54.1%
+Affected: 20.4%
 390
-Has Disease 54.301%
+Affected: 20.4%
 391
-Has Disease 54.401%
+Affected: 20.4%
 392
-Has Disease 54.501%
+Affected: 20.4%
 393
-Has Disease 54.801%
+Affected: 20.6%
 394
-Has Disease 55.1%
+Affected: 20.6%
 395
-Has Disease 55.2%
+Affected: 20.6%
 396
-Has Disease 55.301%
+Affected: 20.6%
 397
-Has Disease 55.401%
+Affected: 20.6%
 398
-Has Disease 55.501%
+Affected: 20.6%
 399
-Has Disease 55.601%
+Affected: 20.8%
 400
-Has Disease 55.801%
+Affected: 21%
 401
-Has Disease 55.901%
+Affected: 21.2%
 402
-Has Disease 56.001%
+Affected: 21.2%
 403
-Has Disease 56.2%
+Affected: 21.2%
 404
-Has Disease 56.3%
+Affected: 21.2%
 405
-Has Disease 56.5%
+Affected: 21.2%
 406
-Has Disease 57.1%
+Affected: 21.2%
 407
-Has Disease 57.2%
+Affected: 21.2%
 408
-Has Disease 57.2%
+Affected: 21.4%
 409
-Has Disease 57.2%
+Affected: 21.6%
 410
-Has Disease 57.4%
+Affected: 21.6%
 411
-Has Disease 57.6%
+Affected: 22%
 412
-Has Disease 57.7%
+Affected: 22%
 413
-Has Disease 57.9%
+Affected: 22%
 414
-Has Disease 57.9%
+Affected: 22%
 415
-Has Disease 58.1%
+Affected: 22.401%
 416
-Has Disease 58.6%
+Affected: 22.401%
 417
-Has Disease 58.9%
+Affected: 22.401%
 418
-Has Disease 58.9%
+Affected: 22.401%
 419
-Has Disease 59.2%
+Affected: 22.6%
 420
-Has Disease 59.4%
+Affected: 22.8%
 421
-Has Disease 59.5%
+Affected: 22.8%
 422
-Has Disease 59.7%
+Affected: 22.8%
 423
-Has Disease 60.1%
+Affected: 22.8%
 424
-Has Disease 60.2%
+Affected: 22.8%
 425
-Has Disease 60.3%
+Affected: 23%
 426
-Has Disease 60.7%
+Affected: 23%
 427
-Has Disease 61.1%
+Affected: 23%
 428
-Has Disease 61.3%
+Affected: 23%
 429
-Has Disease 61.5%
+Affected: 23.201%
 430
-Has Disease 61.5%
+Affected: 23.6%
 431
-Has Disease 61.8%
+Affected: 23.6%
 432
-Has Disease 62.2%
+Affected: 23.6%
 433
-Has Disease 62.2%
+Affected: 23.6%
 434
-Has Disease 62.4%
+Affected: 23.8%
 435
-Has Disease 62.5%
+Affected: 23.8%
 436
-Has Disease 62.7%
+Affected: 23.8%
 437
-Has Disease 62.8%
+Affected: 23.8%
 438
-Has Disease 62.9%
+Affected: 23.8%
 439
-Has Disease 63%
+Affected: 23.8%
 440
-Has Disease 63.2%
+Affected: 23.8%
 441
-Has Disease 63.3%
+Affected: 24%
 442
-Has Disease 63.6%
+Affected: 24%
 443
-Has Disease 63.6%
+Affected: 24%
 444
-Has Disease 63.6%
+Affected: 24%
 445
-Has Disease 63.7%
+Affected: 24%
 446
-Has Disease 63.801%
+Affected: 24.2%
 447
-Has Disease 63.9%
+Affected: 24.2%
 448
-Has Disease 64.3%
+Affected: 24.4%
 449
-Has Disease 64.5%
+Affected: 24.4%
 450
-Has Disease 64.9%
+Affected: 24.4%
 451
-Has Disease 64.9%
+Affected: 24.4%
 452
-Has Disease 65%
+Affected: 24.4%
 453
-Has Disease 65.2%
+Affected: 24.6%
 454
-Has Disease 65.4%
+Affected: 24.6%
 455
-Has Disease 65.7%
+Affected: 24.6%
 456
-Has Disease 65.7%
+Affected: 25%
 457
-Has Disease 65.8%
+Affected: 25%
 458
-Has Disease 66%
+Affected: 25.2%
 459
-Has Disease 66.101%
+Affected: 25.2%
 460
-Has Disease 66.4%
+Affected: 25.8%
 461
-Has Disease 66.601%
+Affected: 26%
 462
-Has Disease 67.101%
+Affected: 26%
 463
-Has Disease 67.4%
+Affected: 26.201%
 464
-Has Disease 67.4%
+Affected: 26.201%
 465
-Has Disease 67.5%
+Affected: 26.201%
 466
-Has Disease 67.7%
+Affected: 26.401%
 467
-Has Disease 67.801%
+Affected: 26.6%
 468
-Has Disease 68.101%
+Affected: 26.6%
 469
-Has Disease 68.2%
+Affected: 26.8%
 470
-Has Disease 68.5%
+Affected: 27%
 471
-Has Disease 68.7%
+Affected: 27.201%
 472
-Has Disease 68.9%
+Affected: 27.6%
 473
-Has Disease 69.2%
+Affected: 27.801%
 474
-Has Disease 69.4%
+Affected: 28.001%
 475
-Has Disease 69.6%
+Affected: 28.2%
 476
-Has Disease 69.7%
+Affected: 28.8%
 477
-Has Disease 70.2%
+Affected: 28.8%
 478
-Has Disease 70.3%
+Affected: 28.8%
 479
-Has Disease 70.3%
+Affected: 29%
 480
-Has Disease 70.4%
+Affected: 29%
 481
-Has Disease 70.6%
+Affected: 29.2%
 482
-Has Disease 70.7%
+Affected: 29.4%
 483
-Has Disease 71%
+Affected: 29.6%
 484
-Has Disease 71.4%
+Affected: 29.8%
 485
-Has Disease 71.6%
+Affected: 30%
 486
-Has Disease 71.6%
+Affected: 30.2%
 487
-Has Disease 71.7%
+Affected: 30.4%
 488
-Has Disease 71.8%
+Affected: 30.6%
 489
-Has Disease 71.8%
+Affected: 30.6%
 490
-Has Disease 71.8%
+Affected: 30.8%
 491
-Has Disease 72.1%
+Affected: 30.8%
 492
-Has Disease 72.3%
+Affected: 31%
 493
-Has Disease 72.5%
+Affected: 31%
 494
-Has Disease 72.6%
+Affected: 31%
 495
-Has Disease 72.6%
+Affected: 31.2%
 496
-Has Disease 72.8%
+Affected: 31.2%
 497
-Has Disease 72.8%
+Affected: 31.4%
 498
-Has Disease 73%
+Affected: 31.4%
 499
-Has Disease 73.2%
+Affected: 31.6%
 500
-Has Disease 73.3%
+Affected: 31.8%
 501
-Has Disease 73.3%
+Affected: 32%
 502
-Has Disease 73.3%
+Affected: 32.2%
 503
-Has Disease 73.3%
+Affected: 32.4%
 504
-Has Disease 73.3%
+Affected: 32.4%
 505
-Has Disease 73.3%
+Affected: 32.6%
 506
-Has Disease 73.3%
+Affected: 32.801%
 507
-Has Disease 73.6%
+Affected: 32.801%
 508
-Has Disease 73.6%
+Affected: 32.801%
 509
-Has Disease 73.6%
+Affected: 32.801%
 510
-Has Disease 73.6%
+Affected: 32.801%
 511
-Has Disease 73.8%
+Affected: 33.2%
 512
-Has Disease 73.9%
+Affected: 33.2%
 513
-Has Disease 74.1%
+Affected: 33.2%
 514
-Has Disease 74.1%
+Affected: 33.2%
 515
-Has Disease 74.1%
+Affected: 33.2%
 516
-Has Disease 74.1%
+Affected: 33.2%
 517
-Has Disease 74.2%
+Affected: 33.4%
 518
-Has Disease 74.3%
+Affected: 33.4%
 519
-Has Disease 74.4%
+Affected: 34%
 520
-Has Disease 74.6%
+Affected: 34%
 521
-Has Disease 74.6%
+Affected: 34.2%
 522
-Has Disease 74.6%
+Affected: 34.4%
 523
-Has Disease 74.8%
+Affected: 34.6%
 524
-Has Disease 75.2%
+Affected: 34.8%
 525
-Has Disease 75.5%
+Affected: 34.8%
 526
-Has Disease 75.5%
+Affected: 34.8%
 527
-Has Disease 75.5%
+Affected: 34.8%
 528
-Has Disease 75.7%
+Affected: 34.8%
 529
-Has Disease 75.7%
+Affected: 35%
 530
-Has Disease 75.9%
+Affected: 35%
 531
-Has Disease 75.9%
+Affected: 35%
 532
-Has Disease 76.1%
+Affected: 35%
 533
-Has Disease 76.2%
+Affected: 35.2%
 534
-Has Disease 76.5%
+Affected: 35.2%
 535
-Has Disease 76.5%
+Affected: 35.2%
 536
-Has Disease 76.6%
+Affected: 35.4%
 537
-Has Disease 76.7%
+Affected: 35.4%
 538
-Has Disease 76.8%
+Affected: 35.4%
 539
-Has Disease 76.8%
+Affected: 35.4%
 540
-Has Disease 77.2%
+Affected: 35.4%
 541
-Has Disease 77.3%
+Affected: 35.8%
 542
-Has Disease 77.4%
+Affected: 36.4%
 543
-Has Disease 77.4%
+Affected: 36.6%
 544
-Has Disease 77.601%
+Affected: 36.8%
 545
-Has Disease 77.9%
+Affected: 36.8%
 546
-Has Disease 77.9%
+Affected: 36.8%
 547
-Has Disease 78.101%
+Affected: 36.8%
 548
-Has Disease 78.2%
+Affected: 36.8%
 549
-Has Disease 78.2%
+Affected: 36.8%
 550
-Has Disease 78.3%
+Affected: 36.8%
 551
-Has Disease 78.3%
+Affected: 36.8%
 552
-Has Disease 78.3%
+Affected: 37.2%
 553
-Has Disease 78.4%
+Affected: 37.2%
 554
-Has Disease 78.601%
+Affected: 37.2%
 555
-Has Disease 79.3%
+Affected: 37.2%
 556
-Has Disease 79.4%
+Affected: 37.2%
 557
-Has Disease 79.601%
+Affected: 37.4%
 558
-Has Disease 79.601%
+Affected: 37.4%
 559
-Has Disease 79.7%
+Affected: 37.6%
 560
-Has Disease 79.7%
+Affected: 37.8%
 561
-Has Disease 79.7%
+Affected: 37.8%
 562
-Has Disease 79.7%
+Affected: 37.8%
 563
-Has Disease 79.801%
+Affected: 38%
 564
-Has Disease 79.801%
+Affected: 38%
 565
-Has Disease 80%
+Affected: 38.2%
 566
-Has Disease 80%
+Affected: 38.4%
 567
-Has Disease 80.2%
+Affected: 38.4%
 568
-Has Disease 80.301%
+Affected: 38.6%
 569
-Has Disease 80.5%
+Affected: 38.6%
 570
-Has Disease 80.601%
+Affected: 38.6%
 571
-Has Disease 80.7%
+Affected: 38.801%
 572
-Has Disease 80.9%
+Affected: 39.2%
 573
-Has Disease 80.9%
+Affected: 39.2%
 574
-Has Disease 81%
+Affected: 39.801%
 575
-Has Disease 81.2%
+Affected: 40%
 576
-Has Disease 81.3%
+Affected: 40%
 577
-Has Disease 81.5%
+Affected: 40.2%
 578
-Has Disease 81.6%
+Affected: 40.2%
 579
-Has Disease 81.9%
+Affected: 40.2%
 580
-Has Disease 82%
+Affected: 40.2%
 581
-Has Disease 82%
+Affected: 40.401%
 582
-Has Disease 82%
+Affected: 40.6%
 583
-Has Disease 82%
+Affected: 40.6%
 584
-Has Disease 82%
+Affected: 40.6%
 585
-Has Disease 82%
+Affected: 40.6%
 586
-Has Disease 82.1%
+Affected: 40.6%
 587
-Has Disease 82.3%
+Affected: 40.6%
 588
-Has Disease 82.3%
+Affected: 41%
 589
-Has Disease 82.5%
+Affected: 41%
 590
-Has Disease 82.6%
+Affected: 41.4%
 591
-Has Disease 82.7%
+Affected: 41.6%
 592
-Has Disease 82.7%
+Affected: 41.6%
 593
-Has Disease 82.8%
+Affected: 41.6%
 594
-Has Disease 83%
+Affected: 41.6%
 595
-Has Disease 83.2%
+Affected: 41.6%
 596
-Has Disease 83.2%
+Affected: 41.6%
 597
-Has Disease 83.4%
+Affected: 41.6%
 598
-Has Disease 83.6%
+Affected: 41.8%
 599
-Has Disease 83.7%
+Affected: 41.8%
 600
-Has Disease 83.8%
+Affected: 42%
 601
-Has Disease 83.8%
+Affected: 42%
 602
-Has Disease 84%
+Affected: 42%
 603
-Has Disease 84.1%
+Affected: 42.2%
 604
-Has Disease 84.1%
+Affected: 42.4%
 605
-Has Disease 84.2%
+Affected: 42.6%
 606
-Has Disease 84.3%
+Affected: 42.6%
 607
-Has Disease 84.4%
+Affected: 42.8%
 608
-Has Disease 84.5%
+Affected: 42.8%
 609
-Has Disease 84.6%
+Affected: 43%
 610
-Has Disease 84.6%
+Affected: 43%
 611
-Has Disease 84.7%
+Affected: 43%
 612
-Has Disease 84.7%
+Affected: 43.2%
 613
-Has Disease 84.9%
+Affected: 43.6%
 614
-Has Disease 85%
+Affected: 43.6%
 615
-Has Disease 85%
+Affected: 43.8%
 616
-Has Disease 85.3%
+Affected: 43.8%
 617
-Has Disease 85.3%
+Affected: 44.2%
 618
-Has Disease 85.4%
+Affected: 44.2%
 619
-Has Disease 85.5%
+Affected: 44.2%
 620
-Has Disease 85.5%
+Affected: 44.2%
 621
-Has Disease 85.5%
+Affected: 44.2%
 622
-Has Disease 85.5%
+Affected: 44.4%
 623
-Has Disease 85.5%
+Affected: 44.4%
 624
-Has Disease 85.5%
+Affected: 44.4%
 625
-Has Disease 85.6%
+Affected: 44.4%
 626
-Has Disease 85.7%
+Affected: 44.4%
 627
-Has Disease 85.7%
+Affected: 44.4%
 628
-Has Disease 85.8%
+Affected: 44.6%
 629
-Has Disease 85.8%
+Affected: 44.6%
 630
-Has Disease 85.8%
+Affected: 44.6%
 631
-Has Disease 85.8%
+Affected: 44.6%
 632
-Has Disease 85.9%
+Affected: 44.6%
 633
-Has Disease 86.1%
+Affected: 44.6%
 634
-Has Disease 86.2%
+Affected: 44.6%
 635
-Has Disease 86.3%
+Affected: 44.6%
 636
-Has Disease 86.4%
+Affected: 44.6%
 637
-Has Disease 86.5%
+Affected: 44.6%
 638
-Has Disease 86.5%
+Affected: 44.6%
 639
-Has Disease 86.5%
+Affected: 44.801%
 640
-Has Disease 86.7%
+Affected: 44.801%
 641
-Has Disease 86.8%
+Affected: 44.801%
 642
-Has Disease 86.9%
+Affected: 44.801%
 643
-Has Disease 86.9%
+Affected: 44.801%
 644
-Has Disease 87%
+Affected: 45%
 645
-Has Disease 87.1%
+Affected: 45%
 646
-Has Disease 87.1%
+Affected: 45%
 647
-Has Disease 87.2%
+Affected: 45%
 648
-Has Disease 87.5%
+Affected: 45%
 649
-Has Disease 87.6%
+Affected: 45%
 650
-Has Disease 87.8%
+Affected: 45.2%
 651
-Has Disease 87.8%
+Affected: 45.2%
 652
-Has Disease 87.8%
+Affected: 45.2%
 653
-Has Disease 87.8%
+Affected: 45.2%
 654
-Has Disease 87.8%
+Affected: 45.2%
 655
-Has Disease 87.9%
+Affected: 45.2%
 656
-Has Disease 88.1%
+Affected: 45.4%
 657
-Has Disease 88.3%
+Affected: 45.6%
 658
-Has Disease 88.3%
+Affected: 45.6%
 659
-Has Disease 88.5%
+Affected: 45.6%
 660
-Has Disease 88.5%
+Affected: 45.6%
 661
-Has Disease 88.6%
+Affected: 45.801%
 662
-Has Disease 88.6%
+Affected: 45.801%
 663
-Has Disease 88.7%
+Affected: 46.2%
 664
-Has Disease 88.7%
+Affected: 46.401%
 665
-Has Disease 88.7%
+Affected: 46.401%
 666
-Has Disease 88.7%
+Affected: 46.401%
 667
-Has Disease 88.7%
+Affected: 46.401%
 668
-Has Disease 88.8%
+Affected: 46.401%
 669
-Has Disease 88.8%
+Affected: 46.401%
 670
-Has Disease 88.8%
+Affected: 46.401%
 671
-Has Disease 88.9%
+Affected: 46.401%
 672
-Has Disease 88.9%
+Affected: 46.401%
 673
-Has Disease 89%
+Affected: 46.401%
 674
-Has Disease 89.2%
+Affected: 46.6%
 675
-Has Disease 89.2%
+Affected: 46.6%
 676
-Has Disease 89.2%
+Affected: 46.801%
 677
-Has Disease 89.2%
+Affected: 46.801%
 678
-Has Disease 89.3%
+Affected: 46.801%
 679
-Has Disease 89.5%
+Affected: 47%
 680
-Has Disease 89.5%
+Affected: 47.2%
 681
-Has Disease 89.7%
+Affected: 47.2%
 682
-Has Disease 89.8%
+Affected: 47.2%
 683
-Has Disease 90%
+Affected: 47.6%
 684
-Has Disease 90%
+Affected: 47.6%
 685
-Has Disease 90.101%
+Affected: 47.6%
 686
-Has Disease 90.101%
+Affected: 47.6%
 687
-Has Disease 90.101%
+Affected: 47.8%
 688
-Has Disease 90.101%
+Affected: 48%
 689
-Has Disease 90.2%
+Affected: 48%
 690
-Has Disease 90.2%
+Affected: 48.2%
 691
-Has Disease 90.3%
+Affected: 48.4%
 692
-Has Disease 90.3%
+Affected: 48.4%
 693
-Has Disease 90.4%
+Affected: 48.6%
 694
-Has Disease 90.5%
+Affected: 49%
 695
-Has Disease 90.5%
+Affected: 49%
 696
-Has Disease 90.601%
+Affected: 49%
 697
-Has Disease 90.8%
+Affected: 49%
 698
-Has Disease 90.8%
+Affected: 49.2%
 699
-Has Disease 91%
+Affected: 49.2%
 700
-Has Disease 91%
+Affected: 49.4%
 701
-Has Disease 91.3%
+Affected: 49.6%
 702
-Has Disease 91.3%
+Affected: 49.6%
 703
-Has Disease 91.3%
+Affected: 49.6%
 704
-Has Disease 91.3%
+Affected: 49.8%
 705
-Has Disease 91.5%
+Affected: 49.8%
 706
-Has Disease 91.601%
+Affected: 49.8%
 707
-Has Disease 91.9%
+Affected: 49.8%
 708
-Has Disease 91.9%
+Affected: 50%
 709
-Has Disease 92%
+Affected: 50%
 710
-Has Disease 92%
+Affected: 50%
 711
-Has Disease 92.101%
+Affected: 50%
 712
-Has Disease 92.301%
+Affected: 50.2%
 713
-Has Disease 92.301%
+Affected: 50.2%
 714
-Has Disease 92.301%
+Affected: 50.4%
 715
-Has Disease 92.4%
+Affected: 50.4%
 716
-Has Disease 92.4%
+Affected: 50.4%
 717
-Has Disease 92.4%
+Affected: 50.6%
 718
-Has Disease 92.4%
+Affected: 50.6%
 719
-Has Disease 92.4%
+Affected: 50.6%
 720
-Has Disease 92.601%
+Affected: 50.6%
 721
-Has Disease 92.7%
+Affected: 50.6%
 722
-Has Disease 92.9%
+Affected: 50.8%
 723
-Has Disease 92.9%
+Affected: 51%
 724
-Has Disease 92.9%
+Affected: 51%
 725
-Has Disease 92.9%
+Affected: 51.4%
 726
-Has Disease 92.9%
+Affected: 51.6%
 727
-Has Disease 92.9%
+Affected: 51.6%
 728
-Has Disease 92.9%
+Affected: 51.801%
 729
-Has Disease 92.9%
+Affected: 52.2%
 730
-Has Disease 92.9%
+Affected: 52.2%
 731
-Has Disease 92.9%
+Affected: 52.401%
 732
-Has Disease 92.9%
+Affected: 52.401%
 733
-Has Disease 92.9%
+Affected: 52.401%
 734
-Has Disease 92.9%
+Affected: 52.401%
 735
-Has Disease 93%
+Affected: 52.401%
 736
-Has Disease 93%
+Affected: 52.6%
 737
-Has Disease 93.101%
+Affected: 52.6%
 738
-Has Disease 93.101%
+Affected: 52.801%
 739
-Has Disease 93.2%
+Affected: 52.801%
 740
-Has Disease 93.301%
+Affected: 52.801%
 741
-Has Disease 93.4%
+Affected: 52.801%
 742
-Has Disease 93.4%
+Affected: 52.801%
 743
-Has Disease 93.5%
+Affected: 52.801%
 744
-Has Disease 93.7%
+Affected: 52.801%
 745
-Has Disease 93.7%
+Affected: 53%
 746
-Has Disease 93.7%
+Affected: 53.401%
 747
-Has Disease 93.8%
+Affected: 53.401%
 748
-Has Disease 93.8%
+Affected: 53.401%
 749
-Has Disease 93.8%
+Affected: 53.401%
 750
-Has Disease 93.8%
+Affected: 53.6%
 751
-Has Disease 93.8%
+Affected: 53.6%
 752
-Has Disease 93.9%
+Affected: 53.6%
 753
-Has Disease 93.9%
+Affected: 53.801%
 754
-Has Disease 93.9%
+Affected: 53.801%
 755
-Has Disease 93.9%
+Affected: 53.801%
 756
-Has Disease 94.2%
+Affected: 54%
 757
-Has Disease 94.2%
+Affected: 54%
 758
-Has Disease 94.3%
+Affected: 54%
 759
-Has Disease 94.3%
+Affected: 54.2%
 760
-Has Disease 94.3%
+Affected: 54.2%
 761
-Has Disease 94.3%
+Affected: 54.2%
 762
-Has Disease 94.4%
+Affected: 54.2%
 763
-Has Disease 94.4%
+Affected: 54.2%
 764
-Has Disease 94.5%
+Affected: 54.401%
 765
-Has Disease 94.5%
+Affected: 54.401%
 766
-Has Disease 94.5%
+Affected: 54.401%
 767
-Has Disease 94.5%
+Affected: 54.401%
 768
-Has Disease 94.5%
+Affected: 54.6%
 769
-Has Disease 94.5%
+Affected: 54.6%
 770
-Has Disease 94.5%
+Affected: 54.6%
 771
-Has Disease 94.7%
+Affected: 54.801%
 772
-Has Disease 94.7%
+Affected: 55.2%
 773
-Has Disease 94.7%
+Affected: 55.2%
 774
-Has Disease 94.7%
+Affected: 55.401%
 775
-Has Disease 94.7%
+Affected: 55.401%
 776
-Has Disease 94.7%
+Affected: 55.601%
 777
-Has Disease 94.8%
+Affected: 55.601%
 778
-Has Disease 94.9%
+Affected: 55.601%
 779
-Has Disease 94.9%
+Affected: 55.601%
 780
-Has Disease 95.1%
+Affected: 55.801%
 781
-Has Disease 95.1%
+Affected: 55.801%
 782
-Has Disease 95.2%
+Affected: 56.001%
 783
-Has Disease 95.2%
+Affected: 56.2%
 784
-Has Disease 95.2%
+Affected: 56.4%
 785
-Has Disease 95.2%
+Affected: 56.4%
 786
-Has Disease 95.2%
+Affected: 56.4%
 787
-Has Disease 95.3%
+Affected: 56.4%
 788
-Has Disease 95.3%
+Affected: 56.4%
 789
-Has Disease 95.4%
+Affected: 56.6%
 790
-Has Disease 95.4%
+Affected: 56.6%
 791
-Has Disease 95.4%
+Affected: 56.6%
 792
-Has Disease 95.4%
+Affected: 56.8%
 793
-Has Disease 95.4%
+Affected: 56.8%
 794
-Has Disease 95.5%
+Affected: 56.8%
 795
-Has Disease 95.6%
+Affected: 56.8%
 796
-Has Disease 95.6%
+Affected: 57%
 797
-Has Disease 95.6%
+Affected: 57%
 798
-Has Disease 95.7%
+Affected: 57.4%
 799
-Has Disease 95.7%
+Affected: 57.4%
 800
-Has Disease 95.7%
+Affected: 57.8%
 801
-Has Disease 95.7%
+Affected: 57.8%
 802
-Has Disease 95.7%
+Affected: 57.8%
 803
-Has Disease 95.7%
+Affected: 58%
 804
-Has Disease 95.7%
+Affected: 58%
 805
-Has Disease 95.7%
+Affected: 58%
 806
-Has Disease 95.8%
+Affected: 58%
 807
-Has Disease 95.8%
+Affected: 58.2%
 808
-Has Disease 96%
+Affected: 58.4%
 809
-Has Disease 96%
+Affected: 58.4%
 810
-Has Disease 96.1%
+Affected: 58.4%
 811
-Has Disease 96.1%
+Affected: 58.4%
 812
-Has Disease 96.3%
+Affected: 58.4%
 813
-Has Disease 96.5%
+Affected: 58.4%
 814
-Has Disease 96.5%
+Affected: 58.4%
 815
-Has Disease 96.5%
+Affected: 58.4%
 816
-Has Disease 96.6%
+Affected: 58.4%
 817
-Has Disease 96.6%
+Affected: 58.6%
 818
-Has Disease 96.6%
+Affected: 58.8%
 819
-Has Disease 96.6%
+Affected: 59%
 820
-Has Disease 96.6%
+Affected: 59%
 821
-Has Disease 96.6%
+Affected: 59%
 822
-Has Disease 96.6%
+Affected: 59.4%
 823
-Has Disease 96.6%
+Affected: 59.4%
 824
-Has Disease 96.6%
+Affected: 59.4%
 825
-Has Disease 96.6%
+Affected: 59.6%
 826
-Has Disease 96.6%
+Affected: 59.6%
 827
-Has Disease 96.7%
+Affected: 59.8%
 828
-Has Disease 96.7%
+Affected: 59.8%
 829
-Has Disease 96.7%
+Affected: 60%
 830
-Has Disease 96.7%
+Affected: 60.4%
 831
-Has Disease 96.7%
+Affected: 60.4%
 832
-Has Disease 96.9%
+Affected: 60.4%
 833
-Has Disease 96.9%
+Affected: 60.4%
 834
-Has Disease 96.9%
+Affected: 60.4%
 835
-Has Disease 96.9%
+Affected: 61%
 836
-Has Disease 97%
+Affected: 61.2%
 837
-Has Disease 97%
+Affected: 61.2%
 838
-Has Disease 97%
+Affected: 61.6%
 839
-Has Disease 97%
+Affected: 61.6%
 840
-Has Disease 97%
+Affected: 61.6%
 841
-Has Disease 97%
+Affected: 61.6%
 842
-Has Disease 97.1%
+Affected: 61.6%
 843
-Has Disease 97.1%
+Affected: 61.8%
 844
-Has Disease 97.2%
+Affected: 61.8%
 845
-Has Disease 97.2%
+Affected: 61.8%
 846
-Has Disease 97.2%
+Affected: 62%
 847
-Has Disease 97.2%
+Affected: 62%
 848
-Has Disease 97.2%
+Affected: 62.2%
 849
-Has Disease 97.2%
+Affected: 63%
 850
-Has Disease 97.2%
+Affected: 63%
 851
-Has Disease 97.2%
+Affected: 63%
 852
-Has Disease 97.2%
+Affected: 63%
 853
-Has Disease 97.2%
+Affected: 63%
 854
-Has Disease 97.2%
+Affected: 63%
 855
-Has Disease 97.2%
+Affected: 63.2%
 856
-Has Disease 97.2%
+Affected: 63.6%
 857
-Has Disease 97.3%
+Affected: 64%
 858
-Has Disease 97.3%
+Affected: 64%
 859
-Has Disease 97.3%
+Affected: 64.4%
 860
-Has Disease 97.3%
+Affected: 64.601%
 861
-Has Disease 97.4%
+Affected: 64.601%
 862
-Has Disease 97.5%
+Affected: 64.601%
 863
-Has Disease 97.5%
+Affected: 64.601%
 864
-Has Disease 97.5%
+Affected: 64.8%
 865
-Has Disease 97.5%
+Affected: 64.8%
 866
-Has Disease 97.5%
+Affected: 64.8%
 867
-Has Disease 97.5%
+Affected: 64.8%
 868
-Has Disease 97.6%
+Affected: 64.8%
 869
-Has Disease 97.7%
+Affected: 64.8%
 870
-Has Disease 97.7%
+Affected: 64.8%
 871
-Has Disease 97.7%
+Affected: 64.8%
 872
-Has Disease 97.7%
+Affected: 64.8%
 873
-Has Disease 97.7%
+Affected: 64.8%
 874
-Has Disease 97.7%
+Affected: 64.8%
 875
-Has Disease 97.7%
+Affected: 64.8%
 876
-Has Disease 97.7%
+Affected: 65%
 877
-Has Disease 97.7%
+Affected: 65%
 878
-Has Disease 97.8%
+Affected: 65.4%
 879
-Has Disease 97.8%
+Affected: 65.4%
 880
-Has Disease 97.9%
+Affected: 65.601%
 881
-Has Disease 97.9%
+Affected: 66%
 882
-Has Disease 97.9%
+Affected: 66%
 883
-Has Disease 97.9%
+Affected: 66%
 884
-Has Disease 98%
+Affected: 66.2%
 885
-Has Disease 98%
+Affected: 66.2%
 886
-Has Disease 98%
+Affected: 66.2%
 887
-Has Disease 98.2%
+Affected: 66.601%
 888
-Has Disease 98.2%
+Affected: 66.8%
 889
-Has Disease 98.3%
+Affected: 66.8%
 890
-Has Disease 98.3%
+Affected: 66.8%
 891
-Has Disease 98.3%
+Affected: 66.8%
 892
-Has Disease 98.3%
+Affected: 66.8%
 893
-Has Disease 98.3%
+Affected: 66.8%
 894
-Has Disease 98.4%
+Affected: 66.8%
 895
-Has Disease 98.4%
+Affected: 67%
 896
-Has Disease 98.4%
+Affected: 67.2%
 897
-Has Disease 98.4%
+Affected: 67.2%
 898
-Has Disease 98.4%
+Affected: 67.2%
 899
-Has Disease 98.4%
+Affected: 67.4%
 900
-Has Disease 98.4%
+Affected: 67.4%
 901
-Has Disease 98.4%
+Affected: 67.601%
 902
-Has Disease 98.4%
+Affected: 67.601%
 903
-Has Disease 98.4%
+Affected: 67.601%
 904
-Has Disease 98.5%
+Affected: 67.801%
 905
-Has Disease 98.5%
+Affected: 67.801%
 906
-Has Disease 98.5%
+Affected: 67.801%
 907
-Has Disease 98.5%
+Affected: 67.801%
 908
-Has Disease 98.6%
+Affected: 67.801%
 909
-Has Disease 98.6%
+Affected: 68%
 910
-Has Disease 98.6%
+Affected: 68.2%
 911
-Has Disease 98.6%
+Affected: 68.2%
 912
-Has Disease 98.6%
+Affected: 68.2%
 913
-Has Disease 98.6%
+Affected: 68.2%
 914
-Has Disease 98.6%
+Affected: 68.2%
 915
-Has Disease 98.6%
+Affected: 68.2%
 916
-Has Disease 98.7%
+Affected: 68.2%
 917
-Has Disease 98.7%
+Affected: 68.4%
 918
-Has Disease 98.7%
+Affected: 68.601%
 919
-Has Disease 98.7%
+Affected: 68.601%
 920
-Has Disease 98.7%
+Affected: 68.8%
 921
-Has Disease 98.7%
+Affected: 69%
 922
-Has Disease 98.8%
+Affected: 69%
 923
-Has Disease 98.8%
+Affected: 69%
 924
-Has Disease 98.8%
+Affected: 69%
 925
-Has Disease 98.8%
+Affected: 69%
 926
-Has Disease 98.8%
+Affected: 69.2%
 927
-Has Disease 98.8%
+Affected: 69.2%
 928
-Has Disease 98.8%
+Affected: 69.6%
 929
-Has Disease 98.8%
+Affected: 69.6%
 930
-Has Disease 98.8%
+Affected: 69.6%
 931
-Has Disease 98.9%
+Affected: 69.8%
 932
-Has Disease 98.9%
+Affected: 69.8%
 933
-Has Disease 98.9%
+Affected: 69.8%
 934
-Has Disease 98.9%
+Affected: 70.2%
 935
-Has Disease 98.9%
+Affected: 70.2%
 936
-Has Disease 98.9%
+Affected: 70.2%
 937
-Has Disease 98.9%
+Affected: 70.4%
 938
-Has Disease 98.9%
+Affected: 70.4%
 939
-Has Disease 98.9%
+Affected: 70.6%
 940
-Has Disease 98.9%
+Affected: 70.8%
 941
-Has Disease 98.9%
+Affected: 70.8%
 942
-Has Disease 98.9%
+Affected: 71%
 943
-Has Disease 98.9%
+Affected: 71%
 944
-Has Disease 98.9%
+Affected: 71%
 945
-Has Disease 98.9%
+Affected: 71.2%
 946
-Has Disease 98.9%
+Affected: 71.4%
 947
-Has Disease 98.9%
+Affected: 71.6%
 948
-Has Disease 98.9%
+Affected: 71.8%
 949
-Has Disease 98.9%
+Affected: 71.8%
 950
-Has Disease 98.9%
+Affected: 71.8%
 951
-Has Disease 98.9%
+Affected: 71.8%
 952
-Has Disease 98.9%
+Affected: 71.8%
 953
-Has Disease 98.9%
+Affected: 72%
 954
-Has Disease 99%
+Affected: 72%
 955
-Has Disease 99%
+Affected: 72.2%
 956
-Has Disease 99%
+Affected: 72.2%
 957
-Has Disease 99%
+Affected: 72.4%
 958
-Has Disease 99.1%
+Affected: 72.4%
 959
-Has Disease 99.1%
+Affected: 72.6%
 960
-Has Disease 99.1%
+Affected: 72.6%
 961
-Has Disease 99.1%
+Affected: 72.6%
 962
-Has Disease 99.1%
+Affected: 72.6%
 963
-Has Disease 99.1%
+Affected: 72.6%
 964
-Has Disease 99.1%
+Affected: 72.6%
 965
-Has Disease 99.1%
+Affected: 72.6%
 966
-Has Disease 99.1%
+Affected: 72.6%
 967
-Has Disease 99.1%
+Affected: 72.8%
 968
-Has Disease 99.1%
+Affected: 72.8%
 969
-Has Disease 99.1%
+Affected: 72.8%
 970
-Has Disease 99.1%
+Affected: 72.8%
 971
-Has Disease 99.1%
+Affected: 72.8%
 972
-Has Disease 99.1%
+Affected: 72.8%
 973
-Has Disease 99.1%
+Affected: 73.2%
 974
-Has Disease 99.1%
+Affected: 73.2%
 975
-Has Disease 99.1%
+Affected: 73.2%
 976
-Has Disease 99.1%
+Affected: 73.2%
 977
-Has Disease 99.1%
+Affected: 73.4%
 978
-Has Disease 99.1%
+Affected: 73.4%
 979
-Has Disease 99.1%
+Affected: 73.4%
 980
-Has Disease 99.1%
+Affected: 73.4%
 981
-Has Disease 99.1%
+Affected: 73.8%
 982
-Has Disease 99.2%
+Affected: 74%
 983
-Has Disease 99.2%
+Affected: 74%
 984
-Has Disease 99.2%
+Affected: 74%
 985
-Has Disease 99.2%
+Affected: 74.4%
 986
-Has Disease 99.2%
+Affected: 74.6%
 987
-Has Disease 99.2%
+Affected: 74.6%
 988
-Has Disease 99.2%
+Affected: 74.8%
 989
-Has Disease 99.2%
+Affected: 75%
 990
-Has Disease 99.2%
+Affected: 75%
 991
-Has Disease 99.3%
+Affected: 75.2%
 992
-Has Disease 99.3%
+Affected: 75.2%
 993
-Has Disease 99.3%
+Affected: 75.2%
 994
-Has Disease 99.3%
+Affected: 75.2%
 995
-Has Disease 99.3%
+Affected: 75.2%
 996
-Has Disease 99.3%
+Affected: 75.2%
 997
-Has Disease 99.3%
+Affected: 75.2%
 998
-Has Disease 99.3%
+Affected: 75.4%
 999
-Has Disease 99.3%
+Affected: 75.4%
 1000
-Has Disease 99.3%
+Affected: 75.4%
 1001
-Has Disease 99.3%
+Affected: 75.6%
 1002
-Has Disease 99.3%
+Affected: 75.6%
 1003
-Has Disease 99.3%
+Affected: 75.6%
 1004
-Has Disease 99.3%
+Affected: 75.6%
 1005
-Has Disease 99.3%
+Affected: 75.8%
 1006
-Has Disease 99.3%
+Affected: 75.8%
 1007
-Has Disease 99.3%
+Affected: 75.8%
 1008
-Has Disease 99.3%
+Affected: 76%
 1009
-Has Disease 99.3%
+Affected: 76%
 1010
-Has Disease 99.3%
+Affected: 76%
 1011
-Has Disease 99.4%
+Affected: 76.2%
 1012
-Has Disease 99.4%
+Affected: 76.4%
 1013
-Has Disease 99.4%
+Affected: 76.4%
 1014
-Has Disease 99.4%
+Affected: 76.4%
 1015
-Has Disease 99.4%
+Affected: 76.4%
 1016
-Has Disease 99.4%
+Affected: 76.4%
 1017
-Has Disease 99.4%
+Affected: 76.4%
 1018
-Has Disease 99.4%
+Affected: 76.4%
 1019
-Has Disease 99.4%
+Affected: 76.6%
 1020
-Has Disease 99.4%
+Affected: 76.6%
 1021
-Has Disease 99.4%
+Affected: 76.6%
 1022
-Has Disease 99.4%
+Affected: 76.6%
 1023
-Has Disease 99.4%
+Affected: 76.6%
 1024
-Has Disease 99.4%
+Affected: 76.6%
 1025
-Has Disease 99.4%
+Affected: 76.6%
 1026
-Has Disease 99.4%
+Affected: 76.8%
 1027
-Has Disease 99.4%
+Affected: 77%
 1028
-Has Disease 99.4%
+Affected: 77%
 1029
-Has Disease 99.4%
+Affected: 77%
 1030
-Has Disease 99.4%
+Affected: 77%
 1031
-Has Disease 99.4%
+Affected: 77.2%
 1032
-Has Disease 99.4%
+Affected: 77.2%
 1033
-Has Disease 99.4%
+Affected: 77.2%
 1034
-Has Disease 99.4%
+Affected: 77.4%
 1035
-Has Disease 99.4%
+Affected: 77.4%
 1036
-Has Disease 99.4%
+Affected: 77.4%
 1037
-Has Disease 99.4%
+Affected: 77.4%
 1038
-Has Disease 99.4%
+Affected: 77.4%
 1039
-Has Disease 99.4%
+Affected: 77.4%
 1040
-Has Disease 99.4%
+Affected: 77.4%
 1041
-Has Disease 99.4%
+Affected: 77.4%
 1042
-Has Disease 99.4%
+Affected: 77.4%
 1043
-Has Disease 99.4%
+Affected: 77.4%
 1044
-Has Disease 99.4%
+Affected: 77.4%
 1045
-Has Disease 99.4%
+Affected: 77.4%
 1046
-Has Disease 99.5%
+Affected: 77.4%
 1047
-Has Disease 99.5%
+Affected: 77.601%
 1048
-Has Disease 99.5%
+Affected: 77.601%
 1049
-Has Disease 99.5%
+Affected: 77.601%
 1050
-Has Disease 99.5%
+Affected: 77.601%
 1051
-Has Disease 99.5%
+Affected: 77.601%
 1052
-Has Disease 99.5%
+Affected: 77.601%
 1053
-Has Disease 99.5%
+Affected: 77.601%
 1054
-Has Disease 99.5%
+Affected: 77.601%
 1055
-Has Disease 99.5%
+Affected: 77.601%
 1056
-Has Disease 99.5%
+Affected: 77.8%
 1057
-Has Disease 99.5%
+Affected: 78%
 1058
-Has Disease 99.5%
+Affected: 78%
 1059
-Has Disease 99.5%
+Affected: 78%
 1060
-Has Disease 99.5%
+Affected: 78%
 1061
-Has Disease 99.5%
+Affected: 78%
 1062
-Has Disease 99.5%
+Affected: 78.4%
 1063
-Has Disease 99.5%
+Affected: 78.601%
 1064
-Has Disease 99.5%
+Affected: 78.601%
 1065
-Has Disease 99.5%
+Affected: 78.601%
 1066
-Has Disease 99.5%
+Affected: 78.601%
 1067
-Has Disease 99.5%
+Affected: 78.601%
 1068
-Has Disease 99.5%
+Affected: 78.601%
 1069
-Has Disease 99.5%
+Affected: 78.601%
 1070
-Has Disease 99.5%
+Affected: 78.601%
 1071
-Has Disease 99.5%
+Affected: 78.601%
 1072
-Has Disease 99.5%
+Affected: 78.601%
 1073
-Has Disease 99.5%
+Affected: 78.601%
 1074
-Has Disease 99.5%
+Affected: 78.601%
 1075
-Has Disease 99.5%
+Affected: 78.601%
 1076
-Has Disease 99.5%
+Affected: 78.601%
 1077
-Has Disease 99.5%
+Affected: 78.601%
 1078
-Has Disease 99.5%
+Affected: 78.601%
 1079
-Has Disease 99.5%
+Affected: 78.601%
 1080
-Has Disease 99.5%
+Affected: 78.601%
 1081
-Has Disease 99.5%
+Affected: 78.601%
 1082
-Has Disease 99.5%
+Affected: 78.601%
 1083
-Has Disease 99.6%
+Affected: 78.8%
 1084
-Has Disease 99.6%
+Affected: 78.8%
 1085
-Has Disease 99.6%
+Affected: 78.8%
 1086
-Has Disease 99.6%
+Affected: 78.8%
 1087
-Has Disease 99.6%
+Affected: 78.8%
 1088
-Has Disease 99.6%
+Affected: 78.8%
 1089
-Has Disease 99.7%
+Affected: 78.8%
 1090
-Has Disease 99.7%
+Affected: 78.8%
 1091
-Has Disease 99.7%
+Affected: 78.8%
 1092
-Has Disease 99.7%
+Affected: 78.8%
 1093
-Has Disease 99.7%
+Affected: 78.8%
 1094
-Has Disease 99.7%
+Affected: 78.8%
 1095
-Has Disease 99.7%
+Affected: 78.8%
 1096
-Has Disease 99.7%
+Affected: 78.8%
 1097
-Has Disease 99.7%
+Affected: 79%
 1098
-Has Disease 99.7%
+Affected: 79%
 1099
-Has Disease 99.7%
+Affected: 79%
 1100
-Has Disease 99.7%
+Affected: 79%
 1101
-Has Disease 99.7%
+Affected: 79%
 1102
-Has Disease 99.7%
+Affected: 79%
 1103
-Has Disease 99.7%
+Affected: 79%
 1104
-Has Disease 99.7%
+Affected: 79%
 1105
-Has Disease 99.7%
+Affected: 79.2%
 1106
-Has Disease 99.7%
+Affected: 79.2%
 1107
-Has Disease 99.7%
+Affected: 79.4%
 1108
-Has Disease 99.7%
+Affected: 79.601%
 1109
-Has Disease 99.7%
+Affected: 79.601%
 1110
-Has Disease 99.7%
+Affected: 79.601%
 1111
-Has Disease 99.7%
+Affected: 79.601%
 1112
-Has Disease 99.7%
+Affected: 79.601%
 1113
-Has Disease 99.7%
+Affected: 79.601%
 1114
-Has Disease 99.7%
+Affected: 79.601%
 1115
-Has Disease 99.7%
+Affected: 79.601%
 1116
-Has Disease 99.7%
+Affected: 79.601%
 1117
-Has Disease 99.7%
+Affected: 79.601%
 1118
-Has Disease 99.7%
+Affected: 79.601%
 1119
-Has Disease 99.7%
+Affected: 79.601%
 1120
-Has Disease 99.7%
+Affected: 79.601%
 1121
-Has Disease 99.7%
+Affected: 79.801%
 1122
-Has Disease 99.7%
+Affected: 80%
 1123
-Has Disease 99.7%
+Affected: 80%
 1124
-Has Disease 99.7%
+Affected: 80.2%
 1125
-Has Disease 99.7%
+Affected: 80.2%
 1126
-Has Disease 99.7%
+Affected: 80.2%
 1127
-Has Disease 99.7%
+Affected: 80.2%
 1128
-Has Disease 99.7%
+Affected: 80.2%
 1129
-Has Disease 99.7%
+Affected: 80.4%
 1130
-Has Disease 99.7%
+Affected: 80.4%
 1131
-Has Disease 99.7%
+Affected: 80.4%
 1132
-Has Disease 99.7%
+Affected: 80.4%
 1133
-Has Disease 99.7%
+Affected: 80.4%
 1134
-Has Disease 99.7%
+Affected: 80.4%
 1135
-Has Disease 99.7%
+Affected: 80.601%
 1136
-Has Disease 99.7%
+Affected: 80.601%
 1137
-Has Disease 99.7%
+Affected: 80.601%
 1138
-Has Disease 99.7%
+Affected: 80.601%
 1139
-Has Disease 99.7%
+Affected: 80.601%
 1140
-Has Disease 99.7%
+Affected: 80.601%
 1141
-Has Disease 99.7%
+Affected: 80.601%
 1142
-Has Disease 99.7%
+Affected: 80.601%
 1143
-Has Disease 99.7%
+Affected: 80.601%
 1144
-Has Disease 99.7%
+Affected: 80.601%
 1145
-Has Disease 99.7%
+Affected: 80.601%
 1146
-Has Disease 99.7%
+Affected: 80.601%
 1147
-Has Disease 99.7%
+Affected: 80.601%
 1148
-Has Disease 99.7%
+Affected: 80.601%
 1149
-Has Disease 99.7%
+Affected: 80.601%
 1150
-Has Disease 99.7%
+Affected: 80.601%
 1151
-Has Disease 99.7%
+Affected: 80.601%
 1152
-Has Disease 99.7%
+Affected: 80.801%
 1153
-Has Disease 99.7%
+Affected: 80.801%
 1154
-Has Disease 99.7%
+Affected: 80.801%
 1155
-Has Disease 99.7%
+Affected: 80.801%
 1156
-Has Disease 99.7%
+Affected: 80.801%
 1157
-Has Disease 99.7%
+Affected: 80.801%
 1158
-Has Disease 99.7%
+Affected: 80.801%
 1159
-Has Disease 99.7%
+Affected: 80.801%
 1160
-Has Disease 99.7%
+Affected: 80.801%
 1161
-Has Disease 99.7%
+Affected: 80.801%
 1162
-Has Disease 99.7%
+Affected: 80.801%
 1163
-Has Disease 99.7%
+Affected: 80.801%
 1164
-Has Disease 99.7%
+Affected: 80.801%
 1165
-Has Disease 99.7%
+Affected: 80.801%
 1166
-Has Disease 99.7%
+Affected: 80.801%
 1167
-Has Disease 99.7%
+Affected: 80.801%
 1168
-Has Disease 99.7%
+Affected: 80.801%
 1169
-Has Disease 99.7%
+Affected: 80.801%
 1170
-Has Disease 99.7%
+Affected: 80.801%
 1171
-Has Disease 99.7%
+Affected: 80.801%
 1172
-Has Disease 99.7%
+Affected: 80.801%
 1173
-Has Disease 99.7%
+Affected: 81%
 1174
-Has Disease 99.7%
+Affected: 81%
 1175
-Has Disease 99.7%
+Affected: 81%
 1176
-Has Disease 99.7%
+Affected: 81%
 1177
-Has Disease 99.7%
+Affected: 81%
 1178
-Has Disease 99.7%
+Affected: 81%
 1179
-Has Disease 99.7%
+Affected: 81%
 1180
-Has Disease 99.7%
+Affected: 81%
 1181
-Has Disease 99.7%
+Affected: 81%
 1182
-Has Disease 99.7%
+Affected: 81%
 1183
-Has Disease 99.7%
+Affected: 81.2%
 1184
-Has Disease 99.7%
+Affected: 81.2%
 1185
-Has Disease 99.7%
+Affected: 81.2%
 1186
-Has Disease 99.7%
+Affected: 81.4%
 1187
-Has Disease 99.7%
+Affected: 81.4%
 1188
-Has Disease 99.7%
+Affected: 81.4%
 1189
-Has Disease 99.7%
+Affected: 81.6%
 1190
-Has Disease 99.7%
+Affected: 81.6%
 1191
-Has Disease 99.7%
+Affected: 81.6%
 1192
-Has Disease 99.7%
+Affected: 81.8%
 1193
-Has Disease 99.7%
+Affected: 81.8%
 1194
-Has Disease 99.7%
+Affected: 81.8%
 1195
-Has Disease 99.7%
+Affected: 81.8%
 1196
-Has Disease 99.7%
+Affected: 82%
 1197
-Has Disease 99.7%
+Affected: 82%
 1198
-Has Disease 99.7%
+Affected: 82.2%
 1199
-Has Disease 99.7%
+Affected: 82.2%
 1200
-Has Disease 99.7%
+Affected: 82.2%
 1201
-Has Disease 99.7%
+Affected: 82.2%
 1202
-Has Disease 99.7%
+Affected: 82.2%
 1203
-Has Disease 99.7%
+Affected: 82.2%
 1204
-Has Disease 99.7%
+Affected: 82.2%
 1205
-Has Disease 99.7%
+Affected: 82.2%
 1206
-Has Disease 99.7%
+Affected: 82.2%
 1207
-Has Disease 99.7%
+Affected: 82.2%
 1208
-Has Disease 99.7%
+Affected: 82.2%
 1209
-Has Disease 99.7%
+Affected: 82.2%
 1210
-Has Disease 99.7%
+Affected: 82.2%
 1211
-Has Disease 99.7%
+Affected: 82.2%
 1212
-Has Disease 99.7%
+Affected: 82.2%
 1213
-Has Disease 99.7%
+Affected: 82.2%
 1214
-Has Disease 99.7%
+Affected: 82.2%
 1215
-Has Disease 99.7%
+Affected: 82.2%
 1216
-Has Disease 99.7%
+Affected: 82.2%
 1217
-Has Disease 99.7%
+Affected: 82.2%
 1218
-Has Disease 99.7%
+Affected: 82.4%
 1219
-Has Disease 99.7%
+Affected: 82.4%
 1220
-Has Disease 99.7%
+Affected: 82.4%
 1221
-Has Disease 99.7%
+Affected: 82.4%
 1222
-Has Disease 99.7%
+Affected: 82.4%
 1223
-Has Disease 99.7%
+Affected: 82.4%
 1224
-Has Disease 99.7%
+Affected: 82.6%
 1225
-Has Disease 99.7%
+Affected: 82.8%
 1226
-Has Disease 99.7%
+Affected: 83%
 1227
-Has Disease 99.7%
+Affected: 83%
 1228
-Has Disease 99.8%
+Affected: 83%
 1229
-Has Disease 99.8%
+Affected: 83%
 1230
-Has Disease 99.8%
+Affected: 83%
 1231
-Has Disease 99.8%
+Affected: 83%
 1232
-Has Disease 99.8%
+Affected: 83%
 1233
-Has Disease 99.8%
+Affected: 83%
 1234
-Has Disease 99.8%
+Affected: 83%
 1235
-Has Disease 99.8%
+Affected: 83%
 1236
-Has Disease 99.8%
+Affected: 83.2%
 1237
-Has Disease 99.8%
+Affected: 83.2%
 1238
-Has Disease 99.8%
+Affected: 83.2%
 1239
-Has Disease 99.8%
+Affected: 83.2%
 1240
-Has Disease 99.8%
+Affected: 83.2%
 1241
-Has Disease 99.8%
+Affected: 83.2%
 1242
-Has Disease 99.8%
+Affected: 83.4%
 1243
-Has Disease 99.8%
+Affected: 83.4%
 1244
-Has Disease 99.8%
+Affected: 83.4%
 1245
-Has Disease 99.8%
+Affected: 83.4%
 1246
-Has Disease 99.8%
+Affected: 83.4%
 1247
-Has Disease 99.8%
+Affected: 83.4%
 1248
-Has Disease 99.8%
+Affected: 83.4%
 1249
-Has Disease 99.8%
+Affected: 83.4%
 1250
-Has Disease 99.8%
+Affected: 83.4%
 1251
-Has Disease 99.8%
+Affected: 83.4%
 1252
-Has Disease 99.8%
+Affected: 83.4%
 1253
-Has Disease 99.8%
+Affected: 83.6%
 1254
-Has Disease 99.8%
+Affected: 83.6%
 1255
-Has Disease 99.8%
+Affected: 83.8%
 1256
-Has Disease 99.8%
+Affected: 84.2%
 1257
-Has Disease 99.8%
+Affected: 84.2%
 1258
-Has Disease 99.8%
+Affected: 84.2%
 1259
-Has Disease 99.8%
+Affected: 84.2%
 1260
-Has Disease 99.8%
+Affected: 84.2%
 1261
-Has Disease 99.8%
+Affected: 84.4%
 1262
-Has Disease 99.8%
+Affected: 84.6%
 1263
-Has Disease 99.8%
+Affected: 84.6%
 1264
-Has Disease 99.8%
+Affected: 84.6%
 1265
-Has Disease 99.8%
+Affected: 84.6%
 1266
-Has Disease 99.8%
+Affected: 84.6%
 1267
-Has Disease 99.8%
+Affected: 84.6%
 1268
-Has Disease 99.8%
+Affected: 84.6%
 1269
-Has Disease 99.8%
+Affected: 84.6%
 1270
-Has Disease 99.8%
+Affected: 84.6%
 1271
-Has Disease 99.8%
+Affected: 84.6%
 1272
-Has Disease 99.8%
+Affected: 84.6%
 1273
-Has Disease 99.8%
+Affected: 84.6%
 1274
-Has Disease 99.8%
+Affected: 84.6%
 1275
-Has Disease 99.8%
+Affected: 84.6%
 1276
-Has Disease 99.8%
+Affected: 85%
 1277
-Has Disease 99.8%
+Affected: 85%
 1278
-Has Disease 99.8%
+Affected: 85.2%
 1279
-Has Disease 99.8%
+Affected: 85.2%
 1280
-Has Disease 99.8%
+Affected: 85.2%
 1281
-Has Disease 99.8%
+Affected: 85.2%
 1282
-Has Disease 99.8%
+Affected: 85.4%
 1283
-Has Disease 99.8%
+Affected: 85.4%
 1284
-Has Disease 99.8%
+Affected: 85.4%
 1285
-Has Disease 99.8%
+Affected: 85.4%
 1286
-Has Disease 99.8%
+Affected: 85.4%
 1287
-Has Disease 99.9%
+Affected: 85.4%
 1288
-Has Disease 99.9%
+Affected: 85.4%
 1289
-Has Disease 99.9%
+Affected: 85.4%
 1290
-Has Disease 99.9%
+Affected: 85.4%
 1291
-Has Disease 99.9%
+Affected: 85.4%
 1292
-Has Disease 99.9%
+Affected: 85.4%
 1293
-Has Disease 99.9%
+Affected: 85.6%
 1294
-Has Disease 99.9%
+Affected: 85.6%
 1295
-Has Disease 99.9%
+Affected: 85.6%
 1296
-Has Disease 99.9%
+Affected: 85.6%
 1297
-Has Disease 99.9%
+Affected: 85.6%
 1298
-Has Disease 99.9%
+Affected: 85.6%
 1299
-Has Disease 99.9%
+Affected: 85.6%
 1300
-Has Disease 99.9%
+Affected: 85.6%
 1301
-Has Disease 99.9%
+Affected: 85.6%
 1302
-Has Disease 99.9%
+Affected: 85.6%
 1303
-Has Disease 99.9%
+Affected: 85.6%
 1304
-Has Disease 99.9%
+Affected: 85.6%
 1305
-Has Disease 99.9%
+Affected: 85.6%
 1306
-Has Disease 99.9%
+Affected: 85.6%
 1307
-Has Disease 99.9%
+Affected: 85.6%
 1308
-Has Disease 99.9%
+Affected: 85.6%
 1309
-Has Disease 99.9%
+Affected: 85.8%
 1310
-Has Disease 99.9%
+Affected: 85.8%
 1311
-Has Disease 99.9%
+Affected: 86%
 1312
-Has Disease 99.9%
+Affected: 86%
 1313
-Has Disease 99.9%
+Affected: 86%
 1314
-Has Disease 99.9%
+Affected: 86%
 1315
-Has Disease 99.9%
+Affected: 86%
 1316
-Has Disease 99.9%
+Affected: 86%
 1317
-Has Disease 99.9%
+Affected: 86.2%
 1318
-Has Disease 99.9%
+Affected: 86.2%
 1319
-Has Disease 99.9%
+Affected: 86.4%
 1320
-Has Disease 99.9%
+Affected: 86.6%
 1321
-Has Disease 99.9%
+Affected: 86.8%
 1322
-Has Disease 99.9%
+Affected: 86.8%
 1323
-Has Disease 99.9%
+Affected: 86.8%
 1324
-Has Disease 99.9%
+Affected: 86.8%
 1325
-Has Disease 99.9%
+Affected: 86.8%
 1326
-Has Disease 99.9%
+Affected: 86.8%
 1327
-Has Disease 99.9%
+Affected: 86.8%
 1328
-Has Disease 99.9%
+Affected: 86.8%
 1329
-Has Disease 99.9%
+Affected: 86.8%
 1330
-Has Disease 99.9%
+Affected: 86.8%
 1331
-Has Disease 99.9%
+Affected: 86.8%
 1332
-Has Disease 99.9%
+Affected: 86.8%
 1333
-Has Disease 99.9%
+Affected: 86.8%
 1334
-Has Disease 99.9%
+Affected: 86.8%
 1335
-Has Disease 99.9%
+Affected: 86.8%
 1336
-Has Disease 99.9%
+Affected: 86.8%
 1337
-Has Disease 99.9%
+Affected: 86.8%
 1338
-Has Disease 99.9%
+Affected: 86.8%
 1339
-Has Disease 99.9%
+Affected: 86.8%
 1340
-Has Disease 99.9%
+Affected: 86.8%
 1341
-Has Disease 99.9%
+Affected: 86.8%
 1342
-Has Disease 99.9%
+Affected: 86.8%
 1343
-Has Disease 99.9%
+Affected: 86.8%
 1344
-Has Disease 99.9%
+Affected: 86.8%
 1345
-Has Disease 99.9%
+Affected: 87%
 1346
-Has Disease 99.9%
+Affected: 87%
 1347
-Has Disease 99.9%
+Affected: 87%
 1348
-Has Disease 99.9%
+Affected: 87%
 1349
-Has Disease 99.9%
+Affected: 87%
 1350
-Has Disease 99.9%
+Affected: 87%
 1351
-Has Disease 99.9%
+Affected: 87%
 1352
-Has Disease 99.9%
+Affected: 87.4%
 1353
-Has Disease 99.9%
+Affected: 87.4%
 1354
-Has Disease 99.9%
+Affected: 87.4%
 1355
-Has Disease 99.9%
+Affected: 87.4%
 1356
-Has Disease 99.9%
+Affected: 87.4%
 1357
-Has Disease 99.9%
+Affected: 87.4%
 1358
-Has Disease 99.9%
+Affected: 87.4%
 1359
-Has Disease 99.9%
+Affected: 87.4%
 1360
-Has Disease 99.9%
+Affected: 87.4%
 1361
-Has Disease 99.9%
+Affected: 87.6%
 1362
-Has Disease 99.9%
+Affected: 87.6%
 1363
-Has Disease 99.9%
+Affected: 87.6%
 1364
-Has Disease 99.9%
+Affected: 87.6%
 1365
-Has Disease 99.9%
+Affected: 87.6%
 1366
-Has Disease 99.9%
+Affected: 87.6%
 1367
-Has Disease 99.9%
+Affected: 87.8%
 1368
-Has Disease 99.9%
+Affected: 87.8%
 1369
-Has Disease 99.9%
+Affected: 87.8%
 1370
-Has Disease 99.9%
+Affected: 87.8%
 1371
-Has Disease 99.9%
+Affected: 87.8%
 1372
-Has Disease 99.9%
+Affected: 87.8%
 1373
-Has Disease 99.9%
+Affected: 87.8%
 1374
-Has Disease 99.9%
+Affected: 87.8%
 1375
-Has Disease 99.9%
+Affected: 87.8%
 1376
-Has Disease 99.9%
+Affected: 87.8%
 1377
-Has Disease 99.9%
+Affected: 87.8%
 1378
-Has Disease 99.9%
+Affected: 87.8%
 1379
-Has Disease 99.9%
+Affected: 87.8%
 1380
-Has Disease 99.9%
+Affected: 87.8%
 1381
-Has Disease 99.9%
+Affected: 87.8%
 1382
-Has Disease 99.9%
+Affected: 87.8%
 1383
-Has Disease 99.9%
+Affected: 87.8%
 1384
-Has Disease 99.9%
+Affected: 87.8%
 1385
-Has Disease 99.9%
+Affected: 87.8%
 1386
-Has Disease 99.9%
+Affected: 87.8%
 1387
-Has Disease 99.9%
+Affected: 87.8%
 1388
-Has Disease 99.9%
+Affected: 88%
 1389
-Has Disease 99.9%
+Affected: 88%
 1390
-Has Disease 99.9%
+Affected: 88%
 1391
-Has Disease 99.9%
+Affected: 88%
 1392
-Has Disease 99.9%
+Affected: 88%
 1393
-Has Disease 99.9%
+Affected: 88%
 1394
-Has Disease 99.9%
+Affected: 88%
 1395
-Has Disease 99.9%
+Affected: 88%
 1396
-Has Disease 100%
+Affected: 88%
 1397
-Has Disease 100%
+Affected: 88%
 1398
-Has Disease 100%
+Affected: 88%
 1399
-Has Disease 100%
+Affected: 88%
 1400
-Has Disease 100%
+Affected: 88%
 1401
-Has Disease 100%
+Affected: 88%
 1402
-Has Disease 100%
+Affected: 88%
 1403
-Has Disease 100%
+Affected: 88%
 1404
-Has Disease 100%
+Affected: 88%
 1405
-Has Disease 100%
+Affected: 88%
 1406
-Has Disease 100%
+Affected: 88%
 1407
-Has Disease 100%
+Affected: 88%
 1408
-Has Disease 100%
+Affected: 88%
 1409
-Has Disease 100%
+Affected: 88%
 1410
-Has Disease 100%
+Affected: 88%
 1411
-Has Disease 100%
+Affected: 88%
 1412
-Has Disease 100%
+Affected: 88%
 1413
-Has Disease 100%
+Affected: 88%
 1414
-Has Disease 100%
+Affected: 88%
 1415
-Has Disease 100%
+Affected: 88%
 1416
-Has Disease 100%
+Affected: 88%
 1417
-Has Disease 100%
+Affected: 88%
 1418
-Has Disease 100%
+Affected: 88%
 1419
-Has Disease 100%
+Affected: 88%
 1420
-Has Disease 100%
+Affected: 88%
 1421
-Has Disease 100%
+Affected: 88%
 1422
-Has Disease 100%
+Affected: 88%
 1423
-Has Disease 100%
+Affected: 88%
 1424
-Has Disease 100%
+Affected: 88%
 1425
-Has Disease 100%
+Affected: 88%
 1426
-Has Disease 100%
+Affected: 88%
 1427
-Has Disease 100%
+Affected: 88%
 1428
-Has Disease 100%
+Affected: 88%
 1429
-Has Disease 100%
+Affected: 88.2%
 1430
-Has Disease 100%
+Affected: 88.2%
 1431
-Has Disease 100%
+Affected: 88.2%
 1432
-Has Disease 100%
+Affected: 88.2%
 1433
-Has Disease 100%
+Affected: 88.2%
 1434
-Has Disease 100%
+Affected: 88.2%
 1435
-Has Disease 100%
+Affected: 88.2%
 1436
-Has Disease 100%
+Affected: 88.2%
 1437
-Has Disease 100%
+Affected: 88.2%
 1438
-Has Disease 100%
+Affected: 88.2%
 1439
-Has Disease 100%
+Affected: 88.2%
 1440
-Has Disease 100%
+Affected: 88.2%
 1441
-Has Disease 100%
+Affected: 88.2%
 1442
-Has Disease 100%
+Affected: 88.2%
 1443
-Has Disease 100%
+Affected: 88.4%
 1444
-Has Disease 100%
+Affected: 88.4%
 1445
-Has Disease 100%
+Affected: 88.4%
 1446
-Has Disease 100%
+Affected: 88.4%
 1447
-Has Disease 100%
+Affected: 88.4%
 1448
-Has Disease 100%
+Affected: 88.4%
 1449
-Has Disease 100%
+Affected: 88.4%
 1450
-Has Disease 100%
+Affected: 88.4%
 1451
-Has Disease 100%
+Affected: 88.4%
 1452
-Has Disease 100%
+Affected: 88.4%
 1453
-Has Disease 100%
+Affected: 88.4%
 1454
-Has Disease 100%
+Affected: 88.6%
 1455
-Has Disease 100%
+Affected: 88.8%
 1456
-Has Disease 100%
+Affected: 89%
 1457
-Has Disease 100%
+Affected: 89%
 1458
-Has Disease 100%
+Affected: 89%
 1459
-Has Disease 100%
+Affected: 89%
 1460
-Has Disease 100%
+Affected: 89%
 1461
-Has Disease 100%
+Affected: 89%
 1462
-Has Disease 100%
+Affected: 89%
 1463
-Has Disease 100%
+Affected: 89%
 1464
-Has Disease 100%
+Affected: 89%
 1465
-Has Disease 100%
+Affected: 89%
 1466
-Has Disease 100%
+Affected: 89%
 1467
-Has Disease 100%
+Affected: 89%
 1468
-Has Disease 100%
+Affected: 89%
 1469
-Has Disease 100%
+Affected: 89%
 1470
-Has Disease 100%
+Affected: 89%
 1471
-Has Disease 100%
+Affected: 89%
 1472
-Has Disease 100%
+Affected: 89.2%
 1473
-Has Disease 100%
+Affected: 89.2%
 1474
-Has Disease 100%
+Affected: 89.4%
 1475
-Has Disease 100%
+Affected: 89.4%
 1476
-Has Disease 100%
+Affected: 89.4%
 1477
-Has Disease 100%
+Affected: 89.601%
 1478
-Has Disease 100%
+Affected: 89.601%
 1479
-Has Disease 100%
+Affected: 89.601%
 1480
-Has Disease 100%
+Affected: 89.601%
 1481
-Has Disease 100%
+Affected: 89.601%
 1482
-Has Disease 100%
+Affected: 89.601%
 1483
-Has Disease 100%
+Affected: 89.601%
 1484
-Has Disease 100%
+Affected: 89.601%
 1485
-Has Disease 100%
+Affected: 89.601%
 1486
-Has Disease 100%
+Affected: 89.601%
 1487
-Has Disease 100%
+Affected: 89.601%
 1488
-Has Disease 100%
+Affected: 89.601%
 1489
-Has Disease 100%
+Affected: 89.601%
 1490
-Has Disease 100%
+Affected: 89.8%
 1491
-Has Disease 100%
+Affected: 89.8%
 1492
-Has Disease 100%
+Affected: 90%
 1493
-Has Disease 100%
+Affected: 90%
 1494
-Has Disease 100%
+Affected: 90%
 1495
-Has Disease 100%
+Affected: 90%
 1496
-Has Disease 100%
+Affected: 90%
 1497
-Has Disease 100%
+Affected: 90%
 1498
-Has Disease 100%
+Affected: 90%
 1499
-Has Disease 100%
+Affected: 90%
 1500
-Has Disease 100%
+Affected: 90%
 1501
-Has Disease 100%
+Affected: 90%
 1502
-Has Disease 100%
+Affected: 90%
 1503
-Has Disease 100%
+Affected: 90%
 1504
-Has Disease 100%
+Affected: 90%
 1505
-Has Disease 100%
+Affected: 90%
 1506
-Has Disease 100%
+Affected: 90%
 1507
-Has Disease 100%
+Affected: 90%
 1508
-Has Disease 100%
+Affected: 90%
 1509
-Has Disease 100%
+Affected: 90%
 1510
-Has Disease 100%
+Affected: 90%
 1511
-Has Disease 100%
+Affected: 90%
 1512
-Has Disease 100%
+Affected: 90%
 1513
-Has Disease 100%
+Affected: 90%
 1514
-Has Disease 100%
+Affected: 90%
 1515
-Has Disease 100%
+Affected: 90.2%
 1516
-Has Disease 100%
+Affected: 90.2%
 1517
-Has Disease 100%
+Affected: 90.2%
 1518
-Has Disease 100%
+Affected: 90.2%
 1519
-Has Disease 100%
+Affected: 90.2%
 1520
-Has Disease 100%
+Affected: 90.2%
 1521
-Has Disease 100%
+Affected: 90.2%
 1522
-Has Disease 100%
+Affected: 90.4%
 1523
-Has Disease 100%
+Affected: 90.4%
 1524
-Has Disease 100%
+Affected: 90.601%
 1525
-Has Disease 100%
+Affected: 90.601%
 1526
-Has Disease 100%
+Affected: 90.601%
 1527
-Has Disease 100%
+Affected: 90.601%
 1528
-Has Disease 100%
+Affected: 90.8%
 1529
-Has Disease 100%
+Affected: 90.8%
 1530
-Has Disease 100%
+Affected: 90.8%
 1531
-Has Disease 100%
+Affected: 90.8%
 1532
-Has Disease 100%
+Affected: 90.8%
 1533
-Has Disease 100%
+Affected: 90.8%
 1534
-Has Disease 100%
+Affected: 91%
 1535
-Has Disease 100%
+Affected: 91%
 1536
-Has Disease 100%
+Affected: 91%
 1537
-Has Disease 100%
+Affected: 91%
 1538
-Has Disease 100%
+Affected: 91%
 1539
-Has Disease 100%
+Affected: 91%
 1540
-Has Disease 100%
+Affected: 91%
 1541
-Has Disease 100%
+Affected: 91%
 1542
-Has Disease 100%
+Affected: 91%
 1543
-Has Disease 100%
+Affected: 91.2%
 1544
-Has Disease 100%
+Affected: 91.2%
 1545
-Has Disease 100%
+Affected: 91.4%
 1546
-Has Disease 100%
+Affected: 91.4%
 1547
-Has Disease 100%
+Affected: 91.4%
 1548
-Has Disease 100%
+Affected: 91.4%
 1549
-Has Disease 100%
+Affected: 91.4%
 1550
-Has Disease 100%
+Affected: 91.4%
 1551
-Has Disease 100%
+Affected: 91.4%
 1552
-Has Disease 100%
+Affected: 91.4%
 1553
-Has Disease 100%
+Affected: 91.4%
 1554
-Has Disease 100%
+Affected: 91.4%
 1555
-Has Disease 100%
+Affected: 91.4%
 1556
-Has Disease 100%
+Affected: 91.4%
 1557
-Has Disease 100%
+Affected: 91.4%
 1558
-Has Disease 100%
+Affected: 91.4%
 1559
-Has Disease 100%
+Affected: 91.4%
 1560
-Has Disease 100%
+Affected: 91.4%
 1561
-Has Disease 100%
+Affected: 91.4%
 1562
-Has Disease 100%
+Affected: 91.4%
 1563
-Has Disease 100%
+Affected: 91.601%
 1564
-Has Disease 100%
+Affected: 91.601%
 1565
-Has Disease 100%
+Affected: 91.601%
 1566
-Has Disease 100%
+Affected: 91.601%
 1567
-Has Disease 100%
+Affected: 91.601%
 1568
-Has Disease 100%
+Affected: 91.601%
 1569
-Has Disease 100%
+Affected: 91.601%
 1570
-Has Disease 100%
+Affected: 91.601%
 1571
-Has Disease 100%
+Affected: 91.601%
 1572
-Has Disease 100%
+Affected: 91.8%
 1573
-Has Disease 100%
+Affected: 91.8%
 1574
-Has Disease 100%
+Affected: 91.8%
 1575
-Has Disease 100%
+Affected: 92.2%
 1576
-Has Disease 100%
+Affected: 92.2%
 1577
-Has Disease 100%
+Affected: 92.2%
 1578
-Has Disease 100%
+Affected: 92.2%
 1579
-Has Disease 100%
+Affected: 92.2%
 1580
-Has Disease 100%
+Affected: 92.2%
 1581
-Has Disease 100%
+Affected: 92.2%
 1582
-Has Disease 100%
+Affected: 92.601%
 1583
-Has Disease 100%
+Affected: 92.601%
 1584
-Has Disease 100%
+Affected: 92.801%
 1585
-Has Disease 100%
+Affected: 92.801%
 1586
-Has Disease 100%
+Affected: 92.801%
 1587
-Has Disease 100%
+Affected: 92.801%
 1588
-Has Disease 100%
+Affected: 92.801%
 1589
-Has Disease 100%
+Affected: 92.801%
 1590
-Has Disease 100%
+Affected: 92.801%
 1591
-Has Disease 100%
+Affected: 93%
 1592
-Has Disease 100%
+Affected: 93%
 1593
-Has Disease 100%
+Affected: 93%
 1594
-Has Disease 100%
+Affected: 93%
 1595
-Has Disease 100%
+Affected: 93%
 1596
-Has Disease 100%
+Affected: 93.2%
 1597
-Has Disease 100%
+Affected: 93.2%
 1598
-Has Disease 100%
+Affected: 93.2%
 1599
-Has Disease 100%
+Affected: 93.2%
 1600
-Has Disease 100%
+Affected: 93.2%
 1601
-Has Disease 100%
+Affected: 93.2%
 1602
-Has Disease 100%
+Affected: 93.2%
 1603
-Has Disease 100%
+Affected: 93.2%
 1604
-Has Disease 100%
+Affected: 93.2%
 1605
-Has Disease 100%
+Affected: 93.2%
 1606
-Has Disease 100%
+Affected: 93.2%
 1607
-Has Disease 100%
+Affected: 93.2%
 1608
-Has Disease 100%
+Affected: 93.2%
 1609
-Has Disease 100%
+Affected: 93.4%
 1610
-Has Disease 100%
+Affected: 93.4%
 1611
-Has Disease 100%
+Affected: 93.4%
 1612
-Has Disease 100%
+Affected: 93.4%
 1613
-Has Disease 100%
+Affected: 93.601%
 1614
-Has Disease 100%
+Affected: 93.601%
 1615
-Has Disease 100%
+Affected: 93.601%
 1616
-Has Disease 100%
+Affected: 93.601%
 1617
-Has Disease 100%
+Affected: 93.601%
 1618
-Has Disease 100%
+Affected: 93.601%
 1619
-Has Disease 100%
+Affected: 93.8%
 1620
-Has Disease 100%
+Affected: 93.8%
 1621
-Has Disease 100%
+Affected: 93.8%
 1622
-Has Disease 100%
+Affected: 93.8%
 1623
-Has Disease 100%
+Affected: 94%
 1624
-Has Disease 100%
+Affected: 94%
 1625
-Has Disease 100%
+Affected: 94%
 1626
-Has Disease 100%
+Affected: 94%
 1627
-Has Disease 100%
+Affected: 94.2%
 1628
-Has Disease 100%
+Affected: 94.2%
 1629
-Has Disease 100%
+Affected: 94.2%
 1630
-Has Disease 100%
+Affected: 94.2%
 1631
-Has Disease 100%
+Affected: 94.4%
 1632
-Has Disease 100%
+Affected: 94.6%
 1633
-Has Disease 100%
+Affected: 94.6%
 1634
-Has Disease 100%
+Affected: 94.6%
 1635
-Has Disease 100%
+Affected: 94.6%
 1636
-Has Disease 100%
+Affected: 94.8%
 1637
-Has Disease 100%
+Affected: 94.8%
 1638
-Has Disease 100%
+Affected: 95%
 1639
-Has Disease 100%
+Affected: 95%
 1640
-Has Disease 100%
+Affected: 95.2%
 1641
-Has Disease 100%
+Affected: 95.2%
 1642
-Has Disease 100%
+Affected: 95.2%
 1643
-Has Disease 100%
+Affected: 95.2%
 1644
-Has Disease 100%
+Affected: 95.2%
 1645
-Has Disease 100%
+Affected: 95.2%
 1646
-Has Disease 100%
+Affected: 95.2%
 1647
-Has Disease 100%
+Affected: 95.2%
 1648
-Has Disease 100%
+Affected: 95.2%
 1649
-Has Disease 100%
+Affected: 95.2%
 1650
-Has Disease 100%
+Affected: 95.2%
 1651
-Has Disease 100%
+Affected: 95.2%
 1652
-Has Disease 100%
+Affected: 95.4%
 1653
-Has Disease 100%
+Affected: 95.4%
 1654
-Has Disease 100%
+Affected: 95.6%
 1655
-Has Disease 100%
+Affected: 95.6%
 1656
-Has Disease 100%
+Affected: 95.8%
 1657
-Has Disease 100%
+Affected: 95.8%
 1658
-Has Disease 100%
+Affected: 95.8%
 1659
-Has Disease 100%
+Affected: 95.8%
 1660
-Has Disease 100%
+Affected: 95.8%
 1661
-Has Disease 100%
+Affected: 96%
 1662
-Has Disease 100%
+Affected: 96%
 1663
-Has Disease 100%
+Affected: 96%
 1664
-Has Disease 100%
+Affected: 96.2%
 1665
-Has Disease 100%
+Affected: 96.2%
 1666
-Has Disease 100%
+Affected: 96.2%
 1667
-Has Disease 100%
+Affected: 96.2%
 1668
-Has Disease 100%
+Affected: 96.2%
 1669
-Has Disease 100%
+Affected: 96.2%
 1670
-Has Disease 100%
+Affected: 96.2%
 1671
-Has Disease 100%
+Affected: 96.2%
 1672
-Has Disease 100%
+Affected: 96.2%
 1673
-Has Disease 100%
+Affected: 96.2%
 1674
-Has Disease 100%
+Affected: 96.4%
 1675
-Has Disease 100%
+Affected: 96.4%
 1676
-Has Disease 100%
+Affected: 96.4%
 1677
-Has Disease 100%
+Affected: 96.4%
 1678
-Has Disease 100%
+Affected: 96.4%
 1679
-Has Disease 100%
+Affected: 96.4%
 1680
-Has Disease 100%
+Affected: 96.4%
 1681
-Has Disease 100%
+Affected: 96.4%
 1682
-Has Disease 100%
+Affected: 96.4%
 1683
-Has Disease 100%
+Affected: 96.4%
 1684
-Has Disease 100%
+Affected: 96.4%
 1685
-Has Disease 100%
+Affected: 96.4%
 1686
-Has Disease 100%
+Affected: 96.4%
 1687
-Has Disease 100%
+Affected: 96.4%
 1688
-Has Disease 100%
+Affected: 96.4%
 1689
-Has Disease 100%
+Affected: 96.6%
 1690
-Has Disease 100%
+Affected: 96.6%
 1691
-Has Disease 100%
+Affected: 96.6%
 1692
-Has Disease 100%
+Affected: 96.6%
 1693
-Has Disease 100%
+Affected: 96.6%
 1694
-Has Disease 100%
+Affected: 96.6%
 1695
-Has Disease 100%
+Affected: 96.6%
 1696
-Has Disease 100%
+Affected: 96.6%
 1697
-Has Disease 100%
+Affected: 96.6%
 1698
-Has Disease 100%
+Affected: 96.6%
 1699
-Has Disease 100%
+Affected: 96.6%
 1700
-Has Disease 100%
+Affected: 96.8%
 1701
-Has Disease 100%
+Affected: 96.8%
 1702
-Has Disease 100%
+Affected: 96.8%
 1703
-Has Disease 100%
+Affected: 96.8%
 1704
-Has Disease 100%
+Affected: 96.8%
 1705
-Has Disease 100%
+Affected: 96.8%
 1706
-Has Disease 100%
+Affected: 96.8%
 1707
-Has Disease 100%
+Affected: 96.8%
 1708
-Has Disease 100%
+Affected: 96.8%
 1709
-Has Disease 100%
+Affected: 96.8%
 1710
-Has Disease 100%
+Affected: 96.8%
 1711
-Has Disease 100%
+Affected: 96.8%
 1712
-Has Disease 100%
+Affected: 96.8%
 1713
-Has Disease 100%
+Affected: 96.8%
 1714
-Has Disease 100%
+Affected: 97%
 1715
-Has Disease 100%
+Affected: 97%
 1716
-Has Disease 100%
+Affected: 97%
 1717
-Has Disease 100%
+Affected: 97%
 1718
-Has Disease 100%
+Affected: 97%
 1719
-Has Disease 100%
+Affected: 97%
 1720
-Has Disease 100%
+Affected: 97%
 1721
-Has Disease 100%
+Affected: 97%
 1722
-Has Disease 100%
+Affected: 97%
 1723
-Has Disease 100%
+Affected: 97%
 1724
-Has Disease 100%
+Affected: 97%
 1725
-Has Disease 100%
+Affected: 97%
 1726
-Has Disease 100%
+Affected: 97%
 1727
-Has Disease 100%
+Affected: 97%
 1728
-Has Disease 100%
+Affected: 97%
 1729
-Has Disease 100%
+Affected: 97%
 1730
-Has Disease 100%
+Affected: 97%
 1731
-Has Disease 100%
+Affected: 97%
 1732
-Has Disease 100%
+Affected: 97%
 1733
-Has Disease 100%
+Affected: 97%
 1734
-Has Disease 100%
+Affected: 97%
 1735
-Has Disease 100%
+Affected: 97%
 1736
-Has Disease 100%
+Affected: 97%
 1737
-Has Disease 100%
+Affected: 97%
 1738
-Has Disease 100%
+Affected: 97%
 1739
-Has Disease 100%
+Affected: 97%
 1740
-Has Disease 100%
+Affected: 97%
 1741
-Has Disease 100%
+Affected: 97%
 1742
-Has Disease 100%
+Affected: 97%
 1743
-Has Disease 100%
+Affected: 97%
 1744
-Has Disease 100%
+Affected: 97%
 1745
-Has Disease 100%
+Affected: 97%
 1746
-Has Disease 100%
+Affected: 97%
 1747
-Has Disease 100%
+Affected: 97%
 1748
-Has Disease 100%
+Affected: 97%
 1749
-Has Disease 100%
+Affected: 97%
 1750
-Has Disease 100%
+Affected: 97%
 1751
-Has Disease 100%
+Affected: 97%
 1752
-Has Disease 100%
+Affected: 97%
 1753
-Has Disease 100%
+Affected: 97%
 1754
-Has Disease 100%
+Affected: 97%
 1755
-Has Disease 100%
+Affected: 97%
 1756
-Has Disease 100%
+Affected: 97%
 1757
-Has Disease 100%
+Affected: 97%
 1758
-Has Disease 100%
+Affected: 97%
 1759
-Has Disease 100%
+Affected: 97%
 1760
-Has Disease 100%
+Affected: 97%
 1761
-Has Disease 100%
+Affected: 97%
 1762
-Has Disease 100%
+Affected: 97%
 1763
-Has Disease 100%
+Affected: 97%
 1764
-Has Disease 100%
+Affected: 97%
 1765
-Has Disease 100%
+Affected: 97%
 1766
-Has Disease 100%
+Affected: 97%
 1767
-Has Disease 100%
+Affected: 97%
 1768
-Has Disease 100%
+Affected: 97%
 1769
-Has Disease 100%
+Affected: 97%
 1770
-Has Disease 100%
+Affected: 97%
 1771
-Has Disease 100%
+Affected: 97%
 1772
-Has Disease 100%
+Affected: 97%
 1773
-Has Disease 100%
+Affected: 97%
 1774
-Has Disease 100%
+Affected: 97%
 1775
-Has Disease 100%
+Affected: 97%
 1776
-Has Disease 100%
+Affected: 97%
 1777
-Has Disease 100%
+Affected: 97%
 1778
-Has Disease 100%
+Affected: 97%
 1779
-Has Disease 100%
+Affected: 97%
 1780
-Has Disease 100%
+Affected: 97%
 1781
-Has Disease 100%
+Affected: 97%
 1782
-Has Disease 100%
+Affected: 97%
 1783
-Has Disease 100%
+Affected: 97%
 1784
-Has Disease 100%
+Affected: 97%
 1785
-Has Disease 100%
+Affected: 97%
 1786
-Has Disease 100%
+Affected: 97%
 1787
-Has Disease 100%
+Affected: 97%
 1788
-Has Disease 100%
+Affected: 97%
 1789
-Has Disease 100%
+Affected: 97%
 1790
-Has Disease 100%
+Affected: 97%
 1791
-Has Disease 100%
+Affected: 97%
 1792
-Has Disease 100%
+Affected: 97%
 1793
-Has Disease 100%
+Affected: 97%
 1794
-Has Disease 100%
+Affected: 97%
 1795
-Has Disease 100%
+Affected: 97%
 1796
-Has Disease 100%
+Affected: 97%
 1797
-Has Disease 100%
+Affected: 97%
 1798
-Has Disease 100%
+Affected: 97%
 1799
-Has Disease 100%
+Affected: 97%
 1800
-Has Disease 100%
+Affected: 97%
 1801
-Has Disease 100%
+Affected: 97%
 1802
-Has Disease 100%
+Affected: 97%
 1803
-Has Disease 100%
+Affected: 97%
 1804
-Has Disease 100%
+Affected: 97%
 1805
-Has Disease 100%
+Affected: 97%
 1806
-Has Disease 100%
+Affected: 97%
 1807
-Has Disease 100%
+Affected: 97%
 1808
-Has Disease 100%
+Affected: 97%
 1809
-Has Disease 100%
+Affected: 97%
 1810
-Has Disease 100%
+Affected: 97%
 1811
-Has Disease 100%
+Affected: 97%
 1812
-Has Disease 100%
+Affected: 97%
 1813
-Has Disease 100%
+Affected: 97%
 1814
-Has Disease 100%
+Affected: 97%
 1815
-Has Disease 100%
+Affected: 97%
 1816
-Has Disease 100%
+Affected: 97%
 1817
-Has Disease 100%
+Affected: 97%
 1818
-Has Disease 100%
+Affected: 97%
 1819
-Has Disease 100%
+Affected: 97%
 1820
-Has Disease 100%
+Affected: 97%
 1821
-Has Disease 100%
+Affected: 97%
 1822
-Has Disease 100%
+Affected: 97%
 1823
-Has Disease 100%
+Affected: 97%
 1824
-Has Disease 100%
+Affected: 97%
 1825
-Has Disease 100%
+Affected: 97.2%
 1826
-Has Disease 100%
+Affected: 97.2%
 1827
-Has Disease 100%
+Affected: 97.4%
 1828
-Has Disease 100%
+Affected: 97.4%
 1829
-Has Disease 100%
+Affected: 97.4%
 1830
-Has Disease 100%
+Affected: 97.4%
 1831
-Has Disease 100%
+Affected: 97.4%
 1832
-Has Disease 100%
+Affected: 97.4%
 1833
-Has Disease 100%
+Affected: 97.4%
 1834
-Has Disease 100%
+Affected: 97.6%
 1835
-Has Disease 100%
+Affected: 97.6%
 1836
-Has Disease 100%
+Affected: 97.6%
 1837
-Has Disease 100%
+Affected: 97.6%
 1838
-Has Disease 100%
+Affected: 97.6%
 1839
-Has Disease 100%
+Affected: 97.6%
 1840
-Has Disease 100%
+Affected: 97.6%
 1841
-Has Disease 100%
+Affected: 97.6%
 1842
-Has Disease 100%
+Affected: 97.6%
 1843
-Has Disease 100%
+Affected: 97.6%
 1844
-Has Disease 100%
+Affected: 97.6%
 1845
-Has Disease 100%
+Affected: 97.6%
 1846
-Has Disease 100%
+Affected: 97.8%
 1847
-Has Disease 100%
+Affected: 97.8%
 1848
-Has Disease 100%
+Affected: 97.8%
 1849
-Has Disease 100%
+Affected: 97.8%
 1850
-Has Disease 100%
+Affected: 97.8%
 1851
-Has Disease 100%
+Affected: 97.8%
 1852
-Has Disease 100%
+Affected: 97.8%
 1853
-Has Disease 100%
+Affected: 97.8%
 1854
-Has Disease 100%
+Affected: 97.8%
 1855
-Has Disease 100%
+Affected: 97.8%
 1856
-Has Disease 100%
+Affected: 97.8%
 1857
-Has Disease 100%
+Affected: 97.8%
 1858
-Has Disease 100%
+Affected: 97.8%
 1859
-Has Disease 100%
+Affected: 97.8%
 1860
-Has Disease 100%
+Affected: 97.8%
 1861
-Has Disease 100%
+Affected: 97.8%
 1862
-Has Disease 100%
+Affected: 97.8%
 1863
-Has Disease 100%
+Affected: 97.8%
 1864
-Has Disease 100%
+Affected: 97.8%
 1865
-Has Disease 100%
+Affected: 97.8%
 1866
-Has Disease 100%
+Affected: 97.8%
 1867
-Has Disease 100%
+Affected: 97.8%
 1868
-Has Disease 100%
+Affected: 97.8%
 1869
-Has Disease 100%
+Affected: 97.8%
 1870
-Has Disease 100%
+Affected: 97.8%
 1871
-Has Disease 100%
+Affected: 97.8%
 1872
-Has Disease 100%
+Affected: 97.8%
 1873
-Has Disease 100%
+Affected: 97.8%
 1874
-Has Disease 100%
+Affected: 97.8%
 1875
-Has Disease 100%
+Affected: 97.8%
 1876
-Has Disease 100%
+Affected: 97.8%
 1877
-Has Disease 100%
+Affected: 97.8%
 1878
-Has Disease 100%
+Affected: 97.8%
 1879
-Has Disease 100%
+Affected: 97.8%
 1880
-Has Disease 100%
+Affected: 97.8%
 1881
-Has Disease 100%
+Affected: 97.8%
 1882
-Has Disease 100%
+Affected: 97.8%
 1883
-Has Disease 100%
+Affected: 97.8%
 1884
-Has Disease 100%
+Affected: 97.8%
 1885
-Has Disease 100%
+Affected: 97.8%
 1886
-Has Disease 100%
+Affected: 97.8%
 1887
-Has Disease 100%
+Affected: 97.8%
 1888
-Has Disease 100%
+Affected: 97.8%
 1889
-Has Disease 100%
+Affected: 97.8%
 1890
-Has Disease 100%
+Affected: 97.8%
 1891
-Has Disease 100%
+Affected: 97.8%
 1892
-Has Disease 100%
+Affected: 97.8%
 1893
-Has Disease 100%
+Affected: 97.8%
 1894
-Has Disease 100%
+Affected: 97.8%
 1895
-Has Disease 100%
+Affected: 97.8%
 1896
-Has Disease 100%
+Affected: 97.8%
 1897
-Has Disease 100%
+Affected: 97.8%
 1898
-Has Disease 100%
+Affected: 97.8%
 1899
-Has Disease 100%
+Affected: 97.8%
 1900
-Has Disease 100%
+Affected: 97.8%
 1901
-Has Disease 100%
+Affected: 97.8%
 1902
-Has Disease 100%
+Affected: 97.8%
 1903
-Has Disease 100%
+Affected: 97.8%
 1904
-Has Disease 100%
+Affected: 97.8%
 1905
-Has Disease 100%
+Affected: 97.8%
 1906
-Has Disease 100%
+Affected: 97.8%
 1907
-Has Disease 100%
+Affected: 97.8%
 1908
-Has Disease 100%
+Affected: 97.8%
 1909
-Has Disease 100%
+Affected: 97.8%
 1910
-Has Disease 100%
+Affected: 97.8%
 1911
-Has Disease 100%
+Affected: 97.8%
 1912
-Has Disease 100%
+Affected: 97.8%
 1913
-Has Disease 100%
+Affected: 97.8%
 1914
-Has Disease 100%
+Affected: 97.8%
 1915
-Has Disease 100%
+Affected: 97.8%
 1916
-Has Disease 100%
+Affected: 97.8%
 1917
-Has Disease 100%
+Affected: 97.8%
 1918
-Has Disease 100%
+Affected: 97.8%
 1919
-Has Disease 100%
+Affected: 97.8%
 1920
-Has Disease 100%
+Affected: 97.8%
 1921
-Has Disease 100%
+Affected: 97.8%
 1922
-Has Disease 100%
+Affected: 97.8%
 1923
-Has Disease 100%
+Affected: 97.8%
 1924
-Has Disease 100%
+Affected: 97.8%
 1925
-Has Disease 100%
+Affected: 97.8%
 1926
-Has Disease 100%
+Affected: 97.8%
 1927
-Has Disease 100%
+Affected: 97.8%
 1928
-Has Disease 100%
+Affected: 97.8%
 1929
-Has Disease 100%
+Affected: 97.8%
 1930
-Has Disease 100%
+Affected: 97.8%
 1931
-Has Disease 100%
+Affected: 97.8%
 1932
-Has Disease 100%
+Affected: 97.8%
 1933
-Has Disease 100%
+Affected: 97.8%
 1934
-Has Disease 100%
+Affected: 97.8%
 1935
-Has Disease 100%
+Affected: 97.8%
 1936
-Has Disease 100%
+Affected: 97.8%
 1937
-Has Disease 100%
+Affected: 97.8%
 1938
-Has Disease 100%
+Affected: 97.8%
 1939
-Has Disease 100%
+Affected: 97.8%
 1940
-Has Disease 100%
+Affected: 97.8%
 1941
-Has Disease 100%
+Affected: 97.8%
 1942
-Has Disease 100%
+Affected: 97.8%
 1943
-Has Disease 100%
+Affected: 97.8%
 1944
-Has Disease 100%
+Affected: 97.8%
 1945
-Has Disease 100%
+Affected: 97.8%
 1946
-Has Disease 100%
+Affected: 97.8%
 1947
-Has Disease 100%
+Affected: 98%
 1948
-Has Disease 100%
+Affected: 98%
 1949
-Has Disease 100%
+Affected: 98%
 1950
-Has Disease 100%
+Affected: 98%
 1951
-Has Disease 100%
+Affected: 98%
 1952
-Has Disease 100%
+Affected: 98%
 1953
-Has Disease 100%
+Affected: 98%
 1954
-Has Disease 100%
+Affected: 98%
 1955
-Has Disease 100%
+Affected: 98%
 1956
-Has Disease 100%
+Affected: 98%
 1957
-Has Disease 100%
+Affected: 98%
 1958
-Has Disease 100%
+Affected: 98%
 1959
-Has Disease 100%
+Affected: 98%
 1960
-Has Disease 100%
+Affected: 98%
 1961
-Has Disease 100%
+Affected: 98%
 1962
-Has Disease 100%
+Affected: 98%
 1963
-Has Disease 100%
+Affected: 98%
 1964
-Has Disease 100%
+Affected: 98%
 1965
-Has Disease 100%
+Affected: 98%
 1966
-Has Disease 100%
+Affected: 98%
 1967
-Has Disease 100%
+Affected: 98%
 1968
-Has Disease 100%
+Affected: 98%
 1969
-Has Disease 100%
+Affected: 98%
 1970
-Has Disease 100%
+Affected: 98%
 1971
-Has Disease 100%
+Affected: 98%
 1972
-Has Disease 100%
+Affected: 98%
 1973
-Has Disease 100%
+Affected: 98%
 1974
-Has Disease 100%
+Affected: 98%
 1975
-Has Disease 100%
+Affected: 98%
 1976
-Has Disease 100%
+Affected: 98%
 1977
-Has Disease 100%
+Affected: 98%
 1978
-Has Disease 100%
+Affected: 98%
 1979
-Has Disease 100%
+Affected: 98%
 1980
-Has Disease 100%
+Affected: 98%
 1981
-Has Disease 100%
+Affected: 98%
 1982
-Has Disease 100%
+Affected: 98%
 1983
-Has Disease 100%
+Affected: 98%
 1984
-Has Disease 100%
+Affected: 98%
 1985
-Has Disease 100%
+Affected: 98%
 1986
-Has Disease 100%
+Affected: 98%
 1987
-Has Disease 100%
+Affected: 98%
 1988
-Has Disease 100%
+Affected: 98%
 1989
-Has Disease 100%
+Affected: 98%
 1990
-Has Disease 100%
+Affected: 98%
 1991
-Has Disease 100%
+Affected: 98%
 1992
-Has Disease 100%
+Affected: 98%
 1993
-Has Disease 100%
+Affected: 98%
 1994
-Has Disease 100%
+Affected: 98%
 1995
-Has Disease 100%
+Affected: 98%
 1996
-Has Disease 100%
+Affected: 98%
 1997
-Has Disease 100%
+Affected: 98%
 1998
-Has Disease 100%
+Affected: 98%
 1999
-Has Disease 100%
+Affected: 98%
 2000
-Has Disease 100%
+Affected: 98%
 2001
-Has Disease 100%
+Affected: 98%
 2002
-Has Disease 100%
+Affected: 98%
 2003
-Has Disease 100%
+Affected: 98%
 2004
-Has Disease 100%
+Affected: 98%
 2005
-Has Disease 100%
+Affected: 98%
 2006
-Has Disease 100%
+Affected: 98%
 2007
-Has Disease 100%
+Affected: 98%
 2008
-Has Disease 100%
+Affected: 98.2%
 2009
-Has Disease 100%
+Affected: 98.2%
 2010
-Has Disease 100%
+Affected: 98.2%
 2011
-Has Disease 100%
+Affected: 98.2%
 2012
-Has Disease 100%
+Affected: 98.2%
 2013
-Has Disease 100%
+Affected: 98.2%
 2014
-Has Disease 100%
+Affected: 98.2%
 2015
-Has Disease 100%
+Affected: 98.2%
 2016
-Has Disease 100%
+Affected: 98.2%
 2017
-Has Disease 100%
+Affected: 98.2%
 2018
-Has Disease 100%
+Affected: 98.2%
 2019
-Has Disease 100%
+Affected: 98.2%
 2020
-Has Disease 100%
+Affected: 98.2%
 2021
-Has Disease 100%
+Affected: 98.2%
 2022
-Has Disease 100%
+Affected: 98.2%
 2023
-Has Disease 100%
+Affected: 98.2%
 2024
-Has Disease 100%
+Affected: 98.2%
 2025
-Has Disease 100%
+Affected: 98.2%
 2026
-Has Disease 100%
+Affected: 98.2%
 2027
-Has Disease 100%
+Affected: 98.2%
 2028
-Has Disease 100%
+Affected: 98.2%
 2029
-Has Disease 100%
+Affected: 98.2%
 2030
-Has Disease 100%
+Affected: 98.2%
 2031
-Has Disease 100%
+Affected: 98.2%
 2032
-Has Disease 100%
+Affected: 98.2%
 2033
-Has Disease 100%
+Affected: 98.2%
 2034
-Has Disease 100%
+Affected: 98.2%
 2035
-Has Disease 100%
+Affected: 98.2%
 2036
-Has Disease 100%
+Affected: 98.2%
 2037
-Has Disease 100%
+Affected: 98.2%
 2038
-Has Disease 100%
+Affected: 98.2%
 2039
-Has Disease 100%
+Affected: 98.4%
 2040
-Has Disease 100%
+Affected: 98.4%
 2041
-Has Disease 100%
+Affected: 98.4%
 2042
-Has Disease 100%
+Affected: 98.4%
 2043
-Has Disease 100%
+Affected: 98.4%
 2044
-Has Disease 100%
+Affected: 98.4%
 2045
-Has Disease 100%
+Affected: 98.4%
 2046
-Has Disease 100%
+Affected: 98.4%
 2047
-Has Disease 100%
+Affected: 98.4%
 2048
-Has Disease 100%
+Affected: 98.4%
 2049
-Has Disease 100%
+Affected: 98.4%
 2050
-Has Disease 100%
+Affected: 98.4%
 2051
-Has Disease 100%
+Affected: 98.4%
 2052
-Has Disease 100%
+Affected: 98.4%
 2053
-Has Disease 100%
+Affected: 98.4%
 2054
-Has Disease 100%
+Affected: 98.4%
 2055
-Has Disease 100%
+Affected: 98.4%
 2056
-Has Disease 100%
+Affected: 98.4%
 2057
-Has Disease 100%
+Affected: 98.4%
 2058
-Has Disease 100%
+Affected: 98.4%
 2059
-Has Disease 100%
+Affected: 98.6%
 2060
-Has Disease 100%
+Affected: 98.6%
 2061
-Has Disease 100%
+Affected: 98.6%
 2062
-Has Disease 100%
+Affected: 98.6%
 2063
-Has Disease 100%
+Affected: 98.6%
 2064
-Has Disease 100%
+Affected: 98.6%
 2065
-Has Disease 100%
+Affected: 98.6%
 2066
-Has Disease 100%
+Affected: 98.6%
 2067
-Has Disease 100%
+Affected: 98.6%
 2068
-Has Disease 100%
+Affected: 98.6%
 2069
-Has Disease 100%
+Affected: 98.6%
 2070
-Has Disease 100%
+Affected: 98.6%
 2071
-Has Disease 100%
+Affected: 98.6%
 2072
-Has Disease 100%
+Affected: 98.6%
 2073
-Has Disease 100%
+Affected: 98.6%
 2074
-Has Disease 100%
+Affected: 98.6%
 2075
-Has Disease 100%
+Affected: 98.6%
 2076
-Has Disease 100%
+Affected: 98.6%
 2077
-Has Disease 100%
+Affected: 98.6%
 2078
-Has Disease 100%
+Affected: 98.6%
 2079
-Has Disease 100%
+Affected: 98.6%
 2080
-Has Disease 100%
+Affected: 98.6%
 2081
-Has Disease 100%
+Affected: 98.6%
 2082
-Has Disease 100%
+Affected: 98.6%
 2083
-Has Disease 100%
+Affected: 98.6%
 2084
-Has Disease 100%
+Affected: 98.6%
 2085
-Has Disease 100%
+Affected: 98.6%
 2086
-Has Disease 100%
+Affected: 98.6%
 2087
-Has Disease 100%
+Affected: 98.6%
 2088
-Has Disease 100%
+Affected: 98.6%
 2089
-Has Disease 100%
+Affected: 98.6%
 2090
-Has Disease 100%
+Affected: 98.6%
 2091
-Has Disease 100%
+Affected: 98.6%
 2092
-Has Disease 100%
+Affected: 98.6%
 2093
-Has Disease 100%
+Affected: 98.6%
 2094
-Has Disease 100%
+Affected: 98.6%
 2095
-Has Disease 100%
+Affected: 98.6%
 2096
-Has Disease 100%
+Affected: 98.6%
 2097
-Has Disease 100%
+Affected: 98.6%
 2098
-Has Disease 100%
+Affected: 98.6%
 2099
-Has Disease 100%
+Affected: 98.6%
 2100
-Has Disease 100%
+Affected: 98.6%
 2101
-Has Disease 100%
+Affected: 98.6%
 2102
-Has Disease 100%
+Affected: 98.6%
 2103
-Has Disease 100%
+Affected: 98.6%
 2104
-Has Disease 100%
+Affected: 98.6%
 2105
-Has Disease 100%
+Affected: 98.6%
 2106
-Has Disease 100%
+Affected: 98.6%
 2107
-Has Disease 100%
+Affected: 98.6%
 2108
-Has Disease 100%
+Affected: 98.6%
 2109
-Has Disease 100%
+Affected: 98.6%
 2110
-Has Disease 100%
+Affected: 98.6%
 2111
-Has Disease 100%
+Affected: 98.6%
 2112
-Has Disease 100%
+Affected: 98.6%
 2113
-Has Disease 100%
+Affected: 98.6%
 2114
-Has Disease 100%
+Affected: 98.6%
 2115
-Has Disease 100%
+Affected: 98.6%
 2116
-Has Disease 100%
+Affected: 98.6%
 2117
-Has Disease 100%
+Affected: 98.6%
 2118
-Has Disease 100%
+Affected: 98.6%
 2119
-Has Disease 100%
+Affected: 98.6%
 2120
-Has Disease 100%
+Affected: 98.6%
 2121
-Has Disease 100%
+Affected: 98.6%
 2122
-Has Disease 100%
+Affected: 98.6%
 2123
-Has Disease 100%
+Affected: 98.6%
 2124
-Has Disease 100%
+Affected: 98.6%
 2125
-Has Disease 100%
+Affected: 98.6%
 2126
-Has Disease 100%
+Affected: 98.6%
 2127
-Has Disease 100%
+Affected: 98.6%
 2128
-Has Disease 100%
+Affected: 98.6%
 2129
-Has Disease 100%
+Affected: 98.6%
 2130
-Has Disease 100%
+Affected: 98.6%
 2131
-Has Disease 100%
+Affected: 98.6%
 2132
-Has Disease 100%
+Affected: 98.6%
 2133
-Has Disease 100%
+Affected: 98.6%
 2134
-Has Disease 100%
+Affected: 98.6%
 2135
-Has Disease 100%
+Affected: 98.6%
 2136
-Has Disease 100%
+Affected: 98.6%
 2137
-Has Disease 100%
+Affected: 98.6%
 2138
-Has Disease 100%
+Affected: 98.6%
 2139
-Has Disease 100%
+Affected: 98.6%
 2140
-Has Disease 100%
+Affected: 98.6%
 2141
-Has Disease 100%
+Affected: 98.6%
 2142
-Has Disease 100%
+Affected: 98.6%
 2143
-Has Disease 100%
+Affected: 98.6%
 2144
-Has Disease 100%
+Affected: 98.6%
 2145
-Has Disease 100%
+Affected: 98.6%
 2146
-Has Disease 100%
+Affected: 98.6%
 2147
-Has Disease 100%
+Affected: 98.6%
 2148
-Has Disease 100%
+Affected: 98.6%
 2149
-Has Disease 100%
+Affected: 98.6%
 2150
-Has Disease 100%
+Affected: 98.6%
 2151
-Has Disease 100%
+Affected: 98.6%
 2152
-Has Disease 100%
+Affected: 98.6%
 2153
-Has Disease 100%
+Affected: 98.6%
 2154
-Has Disease 100%
+Affected: 98.6%
 2155
-Has Disease 100%
+Affected: 98.6%
 2156
-Has Disease 100%
+Affected: 98.6%
 2157
-Has Disease 100%
+Affected: 98.6%
 2158
-Has Disease 100%
+Affected: 98.6%
 2159
-Has Disease 100%
+Affected: 98.6%
 2160
-Has Disease 100%
+Affected: 98.6%
 2161
-Has Disease 100%
+Affected: 98.6%
 2162
-Has Disease 100%
+Affected: 98.6%
 2163
-Has Disease 100%
+Affected: 98.6%
 2164
-Has Disease 100%
+Affected: 98.6%
 2165
-Has Disease 100%
+Affected: 98.6%
 2166
-Has Disease 100%
+Affected: 98.6%
 2167
-Has Disease 100%
+Affected: 98.6%
 2168
-Has Disease 100%
+Affected: 98.6%
 2169
-Has Disease 100%
+Affected: 98.6%
 2170
-Has Disease 100%
+Affected: 98.6%
 2171
-Has Disease 100%
+Affected: 98.6%
 2172
-Has Disease 100%
+Affected: 98.6%
 2173
-Has Disease 100%
+Affected: 98.6%
 2174
-Has Disease 100%
+Affected: 98.6%
 2175
-Has Disease 100%
+Affected: 98.6%
 2176
-Has Disease 100%
+Affected: 98.6%
 2177
-Has Disease 100%
+Affected: 98.6%
 2178
-Has Disease 100%
+Affected: 98.6%
 2179
-Has Disease 100%
+Affected: 98.6%
 2180
-Has Disease 100%
+Affected: 98.6%
 2181
-Has Disease 100%
+Affected: 98.6%
 2182
-Has Disease 100%
+Affected: 98.6%
 2183
-Has Disease 100%
+Affected: 98.6%
 2184
-Has Disease 100%
+Affected: 98.6%
 2185
-Has Disease 100%
+Affected: 98.6%
 2186
-Has Disease 100%
+Affected: 98.6%
 2187
-Has Disease 100%
+Affected: 98.6%
 2188
-Has Disease 100%
+Affected: 98.6%
 2189
-Has Disease 100%
+Affected: 98.6%
 2190
-Has Disease 100%
+Affected: 98.6%
 2191
-Has Disease 100%
+Affected: 98.6%
 2192
-Has Disease 100%
+Affected: 98.6%
 2193
-Has Disease 100%
+Affected: 98.6%
 2194
-Has Disease 100%
+Affected: 98.6%
 2195
-Has Disease 100%
+Affected: 98.6%
 2196
-Has Disease 100%
+Affected: 98.6%
 2197
-Has Disease 100%
+Affected: 98.6%
 2198
-Has Disease 100%
+Affected: 98.6%
 2199
-Has Disease 100%
+Affected: 98.6%
 2200
-Has Disease 100%
+Affected: 98.6%
 2201
-Has Disease 100%
+Affected: 98.6%
 2202
-Has Disease 100%
+Affected: 98.6%
 2203
-Has Disease 100%
+Affected: 98.6%
 2204
-Has Disease 100%
+Affected: 98.6%
 2205
-Has Disease 100%
+Affected: 98.6%
 2206
-Has Disease 100%
+Affected: 98.6%
 2207
-Has Disease 100%
+Affected: 98.6%
 2208
-Has Disease 100%
+Affected: 98.6%
 2209
-Has Disease 100%
+Affected: 98.6%
 2210
-Has Disease 100%
+Affected: 98.6%
 2211
-Has Disease 100%
+Affected: 98.6%
 2212
-Has Disease 100%
+Affected: 98.6%
 2213
-Has Disease 100%
+Affected: 98.6%
 2214
-Has Disease 100%
+Affected: 98.6%
 2215
-Has Disease 100%
+Affected: 98.6%
 2216
-Has Disease 100%
+Affected: 98.6%
 2217
-Has Disease 100%
+Affected: 98.6%
 2218
-Has Disease 100%
+Affected: 98.6%
 2219
-Has Disease 100%
+Affected: 98.6%
 2220
-Has Disease 100%
+Affected: 98.6%
 2221
-Has Disease 100%
+Affected: 98.6%
 2222
-Has Disease 100%
+Affected: 98.6%
 2223
-Has Disease 100%
+Affected: 98.6%
 2224
-Has Disease 100%
+Affected: 98.6%
 2225
-Has Disease 100%
+Affected: 98.6%
 2226
-Has Disease 100%
+Affected: 98.6%
 2227
-Has Disease 100%
+Affected: 98.6%
 2228
-Has Disease 100%
+Affected: 98.6%
 2229
-Has Disease 100%
+Affected: 98.6%
 2230
-Has Disease 100%
+Affected: 98.6%
 2231
-Has Disease 100%
+Affected: 98.6%
 2232
-Has Disease 100%
+Affected: 98.6%
 2233
-Has Disease 100%
+Affected: 98.6%
 2234
-Has Disease 100%
+Affected: 98.6%
 2235
-Has Disease 100%
+Affected: 98.6%
 2236
-Has Disease 100%
+Affected: 98.6%
 2237
-Has Disease 100%
+Affected: 98.6%
 2238
-Has Disease 100%
+Affected: 98.6%
 2239
-Has Disease 100%
+Affected: 98.6%
 2240
-Has Disease 100%
+Affected: 98.6%
 2241
-Has Disease 100%
+Affected: 98.6%
 2242
-Has Disease 100%
+Affected: 98.6%
 2243
-Has Disease 100%
+Affected: 98.6%
 2244
-Has Disease 100%
+Affected: 98.6%
 2245
-Has Disease 100%
+Affected: 98.6%
 2246
-Has Disease 100%
+Affected: 98.6%
 2247
-Has Disease 100%
+Affected: 98.6%
 2248
-Has Disease 100%
+Affected: 98.6%
 2249
-Has Disease 100%
+Affected: 98.6%
 2250
-Has Disease 100%
+Affected: 98.6%
 2251
-Has Disease 100%
+Affected: 98.6%
 2252
-Has Disease 100%
+Affected: 98.8%
 2253
-Has Disease 100%
+Affected: 98.8%
 2254
-Has Disease 100%
+Affected: 98.8%
 2255
-Has Disease 100%
+Affected: 98.8%
 2256
-Has Disease 100%
+Affected: 98.8%
 2257
-Has Disease 100%
+Affected: 98.8%
 2258
-Has Disease 100%
+Affected: 98.8%
 2259
-Has Disease 100%
+Affected: 98.8%
 2260
-Has Disease 100%
+Affected: 98.8%
 2261
-Has Disease 100%
+Affected: 98.8%
 2262
-Has Disease 100%
+Affected: 98.8%
 2263
-Has Disease 100%
+Affected: 98.8%
 2264
-Has Disease 100%
+Affected: 98.8%
 2265
-Has Disease 100%
+Affected: 98.8%
 2266
-Has Disease 100%
+Affected: 98.8%
 2267
-Has Disease 100%
+Affected: 98.8%
 2268
-Has Disease 100%
+Affected: 98.8%
 2269
-Has Disease 100%
+Affected: 98.8%
 2270
-Has Disease 100%
+Affected: 98.8%
 2271
-Has Disease 100%
+Affected: 98.8%
 2272
-Has Disease 100%
+Affected: 98.8%
 2273
-Has Disease 100%
+Affected: 98.8%
 2274
-Has Disease 100%
+Affected: 98.8%
 2275
-Has Disease 100%
+Affected: 98.8%
 2276
-Has Disease 100%
+Affected: 98.8%
 2277
-Has Disease 100%
+Affected: 98.8%
 2278
-Has Disease 100%
+Affected: 98.8%
 2279
-Has Disease 100%
+Affected: 98.8%
 2280
-Has Disease 100%
+Affected: 98.8%
 2281
-Has Disease 100%
+Affected: 98.8%
 2282
-Has Disease 100%
+Affected: 98.8%
 2283
-Has Disease 100%
+Affected: 98.8%
 2284
-Has Disease 100%
+Affected: 98.8%
 2285
-Has Disease 100%
+Affected: 98.8%
 2286
-Has Disease 100%
+Affected: 98.8%
 2287
-Has Disease 100%
+Affected: 98.8%
 2288
-Has Disease 100%
+Affected: 98.8%
 2289
-Has Disease 100%
+Affected: 98.8%
 2290
-Has Disease 100%
+Affected: 98.8%
 2291
-Has Disease 100%
+Affected: 98.8%
 2292
-Has Disease 100%
+Affected: 98.8%
 2293
-Has Disease 100%
+Affected: 98.8%
 2294
-Has Disease 100%
+Affected: 98.8%
 2295
-Has Disease 100%
+Affected: 98.8%
 2296
-Has Disease 100%
+Affected: 98.8%
 2297
-Has Disease 100%
+Affected: 98.8%
 2298
-Has Disease 100%
+Affected: 98.8%
 2299
-Has Disease 100%
+Affected: 98.8%
 2300
-Has Disease 100%
+Affected: 98.8%
 2301
-Has Disease 100%
+Affected: 98.8%
 2302
-Has Disease 100%
+Affected: 98.8%
 2303
-Has Disease 100%
+Affected: 98.8%
 2304
-Has Disease 100%
+Affected: 98.8%
 2305
-Has Disease 100%
+Affected: 98.8%
 2306
-Has Disease 100%
+Affected: 98.8%
 2307
-Has Disease 100%
+Affected: 98.8%
 2308
-Has Disease 100%
+Affected: 98.8%
 2309
-Has Disease 100%
+Affected: 98.8%
 2310
-Has Disease 100%
+Affected: 98.8%
 2311
-Has Disease 100%
+Affected: 98.8%
 2312
-Has Disease 100%
+Affected: 98.8%
 2313
-Has Disease 100%
+Affected: 98.8%
 2314
-Has Disease 100%
+Affected: 98.8%
 2315
-Has Disease 100%
+Affected: 98.8%
 2316
-Has Disease 100%
+Affected: 98.8%
 2317
-Has Disease 100%
+Affected: 98.8%
 2318
-Has Disease 100%
+Affected: 98.8%
 2319
-Has Disease 100%
+Affected: 98.8%
 2320
-Has Disease 100%
+Affected: 98.8%
 2321
-Has Disease 100%
+Affected: 98.8%
 2322
-Has Disease 100%
+Affected: 98.8%
 2323
-Has Disease 100%
+Affected: 98.8%
 2324
-Has Disease 100%
+Affected: 98.8%
 2325
-Has Disease 100%
+Affected: 98.8%
 2326
-Has Disease 100%
+Affected: 98.8%
 2327
-Has Disease 100%
+Affected: 98.8%
 2328
-Has Disease 100%
+Affected: 98.8%
 2329
-Has Disease 100%
+Affected: 98.8%
 2330
-Has Disease 100%
+Affected: 98.8%
 2331
-Has Disease 100%
+Affected: 98.8%
 2332
-Has Disease 100%
+Affected: 98.8%
 2333
-Has Disease 100%
+Affected: 98.8%
 2334
-Has Disease 100%
+Affected: 98.8%
 2335
-Has Disease 100%
+Affected: 98.8%
 2336
-Has Disease 100%
+Affected: 98.8%
 2337
-Has Disease 100%
+Affected: 98.8%
 2338
-Has Disease 100%
+Affected: 98.8%
 2339
-Has Disease 100%
+Affected: 98.8%
 2340
-Has Disease 100%
+Affected: 98.8%
 2341
-Has Disease 100%
+Affected: 98.8%
 2342
-Has Disease 100%
+Affected: 98.8%
 2343
-Has Disease 100%
+Affected: 98.8%
 2344
-Has Disease 100%
+Affected: 98.8%
 2345
-Has Disease 100%
+Affected: 98.8%
 2346
-Has Disease 100%
+Affected: 98.8%
 2347
-Has Disease 100%
+Affected: 98.8%
 2348
-Has Disease 100%
+Affected: 98.8%
 2349
-Has Disease 100%
+Affected: 98.8%
 2350
-Has Disease 100%
+Affected: 98.8%
 2351
-Has Disease 100%
+Affected: 98.8%
 2352
-Has Disease 100%
+Affected: 98.8%
 2353
-Has Disease 100%
+Affected: 98.8%
 2354
-Has Disease 100%
+Affected: 98.8%
 2355
-Has Disease 100%
+Affected: 98.8%
 2356
-Has Disease 100%
+Affected: 98.8%
 2357
-Has Disease 100%
+Affected: 98.8%
 2358
-Has Disease 100%
+Affected: 98.8%
 2359
-Has Disease 100%
+Affected: 98.8%
 2360
-Has Disease 100%
+Affected: 98.8%
 2361
-Has Disease 100%
+Affected: 98.8%
 2362
-Has Disease 100%
+Affected: 98.8%
 2363
-Has Disease 100%
+Affected: 98.8%
 2364
-Has Disease 100%
+Affected: 98.8%
 2365
-Has Disease 100%
+Affected: 98.8%
 2366
-Has Disease 100%
+Affected: 98.8%
 2367
-Has Disease 100%
+Affected: 98.8%
 2368
-Has Disease 100%
+Affected: 98.8%
 2369
-Has Disease 100%
+Affected: 98.8%
 2370
-Has Disease 100%
+Affected: 98.8%
 2371
-Has Disease 100%
+Affected: 98.8%
 2372
-Has Disease 100%
+Affected: 98.8%
 2373
-Has Disease 100%
+Affected: 98.8%
 2374
-Has Disease 100%
+Affected: 98.8%
 2375
-Has Disease 100%
+Affected: 98.8%
 2376
-Has Disease 100%
+Affected: 98.8%
 2377
-Has Disease 100%
+Affected: 98.8%
 2378
-Has Disease 100%
+Affected: 98.8%
 2379
-Has Disease 100%
+Affected: 98.8%
 2380
-Has Disease 100%
+Affected: 98.8%
 2381
-Has Disease 100%
+Affected: 98.8%
 2382
-Has Disease 100%
+Affected: 98.8%
 2383
-Has Disease 100%
+Affected: 98.8%
 2384
-Has Disease 100%
+Affected: 98.8%
 2385
-Has Disease 100%
+Affected: 98.8%
 2386
-Has Disease 100%
+Affected: 98.8%
 2387
-Has Disease 100%
+Affected: 98.8%
 2388
-Has Disease 100%
+Affected: 98.8%
 2389
-Has Disease 100%
+Affected: 98.8%
 2390
-Has Disease 100%
+Affected: 98.8%
 2391
-Has Disease 100%
+Affected: 98.8%
 2392
-Has Disease 100%
+Affected: 98.8%
 2393
-Has Disease 100%
+Affected: 98.8%
 2394
-Has Disease 100%
+Affected: 98.8%
 2395
-Has Disease 100%
+Affected: 98.8%
 2396
-Has Disease 100%
+Affected: 98.8%
 2397
-Has Disease 100%
+Affected: 98.8%
 2398
-Has Disease 100%
+Affected: 98.8%
 2399
-Has Disease 100%
+Affected: 98.8%
 2400
-Has Disease 100%
+Affected: 98.8%
 2401
-Has Disease 100%
+Affected: 98.8%
 2402
-Has Disease 100%
+Affected: 98.8%
 2403
-Has Disease 100%
+Affected: 98.8%
 2404
-Has Disease 100%
+Affected: 98.8%
 2405
-Has Disease 100%
+Affected: 98.8%
 2406
-Has Disease 100%
+Affected: 98.8%
 2407
-Has Disease 100%
+Affected: 98.8%
 2408
-Has Disease 100%
+Affected: 98.8%
 2409
-Has Disease 100%
+Affected: 98.8%
 2410
-Has Disease 100%
+Affected: 98.8%
 2411
-Has Disease 100%
+Affected: 98.8%
 2412
-Has Disease 100%
+Affected: 98.8%
 2413
-Has Disease 100%
+Affected: 98.8%
 2414
-Has Disease 100%
+Affected: 98.8%
 2415
-Has Disease 100%
+Affected: 98.8%
 2416
-Has Disease 100%
+Affected: 98.8%
 2417
-Has Disease 100%
+Affected: 98.8%
 2418
-Has Disease 100%
+Affected: 98.8%
 2419
-Has Disease 100%
+Affected: 98.8%
 2420
-Has Disease 100%
+Affected: 98.8%
 2421
-Has Disease 100%
+Affected: 98.8%
 2422
-Has Disease 100%
+Affected: 98.8%
 2423
-Has Disease 100%
+Affected: 98.8%
 2424
-Has Disease 100%
+Affected: 98.8%
 2425
-Has Disease 100%
+Affected: 98.8%
 2426
-Has Disease 100%
+Affected: 98.8%
 2427
-Has Disease 100%
+Affected: 98.8%
 2428
-Has Disease 100%
+Affected: 98.8%
 2429
-Has Disease 100%
+Affected: 98.8%
 2430
-Has Disease 100%
+Affected: 98.8%
 2431
-Has Disease 100%
+Affected: 98.8%
 2432
-Has Disease 100%
+Affected: 98.8%
 2433
-Has Disease 100%
+Affected: 98.8%
 2434
-Has Disease 100%
+Affected: 98.8%
 2435
-Has Disease 100%
+Affected: 98.8%
 2436
-Has Disease 100%
+Affected: 98.8%
 2437
-Has Disease 100%
+Affected: 98.8%
 2438
-Has Disease 100%
+Affected: 98.8%
 2439
-Has Disease 100%
+Affected: 98.8%
 2440
-Has Disease 100%
+Affected: 98.8%
 2441
-Has Disease 100%
+Affected: 98.8%
 2442
-Has Disease 100%
+Affected: 98.8%
 2443
-Has Disease 100%
+Affected: 98.8%
 2444
-Has Disease 100%
+Affected: 98.8%
 2445
-Has Disease 100%
+Affected: 98.8%
 2446
-Has Disease 100%
+Affected: 98.8%
 2447
-Has Disease 100%
+Affected: 98.8%
 2448
-Has Disease 100%
+Affected: 98.8%
 2449
-Has Disease 100%
+Affected: 98.8%
 2450
-Has Disease 100%
+Affected: 98.8%
 2451
-Has Disease 100%
+Affected: 98.8%
 2452
-Has Disease 100%
+Affected: 98.8%
 2453
-Has Disease 100%
+Affected: 98.8%
 2454
-Has Disease 100%
+Affected: 98.8%
 2455
-Has Disease 100%
+Affected: 98.8%
 2456
-Has Disease 100%
+Affected: 98.8%
 2457
-Has Disease 100%
+Affected: 98.8%
 2458
-Has Disease 100%
+Affected: 98.8%
 2459
-Has Disease 100%
+Affected: 98.8%
 2460
-Has Disease 100%
+Affected: 98.8%
 2461
-Has Disease 100%
+Affected: 98.8%
 2462
-Has Disease 100%
+Affected: 98.8%
 2463
-Has Disease 100%
+Affected: 98.8%
 2464
-Has Disease 100%
+Affected: 98.8%
 2465
-Has Disease 100%
+Affected: 98.8%
 2466
-Has Disease 100%
+Affected: 98.8%
 2467
-Has Disease 100%
+Affected: 98.8%
 2468
-Has Disease 100%
+Affected: 98.8%
 2469
-Has Disease 100%
+Affected: 98.8%
 2470
-Has Disease 100%
+Affected: 98.8%
 2471
-Has Disease 100%
+Affected: 98.8%
 2472
-Has Disease 100%
+Affected: 98.8%
 2473
-Has Disease 100%
+Affected: 98.8%
 2474
-Has Disease 100%
+Affected: 98.8%
 2475
-Has Disease 100%
+Affected: 98.8%
 2476
-Has Disease 100%
+Affected: 98.8%
 2477
-Has Disease 100%
+Affected: 98.8%
 2478
-Has Disease 100%
+Affected: 98.8%
 2479
-Has Disease 100%
+Affected: 98.8%
 2480
-Has Disease 100%
+Affected: 98.8%
 2481
-Has Disease 100%
+Affected: 98.8%
 2482
-Has Disease 100%
+Affected: 98.8%
 2483
-Has Disease 100%
+Affected: 98.8%
 2484
-Has Disease 100%
+Affected: 98.8%
 2485
-Has Disease 100%
+Affected: 98.8%
 2486
-Has Disease 100%
+Affected: 98.8%
 2487
-Has Disease 100%
+Affected: 98.8%
 2488
-Has Disease 100%
+Affected: 98.8%
 2489
-Has Disease 100%
+Affected: 98.8%
 2490
-Has Disease 100%
+Affected: 98.8%
 2491
-Has Disease 100%
+Affected: 98.8%
 2492
-Has Disease 100%
+Affected: 98.8%
 2493
-Has Disease 100%
+Affected: 98.8%
 2494
-Has Disease 100%
+Affected: 98.8%
 2495
-Has Disease 100%
+Affected: 98.8%
 2496
-Has Disease 100%
+Affected: 98.8%
 2497
-Has Disease 100%
+Affected: 98.8%
 2498
-Has Disease 100%
+Affected: 98.8%
 2499
-Has Disease 100%
+Affected: 98.8%
 2500
-Has Disease 100%
+Affected: 98.8%
 2501
-Has Disease 100%
+Affected: 98.8%
 2502
-Has Disease 100%
+Affected: 98.8%
 2503
-Has Disease 100%
+Affected: 98.8%
 2504
-Has Disease 100%
+Affected: 98.8%
 2505
-Has Disease 100%
+Affected: 98.8%
 2506
-Has Disease 100%
+Affected: 98.8%
 2507
-Has Disease 100%
+Affected: 98.8%
 2508
-Has Disease 100%
+Affected: 98.8%
 2509
-Has Disease 100%
+Affected: 98.8%
 2510
-Has Disease 100%
+Affected: 98.8%
 2511
-Has Disease 100%
+Affected: 98.8%
 2512
-Has Disease 100%
+Affected: 98.8%
 2513
-Has Disease 100%
+Affected: 98.8%
 2514
-Has Disease 100%
+Affected: 98.8%
 2515
-Has Disease 100%
+Affected: 98.8%
 2516
-Has Disease 100%
+Affected: 98.8%
 2517
-Has Disease 100%
+Affected: 98.8%
 2518
-Has Disease 100%
+Affected: 98.8%
 2519
-Has Disease 100%
+Affected: 98.8%
 2520
-Has Disease 100%
+Affected: 98.8%
 2521
-Has Disease 100%
+Affected: 98.8%
 2522
-Has Disease 100%
+Affected: 98.8%
 2523
-Has Disease 100%
+Affected: 98.8%
 2524
-Has Disease 100%
+Affected: 98.8%
 2525
-Has Disease 100%
+Affected: 98.8%
 2526
-Has Disease 100%
+Affected: 98.8%
 2527
-Has Disease 100%
+Affected: 98.8%
 2528
-Has Disease 100%
+Affected: 98.8%
 2529
-Has Disease 100%
+Affected: 98.8%
 2530
-Has Disease 100%
+Affected: 98.8%
 2531
-Has Disease 100%
+Affected: 98.8%
 2532
-Has Disease 100%
+Affected: 98.8%
 2533
-Has Disease 100%
+Affected: 98.8%
 2534
-Has Disease 100%
+Affected: 98.8%
 2535
-Has Disease 100%
+Affected: 98.8%
 2536
-Has Disease 100%
+Affected: 98.8%
 2537
-Has Disease 100%
+Affected: 98.8%
 2538
-Has Disease 100%
+Affected: 98.8%
 2539
-Has Disease 100%
+Affected: 98.8%
 2540
-Has Disease 100%
+Affected: 98.8%
 2541
-Has Disease 100%
+Affected: 98.8%
 2542
-Has Disease 100%
+Affected: 98.8%
 2543
-Has Disease 100%
+Affected: 98.8%
 2544
-Has Disease 100%
+Affected: 98.8%
 2545
-Has Disease 100%
+Affected: 98.8%
 2546
-Has Disease 100%
+Affected: 98.8%
 2547
-Has Disease 100%
+Affected: 98.8%
 2548
-Has Disease 100%
+Affected: 98.8%
 2549
-Has Disease 100%
+Affected: 98.8%
 2550
-Has Disease 100%
+Affected: 98.8%
 2551
-Has Disease 100%
+Affected: 98.8%
 2552
-Has Disease 100%
+Affected: 98.8%
 2553
-Has Disease 100%
+Affected: 98.8%
 2554
-Has Disease 100%
+Affected: 98.8%
 2555
-Has Disease 100%
+Affected: 98.8%
 2556
-Has Disease 100%
+Affected: 98.8%
 2557
-Has Disease 100%
+Affected: 98.8%
 2558
-Has Disease 100%
+Affected: 98.8%
 2559
-Has Disease 100%
+Affected: 98.8%
 2560
-Has Disease 100%
+Affected: 98.8%
 2561
-Has Disease 100%
+Affected: 98.8%
 2562
-Has Disease 100%
+Affected: 98.8%
 2563
-Has Disease 100%
+Affected: 98.8%
 2564
-Has Disease 100%
+Affected: 98.8%
 2565
-Has Disease 100%
+Affected: 98.8%
 2566
-Has Disease 100%
+Affected: 98.8%
 2567
-Has Disease 100%
+Affected: 98.8%
 2568
-Has Disease 100%
+Affected: 98.8%
 2569
-Has Disease 100%
+Affected: 98.8%
 2570
-Has Disease 100%
+Affected: 98.8%
 2571
-Has Disease 100%
+Affected: 98.8%
 2572
-Has Disease 100%
+Affected: 98.8%
 2573
-Has Disease 100%
+Affected: 98.8%
 2574
-Has Disease 100%
+Affected: 98.8%
 2575
-Has Disease 100%
+Affected: 98.8%
 2576
-Has Disease 100%
+Affected: 98.8%
 2577
-Has Disease 100%
+Affected: 98.8%
 2578
-Has Disease 100%
+Affected: 98.8%
 2579
-Has Disease 100%
+Affected: 98.8%
 2580
-Has Disease 100%
+Affected: 98.8%
 2581
-Has Disease 100%
+Affected: 98.8%
 2582
-Has Disease 100%
+Affected: 98.8%
 2583
-Has Disease 100%
+Affected: 98.8%
 2584
-Has Disease 100%
+Affected: 98.8%
 2585
-Has Disease 100%
+Affected: 98.8%
 2586
-Has Disease 100%
+Affected: 98.8%
 2587
-Has Disease 100%
+Affected: 98.8%
 2588
-Has Disease 100%
+Affected: 98.8%
 2589
-Has Disease 100%
+Affected: 98.8%
 2590
-Has Disease 100%
+Affected: 98.8%
 2591
-Has Disease 100%
+Affected: 98.8%
 2592
-Has Disease 100%
+Affected: 98.8%
 2593
-Has Disease 100%
+Affected: 98.8%
 2594
-Has Disease 100%
+Affected: 98.8%
 2595
-Has Disease 100%
+Affected: 98.8%
 2596
-Has Disease 100%
+Affected: 98.8%
 2597
-Has Disease 100%
+Affected: 98.8%
 2598
-Has Disease 100%
+Affected: 98.8%
 2599
-Has Disease 100%
+Affected: 98.8%
 2600
-Has Disease 100%
+Affected: 98.8%
 2601
-Has Disease 100%
+Affected: 98.8%
 2602
-Has Disease 100%
+Affected: 98.8%
 2603
-Has Disease 100%
+Affected: 98.8%
 2604
-Has Disease 100%
+Affected: 98.8%
 2605
-Has Disease 100%
+Affected: 98.8%
 2606
-Has Disease 100%
+Affected: 98.8%
 2607
-Has Disease 100%
+Affected: 98.8%
 2608
-Has Disease 100%
+Affected: 98.8%
 2609
-Has Disease 100%
+Affected: 98.8%
 2610
-Has Disease 100%
+Affected: 98.8%
 2611
-Has Disease 100%
+Affected: 98.8%
 2612
-Has Disease 100%
+Affected: 98.8%
 2613
-Has Disease 100%
+Affected: 98.8%
 2614
-Has Disease 100%
+Affected: 98.8%
 2615
-Has Disease 100%
+Affected: 98.8%
 2616
-Has Disease 100%
+Affected: 98.8%
 2617
-Has Disease 100%
+Affected: 98.8%
 2618
-Has Disease 100%
+Affected: 98.8%
 2619
-Has Disease 100%
+Affected: 98.8%
 2620
-Has Disease 100%
+Affected: 98.8%
 2621
-Has Disease 100%
+Affected: 98.8%
 2622
-Has Disease 100%
+Affected: 98.8%
 2623
-Has Disease 100%
+Affected: 98.8%
 2624
-Has Disease 100%
+Affected: 98.8%
 2625
-Has Disease 100%
+Affected: 98.8%
 2626
-Has Disease 100%
+Affected: 98.8%
 2627
-Has Disease 100%
+Affected: 98.8%
 2628
-Has Disease 100%
+Affected: 98.8%
 2629
-Has Disease 100%
+Affected: 98.8%
 2630
-Has Disease 100%
+Affected: 98.8%
 2631
-Has Disease 100%
+Affected: 98.8%
 2632
-Has Disease 100%
+Affected: 98.8%
 2633
-Has Disease 100%
+Affected: 98.8%
 2634
-Has Disease 100%
+Affected: 98.8%
 2635
-Has Disease 100%
+Affected: 98.8%
 2636
-Has Disease 100%
+Affected: 98.8%
 2637
-Has Disease 100%
+Affected: 98.8%
 2638
-Has Disease 100%
+Affected: 98.8%
 2639
-Has Disease 100%
+Affected: 98.8%
 2640
-Has Disease 100%
+Affected: 98.8%
 2641
-Has Disease 100%
+Affected: 98.8%
 2642
-Has Disease 100%
+Affected: 98.8%
 2643
-Has Disease 100%
+Affected: 98.8%
 2644
-Has Disease 100%
+Affected: 98.8%
 2645
-Has Disease 100%
+Affected: 98.8%
 2646
-Has Disease 100%
+Affected: 98.8%
 2647
-Has Disease 100%
+Affected: 98.8%
 2648
-Has Disease 100%
+Affected: 98.8%
 2649
-Has Disease 100%
+Affected: 98.8%
 2650
-Has Disease 100%
+Affected: 98.8%
 2651
-Has Disease 100%
+Affected: 98.8%
 2652
-Has Disease 100%
+Affected: 98.8%
 2653
-Has Disease 100%
+Affected: 98.8%
 2654
-Has Disease 100%
+Affected: 98.8%
 2655
-Has Disease 100%
+Affected: 98.8%
 2656
-Has Disease 100%
+Affected: 98.8%
 2657
-Has Disease 100%
+Affected: 98.8%
 2658
-Has Disease 100%
+Affected: 98.8%
 2659
-Has Disease 100%
+Affected: 98.8%
 2660
-Has Disease 100%
+Affected: 98.8%
 2661
-Has Disease 100%
+Affected: 98.8%
 2662
-Has Disease 100%
+Affected: 98.8%
 2663
-Has Disease 100%
+Affected: 98.8%
 2664
-Has Disease 100%
+Affected: 98.8%
 2665
-Has Disease 100%
+Affected: 98.8%
 2666
-Has Disease 100%
+Affected: 98.8%
 2667
-Has Disease 100%
+Affected: 98.8%
 2668
-Has Disease 100%
+Affected: 98.8%
 2669
-Has Disease 100%
+Affected: 98.8%
 2670
-Has Disease 100%
+Affected: 98.8%
 2671
-Has Disease 100%
+Affected: 98.8%
 2672
-Has Disease 100%
+Affected: 98.8%
 2673
-Has Disease 100%
+Affected: 98.8%
 2674
-Has Disease 100%
+Affected: 98.8%
 2675
-Has Disease 100%
+Affected: 98.8%
 2676
-Has Disease 100%
+Affected: 98.8%
 2677
-Has Disease 100%
+Affected: 98.8%
 2678
-Has Disease 100%
+Affected: 98.8%
 2679
-Has Disease 100%
+Affected: 98.8%
 2680
-Has Disease 100%
+Affected: 98.8%
 2681
-Has Disease 100%
+Affected: 98.8%
 2682
-Has Disease 100%
+Affected: 98.8%
 2683
-Has Disease 100%
+Affected: 98.8%
 2684
-Has Disease 100%
+Affected: 98.8%
 2685
-Has Disease 100%
+Affected: 98.8%
 2686
-Has Disease 100%
+Affected: 98.8%
 2687
-Has Disease 100%
+Affected: 98.8%
 2688
-Has Disease 100%
+Affected: 98.8%
 2689
-Has Disease 100%
+Affected: 98.8%
 2690
-Has Disease 100%
+Affected: 98.8%
 2691
-Has Disease 100%
+Affected: 98.8%
 2692
-Has Disease 100%
+Affected: 98.8%
 2693
-Has Disease 100%
+Affected: 98.8%
 2694
-Has Disease 100%
+Affected: 98.8%
 2695
-Has Disease 100%
+Affected: 98.8%
 2696
-Has Disease 100%
+Affected: 98.8%
 2697
-Has Disease 100%
+Affected: 98.8%
 2698
-Has Disease 100%
+Affected: 98.8%
 2699
-Has Disease 100%
+Affected: 98.8%
 2700
-Has Disease 100%
+Affected: 98.8%
 2701
-Has Disease 100%
+Affected: 98.8%
 2702
-Has Disease 100%
+Affected: 98.8%
 2703
-Has Disease 100%
+Affected: 98.8%
 2704
-Has Disease 100%
+Affected: 98.8%
 2705
-Has Disease 100%
+Affected: 98.8%
 2706
-Has Disease 100%
+Affected: 98.8%
 2707
-Has Disease 100%
+Affected: 98.8%
 2708
-Has Disease 100%
+Affected: 98.8%
 2709
-Has Disease 100%
+Affected: 98.8%
 2710
-Has Disease 100%
+Affected: 98.8%
 2711
-Has Disease 100%
+Affected: 98.8%
 2712
-Has Disease 100%
+Affected: 98.8%
 2713
-Has Disease 100%
+Affected: 98.8%
 2714
-Has Disease 100%
+Affected: 98.8%
 2715
-Has Disease 100%
+Affected: 98.8%
 2716
-Has Disease 100%
+Affected: 98.8%
 2717
-Has Disease 100%
+Affected: 98.8%
 2718
-Has Disease 100%
+Affected: 98.8%
 2719
-Has Disease 100%
+Affected: 98.8%
 2720
-Has Disease 100%
+Affected: 98.8%
 2721
-Has Disease 100%
+Affected: 98.8%
 2722
-Has Disease 100%
+Affected: 98.8%
 2723
-Has Disease 100%
+Affected: 98.8%
 2724
-Has Disease 100%
+Affected: 98.8%
 2725
-Has Disease 100%
+Affected: 99%
 2726
-Has Disease 100%
+Affected: 99%
 2727
-Has Disease 100%
+Affected: 99%
 2728
-Has Disease 100%
+Affected: 99%
 2729
-Has Disease 100%
+Affected: 99%
 2730
-Has Disease 100%
+Affected: 99%
 2731
-Has Disease 100%
+Affected: 99%
 2732
-Has Disease 100%
+Affected: 99%
 2733
-Has Disease 100%
+Affected: 99%
 2734
-Has Disease 100%
+Affected: 99%
 2735
-Has Disease 100%
+Affected: 99%
 2736
-Has Disease 100%
+Affected: 99%
 2737
-Has Disease 100%
+Affected: 99%
 2738
-Has Disease 100%
+Affected: 99%
 2739
-Has Disease 100%
+Affected: 99%
 2740
-Has Disease 100%
+Affected: 99%
 2741
-Has Disease 100%
+Affected: 99%
 2742
-Has Disease 100%
+Affected: 99%
 2743
-Has Disease 100%
+Affected: 99%
 2744
-Has Disease 100%
+Affected: 99%
 2745
-Has Disease 100%
+Affected: 99%
 2746
-Has Disease 100%
+Affected: 99%
 2747
-Has Disease 100%
+Affected: 99%
 2748
-Has Disease 100%
+Affected: 99%
 2749
-Has Disease 100%
+Affected: 99%
 2750
-Has Disease 100%
+Affected: 99%
 2751
-Has Disease 100%
+Affected: 99%
 2752
-Has Disease 100%
+Affected: 99%
 2753
-Has Disease 100%
+Affected: 99%
 2754
-Has Disease 100%
+Affected: 99%
 2755
-Has Disease 100%
+Affected: 99%
 2756
-Has Disease 100%
+Affected: 99%
 2757
-Has Disease 100%
+Affected: 99%
 2758
-Has Disease 100%
+Affected: 99%
 2759
-Has Disease 100%
+Affected: 99%
 2760
-Has Disease 100%
+Affected: 99%
 2761
-Has Disease 100%
+Affected: 99%
 2762
-Has Disease 100%
+Affected: 99%
 2763
-Has Disease 100%
+Affected: 99%
 2764
-Has Disease 100%
+Affected: 99%
 2765
-Has Disease 100%
+Affected: 99%
 2766
-Has Disease 100%
+Affected: 99%
 2767
-Has Disease 100%
+Affected: 99%
 2768
-Has Disease 100%
+Affected: 99%
 2769
-Has Disease 100%
+Affected: 99%
 2770
-Has Disease 100%
+Affected: 99%
 2771
-Has Disease 100%
+Affected: 99%
 2772
-Has Disease 100%
+Affected: 99%
 2773
-Has Disease 100%
+Affected: 99%
 2774
-Has Disease 100%
+Affected: 99%
 2775
-Has Disease 100%
+Affected: 99%
 2776
-Has Disease 100%
+Affected: 99%
 2777
-Has Disease 100%
+Affected: 99%
 2778
-Has Disease 100%
+Affected: 99%
 2779
-Has Disease 100%
+Affected: 99%
 2780
-Has Disease 100%
+Affected: 99%
 2781
-Has Disease 100%
+Affected: 99%
 2782
-Has Disease 100%
+Affected: 99%
 2783
-Has Disease 100%
+Affected: 99%
 2784
-Has Disease 100%
+Affected: 99%
 2785
-Has Disease 100%
+Affected: 99%
 2786
-Has Disease 100%
+Affected: 99%
 2787
-Has Disease 100%
+Affected: 99%
 2788
-Has Disease 100%
+Affected: 99%
 2789
-Has Disease 100%
+Affected: 99%
 2790
-Has Disease 100%
+Affected: 99%
 2791
-Has Disease 100%
+Affected: 99%
 2792
-Has Disease 100%
+Affected: 99%
 2793
-Has Disease 100%
+Affected: 99%
 2794
-Has Disease 100%
+Affected: 99%
 2795
-Has Disease 100%
+Affected: 99%
 2796
-Has Disease 100%
+Affected: 99%
 2797
-Has Disease 100%
+Affected: 99%
 2798
-Has Disease 100%
+Affected: 99%
 2799
-Has Disease 100%
+Affected: 99%
 2800
-Has Disease 100%
+Affected: 99%
 2801
-Has Disease 100%
+Affected: 99%
 2802
-Has Disease 100%
+Affected: 99%
 2803
-Has Disease 100%
+Affected: 99%
 2804
-Has Disease 100%
+Affected: 99%
 2805
-Has Disease 100%
+Affected: 99%
 2806
-Has Disease 100%
+Affected: 99%
 2807
-Has Disease 100%
+Affected: 99%
 2808
-Has Disease 100%
+Affected: 99%
 2809
-Has Disease 100%
+Affected: 99%
 2810
-Has Disease 100%
+Affected: 99%
 2811
-Has Disease 100%
+Affected: 99%
 2812
-Has Disease 100%
+Affected: 99%
 2813
-Has Disease 100%
+Affected: 99%
 2814
-Has Disease 100%
+Affected: 99%
 2815
-Has Disease 100%
+Affected: 99%
 2816
-Has Disease 100%
+Affected: 99%
 2817
-Has Disease 100%
+Affected: 99%
 2818
-Has Disease 100%
+Affected: 99%
 2819
-Has Disease 100%
+Affected: 99%
 2820
-Has Disease 100%
+Affected: 99%
 2821
-Has Disease 100%
+Affected: 99%
 2822
-Has Disease 100%
+Affected: 99%
 2823
-Has Disease 100%
+Affected: 99%
 2824
-Has Disease 100%
+Affected: 99%
 2825
-Has Disease 100%
+Affected: 99%
 2826
-Has Disease 100%
+Affected: 99%
 2827
-Has Disease 100%
+Affected: 99%
 2828
-Has Disease 100%
+Affected: 99%
 2829
-Has Disease 100%
+Affected: 99%
 2830
-Has Disease 100%
+Affected: 99%
 2831
-Has Disease 100%
+Affected: 99%
 2832
-Has Disease 100%
+Affected: 99%
 2833
-Has Disease 100%
+Affected: 99%
 2834
-Has Disease 100%
+Affected: 99%
 2835
-Has Disease 100%
+Affected: 99%
 2836
-Has Disease 100%
+Affected: 99%
 2837
-Has Disease 100%
+Affected: 99%
 2838
-Has Disease 100%
+Affected: 99%
 2839
-Has Disease 100%
+Affected: 99%
 2840
-Has Disease 100%
+Affected: 99%
 2841
-Has Disease 100%
+Affected: 99%
 2842
-Has Disease 100%
+Affected: 99%
 2843
-Has Disease 100%
+Affected: 99%
 2844
-Has Disease 100%
+Affected: 99%
 2845
-Has Disease 100%
+Affected: 99%
 2846
-Has Disease 100%
+Affected: 99%
 2847
-Has Disease 100%
+Affected: 99%
 2848
-Has Disease 100%
+Affected: 99%
 2849
-Has Disease 100%
+Affected: 99%
 2850
-Has Disease 100%
+Affected: 99%
 2851
-Has Disease 100%
+Affected: 99%
 2852
-Has Disease 100%
+Affected: 99%
 2853
-Has Disease 100%
+Affected: 99%
 2854
-Has Disease 100%
+Affected: 99%
 2855
-Has Disease 100%
+Affected: 99%
 2856
-Has Disease 100%
+Affected: 99%
 2857
-Has Disease 100%
+Affected: 99%
 2858
-Has Disease 100%
+Affected: 99%
 2859
-Has Disease 100%
+Affected: 99%
 2860
-Has Disease 100%
+Affected: 99%
 2861
-Has Disease 100%
+Affected: 99%
 2862
-Has Disease 100%
+Affected: 99%
 2863
-Has Disease 100%
+Affected: 99%
 2864
-Has Disease 100%
+Affected: 99%
 2865
-Has Disease 100%
+Affected: 99%
 2866
-Has Disease 100%
+Affected: 99%
 2867
-Has Disease 100%
+Affected: 99%
 2868
-Has Disease 100%
+Affected: 99%
 2869
-Has Disease 100%
+Affected: 99%
 2870
-Has Disease 100%
+Affected: 99%
 2871
-Has Disease 100%
+Affected: 99%
 2872
-Has Disease 100%
+Affected: 99%
 2873
-Has Disease 100%
+Affected: 99%
 2874
-Has Disease 100%
+Affected: 99%
 2875
-Has Disease 100%
+Affected: 99%
 2876
-Has Disease 100%
+Affected: 99%
 2877
-Has Disease 100%
+Affected: 99%
 2878
-Has Disease 100%
+Affected: 99%
 2879
-Has Disease 100%
+Affected: 99%
 2880
-Has Disease 100%
+Affected: 99%
 2881
-Has Disease 100%
+Affected: 99%
 2882
-Has Disease 100%
+Affected: 99%
 2883
-Has Disease 100%
+Affected: 99%
 2884
-Has Disease 100%
+Affected: 99%
 2885
-Has Disease 100%
+Affected: 99%
 2886
-Has Disease 100%
+Affected: 99%
 2887
-Has Disease 100%
+Affected: 99%
 2888
-Has Disease 100%
+Affected: 99%
 2889
-Has Disease 100%
+Affected: 99%
 2890
-Has Disease 100%
+Affected: 99%
 2891
-Has Disease 100%
+Affected: 99%
 2892
-Has Disease 100%
+Affected: 99%
 2893
-Has Disease 100%
+Affected: 99%
 2894
-Has Disease 100%
+Affected: 99%
 2895
-Has Disease 100%
+Affected: 99%
 2896
-Has Disease 100%
+Affected: 99%
 2897
-Has Disease 100%
+Affected: 99%
 2898
-Has Disease 100%
+Affected: 99%
 2899
-Has Disease 100%
+Affected: 99%
 2900
-Has Disease 100%
+Affected: 99%
 2901
-Has Disease 100%
+Affected: 99%
 2902
-Has Disease 100%
+Affected: 99%
 2903
-Has Disease 100%
+Affected: 99%
 2904
-Has Disease 100%
+Affected: 99%
 2905
-Has Disease 100%
+Affected: 99%
 2906
-Has Disease 100%
+Affected: 99%
 2907
-Has Disease 100%
+Affected: 99%
 2908
-Has Disease 100%
+Affected: 99%
 2909
-Has Disease 100%
+Affected: 99%
 2910
-Has Disease 100%
+Affected: 99%
 2911
-Has Disease 100%
+Affected: 99%
 2912
-Has Disease 100%
+Affected: 99%
 2913
-Has Disease 100%
+Affected: 99%
 2914
-Has Disease 100%
+Affected: 99%
 2915
-Has Disease 100%
+Affected: 99%
 2916
-Has Disease 100%
+Affected: 99%
 2917
-Has Disease 100%
+Affected: 99%
 2918
-Has Disease 100%
+Affected: 99%
 2919
-Has Disease 100%
+Affected: 99%
 2920
-Has Disease 100%
+Affected: 99%
 2921
-Has Disease 100%
+Affected: 99%
 2922
-Has Disease 100%
+Affected: 99%
 2923
-Has Disease 100%
+Affected: 99%
 2924
-Has Disease 100%
+Affected: 99%
 2925
-Has Disease 100%
+Affected: 99%
 2926
-Has Disease 100%
+Affected: 99%
 2927
-Has Disease 100%
+Affected: 99%
 2928
-Has Disease 100%
+Affected: 99%
 2929
-Has Disease 100%
+Affected: 99%
 2930
-Has Disease 100%
+Affected: 99%
 2931
-Has Disease 100%
+Affected: 99%
 2932
-Has Disease 100%
+Affected: 99%
 2933
-Has Disease 100%
+Affected: 99%
 2934
-Has Disease 100%
+Affected: 99%
 2935
-Has Disease 100%
+Affected: 99%
 2936
-Has Disease 100%
+Affected: 99%
 2937
-Has Disease 100%
+Affected: 99%
 2938
-Has Disease 100%
+Affected: 99%
 2939
-Has Disease 100%
+Affected: 99%
 2940
-Has Disease 100%
+Affected: 99%
 2941
-Has Disease 100%
+Affected: 99%
 2942
-Has Disease 100%
+Affected: 99%
 2943
-Has Disease 100%
+Affected: 99%
 2944
-Has Disease 100%
+Affected: 99%
 2945
-Has Disease 100%
+Affected: 99%
 2946
-Has Disease 100%
+Affected: 99%
 2947
-Has Disease 100%
+Affected: 99%
 2948
-Has Disease 100%
+Affected: 99%
 2949
-Has Disease 100%
+Affected: 99%
 2950
-Has Disease 100%
+Affected: 99%
 2951
-Has Disease 100%
+Affected: 99%
 2952
-Has Disease 100%
+Affected: 99%
 2953
-Has Disease 100%
+Affected: 99%
 2954
-Has Disease 100%
+Affected: 99%
 2955
-Has Disease 100%
+Affected: 99%
 2956
-Has Disease 100%
+Affected: 99%
 2957
-Has Disease 100%
+Affected: 99%
 2958
-Has Disease 100%
+Affected: 99%
 2959
-Has Disease 100%
+Affected: 99%
 2960
-Has Disease 100%
+Affected: 99%
 2961
-Has Disease 100%
+Affected: 99%
 2962
-Has Disease 100%
+Affected: 99%
 2963
-Has Disease 100%
+Affected: 99%
 2964
-Has Disease 100%
+Affected: 99%
 2965
-Has Disease 100%
+Affected: 99%
 2966
-Has Disease 100%
+Affected: 99%
 2967
-Has Disease 100%
+Affected: 99%
 2968
-Has Disease 100%
+Affected: 99%
 2969
-Has Disease 100%
+Affected: 99%
 2970
-Has Disease 100%
+Affected: 99%
 2971
-Has Disease 100%
+Affected: 99%
 2972
-Has Disease 100%
+Affected: 99%
 2973
-Has Disease 100%
+Affected: 99%
 2974
-Has Disease 100%
+Affected: 99%
 2975
-Has Disease 100%
+Affected: 99%
 2976
-Has Disease 100%
+Affected: 99%
 2977
-Has Disease 100%
+Affected: 99%
 2978
-Has Disease 100%
+Affected: 99%
 2979
-Has Disease 100%
+Affected: 99%
 2980
-Has Disease 100%
+Affected: 99%
 2981
-Has Disease 100%
+Affected: 99%
 2982
-Has Disease 100%
+Affected: 99%
 2983
-Has Disease 100%
+Affected: 99%
 2984
-Has Disease 100%
+Affected: 99%
 2985
-Has Disease 100%
+Affected: 99%
 2986
-Has Disease 100%
+Affected: 99%
 2987
-Has Disease 100%
+Affected: 99%
 2988
-Has Disease 100%
+Affected: 99%
 2989
-Has Disease 100%
+Affected: 99%
 2990
-Has Disease 100%
+Affected: 99%
 2991
-Has Disease 100%
+Affected: 99%
 2992
-Has Disease 100%
+Affected: 99%
 2993
-Has Disease 100%
+Affected: 99%
 2994
-Has Disease 100%
+Affected: 99%
 2995
-Has Disease 100%
+Affected: 99%
 2996
-Has Disease 100%
+Affected: 99%
 2997
-Has Disease 100%
+Affected: 99%
 2998
-Has Disease 100%
+Affected: 99%
 2999
-Has Disease 100%
+Affected: 99%
 3000
-Has Disease 100%
+Affected: 99%
 3001
-Has Disease 100%
+Affected: 99%
 3002
-Has Disease 100%
+Affected: 99%
 3003
-Has Disease 100%
+Affected: 99%
 3004
-Has Disease 100%
+Affected: 99%
 3005
-Has Disease 100%
+Affected: 99%
 3006
-Has Disease 100%
+Affected: 99%
 3007
-Has Disease 100%
+Affected: 99%
 3008
-Has Disease 100%
+Affected: 99%
 3009
-Has Disease 100%
+Affected: 99%
 3010
-Has Disease 100%
+Affected: 99%
 3011
-Has Disease 100%
+Affected: 99%
 3012
-Has Disease 100%
+Affected: 99%
 3013
-Has Disease 100%
+Affected: 99%
 3014
-Has Disease 100%
+Affected: 99%
 3015
-Has Disease 100%
+Affected: 99%
 3016
-Has Disease 100%
+Affected: 99%
 3017
-Has Disease 100%
+Affected: 99%
 3018
-Has Disease 100%
+Affected: 99%
 3019
-Has Disease 100%
+Affected: 99%
 3020
-Has Disease 100%
+Affected: 99%
 3021
-Has Disease 100%
+Affected: 99%
 3022
-Has Disease 100%
+Affected: 99%
 3023
-Has Disease 100%
+Affected: 99%
 3024
-Has Disease 100%
+Affected: 99%
 3025
-Has Disease 100%
+Affected: 99%
 3026
-Has Disease 100%
+Affected: 99%
 3027
-Has Disease 100%
+Affected: 99%
 3028
-Has Disease 100%
+Affected: 99%
 3029
-Has Disease 100%
+Affected: 99%
 3030
-Has Disease 100%
+Affected: 99%
 3031
-Has Disease 100%
+Affected: 99%
 3032
-Has Disease 100%
+Affected: 99%
 3033
-Has Disease 100%
+Affected: 99%
 3034
-Has Disease 100%
+Affected: 99%
 3035
-Has Disease 100%
+Affected: 99%
 3036
-Has Disease 100%
+Affected: 99%
 3037
-Has Disease 100%
+Affected: 99%
 3038
-Has Disease 100%
+Affected: 99%
 3039
-Has Disease 100%
+Affected: 99%
 3040
-Has Disease 100%
+Affected: 99%
 3041
-Has Disease 100%
+Affected: 99%
 3042
-Has Disease 100%
+Affected: 99%
 3043
-Has Disease 100%
+Affected: 99%
 3044
-Has Disease 100%
+Affected: 99%
 3045
-Has Disease 100%
+Affected: 99%
 3046
-Has Disease 100%
+Affected: 99%
 3047
-Has Disease 100%
+Affected: 99%
 3048
-Has Disease 100%
+Affected: 99%
 3049
-Has Disease 100%
+Affected: 99%
 3050
-Has Disease 100%
+Affected: 99%
 3051
-Has Disease 100%
+Affected: 99%
 3052
-Has Disease 100%
+Affected: 99%
 3053
-Has Disease 100%
+Affected: 99%
 3054
-Has Disease 100%
+Affected: 99%
 3055
-Has Disease 100%
+Affected: 99%
 3056
-Has Disease 100%
+Affected: 99%
 3057
-Has Disease 100%
+Affected: 99%
 3058
-Has Disease 100%
+Affected: 99%
 3059
-Has Disease 100%
+Affected: 99%
 3060
-Has Disease 100%
+Affected: 99%
 3061
-Has Disease 100%
+Affected: 99%
 3062
-Has Disease 100%
+Affected: 99%
 3063
-Has Disease 100%
+Affected: 99%
 3064
-Has Disease 100%
+Affected: 99%
 3065
-Has Disease 100%
+Affected: 99%
 3066
-Has Disease 100%
+Affected: 99%
 3067
-Has Disease 100%
+Affected: 99%
 3068
-Has Disease 100%
+Affected: 99%
 3069
-Has Disease 100%
+Affected: 99%
 3070
-Has Disease 100%
+Affected: 99%
 3071
-Has Disease 100%
+Affected: 99%
 3072
-Has Disease 100%
+Affected: 99%
 3073
-Has Disease 100%
+Affected: 99%
 3074
-Has Disease 100%
+Affected: 99%
 3075
-Has Disease 100%
+Affected: 99%
 3076
-Has Disease 100%
+Affected: 99%
 3077
-Has Disease 100%
+Affected: 99%
 3078
-Has Disease 100%
+Affected: 99%
 3079
-Has Disease 100%
+Affected: 99%
 3080
-Has Disease 100%
+Affected: 99%
 3081
-Has Disease 100%
+Affected: 99%
 3082
-Has Disease 100%
+Affected: 99%
 3083
-Has Disease 100%
+Affected: 99%
 3084
-Has Disease 100%
+Affected: 99%
 3085
-Has Disease 100%
+Affected: 99%
 3086
-Has Disease 100%
+Affected: 99%
 3087
-Has Disease 100%
+Affected: 99%
 3088
-Has Disease 100%
+Affected: 99%
 3089
-Has Disease 100%
+Affected: 99%
 3090
-Has Disease 100%
+Affected: 99%
 3091
-Has Disease 100%
+Affected: 99%
 3092
-Has Disease 100%
+Affected: 99%
 3093
-Has Disease 100%
+Affected: 99%
 3094
-Has Disease 100%
+Affected: 99%
 3095
-Has Disease 100%
+Affected: 99%
 3096
-Has Disease 100%
+Affected: 99%
 3097
-Has Disease 100%
+Affected: 99%
 3098
-Has Disease 100%
+Affected: 99%
 3099
-Has Disease 100%
+Affected: 99%
 3100
-Has Disease 100%
+Affected: 99%
 3101
-Has Disease 100%
+Affected: 99%
 3102
-Has Disease 100%
+Affected: 99%
 3103
-Has Disease 100%
+Affected: 99%
 3104
-Has Disease 100%
+Affected: 99%
 3105
-Has Disease 100%
+Affected: 99%
 3106
-Has Disease 100%
+Affected: 99%
 3107
-Has Disease 100%
+Affected: 99%
 3108
-Has Disease 100%
+Affected: 99%
 3109
-Has Disease 100%
+Affected: 99%
 3110
-Has Disease 100%
+Affected: 99%
 3111
-Has Disease 100%
+Affected: 99%
 3112
-Has Disease 100%
+Affected: 99%
 3113
-Has Disease 100%
+Affected: 99%
 3114
-Has Disease 100%
+Affected: 99%
 3115
-Has Disease 100%
+Affected: 99%
 3116
-Has Disease 100%
+Affected: 99%
 3117
-Has Disease 100%
+Affected: 99%
 3118
-Has Disease 100%
+Affected: 99%
 3119
-Has Disease 100%
+Affected: 99%
 3120
-Has Disease 100%
+Affected: 99%
 3121
-Has Disease 100%
+Affected: 99%
 3122
-Has Disease 100%
+Affected: 99%
 3123
-Has Disease 100%
+Affected: 99%
 3124
-Has Disease 100%
+Affected: 99%
 3125
-Has Disease 100%
+Affected: 99%
 3126
-Has Disease 100%
+Affected: 99%
 3127
-Has Disease 100%
+Affected: 99%
 3128
-Has Disease 100%
+Affected: 99%
 3129
-Has Disease 100%
+Affected: 99%
 3130
-Has Disease 100%
+Affected: 99%
 3131
-Has Disease 100%
+Affected: 99%
 3132
-Has Disease 100%
+Affected: 99%
 3133
-Has Disease 100%
+Affected: 99%
 3134
-Has Disease 100%
+Affected: 99%
 3135
-Has Disease 100%
+Affected: 99%
 3136
-Has Disease 100%
+Affected: 99%
 3137
-Has Disease 100%
+Affected: 99%
 3138
-Has Disease 100%
+Affected: 99%
 3139
-Has Disease 100%
+Affected: 99%
 3140
-Has Disease 100%
+Affected: 99%
 3141
-Has Disease 100%
+Affected: 99%
 3142
-Has Disease 100%
+Affected: 99%
 3143
-Has Disease 100%
+Affected: 99%
 3144
-Has Disease 100%
+Affected: 99%
 3145
-Has Disease 100%
+Affected: 99%
 3146
-Has Disease 100%
+Affected: 99%
 3147
-Has Disease 100%
+Affected: 99%
 3148
-Has Disease 100%
+Affected: 99%
 3149
-Has Disease 100%
+Affected: 99%
 3150
-Has Disease 100%
+Affected: 99%
 3151
-Has Disease 100%
+Affected: 99%
 3152
-Has Disease 100%
+Affected: 99%
 3153
-Has Disease 100%
+Affected: 99%
 3154
-Has Disease 100%
+Affected: 99%
 3155
-Has Disease 100%
+Affected: 99%
 3156
-Has Disease 100%
+Affected: 99%
 3157
-Has Disease 100%
+Affected: 99%
 3158
-Has Disease 100%
+Affected: 99%
 3159
-Has Disease 100%
+Affected: 99%
 3160
-Has Disease 100%
+Affected: 99%
 3161
-Has Disease 100%
+Affected: 99%
 3162
-Has Disease 100%
+Affected: 99%
 3163
-Has Disease 100%
+Affected: 99%
 3164
-Has Disease 100%
+Affected: 99%
 3165
-Has Disease 100%
+Affected: 99%
 3166
-Has Disease 100%
+Affected: 99%
 3167
-Has Disease 100%
+Affected: 99%
 3168
-Has Disease 100%
+Affected: 99%
 3169
-Has Disease 100%
+Affected: 99%
 3170
-Has Disease 100%
+Affected: 99%
 3171
-Has Disease 100%
+Affected: 99%
 3172
-Has Disease 100%
+Affected: 99%
 3173
-Has Disease 100%
+Affected: 99%
 3174
-Has Disease 100%
+Affected: 99%
 3175
-Has Disease 100%
+Affected: 99%
 3176
-Has Disease 100%
+Affected: 99%
 3177
-Has Disease 100%
+Affected: 99%
 3178
-Has Disease 100%
+Affected: 99%
 3179
-Has Disease 100%
+Affected: 99%
 3180
-Has Disease 100%
+Affected: 99%
 3181
-Has Disease 100%
+Affected: 99%
 3182
-Has Disease 100%
+Affected: 99%
 3183
-Has Disease 100%
+Affected: 99%
 3184
-Has Disease 100%
+Affected: 99%
 3185
-Has Disease 100%
+Affected: 99%
 3186
-Has Disease 100%
+Affected: 99%
 3187
-Has Disease 100%
+Affected: 99%
 3188
-Has Disease 100%
+Affected: 99%
 3189
-Has Disease 100%
+Affected: 99%
 3190
-Has Disease 100%
+Affected: 99%
 3191
-Has Disease 100%
+Affected: 99%
 3192
-Has Disease 100%
+Affected: 99%
 3193
-Has Disease 100%
+Affected: 99%
 3194
-Has Disease 100%
+Affected: 99%
 3195
-Has Disease 100%
+Affected: 99%
 3196
-Has Disease 100%
+Affected: 99%
 3197
-Has Disease 100%
+Affected: 99%
 3198
-Has Disease 100%
+Affected: 99%
 3199
-Has Disease 100%
+Affected: 99%
 3200
-Has Disease 100%
+Affected: 99%
 3201
-Has Disease 100%
+Affected: 99%
 3202
-Has Disease 100%
+Affected: 99%
 3203
-Has Disease 100%
+Affected: 99%
 3204
-Has Disease 100%
+Affected: 99%
 3205
-Has Disease 100%
+Affected: 99%
 3206
-Has Disease 100%
+Affected: 99%
 3207
-Has Disease 100%
+Affected: 99%
 3208
-Has Disease 100%
+Affected: 99%
 3209
-Has Disease 100%
+Affected: 99%
 3210
-Has Disease 100%
+Affected: 99%
 3211
-Has Disease 100%
+Affected: 99%
 3212
-Has Disease 100%
+Affected: 99%
 3213
-Has Disease 100%
+Affected: 99%
 3214
-Has Disease 100%
+Affected: 99%
 3215
-Has Disease 100%
+Affected: 99%
 3216
-Has Disease 100%
+Affected: 99%
 3217
-Has Disease 100%
+Affected: 99%
 3218
-Has Disease 100%
+Affected: 99%
 3219
-Has Disease 100%
+Affected: 99%
 3220
-Has Disease 100%
+Affected: 99%
 3221
-Has Disease 100%
+Affected: 99%
 3222
-Has Disease 100%
+Affected: 99%
 3223
-Has Disease 100%
+Affected: 99%
 3224
-Has Disease 100%
+Affected: 99%
 3225
-Has Disease 100%
+Affected: 99%
 3226
-Has Disease 100%
+Affected: 99%
 3227
-Has Disease 100%
+Affected: 99%
 3228
-Has Disease 100%
+Affected: 99%
 3229
-Has Disease 100%
+Affected: 99%
 3230
-Has Disease 100%
+Affected: 99%
 3231
-Has Disease 100%
+Affected: 99%
 3232
-Has Disease 100%
+Affected: 99%
 3233
-Has Disease 100%
+Affected: 99%
 3234
-Has Disease 100%
+Affected: 99%
 3235
-Has Disease 100%
+Affected: 99%
 3236
-Has Disease 100%
+Affected: 99%
 3237
-Has Disease 100%
+Affected: 99%
 3238
-Has Disease 100%
+Affected: 99%
 3239
-Has Disease 100%
+Affected: 99%
 3240
-Has Disease 100%
+Affected: 99%
 3241
-Has Disease 100%
+Affected: 99%
 3242
-Has Disease 100%
+Affected: 99%
 3243
-Has Disease 100%
+Affected: 99%
 3244
-Has Disease 100%
+Affected: 99%
 3245
-Has Disease 100%
+Affected: 99%
 3246
-Has Disease 100%
+Affected: 99%
 3247
-Has Disease 100%
+Affected: 99%
 3248
-Has Disease 100%
+Affected: 99%
 3249
-Has Disease 100%
+Affected: 99%
 3250
-Has Disease 100%
+Affected: 99%
 3251
-Has Disease 100%
+Affected: 99%
 3252
-Has Disease 100%
+Affected: 99%
 3253
-Has Disease 100%
+Affected: 99%
 3254
-Has Disease 100%
+Affected: 99%
 3255
-Has Disease 100%
+Affected: 99%
 3256
-Has Disease 100%
+Affected: 99%
 3257
-Has Disease 100%
+Affected: 99%
 3258
-Has Disease 100%
+Affected: 99%
 3259
-Has Disease 100%
+Affected: 99%
 3260
-Has Disease 100%
+Affected: 99%
 3261
-Has Disease 100%
+Affected: 99%
 3262
-Has Disease 100%
+Affected: 99%
 3263
-Has Disease 100%
+Affected: 99%
 3264
-Has Disease 100%
+Affected: 99%
 3265
-Has Disease 100%
+Affected: 99%
 3266
-Has Disease 100%
+Affected: 99%
 3267
-Has Disease 100%
+Affected: 99%
 3268
-Has Disease 100%
+Affected: 99%
 3269
-Has Disease 100%
+Affected: 99%
 3270
-Has Disease 100%
+Affected: 99%
 3271
-Has Disease 100%
+Affected: 99%
 3272
-Has Disease 100%
+Affected: 99%
 3273
-Has Disease 100%
+Affected: 99%
 3274
-Has Disease 100%
+Affected: 99%
 3275
-Has Disease 100%
+Affected: 99%
 3276
-Has Disease 100%
+Affected: 99%
 3277
-Has Disease 100%
+Affected: 99%
 3278
-Has Disease 100%
+Affected: 99%
 3279
-Has Disease 100%
+Affected: 99%
 3280
-Has Disease 100%
+Affected: 99%
 3281
-Has Disease 100%
+Affected: 99%
 3282
-Has Disease 100%
+Affected: 99%
 3283
-Has Disease 100%
+Affected: 99%
 3284
-Has Disease 100%
+Affected: 99%
 3285
-Has Disease 100%
+Affected: 99%
 3286
-Has Disease 100%
+Affected: 99%
 3287
-Has Disease 100%
+Affected: 99%
 3288
-Has Disease 100%
+Affected: 99%
 3289
-Has Disease 100%
+Affected: 99%
 3290
-Has Disease 100%
+Affected: 99%
 3291
-Has Disease 100%
+Affected: 99%
 3292
-Has Disease 100%
+Affected: 99%
 3293
-Has Disease 100%
+Affected: 99%
 3294
-Has Disease 100%
+Affected: 99%
 3295
-Has Disease 100%
+Affected: 99%
 3296
-Has Disease 100%
+Affected: 99%
 3297
-Has Disease 100%
+Affected: 99%
 3298
-Has Disease 100%
+Affected: 99%
 3299
-Has Disease 100%
+Affected: 99%
 3300
-Has Disease 100%
+Affected: 99%
 3301
-Has Disease 100%
+Affected: 99%
 3302
-Has Disease 100%
+Affected: 99%
 3303
-Has Disease 100%
+Affected: 99%
 3304
-Has Disease 100%
+Affected: 99%
 3305
-Has Disease 100%
+Affected: 99%
 3306
-Has Disease 100%
+Affected: 99%
 3307
-Has Disease 100%
+Affected: 99%
 3308
-Has Disease 100%
+Affected: 99%
 3309
-Has Disease 100%
+Affected: 99%
 3310
-Has Disease 100%
+Affected: 99%
 3311
-Has Disease 100%
+Affected: 99%
 3312
-Has Disease 100%
+Affected: 99%
 3313
-Has Disease 100%
+Affected: 99%
 3314
-Has Disease 100%
+Affected: 99%
 3315
-Has Disease 100%
+Affected: 99%
 3316
-Has Disease 100%
+Affected: 99%
 3317
-Has Disease 100%
+Affected: 99%
 3318
-Has Disease 100%
+Affected: 99%
 3319
-Has Disease 100%
+Affected: 99%
 3320
-Has Disease 100%
+Affected: 99%
 3321
-Has Disease 100%
+Affected: 99%
 3322
-Has Disease 100%
+Affected: 99%
 3323
-Has Disease 100%
+Affected: 99%
 3324
-Has Disease 100%
+Affected: 99%
 3325
-Has Disease 100%
+Affected: 99%
 3326
-Has Disease 100%
+Affected: 99%
 3327
-Has Disease 100%
+Affected: 99%
 3328
-Has Disease 100%
+Affected: 99%
 3329
-Has Disease 100%
+Affected: 99%
 3330
-Has Disease 100%
+Affected: 99%
 3331
-Has Disease 100%
+Affected: 99%
 3332
-Has Disease 100%
+Affected: 99%
 3333
-Has Disease 100%
+Affected: 99%
 3334
-Has Disease 100%
+Affected: 99%
 3335
-Has Disease 100%
+Affected: 99%
 3336
-Has Disease 100%
+Affected: 99%
 3337
-Has Disease 100%
+Affected: 99%
 3338
-Has Disease 100%
+Affected: 99%
 3339
-Has Disease 100%
+Affected: 99%
 3340
-Has Disease 100%
+Affected: 99%
 3341
-Has Disease 100%
+Affected: 99%
 3342
-Has Disease 100%
+Affected: 99%
 3343
-Has Disease 100%
+Affected: 99%
 3344
-Has Disease 100%
+Affected: 99%
 3345
-Has Disease 100%
+Affected: 99%
 3346
-Has Disease 100%
+Affected: 99%
 3347
-Has Disease 100%
+Affected: 99%
 3348
-Has Disease 100%
+Affected: 99%
 3349
-Has Disease 100%
+Affected: 99%
 3350
-Has Disease 100%
+Affected: 99%
 3351
-Has Disease 100%
+Affected: 99%
 3352
-Has Disease 100%
+Affected: 99%
 3353
-Has Disease 100%
+Affected: 99%
 3354
-Has Disease 100%
+Affected: 99%
 3355
-Has Disease 100%
+Affected: 99%
 3356
-Has Disease 100%
+Affected: 99%
 3357
-Has Disease 100%
+Affected: 99%
 3358
-Has Disease 100%
+Affected: 99%
 3359
-Has Disease 100%
+Affected: 99%
 3360
-Has Disease 100%
+Affected: 99%
 3361
-Has Disease 100%
+Affected: 99%
 3362
-Has Disease 100%
+Affected: 99%
 3363
-Has Disease 100%
+Affected: 99%
 3364
-Has Disease 100%
+Affected: 99%
 3365
-Has Disease 100%
+Affected: 99%
 3366
-Has Disease 100%
+Affected: 99%
 3367
-Has Disease 100%
+Affected: 99%
 3368
-Has Disease 100%
+Affected: 99%
 3369
-Has Disease 100%
+Affected: 99%
 3370
-Has Disease 100%
+Affected: 99%
 3371
-Has Disease 100%
+Affected: 99%
 3372
-Has Disease 100%
+Affected: 99%
 3373
-Has Disease 100%
+Affected: 99%
 3374
-Has Disease 100%
+Affected: 99%
 3375
-Has Disease 100%
+Affected: 99%
 3376
-Has Disease 100%
+Affected: 99%
 3377
-Has Disease 100%
+Affected: 99%
 3378
-Has Disease 100%
+Affected: 99%
 3379
-Has Disease 100%
+Affected: 99%
 3380
-Has Disease 100%
+Affected: 99%
 3381
-Has Disease 100%
+Affected: 99%
 3382
-Has Disease 100%
+Affected: 99%
 3383
-Has Disease 100%
+Affected: 99%
 3384
-Has Disease 100%
+Affected: 99%
 3385
-Has Disease 100%
+Affected: 99%
 3386
-Has Disease 100%
+Affected: 99%
 3387
-Has Disease 100%
+Affected: 99%
 3388
-Has Disease 100%
+Affected: 99%
 3389
-Has Disease 100%
+Affected: 99%
 3390
-Has Disease 100%
+Affected: 99%
 3391
-Has Disease 100%
+Affected: 99%
 3392
-Has Disease 100%
+Affected: 99%
 3393
-Has Disease 100%
+Affected: 99%
 3394
-Has Disease 100%
+Affected: 99%
 3395
-Has Disease 100%
+Affected: 99%
 3396
-Has Disease 100%
+Affected: 99%
 3397
-Has Disease 100%
+Affected: 99%
 3398
-Has Disease 100%
+Affected: 99%
 3399
-Has Disease 100%
+Affected: 99%
 3400
-Has Disease 100%
+Affected: 99%
 3401
-Has Disease 100%
+Affected: 99%
 3402
-Has Disease 100%
+Affected: 99%
 3403
-Has Disease 100%
+Affected: 99%
 3404
-Has Disease 100%
+Affected: 99%
 3405
-Has Disease 100%
+Affected: 99%
 3406
-Has Disease 100%
+Affected: 99%
 3407
-Has Disease 100%
+Affected: 99%
 3408
-Has Disease 100%
+Affected: 99%
 3409
-Has Disease 100%
+Affected: 99%
 3410
-Has Disease 100%
+Affected: 99%
 3411
-Has Disease 100%
+Affected: 99%
 3412
-Has Disease 100%
+Affected: 99%
 3413
-Has Disease 100%
+Affected: 99%
 3414
-Has Disease 100%
+Affected: 99%
 3415
-Has Disease 100%
+Affected: 99%
 3416
-Has Disease 100%
+Affected: 99%
 3417
-Has Disease 100%
+Affected: 99%
 3418
-Has Disease 100%
+Affected: 99%
 3419
-Has Disease 100%
+Affected: 99%
 3420
-Has Disease 100%
+Affected: 99%
 3421
-Has Disease 100%
+Affected: 99%
 3422
-Has Disease 100%
+Affected: 99%
 3423
-Has Disease 100%
+Affected: 99%
 3424
-Has Disease 100%
+Affected: 99%
 3425
-Has Disease 100%
+Affected: 99%
 3426
-Has Disease 100%
+Affected: 99%
 3427
-Has Disease 100%
+Affected: 99%
 3428
-Has Disease 100%
+Affected: 99%
 3429
-Has Disease 100%
+Affected: 99%
 3430
-Has Disease 100%
+Affected: 99%
 3431
-Has Disease 100%
+Affected: 99%
 3432
-Has Disease 100%
+Affected: 99%
 3433
-Has Disease 100%
+Affected: 99%
 3434
-Has Disease 100%
+Affected: 99%
 3435
-Has Disease 100%
+Affected: 99%
 3436
-Has Disease 100%
+Affected: 99%
 3437
-Has Disease 100%
+Affected: 99%
 3438
-Has Disease 100%
+Affected: 99%
 3439
-Has Disease 100%
+Affected: 99%
 3440
-Has Disease 100%
+Affected: 99%
 3441
-Has Disease 100%
+Affected: 99%
 3442
-Has Disease 100%
+Affected: 99%
 3443
-Has Disease 100%
+Affected: 99%
 3444
-Has Disease 100%
+Affected: 99%
 3445
-Has Disease 100%
+Affected: 99%
 3446
-Has Disease 100%
+Affected: 99%
 3447
-Has Disease 100%
+Affected: 99%
 3448
-Has Disease 100%
+Affected: 99%
 3449
-Has Disease 100%
+Affected: 99%
 3450
-Has Disease 100%
+Affected: 99%
 3451
-Has Disease 100%
+Affected: 99%
 3452
-Has Disease 100%
+Affected: 99%
 3453
-Has Disease 100%
+Affected: 99%
 3454
-Has Disease 100%
+Affected: 99%
 3455
-Has Disease 100%
+Affected: 99%
 3456
-Has Disease 100%
+Affected: 99%
 3457
-Has Disease 100%
+Affected: 99%
 3458
-Has Disease 100%
+Affected: 99%
 3459
-Has Disease 100%
+Affected: 99%
 3460
-Has Disease 100%
+Affected: 99%
 3461
-Has Disease 100%
+Affected: 99%
 3462
-Has Disease 100%
+Affected: 99%
 3463
-Has Disease 100%
+Affected: 99%
 3464
-Has Disease 100%
+Affected: 99%
 3465
-Has Disease 100%
+Affected: 99%
 3466
-Has Disease 100%
+Affected: 99%
 3467
-Has Disease 100%
+Affected: 99%
 3468
-Has Disease 100%
+Affected: 99%
 3469
-Has Disease 100%
+Affected: 99%
 3470
-Has Disease 100%
+Affected: 99%
 3471
-Has Disease 100%
+Affected: 99%
 3472
-Has Disease 100%
+Affected: 99%
 3473
-Has Disease 100%
+Affected: 99%
 3474
-Has Disease 100%
+Affected: 99%
 3475
-Has Disease 100%
+Affected: 99%
 3476
-Has Disease 100%
+Affected: 99%
 3477
-Has Disease 100%
+Affected: 99%
 3478
-Has Disease 100%
+Affected: 99%
 3479
-Has Disease 100%
+Affected: 99%
 3480
-Has Disease 100%
+Affected: 99%
 3481
-Has Disease 100%
+Affected: 99%
 3482
-Has Disease 100%
+Affected: 99%
 3483
-Has Disease 100%
+Affected: 99%
 3484
-Has Disease 100%
+Affected: 99%
 3485
-Has Disease 100%
+Affected: 99%
 3486
-Has Disease 100%
+Affected: 99%
 3487
-Has Disease 100%
+Affected: 99%
 3488
-Has Disease 100%
+Affected: 99%
 3489
-Has Disease 100%
+Affected: 99%
 3490
-Has Disease 100%
+Affected: 99%
 3491
-Has Disease 100%
+Affected: 99%
 3492
-Has Disease 100%
+Affected: 99%
 3493
-Has Disease 100%
+Affected: 99%
 3494
-Has Disease 100%
+Affected: 99%
 3495
-Has Disease 100%
+Affected: 99%
 3496
-Has Disease 100%
+Affected: 99%
 3497
-Has Disease 100%
+Affected: 99%
 3498
-Has Disease 100%
+Affected: 99%
 3499
-Has Disease 100%
+Affected: 99%
 3500
-Has Disease 100%
+Affected: 99%
 3501
-Has Disease 100%
+Affected: 99%
 3502
-Has Disease 100%
+Affected: 99%
 3503
-Has Disease 100%
+Affected: 99%
 3504
-Has Disease 100%
+Affected: 99%
 3505
-Has Disease 100%
+Affected: 99%
 3506
-Has Disease 100%
+Affected: 99%
 3507
-Has Disease 100%
+Affected: 99%
 3508
-Has Disease 100%
+Affected: 99%
 3509
-Has Disease 100%
+Affected: 99%
 3510
-Has Disease 100%
+Affected: 99%
 3511
-Has Disease 100%
+Affected: 99%
 3512
-Has Disease 100%
+Affected: 99%
 3513
-Has Disease 100%
+Affected: 99%
 3514
-Has Disease 100%
+Affected: 99%
 3515
-Has Disease 100%
+Affected: 99%
 3516
-Has Disease 100%
+Affected: 99%
 3517
-Has Disease 100%
+Affected: 99%
 3518
-Has Disease 100%
+Affected: 99%
 3519
-Has Disease 100%
+Affected: 99%
 3520
-Has Disease 100%
+Affected: 99%
 3521
-Has Disease 100%
+Affected: 99%
 3522
-Has Disease 100%
+Affected: 99%
 3523
-Has Disease 100%
+Affected: 99%
 3524
-Has Disease 100%
+Affected: 99%
 3525
-Has Disease 100%
+Affected: 99%
 3526
-Has Disease 100%
+Affected: 99%
 3527
-Has Disease 100%
+Affected: 99%
 3528
-Has Disease 100%
+Affected: 99%
 3529
-Has Disease 100%
+Affected: 99%
 3530
-Has Disease 100%
+Affected: 99%
 3531
-Has Disease 100%
+Affected: 99%
 3532
-Has Disease 100%
+Affected: 99%
 3533
-Has Disease 100%
+Affected: 99%
 3534
-Has Disease 100%
+Affected: 99%
 3535
-Has Disease 100%
+Affected: 99%
 3536
-Has Disease 100%
+Affected: 99%
 3537
-Has Disease 100%
+Affected: 99%
 3538
-Has Disease 100%
+Affected: 99%
 3539
-Has Disease 100%
+Affected: 99%
 3540
-Has Disease 100%
+Affected: 99%
 3541
-Has Disease 100%
+Affected: 99%
 3542
-Has Disease 100%
+Affected: 99%
 3543
-Has Disease 100%
+Affected: 99%
 3544
-Has Disease 100%
+Affected: 99%
 3545
-Has Disease 100%
+Affected: 99%
 3546
-Has Disease 100%
+Affected: 99%
 3547
-Has Disease 100%
+Affected: 99%
 3548
-Has Disease 100%
+Affected: 99%
 3549
-Has Disease 100%
+Affected: 99%
 3550
-Has Disease 100%
+Affected: 99%
 3551
-Has Disease 100%
+Affected: 99%
 3552
-Has Disease 100%
+Affected: 99%
 3553
-Has Disease 100%
+Affected: 99%
 3554
-Has Disease 100%
+Affected: 99%
 3555
-Has Disease 100%
+Affected: 99%
 3556
-Has Disease 100%
+Affected: 99%
 3557
-Has Disease 100%
+Affected: 99%
 3558
-Has Disease 100%
+Affected: 99%
 3559
-Has Disease 100%
+Affected: 99%
 3560
-Has Disease 100%
+Affected: 99%
 3561
-Has Disease 100%
+Affected: 99%
 3562
-Has Disease 100%
+Affected: 99%
 3563
-Has Disease 100%
+Affected: 99%
 3564
-Has Disease 100%
+Affected: 99%
 3565
-Has Disease 100%
+Affected: 99%
 3566
-Has Disease 100%
+Affected: 99%
 3567
-Has Disease 100%
+Affected: 99%
 3568
-Has Disease 100%
+Affected: 99%
 3569
-Has Disease 100%
+Affected: 99%
 3570
-Has Disease 100%
+Affected: 99%
 3571
-Has Disease 100%
+Affected: 99%
 3572
-Has Disease 100%
+Affected: 99%
 3573
-Has Disease 100%
+Affected: 99%
 3574
-Has Disease 100%
+Affected: 99%
 3575
-Has Disease 100%
+Affected: 99%
 3576
-Has Disease 100%
+Affected: 99%
 3577
-Has Disease 100%
+Affected: 99%
 3578
-Has Disease 100%
+Affected: 99%
 3579
-Has Disease 100%
+Affected: 99%
 3580
-Has Disease 100%
+Affected: 99%
 3581
-Has Disease 100%
+Affected: 99%
 3582
-Has Disease 100%
+Affected: 99%
 3583
-Has Disease 100%
+Affected: 99%
 3584
-Has Disease 100%
+Affected: 99%
 3585
-Has Disease 100%
+Affected: 99%
 3586
-Has Disease 100%
+Affected: 99%
 3587
-Has Disease 100%
+Affected: 99%
 3588
-Has Disease 100%
+Affected: 99%
 3589
-Has Disease 100%
+Affected: 99%
 3590
-Has Disease 100%
+Affected: 99%
 3591
-Has Disease 100%
+Affected: 99%
 3592
-Has Disease 100%
+Affected: 99%
 3593
-Has Disease 100%
+Affected: 99%
 3594
-Has Disease 100%
+Affected: 99%
 3595
-Has Disease 100%
+Affected: 99%
 3596
-Has Disease 100%
+Affected: 99%
 3597
-Has Disease 100%
+Affected: 99%
 3598
-Has Disease 100%
+Affected: 99%
 3599
-Has Disease 100%
+Affected: 99%
 3600
-Has Disease 100%
+Affected: 99%
 3601
-Has Disease 100%
+Affected: 99%
 3602
-Has Disease 100%
+Affected: 99%
 3603
-Has Disease 100%
+Affected: 99%
 3604
-Has Disease 100%
+Affected: 99%
 3605
-Has Disease 100%
+Affected: 99%
 3606
-Has Disease 100%
+Affected: 99%
 3607
-Has Disease 100%
+Affected: 99%
 3608
-Has Disease 100%
+Affected: 99%
 3609
-Has Disease 100%
+Affected: 99%
 3610
-Has Disease 100%
+Affected: 99%
 3611
-Has Disease 100%
+Affected: 99%
 3612
-Has Disease 100%
+Affected: 99%
 3613
-Has Disease 100%
+Affected: 99%
 3614
-Has Disease 100%
+Affected: 99%
 3615
-Has Disease 100%
+Affected: 99%
 3616
-Has Disease 100%
+Affected: 99%
 3617
-Has Disease 100%
+Affected: 99%
 3618
-Has Disease 100%
+Affected: 99%
 3619
-Has Disease 100%
+Affected: 99%
 3620
-Has Disease 100%
+Affected: 99%
 3621
-Has Disease 100%
+Affected: 99%
 3622
-Has Disease 100%
+Affected: 99%
 3623
-Has Disease 100%
+Affected: 99%
 3624
-Has Disease 100%
+Affected: 99%
 3625
-Has Disease 100%
+Affected: 99%
 3626
-Has Disease 100%
+Affected: 99%
 3627
-Has Disease 100%
+Affected: 99%
 3628
-Has Disease 100%
+Affected: 99%
 3629
-Has Disease 100%
+Affected: 99%
 3630
-Has Disease 100%
+Affected: 99%
 3631
-Has Disease 100%
+Affected: 99%
 3632
-Has Disease 100%
+Affected: 99%
 3633
-Has Disease 100%
+Affected: 99%
 3634
-Has Disease 100%
+Affected: 99%
 3635
-Has Disease 100%
+Affected: 99%
 3636
-Has Disease 100%
+Affected: 99%
 3637
-Has Disease 100%
+Affected: 99%
 3638
-Has Disease 100%
+Affected: 99%
 3639
-Has Disease 100%
+Affected: 99%
 3640
-Has Disease 100%
+Affected: 99%
 3641
-Has Disease 100%
+Affected: 99%
 3642
-Has Disease 100%
+Affected: 99%
 3643
-Has Disease 100%
+Affected: 99%
 3644
-Has Disease 100%
+Affected: 99%
 3645
-Has Disease 100%
+Affected: 99%
 3646
-Has Disease 100%
+Affected: 99%
 3647
-Has Disease 100%
+Affected: 99%
 3648
-Has Disease 100%
+Affected: 99%
 3649
-Has Disease 100%
+Affected: 99%
 3650
-Has Disease 100%
+Affected: 99%
 3651
-Has Disease 100%
+Affected: 99%
 3652
-Has Disease 100%
+Affected: 99%
 3653
-Has Disease 100%
+Affected: 99%
 3654
-Has Disease 100%
+Affected: 99%
 3655
-Has Disease 100%
+Affected: 99%
 3656
-Has Disease 100%
+Affected: 99%
 3657
-Has Disease 100%
+Affected: 99%
 3658
-Has Disease 100%
+Affected: 99%
 3659
-Has Disease 100%
+Affected: 99%
 3660
-Has Disease 100%
+Affected: 99%
 3661
-Has Disease 100%
+Affected: 99%
 3662
-Has Disease 100%
+Affected: 99%
 3663
-Has Disease 100%
+Affected: 99%
 3664
-Has Disease 100%
+Affected: 99%
 3665
-Has Disease 100%
+Affected: 99%
 3666
-Has Disease 100%
+Affected: 99%
 3667
-Has Disease 100%
+Affected: 99%
 3668
-Has Disease 100%
+Affected: 99%
 3669
-Has Disease 100%
+Affected: 99%
 3670
-Has Disease 100%
+Affected: 99%
 3671
-Has Disease 100%
+Affected: 99%
 3672
-Has Disease 100%
+Affected: 99%
 3673
-Has Disease 100%
+Affected: 99%
 3674
-Has Disease 100%
+Affected: 99%
 3675
-Has Disease 100%
+Affected: 99%
 3676
-Has Disease 100%
+Affected: 99%
 3677
-Has Disease 100%
+Affected: 99%
 3678
-Has Disease 100%
+Affected: 99%
 3679
-Has Disease 100%
+Affected: 99%
 3680
-Has Disease 100%
+Affected: 99%
 3681
-Has Disease 100%
+Affected: 99%
 3682
-Has Disease 100%
+Affected: 99%
 3683
-Has Disease 100%
+Affected: 99%
 3684
-Has Disease 100%
+Affected: 99%
 3685
-Has Disease 100%
+Affected: 99%
 3686
-Has Disease 100%
+Affected: 99%
 3687
-Has Disease 100%
+Affected: 99%
 3688
-Has Disease 100%
+Affected: 99%
 3689
-Has Disease 100%
+Affected: 99%
 3690
-Has Disease 100%
+Affected: 99%
 3691
-Has Disease 100%
+Affected: 99%
 3692
-Has Disease 100%
+Affected: 99%
 3693
-Has Disease 100%
+Affected: 99%
 3694
-Has Disease 100%
+Affected: 99%
 3695
-Has Disease 100%
+Affected: 99%
 3696
-Has Disease 100%
+Affected: 99%
 3697
-Has Disease 100%
+Affected: 99%
 3698
-Has Disease 100%
+Affected: 99%
 3699
-Has Disease 100%
+Affected: 99%
 3700
-Has Disease 100%
+Affected: 99%
 3701
-Has Disease 100%
+Affected: 99%
 3702
-Has Disease 100%
+Affected: 99%
 3703
-Has Disease 100%
+Affected: 99%
 3704
-Has Disease 100%
+Affected: 99%
 3705
-Has Disease 100%
+Affected: 99%
 3706
-Has Disease 100%
+Affected: 99%
 3707
-Has Disease 100%
+Affected: 99%
 3708
-Has Disease 100%
+Affected: 99%
 3709
-Has Disease 100%
+Affected: 99%
 3710
-Has Disease 100%
+Affected: 99%
 3711
-Has Disease 100%
+Affected: 99%
 3712
-Has Disease 100%
+Affected: 99%
 3713
-Has Disease 100%
+Affected: 99%
 3714
-Has Disease 100%
+Affected: 99%
 3715
-Has Disease 100%
+Affected: 99%
 3716
-Has Disease 100%
+Affected: 99%
 3717
-Has Disease 100%
+Affected: 99%
 3718
-Has Disease 100%
+Affected: 99%
 3719
-Has Disease 100%
+Affected: 99%
 3720
-Has Disease 100%
+Affected: 99%
 3721
-Has Disease 100%
+Affected: 99%
 3722
-Has Disease 100%
+Affected: 99%
 3723
-Has Disease 100%
+Affected: 99%
 3724
-Has Disease 100%
+Affected: 99%
 3725
-Has Disease 100%
+Affected: 99%
 3726
-Has Disease 100%
+Affected: 99%
 3727
-Has Disease 100%
+Affected: 99%
 3728
-Has Disease 100%
+Affected: 99%
 3729
-Has Disease 100%
+Affected: 99%
 3730
-Has Disease 100%
+Affected: 99%
 3731
-Has Disease 100%
+Affected: 99%
 3732
-Has Disease 100%
+Affected: 99%
 3733
-Has Disease 100%
+Affected: 99%
 3734
-Has Disease 100%
+Affected: 99%
 3735
-Has Disease 100%
+Affected: 99%
 3736
-Has Disease 100%
+Affected: 99%
 3737
-Has Disease 100%
+Affected: 99%
 3738
-Has Disease 100%
+Affected: 99%
 3739
-Has Disease 100%
+Affected: 99%
 3740
-Has Disease 100%
+Affected: 99%
 3741
-Has Disease 100%
+Affected: 99%
 3742
-Has Disease 100%
+Affected: 99%
 3743
-Has Disease 100%
+Affected: 99%
 3744
-Has Disease 100%
+Affected: 99%
 3745
-Has Disease 100%
+Affected: 99%
 3746
-Has Disease 100%
+Affected: 99%
 3747
-Has Disease 100%
+Affected: 99%
 3748
-Has Disease 100%
+Affected: 99%
 3749
-Has Disease 100%
+Affected: 99%
 3750
-Has Disease 100%
+Affected: 99%
 3751
-Has Disease 100%
+Affected: 99%
 3752
-Has Disease 100%
+Affected: 99%
 3753
-Has Disease 100%
+Affected: 99%
 3754
-Has Disease 100%
+Affected: 99%
 3755
-Has Disease 100%
+Affected: 99%
 3756
-Has Disease 100%
+Affected: 99%
 3757
-Has Disease 100%
+Affected: 99%
 3758
-Has Disease 100%
+Affected: 99%
 3759
-Has Disease 100%
+Affected: 99%
 3760
-Has Disease 100%
+Affected: 99%
 3761
-Has Disease 100%
+Affected: 99%
 3762
-Has Disease 100%
+Affected: 99%
 3763
-Has Disease 100%
+Affected: 99%
 3764
-Has Disease 100%
+Affected: 99%
 3765
-Has Disease 100%
+Affected: 99%
 3766
-Has Disease 100%
+Affected: 99%
 3767
-Has Disease 100%
+Affected: 99%
 3768
-Has Disease 100%
+Affected: 99%
 3769
-Has Disease 100%
+Affected: 99%
 3770
-Has Disease 100%
+Affected: 99%
 3771
-Has Disease 100%
+Affected: 99%
 3772
-Has Disease 100%
+Affected: 99%
 3773
-Has Disease 100%
+Affected: 99%
 3774
-Has Disease 100%
+Affected: 99%
 3775
-Has Disease 100%
+Affected: 99%
 3776
-Has Disease 100%
+Affected: 99%
 3777
-Has Disease 100%
+Affected: 99%
 3778
-Has Disease 100%
+Affected: 99%
 3779
-Has Disease 100%
+Affected: 99%
 3780
-Has Disease 100%
+Affected: 99%
 3781
-Has Disease 100%
+Affected: 99%
 3782
-Has Disease 100%
+Affected: 99%
 3783
-Has Disease 100%
+Affected: 99%
 3784
-Has Disease 100%
+Affected: 99%
 3785
-Has Disease 100%
+Affected: 99%
 3786
-Has Disease 100%
+Affected: 99%
 3787
-Has Disease 100%
+Affected: 99%
 3788
-Has Disease 100%
+Affected: 99%
 3789
-Has Disease 100%
+Affected: 99%
 3790
-Has Disease 100%
+Affected: 99%
 3791
-Has Disease 100%
+Affected: 99%
 3792
-Has Disease 100%
+Affected: 99%
 3793
-Has Disease 100%
+Affected: 99%
 3794
-Has Disease 100%
+Affected: 99%
 3795
-Has Disease 100%
+Affected: 99%
 3796
-Has Disease 100%
+Affected: 99%
 3797
-Has Disease 100%
+Affected: 99%
 3798
-Has Disease 100%
+Affected: 99%
 3799
-Has Disease 100%
+Affected: 99%
 3800
-Has Disease 100%
+Affected: 99%
 3801
-Has Disease 100%
+Affected: 99%
 3802
-Has Disease 100%
+Affected: 99%
 3803
-Has Disease 100%
+Affected: 99%
 3804
-Has Disease 100%
+Affected: 99%
 3805
-Has Disease 100%
+Affected: 99%
 3806
-Has Disease 100%
+Affected: 99%
 3807
-Has Disease 100%
+Affected: 99%
 3808
-Has Disease 100%
+Affected: 99%
 3809
-Has Disease 100%
+Affected: 99%
 3810
-Has Disease 100%
+Affected: 99%
 3811
-Has Disease 100%
+Affected: 99%
 3812
-Has Disease 100%
+Affected: 99%
 3813
-Has Disease 100%
+Affected: 99%
 3814
-Has Disease 100%
+Affected: 99%
 3815
-Has Disease 100%
+Affected: 99%
 3816
-Has Disease 100%
+Affected: 99%
 3817
-Has Disease 100%
+Affected: 99%
 3818
-Has Disease 100%
+Affected: 99%
 3819
-Has Disease 100%
+Affected: 99%
 3820
-Has Disease 100%
+Affected: 99%
 3821
-Has Disease 100%
+Affected: 99%
 3822
-Has Disease 100%
+Affected: 99%
 3823
-Has Disease 100%
+Affected: 99%
 3824
-Has Disease 100%
+Affected: 99%
 3825
-Has Disease 100%
+Affected: 99%
 3826
-Has Disease 100%
+Affected: 99%
 3827
-Has Disease 100%
+Affected: 99%
 3828
-Has Disease 100%
+Affected: 99%
 3829
-Has Disease 100%
+Affected: 99%
 3830
-Has Disease 100%
+Affected: 99%
 3831
-Has Disease 100%
+Affected: 99%
 3832
-Has Disease 100%
+Affected: 99%
 3833
-Has Disease 100%
+Affected: 99%
 3834
-Has Disease 100%
+Affected: 99%
 3835
-Has Disease 100%
+Affected: 99%
 3836
-Has Disease 100%
+Affected: 99%
 3837
-Has Disease 100%
+Affected: 99%
 3838
-Has Disease 100%
+Affected: 99%
 3839
-Has Disease 100%
+Affected: 99%
 3840
-Has Disease 100%
+Affected: 99%
 3841
-Has Disease 100%
+Affected: 99%
 3842
-Has Disease 100%
+Affected: 99%
 3843
-Has Disease 100%
+Affected: 99%
 3844
-Has Disease 100%
+Affected: 99%
 3845
-Has Disease 100%
+Affected: 99%
 3846
-Has Disease 100%
+Affected: 99%
 3847
-Has Disease 100%
+Affected: 99%
 3848
-Has Disease 100%
+Affected: 99%
 3849
-Has Disease 100%
+Affected: 99%
 3850
-Has Disease 100%
+Affected: 99%
 3851
-Has Disease 100%
+Affected: 99%
 3852
-Has Disease 100%
+Affected: 99%
 3853
-Has Disease 100%
+Affected: 99%
 3854
-Has Disease 100%
+Affected: 99%
 3855
-Has Disease 100%
+Affected: 99%
 3856
-Has Disease 100%
+Affected: 99%
 3857
-Has Disease 100%
+Affected: 99%
 3858
-Has Disease 100%
+Affected: 99%
 3859
-Has Disease 100%
+Affected: 99%
 3860
-Has Disease 100%
+Affected: 99%
 3861
-Has Disease 100%
+Affected: 99%
 3862
-Has Disease 100%
+Affected: 99%
 3863
-Has Disease 100%
+Affected: 99%
 3864
-Has Disease 100%
+Affected: 99%
 3865
-Has Disease 100%
+Affected: 99%
 3866
-Has Disease 100%
+Affected: 99%
 3867
-Has Disease 100%
+Affected: 99%
 3868
-Has Disease 100%
+Affected: 99%
 3869
-Has Disease 100%
+Affected: 99%
 3870
-Has Disease 100%
+Affected: 99%
 3871
-Has Disease 100%
+Affected: 99%
 3872
-Has Disease 100%
+Affected: 99%
 3873
-Has Disease 100%
+Affected: 99%
 3874
-Has Disease 100%
+Affected: 99%
 3875
-Has Disease 100%
+Affected: 99%
 3876
-Has Disease 100%
+Affected: 99%
 3877
-Has Disease 100%
+Affected: 99%
 3878
-Has Disease 100%
+Affected: 99%
 3879
-Has Disease 100%
+Affected: 99%
 3880
-Has Disease 100%
+Affected: 99%
 3881
-Has Disease 100%
+Affected: 99%
 3882
-Has Disease 100%
+Affected: 99%
 3883
-Has Disease 100%
+Affected: 99%
 3884
-Has Disease 100%
+Affected: 99%
 3885
-Has Disease 100%
+Affected: 99%
 3886
-Has Disease 100%
+Affected: 99%
 3887
-Has Disease 100%
+Affected: 99%
 3888
-Has Disease 100%
+Affected: 99%
 3889
-Has Disease 100%
+Affected: 99%
 3890
-Has Disease 100%
+Affected: 99%
 3891
-Has Disease 100%
+Affected: 99%
 3892
-Has Disease 100%
+Affected: 99%
 3893
-Has Disease 100%
+Affected: 99%
 3894
-Has Disease 100%
+Affected: 99%
 3895
-Has Disease 100%
+Affected: 99%
 3896
-Has Disease 100%
+Affected: 99%
 3897
-Has Disease 100%
+Affected: 99%
 3898
-Has Disease 100%
+Affected: 99%
 3899
-Has Disease 100%
+Affected: 99%
 3900
-Has Disease 100%
+Affected: 99%
 3901
-Has Disease 100%
+Affected: 99%
 3902
-Has Disease 100%
+Affected: 99%
 3903
-Has Disease 100%
+Affected: 99%
 3904
-Has Disease 100%
+Affected: 99%
 3905
-Has Disease 100%
+Affected: 99%
 3906
-Has Disease 100%
+Affected: 99%
 3907
-Has Disease 100%
+Affected: 99%
 3908
-Has Disease 100%
+Affected: 99%
 3909
-Has Disease 100%
+Affected: 99%
 3910
-Has Disease 100%
+Affected: 99%
 3911
-Has Disease 100%
+Affected: 99%
 3912
-Has Disease 100%
+Affected: 99%
 3913
-Has Disease 100%
+Affected: 99%
 3914
-Has Disease 100%
+Affected: 99%
 3915
-Has Disease 100%
+Affected: 99%
 3916
-Has Disease 100%
+Affected: 99%
 3917
-Has Disease 100%
+Affected: 99%
 3918
-Has Disease 100%
+Affected: 99%
 3919
-Has Disease 100%
+Affected: 99%
 3920
-Has Disease 100%
+Affected: 99%
 3921
-Has Disease 100%
+Affected: 99%
 3922
-Has Disease 100%
+Affected: 99%
 3923
-Has Disease 100%
+Affected: 99%
 3924
-Has Disease 100%
+Affected: 99%
 3925
-Has Disease 100%
+Affected: 99%
 3926
-Has Disease 100%
+Affected: 99%
 3927
-Has Disease 100%
+Affected: 99%
 3928
-Has Disease 100%
+Affected: 99%
 3929
-Has Disease 100%
+Affected: 99%
 3930
-Has Disease 100%
+Affected: 99%
 3931
-Has Disease 100%
+Affected: 99%
 3932
-Has Disease 100%
+Affected: 99%
 3933
-Has Disease 100%
+Affected: 99%
 3934
-Has Disease 100%
+Affected: 99%
 3935
-Has Disease 100%
+Affected: 99%
 3936
-Has Disease 100%
+Affected: 99%
 3937
-Has Disease 100%
+Affected: 99%
 3938
-Has Disease 100%
+Affected: 99%
 3939
-Has Disease 100%
+Affected: 99%
 3940
-Has Disease 100%
+Affected: 99%
 3941
-Has Disease 100%
+Affected: 99%
 3942
-Has Disease 100%
+Affected: 99%
 3943
-Has Disease 100%
+Affected: 99%
 3944
-Has Disease 100%
+Affected: 99%
 3945
-Has Disease 100%
+Affected: 99%
 3946
-Has Disease 100%
+Affected: 99%
 3947
-Has Disease 100%
+Affected: 99%
 3948
-Has Disease 100%
+Affected: 99%
 3949
-Has Disease 100%
+Affected: 99%
 3950
-Has Disease 100%
+Affected: 99%
 3951
-Has Disease 100%
+Affected: 99%
 3952
-Has Disease 100%
+Affected: 99%
 3953
-Has Disease 100%
+Affected: 99%
 3954
-Has Disease 100%
+Affected: 99%
 3955
-Has Disease 100%
+Affected: 99%
 3956
-Has Disease 100%
+Affected: 99%
 3957
-Has Disease 100%
+Affected: 99%
 3958
-Has Disease 100%
+Affected: 99%
 3959
-Has Disease 100%
+Affected: 99%
 3960
-Has Disease 100%
+Affected: 99%
 3961
-Has Disease 100%
+Affected: 99%
 3962
-Has Disease 100%
+Affected: 99%
 3963
-Has Disease 100%
+Affected: 99%
 3964
-Has Disease 100%
+Affected: 99%
 3965
-Has Disease 100%
+Affected: 99%
 3966
-Has Disease 100%
+Affected: 99%
 3967
-Has Disease 100%
+Affected: 99%
 3968
-Has Disease 100%
+Affected: 99%
 3969
-Has Disease 100%
+Affected: 99%
 3970
-Has Disease 100%
+Affected: 99%
 3971
-Has Disease 100%
+Affected: 99%
 3972
-Has Disease 100%
+Affected: 99%
 3973
-Has Disease 100%
+Affected: 99%
 3974
-Has Disease 100%
+Affected: 99%
 3975
-Has Disease 100%
+Affected: 99%
 3976
-Has Disease 100%
+Affected: 99%
 3977
-Has Disease 100%
+Affected: 99%
 3978
-Has Disease 100%
+Affected: 99%
 3979
-Has Disease 100%
+Affected: 99%
 3980
-Has Disease 100%
+Affected: 99%
 3981
-Has Disease 100%
+Affected: 99%
 3982
-Has Disease 100%
+Affected: 99%
 3983
-Has Disease 100%
+Affected: 99%
 3984
-Has Disease 100%
+Affected: 99%
 3985
-Has Disease 100%
+Affected: 99%
 3986
-Has Disease 100%
+Affected: 99%
 3987
-Has Disease 100%
+Affected: 99%
 3988
-Has Disease 100%
+Affected: 99%
 3989
-Has Disease 100%
+Affected: 99%
 3990
-Has Disease 100%
+Affected: 99%
 3991
-Has Disease 100%
+Affected: 99%
 3992
-Has Disease 100%
+Affected: 99%
 3993
-Has Disease 100%
+Affected: 99%
 3994
-Has Disease 100%
+Affected: 99%
 3995
-Has Disease 100%
+Affected: 99%
 3996
-Has Disease 100%
+Affected: 99%
 3997
-Has Disease 100%
+Affected: 99%
 3998
-Has Disease 100%
+Affected: 99%
 3999
-Has Disease 100%
+Affected: 99%
 4000
-Has Disease 100%
+Affected: 99%
 4001
-Has Disease 100%
+Affected: 99%
 4002
-Has Disease 100%
+Affected: 99%
 4003
-Has Disease 100%
+Affected: 99%
 4004
-Has Disease 100%
+Affected: 99%
 4005
-Has Disease 100%
+Affected: 99%
 4006
-Has Disease 100%
+Affected: 99%
 4007
-Has Disease 100%
+Affected: 99%
 4008
-Has Disease 100%
+Affected: 99%
 4009
-Has Disease 100%
+Affected: 99%
 4010
-Has Disease 100%
+Affected: 99%
 4011
-Has Disease 100%
+Affected: 99%
 4012
-Has Disease 100%
+Affected: 99%
 4013
-Has Disease 100%
+Affected: 99%
 4014
-Has Disease 100%
+Affected: 99%
 4015
-Has Disease 100%
+Affected: 99%
 4016
-Has Disease 100%
+Affected: 99%
 4017
-Has Disease 100%
+Affected: 99%
 4018
-Has Disease 100%
+Affected: 99%
 4019
-Has Disease 100%
+Affected: 99%
 4020
-Has Disease 100%
+Affected: 99%
 4021
-Has Disease 100%
+Affected: 99%
 4022
-Has Disease 100%
+Affected: 99%
 4023
-Has Disease 100%
+Affected: 99%
 4024
-Has Disease 100%
+Affected: 99%
 4025
-Has Disease 100%
+Affected: 99%
 4026
-Has Disease 100%
+Affected: 99%
 4027
-Has Disease 100%
+Affected: 99%
 4028
-Has Disease 100%
+Affected: 99%
 4029
-Has Disease 100%
+Affected: 99%
 4030
-Has Disease 100%
+Affected: 99%
 4031
-Has Disease 100%
+Affected: 99%
 4032
-Has Disease 100%
+Affected: 99%
 4033
-Has Disease 100%
+Affected: 99%
 4034
-Has Disease 100%
+Affected: 99%
 4035
-Has Disease 100%
+Affected: 99%
 4036
-Has Disease 100%
+Affected: 99%
 4037
-Has Disease 100%
+Affected: 99%
 4038
-Has Disease 100%
+Affected: 99%
 4039
-Has Disease 100%
+Affected: 99%
 4040
-Has Disease 100%
+Affected: 99%
 4041
-Has Disease 100%
+Affected: 99%
 4042
-Has Disease 100%
+Affected: 99%
 4043
-Has Disease 100%
+Affected: 99%
 4044
-Has Disease 100%
+Affected: 99%
 4045
-Has Disease 100%
+Affected: 99%
 4046
-Has Disease 100%
+Affected: 99%
 4047
-Has Disease 100%
+Affected: 99%
 4048
-Has Disease 100%
+Affected: 99%
 4049
-Has Disease 100%
+Affected: 99%
 4050
-Has Disease 100%
+Affected: 99%
 4051
-Has Disease 100%
+Affected: 99%
 4052
-Has Disease 100%
+Affected: 99%
 4053
-Has Disease 100%
+Affected: 99%
 4054
-Has Disease 100%
+Affected: 99%
 4055
-Has Disease 100%
+Affected: 99%
 4056
-Has Disease 100%
+Affected: 99%
 4057
-Has Disease 100%
+Affected: 99%
 4058
-Has Disease 100%
+Affected: 99%
 4059
-Has Disease 100%
+Affected: 99%
 4060
-Has Disease 100%
+Affected: 99%
 4061
-Has Disease 100%
+Affected: 99%
 4062
-Has Disease 100%
+Affected: 99%
 4063
-Has Disease 100%
+Affected: 99%
 4064
-Has Disease 100%
+Affected: 99%
 4065
-Has Disease 100%
+Affected: 99%
 4066
-Has Disease 100%
+Affected: 99%
 4067
-Has Disease 100%
+Affected: 99%
 4068
-Has Disease 100%
+Affected: 99%
 4069
-Has Disease 100%
+Affected: 99%
 4070
-Has Disease 100%
+Affected: 99%
 4071
-Has Disease 100%
+Affected: 99%
 4072
-Has Disease 100%
+Affected: 99%
 4073
-Has Disease 100%
+Affected: 99%
 4074
-Has Disease 100%
+Affected: 99%
 4075
-Has Disease 100%
+Affected: 99%
 4076
-Has Disease 100%
+Affected: 99%
 4077
-Has Disease 100%
+Affected: 99%
 4078
-Has Disease 100%
+Affected: 99%
 4079
-Has Disease 100%
+Affected: 99%
 4080
-Has Disease 100%
+Affected: 99%
 4081
-Has Disease 100%
+Affected: 99%
 4082
-Has Disease 100%
+Affected: 99%
 4083
-Has Disease 100%
+Affected: 99%
 4084
-Has Disease 100%
+Affected: 99%
 4085
-Has Disease 100%
+Affected: 99%
 4086
-Has Disease 100%
+Affected: 99%
 4087
-Has Disease 100%
+Affected: 99%
 4088
-Has Disease 100%
+Affected: 99%
 4089
-Has Disease 100%
+Affected: 99%
 4090
-Has Disease 100%
+Affected: 99%
 4091
-Has Disease 100%
+Affected: 99%
 4092
-Has Disease 100%
+Affected: 99%
 4093
-Has Disease 100%
+Affected: 99%
 4094
-Has Disease 100%
+Affected: 99%
 4095
-Has Disease 100%
+Affected: 99%
 4096
-Has Disease 100%
+Affected: 99%
 4097
-Has Disease 100%
+Affected: 99%
 4098
-Has Disease 100%
+Affected: 99%
 4099
-Has Disease 100%
+Affected: 99%
 4100
-Has Disease 100%
+Affected: 99%
 4101
-Has Disease 100%
+Affected: 99%
 4102
-Has Disease 100%
+Affected: 99%
 4103
-Has Disease 100%
+Affected: 99%
 4104
-Has Disease 100%
+Affected: 99%
 4105
-Has Disease 100%
+Affected: 99%
 4106
-Has Disease 100%
+Affected: 99%
 4107
-Has Disease 100%
+Affected: 99%
 4108
-Has Disease 100%
+Affected: 99%
 4109
-Has Disease 100%
+Affected: 99%
 4110
-Has Disease 100%
+Affected: 99%
 4111
-Has Disease 100%
+Affected: 99%
 4112
-Has Disease 100%
+Affected: 99%
 4113
-Has Disease 100%
+Affected: 99%
 4114
-Has Disease 100%
+Affected: 99%
 4115
-Has Disease 100%
+Affected: 99%
 4116
-Has Disease 100%
+Affected: 99%
 4117
-Has Disease 100%
+Affected: 99%
 4118
-Has Disease 100%
+Affected: 99%
 4119
-Has Disease 100%
+Affected: 99%
 4120
-Has Disease 100%
+Affected: 99%
 4121
-Has Disease 100%
+Affected: 99%
 4122
-Has Disease 100%
+Affected: 99%
 4123
-Has Disease 100%
+Affected: 99%
 4124
-Has Disease 100%
+Affected: 99%
 4125
-Has Disease 100%
+Affected: 99%
 4126
-Has Disease 100%
+Affected: 99%
 4127
-Has Disease 100%
+Affected: 99%
 4128
-Has Disease 100%
+Affected: 99%
 4129
-Has Disease 100%
+Affected: 99%
 4130
-Has Disease 100%
+Affected: 99%
 4131
-Has Disease 100%
+Affected: 99%
 4132
-Has Disease 100%
+Affected: 99%
 4133
-Has Disease 100%
+Affected: 99%
 4134
-Has Disease 100%
+Affected: 99%
 4135
-Has Disease 100%
+Affected: 99%
 4136
-Has Disease 100%
+Affected: 99%
 4137
-Has Disease 100%
+Affected: 99%
 4138
-Has Disease 100%
+Affected: 99%
 4139
-Has Disease 100%
+Affected: 99%
 4140
-Has Disease 100%
+Affected: 99%
 4141
-Has Disease 100%
+Affected: 99%
 4142
-Has Disease 100%
+Affected: 99%
 4143
-Has Disease 100%
+Affected: 99%
 4144
-Has Disease 100%
+Affected: 99%
 4145
-Has Disease 100%
+Affected: 99%
 4146
-Has Disease 100%
+Affected: 99%
 4147
-Has Disease 100%
+Affected: 99%
 4148
-Has Disease 100%
+Affected: 99%
 4149
-Has Disease 100%
+Affected: 99%
 4150
-Has Disease 100%
+Affected: 99%
 4151
-Has Disease 100%
+Affected: 99%
 4152
-Has Disease 100%
+Affected: 99%
 4153
-Has Disease 100%
+Affected: 99%
 4154
-Has Disease 100%
+Affected: 99%
 4155
-Has Disease 100%
+Affected: 99%
 4156
-Has Disease 100%
+Affected: 99%
 4157
-Has Disease 100%
+Affected: 99%
 4158
-Has Disease 100%
+Affected: 99%
 4159
-Has Disease 100%
+Affected: 99%
 4160
-Has Disease 100%
+Affected: 99%
 4161
-Has Disease 100%
+Affected: 99%
 4162
-Has Disease 100%
+Affected: 99%
 4163
-Has Disease 100%
+Affected: 99%
 4164
-Has Disease 100%
+Affected: 99%
 4165
-Has Disease 100%
+Affected: 99%
 4166
-Has Disease 100%
+Affected: 99%
 4167
-Has Disease 100%
+Affected: 99%
 4168
-Has Disease 100%
+Affected: 99%
 4169
-Has Disease 100%
+Affected: 99%
 4170
-Has Disease 100%
+Affected: 99%
 4171
-Has Disease 100%
+Affected: 99%
 4172
-Has Disease 100%
+Affected: 99%
 4173
-Has Disease 100%
+Affected: 99%
 4174
-Has Disease 100%
+Affected: 99%
 4175
-Has Disease 100%
+Affected: 99%
 4176
-Has Disease 100%
+Affected: 99%
 4177
-Has Disease 100%
+Affected: 99%
 4178
-Has Disease 100%
+Affected: 99%
 4179
-Has Disease 100%
+Affected: 99%
 4180
-Has Disease 100%
+Affected: 99%
 4181
-Has Disease 100%
+Affected: 99%
 4182
-Has Disease 100%
+Affected: 99%
 4183
-Has Disease 100%
+Affected: 99%
 4184
-Has Disease 100%
+Affected: 99%
 4185
-Has Disease 100%
+Affected: 99%
 4186
-Has Disease 100%
+Affected: 99%
 4187
-Has Disease 100%
+Affected: 99%
 4188
-Has Disease 100%
+Affected: 99%
 4189
-Has Disease 100%
+Affected: 99%
 4190
-Has Disease 100%
+Affected: 99%
 4191
-Has Disease 100%
+Affected: 99%
 4192
-Has Disease 100%
+Affected: 99%
 4193
-Has Disease 100%
+Affected: 99%
 4194
-Has Disease 100%
+Affected: 99%
 4195
-Has Disease 100%
+Affected: 99%
 4196
-Has Disease 100%
+Affected: 99%
 4197
-Has Disease 100%
+Affected: 99%
 4198
-Has Disease 100%
+Affected: 99%
 4199
-Has Disease 100%
+Affected: 99%
 4200
-Has Disease 100%
+Affected: 99%
 4201
-Has Disease 100%
+Affected: 99%
 4202
-Has Disease 100%
+Affected: 99%
 4203
-Has Disease 100%
+Affected: 99%
 4204
-Has Disease 100%
+Affected: 99%
 4205
-Has Disease 100%
+Affected: 99%
 4206
-Has Disease 100%
+Affected: 99%
 4207
-Has Disease 100%
+Affected: 99%
 4208
-Has Disease 100%
+Affected: 99%
 4209
-Has Disease 100%
+Affected: 99%
 4210
-Has Disease 100%
+Affected: 99%
 4211
-Has Disease 100%
+Affected: 99%
 4212
-Has Disease 100%
+Affected: 99%
 4213
-Has Disease 100%
+Affected: 99%
 4214
-Has Disease 100%
+Affected: 99%
 4215
-Has Disease 100%
+Affected: 99%
 4216
-Has Disease 100%
+Affected: 99%
 4217
-Has Disease 100%
+Affected: 99%
 4218
-Has Disease 100%
+Affected: 99%
 4219
-Has Disease 100%
+Affected: 99%
 4220
-Has Disease 100%
+Affected: 99%
 4221
-Has Disease 100%
+Affected: 99%
 4222
-Has Disease 100%
+Affected: 99%
 4223
-Has Disease 100%
+Affected: 99%
 4224
-Has Disease 100%
+Affected: 99%
 4225
-Has Disease 100%
+Affected: 99%
 4226
-Has Disease 100%
+Affected: 99%
 4227
-Has Disease 100%
+Affected: 99%
 4228
-Has Disease 100%
+Affected: 99%
 4229
-Has Disease 100%
+Affected: 99%
 4230
-Has Disease 100%
+Affected: 99%
 4231
-Has Disease 100%
+Affected: 99%
 4232
-Has Disease 100%
+Affected: 99%
 4233
-Has Disease 100%
+Affected: 99%
 4234
-Has Disease 100%
+Affected: 99%
 4235
-Has Disease 100%
+Affected: 99%
 4236
-Has Disease 100%
+Affected: 99%
 4237
-Has Disease 100%
+Affected: 99%
 4238
-Has Disease 100%
+Affected: 99%
 4239
-Has Disease 100%
+Affected: 99%
 4240
-Has Disease 100%
+Affected: 99%
 4241
-Has Disease 100%
+Affected: 99%
 4242
-Has Disease 100%
+Affected: 99%
 4243
-Has Disease 100%
+Affected: 99%
 4244
-Has Disease 100%
+Affected: 99%
 4245
-Has Disease 100%
+Affected: 99%
 4246
-Has Disease 100%
+Affected: 99%
 4247
-Has Disease 100%
+Affected: 99%
 4248
-Has Disease 100%
+Affected: 99%
 4249
-Has Disease 100%
+Affected: 99%
 4250
-Has Disease 100%
+Affected: 99%
 4251
-Has Disease 100%
+Affected: 99%
 4252
-Has Disease 100%
+Affected: 99%
 4253
-Has Disease 100%
+Affected: 99%
 4254
-Has Disease 100%
+Affected: 99%
 4255
-Has Disease 100%
+Affected: 99%
 4256
-Has Disease 100%
+Affected: 99%
 4257
-Has Disease 100%
+Affected: 99%
 4258
-Has Disease 100%
+Affected: 99%
 4259
-Has Disease 100%
+Affected: 99%
 4260
-Has Disease 100%
+Affected: 99%
 4261
-Has Disease 100%
+Affected: 99%
 4262
-Has Disease 100%
+Affected: 99%
 4263
-Has Disease 100%
+Affected: 99%
 4264
-Has Disease 100%
+Affected: 99%
 4265
-Has Disease 100%
+Affected: 99%
 4266
-Has Disease 100%
+Affected: 99%
 4267
-Has Disease 100%
+Affected: 99%
 4268
-Has Disease 100%
+Affected: 99%
 4269
-Has Disease 100%
+Affected: 99%
 4270
-Has Disease 100%
+Affected: 99%
 4271
-Has Disease 100%
+Affected: 99%
 4272
-Has Disease 100%
+Affected: 99%
 4273
-Has Disease 100%
+Affected: 99%
 4274
-Has Disease 100%
+Affected: 99%
 4275
-Has Disease 100%
+Affected: 99%
 4276
-Has Disease 100%
+Affected: 99%
 4277
-Has Disease 100%
+Affected: 99%
 4278
-Has Disease 100%
+Affected: 99%
 4279
-Has Disease 100%
+Affected: 99%
 4280
-Has Disease 100%
+Affected: 99%
 4281
-Has Disease 100%
+Affected: 99%
 4282
-Has Disease 100%
+Affected: 99%
 4283
-Has Disease 100%
+Affected: 99%
 4284
-Has Disease 100%
+Affected: 99%
 4285
-Has Disease 100%
+Affected: 99%
 4286
-Has Disease 100%
+Affected: 99%
 4287
-Has Disease 100%
+Affected: 99%
 4288
-Has Disease 100%
+Affected: 99%
 4289
-Has Disease 100%
+Affected: 99%
 4290
-Has Disease 100%
+Affected: 99%
 4291
-Has Disease 100%
+Affected: 99%
 4292
-Has Disease 100%
+Affected: 99%
 4293
-Has Disease 100%
+Affected: 99%
 4294
-Has Disease 100%
+Affected: 99%
 4295
-Has Disease 100%
+Affected: 99%
 4296
-Has Disease 100%
+Affected: 99%
 4297
-Has Disease 100%
+Affected: 99%
 4298
-Has Disease 100%
+Affected: 99%
 4299
-Has Disease 100%
+Affected: 99%
 4300
-Has Disease 100%
+Affected: 99%
 4301
-Has Disease 100%
+Affected: 99%
 4302
-Has Disease 100%
+Affected: 99%
 4303
-Has Disease 100%
+Affected: 99%
 4304
-Has Disease 100%
+Affected: 99%
 4305
-Has Disease 100%
+Affected: 99%
 4306
-Has Disease 100%
+Affected: 99%
 4307
-Has Disease 100%
+Affected: 99%
 4308
-Has Disease 100%
+Affected: 99%
 4309
-Has Disease 100%
+Affected: 99%
 4310
-Has Disease 100%
+Affected: 99%
 4311
-Has Disease 100%
+Affected: 99%
 4312
-Has Disease 100%
+Affected: 99%
 4313
-Has Disease 100%
+Affected: 99%
 4314
-Has Disease 100%
+Affected: 99%
 4315
-Has Disease 100%
+Affected: 99%
 4316
-Has Disease 100%
+Affected: 99%
 4317
-Has Disease 100%
+Affected: 99%
 4318
-Has Disease 100%
+Affected: 99%
 4319
-Has Disease 100%
+Affected: 99%
 4320
-Has Disease 100%
+Affected: 99%
 4321
-Has Disease 100%
+Affected: 99%
 4322
-Has Disease 100%
+Affected: 99%
 4323
-Has Disease 100%
+Affected: 99%
 4324
-Has Disease 100%
+Affected: 99%
 4325
-Has Disease 100%
+Affected: 99%
 4326
-Has Disease 100%
+Affected: 99%
 4327
-Has Disease 100%
+Affected: 99%
 4328
-Has Disease 100%
+Affected: 99%
 4329
-Has Disease 100%
+Affected: 99%
 4330
-Has Disease 100%
+Affected: 99%
 4331
-Has Disease 100%
+Affected: 99%
 4332
-Has Disease 100%
+Affected: 99%
 4333
-Has Disease 100%
+Affected: 99%
 4334
-Has Disease 100%
+Affected: 99%
 4335
-Has Disease 100%
+Affected: 99%
 4336
-Has Disease 100%
+Affected: 99%
 4337
-Has Disease 100%
+Affected: 99%
 4338
-Has Disease 100%
+Affected: 99%
 4339
-Has Disease 100%
+Affected: 99%
 4340
-Has Disease 100%
+Affected: 99%
 4341
-Has Disease 100%
+Affected: 99%
 4342
-Has Disease 100%
+Affected: 99%
 4343
-Has Disease 100%
+Affected: 99%
 4344
-Has Disease 100%
+Affected: 99%
 4345
-Has Disease 100%
+Affected: 99%
 4346
-Has Disease 100%
+Affected: 99%
 4347
-Has Disease 100%
+Affected: 99%
 4348
-Has Disease 100%
+Affected: 99%
 4349
-Has Disease 100%
+Affected: 99%
 4350
-Has Disease 100%
+Affected: 99%
 4351
-Has Disease 100%
+Affected: 99%
 4352
-Has Disease 100%
+Affected: 99%
 4353
-Has Disease 100%
+Affected: 99%
 4354
-Has Disease 100%
+Affected: 99%
 4355
-Has Disease 100%
+Affected: 99%
 4356
-Has Disease 100%
+Affected: 99%
 4357
-Has Disease 100%
+Affected: 99%
 4358
-Has Disease 100%
+Affected: 99%
 4359
-Has Disease 100%
+Affected: 99%
 4360
-Has Disease 100%
+Affected: 99%
 4361
-Has Disease 100%
+Affected: 99%
 4362
-Has Disease 100%
+Affected: 99%
 4363
-Has Disease 100%
+Affected: 99%
 4364
-Has Disease 100%
+Affected: 99%
 4365
-Has Disease 100%
+Affected: 99%
 4366
-Has Disease 100%
+Affected: 99%
 4367
-Has Disease 100%
+Affected: 99%
 4368
-Has Disease 100%
+Affected: 99%
 4369
-Has Disease 100%
+Affected: 99%
 4370
-Has Disease 100%
+Affected: 99%
 4371
-Has Disease 100%
+Affected: 99%
 4372
-Has Disease 100%
+Affected: 99%
 4373
-Has Disease 100%
+Affected: 99%
 4374
-Has Disease 100%
+Affected: 99%
 4375
-Has Disease 100%
+Affected: 99%
 4376
-Has Disease 100%
+Affected: 99%
 4377
-Has Disease 100%
+Affected: 99%
 4378
-Has Disease 100%
+Affected: 99%
 4379
-Has Disease 100%
+Affected: 99%
 4380
-Has Disease 100%
+Affected: 99%
 4381
-Has Disease 100%
+Affected: 99%
 4382
-Has Disease 100%
+Affected: 99%
 4383
-Has Disease 100%
+Affected: 99%
 4384
-Has Disease 100%
+Affected: 99%
 4385
-Has Disease 100%
+Affected: 99%
 4386
-Has Disease 100%
+Affected: 99%
 4387
-Has Disease 100%
+Affected: 99%
 4388
-Has Disease 100%
+Affected: 99%
 4389
-Has Disease 100%
+Affected: 99%
 4390
-Has Disease 100%
+Affected: 99%
 4391
-Has Disease 100%
+Affected: 99%
 4392
-Has Disease 100%
+Affected: 99%
 4393
-Has Disease 100%
+Affected: 99%
 4394
-Has Disease 100%
+Affected: 99%
 4395
-Has Disease 100%
+Affected: 99%
 4396
-Has Disease 100%
+Affected: 99%
 4397
-Has Disease 100%
+Affected: 99%
 4398
-Has Disease 100%
+Affected: 99%
 4399
-Has Disease 100%
+Affected: 99%
 4400
-Has Disease 100%
+Affected: 99%
 4401
-Has Disease 100%
+Affected: 99%
 4402
-Has Disease 100%
+Affected: 99%
 4403
-Has Disease 100%
+Affected: 99%
 4404
-Has Disease 100%
+Affected: 99%
 4405
-Has Disease 100%
+Affected: 99%
 4406
-Has Disease 100%
+Affected: 99%
 4407
-Has Disease 100%
+Affected: 99%
 4408
-Has Disease 100%
+Affected: 99%
 4409
-Has Disease 100%
+Affected: 99%
 4410
-Has Disease 100%
+Affected: 99%
 4411
-Has Disease 100%
+Affected: 99%
 4412
-Has Disease 100%
+Affected: 99%
 4413
-Has Disease 100%
+Affected: 99%
 4414
-Has Disease 100%
+Affected: 99%
 4415
-Has Disease 100%
+Affected: 99%
 4416
-Has Disease 100%
+Affected: 99%
 4417
-Has Disease 100%
+Affected: 99%
 4418
-Has Disease 100%
+Affected: 99%
 4419
-Has Disease 100%
+Affected: 99%
 4420
-Has Disease 100%
+Affected: 99%
 4421
-Has Disease 100%
+Affected: 99%
 4422
-Has Disease 100%
+Affected: 99%
 4423
-Has Disease 100%
+Affected: 99%
 4424
-Has Disease 100%
+Affected: 99%
 4425
-Has Disease 100%
+Affected: 99%
 4426
-Has Disease 100%
+Affected: 99%
 4427
-Has Disease 100%
+Affected: 99%
 4428
-Has Disease 100%
+Affected: 99%
 4429
-Has Disease 100%
+Affected: 99%
 4430
-Has Disease 100%
+Affected: 99%
 4431
-Has Disease 100%
+Affected: 99%
 4432
-Has Disease 100%
+Affected: 99%
 4433
-Has Disease 100%
+Affected: 99%
 4434
-Has Disease 100%
+Affected: 99%
 4435
-Has Disease 100%
+Affected: 99%
 4436
-Has Disease 100%
+Affected: 99%
 4437
-Has Disease 100%
+Affected: 99%
 4438
-Has Disease 100%
+Affected: 99%
 4439
-Has Disease 100%
+Affected: 99%
 4440
-Has Disease 100%
+Affected: 99%
 4441
-Has Disease 100%
+Affected: 99%
 4442
-Has Disease 100%
+Affected: 99%
 4443
-Has Disease 100%
+Affected: 99%
 4444
-Has Disease 100%
+Affected: 99%
 4445
-Has Disease 100%
+Affected: 99%
 4446
-Has Disease 100%
+Affected: 99%
 4447
-Has Disease 100%
+Affected: 99%
 4448
-Has Disease 100%
+Affected: 99%
 4449
-Has Disease 100%
+Affected: 99%
 4450
-Has Disease 100%
+Affected: 99%
 4451
-Has Disease 100%
+Affected: 99%
 4452
-Has Disease 100%
+Affected: 99%
 4453
-Has Disease 100%
+Affected: 99%
 4454
-Has Disease 100%
+Affected: 99%
 4455
-Has Disease 100%
+Affected: 99%
 4456
-Has Disease 100%
+Affected: 99%
 4457
-Has Disease 100%
+Affected: 99%
 4458
-Has Disease 100%
+Affected: 99%
 4459
-Has Disease 100%
+Affected: 99%
 4460
-Has Disease 100%
+Affected: 99%
 4461
-Has Disease 100%
+Affected: 99%
 4462
-Has Disease 100%
+Affected: 99%
 4463
-Has Disease 100%
+Affected: 99%
 4464
-Has Disease 100%
+Affected: 99%
 4465
-Has Disease 100%
+Affected: 99%
 4466
-Has Disease 100%
+Affected: 99%
 4467
-Has Disease 100%
+Affected: 99%
 4468
-Has Disease 100%
+Affected: 99%
 4469
-Has Disease 100%
+Affected: 99%
 4470
-Has Disease 100%
+Affected: 99%
 4471
-Has Disease 100%
+Affected: 99%
 4472
-Has Disease 100%
+Affected: 99%
 4473
-Has Disease 100%
+Affected: 99%
 4474
-Has Disease 100%
+Affected: 99%
 4475
-Has Disease 100%
+Affected: 99%
 4476
-Has Disease 100%
+Affected: 99%
 4477
-Has Disease 100%
+Affected: 99%
 4478
-Has Disease 100%
+Affected: 99%
 4479
-Has Disease 100%
+Affected: 99%
 4480
-Has Disease 100%
+Affected: 99%
 4481
-Has Disease 100%
+Affected: 99%
 4482
-Has Disease 100%
+Affected: 99%
 4483
-Has Disease 100%
+Affected: 99%
 4484
-Has Disease 100%
+Affected: 99%
 4485
-Has Disease 100%
+Affected: 99%
 4486
-Has Disease 100%
+Affected: 99%
 4487
-Has Disease 100%
+Affected: 99%
 4488
-Has Disease 100%
+Affected: 99%
 4489
-Has Disease 100%
+Affected: 99%
 4490
-Has Disease 100%
+Affected: 99%
 4491
-Has Disease 100%
+Affected: 99%
 4492
-Has Disease 100%
+Affected: 99%
 4493
-Has Disease 100%
+Affected: 99%
 4494
-Has Disease 100%
+Affected: 99%
 4495
-Has Disease 100%
+Affected: 99%
 4496
-Has Disease 100%
+Affected: 99%
 4497
-Has Disease 100%
+Affected: 99%
 4498
-Has Disease 100%
+Affected: 99%
 4499
+Affected: 99%
+4500
+Affected: 99%
+4501
+Affected: 99%
+4502
+Affected: 99%
+4503
+Affected: 99%
+4504
+Affected: 99%
+4505
+Affected: 99%
+4506
+Affected: 99%
+4507
+Affected: 99%
+4508
+Affected: 99%
+4509
+Affected: 99%
+4510
+Affected: 99%
+4511
+Affected: 99%
+4512
+Affected: 99%
+4513
+Affected: 99%
+4514
+Affected: 99%
+4515
+Affected: 99%
+4516
+Affected: 99%
+4517
+Affected: 99%
+4518
+Affected: 99%
+4519
+Affected: 99%
+4520
+Affected: 99%
+4521
+Affected: 99%
+4522
+Affected: 99%
+4523
+Affected: 99%
+4524
+Affected: 99%
+4525
+Affected: 99%
+4526
+Affected: 99%
+4527
+Affected: 99%
+4528
+Affected: 99%
+4529
+Affected: 99%
+4530
+Affected: 99%
+4531
+Affected: 99%
+4532
+Affected: 99%
+4533
+Affected: 99%
+4534
+Affected: 99%
+4535
+Affected: 99%
+4536
+Affected: 99%
+4537
+Affected: 99%
+4538
+Affected: 99%
+4539
+Affected: 99%
+4540
+Affected: 99%
+4541
+Affected: 99%
+4542
+Affected: 99%
+4543
+Affected: 99%
+4544
+Affected: 99%
+4545
+Affected: 99%
+4546
+Affected: 99%
+4547
+Affected: 99%
+4548
+Affected: 99%
+4549
+Affected: 99%
+4550
+Affected: 99%
+4551
+Affected: 99%
+4552
+Affected: 99%
+4553
+Affected: 99%
+4554
+Affected: 99%
+4555
+Affected: 99%
+4556
+Affected: 99%
+4557
+Affected: 99%
+4558
+Affected: 99%
+4559
+Affected: 99%
+4560
+Affected: 99%
+4561
+Affected: 99%
+4562
+Affected: 99%
+4563
+Affected: 99%
+4564
+Affected: 99%
+4565
+Affected: 99%
+4566
+Affected: 99%
+4567
+Affected: 99%
+4568
+Affected: 99%
+4569
+Affected: 99%
+4570
+Affected: 99%
+4571
+Affected: 99%
+4572
+Affected: 99%
+4573
+Affected: 99%
+4574
+Affected: 99%
+4575
+Affected: 99%
+4576
+Affected: 99%
+4577
+Affected: 99%
+4578
+Affected: 99%
+4579
+Affected: 99%
+4580
+Affected: 99%
+4581
+Affected: 99%
+4582
+Affected: 99%
+4583
+Affected: 99%
+4584
+Affected: 99%
+4585
+Affected: 99%
+4586
+Affected: 99%
+4587
+Affected: 99%
+4588
+Affected: 99%
+4589
+Affected: 99%
+4590
+Affected: 99%
+4591
+Affected: 99%
+4592
+Affected: 99%
+4593
+Affected: 99%
+4594
+Affected: 99%
+4595
+Affected: 99%
+4596
+Affected: 99%
+4597
+Affected: 99%
+4598
+Affected: 99%
+4599
+Affected: 99%
+4600
+Affected: 99%
+4601
+Affected: 99%
+4602
+Affected: 99%
+4603
+Affected: 99%
+4604
+Affected: 99%
+4605
+Affected: 99%
+4606
+Affected: 99%
+4607
+Affected: 99%
+4608
+Affected: 99%
+4609
+Affected: 99%
+4610
+Affected: 99%
+4611
+Affected: 99%
+4612
+Affected: 99%
+4613
+Affected: 99%
+4614
+Affected: 99%
+4615
+Affected: 99%
+4616
+Affected: 99%
+4617
+Affected: 99%
+4618
+Affected: 99%
+4619
+Affected: 99%
+4620
+Affected: 99%
+4621
+Affected: 99%
+4622
+Affected: 99%
+4623
+Affected: 99%
+4624
+Affected: 99%
+4625
+Affected: 99%
+4626
+Affected: 99%
+4627
+Affected: 99%
+4628
+Affected: 99%
+4629
+Affected: 99%
+4630
+Affected: 99%
+4631
+Affected: 99%
+4632
+Affected: 99%
+4633
+Affected: 99%
+4634
+Affected: 99%
+4635
+Affected: 99%
+4636
+Affected: 99%
+4637
+Affected: 99%
+4638
+Affected: 99%
+4639
+Affected: 99%
+4640
+Affected: 99%
+4641
+Affected: 99%
+4642
+Affected: 99%
+4643
+Affected: 99%
+4644
+Affected: 99%
+4645
+Affected: 99%
+4646
+Affected: 99%
+4647
+Affected: 99%
+4648
+Affected: 99%
+4649
+Affected: 99%
+4650
+Affected: 99%
+4651
+Affected: 99%
+4652
+Affected: 99%
+4653
+Affected: 99%
+4654
+Affected: 99%
+4655
+Affected: 99%
+4656
+Affected: 99%
+4657
+Affected: 99%
+4658
+Affected: 99%
+4659
+Affected: 99%
+4660
+Affected: 99%
+4661
+Affected: 99%
+4662
+Affected: 99%
+4663
+Affected: 99%
+4664
+Affected: 99%
+4665
+Affected: 99%
+4666
+Affected: 99%
+4667
+Affected: 99%
+4668
+Affected: 99%
+4669
+Affected: 99%
+4670
+Affected: 99%
+4671
+Affected: 99%
+4672
+Affected: 99%
+4673
+Affected: 99%
+4674
+Affected: 99%
+4675
+Affected: 99%
+4676
+Affected: 99%
+4677
+Affected: 99%
+4678
+Affected: 99%
+4679
+Affected: 99%
+4680
+Affected: 99%
+4681
+Affected: 99%
+4682
+Affected: 99%
+4683
+Affected: 99%
+4684
+Affected: 99%
+4685
+Affected: 99%
+4686
+Affected: 99%
+4687
+Affected: 99%
+4688
+Affected: 99%
+4689
+Affected: 99%
+4690
+Affected: 99%
+4691
+Affected: 99%
+4692
+Affected: 99%
+4693
+Affected: 99%
+4694
+Affected: 99%
+4695
+Affected: 99%
+4696
+Affected: 99%
+4697
+Affected: 99%
+4698
+Affected: 99%
+4699
+Affected: 99%
+4700
+Affected: 99%
+4701
+Affected: 99%
+4702
+Affected: 99%
+4703
+Affected: 99%
+4704
+Affected: 99%
+4705
+Affected: 99%
+4706
+Affected: 99%
+4707
+Affected: 99%
+4708
+Affected: 99%
+4709
+Affected: 99%
+4710
+Affected: 99%
+4711
+Affected: 99%
+4712
+Affected: 99%
+4713
+Affected: 99%
+4714
+Affected: 99%
+4715
+Affected: 99%
+4716
+Affected: 99%
+4717
+Affected: 99%
+4718
+Affected: 99%
+4719
+Affected: 99%
+4720
+Affected: 99%
+4721
+Affected: 99%
+4722
+Affected: 99%
+4723
+Affected: 99%
+4724
+Affected: 99%
+4725
+Affected: 99%
+4726
+Affected: 99%
+4727
+Affected: 99%
+4728
+Affected: 99%
+4729
+Affected: 99%
+4730
+Affected: 99%
+4731
+Affected: 99%
+4732
+Affected: 99%
+4733
+Affected: 99%
+4734
+Affected: 99%
+4735
+Affected: 99%
+4736
+Affected: 99%
+4737
+Affected: 99%
+4738
+Affected: 99%
+4739
+Affected: 99%
+4740
+Affected: 99%
+4741
+Affected: 99%
+4742
+Affected: 99%
+4743
+Affected: 99%
+4744
+Affected: 99%
+4745
+Affected: 99%
+4746
+Affected: 99%
+4747
+Affected: 99%
+4748
+Affected: 99%
+4749
+Affected: 99%
+4750
+Affected: 99%
+4751
+Affected: 99%
+4752
+Affected: 99%
+4753
+Affected: 99%
+4754
+Affected: 99%
+4755
+Affected: 99%
+4756
+Affected: 99%
+4757
+Affected: 99%
+4758
+Affected: 99%
+4759
+Affected: 99%
+4760
+Affected: 99%
+4761
+Affected: 99%
+4762
+Affected: 99%
+4763
+Affected: 99%
+4764
+Affected: 99%
+4765
+Affected: 99%
+4766
+Affected: 99%
+4767
+Affected: 99%
+4768
+Affected: 99%
+4769
+Affected: 99%
+4770
+Affected: 99%
+4771
+Affected: 99%
+4772
+Affected: 99%
+4773
+Affected: 99%
+4774
+Affected: 99%
+4775
+Affected: 99%
+4776
+Affected: 99%
+4777
+Affected: 99%
+4778
+Affected: 99%
+4779
+Affected: 99%
+4780
+Affected: 99%
+4781
+Affected: 99%
+4782
+Affected: 99%
+4783
+Affected: 99%
+4784
+Affected: 99%
+4785
+Affected: 99%
+4786
+Affected: 99%
+4787
+Affected: 99%
+4788
+Affected: 99%
+4789
+Affected: 99%
+4790
+Affected: 99%
+4791
+Affected: 99%
+4792
+Affected: 99%
+4793
+Affected: 99%
+4794
+Affected: 99%
+4795
+Affected: 99%
+4796
+Affected: 99%
+4797
+Affected: 99%
+4798
+Affected: 99%
+4799
+Affected: 99%
+4800
+Affected: 99%
+4801
+Affected: 99%
+4802
+Affected: 99%
+4803
+Affected: 99%
+4804
+Affected: 99%
+4805
+Affected: 99%
+4806
+Affected: 99%
+4807
+Affected: 99%
+4808
+Affected: 99%
+4809
+Affected: 99%
+4810
+Affected: 99%
+4811
+Affected: 99%
+4812
+Affected: 99%
+4813
+Affected: 99%
+4814
+Affected: 99%
+4815
+Affected: 99%
+4816
+Affected: 99%
+4817
+Affected: 99%
+4818
+Affected: 99%
+4819
+Affected: 99%
+4820
+Affected: 99%
+4821
+Affected: 99%
+4822
+Affected: 99%
+4823
+Affected: 99%
+4824
+Affected: 99%
+4825
+Affected: 99%
+4826
+Affected: 99%
+4827
+Affected: 99%
+4828
+Affected: 99%
+4829
+Affected: 99%
+4830
+Affected: 99%
+4831
+Affected: 99%
+4832
+Affected: 99%
+4833
+Affected: 99%
+4834
+Affected: 99%
+4835
+Affected: 99%
+4836
+Affected: 99%
+4837
+Affected: 99%
+4838
+Affected: 99%
+4839
+Affected: 99%
+4840
+Affected: 99%
+4841
+Affected: 99%
+4842
+Affected: 99%
+4843
+Affected: 99%
+4844
+Affected: 99%
+4845
+Affected: 99%
+4846
+Affected: 99%
+4847
+Affected: 99%
+4848
+Affected: 99%
+4849
+Affected: 99%
+4850
+Affected: 99%
+4851
+Affected: 99%
+4852
+Affected: 99%
+4853
+Affected: 99%
+4854
+Affected: 99%
+4855
+Affected: 99%
+4856
+Affected: 99%
+4857
+Affected: 99%
+4858
+Affected: 99%
+4859
+Affected: 99%
+4860
+Affected: 99%
+4861
+Affected: 99%
+4862
+Affected: 99%
+4863
+Affected: 99%
+4864
+Affected: 99%
+4865
+Affected: 99%
+4866
+Affected: 99%
+4867
+Affected: 99%
+4868
+Affected: 99%
+4869
+Affected: 99%
+4870
+Affected: 99%
+4871
+Affected: 99%
+4872
+Affected: 99%
+4873
+Affected: 99%
+4874
+Affected: 99%
+4875
+Affected: 99%
+4876
+Affected: 99%
+4877
+Affected: 99%
+4878
+Affected: 99%
+4879
+Affected: 99%
+4880
+Affected: 99%
+4881
+Affected: 99%
+4882
+Affected: 99%
+4883
+Affected: 99%
+4884
+Affected: 99%
+4885
+Affected: 99%
+4886
+Affected: 99%
+4887
+Affected: 99%
+4888
+Affected: 99%
+4889
+Affected: 99%
+4890
+Affected: 99%
+4891
+Affected: 99%
+4892
+Affected: 99%
+4893
+Affected: 99%
+4894
+Affected: 99%
+4895
+Affected: 99%
+4896
+Affected: 99%
+4897
+Affected: 99%
+4898
+Affected: 99%
+4899
+Affected: 99%
+4900
+Affected: 99%
+4901
+Affected: 99%
+4902
+Affected: 99%
+4903
+Affected: 99%
+4904
+Affected: 99%
+4905
+Affected: 99%
+4906
+Affected: 99%
+4907
+Affected: 99%
+4908
+Affected: 99%
+4909
+Affected: 99%
+4910
+Affected: 99%
+4911
+Affected: 99%
+4912
+Affected: 99%
+4913
+Affected: 99%
+4914
+Affected: 99%
+4915
+Affected: 99%
+4916
+Affected: 99%
+4917
+Affected: 99%
+4918
+Affected: 99%
+4919
+Affected: 99%
+4920
+Affected: 99%
+4921
+Affected: 99%
+4922
+Affected: 99%
+4923
+Affected: 99%
+4924
+Affected: 99%
+4925
+Affected: 99%
+4926
+Affected: 99%
+4927
+Affected: 99%
+4928
+Affected: 99%
+4929
+Affected: 99%
+4930
+Affected: 99%
+4931
+Affected: 99%
+4932
+Affected: 99%
+4933
+Affected: 99%
+4934
+Affected: 99%
+4935
+Affected: 99%
+4936
+Affected: 99%
+4937
+Affected: 99%
+4938
+Affected: 99%
+4939
+Affected: 99%
+4940
+Affected: 99%
+4941
+Affected: 99%
+4942
+Affected: 99%
+4943
+Affected: 99%
+4944
+Affected: 99%
+4945
+Affected: 99%
+4946
+Affected: 99%
+4947
+Affected: 99%
+4948
+Affected: 99%
+4949
+Affected: 99%
+4950
+Affected: 99%
+4951
+Affected: 99%
+4952
+Affected: 99%
+4953
+Affected: 99%
+4954
+Affected: 99%
+4955
+Affected: 99%
+4956
+Affected: 99%
+4957
+Affected: 99%
+4958
+Affected: 99%
+4959
+Affected: 99%
+4960
+Affected: 99%
+4961
+Affected: 99%
+4962
+Affected: 99%
+4963
+Affected: 99%
+4964
+Affected: 99%
+4965
+Affected: 99%
+4966
+Affected: 99%
+4967
+Affected: 99%
+4968
+Affected: 99%
+4969
+Affected: 99%
+4970
+Affected: 99%
+4971
+Affected: 99%
+4972
+Affected: 99%
+4973
+Affected: 99%
+4974
+Affected: 99%
+4975
+Affected: 99%
+4976
+Affected: 99%
+4977
+Affected: 99%
+4978
+Affected: 99%
+4979
+Affected: 99%
+4980
+Affected: 99%
+4981
+Affected: 99%
+4982
+Affected: 99%
+4983
+Affected: 99%
+4984
+Affected: 99%
+4985
+Affected: 99%
+4986
+Affected: 99%
+4987
+Affected: 99%
+4988
+Affected: 99%
+4989
+Affected: 99%
+4990
+Affected: 99%
+4991
+Affected: 99%
+4992
+Affected: 99%
+4993
+Affected: 99%
+4994
+Affected: 99%
+4995
+Affected: 99%
+4996
+Affected: 99%
+4997
+Affected: 99%
+4998
+Affected: 99%
+4999
+Affected: 99%
+5000
+Affected: 99%
+5001
+Affected: 99%
+5002
+Affected: 99%
+5003
+Affected: 99%
+5004
+Affected: 99%
+5005
+Affected: 99%
+5006
+Affected: 99%
+5007
+Affected: 99%
+5008
+Affected: 99%
+5009
+Affected: 99%
+5010
+Affected: 99%
+5011
+Affected: 99%
+5012
+Affected: 99%
+5013
+Affected: 99%
+5014
+Affected: 99%
+5015
+Affected: 99%
+5016
+Affected: 99%
+5017
+Affected: 99%
+5018
+Affected: 99%
+5019
+Affected: 99%
+5020
+Affected: 99%
+5021
+Affected: 99%
+5022
+Affected: 99%
+5023
+Affected: 99%
+5024
+Affected: 99%
+5025
+Affected: 99%
+5026
+Affected: 99%
+5027
+Affected: 99%
+5028
+Affected: 99%
+5029
+Affected: 99%
+5030
+Affected: 99%
+5031
+Affected: 99%
+5032
+Affected: 99%
+5033
+Affected: 99%
+5034
+Affected: 99%
+5035
+Affected: 99%
+5036
+Affected: 99%
+5037
+Affected: 99%
+5038
+Affected: 99%
+5039
+Affected: 99%
+5040
+Affected: 99%
+5041
+Affected: 99%
+5042
+Affected: 99%
+5043
+Affected: 99%
+5044
+Affected: 99%
+5045
+Affected: 99%
+5046
+Affected: 99%
+5047
+Affected: 99%
+5048
+Affected: 99%
+5049
+Affected: 99%
+5050
+Affected: 99%
+5051
+Affected: 99%
+5052
+Affected: 99%
+5053
+Affected: 99%
+5054
+Affected: 99%
+5055
+Affected: 99%
+5056
+Affected: 99%
+5057
+Affected: 99%
+5058
+Affected: 99%
+5059
+Affected: 99%
+5060
+Affected: 99%
+5061
+Affected: 99%
+5062
+Affected: 99%
+5063
+Affected: 99%
+5064
+Affected: 99%
+5065
+Affected: 99%
+5066
+Affected: 99%
+5067
+Affected: 99%
+5068
+Affected: 99%
+5069
+Affected: 99%
+5070
+Affected: 99%
+5071
+Affected: 99%
+5072
+Affected: 99%
+5073
+Affected: 99%
+5074
+Affected: 99%
+5075
+Affected: 99%
+5076
+Affected: 99%
+5077
+Affected: 99%
+5078
+Affected: 99%
+5079
+Affected: 99%
+5080
+Affected: 99%
+5081
+Affected: 99%
+5082
+Affected: 99%
+5083
+Affected: 99%
+5084
+Affected: 99%
+5085
+Affected: 99%
+5086
+Affected: 99%
+5087
+Affected: 99%
+5088
+Affected: 99%
+5089
+Affected: 99%
+5090
+Affected: 99%
+5091
+Affected: 99%
+5092
+Affected: 99%
+5093
+Affected: 99%
+5094
+Affected: 99%
+5095
+Affected: 99%
+5096
+Affected: 99%
+5097
+Affected: 99%
+5098
+Affected: 99%
+5099
+Affected: 99%
+5100
+Affected: 99%
+5101
+Affected: 99%
+5102
+Affected: 99%
+5103
+Affected: 99%
+5104
+Affected: 99%
+5105
+Affected: 99%
+5106
+Affected: 99%
+5107
+Affected: 99%
+5108
+Affected: 99%
+5109
+Affected: 99%
+5110
+Affected: 99%
+5111
+Affected: 99%
+5112
+Affected: 99%
+5113
+Affected: 99%
+5114
+Affected: 99%
+5115
+Affected: 99%
+5116
+Affected: 99%
+5117
+Affected: 99%
+5118
+Affected: 99%
+5119
+Affected: 99%
+5120
+Affected: 99%
+5121
+Affected: 99%
+5122
+Affected: 99%
+5123
+Affected: 99%
+5124
+Affected: 99%
+5125
+Affected: 99%
+5126
+Affected: 99%
+5127
+Affected: 99%
+5128
+Affected: 99%
+5129
+Affected: 99%
+5130
+Affected: 99%
+5131
+Affected: 99%
+5132
+Affected: 99%
+5133
+Affected: 99%
+5134
+Affected: 99%
+5135
+Affected: 99%
+5136
+Affected: 99%
+5137
+Affected: 99%
+5138
+Affected: 99%
+5139
+Affected: 99%
+5140
+Affected: 99%
+5141
+Affected: 99%
+5142
+Affected: 99%
+5143
+Affected: 99%
+5144
+Affected: 99%
+5145
+Affected: 99%
+5146
+Affected: 99%
+5147
+Affected: 99%
+5148
+Affected: 99%
+5149
+Affected: 99%
+5150
+Affected: 99%
+5151
+Affected: 99%
+5152
+Affected: 99%
+5153
+Affected: 99%
+5154
+Affected: 99%
+5155
+Affected: 99%
+5156
+Affected: 99%
+5157
+Affected: 99%
+5158
+Affected: 99%
+5159
+Affected: 99%
+5160
+Affected: 99%
+5161
+Affected: 99%
+5162
+Affected: 99%
+5163
+Affected: 99%
+5164
+Affected: 99%
+5165
+Affected: 99%
+5166
+Affected: 99%
+5167
+Affected: 99%
+5168
+Affected: 99%
+5169
+Affected: 99%
+5170
+Affected: 99%
+5171
+Affected: 99%
+5172
+Affected: 99%
+5173
+Affected: 99%
+5174
+Affected: 99%
+5175
+Affected: 99%
+5176
+Affected: 99%
+5177
+Affected: 99%
+5178
+Affected: 99%
+5179
+Affected: 99%
+5180
+Affected: 99%
+5181
+Affected: 99%
+5182
+Affected: 99%
+5183
+Affected: 99%
+5184
+Affected: 99%
+5185
+Affected: 99%
+5186
+Affected: 99%
+5187
+Affected: 99%
+5188
+Affected: 99%
+5189
+Affected: 99%
+5190
+Affected: 99%
+5191
+Affected: 99%
+5192
+Affected: 99%
+5193
+Affected: 99%
+5194
+Affected: 99%
+5195
+Affected: 99%
+5196
+Affected: 99%
+5197
+Affected: 99%
+5198
+Affected: 99%
+5199
+Affected: 99%
+5200
+Affected: 99%
+5201
+Affected: 99%
+5202
+Affected: 99%
+5203
+Affected: 99%
+5204
+Affected: 99%
+5205
+Affected: 99%
+5206
+Affected: 99%
+5207
+Affected: 99%
+5208
+Affected: 99%
+5209
+Affected: 99%
+5210
+Affected: 99%
+5211
+Affected: 99%
+5212
+Affected: 99%
+5213
+Affected: 99%
+5214
+Affected: 99%
+5215
+Affected: 99%
+5216
+Affected: 99%
+5217
+Affected: 99%
+5218
+Affected: 99%
+5219
+Affected: 99%
+5220
+Affected: 99%
+5221
+Affected: 99%
+5222
+Affected: 99%
+5223
+Affected: 99%
+5224
+Affected: 99%
+5225
+Affected: 99%
+5226
+Affected: 99%
+5227
+Affected: 99%
+5228
+Affected: 99%
+5229
+Affected: 99%
+5230
+Affected: 99%
+5231
+Affected: 99%
+5232
+Affected: 99%
+5233
+Affected: 99%
+5234
+Affected: 99%
+5235
+Affected: 99%
+5236
+Affected: 99%
+5237
+Affected: 99%
+5238
+Affected: 99%
+5239
+Affected: 99%
+5240
+Affected: 99%
+5241
+Affected: 99%
+5242
+Affected: 99%
+5243
+Affected: 99%
+5244
+Affected: 99%
+5245
+Affected: 99%
+5246
+Affected: 99%
+5247
+Affected: 99%
+5248
+Affected: 99%
+5249
+Affected: 99%
+5250
+Affected: 99%
+5251
+Affected: 99%
+5252
+Affected: 99%
+5253
+Affected: 99%
+5254
+Affected: 99%
+5255
+Affected: 99%
+5256
+Affected: 99%
+5257
+Affected: 99%
+5258
+Affected: 99%
+5259
+Affected: 99%
+5260
+Affected: 99%
+5261
+Affected: 99%
+5262
+Affected: 99%
+5263
+Affected: 99%
+5264
+Affected: 99%
+5265
+Affected: 99%
+5266
+Affected: 99%
+5267
+Affected: 99%
+5268
+Affected: 99%
+5269
+Affected: 99%
+5270
+Affected: 99%
+5271
+Affected: 99%
+5272
+Affected: 99%
+5273
+Affected: 99%
+5274
+Affected: 99%
+5275
+Affected: 99%
+5276
+Affected: 99%
+5277
+Affected: 99%
+5278
+Affected: 99%
+5279
+Affected: 99%
+5280
+Affected: 99%
+5281
+Affected: 99%
+5282
+Affected: 99%
+5283
+Affected: 99%
+5284
+Affected: 99%
+5285
+Affected: 99%
+5286
+Affected: 99%
+5287
+Affected: 99%
+5288
+Affected: 99%
+5289
+Affected: 99%
+5290
+Affected: 99%
+5291
+Affected: 99%
+5292
+Affected: 99%
+5293
+Affected: 99%
+5294
+Affected: 99%
+5295
+Affected: 99%
+5296
+Affected: 99%
+5297
+Affected: 99%
+5298
+Affected: 99%
+5299
+Affected: 99%
+5300
+Affected: 99%
+5301
+Affected: 99%
+5302
+Affected: 99%
+5303
+Affected: 99%
+5304
+Affected: 99%
+5305
+Affected: 99%
+5306
+Affected: 99%
+5307
+Affected: 99%
+5308
+Affected: 99%
+5309
+Affected: 99%
+5310
+Affected: 99%
+5311
+Affected: 99%
+5312
+Affected: 99%
+5313
+Affected: 99%
+5314
+Affected: 99%
+5315
+Affected: 99%
+5316
+Affected: 99%
+5317
+Affected: 99%
+5318
+Affected: 99%
+5319
+Affected: 99%
+5320
+Affected: 99%
+5321
+Affected: 99%
+5322
+Affected: 99%
+5323
+Affected: 99%
+5324
+Affected: 99%
+5325
+Affected: 99%
+5326
+Affected: 99%
+5327
+Affected: 99%
+5328
+Affected: 99%
+5329
+Affected: 99%
+5330
+Affected: 99%
+5331
+Affected: 99%
+5332
+Affected: 99%
+5333
+Affected: 99%
+5334
+Affected: 99%
+5335
+Affected: 99%
+5336
+Affected: 99%
+5337
+Affected: 99%
+5338
+Affected: 99%
+5339
+Affected: 99%
+5340
+Affected: 99%
+5341
+Affected: 99%
+5342
+Affected: 99%
+5343
+Affected: 99%
+5344
+Affected: 99%
+5345
+Affected: 99%
+5346
+Affected: 99%
+5347
+Affected: 99%
+5348
+Affected: 99%
+5349
+Affected: 99%
+5350
+Affected: 99%
+5351
+Affected: 99%
+5352
+Affected: 99%
+5353
+Affected: 99%
+5354
+Affected: 99%
+5355
+Affected: 99%
+5356
+Affected: 99%
+5357
+Affected: 99%
+5358
+Affected: 99%
+5359
+Affected: 99%
+5360
+Affected: 99%
+5361
+Affected: 99%
+5362
+Affected: 99%
+5363
+Affected: 99%
+5364
+Affected: 99%
+5365
+Affected: 99%
+5366
+Affected: 99%
+5367
+Affected: 99%
+5368
+Affected: 99%
+5369
+Affected: 99%
+5370
+Affected: 99%
+5371
+Affected: 99%
+5372
+Affected: 99%
+5373
+Affected: 99%
+5374
+Affected: 99%
+5375
+Affected: 99%
+5376
+Affected: 99%
+5377
+Affected: 99%
+5378
+Affected: 99%
+5379
+Affected: 99%
+5380
+Affected: 99%
+5381
+Affected: 99%
+5382
+Affected: 99%
+5383
+Affected: 99%
+5384
+Affected: 99%
+5385
+Affected: 99%
+5386
+Affected: 99%
+5387
+Affected: 99%
+5388
+Affected: 99%
+5389
+Affected: 99%
+5390
+Affected: 99%
+5391
+Affected: 99%
+5392
+Affected: 99%
+5393
+Affected: 99%
+5394
+Affected: 99%
+5395
+Affected: 99%
+5396
+Affected: 99%
+5397
+Affected: 99%
+5398
+Affected: 99%
+5399
+Affected: 99%
+5400
+Affected: 99%
+5401
+Affected: 99%
+5402
+Affected: 99%
+5403
+Affected: 99%
+5404
+Affected: 99%
+5405
+Affected: 99%
+5406
+Affected: 99%
+5407
+Affect

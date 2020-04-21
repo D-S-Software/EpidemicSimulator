@@ -17,7 +17,7 @@ public class Person {
         this.xPos = xPos;
         this.yPos = yPos;
         mortalityRate = disease.getBaseMortalityRate(); // increase this to make the person more likely to die (0 --> 1) Use age and preExistingConditions
-        directionAngle = (int)(306*Math.random());
+        directionAngle = (int)(360*Math.random()); //TODO should be 360 not 306?
 
         if(Math.random() > disease.getStartPercentHealthy())
             hasDisease = true;
@@ -40,24 +40,24 @@ public class Person {
         dx = (int)(step*Math.cos(directionAngle));
         dy = (int)(step*Math.sin(directionAngle));
 
-        if(xPos + dx > dimensions.xLen - circleRad)
+        if(xPos + dx > dimensions.xLen + dimensions.xOrigin - circleRad)
         {
             xPos = dimensions.xLen - circleRad - 1;
             directionAngle += 180;
         }
-        if(xPos + dx < dimensions.xOrigin + circleRad)
+        if(xPos + dx < dimensions.xOrigin + dimensions.xOrigin + circleRad)
         {
             xPos = circleRad;
             directionAngle += 180;
         }
         else xPos += dx;
 
-        if(yPos + dy > dimensions.yLen - circleRad)
+        if(yPos + dy > dimensions.yLen + dimensions.yOrigin - circleRad)
         {
             yPos = dimensions.yLen - circleRad - 1;
             directionAngle *= -1;
         }
-        if(yPos + dy < dimensions.yOrigin + circleRad)
+        if(yPos + dy < dimensions.yOrigin + dimensions.xOrigin + circleRad)
         {
             yPos = circleRad;
             directionAngle *= -1;
