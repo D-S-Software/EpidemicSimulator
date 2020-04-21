@@ -15,7 +15,7 @@ public class Engine {
     {
         disease = new Disease1();
 
-        boardDimens = new Dimensions();
+        boardDimens = new Dimensions(0,0,800,450);
         tallyDimens = new Dimensions(boardDimens.xOrigin + boardDimens.xLen + buffer, boardDimens.yOrigin + buffer, boardDimens.xLen/2, boardDimens.yLen);
 
         myBoard = new Board(disease, boardDimens, numPeople);
