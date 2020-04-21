@@ -27,7 +27,7 @@ public class Engine {
 
     public static void main(String[] args)
     {
-        Engine gameEngine = new Engine(1000);
+        Engine gameEngine = new Engine(500);
         gameEngine.clock.start();
     }
 }

@@ -42,7 +42,8 @@ public class Statistics implements ActionListener {
 
         time++;
 
-        //System.out.println(numSick + " " + numRecovered + " " + numHealthy); TODO Remove when not needed for testing
+        //TODO Remove when not needed for testing
+        System.out.println("H| " + numHealthy + " S| " + numSick + " R| " + numRecovered + " D| " + numDead + " T| " + time);
 
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
         x.addSpace();
@@ -58,8 +59,8 @@ public class Statistics implements ActionListener {
             close = true;
         if(close)
         {
-            x.closeFile();
-            System.exit(0);
+            /**x.closeFile();
+            System.exit(0); TODO Add back in at some point */
         }
     }
 
