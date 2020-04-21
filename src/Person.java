@@ -3,10 +3,10 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int age, spreadRate, xPos, yPos, dx, dy, directionAngle;
+    private int age, xPos, yPos, dx, dy, directionAngle;
     private int circleRad = 8, recoverTime = 0, step = 2, contagiousRange = 5;
-    private double distanceFromSick, contagiousPercent = .05;
-    private BoardDimensions dimensions;
+    private double distanceFromSick, deathRate, startPercentHealthy = .99, contagiousPercent = .05;
+    private Dimensions dimensions;
 
     /**
      *
@@ -14,16 +14,16 @@ public class Person {
      * @param xPos
      * @param yPos
      */
-    public Person(int age, int xPos, int yPos, BoardDimensions dimensions)
+    public Person(int age, int xPos, int yPos, Dimensions dimensions)
     {
-        this.dimensions = new BoardDimensions(dimensions);
+        this.dimensions = new Dimensions(dimensions);
         this.age = age;
         this.xPos = xPos;
         this.yPos = yPos;
-        spreadRate = 1; // increase this to make the person more likely to be infected
+        deathRate = .5; // increase this to make the person more likely to die (0 --> 1)
         directionAngle = (int)(306*Math.random());
 
-        if(Math.random() > .95)
+        if(Math.random() > startPercentHealthy)
             hasDisease = true;
         else hasDisease = false;
 
@@ -79,7 +79,7 @@ public class Person {
     public void checkCondition()
     {
         // if a person is within -- pixels of infected --> --% change of spread
-        if(!hasDisease && Math.random() < contagiousPercent && distanceFromSick < contagiousRange * spreadRate)
+        if(!hasDisease && Math.random() < contagiousPercent && distanceFromSick < contagiousRange)
         {
             hasDisease = true;
             isHealthy = false;
@@ -87,10 +87,10 @@ public class Person {
         if(hasDisease && !isHealthy) // if is sick
         {
             recoverTime++;
-            //If sick for 30 sec has increasing chance to die / recover until guaranteed at 110 sec
-            if(recoverTime >  3000 + (int)(8000*Math.random()))
+            //If sick for 10 sec has increasing chance to die / recover until guaranteed at 1 min
+            if(recoverTime >  1000 + (int)(5000*Math.random()))
             {
-                if(Math.random() > .8)
+                if(Math.random() > deathRate)
                     isHealthy = true;    // Recovers
                 else hasDisease = false; //Dies
             }

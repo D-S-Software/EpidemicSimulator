@@ -42,6 +42,8 @@ public class Statistics implements ActionListener {
 
         time++;
 
+        //System.out.println(numSick + " " + numRecovered + " " + numHealthy); TODO Remove when not needed for testing
+
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
         x.addSpace();
         x.addTime(time);

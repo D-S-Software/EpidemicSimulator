@@ -2,22 +2,21 @@ import javax.swing.*;
 
 public class Frame extends JFrame {
 
-    private BoardPanel peopleBoardPanel;
+    private BoardPanel boardPanel;
     private JPanel mainPanel;
-    private JPanel tallyPanel;
+    //private TallyPanel tallyPanel; TODO Add this back in
 
-    public Frame(Board board)
+    public Frame(Board board, Dimensions tallyDimens)
     {
         mainPanel = new JPanel();
         this.setSize((int)(board.dimens.xLen *1.25),(int)(1.25* board.dimens.yLen));
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.X_AXIS));
 
-        peopleBoardPanel = new BoardPanel(board);
-        tallyPanel = new JPanel();
+        boardPanel = new BoardPanel(board);
+        //tallyPanel = new TallyPanel(tallyDimens); TODO Add this back in
 
-        tallyPanel.setBounds(1000, 0, 50, 450);
-
-        mainPanel.add(peopleBoardPanel);
+        mainPanel.add(boardPanel);
+       // mainPanel.add(tallyPanel); TODO Add this back in
 
         add(mainPanel);
 
@@ -25,8 +24,14 @@ public class Frame extends JFrame {
         this.setVisible(true);
     }
 
-    public BoardPanel getPeopleBoardPanel()
+    public BoardPanel getBoardPanel()
     {
-        return peopleBoardPanel;
+        return boardPanel;
     }
+
+    /** TODO Add this back in
+    public TallyPanel getTallyPanel()
+    {
+        return tallyPanel;
+    }*/
 }
