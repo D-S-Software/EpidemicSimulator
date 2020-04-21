@@ -26,7 +26,8 @@ public class BoardDimensions {
     /** Default board dimensions */
     public BoardDimensions()
     {
-        this(200,200,1600,900);
+        this(0,0,800,450);
+        //TODO: Fix xOrigin, yOrigin when not equal to 0
     }
 
 }
