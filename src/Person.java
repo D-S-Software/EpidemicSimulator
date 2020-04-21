@@ -2,8 +2,8 @@ import java.awt.*;
 
 public class Person {
 
-    private boolean hasDisease, isHealthy, preExistingConditions;
-    private int age, xPos, yPos, dx, dy, directionAngle;
+    private boolean hasDisease, isHealthy;
+    private int xPos, yPos, dx, dy, directionAngle;
     private int circleRad = 8, recoverTime = 0, step = 2;
     private double distanceFromSick, mortalityRate;
     private Dimensions dimensions;
@@ -14,8 +14,6 @@ public class Person {
     {
         this.dimensions = new Dimensions(dimensions);
         this.disease = disease;
-        this.age = age;
-        this.preExistingConditions = preExistingConditions;
         this.xPos = xPos;
         this.yPos = yPos;
         mortalityRate = disease.getBaseMortalityRate(); // increase this to make the person more likely to die (0 --> 1) Use age and preExistingConditions

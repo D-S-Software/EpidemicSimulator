@@ -5,12 +5,10 @@ public class Board {
 
    public final Dimensions dimens;
    private ArrayList<Person> pList;
-   private Disease disease;
 
     public Board(Disease disease, int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
     {
         this.dimens = new Dimensions(xOrigin, yOrigin, xLen, yLen);
-        this.disease = disease;
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
@@ -79,9 +77,5 @@ public class Board {
     public ArrayList<Person> getPList()
     {
         return pList;
-    }
-    public Disease getDisease()
-    {
-        return disease;
     }
 }
