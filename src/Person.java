@@ -1,18 +1,20 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Person {
+public class Person implements ActionListener {
 
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, directionAngle, minTimeSick, maxTimeSick;
     private int circleRad = 8, timeSinceSick = 0, step = 2;
     private double distanceFromSick, mortalityRate;
-    private Dimensions dimensions;
+    private Dimensions dimens;
     private Disease disease;
 
 
-    public Person(int age, boolean preExistingConditions, int xPos, int yPos, Dimensions dimensions, Disease disease)
+    public Person(int age, boolean preExistingConditions, int xPos, int yPos, Dimensions dimens, Disease disease)
     {
-        this.dimensions = new Dimensions(dimensions);
+        this.dimens = new Dimensions(dimens);
         this.disease = disease;
         this.xPos = xPos;
         this.yPos = yPos;
@@ -42,26 +44,26 @@ public class Person {
         dx = (int)(step*Math.cos(directionAngle));
         dy = (int)(step*Math.sin(directionAngle));
 
-        if(xPos + dx > dimensions.xOrigin + dimensions.xLen - circleRad)
+        if(xPos + dx > dimens.getxOrigin() + dimens.getxLen() - circleRad)
         {
-            xPos = dimensions.xOrigin + dimensions.xLen - circleRad - 1;
+            xPos = dimens.getxOrigin() + dimens.getxLen() - circleRad - 1;
             directionAngle += 180;
         }
-        if(xPos + dx < dimensions.xOrigin + circleRad)
+        if(xPos + dx < dimens.getxOrigin() + circleRad)
         {
-            xPos = dimensions. xOrigin + circleRad;
+            xPos = dimens.getxOrigin() + circleRad;
             directionAngle += 180;
         }
         else xPos += dx;
 
-        if(yPos + dy > dimensions.yOrigin + dimensions.yLen  - circleRad)
+        if(yPos + dy > dimens.getyOrigin() + dimens.getyLen()  - circleRad)
         {
-            yPos = dimensions.yOrigin + dimensions.yLen - circleRad - 1;
+            yPos = dimens.getyOrigin() + dimens.getyLen() - circleRad - 1;
             directionAngle *= -1;
         }
-        if(yPos + dy < dimensions.yOrigin + circleRad)
+        if(yPos + dy < dimens.getyOrigin() + circleRad)
         {
-            yPos = dimensions.yOrigin + circleRad;
+            yPos = dimens.getyOrigin() + circleRad;
             directionAngle *= -1;
         }
         else
@@ -95,9 +97,16 @@ public class Person {
         }
     }
 
+    public void updateDimens(Rectangle rect)
+    {
+        dimens.setxLen(rect.width);
+        dimens.setyLen(rect.height);
+        //TODO Remove when not needed for testing
+        //System.out.println(rect.x + " " + rect.y + " " + rect.width + " " + rect.height);
+    }
+
     public void draw(Graphics2D g2D)
     {
-        //maybe have Color be a field and its own method to update color
         Color color;
         if(hasDisease && !isHealthy)
             color = Color.RED;
@@ -140,5 +149,10 @@ public class Person {
     public int getYPos()
     {
         return yPos;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }

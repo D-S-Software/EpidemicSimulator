@@ -5,13 +5,15 @@ import java.util.ArrayList;
 public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList;
-    private int time = 0, numHealthy, numSick, numRecovered, numDead, numPeople;
+    private int time = 0, numHealthy=0, numSick=0, numRecovered=0, numDead=0, numPeople=0;
+    private GUI gui;
     private static CreateFile x = new CreateFile();
 
-    public Statistics(Board myBoard, int numPeople)
+    public Statistics(Board myBoard, GUI gui, int numPeople)
     {
         pList = myBoard.getPList();
         this.numPeople = numPeople;
+        this.gui = gui;
         x.openFile();
     }
 
@@ -41,8 +43,10 @@ public class Statistics implements ActionListener {
         numDead = numPeople - numHealthy - numSick - numRecovered;
         time++;
 
-        //TODO Remove when not needed for testing
-        printResults();
+        gui.getNumHealthyLabel().setText("NumHealthy: " + numHealthy);
+        gui.getNumSickLabel().setText("NumSick: " + numSick);
+        gui.getNumRecoveredLabel().setText("NumRecovered: " + numRecovered);
+        gui.getNumDeadLabel().setText("NumDead: " + numDead);
 
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
         x.addSpace();
@@ -50,6 +54,8 @@ public class Statistics implements ActionListener {
         x.addSpace();
         //x.addDiseaseArray(pList);
         //x.addSpace();
+
+        printResults();
 
         boolean close;
         if(numSick > 0)

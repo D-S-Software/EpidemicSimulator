@@ -22,7 +22,7 @@ public class Board {
 
     public Board(Disease disease, Dimensions dimens, int numPeople)
     {
-        this(disease, dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen, numPeople);
+        this(disease, dimens.getxOrigin(), dimens.getyOrigin(), dimens.getxLen(), dimens.getyLen(), numPeople);
     }
 
     /**Default board with hardcoded parameters and default Dimensions constructed object */
@@ -39,7 +39,7 @@ public class Board {
     {
         for(int i = 0; i < pList.size(); i++)
         {
-            double minDist = Math.sqrt(Math.pow(dimens.xLen, 2) + Math.pow(dimens.yLen, 2));
+            double minDist = Math.sqrt(Math.pow(dimens.getxLen(), 2) + Math.pow(dimens.getyLen(), 2));
 
             if(!pList.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)
@@ -71,7 +71,7 @@ public class Board {
     public void draw(Graphics2D g2D)
     {
         g2D.setColor(Color.WHITE);
-        g2D.fillRect(dimens.xOrigin, dimens.yOrigin, dimens.xLen, dimens.yLen);
+        g2D.fillRect(dimens.getxOrigin(), dimens.getyOrigin(), dimens.getxLen(), dimens.getyLen());
     }
 
     public ArrayList<Person> getPList()

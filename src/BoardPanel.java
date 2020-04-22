@@ -8,17 +8,19 @@ public class BoardPanel extends JPanel implements ActionListener
 
     Board board;
 
-    public BoardPanel(Board board)
+    public BoardPanel()
+    {
+        super();
+    }
+
+    public void setBoard(Board board)
     {
         this.board = board;
-        setMinimumSize(new Dimension(800, 450));
-        setBackground(Color.MAGENTA);
     }
 
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
-        this.setBackground(Color.BLACK);
 
         Graphics2D g2D = (Graphics2D)g;
 
@@ -34,7 +36,7 @@ public class BoardPanel extends JPanel implements ActionListener
         }
     }
 
-   public void actionPerformed(ActionEvent e)
+    public void actionPerformed(ActionEvent e)
     {
       repaint();
     }

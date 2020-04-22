@@ -1,38 +1,41 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Engine {
+public class Engine implements ActionListener {
 
-    private Board simBoard;
-    private Frame windowFrame;
     private Timer clock;
-    private Statistics stats;
-    private Dimensions boardDimens;
-    private Disease disease;
-    private int boardWidth;
-    private int personBoardHeight = (int)(3* boardWidth / 4.0);
-    private int buffer = (int)(boardWidth / 12.0);  //Buffer between boardPanel and tallyPanel
+    private GUI gui;
+    private Board simBoard;
 
-    public Engine(int numPeople, int boardWidth)
+    public Engine(GUI gui, Disease disease, int numPeople, int baseXLen, int baseYLen)
     {
-        this.boardWidth = boardWidth;
+        this.gui = gui;
 
-        disease = new Disease1();
-
-        boardDimens = new Dimensions(buffer, (int)(.25*boardWidth), boardWidth,3* boardWidth /4);
+        Dimensions boardDimens = new Dimensions(0, 0, baseXLen/2, (baseYLen+50)/2);
 
         simBoard = new Board(disease, boardDimens, numPeople);
-        windowFrame = new Frame(simBoard, boardDimens, boardWidth);
 
-        stats = new Statistics(simBoard, numPeople);
+        gui.getBoardPanel().setBoard(simBoard);
 
-        clock = new Timer(10, windowFrame.getBoardPanel());
+        Statistics stats = new Statistics(simBoard, gui, numPeople);
+
+        clock = new Timer(10, gui.getBoardPanel());
         clock.addActionListener(stats);
-        clock.addActionListener(windowFrame.getTallyPanel());
+        clock.addActionListener(this);
     }
 
-    public static void main(String[] args)
+   public Timer getClock()
+   {
+       return clock;
+   }
+
+    @Override
+    public void actionPerformed(ActionEvent e)
     {
-        Engine gameEngine = new Engine(500, 800);
-        gameEngine.clock.start();
+        for(int i = 0; i < simBoard.getPList().size(); i++)
+        {
+            simBoard.getPList().get(i).updateDimens(gui.getBoardRec());
+        }
     }
 }
