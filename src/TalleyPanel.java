@@ -1,14 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class TitlePanel extends JPanel {
+public class TalleyPanel extends JPanel {
 
-    public TitlePanel()
+    public TalleyPanel()
     {
         super();
     }
 
-    public TitlePanel(GridLayout gl)
+    public TalleyPanel(GridLayout gl)
     {
         super(gl);
     }

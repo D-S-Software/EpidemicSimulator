@@ -13,6 +13,11 @@ public class BoardPanel extends JPanel implements ActionListener
         super();
     }
 
+    public BoardPanel(GridLayout gl)
+    {
+        super(gl);
+    }
+
     public void setBoard(Board board)
     {
         this.board = board;

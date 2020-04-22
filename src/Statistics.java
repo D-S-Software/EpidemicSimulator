@@ -52,8 +52,6 @@ public class Statistics implements ActionListener {
         x.addSpace();
         x.addTime(time);
         x.addSpace();
-        //x.addDiseaseArray(pList);
-        //x.addSpace();
 
         printResults();
 

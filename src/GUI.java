@@ -4,7 +4,10 @@ import java.awt.*;
 public class GUI {
 
     private JPanel topPanel, leftPanel, rightPanel;
+    private TitlePanel titlePanel;
     private BoardPanel boardPanel;
+    private ControlPanel controlPanel;
+    private TalleyPanel talleyPanel;
     private GraphPanel graphPanel;
     private int preWidth, preHeight;
     private JLabel numHealthyLabel = new JLabel();
@@ -72,11 +75,11 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        JPanel p = new JPanel();
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.add(new JLabel("Epidemic Simulator"));
-        p.setBackground(Color.GREEN);
-        topPanel.add(p, gbc);
+        titlePanel = new TitlePanel();
+        titlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        titlePanel.add(new JLabel("Epidemic Simulator"));
+        titlePanel.setBackground(Color.GREEN);
+        topPanel.add(titlePanel, gbc);
     }
     private void addPeoplePanel()
     {
@@ -107,12 +110,12 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        JPanel p = new JPanel();
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.add(new JLabel("Control Panel"));
-        p.add(startButton);
-        p.setBackground(Color.LIGHT_GRAY);
-        leftPanel.add(p, gbc);
+        controlPanel = new ControlPanel(new GridLayout(2, 1));
+        controlPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        controlPanel.add(new JLabel("Control Panel"));
+        controlPanel.add(startButton);
+        controlPanel.setBackground(Color.LIGHT_GRAY);
+        leftPanel.add(controlPanel, gbc);
     }
     private void addTallyPanel()
     {
@@ -126,14 +129,14 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        JPanel p = new JPanel(new GridLayout(2, 2));
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.add(numHealthyLabel);
-        p.add(numRecoveredLabel);
-        p.add(numSickLabel);
-        p.add(numDeadLabel);
-        p.setBackground(Color.ORANGE);
-        rightPanel.add(p, gbc);
+        talleyPanel = new TalleyPanel(new GridLayout(2, 2));
+        talleyPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        talleyPanel.add(numHealthyLabel);
+        talleyPanel.add(numRecoveredLabel);
+        talleyPanel.add(numSickLabel);
+        talleyPanel.add(numDeadLabel);
+        talleyPanel.setBackground(Color.ORANGE);
+        rightPanel.add(talleyPanel, gbc);
     }
     private void addGraphPanel()
     {

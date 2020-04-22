@@ -8,4 +8,8 @@ public class GraphPanel extends JPanel {
         super();
     }
 
+    public GraphPanel(GridLayout gl)
+    {
+        super(gl);
+    }
 }
