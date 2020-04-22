@@ -8,6 +8,10 @@ public class Main {
     }
     public static void main(String[] args)
     {
-        Main test = new Main(new Disease1(), 200, 1000, 600);
+        Main test = new Main(new Disease1(), 400, 1000, 600);
     }
 }
+
+
+//TODO: Pause button (Start and stop the clock object)
+//TODO: End Button

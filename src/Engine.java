@@ -23,6 +23,8 @@ public class Engine implements ActionListener {
         clock = new Timer(10, gui.getBoardPanel());
         clock.addActionListener(stats);
         clock.addActionListener(this);
+
+        clock.start();
     }
 
    public Timer getClock()

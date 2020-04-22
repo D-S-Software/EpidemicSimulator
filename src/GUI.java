@@ -45,7 +45,7 @@ public class GUI {
         gbcMain.weighty = 40;
 
         leftPanel = new JPanel(new GridBagLayout());
-        addPeoplePanel();
+        addBoardPanel();
         addControlPanel();
         frame.add(leftPanel, gbcMain);
 
@@ -81,7 +81,7 @@ public class GUI {
         titlePanel.setBackground(Color.GREEN);
         topPanel.add(titlePanel, gbc);
     }
-    private void addPeoplePanel()
+    private void addBoardPanel() //TODO: People panel vs board Panel?
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
@@ -161,6 +161,7 @@ public class GUI {
     {
         return boardPanel;
     }
+
     public Rectangle getBoardRec()
     {
         return boardPanel.getBounds();
