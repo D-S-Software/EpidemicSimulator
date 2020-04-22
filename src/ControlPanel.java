@@ -5,11 +5,8 @@ public class ControlPanel extends JPanel {
 
     public ControlPanel()
     {
-        super();
+        super(new GridBagLayout());
+
     }
 
-    public ControlPanel(GridLayout gl)
-    {
-        super(gl);
-    }
 }

@@ -8,7 +8,7 @@ public class Main {
     }
     public static void main(String[] args)
     {
-        Main test = new Main(new Disease1(), 400, 1000, 600);
+        Main test = new Main(new Disease1(), 300, 1000, 600);
     }
 }
 

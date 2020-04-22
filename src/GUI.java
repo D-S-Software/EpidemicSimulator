@@ -14,7 +14,6 @@ public class GUI {
     private JLabel numSickLabel = new JLabel();
     private JLabel numRecoveredLabel = new JLabel();
     private JLabel numDeadLabel = new JLabel();
-    private JButton startButton = new JButton("Start");
     private GUI gui = this;
 
     public GUI(int preWidth, int preHeight)
@@ -30,7 +29,7 @@ public class GUI {
         gbcMain.gridy = 0;
         gbcMain.gridwidth = 2;
         gbcMain.gridheight = 1;
-        gbcMain.weightx = 20;
+        gbcMain.weightx = .3;
         gbcMain.weighty = 1;
         gbcMain.anchor = GridBagConstraints.CENTER;
         gbcMain.fill = GridBagConstraints.BOTH;
@@ -50,7 +49,7 @@ public class GUI {
         frame.add(leftPanel, gbcMain);
 
         gbcMain.gridx = 1;
-        gbcMain.weightx = 15;
+        gbcMain.weightx = .1;
 
         rightPanel = new JPanel(new GridBagLayout());
         addTallyPanel();
@@ -110,10 +109,8 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        controlPanel = new ControlPanel(new GridLayout(2, 1));
+        controlPanel = new ControlPanel();
         controlPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.add(new JLabel("Control Panel"));
-        controlPanel.add(startButton);
         controlPanel.setBackground(Color.LIGHT_GRAY);
         leftPanel.add(controlPanel, gbc);
     }
@@ -131,6 +128,10 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         talleyPanel = new TalleyPanel(new GridLayout(2, 2));
         talleyPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        numHealthyLabel.setPreferredSize(new Dimension(20, 10));
+        numSickLabel.setPreferredSize(new Dimension(20, 10));
+        numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
+        numDeadLabel.setPreferredSize(new Dimension(20, 10));
         talleyPanel.add(numHealthyLabel);
         talleyPanel.add(numRecoveredLabel);
         talleyPanel.add(numSickLabel);

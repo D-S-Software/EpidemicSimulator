@@ -32,6 +32,10 @@ public class Engine implements ActionListener {
        return clock;
    }
 
+    /**
+     * Checks the borders of the BoardPanel each tick to update each person move / bounce method
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e)
     {
