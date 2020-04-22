@@ -2,16 +2,15 @@ import javax.swing.*;
 
 public class Engine {
 
-    private Board myBoard;
+    private Board simBoard;
     private Frame windowFrame;
     private Timer clock;
     private Statistics stats;
     private Dimensions boardDimens;
-    private Dimensions tallyDimens;
     private Disease disease;
     private int boardWidth;
-    private int personBoardHeight = 3* boardWidth / 4;
-    private int buffer = boardWidth / 12 ;  //Buffer between boardPanel and tallyPanel
+    private int personBoardHeight = (int)(3* boardWidth / 4.0);
+    private int buffer = (int)(boardWidth / 12.0);  //Buffer between boardPanel and tallyPanel
 
     public Engine(int numPeople, int boardWidth)
     {
@@ -19,13 +18,12 @@ public class Engine {
 
         disease = new Disease1();
 
-        boardDimens = new Dimensions(buffer,3*buffer, boardWidth,3* boardWidth /4);
-        tallyDimens = new Dimensions(0,0,boardWidth/4, 3*boardWidth/16);
+        boardDimens = new Dimensions(buffer, (int)(.25*boardWidth), boardWidth,3* boardWidth /4);
 
-        myBoard = new Board(disease, boardDimens, numPeople);
-        windowFrame = new Frame(myBoard, tallyDimens);
+        simBoard = new Board(disease, boardDimens, numPeople);
+        windowFrame = new Frame(simBoard, boardDimens, boardWidth);
 
-        stats = new Statistics(myBoard, numPeople);
+        stats = new Statistics(simBoard, numPeople);
 
         clock = new Timer(10, windowFrame.getBoardPanel());
         clock.addActionListener(stats);

@@ -1,47 +1,76 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
+import java.util.concurrent.Flow;
 
 public class Frame extends JFrame {
 
     private JPanel mainPanel;
-    private JPanel topPanel; //title panel
-    private JPanel bottomPanel;
-    private JPanel bottomLeftPanel;
-    private JPanel bottomRightPanel;
+    private JPanel topPanel;
+    private TitlePanel titlePanel;
+    private JPanel leftPanel;
+    private JPanel leftGridPanel;
+    private JPanel rightPanel;
+    private JPanel rightGridPanel;
     private BoardPanel boardPanel;
     private TallyPanel tallyPanel;
+    private GraphPanel graphPanel;
+    private ControlPanel controlPanel;
 
-    public Frame(Board board, Dimensions tallyDimens)
+    private int buffer;
+
+    public Frame(Board board, Dimensions boardDimens, int boardWidth)
     {
-        this.setSize(2*board.dimens.xLen,(65*board.dimens.xLen /48)); //TODO FIX
+        buffer = (int)(boardWidth / 12.0);
 
-        mainPanel = new JPanel(); //total panel
-        topPanel = new JPanel();
-        topPanel.setSize(2*board.dimens.xLen, board.dimens.xLen/4);
-        bottomPanel = new JPanel();
-        bottomLeftPanel = new JPanel();
-        bottomRightPanel= new JPanel();
+        this.setSize(2*boardDimens.xLen,(65*boardDimens.xLen /48));
+        this.setLocation(0, 0);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        Container mainContainer = this.getContentPane();
+        mainContainer.setLayout(new BorderLayout(2, 2));
+        mainContainer.setBackground(Color.BLUE);
+        mainContainer.setLayout(new GridLayout(1, 2, 5, 5));
+        //this.getRootPane().setBorder(BorderFactory.createMatteBorder(4, 4, 4, 4, Color.GREEN));
+
+        leftPanel = new JPanel();
+        leftPanel.setLayout(new FlowLayout(4));
+        leftPanel.setBackground(Color.RED);
+
+        leftGridPanel = new JPanel();
+        leftGridPanel.setLayout(new GridLayout(2, 1, 10, 10));
+        leftGridPanel.setBackground(Color.PINK);
 
         boardPanel = new BoardPanel(board);
-        tallyPanel = new TallyPanel(tallyDimens);
+        controlPanel = new ControlPanel();
+        leftGridPanel.add(boardPanel);
+        leftGridPanel.add(controlPanel);
 
-        bottomLeftPanel.setLayout(new GridLayout(2,1));
-        bottomLeftPanel.add(boardPanel);
+        leftPanel.add(leftGridPanel);
+        mainContainer.add(leftPanel);
 
-        bottomRightPanel.setLayout(new GridLayout(2,1));
-        bottomRightPanel.add(tallyPanel);
+        rightPanel = new JPanel();
+        rightPanel.setLayout(new FlowLayout(4));
+        rightPanel.setBackground(Color.DARK_GRAY);
 
-        bottomPanel.setLayout(new GridLayout(1,2));
-        bottomPanel.add(bottomLeftPanel);
-        bottomPanel.add(bottomRightPanel);
+        rightGridPanel = new JPanel();
+        rightGridPanel.setLayout(new GridLayout(2, 1, 10, 10));
+        rightGridPanel.setBackground(Color.BLACK);
 
-        mainPanel.setLayout(new GridLayout(1,2));
-        mainPanel.add(topPanel);
-        mainPanel.add(bottomPanel);
+        tallyPanel = new TallyPanel();
+        graphPanel = new GraphPanel();
+        rightGridPanel.add(tallyPanel);
+        rightGridPanel.add(graphPanel);
 
-        this.add(mainPanel);
+        rightPanel.add(rightGridPanel);
+        mainContainer.add(rightPanel);
 
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+
+
+
+
         this.setVisible(true);
     }
 

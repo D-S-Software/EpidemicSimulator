@@ -11,7 +11,8 @@ public class BoardPanel extends JPanel implements ActionListener
     public BoardPanel(Board board)
     {
         this.board = board;
-        setBounds(board.dimens.xOrigin, board.dimens.yOrigin, board.dimens.xLen, board.dimens.yLen);
+        setMinimumSize(new Dimension(800, 450));
+        setBackground(Color.MAGENTA);
     }
 
     public void paintComponent(Graphics g)
