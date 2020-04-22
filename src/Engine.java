@@ -20,9 +20,9 @@ public class Engine implements ActionListener {
 
         Statistics stats = new Statistics(simBoard, gui, numPeople);
 
-        clock = new Timer(10, gui.getBoardPanel());
+        clock = new Timer(10,this);
         clock.addActionListener(stats);
-        clock.addActionListener(this);
+        clock.addActionListener(gui.getBoardPanel());
 
         clock.start();
     }
