@@ -217,35 +217,38 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if(custom.isSelected())
+                if(canStart)
                 {
-                    if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
-                            || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
-                            || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
-                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom then hit 'Select'");
-                    else
+                    if(custom.isSelected())
                     {
-                        disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()),
-                                Double.parseDouble(baseMortalityRate.getText()), Integer.parseInt(baseMinTimeSick.getText()),
-                                Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()));
+                        if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
+                                || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
+                                || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
+                        {
+                            JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
+                            disease = null;
+                        }
+                        else
+                        {
+                            disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()),
+                                    Double.parseDouble(baseMortalityRate.getText()), Integer.parseInt(baseMinTimeSick.getText()),
+                                    Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()));
+                        }
                     }
-                }
-                if(disease != null)
-                {
-                    int numPeople;
-                    if("".equals(numPeopleField.getText()))
-                        numPeople = 0;
-                    else
-                        numPeople = Integer.parseInt(numPeopleField.getText());
-
-                    if(canStart)
+                    if(disease != null)
                     {
+                        int numPeople;
+                        if("".equals(numPeopleField.getText()))
+                            numPeople = 0;
+                        else
+                            numPeople = Integer.parseInt(numPeopleField.getText());
+
                         gui.getBoardPanel().setReset(false);
                         simEngine = new Engine(gui, disease, numPeople);
                         simEngine.getClock().start();
                         canStart = false;
+                        checkTick.stop();
                     }
-                    checkTick.stop();
                 }
             }
         });
@@ -256,15 +259,18 @@ public class ControlPanel extends JPanel implements ActionListener{
         playPause.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(toPause)
+                if(disease != null && !canStart)
                 {
-                    simEngine.getClock().stop();
-                    toPause = false;
-                }
-                else
-                {
-                    simEngine.getClock().start();
-                    toPause = true;
+                    if(toPause)
+                    {
+                        simEngine.getClock().stop();
+                        toPause = false;
+                    }
+                    else
+                    {
+                        simEngine.getClock().start();
+                        toPause = true;
+                    }
                 }
             }
         });
@@ -281,7 +287,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                 gui.setNumSickLabel("NumSick: ");
                 gui.setNumRecoveredLabel("NumRecovered: ");
                 gui.setNumDeadLabel("NumDead: ");
-                simEngine = null;
+                disease = null;
                 canStart = true;
                 gui.getBoardPanel().setReset(true);
                 gui.getBoardPanel().repaint();
