@@ -7,11 +7,13 @@ public class Statistics implements ActionListener {
     private ArrayList<Person> pList;
     private int time = 0, numHealthy=0, numSick=0, numRecovered=0, numDead=0, numPeople=0;
     private GUI gui;
+    private Board simBoard;
     private static CreateFile x = new CreateFile();
 
-    public Statistics(Board myBoard, GUI gui, int numPeople)
+    public Statistics(Board simBoard, GUI gui, int numPeople)
     {
-        pList = myBoard.getPList();
+        this.simBoard = simBoard;
+        pList = simBoard.getPList();
         this.numPeople = numPeople;
         this.gui = gui;
         x.openFile();
@@ -53,6 +55,8 @@ public class Statistics implements ActionListener {
         x.addTime(time);
         x.addSpace();
 
+        updateBoard();
+
         printResults();
 
         boolean close;
@@ -64,6 +68,19 @@ public class Statistics implements ActionListener {
         {
             /**x.closeFile();
             System.exit(0); TODO Add back in at some point */
+        }
+    }
+
+    public void updateBoard()
+    {
+        simBoard.updateDistanceFromSick();
+
+        simBoard.updatePerson();
+
+        for(int i = 0; i < pList.size(); i++)
+        {
+            pList.get(i).updateDimens(gui.getBoardRec()); //Checks the borders of the BoardPanel each tick to update each person move / bounce method
+            pList.get(i).draw(gui.getBoardPanel().getGraphics());
         }
     }
 

@@ -4,19 +4,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class Board extends JPanel implements ActionListener {
+public class Board extends JPanel {
 
    public final Dimensions dimens;
    private ArrayList<Person> pList;
-   private GUI gui;
 
-    public Board(GUI gui, Disease disease, int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
+    public Board(Disease disease, int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
     {
         this.dimens = new Dimensions(xOrigin, yOrigin, xLen, yLen);
-        this.gui = gui;
-
-        gui.getBoardPanel().add(this);
-        gui.getFrame().pack();
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
@@ -28,9 +23,9 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-    public Board(GUI gui, Disease disease, Dimensions dimens, int numPeople)
+    public Board(Disease disease, Dimensions dimens, int numPeople)
     {
-        this(gui, disease, dimens.getxOrigin(), dimens.getyOrigin(), dimens.getxLen(), dimens.getyLen(), numPeople);
+        this(disease, dimens.getxOrigin(), dimens.getyOrigin(), dimens.getxLen(), dimens.getyLen(), numPeople);
     }
 
     /**
@@ -70,30 +65,7 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-    public ArrayList<Person> getPList()
-    {
+    public ArrayList<Person> getPList() {
         return pList;
-    }
-
-    public void paintComponent(Graphics g)
-    {
-        super.paintComponent(g);
-
-        Graphics2D g2D = (Graphics2D)g;
-
-        updateDistanceFromSick();
-
-        updatePerson();
-
-        for(int i = 0; i < pList.size(); i++)
-        {
-            pList.get(i).updateDimens(gui.getBoardRec()); //Checks the borders of the BoardPanel each tick to update each person move / bounce method
-            pList.get(i).draw(g2D);
-        }
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        repaint();
     }
 }

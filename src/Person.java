@@ -1,8 +1,6 @@
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Person implements ActionListener {
+public class Person {
 
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, directionAngle, minTimeSick, maxTimeSick;
@@ -150,10 +148,5 @@ public class Person implements ActionListener {
     public int getYPos()
     {
         return yPos;
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
     }
 }

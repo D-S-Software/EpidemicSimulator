@@ -12,11 +12,11 @@ public class Engine {
 
         Dimensions boardDimens = new Dimensions(0, 0, baseXLen/2, (baseYLen+50)/2);
 
-        simBoard = new Board(gui, disease, boardDimens, numPeople);
+        simBoard = new Board(disease, boardDimens, numPeople);
 
         Statistics stats = new Statistics(simBoard, gui, numPeople);
 
-        clock = new Timer(10,simBoard);
+        clock = new Timer(10, gui.getBoardPanel());
         clock.addActionListener(stats);
     }
 
