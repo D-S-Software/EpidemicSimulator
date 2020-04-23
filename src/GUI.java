@@ -190,4 +190,20 @@ public class GUI {
     public JLabel getNumDeadLabel() {
         return numDeadLabel;
     }
+    public void setNumHealthyLabel(String s)
+    {
+        numHealthyLabel.setText(s);
+    }
+    public void setNumSickLabel(String s)
+    {
+        numSickLabel.setText(s);
+    }
+    public void setNumRecoveredLabel(String s)
+    {
+        numRecoveredLabel.setText(s);
+    }
+    public void setNumDeadLabel(String s)
+    {
+        numDeadLabel.setText(s);
+    }
 }

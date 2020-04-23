@@ -11,9 +11,9 @@ public class ControlPanel extends JPanel {
     private ButtonGroup g1;
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy;
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel;
-    private Disease disease = new Disease1();
+    private Disease disease;
     private Engine simEngine;
-    boolean toPause = true, toStart = true;
+    boolean toPause = true, canStart = true;
     private GUI gui;
     private int baseXLen = 1000, baseYLen = 600; //TODO Make this more accesable
 
@@ -100,11 +100,12 @@ public class ControlPanel extends JPanel {
                     || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
                     || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
                         JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom then hit 'Select'");
-
-
-                    disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()),
-                            Double.parseDouble(baseMortalityRate.getText()), Integer.parseInt(baseMinTimeSick.getText()),
-                            Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()));
+                    else
+                    {
+                        disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()),
+                                Double.parseDouble(baseMortalityRate.getText()), Integer.parseInt(baseMinTimeSick.getText()),
+                                Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()));
+                    }
                 }
             }
         });
@@ -212,28 +213,23 @@ public class ControlPanel extends JPanel {
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel();
 
-        startStop = new JButton("Start/Play");
+        startStop = new JButton("Start");
         startStop.setPreferredSize(new Dimension(100,30));
 
         startStop.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(toStart)
+
+                if(canStart)
                 {
-                    simEngine = new Engine(gui, gui.getControlPanel().getDisease(), 200, baseXLen, baseYLen);
+                    simEngine = new Engine(gui, disease, 200, baseXLen, baseYLen);
                     simEngine.getClock().start();
-                    toStart = false;
-                }
-                else
-                {
-                    simEngine.getClock().stop();
-                    simEngine = null;
-                    toStart = true;
+                    canStart = false;
                 }
             }
         });
 
-        playPause = new JButton("Stop/Pause");
+        playPause = new JButton("Play/Pause");
         playPause.setPreferredSize(new Dimension(100,30));
 
         playPause.addActionListener(new ActionListener() {
@@ -259,7 +255,14 @@ public class ControlPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //TODO Need to implement the reset button
+                simEngine.getClock().stop();
+                gui.setNumHealthyLabel("NumHealthy: ");
+                gui.setNumSickLabel("NumSick: ");
+                gui.setNumRecoveredLabel("NumRecovered: ");
+                gui.setNumDeadLabel("NumDead: ");
+                simEngine = null;
+                canStart = true;
+                //TODO Need to make sure person objs disappear
             }
         });
 
