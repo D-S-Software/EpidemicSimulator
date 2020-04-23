@@ -3,25 +3,29 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ControlPanel extends JPanel {
+public class ControlPanel extends JPanel implements ActionListener{
 
     private JPanel mainPanel = new JPanel(new GridBagLayout());
-    private JRadioButton choice1, choice2, choice3, custom;
-    private JButton select, startStop, playPause, reset;
+    private JRadioButton choice1, choice2, choice3, choice4, custom;
+    private JButton startStop, playPause, reset;
     private ButtonGroup g1;
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy, numPeopleField;
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel;
     private Disease disease;
     private Engine simEngine;
-    boolean toPause = true, canStart = true;
+    boolean toPause = true, canStart = true, canType = true;
     private GUI gui;
     private int baseXLen, baseYLen;
+    Timer checkTick;
 
     public ControlPanel(GUI gui, int baseXLen, int baseYLen)
     {
         this.gui = gui;
         this.baseXLen = baseXLen;
         this.baseYLen = baseYLen;
+
+        checkTick = new Timer(10, this);
+        checkTick.start();
 
         addSelectionPanel();
         addLabelPanel();
@@ -47,71 +51,25 @@ public class ControlPanel extends JPanel {
         choice1 = new JRadioButton("Disease 1");
         choice2 = new JRadioButton("Disease 2");
         choice3 = new JRadioButton("Disease 3");
+        choice4 = new JRadioButton("Disease 4");
         custom = new JRadioButton("Custom");
-        select = new JButton("Select");
+
         p.add(choice1);
         p.add(choice2);
         p.add(choice3);
+        p.add(choice4);
         p.add(custom);
-        p.add(select);
+
         g1 = new ButtonGroup();
         g1.add(choice1);
         g1.add(choice2);
         g1.add(choice3);
+        g1.add(choice4);
         g1.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(Color.getHSBColor((1 - 1) / 9f, 0.75f, 0.95f));
         mainPanel.add(p, gbc);
-
-        select.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(choice1.isSelected())
-                {
-                    disease = new Disease1();
-                    contagiousPercent.setText(disease.getContagiousPercent() + "");
-                    contagiousRange.setText("" + disease.getContagiousRange());
-                    baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
-                    baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
-                    baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
-                    startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
-                }
-                if(choice2.isSelected())
-                {
-                    disease = new Disease2();
-                    contagiousPercent.setText(disease.getContagiousPercent() + "");
-                    contagiousRange.setText("" + disease.getContagiousRange());
-                    baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
-                    baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
-                    baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
-                    startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
-                }
-                if(choice3.isSelected())
-                {
-                    disease = new Disease3();
-                    contagiousPercent.setText(disease.getContagiousPercent() + "");
-                    contagiousRange.setText("" + disease.getContagiousRange());
-                    baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
-                    baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
-                    baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
-                    startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
-                }
-                if(custom.isSelected())
-                {
-                    if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
-                    || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
-                    || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
-                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom then hit 'Select'");
-                    else
-                    {
-                        disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()),
-                                Double.parseDouble(baseMortalityRate.getText()), Integer.parseInt(baseMinTimeSick.getText()),
-                                Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()));
-                    }
-                }
-            }
-        });
     }
     public void addImagePanel()
     {
@@ -229,18 +187,35 @@ public class ControlPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                int numPeople;
-                if("".equals(numPeopleField.getText()))
-                    numPeople = 0;
-                else
-                    numPeople = Integer.parseInt(numPeopleField.getText());
-
-                if(canStart)
+                if(custom.isSelected())
                 {
-                    gui.getBoardPanel().setReset(false);
-                    simEngine = new Engine(gui, disease, numPeople, baseXLen, baseYLen);
-                    simEngine.getClock().start();
-                    canStart = false;
+                    if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
+                            || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
+                            || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
+                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom then hit 'Select'");
+                    else
+                    {
+                        disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()),
+                                Double.parseDouble(baseMortalityRate.getText()), Integer.parseInt(baseMinTimeSick.getText()),
+                                Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()));
+                    }
+                }
+                if(disease != null)
+                {
+                    int numPeople;
+                    if("".equals(numPeopleField.getText()))
+                        numPeople = 0;
+                    else
+                        numPeople = Integer.parseInt(numPeopleField.getText());
+
+                    if(canStart)
+                    {
+                        gui.getBoardPanel().setReset(false);
+                        simEngine = new Engine(gui, disease, numPeople, baseXLen, baseYLen);
+                        simEngine.getClock().start();
+                        canStart = false;
+                    }
+                    checkTick.stop();
                 }
             }
         });
@@ -280,6 +255,8 @@ public class ControlPanel extends JPanel {
                 canStart = true;
                 gui.getBoardPanel().setReset(true);
                 gui.getBoardPanel().repaint();
+
+                checkTick.start();
             }
         });
 
@@ -309,11 +286,66 @@ public class ControlPanel extends JPanel {
         return reset;
     }
 
-    public JButton getSelect() {
-        return select;
-    }
-
     public Disease getDisease() {
         return disease;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(custom.isSelected() && canType)
+        {
+            contagiousPercent.setText("");
+            contagiousRange.setText("");
+            baseMortalityRate.setText("");
+            baseMinTimeSick.setText("");
+            baseMaxTimeSick.setText("");
+            startPercentHealthy.setText("");
+            canType = false;
+        }
+        if(choice1.isSelected())
+        {
+            disease = new Disease1();
+            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousRange.setText("" + disease.getContagiousRange());
+            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            canType = true;
+        }
+        if(choice2.isSelected())
+        {
+            disease = new Disease2();
+            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousRange.setText("" + disease.getContagiousRange());
+            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            canType = true;
+        }
+        if(choice3.isSelected())
+        {
+            disease = new Disease3();
+            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousRange.setText("" + disease.getContagiousRange());
+            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            canType = true;
+        }
+        if(choice4.isSelected())
+        {
+            disease = new Disease4();
+            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousRange.setText("" + disease.getContagiousRange());
+            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            canType = true;
+        }
+
     }
 }
