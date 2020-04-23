@@ -70,12 +70,6 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-    public void draw(Graphics2D g2D)
-    {
-        g2D.setColor(Color.WHITE);
-        g2D.fillRect(dimens.getxOrigin(), dimens.getyOrigin(), dimens.getxLen(), dimens.getyLen());
-    }
-
     public ArrayList<Person> getPList()
     {
         return pList;
@@ -90,8 +84,6 @@ public class Board extends JPanel implements ActionListener {
         updateDistanceFromSick();
 
         updatePerson();
-
-        draw(g2D);
 
         for(int i = 0; i < pList.size(); i++)
         {

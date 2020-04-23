@@ -7,6 +7,7 @@ public class Main {
     {
         gui = new GUI(baseXLen, baseYLen);
     }
+
     public static void main(String[] args)
     {
         Main test = new Main(1500, 1000);
