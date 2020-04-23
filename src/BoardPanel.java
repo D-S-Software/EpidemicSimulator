@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 public class BoardPanel extends JPanel implements ActionListener
 {
     Board simBoard;
-    Graphics2D g2D;
 
     public BoardPanel()
     {
@@ -19,7 +18,7 @@ public class BoardPanel extends JPanel implements ActionListener
         this.simBoard = simBoard;
     }
 
-    public void updateBoard()
+    public void updateBoard(Graphics2D g2D)
     {
         simBoard.updateDistanceFromSick();
 
@@ -36,15 +35,8 @@ public class BoardPanel extends JPanel implements ActionListener
     {
         super.paintComponent(g);
 
-        g2D = (Graphics2D)g;
-
         if(simBoard != null)
-            updateBoard();
-    }
-
-    public Graphics2D getGraphics()
-    {
-        return g2D;
+            updateBoard((Graphics2D)g);
     }
 
     @Override

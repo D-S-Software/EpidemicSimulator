@@ -1,10 +1,6 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class Board extends JPanel {
+public class Board {
 
    public final Dimensions dimens;
    private ArrayList<Person> pList;
