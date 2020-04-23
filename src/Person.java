@@ -99,9 +99,6 @@ public class Person {
     {
         dimens.setxLen(rect.width);
         dimens.setyLen(rect.height);
-
-        //TODO Remove when not needed for testing
-        //System.out.println(rect.x + " " + rect.y + " " + rect.width + " " + rect.height);
     }
 
     public void draw(Graphics2D g2D)

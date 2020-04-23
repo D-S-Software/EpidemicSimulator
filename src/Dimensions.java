@@ -1,5 +1,6 @@
 import java.awt.*;
 
+//TODO Replace this class with java Rectangle
 /** Dimensions contains values that will be used in the creation of a Board object and are passed to a Person object */
 public class Dimensions {
 

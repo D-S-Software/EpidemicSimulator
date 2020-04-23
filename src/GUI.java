@@ -83,7 +83,7 @@ public class GUI {
         titlePanel.setBackground(Color.GREEN);
         topPanel.add(titlePanel, gbc);
     }
-    private void addBoardPanel() //TODO: People panel vs board Panel?
+    private void addBoardPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
