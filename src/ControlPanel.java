@@ -237,6 +237,7 @@ public class ControlPanel extends JPanel {
 
                 if(canStart)
                 {
+                    gui.getBoardPanel().setReset(false);
                     simEngine = new Engine(gui, disease, numPeople, baseXLen, baseYLen);
                     simEngine.getClock().start();
                     canStart = false;
@@ -277,7 +278,8 @@ public class ControlPanel extends JPanel {
                 gui.setNumDeadLabel("NumDead: ");
                 simEngine = null;
                 canStart = true;
-                //TODO Need to make sure person objs disappear
+                gui.getBoardPanel().setReset(true);
+                gui.getBoardPanel().repaint();
             }
         });
 

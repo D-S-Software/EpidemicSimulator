@@ -6,11 +6,14 @@ import java.awt.event.ActionListener;
 public class BoardPanel extends JPanel implements ActionListener
 {
     Board simBoard;
+    Color background = Color.WHITE;
+    Graphics2D g2D;
+    boolean reset = false;
 
     public BoardPanel()
     {
         super();
-        setBackground(Color.WHITE);
+        setBackground(background);
     }
 
     public void setBoard(Board simBoard)
@@ -18,7 +21,13 @@ public class BoardPanel extends JPanel implements ActionListener
         this.simBoard = simBoard;
     }
 
-    public void updateBoard(Graphics2D g2D)
+    public void resetBoard()
+    {
+        g2D.setColor(background);
+        g2D.clearRect(getBounds().x, getBounds().y, getBounds().width, getBounds().height);
+    }
+
+    public void updateBoard()
     {
         simBoard.updateDistanceFromSick();
 
@@ -35,8 +44,18 @@ public class BoardPanel extends JPanel implements ActionListener
     {
         super.paintComponent(g);
 
+        g2D = (Graphics2D)g;
+
         if(simBoard != null)
-            updateBoard((Graphics2D)g);
+            updateBoard();
+
+        if(reset)
+            resetBoard();
+    }
+
+    public void setReset(boolean reset)
+    {
+        this.reset = reset;
     }
 
     @Override
