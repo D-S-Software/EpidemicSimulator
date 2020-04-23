@@ -1,8 +1,6 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Engine implements ActionListener {
+public class Engine {
 
     private Timer clock;
     private GUI gui;
@@ -16,29 +14,12 @@ public class Engine implements ActionListener {
 
         simBoard = new Board(disease, boardDimens, numPeople);
 
+        gui.getBoardPanel().setBoard(simBoard);
+
         Statistics stats = new Statistics(simBoard, gui, numPeople);
 
         clock = new Timer(10, gui.getBoardPanel());
         clock.addActionListener(stats);
-        clock.addActionListener(this);
-    }
-
-    public void updateBoard()
-    {
-        simBoard.updateDistanceFromSick();
-
-        simBoard.updatePerson();
-
-        for(int i = 0; i < simBoard.getPList().size(); i++)
-        {
-            simBoard.getPList().get(i).updateDimens(gui.getBoardRec()); //Checks the borders of the BoardPanel each tick to update each person move / bounce method
-            simBoard.getPList().get(i).draw(gui.getBoardPanel().getGraphics());
-        }
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        updateBoard();
     }
 
    public Timer getClock()
