@@ -15,13 +15,14 @@ public class GUI {
     private JLabel numRecoveredLabel = new JLabel();
     private JLabel numDeadLabel = new JLabel();
     private GUI gui = this;
+    private JFrame frame;
 
     public GUI(int preWidth, int preHeight)
     {
         this.preHeight = preHeight;
         this.preWidth = preWidth;
 
-        JFrame frame = new JFrame("GridBag");
+        frame = new JFrame("EpidemicSimulator");
         frame.setPreferredSize(new Dimension(preWidth, preHeight));
         frame.setLayout(new GridBagLayout());
         GridBagConstraints gbcMain = new GridBagConstraints();
@@ -111,7 +112,7 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        controlPanel = new ControlPanel(this);
+        controlPanel = new ControlPanel(this, preWidth, preHeight);
         controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         controlPanel.getMainPanel().setBackground(Color.LIGHT_GRAY);
         leftPanel.add(controlPanel.getMainPanel(), gbc);
@@ -163,6 +164,11 @@ public class GUI {
     public BoardPanel getBoardPanel()
     {
         return boardPanel;
+    }
+
+    public JFrame getFrame()
+    {
+        return frame;
     }
 
     public ControlPanel getControlPanel() {

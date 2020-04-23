@@ -9,17 +9,21 @@ public class ControlPanel extends JPanel {
     private JRadioButton choice1, choice2, choice3, custom;
     private JButton select, startStop, playPause, reset;
     private ButtonGroup g1;
-    private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy;
-    private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel;
+    private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy, numPeopleField;
+    private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel;
     private Disease disease;
     private Engine simEngine;
     boolean toPause = true, canStart = true;
     private GUI gui;
-    private int baseXLen = 1000, baseYLen = 600; //TODO Make this more accesable
+    private int numPeople;
+    private int baseXLen, baseYLen;
 
-    public ControlPanel(GUI gui)
+    public ControlPanel(GUI gui, int baseXLen, int baseYLen)
     {
         this.gui = gui;
+        this.baseXLen = baseXLen;
+        this.baseYLen = baseYLen;
+
         addSelectionPanel();
         addLabelPanel();
         addParamPanel();
@@ -211,7 +215,13 @@ public class ControlPanel extends JPanel {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel();
+        JPanel p = new JPanel(new GridLayout(1, 5));
+
+        numPeopleLabel = new JLabel("NumPeople: ");
+        p.add(numPeopleLabel);
+
+        numPeopleField = new JTextField(1);
+        p.add(numPeopleField);
 
         startStop = new JButton("Start");
         startStop.setPreferredSize(new Dimension(100,30));
@@ -220,9 +230,15 @@ public class ControlPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                int numPeople;
+                if("".equals(numPeopleField.getText()))
+                    numPeople = 0;
+                else
+                    numPeople = Integer.parseInt(numPeopleField.getText());
+
                 if(canStart)
                 {
-                    simEngine = new Engine(gui, disease, 200, baseXLen, baseYLen);
+                    simEngine = new Engine(gui, disease, numPeople, baseXLen, baseYLen);
                     simEngine.getClock().start();
                     canStart = false;
                 }

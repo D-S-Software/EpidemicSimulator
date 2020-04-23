@@ -15,6 +15,9 @@ public class Board extends JPanel implements ActionListener {
         this.dimens = new Dimensions(xOrigin, yOrigin, xLen, yLen);
         this.gui = gui;
 
+        gui.getBoardPanel().add(this);
+        gui.getFrame().pack();
+
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
         {
@@ -97,8 +100,8 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-    public void actionPerformed(ActionEvent e)
-    {
+    @Override
+    public void actionPerformed(ActionEvent e) {
         repaint();
     }
 }
