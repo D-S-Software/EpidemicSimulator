@@ -97,7 +97,6 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         boardPanel = new BoardPanel();
         boardPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        boardPanel.setBackground(Color.WHITE);
         leftPanel.add(boardPanel, gbc);
     }
     private void addControlPanel()

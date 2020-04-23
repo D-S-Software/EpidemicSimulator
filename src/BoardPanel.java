@@ -10,6 +10,7 @@ public class BoardPanel extends JPanel implements ActionListener
     public BoardPanel()
     {
         super();
+        setBackground(Color.WHITE);
     }
 
     public void paintComponent(Graphics g)

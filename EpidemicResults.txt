@@ -1,7933 +1,4675 @@
-Affected: 7.3%
+Affected: 0%
 1
-Affected: 7.4%
+Affected: 0%
 2
-Affected: 7.4%
+Affected: 0%
 3
-Affected: 7.4%
+Affected: 0%
 4
-Affected: 7.4%
+Affected: 0%
 5
-Affected: 7.5%
+Affected: 0%
 6
-Affected: 7.5%
+Affected: 0%
 7
-Affected: 7.5%
+Affected: 0%
 8
-Affected: 7.5%
+Affected: 0%
 9
-Affected: 7.7%
+Affected: 0%
 10
-Affected: 7.8%
+Affected: 0%
 11
-Affected: 7.8%
+Affected: 0%
 12
-Affected: 8.1%
+Affected: 0%
 13
-Affected: 8.1%
+Affected: 0%
 14
-Affected: 8.1%
+Affected: 0%
 15
-Affected: 8.3%
+Affected: 0%
 16
-Affected: 8.3%
+Affected: 0%
 17
-Affected: 8.3%
+Affected: 0%
 18
-Affected: 8.4%
+Affected: 0%
 19
-Affected: 8.5%
+Affected: 0%
 20
-Affected: 8.6%
+Affected: 0%
 21
-Affected: 8.6%
+Affected: 0%
 22
-Affected: 8.6%
+Affected: 0%
 23
-Affected: 8.6%
+Affected: 0%
 24
-Affected: 8.6%
+Affected: 0%
 25
-Affected: 8.7%
+Affected: 0%
 26
-Affected: 8.7%
+Affected: 0%
 27
-Affected: 8.8%
+Affected: 0%
 28
-Affected: 8.8%
+Affected: 0%
 29
-Affected: 8.9%
+Affected: 0%
 30
-Affected: 9%
+Affected: 0%
 31
-Affected: 9%
+Affected: 0%
 32
-Affected: 9%
+Affected: 0%
 33
-Affected: 9.1%
+Affected: 0%
 34
-Affected: 9.2%
+Affected: 0%
 35
-Affected: 9.3%
+Affected: 0%
 36
-Affected: 9.5%
+Affected: 0%
 37
-Affected: 9.6%
+Affected: 0%
 38
-Affected: 9.6%
+Affected: 0%
 39
-Affected: 9.8%
+Affected: 0%
 40
-Affected: 10%
+Affected: 0%
 41
-Affected: 10.2%
+Affected: 0%
 42
-Affected: 10.2%
+Affected: 0%
 43
-Affected: 10.2%
+Affected: 0%
 44
-Affected: 10.2%
+Affected: 0%
 45
-Affected: 10.4%
+Affected: 0%
 46
-Affected: 10.4%
+Affected: 0%
 47
-Affected: 10.5%
+Affected: 0%
 48
-Affected: 10.7%
+Affected: 0%
 49
-Affected: 10.7%
+Affected: 0%
 50
-Affected: 10.8%
+Affected: 0%
 51
-Affected: 10.9%
+Affected: 0%
 52
-Affected: 11%
+Affected: 0%
 53
-Affected: 11%
+Affected: 0%
 54
-Affected: 11%
+Affected: 0%
 55
-Affected: 11%
+Affected: 0%
 56
-Affected: 11.201%
+Affected: 0%
 57
-Affected: 11.3%
+Affected: 0%
 58
-Affected: 11.3%
+Affected: 0%
 59
-Affected: 11.3%
+Affected: 0%
 60
-Affected: 11.4%
+Affected: 0%
 61
-Affected: 11.4%
+Affected: 0%
 62
-Affected: 11.4%
+Affected: 0%
 63
-Affected: 11.4%
+Affected: 0%
 64
-Affected: 11.4%
+Affected: 0%
 65
-Affected: 11.5%
+Affected: 0%
 66
-Affected: 11.601%
+Affected: 0%
 67
-Affected: 11.701%
+Affected: 0%
 68
-Affected: 11.701%
+Affected: 0%
 69
-Affected: 11.8%
+Affected: 0%
 70
-Affected: 12%
+Affected: 0%
 71
-Affected: 12%
+Affected: 0%
 72
-Affected: 12.2%
+Affected: 0%
 73
-Affected: 12.2%
+Affected: 0%
 74
-Affected: 12.2%
+Affected: 0%
 75
-Affected: 12.4%
+Affected: 0%
 76
-Affected: 12.4%
+Affected: 0%
 77
-Affected: 12.6%
+Affected: 0%
 78
-Affected: 12.6%
+Affected: 0%
 79
-Affected: 12.7%
+Affected: 0%
 80
-Affected: 12.7%
+Affected: 0%
 81
-Affected: 12.8%
+Affected: 0%
 82
-Affected: 12.9%
+Affected: 0%
 83
-Affected: 12.9%
+Affected: 0%
 84
-Affected: 12.9%
+Affected: 0%
 85
-Affected: 12.9%
+Affected: 0%
 86
-Affected: 13.101%
+Affected: 0%
 87
-Affected: 13.101%
+Affected: 0%
 88
-Affected: 13.101%
+Affected: 0%
 89
-Affected: 13.201%
+Affected: 0%
 90
-Affected: 13.201%
+Affected: 0%
 91
-Affected: 13.3%
+Affected: 0%
 92
-Affected: 13.4%
+Affected: 0%
 93
-Affected: 13.5%
+Affected: 0%
 94
-Affected: 13.701%
+Affected: 0%
 95
-Affected: 14.001%
+Affected: 0%
 96
-Affected: 14.3%
+Affected: 0%
 97
-Affected: 14.4%
+Affected: 0%
 98
-Affected: 14.4%
+Affected: 0%
 99
-Affected: 14.4%
+Affected: 0%
 100
-Affected: 14.6%
+Affected: 0%
 101
-Affected: 14.8%
+Affected: 0%
 102
-Affected: 14.9%
+Affected: 0%
 103
-Affected: 15%
+Affected: 0%
 104
-Affected: 15.1%
+Affected: 0%
 105
-Affected: 15.2%
+Affected: 0%
 106
-Affected: 15.2%
+Affected: 0%
 107
-Affected: 15.4%
+Affected: 0%
 108
-Affected: 15.5%
+Affected: 0%
 109
-Affected: 15.5%
+Affected: 0%
 110
-Affected: 15.5%
+Affected: 0%
 111
-Affected: 15.6%
+Affected: 0%
 112
-Affected: 15.6%
+Affected: 0%
 113
-Affected: 15.6%
+Affected: 0%
 114
-Affected: 15.7%
+Affected: 0%
 115
-Affected: 15.8%
+Affected: 0%
 116
-Affected: 16%
+Affected: 0%
 117
-Affected: 16.1%
+Affected: 0%
 118
-Affected: 16.1%
+Affected: 0%
 119
-Affected: 16.2%
+Affected: 0%
 120
-Affected: 16.2%
+Affected: 0%
 121
-Affected: 16.3%
+Affected: 0%
 122
-Affected: 16.3%
+Affected: 0%
 123
-Affected: 16.5%
+Affected: 0%
 124
-Affected: 16.6%
+Affected: 0%
 125
-Affected: 16.6%
+Affected: 0%
 126
-Affected: 16.6%
+Affected: 0%
 127
-Affected: 16.7%
+Affected: 0%
 128
-Affected: 16.8%
+Affected: 0%
 129
-Affected: 16.901%
+Affected: 0%
 130
-Affected: 17%
+Affected: 0%
 131
-Affected: 17%
+Affected: 0%
 132
-Affected: 17.3%
+Affected: 0%
 133
-Affected: 17.3%
+Affected: 0%
 134
-Affected: 17.3%
+Affected: 0%
 135
-Affected: 17.3%
+Affected: 0%
 136
-Affected: 17.4%
+Affected: 0%
 137
-Affected: 17.4%
+Affected: 0%
 138
-Affected: 17.5%
+Affected: 0%
 139
-Affected: 17.7%
+Affected: 0%
 140
-Affected: 17.8%
+Affected: 0%
 141
-Affected: 17.9%
+Affected: 0%
 142
-Affected: 18%
+Affected: 0%
 143
-Affected: 18%
+Affected: 0%
 144
-Affected: 18.2%
+Affected: 0%
 145
-Affected: 18.2%
+Affected: 0%
 146
-Affected: 18.2%
+Affected: 0%
 147
-Affected: 18.4%
+Affected: 0%
 148
-Affected: 18.4%
+Affected: 0%
 149
-Affected: 18.4%
+Affected: 0%
 150
-Affected: 18.5%
+Affected: 0%
 151
-Affected: 18.5%
+Affected: 0%
 152
-Affected: 18.6%
+Affected: 0%
 153
-Affected: 18.6%
+Affected: 0%
 154
-Affected: 18.6%
+Affected: 0%
 155
-Affected: 18.8%
+Affected: 0%
 156
-Affected: 19%
+Affected: 0%
 157
-Affected: 19.2%
+Affected: 0%
 158
-Affected: 19.3%
+Affected: 0%
 159
-Affected: 19.3%
+Affected: 0%
 160
-Affected: 19.5%
+Affected: 0%
 161
-Affected: 19.6%
+Affected: 0%
 162
-Affected: 19.6%
+Affected: 0%
 163
-Affected: 19.7%
+Affected: 0%
 164
-Affected: 19.8%
+Affected: 0%
 165
-Affected: 19.8%
+Affected: 0%
 166
-Affected: 20.1%
+Affected: 0%
 167
-Affected: 20.3%
+Affected: 0%
 168
-Affected: 20.3%
+Affected: 0%
 169
-Affected: 20.4%
+Affected: 0%
 170
-Affected: 20.5%
+Affected: 0%
 171
-Affected: 20.5%
+Affected: 0%
 172
-Affected: 20.8%
+Affected: 0%
 173
-Affected: 20.9%
+Affected: 0%
 174
-Affected: 21.1%
+Affected: 0%
 175
-Affected: 21.1%
+Affected: 0%
 176
-Affected: 21.1%
+Affected: 0%
 177
-Affected: 21.2%
+Affected: 0%
 178
-Affected: 21.4%
+Affected: 0%
 179
-Affected: 21.6%
+Affected: 0%
 180
-Affected: 21.6%
+Affected: 0%
 181
-Affected: 21.8%
+Affected: 0%
 182
-Affected: 22%
+Affected: 0%
 183
-Affected: 22.2%
+Affected: 0%
 184
-Affected: 22.3%
+Affected: 0%
 185
-Affected: 22.401%
+Affected: 0%
 186
-Affected: 22.401%
+Affected: 0%
 187
-Affected: 22.6%
+Affected: 0%
 188
-Affected: 22.7%
+Affected: 0%
 189
-Affected: 22.8%
+Affected: 0%
 190
-Affected: 22.8%
+Affected: 0%
 191
-Affected: 23%
+Affected: 0%
 192
-Affected: 23.1%
+Affected: 0%
 193
-Affected: 23.1%
+Affected: 0%
 194
-Affected: 23.201%
+Affected: 0%
 195
-Affected: 23.5%
+Affected: 0%
 196
-Affected: 23.6%
+Affected: 0%
 197
-Affected: 23.7%
+Affected: 0%
 198
-Affected: 23.8%
+Affected: 0%
 199
-Affected: 24.2%
+Affected: 0%
 200
-Affected: 24.2%
+Affected: 0%
 201
-Affected: 24.4%
+Affected: 0%
 202
-Affected: 24.4%
+Affected: 0%
 203
-Affected: 24.5%
+Affected: 0%
 204
-Affected: 24.6%
+Affected: 0%
 205
-Affected: 24.9%
+Affected: 0%
 206
-Affected: 25.1%
+Affected: 0%
 207
-Affected: 25.1%
+Affected: 0%
 208
-Affected: 25.1%
+Affected: 0%
 209
-Affected: 25.3%
+Affected: 0%
 210
-Affected: 25.4%
+Affected: 0%
 211
-Affected: 25.4%
+Affected: 0%
 212
-Affected: 25.7%
+Affected: 0%
 213
-Affected: 25.8%
+Affected: 0%
 214
-Affected: 25.8%
+Affected: 0%
 215
-Affected: 26%
+Affected: 0%
 216
-Affected: 26.1%
+Affected: 0%
 217
-Affected: 26.3%
+Affected: 0%
 218
-Affected: 26.401%
+Affected: 0%
 219
-Affected: 26.5%
+Affected: 0%
 220
-Affected: 26.8%
+Affected: 0%
 221
-Affected: 26.901%
+Affected: 0%
 222
-Affected: 27.1%
+Affected: 0%
 223
-Affected: 27.401%
+Affected: 0%
 224
-Affected: 27.801%
+Affected: 0%
 225
-Affected: 28.001%
+Affected: 0%
 226
-Affected: 28.4%
+Affected: 0%
 227
-Affected: 28.5%
+Affected: 0%
 228
-Affected: 28.5%
+Affected: 0%
 229
-Affected: 28.8%
+Affected: 0%
 230
-Affected: 28.8%
+Affected: 0%
 231
-Affected: 28.9%
+Affected: 0%
 232
-Affected: 29%
+Affected: 0%
 233
-Affected: 29.1%
+Affected: 0%
 234
-Affected: 29.1%
+Affected: 0%
 235
-Affected: 29.1%
+Affected: 0%
 236
-Affected: 29.2%
+Affected: 0%
 237
-Affected: 29.2%
+Affected: 0%
 238
-Affected: 29.3%
+Affected: 0%
 239
-Affected: 29.5%
+Affected: 0%
 240
-Affected: 29.6%
+Affected: 0%
 241
-Affected: 29.6%
+Affected: 0%
 242
-Affected: 29.8%
+Affected: 0%
 243
-Affected: 29.8%
+Affected: 0%
 244
-Affected: 30%
+Affected: 0%
 245
-Affected: 30.3%
+Affected: 0%
 246
-Affected: 30.3%
+Affected: 0%
 247
-Affected: 30.5%
+Affected: 0%
 248
-Affected: 30.6%
+Affected: 0%
 249
-Affected: 30.7%
+Affected: 0%
 250
-Affected: 30.8%
+Affected: 0%
 251
-Affected: 30.8%
+Affected: 0%
 252
-Affected: 30.9%
+Affected: 0%
 253
-Affected: 30.9%
+Affected: 0%
 254
-Affected: 30.9%
+Affected: 0%
 255
-Affected: 30.9%
+Affected: 0%
 256
-Affected: 31.1%
+Affected: 0%
 257
-Affected: 31.2%
+Affected: 0%
 258
-Affected: 31.5%
+Affected: 0%
 259
-Affected: 31.6%
+Affected: 0%
 260
-Affected: 31.6%
+Affected: 0%
 261
-Affected: 31.8%
+Affected: 0%
 262
-Affected: 32%
+Affected: 0%
 263
-Affected: 32.1%
+Affected: 0%
 264
-Affected: 32.2%
+Affected: 0%
 265
-Affected: 32.301%
+Affected: 0%
 266
-Affected: 32.5%
+Affected: 0%
 267
-Affected: 32.6%
+Affected: 0%
 268
-Affected: 32.9%
+Affected: 0%
 269
-Affected: 33%
+Affected: 0%
 270
-Affected: 33%
+Affected: 0%
 271
-Affected: 33.1%
+Affected: 0%
 272
-Affected: 33.301%
+Affected: 0%
 273
-Affected: 33.4%
+Affected: 0%
 274
-Affected: 33.4%
+Affected: 0%
 275
-Affected: 33.5%
+Affected: 0%
 276
-Affected: 33.7%
+Affected: 0%
 277
-Affected: 33.901%
+Affected: 0%
 278
-Affected: 34%
+Affected: 0%
 279
-Affected: 34%
+Affected: 0%
 280
-Affected: 34.2%
+Affected: 0%
 281
-Affected: 34.5%
+Affected: 0%
 282
-Affected: 34.8%
+Affected: 0%
 283
-Affected: 34.9%
+Affected: 0%
 284
-Affected: 35.1%
+Affected: 0%
 285
-Affected: 35.3%
+Affected: 0%
 286
-Affected: 35.3%
+Affected: 0%
 287
-Affected: 35.4%
+Affected: 0%
 288
-Affected: 35.7%
+Affected: 0%
 289
-Affected: 36%
+Affected: 0%
 290
-Affected: 36%
+Affected: 0%
 291
-Affected: 36.1%
+Affected: 0%
 292
-Affected: 36.3%
+Affected: 0%
 293
-Affected: 36.4%
+Affected: 0%
 294
-Affected: 36.5%
+Affected: 0%
 295
-Affected: 36.6%
+Affected: 0%
 296
-Affected: 36.7%
+Affected: 0%
 297
-Affected: 36.8%
+Affected: 0%
 298
-Affected: 36.9%
+Affected: 0%
 299
-Affected: 37.1%
+Affected: 0%
 300
-Affected: 37.3%
+Affected: 0%
 301
-Affected: 37.4%
+Affected: 0%
 302
-Affected: 37.6%
+Affected: 0%
 303
-Affected: 37.6%
+Affected: 0%
 304
-Affected: 37.8%
+Affected: 0%
 305
-Affected: 38%
+Affected: 0%
 306
-Affected: 38%
+Affected: 0%
 307
-Affected: 38%
+Affected: 0%
 308
-Affected: 38.2%
+Affected: 0%
 309
-Affected: 38.4%
+Affected: 0%
 310
-Affected: 38.6%
+Affected: 0%
 311
-Affected: 38.6%
+Affected: 0%
 312
-Affected: 38.9%
+Affected: 0%
 313
-Affected: 38.9%
+Affected: 0%
 314
-Affected: 39.1%
+Affected: 0%
 315
-Affected: 39.301%
+Affected: 0%
 316
-Affected: 39.301%
+Affected: 0%
 317
-Affected: 39.301%
+Affected: 0%
 318
-Affected: 39.4%
+Affected: 0%
 319
-Affected: 39.7%
+Affected: 0%
 320
-Affected: 39.801%
+Affected: 0%
 321
-Affected: 39.801%
+Affected: 0%
 322
-Affected: 40.1%
+Affected: 0%
 323
-Affected: 40.2%
+Affected: 0%
 324
-Affected: 40.2%
+Affected: 0%
 325
-Affected: 40.401%
+Affected: 0%
 326
-Affected: 40.6%
+Affected: 0%
 327
-Affected: 40.9%
+Affected: 0%
 328
-Affected: 41.1%
+Affected: 0%
 329
-Affected: 41.5%
+Affected: 0%
 330
-Affected: 41.5%
+Affected: 0%
 331
-Affected: 41.7%
+Affected: 0%
 332
-Affected: 41.9%
+Affected: 0%
 333
-Affected: 42.1%
+Affected: 0%
 334
-Affected: 42.5%
+Affected: 0%
 335
-Affected: 42.5%
+Affected: 0%
 336
-Affected: 42.6%
+Affected: 0%
 337
-Affected: 42.6%
+Affected: 0%
 338
-Affected: 43.1%
+Affected: 0%
 339
-Affected: 43.2%
+Affected: 0%
 340
-Affected: 43.2%
+Affected: 0%
 341
-Affected: 43.3%
+Affected: 0%
 342
-Affected: 43.3%
+Affected: 0%
 343
-Affected: 43.4%
+Affected: 0%
 344
-Affected: 43.5%
+Affected: 0%
 345
-Affected: 43.7%
+Affected: 0%
 346
-Affected: 43.9%
+Affected: 0%
 347
-Affected: 44.2%
+Affected: 0%
 348
-Affected: 44.4%
+Affected: 0%
 349
-Affected: 44.5%
+Affected: 0%
 350
-Affected: 44.7%
+Affected: 0%
 351
-Affected: 44.9%
+Affected: 0%
 352
-Affected: 45.1%
+Affected: 0%
 353
-Affected: 45.4%
+Affected: 0%
 354
-Affected: 45.4%
+Affected: 0%
 355
-Affected: 45.4%
+Affected: 0%
 356
-Affected: 45.5%
+Affected: 0%
 357
-Affected: 45.7%
+Affected: 0%
 358
-Affected: 45.801%
+Affected: 0%
 359
-Affected: 45.9%
+Affected: 0%
 360
-Affected: 46%
+Affected: 0%
 361
-Affected: 46.2%
+Affected: 0%
 362
-Affected: 46.401%
+Affected: 0%
 363
-Affected: 46.5%
+Affected: 0%
 364
-Affected: 46.801%
+Affected: 0%
 365
-Affected: 47.1%
+Affected: 0%
 366
-Affected: 47.3%
+Affected: 0%
 367
-Affected: 47.3%
+Affected: 0%
 368
-Affected: 47.3%
+Affected: 0%
 369
-Affected: 47.3%
+Affected: 0%
 370
-Affected: 47.4%
+Affected: 0%
 371
-Affected: 47.6%
+Affected: 0%
 372
-Affected: 48%
+Affected: 0%
 373
-Affected: 48%
+Affected: 0%
 374
-Affected: 48.1%
+Affected: 0%
 375
-Affected: 48.2%
+Affected: 0%
 376
-Affected: 48.4%
+Affected: 0%
 377
-Affected: 48.5%
+Affected: 0%
 378
-Affected: 48.7%
+Affected: 0%
 379
-Affected: 48.7%
+Affected: 0%
 380
-Affected: 48.7%
+Affected: 0%
 381
-Affected: 49%
+Affected: 0%
 382
-Affected: 49.1%
+Affected: 0%
 383
-Affected: 49.2%
+Affected: 0%
 384
-Affected: 49.3%
+Affected: 0%
 385
-Affected: 49.4%
+Affected: 0%
 386
-Affected: 49.5%
+Affected: 0%
 387
-Affected: 49.5%
+Affected: 0%
 388
-Affected: 49.7%
+Affected: 0%
 389
-Affected: 49.9%
+Affected: 0%
 390
-Affected: 49.9%
+Affected: 0%
 391
-Affected: 49.9%
+Affected: 0%
 392
-Affected: 49.9%
+Affected: 0%
 393
-Affected: 50.1%
+Affected: 0%
 394
-Affected: 50.5%
+Affected: 0%
 395
-Affected: 50.7%
+Affected: 0%
 396
-Affected: 51%
+Affected: 0%
 397
-Affected: 51.4%
+Affected: 0%
 398
-Affected: 51.6%
+Affected: 0%
 399
-Affected: 51.801%
+Affected: 0%
 400
-Affected: 51.801%
+Affected: 0%
 401
-Affected: 51.9%
+Affected: 0%
 402
-Affected: 52%
+Affected: 0%
 403
-Affected: 52.2%
+Affected: 0%
 404
-Affected: 52.301%
+Affected: 0%
 405
-Affected: 52.301%
+Affected: 0%
 406
-Affected: 52.5%
+Affected: 0%
 407
-Affected: 52.901%
+Affected: 0%
 408
-Affected: 53.1%
+Affected: 0%
 409
-Affected: 53.1%
+Affected: 0%
 410
-Affected: 53.2%
+Affected: 0%
 411
-Affected: 53.401%
+Affected: 0%
 412
-Affected: 53.6%
+Affected: 0%
 413
-Affected: 53.901%
+Affected: 0%
 414
-Affected: 54.2%
+Affected: 0%
 415
-Affected: 54.2%
+Affected: 0%
 416
-Affected: 54.401%
+Affected: 0%
 417
-Affected: 54.501%
+Affected: 0%
 418
-Affected: 54.7%
+Affected: 0%
 419
-Affected: 54.801%
+Affected: 0%
 420
-Affected: 54.801%
+Affected: 0%
 421
-Affected: 55.001%
+Affected: 0%
 422
-Affected: 55.2%
+Affected: 0%
 423
-Affected: 55.301%
+Affected: 0%
 424
-Affected: 55.401%
+Affected: 0%
 425
-Affected: 55.501%
+Affected: 0%
 426
-Affected: 55.7%
+Affected: 0%
 427
-Affected: 55.801%
+Affected: 0%
 428
-Affected: 55.901%
+Affected: 0%
 429
-Affected: 56.2%
+Affected: 0%
 430
-Affected: 56.2%
+Affected: 0%
 431
-Affected: 56.2%
+Affected: 0%
 432
-Affected: 56.6%
+Affected: 0%
 433
-Affected: 56.7%
+Affected: 0%
 434
-Affected: 57%
+Affected: 0%
 435
-Affected: 57%
+Affected: 0%
 436
-Affected: 57.4%
+Affected: 0%
 437
-Affected: 57.5%
+Affected: 0%
 438
-Affected: 57.9%
+Affected: 0%
 439
-Affected: 57.9%
+Affected: 0%
 440
-Affected: 58%
+Affected: 0%
 441
-Affected: 58%
+Affected: 0%
 442
-Affected: 58.1%
+Affected: 0%
 443
-Affected: 58.3%
+Affected: 0%
 444
-Affected: 58.4%
+Affected: 0%
 445
-Affected: 58.6%
+Affected: 0%
 446
-Affected: 58.6%
+Affected: 0%
 447
-Affected: 58.8%
+Affected: 0%
 448
-Affected: 58.9%
+Affected: 0%
 449
-Affected: 59%
+Affected: 0%
 450
-Affected: 59.1%
+Affected: 0%
 451
-Affected: 59.4%
+Affected: 0%
 452
-Affected: 59.5%
+Affected: 0%
 453
-Affected: 59.6%
+Affected: 0%
 454
-Affected: 59.8%
+Affected: 0%
 455
-Affected: 59.9%
+Affected: 0%
 456
-Affected: 60%
+Affected: 0%
 457
-Affected: 60%
+Affected: 0%
 458
-Affected: 60.1%
+Affected: 0%
 459
-Affected: 60.2%
+Affected: 0%
 460
-Affected: 60.3%
+Affected: 0%
 461
-Affected: 60.5%
+Affected: 0%
 462
-Affected: 60.5%
+Affected: 0%
 463
-Affected: 60.5%
+Affected: 0%
 464
-Affected: 60.6%
+Affected: 0%
 465
-Affected: 60.7%
+Affected: 0%
 466
-Affected: 60.9%
+Affected: 0%
 467
-Affected: 61.2%
+Affected: 0%
 468
-Affected: 61.2%
+Affected: 0%
 469
-Affected: 61.2%
+Affected: 0%
 470
-Affected: 61.2%
+Affected: 0%
 471
-Affected: 61.2%
+Affected: 0%
 472
-Affected: 61.3%
+Affected: 0%
 473
-Affected: 61.4%
+Affected: 0%
 474
-Affected: 61.7%
+Affected: 0%
 475
-Affected: 61.8%
+Affected: 0%
 476
-Affected: 61.8%
+Affected: 0%
 477
-Affected: 62%
+Affected: 0%
 478
-Affected: 62.1%
+Affected: 0%
 479
-Affected: 62.2%
+Affected: 0%
 480
-Affected: 62.4%
+Affected: 0%
 481
-Affected: 62.5%
+Affected: 0%
 482
-Affected: 62.8%
+Affected: 0%
 483
-Affected: 62.8%
+Affected: 0%
 484
-Affected: 63%
+Affected: 0%
 485
-Affected: 63.1%
+Affected: 0%
 486
-Affected: 63.2%
+Affected: 0%
 487
-Affected: 63.5%
+Affected: 0%
 488
-Affected: 63.801%
+Affected: 0%
 489
-Affected: 63.801%
+Affected: 0%
 490
-Affected: 63.9%
+Affected: 0%
 491
-Affected: 64.1%
+Affected: 0%
 492
-Affected: 64.2%
+Affected: 0%
 493
-Affected: 64.3%
+Affected: 0%
 494
-Affected: 64.4%
+Affected: 0%
 495
-Affected: 64.4%
+Affected: 0%
 496
-Affected: 64.7%
+Affected: 0%
 497
-Affected: 64.8%
+Affected: 0%
 498
-Affected: 64.8%
+Affected: 0%
 499
-Affected: 65%
+Affected: 0%
 500
-Affected: 65.2%
+Affected: 0%
 501
-Affected: 65.3%
+Affected: 0%
 502
-Affected: 65.4%
+Affected: 0%
 503
-Affected: 65.4%
+Affected: 0%
 504
-Affected: 65.601%
+Affected: 0%
 505
-Affected: 65.7%
+Affected: 0%
 506
-Affected: 65.8%
+Affected: 0%
 507
-Affected: 65.9%
+Affected: 0%
 508
-Affected: 66.101%
+Affected: 0%
 509
-Affected: 66.2%
+Affected: 0%
 510
-Affected: 66.3%
+Affected: 0%
 511
-Affected: 66.601%
+Affected: 0%
 512
-Affected: 66.8%
+Affected: 0%
 513
-Affected: 66.9%
+Affected: 0%
 514
-Affected: 67.2%
+Affected: 0%
 515
-Affected: 67.2%
+Affected: 0%
 516
-Affected: 67.301%
+Affected: 0%
 517
-Affected: 67.4%
+Affected: 0%
 518
-Affected: 67.5%
+Affected: 0%
 519
-Affected: 67.601%
+Affected: 0%
 520
-Affected: 67.7%
+Affected: 0%
 521
-Affected: 67.9%
+Affected: 0%
 522
-Affected: 67.9%
+Affected: 0%
 523
-Affected: 68%
+Affected: 0%
 524
-Affected: 68%
+Affected: 0%
 525
-Affected: 68.2%
+Affected: 0%
 526
-Affected: 68.301%
+Affected: 0%
 527
-Affected: 68.4%
+Affected: 0%
 528
-Affected: 68.7%
+Affected: 0%
 529
-Affected: 68.8%
+Affected: 0%
 530
-Affected: 69%
+Affected: 0%
 531
-Affected: 69.3%
+Affected: 0%
 532
-Affected: 69.3%
+Affected: 0%
 533
-Affected: 69.6%
+Affected: 0%
 534
-Affected: 69.8%
+Affected: 0%
 535
-Affected: 69.8%
+Affected: 0%
 536
-Affected: 70%
+Affected: 0%
 537
-Affected: 70%
+Affected: 0%
 538
-Affected: 70.2%
+Affected: 0%
 539
-Affected: 70.2%
+Affected: 0%
 540
-Affected: 70.3%
+Affected: 0%
 541
-Affected: 70.4%
+Affected: 0%
 542
-Affected: 70.5%
+Affected: 0%
 543
-Affected: 70.7%
+Affected: 0%
 544
-Affected: 70.8%
+Affected: 0%
 545
-Affected: 70.8%
+Affected: 0%
 546
-Affected: 70.8%
+Affected: 0%
 547
-Affected: 70.8%
+Affected: 0%
 548
-Affected: 70.9%
+Affected: 0%
 549
-Affected: 71.1%
+Affected: 0%
 550
-Affected: 71.3%
+Affected: 0%
 551
-Affected: 71.4%
+Affected: 0%
 552
-Affected: 71.4%
+Affected: 0%
 553
-Affected: 71.4%
+Affected: 0%
 554
-Affected: 71.6%
+Affected: 0%
 555
-Affected: 71.7%
+Affected: 0%
 556
-Affected: 71.7%
+Affected: 0%
 557
-Affected: 71.7%
+Affected: 0%
 558
-Affected: 71.9%
+Affected: 0%
 559
-Affected: 71.9%
+Affected: 0%
 560
-Affected: 72%
+Affected: 0%
 561
-Affected: 72.1%
+Affected: 0%
 562
-Affected: 72.2%
+Affected: 0%
 563
-Affected: 72.2%
+Affected: 0%
 564
-Affected: 72.4%
+Affected: 0%
 565
-Affected: 72.4%
+Affected: 0%
 566
-Affected: 72.5%
+Affected: 0%
 567
-Affected: 72.5%
+Affected: 0%
 568
-Affected: 72.6%
+Affected: 0%
 569
-Affected: 72.7%
+Affected: 0%
 570
-Affected: 72.7%
+Affected: 0%
 571
-Affected: 72.9%
+Affected: 0%
 572
-Affected: 73.1%
+Affected: 0%
 573
-Affected: 73.1%
+Affected: 0%
 574
-Affected: 73.1%
+Affected: 0%
 575
-Affected: 73.1%
+Affected: 0%
 576
-Affected: 73.2%
+Affected: 0%
 577
-Affected: 73.3%
+Affected: 0%
 578
-Affected: 73.4%
+Affected: 0%
 579
-Affected: 73.7%
+Affected: 0%
 580
-Affected: 73.7%
+Affected: 0%
 581
-Affected: 74%
+Affected: 0%
 582
-Affected: 74.1%
+Affected: 0%
 583
-Affected: 74.2%
+Affected: 0%
 584
-Affected: 74.3%
+Affected: 0%
 585
-Affected: 74.3%
+Affected: 0%
 586
-Affected: 74.3%
+Affected: 0%
 587
-Affected: 74.3%
+Affected: 0%
 588
-Affected: 74.3%
+Affected: 0%
 589
-Affected: 74.4%
+Affected: 0%
 590
-Affected: 74.5%
+Affected: 0%
 591
-Affected: 74.6%
+Affected: 0%
 592
-Affected: 74.7%
+Affected: 0%
 593
-Affected: 74.8%
+Affected: 0%
 594
-Affected: 74.8%
+Affected: 0%
 595
-Affected: 74.9%
+Affected: 0%
 596
-Affected: 74.9%
+Affected: 0%
 597
-Affected: 75%
+Affected: 0%
 598
-Affected: 75.2%
+Affected: 0%
 599
-Affected: 75.2%
+Affected: 0%
 600
-Affected: 75.4%
+Affected: 0%
 601
-Affected: 75.5%
+Affected: 0%
 602
-Affected: 75.8%
+Affected: 0%
 603
-Affected: 75.8%
+Affected: 0%
 604
-Affected: 75.9%
+Affected: 0%
 605
-Affected: 75.9%
+Affected: 0%
 606
-Affected: 75.9%
+Affected: 0%
 607
-Affected: 76%
+Affected: 0%
 608
-Affected: 76%
+Affected: 0%
 609
-Affected: 76%
+Affected: 0%
 610
-Affected: 76.1%
+Affected: 0%
 611
-Affected: 76.1%
+Affected: 0%
 612
-Affected: 76.1%
+Affected: 0%
 613
-Affected: 76.2%
+Affected: 0%
 614
-Affected: 76.3%
+Affected: 0%
 615
-Affected: 76.3%
+Affected: 0%
 616
-Affected: 76.4%
+Affected: 0%
 617
-Affected: 76.5%
+Affected: 0%
 618
-Affected: 76.6%
+Affected: 0%
 619
-Affected: 76.7%
+Affected: 0%
 620
-Affected: 76.7%
+Affected: 0%
 621
-Affected: 76.9%
+Affected: 0%
 622
-Affected: 77%
+Affected: 0%
 623
-Affected: 77%
+Affected: 0%
 624
-Affected: 77.2%
+Affected: 0%
 625
-Affected: 77.2%
+Affected: 0%
 626
-Affected: 77.5%
+Affected: 0%
 627
-Affected: 77.601%
+Affected: 0%
 628
-Affected: 77.7%
+Affected: 0%
 629
-Affected: 77.8%
+Affected: 0%
 630
-Affected: 77.9%
+Affected: 0%
 631
-Affected: 78%
+Affected: 0%
 632
-Affected: 78%
+Affected: 0%
 633
-Affected: 78%
+Affected: 0%
 634
-Affected: 78.101%
+Affected: 0%
 635
-Affected: 78.101%
+Affected: 0%
 636
-Affected: 78.101%
+Affected: 0%
 637
-Affected: 78.2%
+Affected: 0%
 638
-Affected: 78.2%
+Affected: 0%
 639
-Affected: 78.4%
+Affected: 0%
 640
-Affected: 78.5%
+Affected: 0%
 641
-Affected: 78.601%
+Affected: 0%
 642
-Affected: 78.601%
+Affected: 0%
 643
-Affected: 78.7%
+Affected: 0%
 644
-Affected: 78.7%
+Affected: 0%
 645
-Affected: 78.7%
+Affected: 0%
 646
-Affected: 78.7%
+Affected: 0%
 647
-Affected: 78.7%
+Affected: 0%
 648
-Affected: 78.7%
+Affected: 0%
 649
-Affected: 78.7%
+Affected: 0%
 650
-Affected: 78.7%
+Affected: 0%
 651
-Affected: 78.8%
+Affected: 0%
 652
-Affected: 78.9%
+Affected: 0%
 653
-Affected: 78.9%
+Affected: 0%
 654
-Affected: 79%
+Affected: 0%
 655
-Affected: 79.101%
+Affected: 0%
 656
-Affected: 79.2%
+Affected: 0%
 657
-Affected: 79.3%
+Affected: 0%
 658
-Affected: 79.3%
+Affected: 0%
 659
-Affected: 79.3%
+Affected: 0%
 660
-Affected: 79.4%
+Affected: 0%
 661
-Affected: 79.4%
+Affected: 0%
 662
-Affected: 79.601%
+Affected: 0%
 663
-Affected: 79.7%
+Affected: 0%
 664
-Affected: 79.7%
+Affected: 0%
 665
-Affected: 79.801%
+Affected: 0%
 666
-Affected: 79.9%
+Affected: 0%
 667
-Affected: 80.101%
+Affected: 0%
 668
-Affected: 80.101%
+Affected: 0%
 669
-Affected: 80.101%
+Affected: 0%
 670
-Affected: 80.101%
+Affected: 0%
 671
-Affected: 80.101%
+Affected: 0%
 672
-Affected: 80.101%
+Affected: 0%
 673
-Affected: 80.2%
+Affected: 0%
 674
-Affected: 80.301%
+Affected: 0%
 675
-Affected: 80.301%
+Affected: 0%
 676
-Affected: 80.301%
+Affected: 0%
 677
-Affected: 80.301%
+Affected: 0%
 678
-Affected: 80.4%
+Affected: 0%
 679
-Affected: 80.4%
+Affected: 0%
 680
-Affected: 80.4%
+Affected: 0%
 681
-Affected: 80.5%
+Affected: 0%
 682
-Affected: 80.601%
+Affected: 0%
 683
-Affected: 80.7%
+Affected: 0%
 684
-Affected: 80.7%
+Affected: 0%
 685
-Affected: 80.7%
+Affected: 0%
 686
-Affected: 80.9%
+Affected: 0%
 687
-Affected: 81%
+Affected: 0%
 688
-Affected: 81%
+Affected: 0%
 689
-Affected: 81.101%
+Affected: 0%
 690
-Affected: 81.101%
+Affected: 0%
 691
-Affected: 81.2%
+Affected: 0%
 692
-Affected: 81.3%
+Affected: 0%
 693
-Affected: 81.4%
+Affected: 0%
 694
-Affected: 81.4%
+Affected: 0%
 695
-Affected: 81.4%
+Affected: 0%
 696
-Affected: 81.5%
+Affected: 0%
 697
-Affected: 81.5%
+Affected: 0%
 698
-Affected: 81.5%
+Affected: 0%
 699
-Affected: 81.5%
+Affected: 0%
 700
-Affected: 81.6%
+Affected: 0%
 701
-Affected: 81.7%
+Affected: 0%
 702
-Affected: 81.8%
+Affected: 0%
 703
-Affected: 82%
+Affected: 0%
 704
-Affected: 82%
+Affected: 0%
 705
-Affected: 82%
+Affected: 0%
 706
-Affected: 82.1%
+Affected: 0%
 707
-Affected: 82.1%
+Affected: 0%
 708
-Affected: 82.1%
+Affected: 0%
 709
-Affected: 82.2%
+Affected: 0%
 710
-Affected: 82.3%
+Affected: 0%
 711
-Affected: 82.3%
+Affected: 0%
 712
-Affected: 82.3%
+Affected: 0%
 713
-Affected: 82.4%
+Affected: 0%
 714
-Affected: 82.4%
+Affected: 0%
 715
-Affected: 82.4%
+Affected: 0%
 716
-Affected: 82.5%
+Affected: 0%
 717
-Affected: 82.5%
+Affected: 0%
 718
-Affected: 82.5%
+Affected: 0%
 719
-Affected: 82.6%
+Affected: 0%
 720
-Affected: 82.7%
+Affected: 0%
 721
-Affected: 82.7%
+Affected: 0%
 722
-Affected: 82.7%
+Affected: 0%
 723
-Affected: 82.7%
+Affected: 0%
 724
-Affected: 82.7%
+Affected: 0%
 725
-Affected: 82.8%
+Affected: 0%
 726
-Affected: 82.8%
+Affected: 0%
 727
-Affected: 82.8%
+Affected: 0%
 728
-Affected: 82.8%
+Affected: 0%
 729
-Affected: 82.9%
+Affected: 0%
 730
-Affected: 83.1%
+Affected: 0%
 731
-Affected: 83.1%
+Affected: 0%
 732
-Affected: 83.1%
+Affected: 0%
 733
-Affected: 83.1%
+Affected: 0%
 734
-Affected: 83.2%
+Affected: 0%
 735
-Affected: 83.2%
+Affected: 0%
 736
-Affected: 83.4%
+Affected: 0%
 737
-Affected: 83.5%
+Affected: 0%
 738
-Affected: 83.5%
+Affected: 0%
 739
-Affected: 83.6%
+Affected: 0%
 740
-Affected: 83.6%
+Affected: 0%
 741
-Affected: 83.7%
+Affected: 0%
 742
-Affected: 83.8%
+Affected: 0%
 743
-Affected: 83.8%
+Affected: 0%
 744
-Affected: 83.9%
+Affected: 0%
 745
-Affected: 83.9%
+Affected: 0%
 746
-Affected: 83.9%
+Affected: 0%
 747
-Affected: 83.9%
+Affected: 0%
 748
-Affected: 84%
+Affected: 0%
 749
-Affected: 84.1%
+Affected: 0%
 750
-Affected: 84.3%
+Affected: 0%
 751
-Affected: 84.4%
+Affected: 0%
 752
-Affected: 84.6%
+Affected: 0%
 753
-Affected: 84.6%
+Affected: 0%
 754
-Affected: 84.6%
+Affected: 0%
 755
-Affected: 84.6%
+Affected: 0%
 756
-Affected: 84.7%
+Affected: 0%
 757
-Affected: 84.7%
+Affected: 0%
 758
-Affected: 84.8%
+Affected: 0%
 759
-Affected: 84.9%
+Affected: 0%
 760
-Affected: 85%
+Affected: 0%
 761
-Affected: 85%
+Affected: 0%
 762
-Affected: 85.1%
+Affected: 0%
 763
-Affected: 85.1%
+Affected: 0%
 764
-Affected: 85.1%
+Affected: 0%
 765
-Affected: 85.1%
+Affected: 0%
 766
-Affected: 85.1%
+Affected: 0%
 767
-Affected: 85.1%
+Affected: 0%
 768
-Affected: 85.2%
+Affected: 0%
 769
-Affected: 85.2%
+Affected: 0%
 770
-Affected: 85.3%
+Affected: 0%
 771
-Affected: 85.3%
+Affected: 0%
 772
-Affected: 85.3%
+Affected: 0%
 773
-Affected: 85.3%
+Affected: 0%
 774
-Affected: 85.4%
+Affected: 0%
 775
-Affected: 85.4%
+Affected: 0%
 776
-Affected: 85.4%
+Affected: 0%
 777
-Affected: 85.4%
+Affected: 0%
 778
-Affected: 85.5%
+Affected: 0%
 779
-Affected: 85.5%
+Affected: 0%
 780
-Affected: 85.6%
+Affected: 0%
 781
-Affected: 85.7%
+Affected: 0%
 782
-Affected: 85.7%
+Affected: 0%
 783
-Affected: 85.7%
+Affected: 0%
 784
-Affected: 85.7%
+Affected: 0%
 785
-Affected: 85.8%
+Affected: 0%
 786
-Affected: 85.8%
+Affected: 0%
 787
-Affected: 85.8%
+Affected: 0%
 788
-Affected: 85.9%
+Affected: 0%
 789
-Affected: 85.9%
+Affected: 0%
 790
-Affected: 85.9%
+Affected: 0%
 791
-Affected: 85.9%
+Affected: 0%
 792
-Affected: 85.9%
+Affected: 0%
 793
-Affected: 86%
+Affected: 0%
 794
-Affected: 86%
+Affected: 0%
 795
-Affected: 86%
+Affected: 0%
 796
-Affected: 86%
+Affected: 0%
 797
-Affected: 86%
+Affected: 0%
 798
-Affected: 86.1%
+Affected: 0%
 799
-Affected: 86.1%
+Affected: 0%
 800
-Affected: 86.1%
+Affected: 0%
 801
-Affected: 86.2%
+Affected: 0%
 802
-Affected: 86.2%
+Affected: 0%
 803
-Affected: 86.2%
+Affected: 0%
 804
-Affected: 86.4%
+Affected: 0%
 805
-Affected: 86.6%
+Affected: 0%
 806
-Affected: 86.8%
+Affected: 0%
 807
-Affected: 86.8%
+Affected: 0%
 808
-Affected: 86.8%
+Affected: 0%
 809
-Affected: 86.8%
+Affected: 0%
 810
-Affected: 86.8%
+Affected: 0%
 811
-Affected: 86.8%
+Affected: 0%
 812
-Affected: 86.8%
+Affected: 0%
 813
-Affected: 86.8%
+Affected: 0%
 814
-Affected: 86.8%
+Affected: 0%
 815
-Affected: 86.8%
+Affected: 0%
 816
-Affected: 86.8%
+Affected: 0%
 817
-Affected: 86.9%
+Affected: 0%
 818
-Affected: 86.9%
+Affected: 0%
 819
-Affected: 86.9%
+Affected: 0%
 820
-Affected: 87%
+Affected: 0%
 821
-Affected: 87%
+Affected: 0%
 822
-Affected: 87%
+Affected: 0%
 823
-Affected: 87.1%
+Affected: 0%
 824
-Affected: 87.1%
+Affected: 0%
 825
-Affected: 87.1%
+Affected: 0%
 826
-Affected: 87.1%
+Affected: 0%
 827
-Affected: 87.1%
+Affected: 0%
 828
-Affected: 87.2%
+Affected: 0%
 829
-Affected: 87.2%
+Affected: 0%
 830
-Affected: 87.3%
+Affected: 0%
 831
-Affected: 87.4%
+Affected: 0%
 832
-Affected: 87.4%
+Affected: 0%
 833
-Affected: 87.4%
+Affected: 0%
 834
-Affected: 87.5%
+Affected: 0%
 835
-Affected: 87.5%
+Affected: 0%
 836
-Affected: 87.6%
+Affected: 0%
 837
-Affected: 87.6%
+Affected: 0%
 838
-Affected: 87.6%
+Affected: 0%
 839
-Affected: 87.6%
+Affected: 0%
 840
-Affected: 87.8%
+Affected: 0%
 841
-Affected: 87.9%
+Affected: 0%
 842
-Affected: 87.9%
+Affected: 0%
 843
-Affected: 87.9%
+Affected: 0%
 844
-Affected: 88%
+Affected: 0%
 845
-Affected: 88%
+Affected: 0%
 846
-Affected: 88%
+Affected: 0%
 847
-Affected: 88%
+Affected: 0%
 848
-Affected: 88%
+Affected: 0%
 849
-Affected: 88.1%
+Affected: 0%
 850
-Affected: 88.2%
+Affected: 0%
 851
-Affected: 88.3%
+Affected: 0%
 852
-Affected: 88.4%
+Affected: 0%
 853
-Affected: 88.5%
+Affected: 0%
 854
-Affected: 88.5%
+Affected: 0%
 855
-Affected: 88.5%
+Affected: 0%
 856
-Affected: 88.5%
+Affected: 0%
 857
-Affected: 88.5%
+Affected: 0%
 858
-Affected: 88.5%
+Affected: 0%
 859
-Affected: 88.5%
+Affected: 0%
 860
-Affected: 88.5%
+Affected: 0%
 861
-Affected: 88.5%
+Affected: 0%
 862
-Affected: 88.5%
+Affected: 0%
 863
-Affected: 88.5%
+Affected: 0%
 864
-Affected: 88.5%
+Affected: 0%
 865
-Affected: 88.6%
+Affected: 0%
 866
-Affected: 88.7%
+Affected: 0%
 867
-Affected: 88.9%
+Affected: 0%
 868
-Affected: 89%
+Affected: 0%
 869
-Affected: 89%
+Affected: 0%
 870
-Affected: 89%
+Affected: 0%
 871
-Affected: 89%
+Affected: 0%
 872
-Affected: 89.1%
+Affected: 0%
 873
-Affected: 89.1%
+Affected: 0%
 874
-Affected: 89.1%
+Affected: 0%
 875
-Affected: 89.1%
+Affected: 0%
 876
-Affected: 89.1%
+Affected: 0%
 877
-Affected: 89.1%
+Affected: 0%
 878
-Affected: 89.1%
+Affected: 0%
 879
-Affected: 89.2%
+Affected: 0%
 880
-Affected: 89.2%
+Affected: 0%
 881
-Affected: 89.2%
+Affected: 0%
 882
-Affected: 89.3%
+Affected: 0%
 883
-Affected: 89.3%
+Affected: 0%
 884
-Affected: 89.3%
+Affected: 0%
 885
-Affected: 89.4%
+Affected: 0%
 886
-Affected: 89.4%
+Affected: 0%
 887
-Affected: 89.5%
+Affected: 0%
 888
-Affected: 89.5%
+Affected: 0%
 889
-Affected: 89.5%
+Affected: 0%
 890
-Affected: 89.5%
+Affected: 0%
 891
-Affected: 89.7%
+Affected: 0%
 892
-Affected: 89.9%
+Affected: 0%
 893
-Affected: 89.9%
+Affected: 0%
 894
-Affected: 90%
+Affected: 0%
 895
-Affected: 90%
+Affected: 0%
 896
-Affected: 90%
+Affected: 0%
 897
-Affected: 90%
+Affected: 0%
 898
-Affected: 90%
+Affected: 0%
 899
-Affected: 90%
+Affected: 0%
 900
-Affected: 90.101%
+Affected: 0%
 901
-Affected: 90.101%
+Affected: 0%
 902
-Affected: 90.101%
+Affected: 0%
 903
-Affected: 90.101%
+Affected: 0%
 904
-Affected: 90.101%
+Affected: 0%
 905
-Affected: 90.101%
+Affected: 0%
 906
-Affected: 90.101%
+Affected: 0%
 907
-Affected: 90.3%
+Affected: 0%
 908
-Affected: 90.4%
+Affected: 0%
 909
-Affected: 90.4%
+Affected: 0%
 910
-Affected: 90.4%
+Affected: 0%
 911
-Affected: 90.4%
+Affected: 0%
 912
-Affected: 90.4%
+Affected: 0%
 913
-Affected: 90.4%
+Affected: 0%
 914
-Affected: 90.4%
+Affected: 0%
 915
-Affected: 90.4%
+Affected: 0%
 916
-Affected: 90.5%
+Affected: 0%
 917
-Affected: 90.5%
+Affected: 0%
 918
-Affected: 90.5%
+Affected: 0%
 919
-Affected: 90.5%
+Affected: 0%
 920
-Affected: 90.5%
+Affected: 0%
 921
-Affected: 90.5%
+Affected: 0%
 922
-Affected: 90.5%
+Affected: 0%
 923
-Affected: 90.5%
+Affected: 0%
 924
-Affected: 90.5%
+Affected: 0%
 925
-Affected: 90.5%
+Affected: 0%
 926
-Affected: 90.601%
+Affected: 0%
 927
-Affected: 90.601%
+Affected: 0%
 928
-Affected: 90.601%
+Affected: 0%
 929
-Affected: 90.7%
+Affected: 0%
 930
-Affected: 90.8%
+Affected: 0%
 931
-Affected: 90.8%
+Affected: 0%
 932
-Affected: 90.9%
+Affected: 0%
 933
-Affected: 90.9%
+Affected: 0%
 934
-Affected: 90.9%
+Affected: 0%
 935
-Affected: 90.9%
+Affected: 0%
 936
-Affected: 90.9%
+Affected: 0%
 937
-Affected: 90.9%
+Affected: 0%
 938
-Affected: 90.9%
+Affected: 0%
 939
-Affected: 90.9%
+Affected: 0%
 940
-Affected: 90.9%
+Affected: 0%
 941
-Affected: 91%
+Affected: 0%
 942
-Affected: 91%
+Affected: 0%
 943
-Affected: 91%
+Affected: 0%
 944
-Affected: 91%
+Affected: 0%
 945
-Affected: 91.101%
+Affected: 0%
 946
-Affected: 91.2%
+Affected: 0%
 947
-Affected: 91.2%
+Affected: 0%
 948
-Affected: 91.2%
+Affected: 0%
 949
-Affected: 91.2%
+Affected: 0%
 950
-Affected: 91.3%
+Affected: 0%
 951
-Affected: 91.3%
+Affected: 0%
 952
-Affected: 91.3%
+Affected: 0%
 953
-Affected: 91.3%
+Affected: 0%
 954
-Affected: 91.4%
+Affected: 0%
 955
-Affected: 91.4%
+Affected: 0%
 956
-Affected: 91.4%
+Affected: 0%
 957
-Affected: 91.4%
+Affected: 0%
 958
-Affected: 91.5%
+Affected: 0%
 959
-Affected: 91.601%
+Affected: 0%
 960
-Affected: 91.601%
+Affected: 0%
 961
-Affected: 91.7%
+Affected: 0%
 962
-Affected: 91.7%
+Affected: 0%
 963
-Affected: 91.7%
+Affected: 0%
 964
-Affected: 91.7%
+Affected: 0%
 965
-Affected: 91.7%
+Affected: 0%
 966
-Affected: 91.7%
+Affected: 0%
 967
-Affected: 91.7%
+Affected: 0%
 968
-Affected: 91.8%
+Affected: 0%
 969
-Affected: 91.8%
+Affected: 0%
 970
-Affected: 91.8%
+Affected: 0%
 971
-Affected: 91.8%
+Affected: 0%
 972
-Affected: 91.8%
+Affected: 0%
 973
-Affected: 91.8%
+Affected: 0%
 974
-Affected: 91.8%
+Affected: 0%
 975
-Affected: 91.8%
+Affected: 0%
 976
-Affected: 91.8%
+Affected: 0%
 977
-Affected: 91.8%
+Affected: 0%
 978
-Affected: 91.8%
+Affected: 0%
 979
-Affected: 91.8%
+Affected: 0%
 980
-Affected: 91.8%
+Affected: 0%
 981
-Affected: 91.8%
+Affected: 0%
 982
-Affected: 91.8%
+Affected: 0%
 983
-Affected: 91.9%
+Affected: 0%
 984
-Affected: 91.9%
+Affected: 0%
 985
-Affected: 91.9%
+Affected: 0%
 986
-Affected: 91.9%
+Affected: 0%
 987
-Affected: 91.9%
+Affected: 0%
 988
-Affected: 91.9%
+Affected: 0%
 989
-Affected: 92.101%
+Affected: 0%
 990
-Affected: 92.101%
+Affected: 0%
 991
-Affected: 92.101%
+Affected: 0%
 992
-Affected: 92.101%
+Affected: 0%
 993
-Affected: 92.101%
+Affected: 0%
 994
-Affected: 92.2%
+Affected: 0%
 995
-Affected: 92.301%
+Affected: 0%
 996
-Affected: 92.301%
+Affected: 0%
 997
-Affected: 92.301%
+Affected: 0%
 998
-Affected: 92.5%
+Affected: 0%
 999
-Affected: 92.7%
+Affected: 0%
 1000
-Affected: 92.7%
+Affected: 0%
 1001
-Affected: 92.7%
+Affected: 0%
 1002
-Affected: 92.7%
+Affected: 0%
 1003
-Affected: 92.801%
+Affected: 0%
 1004
-Affected: 92.801%
+Affected: 0%
 1005
-Affected: 92.801%
+Affected: 0%
 1006
-Affected: 92.9%
+Affected: 0%
 1007
-Affected: 92.9%
+Affected: 0%
 1008
-Affected: 92.9%
+Affected: 0%
 1009
-Affected: 92.9%
+Affected: 0%
 1010
-Affected: 92.9%
+Affected: 0%
 1011
-Affected: 92.9%
+Affected: 0%
 1012
-Affected: 93%
+Affected: 0%
 1013
-Affected: 93%
+Affected: 0%
 1014
-Affected: 93%
+Affected: 0%
 1015
-Affected: 93.101%
+Affected: 0%
 1016
-Affected: 93.101%
+Affected: 0%
 1017
-Affected: 93.101%
+Affected: 0%
 1018
-Affected: 93.101%
+Affected: 0%
 1019
-Affected: 93.101%
+Affected: 0%
 1020
-Affected: 93.101%
+Affected: 0%
 1021
-Affected: 93.101%
+Affected: 0%
 1022
-Affected: 93.2%
+Affected: 0%
 1023
-Affected: 93.2%
+Affected: 0%
 1024
-Affected: 93.2%
+Affected: 0%
 1025
-Affected: 93.2%
+Affected: 0%
 1026
-Affected: 93.2%
+Affected: 0%
 1027
-Affected: 93.2%
+Affected: 0%
 1028
-Affected: 93.301%
+Affected: 0%
 1029
-Affected: 93.301%
+Affected: 0%
 1030
-Affected: 93.301%
+Affected: 0%
 1031
-Affected: 93.301%
+Affected: 0%
 1032
-Affected: 93.4%
+Affected: 0%
 1033
-Affected: 93.4%
+Affected: 0%
 1034
-Affected: 93.4%
+Affected: 0%
 1035
-Affected: 93.4%
+Affected: 0%
 1036
-Affected: 93.5%
+Affected: 0%
 1037
-Affected: 93.5%
+Affected: 0%
 1038
-Affected: 93.5%
+Affected: 0%
 1039
-Affected: 93.7%
+Affected: 0%
 1040
-Affected: 93.7%
+Affected: 0%
 1041
-Affected: 93.7%
+Affected: 0%
 1042
-Affected: 93.7%
+Affected: 0%
 1043
-Affected: 93.8%
+Affected: 0%
 1044
-Affected: 93.8%
+Affected: 0%
 1045
-Affected: 93.8%
+Affected: 0%
 1046
-Affected: 93.8%
+Affected: 0%
 1047
-Affected: 93.9%
+Affected: 0%
 1048
-Affected: 93.9%
+Affected: 0%
 1049
-Affected: 94%
+Affected: 0%
 1050
-Affected: 94%
+Affected: 0%
 1051
-Affected: 94%
+Affected: 0%
 1052
-Affected: 94%
+Affected: 0%
 1053
-Affected: 94%
+Affected: 0%
 1054
-Affected: 94%
+Affected: 0%
 1055
-Affected: 94%
+Affected: 0%
 1056
-Affected: 94%
+Affected: 0%
 1057
-Affected: 94%
+Affected: 0%
 1058
-Affected: 94%
+Affected: 0%
 1059
-Affected: 94%
+Affected: 0%
 1060
-Affected: 94%
+Affected: 0%
 1061
-Affected: 94%
+Affected: 0%
 1062
-Affected: 94%
+Affected: 0%
 1063
-Affected: 94%
+Affected: 0%
 1064
-Affected: 94%
+Affected: 0%
 1065
-Affected: 94%
+Affected: 0%
 1066
-Affected: 94%
+Affected: 0%
 1067
-Affected: 94.1%
+Affected: 0%
 1068
-Affected: 94.2%
+Affected: 0%
 1069
-Affected: 94.2%
+Affected: 0%
 1070
-Affected: 94.2%
+Affected: 0%
 1071
-Affected: 94.3%
+Affected: 0%
 1072
-Affected: 94.3%
+Affected: 0%
 1073
-Affected: 94.3%
+Affected: 0%
 1074
-Affected: 94.3%
+Affected: 0%
 1075
-Affected: 94.4%
+Affected: 0%
 1076
-Affected: 94.4%
+Affected: 0%
 1077
-Affected: 94.4%
+Affected: 0%
 1078
-Affected: 94.4%
+Affected: 0%
 1079
-Affected: 94.4%
+Affected: 0%
 1080
-Affected: 94.4%
+Affected: 0%
 1081
-Affected: 94.4%
+Affected: 0%
 1082
-Affected: 94.4%
+Affected: 0%
 1083
-Affected: 94.4%
+Affected: 0%
 1084
-Affected: 94.4%
+Affected: 0%
 1085
-Affected: 94.5%
+Affected: 0%
 1086
-Affected: 94.5%
+Affected: 0%
 1087
-Affected: 94.7%
+Affected: 0%
 1088
-Affected: 94.7%
+Affected: 0%
 1089
-Affected: 94.7%
+Affected: 0%
 1090
-Affected: 94.7%
+Affected: 0%
 1091
-Affected: 94.7%
+Affected: 0%
 1092
-Affected: 94.7%
+Affected: 0%
 1093
-Affected: 94.7%
+Affected: 0%
 1094
-Affected: 94.8%
+Affected: 0%
 1095
-Affected: 94.8%
+Affected: 0%
 1096
-Affected: 94.8%
+Affected: 0%
 1097
-Affected: 94.9%
+Affected: 0%
 1098
-Affected: 94.9%
+Affected: 0%
 1099
-Affected: 94.9%
+Affected: 0%
 1100
-Affected: 94.9%
+Affected: 0%
 1101
-Affected: 94.9%
+Affected: 0%
 1102
-Affected: 94.9%
+Affected: 0%
 1103
-Affected: 94.9%
+Affected: 0%
 1104
-Affected: 94.9%
+Affected: 0%
 1105
-Affected: 95%
+Affected: 0%
 1106
-Affected: 95%
+Affected: 0%
 1107
-Affected: 95%
+Affected: 0%
 1108
-Affected: 95%
+Affected: 0%
 1109
-Affected: 95%
+Affected: 0%
 1110
-Affected: 95%
+Affected: 0%
 1111
-Affected: 95%
+Affected: 0%
 1112
-Affected: 95%
+Affected: 0%
 1113
-Affected: 95%
+Affected: 0%
 1114
-Affected: 95%
+Affected: 0%
 1115
-Affected: 95%
+Affected: 0%
 1116
-Affected: 95%
+Affected: 0%
 1117
-Affected: 95%
+Affected: 0%
 1118
-Affected: 95%
+Affected: 0%
 1119
-Affected: 95%
+Affected: 0%
 1120
-Affected: 95.1%
+Affected: 0%
 1121
-Affected: 95.1%
+Affected: 0%
 1122
-Affected: 95.1%
+Affected: 0%
 1123
-Affected: 95.1%
+Affected: 0%
 1124
-Affected: 95.1%
+Affected: 0%
 1125
-Affected: 95.1%
+Affected: 0%
 1126
-Affected: 95.2%
+Affected: 0%
 1127
-Affected: 95.2%
+Affected: 0%
 1128
-Affected: 95.2%
+Affected: 0%
 1129
-Affected: 95.2%
+Affected: 0%
 1130
-Affected: 95.3%
+Affected: 0%
 1131
-Affected: 95.3%
+Affected: 0%
 1132
-Affected: 95.3%
+Affected: 0%
 1133
-Affected: 95.3%
+Affected: 0%
 1134
-Affected: 95.4%
+Affected: 0%
 1135
-Affected: 95.4%
+Affected: 0%
 1136
-Affected: 95.4%
+Affected: 0%
 1137
-Affected: 95.4%
+Affected: 0%
 1138
-Affected: 95.4%
+Affected: 0%
 1139
-Affected: 95.4%
+Affected: 0%
 1140
-Affected: 95.4%
+Affected: 0%
 1141
-Affected: 95.4%
+Affected: 0%
 1142
-Affected: 95.5%
+Affected: 0%
 1143
-Affected: 95.5%
+Affected: 0%
 1144
-Affected: 95.5%
+Affected: 0%
 1145
-Affected: 95.5%
+Affected: 0%
 1146
-Affected: 95.5%
+Affected: 0%
 1147
-Affected: 95.5%
+Affected: 0%
 1148
-Affected: 95.5%
+Affected: 0%
 1149
-Affected: 95.5%
+Affected: 0%
 1150
-Affected: 95.5%
+Affected: 0%
 1151
-Affected: 95.5%
+Affected: 0%
 1152
-Affected: 95.5%
+Affected: 0%
 1153
-Affected: 95.5%
+Affected: 0%
 1154
-Affected: 95.5%
+Affected: 0%
 1155
-Affected: 95.5%
+Affected: 0%
 1156
-Affected: 95.5%
+Affected: 0%
 1157
-Affected: 95.5%
+Affected: 0%
 1158
-Affected: 95.5%
+Affected: 0%
 1159
-Affected: 95.6%
+Affected: 0%
 1160
-Affected: 95.7%
+Affected: 0%
 1161
-Affected: 95.7%
+Affected: 0%
 1162
-Affected: 95.7%
+Affected: 0%
 1163
-Affected: 95.7%
+Affected: 0%
 1164
-Affected: 95.7%
+Affected: 0%
 1165
-Affected: 95.7%
+Affected: 0%
 1166
-Affected: 95.7%
+Affected: 0%
 1167
-Affected: 95.7%
+Affected: 0%
 1168
-Affected: 95.7%
+Affected: 0%
 1169
-Affected: 95.8%
+Affected: 0%
 1170
-Affected: 95.8%
+Affected: 0%
 1171
-Affected: 95.8%
+Affected: 0%
 1172
-Affected: 95.8%
+Affected: 0%
 1173
-Affected: 95.8%
+Affected: 0%
 1174
-Affected: 95.8%
+Affected: 0%
 1175
-Affected: 95.8%
+Affected: 0%
 1176
-Affected: 95.8%
+Affected: 0%
 1177
-Affected: 95.8%
+Affected: 0%
 1178
-Affected: 95.8%
+Affected: 0%
 1179
-Affected: 95.8%
+Affected: 0%
 1180
-Affected: 95.8%
+Affected: 0%
 1181
-Affected: 95.8%
+Affected: 0%
 1182
-Affected: 95.8%
+Affected: 0%
 1183
-Affected: 95.9%
+Affected: 0%
 1184
-Affected: 95.9%
+Affected: 0%
 1185
-Affected: 95.9%
+Affected: 0%
 1186
-Affected: 95.9%
+Affected: 0%
 1187
-Affected: 95.9%
+Affected: 0%
 1188
-Affected: 95.9%
+Affected: 0%
 1189
-Affected: 95.9%
+Affected: 0%
 1190
-Affected: 95.9%
+Affected: 0%
 1191
-Affected: 95.9%
+Affected: 0%
 1192
-Affected: 96%
+Affected: 0%
 1193
-Affected: 96%
+Affected: 0%
 1194
-Affected: 96.1%
+Affected: 0%
 1195
-Affected: 96.1%
+Affected: 0%
 1196
-Affected: 96.1%
+Affected: 0%
 1197
-Affected: 96.1%
+Affected: 0%
 1198
-Affected: 96.2%
+Affected: 0%
 1199
-Affected: 96.2%
+Affected: 0%
 1200
-Affected: 96.3%
+Affected: 0%
 1201
-Affected: 96.3%
+Affected: 0%
 1202
-Affected: 96.3%
+Affected: 0%
 1203
-Affected: 96.3%
+Affected: 0%
 1204
-Affected: 96.3%
+Affected: 0%
 1205
-Affected: 96.3%
+Affected: 0%
 1206
-Affected: 96.3%
+Affected: 0%
 1207
-Affected: 96.4%
+Affected: 0%
 1208
-Affected: 96.4%
+Affected: 0%
 1209
-Affected: 96.4%
+Affected: 0%
 1210
-Affected: 96.4%
+Affected: 0%
 1211
-Affected: 96.4%
+Affected: 0%
 1212
-Affected: 96.5%
+Affected: 0%
 1213
-Affected: 96.5%
+Affected: 0%
 1214
-Affected: 96.5%
+Affected: 0%
 1215
-Affected: 96.6%
+Affected: 0%
 1216
-Affected: 96.6%
+Affected: 0%
 1217
-Affected: 96.6%
+Affected: 0%
 1218
-Affected: 96.6%
+Affected: 0%
 1219
-Affected: 96.6%
+Affected: 0%
 1220
-Affected: 96.6%
+Affected: 0%
 1221
-Affected: 96.6%
+Affected: 0%
 1222
-Affected: 96.6%
+Affected: 0%
 1223
-Affected: 96.6%
+Affected: 0%
 1224
-Affected: 96.6%
+Affected: 0%
 1225
-Affected: 96.6%
+Affected: 0%
 1226
-Affected: 96.6%
+Affected: 0%
 1227
-Affected: 96.6%
+Affected: 0%
 1228
-Affected: 96.7%
+Affected: 0%
 1229
-Affected: 96.7%
+Affected: 0%
 1230
-Affected: 96.7%
+Affected: 0%
 1231
-Affected: 96.7%
+Affected: 0%
 1232
-Affected: 96.7%
+Affected: 0%
 1233
-Affected: 96.7%
+Affected: 0%
 1234
-Affected: 96.7%
+Affected: 0%
 1235
-Affected: 96.8%
+Affected: 0%
 1236
-Affected: 96.8%
+Affected: 0%
 1237
-Affected: 96.8%
+Affected: 0%
 1238
-Affected: 96.8%
+Affected: 0%
 1239
-Affected: 97%
+Affected: 0%
 1240
-Affected: 97%
+Affected: 0%
 1241
-Affected: 97%
+Affected: 0%
 1242
-Affected: 97%
+Affected: 0%
 1243
-Affected: 97%
+Affected: 0%
 1244
-Affected: 97%
+Affected: 0%
 1245
-Affected: 97%
+Affected: 0%
 1246
-Affected: 97.1%
+Affected: 0%
 1247
-Affected: 97.1%
+Affected: 0%
 1248
-Affected: 97.2%
+Affected: 0%
 1249
-Affected: 97.2%
+Affected: 0%
 1250
-Affected: 97.2%
+Affected: 0%
 1251
-Affected: 97.2%
+Affected: 0%
 1252
-Affected: 97.2%
+Affected: 0%
 1253
-Affected: 97.2%
+Affected: 0%
 1254
-Affected: 97.2%
+Affected: 0%
 1255
-Affected: 97.2%
+Affected: 0%
 1256
-Affected: 97.2%
+Affected: 0%
 1257
-Affected: 97.2%
+Affected: 0%
 1258
-Affected: 97.2%
+Affected: 0%
 1259
-Affected: 97.2%
+Affected: 0%
 1260
-Affected: 97.2%
+Affected: 0%
 1261
-Affected: 97.3%
+Affected: 0%
 1262
-Affected: 97.3%
+Affected: 0%
 1263
-Affected: 97.3%
+Affected: 0%
 1264
-Affected: 97.3%
+Affected: 0%
 1265
-Affected: 97.3%
+Affected: 0%
 1266
-Affected: 97.3%
+Affected: 0%
 1267
-Affected: 97.3%
+Affected: 0%
 1268
-Affected: 97.3%
+Affected: 0%
 1269
-Affected: 97.3%
+Affected: 0%
 1270
-Affected: 97.3%
+Affected: 0%
 1271
-Affected: 97.3%
+Affected: 0%
 1272
-Affected: 97.3%
+Affected: 0%
 1273
-Affected: 97.3%
+Affected: 0%
 1274
-Affected: 97.3%
+Affected: 0%
 1275
-Affected: 97.3%
+Affected: 0%
 1276
-Affected: 97.3%
+Affected: 0%
 1277
-Affected: 97.3%
+Affected: 0%
 1278
-Affected: 97.3%
+Affected: 0%
 1279
-Affected: 97.3%
+Affected: 0%
 1280
-Affected: 97.3%
+Affected: 0%
 1281
-Affected: 97.3%
+Affected: 0%
 1282
-Affected: 97.3%
+Affected: 0%
 1283
-Affected: 97.3%
+Affected: 0%
 1284
-Affected: 97.3%
+Affected: 0%
 1285
-Affected: 97.4%
+Affected: 0%
 1286
-Affected: 97.4%
+Affected: 0%
 1287
-Affected: 97.4%
+Affected: 0%
 1288
-Affected: 97.4%
+Affected: 0%
 1289
-Affected: 97.4%
+Affected: 0%
 1290
-Affected: 97.4%
+Affected: 0%
 1291
-Affected: 97.4%
+Affected: 0%
 1292
-Affected: 97.4%
+Affected: 0%
 1293
-Affected: 97.4%
+Affected: 0%
 1294
-Affected: 97.4%
+Affected: 0%
 1295
-Affected: 97.4%
+Affected: 0%
 1296
-Affected: 97.4%
+Affected: 0%
 1297
-Affected: 97.4%
+Affected: 0%
 1298
-Affected: 97.4%
+Affected: 0%
 1299
-Affected: 97.5%
+Affected: 0%
 1300
-Affected: 97.5%
+Affected: 0%
 1301
-Affected: 97.5%
+Affected: 0%
 1302
-Affected: 97.5%
+Affected: 0%
 1303
-Affected: 97.5%
+Affected: 0%
 1304
-Affected: 97.5%
+Affected: 0%
 1305
-Affected: 97.5%
+Affected: 0%
 1306
-Affected: 97.5%
+Affected: 0%
 1307
-Affected: 97.5%
+Affected: 0%
 1308
-Affected: 97.5%
+Affected: 0%
 1309
-Affected: 97.5%
+Affected: 0%
 1310
-Affected: 97.5%
+Affected: 0%
 1311
-Affected: 97.5%
+Affected: 0%
 1312
-Affected: 97.5%
+Affected: 0%
 1313
-Affected: 97.5%
+Affected: 0%
 1314
-Affected: 97.5%
+Affected: 0%
 1315
-Affected: 97.5%
+Affected: 0%
 1316
-Affected: 97.5%
+Affected: 0%
 1317
-Affected: 97.5%
+Affected: 0%
 1318
-Affected: 97.5%
+Affected: 0%
 1319
-Affected: 97.5%
+Affected: 0%
 1320
-Affected: 97.5%
+Affected: 0%
 1321
-Affected: 97.5%
+Affected: 0%
 1322
-Affected: 97.5%
+Affected: 0%
 1323
-Affected: 97.5%
+Affected: 0%
 1324
-Affected: 97.5%
+Affected: 0%
 1325
-Affected: 97.5%
+Affected: 0%
 1326
-Affected: 97.5%
+Affected: 0%
 1327
-Affected: 97.5%
+Affected: 0%
 1328
-Affected: 97.5%
+Affected: 0%
 1329
-Affected: 97.5%
+Affected: 0%
 1330
-Affected: 97.5%
+Affected: 0%
 1331
-Affected: 97.5%
+Affected: 0%
 1332
-Affected: 97.5%
+Affected: 0%
 1333
-Affected: 97.5%
+Affected: 0%
 1334
-Affected: 97.5%
+Affected: 0%
 1335
-Affected: 97.5%
+Affected: 0%
 1336
-Affected: 97.5%
+Affected: 0%
 1337
-Affected: 97.5%
+Affected: 0%
 1338
-Affected: 97.5%
+Affected: 0%
 1339
-Affected: 97.5%
+Affected: 0%
 1340
-Affected: 97.5%
+Affected: 0%
 1341
-Affected: 97.5%
+Affected: 0%
 1342
-Affected: 97.5%
+Affected: 0%
 1343
-Affected: 97.5%
+Affected: 0%
 1344
-Affected: 97.5%
+Affected: 0%
 1345
-Affected: 97.5%
+Affected: 0%
 1346
-Affected: 97.6%
+Affected: 0%
 1347
-Affected: 97.6%
+Affected: 0%
 1348
-Affected: 97.6%
+Affected: 0%
 1349
-Affected: 97.6%
+Affected: 0%
 1350
-Affected: 97.6%
+Affected: 0%
 1351
-Affected: 97.7%
+Affected: 0%
 1352
-Affected: 97.7%
+Affected: 0%
 1353
-Affected: 97.7%
+Affected: 0%
 1354
-Affected: 97.7%
+Affected: 0%
 1355
-Affected: 97.7%
+Affected: 0%
 1356
-Affected: 97.7%
+Affected: 0%
 1357
-Affected: 97.7%
+Affected: 0%
 1358
-Affected: 97.7%
+Affected: 0%
 1359
-Affected: 97.8%
+Affected: 0%
 1360
-Affected: 97.8%
+Affected: 0%
 1361
-Affected: 97.8%
+Affected: 0%
 1362
-Affected: 97.8%
+Affected: 0%
 1363
-Affected: 97.8%
+Affected: 0%
 1364
-Affected: 97.8%
+Affected: 0%
 1365
-Affected: 97.8%
+Affected: 0%
 1366
-Affected: 97.8%
+Affected: 0%
 1367
-Affected: 97.8%
+Affected: 0%
 1368
-Affected: 97.9%
+Affected: 0%
 1369
-Affected: 97.9%
+Affected: 0%
 1370
-Affected: 97.9%
+Affected: 0%
 1371
-Affected: 97.9%
+Affected: 0%
 1372
-Affected: 97.9%
+Affected: 0%
 1373
-Affected: 97.9%
+Affected: 0%
 1374
-Affected: 97.9%
+Affected: 0%
 1375
-Affected: 97.9%
+Affected: 0%
 1376
-Affected: 97.9%
+Affected: 0%
 1377
-Affected: 97.9%
+Affected: 0%
 1378
-Affected: 97.9%
+Affected: 0%
 1379
-Affected: 97.9%
+Affected: 0%
 1380
-Affected: 97.9%
+Affected: 0%
 1381
-Affected: 97.9%
+Affected: 0%
 1382
-Affected: 97.9%
+Affected: 0%
 1383
-Affected: 97.9%
+Affected: 0%
 1384
-Affected: 97.9%
+Affected: 0%
 1385
-Affected: 98%
+Affected: 0%
 1386
-Affected: 98%
+Affected: 0%
 1387
-Affected: 98%
+Affected: 0%
 1388
-Affected: 98%
+Affected: 0%
 1389
-Affected: 98%
+Affected: 0%
 1390
-Affected: 98%
+Affected: 0%
 1391
-Affected: 98%
+Affected: 0%
 1392
-Affected: 98%
+Affected: 0%
 1393
-Affected: 98%
+Affected: 0%
 1394
-Affected: 98%
+Affected: 0%
 1395
-Affected: 98%
+Affected: 0%
 1396
-Affected: 98%
+Affected: 0%
 1397
-Affected: 98%
+Affected: 0%
 1398
-Affected: 98%
+Affected: 0%
 1399
-Affected: 98%
+Affected: 0%
 1400
-Affected: 98%
+Affected: 0%
 1401
-Affected: 98%
+Affected: 0%
 1402
-Affected: 98%
+Affected: 0%
 1403
-Affected: 98%
+Affected: 0%
 1404
-Affected: 98%
+Affected: 0%
 1405
-Affected: 98%
+Affected: 0%
 1406
-Affected: 98%
+Affected: 0%
 1407
-Affected: 98%
+Affected: 0%
 1408
-Affected: 98%
+Affected: 0%
 1409
-Affected: 98%
+Affected: 0%
 1410
-Affected: 98%
+Affected: 0%
 1411
-Affected: 98%
+Affected: 0%
 1412
-Affected: 98%
+Affected: 0%
 1413
-Affected: 98%
+Affected: 0%
 1414
-Affected: 98.1%
+Affected: 0%
 1415
-Affected: 98.1%
+Affected: 0%
 1416
-Affected: 98.1%
+Affected: 0%
 1417
-Affected: 98.1%
+Affected: 0%
 1418
-Affected: 98.1%
+Affected: 0%
 1419
-Affected: 98.2%
+Affected: 0%
 1420
-Affected: 98.2%
+Affected: 0%
 1421
-Affected: 98.2%
+Affected: 0%
 1422
-Affected: 98.2%
+Affected: 0%
 1423
-Affected: 98.3%
+Affected: 0%
 1424
-Affected: 98.3%
+Affected: 0%
 1425
-Affected: 98.3%
+Affected: 0%
 1426
-Affected: 98.3%
+Affected: 0%
 1427
-Affected: 98.3%
+Affected: 0%
 1428
-Affected: 98.3%
+Affected: 0%
 1429
-Affected: 98.3%
+Affected: 0%
 1430
-Affected: 98.3%
+Affected: 0%
 1431
-Affected: 98.3%
+Affected: 0%
 1432
-Affected: 98.3%
+Affected: 0%
 1433
-Affected: 98.3%
+Affected: 0%
 1434
-Affected: 98.3%
+Affected: 0%
 1435
-Affected: 98.4%
+Affected: 0%
 1436
-Affected: 98.4%
+Affected: 0%
 1437
-Affected: 98.4%
+Affected: 0%
 1438
-Affected: 98.4%
+Affected: 0%
 1439
-Affected: 98.4%
+Affected: 0%
 1440
-Affected: 98.4%
+Affected: 0%
 1441
-Affected: 98.4%
+Affected: 0%
 1442
-Affected: 98.4%
+Affected: 0%
 1443
-Affected: 98.4%
+Affected: 0%
 1444
-Affected: 98.4%
+Affected: 0%
 1445
-Affected: 98.4%
+Affected: 0%
 1446
-Affected: 98.4%
+Affected: 0%
 1447
-Affected: 98.4%
+Affected: 0%
 1448
-Affected: 98.4%
+Affected: 0%
 1449
-Affected: 98.4%
+Affected: 0%
 1450
-Affected: 98.4%
+Affected: 0%
 1451
-Affected: 98.4%
+Affected: 0%
 1452
-Affected: 98.4%
+Affected: 0%
 1453
-Affected: 98.4%
+Affected: 0%
 1454
-Affected: 98.4%
+Affected: 0%
 1455
-Affected: 98.4%
+Affected: 0%
 1456
-Affected: 98.4%
+Affected: 0%
 1457
-Affected: 98.4%
+Affected: 0%
 1458
-Affected: 98.4%
+Affected: 0%
 1459
-Affected: 98.4%
+Affected: 0%
 1460
-Affected: 98.4%
+Affected: 0%
 1461
-Affected: 98.4%
+Affected: 0%
 1462
-Affected: 98.4%
+Affected: 0%
 1463
-Affected: 98.4%
+Affected: 0%
 1464
-Affected: 98.4%
+Affected: 0%
 1465
-Affected: 98.4%
+Affected: 0%
 1466
-Affected: 98.4%
+Affected: 0%
 1467
-Affected: 98.4%
+Affected: 0%
 1468
-Affected: 98.4%
+Affected: 0%
 1469
-Affected: 98.4%
+Affected: 0%
 1470
-Affected: 98.4%
+Affected: 0%
 1471
-Affected: 98.4%
+Affected: 0%
 1472
-Affected: 98.4%
+Affected: 0%
 1473
-Affected: 98.4%
+Affected: 0%
 1474
-Affected: 98.4%
+Affected: 0%
 1475
-Affected: 98.4%
+Affected: 0%
 1476
-Affected: 98.4%
+Affected: 0%
 1477
-Affected: 98.4%
+Affected: 0%
 1478
-Affected: 98.4%
+Affected: 0%
 1479
-Affected: 98.4%
+Affected: 0%
 1480
-Affected: 98.4%
+Affected: 0%
 1481
-Affected: 98.4%
+Affected: 0%
 1482
-Affected: 98.4%
+Affected: 0%
 1483
-Affected: 98.4%
+Affected: 0%
 1484
-Affected: 98.4%
+Affected: 0%
 1485
-Affected: 98.4%
+Affected: 0%
 1486
-Affected: 98.4%
+Affected: 0%
 1487
-Affected: 98.5%
+Affected: 0%
 1488
-Affected: 98.5%
+Affected: 0%
 1489
-Affected: 98.5%
+Affected: 0%
 1490
-Affected: 98.5%
+Affected: 0%
 1491
-Affected: 98.5%
+Affected: 0%
 1492
-Affected: 98.5%
+Affected: 0%
 1493
-Affected: 98.5%
+Affected: 0%
 1494
-Affected: 98.5%
+Affected: 0%
 1495
-Affected: 98.5%
+Affected: 0%
 1496
-Affected: 98.5%
+Affected: 0%
 1497
-Affected: 98.5%
+Affected: 0%
 1498
-Affected: 98.5%
+Affected: 0%
 1499
-Affected: 98.5%
+Affected: 0%
 1500
-Affected: 98.5%
+Affected: 0%
 1501
-Affected: 98.5%
+Affected: 0%
 1502
-Affected: 98.5%
+Affected: 0%
 1503
-Affected: 98.5%
+Affected: 0%
 1504
-Affected: 98.5%
+Affected: 0%
 1505
-Affected: 98.5%
+Affected: 0%
 1506
-Affected: 98.5%
+Affected: 0%
 1507
-Affected: 98.5%
+Affected: 0%
 1508
-Affected: 98.5%
+Affected: 0%
 1509
-Affected: 98.5%
+Affected: 0%
 1510
-Affected: 98.5%
+Affected: 0%
 1511
-Affected: 98.5%
+Affected: 0%
 1512
-Affected: 98.5%
+Affected: 0%
 1513
-Affected: 98.5%
+Affected: 0%
 1514
-Affected: 98.5%
+Affected: 0%
 1515
-Affected: 98.5%
+Affected: 0%
 1516
-Affected: 98.5%
+Affected: 0%
 1517
-Affected: 98.5%
+Affected: 0%
 1518
-Affected: 98.5%
+Affected: 0%
 1519
-Affected: 98.5%
+Affected: 0%
 1520
-Affected: 98.5%
+Affected: 0%
 1521
-Affected: 98.5%
+Affected: 0%
 1522
-Affected: 98.5%
+Affected: 0%
 1523
-Affected: 98.5%
+Affected: 0%
 1524
-Affected: 98.5%
+Affected: 0%
 1525
-Affected: 98.5%
+Affected: 0%
 1526
-Affected: 98.5%
+Affected: 0%
 1527
-Affected: 98.5%
+Affected: 0%
 1528
-Affected: 98.5%
+Affected: 0%
 1529
-Affected: 98.5%
+Affected: 0%
 1530
-Affected: 98.5%
+Affected: 0%
 1531
-Affected: 98.5%
+Affected: 0%
 1532
-Affected: 98.5%
+Affected: 0%
 1533
-Affected: 98.5%
+Affected: 0%
 1534
-Affected: 98.5%
+Affected: 0%
 1535
-Affected: 98.5%
+Affected: 0%
 1536
-Affected: 98.5%
+Affected: 0%
 1537
-Affected: 98.5%
+Affected: 0%
 1538
-Affected: 98.5%
+Affected: 0%
 1539
-Affected: 98.5%
+Affected: 0%
 1540
-Affected: 98.5%
+Affected: 0%
 1541
-Affected: 98.6%
+Affected: 0%
 1542
-Affected: 98.6%
+Affected: 0%
 1543
-Affected: 98.6%
+Affected: 0%
 1544
-Affected: 98.6%
+Affected: 0%
 1545
-Affected: 98.6%
+Affected: 0%
 1546
-Affected: 98.6%
+Affected: 0%
 1547
-Affected: 98.6%
+Affected: 0%
 1548
-Affected: 98.6%
+Affected: 0%
 1549
-Affected: 98.6%
+Affected: 0%
 1550
-Affected: 98.7%
+Affected: 0%
 1551
-Affected: 98.7%
+Affected: 0%
 1552
-Affected: 98.7%
+Affected: 0%
 1553
-Affected: 98.7%
+Affected: 0%
 1554
-Affected: 98.7%
+Affected: 0%
 1555
-Affected: 98.7%
+Affected: 0%
 1556
-Affected: 98.7%
+Affected: 0%
 1557
-Affected: 98.7%
+Affected: 0%
 1558
-Affected: 98.7%
+Affected: 0%
 1559
-Affected: 98.7%
+Affected: 0%
 1560
-Affected: 98.7%
+Affected: 0%
 1561
-Affected: 98.7%
+Affected: 0%
 1562
-Affected: 98.7%
+Affected: 0%
 1563
-Affected: 98.7%
+Affected: 0%
 1564
-Affected: 98.7%
+Affected: 0%
 1565
-Affected: 98.7%
+Affected: 0%
 1566
-Affected: 98.7%
+Affected: 0%
 1567
-Affected: 98.7%
+Affected: 0%
 1568
-Affected: 98.7%
+Affected: 0%
 1569
-Affected: 98.7%
+Affected: 0%
 1570
-Affected: 98.7%
+Affected: 0%
 1571
-Affected: 98.7%
+Affected: 0%
 1572
-Affected: 98.7%
+Affected: 0%
 1573
-Affected: 98.7%
+Affected: 0%
 1574
-Affected: 98.7%
+Affected: 0%
 1575
-Affected: 98.7%
+Affected: 0%
 1576
-Affected: 98.7%
+Affected: 0%
 1577
-Affected: 98.7%
+Affected: 0%
 1578
-Affected: 98.7%
+Affected: 0%
 1579
-Affected: 98.7%
+Affected: 0%
 1580
-Affected: 98.7%
+Affected: 0%
 1581
-Affected: 98.7%
+Affected: 0%
 1582
-Affected: 98.7%
+Affected: 0%
 1583
-Affected: 98.7%
+Affected: 0%
 1584
-Affected: 98.7%
+Affected: 0%
 1585
-Affected: 98.7%
+Affected: 0%
 1586
-Affected: 98.7%
+Affected: 0%
 1587
-Affected: 98.7%
+Affected: 0%
 1588
-Affected: 98.7%
+Affected: 0%
 1589
-Affected: 98.7%
+Affected: 0%
 1590
-Affected: 98.7%
+Affected: 0%
 1591
-Affected: 98.7%
+Affected: 0%
 1592
-Affected: 98.7%
+Affected: 0%
 1593
-Affected: 98.7%
+Affected: 0%
 1594
-Affected: 98.7%
+Affected: 0%
 1595
-Affected: 98.7%
+Affected: 0%
 1596
-Affected: 98.7%
+Affected: 0%
 1597
-Affected: 98.7%
+Affected: 0%
 1598
-Affected: 98.7%
+Affected: 0%
 1599
-Affected: 98.7%
+Affected: 0%
 1600
-Affected: 98.7%
+Affected: 0%
 1601
-Affected: 98.7%
+Affected: 0%
 1602
-Affected: 98.7%
+Affected: 0%
 1603
-Affected: 98.7%
+Affected: 0%
 1604
-Affected: 98.7%
+Affected: 0%
 1605
-Affected: 98.7%
+Affected: 0%
 1606
-Affected: 98.7%
+Affected: 0%
 1607
-Affected: 98.7%
+Affected: 0%
 1608
-Affected: 98.7%
+Affected: 0%
 1609
-Affected: 98.7%
+Affected: 0%
 1610
-Affected: 98.7%
+Affected: 0%
 1611
-Affected: 98.7%
+Affected: 0%
 1612
-Affected: 98.7%
+Affected: 0%
 1613
-Affected: 98.7%
+Affected: 0%
 1614
-Affected: 98.7%
+Affected: 0%
 1615
-Affected: 98.7%
+Affected: 0%
 1616
-Affected: 98.7%
+Affected: 0%
 1617
-Affected: 98.7%
+Affected: 0%
 1618
-Affected: 98.7%
+Affected: 0%
 1619
-Affected: 98.7%
+Affected: 0%
 1620
-Affected: 98.7%
+Affected: 0%
 1621
-Affected: 98.7%
+Affected: 0%
 1622
-Affected: 98.7%
+Affected: 0%
 1623
-Affected: 98.7%
+Affected: 0%
 1624
-Affected: 98.7%
+Affected: 0%
 1625
-Affected: 98.7%
+Affected: 0%
 1626
-Affected: 98.7%
+Affected: 0%
 1627
-Affected: 98.7%
+Affected: 0%
 1628
-Affected: 98.8%
+Affected: 0%
 1629
-Affected: 98.8%
+Affected: 0%
 1630
-Affected: 98.8%
+Affected: 0%
 1631
-Affected: 98.8%
+Affected: 0%
 1632
-Affected: 98.8%
+Affected: 0%
 1633
-Affected: 98.8%
+Affected: 0%
 1634
-Affected: 98.8%
+Affected: 0%
 1635
-Affected: 98.8%
+Affected: 0%
 1636
-Affected: 98.8%
+Affected: 0%
 1637
-Affected: 98.8%
+Affected: 0%
 1638
-Affected: 98.8%
+Affected: 0%
 1639
-Affected: 98.8%
+Affected: 0%
 1640
-Affected: 98.8%
+Affected: 0%
 1641
-Affected: 98.8%
+Affected: 0%
 1642
-Affected: 98.8%
+Affected: 0%
 1643
-Affected: 98.8%
+Affected: 0%
 1644
-Affected: 98.8%
+Affected: 0%
 1645
-Affected: 98.8%
+Affected: 0%
 1646
-Affected: 98.8%
+Affected: 0%
 1647
-Affected: 98.8%
+Affected: 0%
 1648
-Affected: 98.8%
+Affected: 0%
 1649
-Affected: 98.8%
+Affected: 0%
 1650
-Affected: 98.8%
+Affected: 0%
 1651
-Affected: 98.8%
+Affected: 0%
 1652
-Affected: 98.8%
+Affected: 0%
 1653
-Affected: 98.8%
+Affected: 0%
 1654
-Affected: 98.8%
+Affected: 0%
 1655
-Affected: 98.8%
+Affected: 0%
 1656
-Affected: 98.8%
+Affected: 0%
 1657
-Affected: 98.8%
+Affected: 0%
 1658
-Affected: 98.8%
+Affected: 0%
 1659
-Affected: 98.8%
+Affected: 0%
 1660
-Affected: 98.8%
+Affected: 0%
 1661
-Affected: 98.8%
+Affected: 0%
 1662
-Affected: 98.8%
+Affected: 0%
 1663
-Affected: 98.8%
+Affected: 0%
 1664
-Affected: 98.8%
+Affected: 0%
 1665
-Affected: 98.8%
+Affected: 0%
 1666
-Affected: 98.8%
+Affected: 0%
 1667
-Affected: 98.8%
+Affected: 0%
 1668
-Affected: 98.8%
+Affected: 0%
 1669
-Affected: 98.8%
+Affected: 0%
 1670
-Affected: 98.8%
+Affected: 0%
 1671
-Affected: 98.8%
+Affected: 0%
 1672
-Affected: 98.8%
+Affected: 0%
 1673
-Affected: 98.8%
+Affected: 0%
 1674
-Affected: 98.8%
+Affected: 0%
 1675
-Affected: 98.8%
+Affected: 0%
 1676
-Affected: 98.8%
+Affected: 0%
 1677
-Affected: 98.8%
+Affected: 0%
 1678
-Affected: 98.8%
+Affected: 0%
 1679
-Affected: 98.8%
+Affected: 0%
 1680
-Affected: 98.8%
+Affected: 0%
 1681
-Affected: 98.8%
+Affected: 0%
 1682
-Affected: 98.8%
+Affected: 0%
 1683
-Affected: 98.8%
+Affected: 0%
 1684
-Affected: 98.8%
+Affected: 0%
 1685
-Affected: 98.8%
+Affected: 0%
 1686
-Affected: 98.8%
+Affected: 0%
 1687
-Affected: 98.8%
+Affected: 0%
 1688
-Affected: 98.8%
+Affected: 0%
 1689
-Affected: 98.8%
+Affected: 0%
 1690
-Affected: 98.8%
+Affected: 0%
 1691
-Affected: 98.8%
+Affected: 0%
 1692
-Affected: 98.8%
+Affected: 0%
 1693
-Affected: 98.8%
+Affected: 0%
 1694
-Affected: 98.8%
+Affected: 0%
 1695
-Affected: 98.8%
+Affected: 0%
 1696
-Affected: 98.8%
+Affected: 0%
 1697
-Affected: 98.8%
+Affected: 0%
 1698
-Affected: 98.8%
+Affected: 0%
 1699
-Affected: 98.9%
+Affected: 0%
 1700
-Affected: 98.9%
+Affected: 0%
 1701
-Affected: 98.9%
+Affected: 0%
 1702
-Affected: 98.9%
+Affected: 0%
 1703
-Affected: 98.9%
+Affected: 0%
 1704
-Affected: 98.9%
+Affected: 0%
 1705
-Affected: 98.9%
+Affected: 0%
 1706
-Affected: 98.9%
+Affected: 0%
 1707
-Affected: 98.9%
+Affected: 0%
 1708
-Affected: 98.9%
+Affected: 0%
 1709
-Affected: 98.9%
+Affected: 0%
 1710
-Affected: 98.9%
+Affected: 0%
 1711
-Affected: 98.9%
+Affected: 0%
 1712
-Affected: 98.9%
+Affected: 0%
 1713
-Affected: 98.9%
+Affected: 0%
 1714
-Affected: 98.9%
+Affected: 0%
 1715
-Affected: 98.9%
+Affected: 0%
 1716
-Affected: 98.9%
+Affected: 0%
 1717
-Affected: 98.9%
+Affected: 0%
 1718
-Affected: 98.9%
+Affected: 0%
 1719
-Affected: 98.9%
+Affected: 0%
 1720
-Affected: 98.9%
+Affected: 0%
 1721
-Affected: 98.9%
+Affected: 0%
 1722
-Affected: 98.9%
+Affected: 0%
 1723
-Affected: 98.9%
+Affected: 0%
 1724
-Affected: 98.9%
+Affected: 0%
 1725
-Affected: 98.9%
+Affected: 0%
 1726
-Affected: 98.9%
+Affected: 0%
 1727
-Affected: 98.9%
+Affected: 0%
 1728
-Affected: 98.9%
+Affected: 0%
 1729
-Affected: 98.9%
+Affected: 0%
 1730
-Affected: 98.9%
+Affected: 0%
 1731
-Affected: 98.9%
+Affected: 0%
 1732
-Affected: 98.9%
+Affected: 0%
 1733
-Affected: 98.9%
+Affected: 0%
 1734
-Affected: 98.9%
+Affected: 0%
 1735
-Affected: 98.9%
+Affected: 0%
 1736
-Affected: 98.9%
+Affected: 0%
 1737
-Affected: 98.9%
+Affected: 0%
 1738
-Affected: 98.9%
+Affected: 0%
 1739
-Affected: 98.9%
+Affected: 0%
 1740
-Affected: 98.9%
+Affected: 0%
 1741
-Affected: 98.9%
+Affected: 0%
 1742
-Affected: 98.9%
+Affected: 0%
 1743
-Affected: 98.9%
+Affected: 0%
 1744
-Affected: 98.9%
+Affected: 0%
 1745
-Affected: 98.9%
+Affected: 0%
 1746
-Affected: 98.9%
+Affected: 0%
 1747
-Affected: 98.9%
+Affected: 0%
 1748
-Affected: 98.9%
+Affected: 0%
 1749
-Affected: 98.9%
+Affected: 0%
 1750
-Affected: 98.9%
+Affected: 0%
 1751
-Affected: 98.9%
+Affected: 0%
 1752
-Affected: 98.9%
+Affected: 0%
 1753
-Affected: 98.9%
+Affected: 0%
 1754
-Affected: 98.9%
+Affected: 0%
 1755
-Affected: 98.9%
+Affected: 0%
 1756
-Affected: 98.9%
+Affected: 0%
 1757
-Affected: 98.9%
+Affected: 0%
 1758
-Affected: 98.9%
+Affected: 0%
 1759
-Affected: 98.9%
+Affected: 0%
 1760
-Affected: 98.9%
+Affected: 0%
 1761
-Affected: 98.9%
+Affected: 0%
 1762
-Affected: 98.9%
+Affected: 0%
 1763
-Affected: 98.9%
+Affected: 0%
 1764
-Affected: 98.9%
+Affected: 0%
 1765
-Affected: 98.9%
+Affected: 0%
 1766
-Affected: 98.9%
+Affected: 0%
 1767
-Affected: 98.9%
+Affected: 0%
 1768
-Affected: 98.9%
+Affected: 0%
 1769
-Affected: 98.9%
+Affected: 0%
 1770
-Affected: 98.9%
+Affected: 0%
 1771
-Affected: 98.9%
+Affected: 0%
 1772
-Affected: 98.9%
+Affected: 0%
 1773
-Affected: 98.9%
+Affected: 0%
 1774
-Affected: 98.9%
+Affected: 0%
 1775
-Affected: 98.9%
+Affected: 0%
 1776
-Affected: 98.9%
+Affected: 0%
 1777
-Affected: 98.9%
+Affected: 0%
 1778
-Affected: 98.9%
+Affected: 0%
 1779
-Affected: 98.9%
+Affected: 0%
 1780
-Affected: 98.9%
+Affected: 0%
 1781
-Affected: 99%
+Affected: 0%
 1782
-Affected: 99%
+Affected: 0%
 1783
-Affected: 99%
+Affected: 0%
 1784
-Affected: 99%
+Affected: 0%
 1785
-Affected: 99%
+Affected: 0%
 1786
-Affected: 99%
+Affected: 0%
 1787
-Affected: 99%
+Affected: 0%
 1788
-Affected: 99%
+Affected: 0%
 1789
-Affected: 99%
+Affected: 0%
 1790
-Affected: 99%
+Affected: 0%
 1791
-Affected: 99%
+Affected: 0%
 1792
-Affected: 99%
+Affected: 0%
 1793
-Affected: 99%
+Affected: 0%
 1794
-Affected: 99%
+Affected: 0%
 1795
-Affected: 99%
+Affected: 0%
 1796
-Affected: 99%
+Affected: 0%
 1797
-Affected: 99%
+Affected: 0%
 1798
-Affected: 99%
+Affected: 0%
 1799
-Affected: 99%
+Affected: 0%
 1800
-Affected: 99%
+Affected: 0%
 1801
-Affected: 99%
+Affected: 0%
 1802
-Affected: 99%
+Affected: 0%
 1803
-Affected: 99%
+Affected: 0%
 1804
-Affected: 99%
+Affected: 0%
 1805
-Affected: 99%
+Affected: 0%
 1806
-Affected: 99%
+Affected: 0%
 1807
-Affected: 99%
+Affected: 0%
 1808
-Affected: 99%
+Affected: 0%
 1809
-Affected: 99%
+Affected: 0%
 1810
-Affected: 99%
+Affected: 0%
 1811
-Affected: 99%
+Affected: 0%
 1812
-Affected: 99%
+Affected: 0%
 1813
-Affected: 99%
+Affected: 0%
 1814
-Affected: 99%
+Affected: 0%
 1815
-Affected: 99%
+Affected: 0%
 1816
-Affected: 99%
+Affected: 0%
 1817
-Affected: 99%
+Affected: 0%
 1818
-Affected: 99%
+Affected: 0%
 1819
-Affected: 99%
+Affected: 0%
 1820
-Affected: 99%
+Affected: 0%
 1821
-Affected: 99%
+Affected: 0%
 1822
-Affected: 99%
+Affected: 0%
 1823
-Affected: 99%
+Affected: 0%
 1824
-Affected: 99%
+Affected: 0%
 1825
-Affected: 99%
+Affected: 0%
 1826
-Affected: 99%
+Affected: 0%
 1827
-Affected: 99%
+Affected: 0%
 1828
-Affected: 99%
+Affected: 0%
 1829
-Affected: 99%
+Affected: 0%
 1830
-Affected: 99%
+Affected: 0%
 1831
-Affected: 99%
+Affected: 0%
 1832
-Affected: 99%
+Affected: 0%
 1833
-Affected: 99%
+Affected: 0%
 1834
-Affected: 99%
+Affected: 0%
 1835
-Affected: 99%
+Affected: 0%
 1836
-Affected: 99%
+Affected: 0%
 1837
-Affected: 99.1%
+Affected: 0%
 1838
-Affected: 99.1%
+Affected: 0%
 1839
-Affected: 99.1%
+Affected: 0%
 1840
-Affected: 99.1%
+Affected: 0%
 1841
-Affected: 99.1%
+Affected: 0%
 1842
-Affected: 99.1%
+Affected: 0%
 1843
-Affected: 99.1%
+Affected: 0%
 1844
-Affected: 99.1%
+Affected: 0%
 1845
-Affected: 99.1%
+Affected: 0%
 1846
-Affected: 99.1%
+Affected: 0%
 1847
-Affected: 99.1%
+Affected: 0%
 1848
-Affected: 99.1%
+Affected: 0%
 1849
-Affected: 99.1%
+Affected: 0%
 1850
-Affected: 99.1%
+Affected: 0%
 1851
-Affected: 99.1%
+Affected: 0%
 1852
-Affected: 99.1%
+Affected: 0%
 1853
-Affected: 99.1%
+Affected: 0%
 1854
-Affected: 99.1%
+Affected: 0%
 1855
-Affected: 99.1%
+Affected: 0%
 1856
-Affected: 99.1%
+Affected: 0%
 1857
-Affected: 99.1%
+Affected: 0%
 1858
-Affected: 99.1%
+Affected: 0%
 1859
-Affected: 99.1%
+Affected: 0%
 1860
-Affected: 99.1%
+Affected: 0%
 1861
-Affected: 99.1%
+Affected: 0%
 1862
-Affected: 99.1%
+Affected: 0%
 1863
-Affected: 99.1%
+Affected: 0%
 1864
-Affected: 99.1%
+Affected: 0%
 1865
-Affected: 99.1%
+Affected: 0%
 1866
-Affected: 99.1%
+Affected: 0%
 1867
-Affected: 99.1%
+Affected: 0%
 1868
-Affected: 99.1%
+Affected: 0%
 1869
-Affected: 99.1%
+Affected: 0%
 1870
-Affected: 99.1%
+Affected: 0%
 1871
-Affected: 99.1%
+Affected: 0%
 1872
-Affected: 99.1%
+Affected: 0%
 1873
-Affected: 99.1%
+Affected: 0%
 1874
-Affected: 99.1%
+Affected: 0%
 1875
-Affected: 99.1%
+Affected: 0%
 1876
-Affected: 99.1%
+Affected: 0%
 1877
-Affected: 99.1%
+Affected: 0%
 1878
-Affected: 99.1%
+Affected: 0%
 1879
-Affected: 99.1%
+Affected: 0%
 1880
-Affected: 99.1%
+Affected: 0%
 1881
-Affected: 99.1%
+Affected: 0%
 1882
-Affected: 99.1%
+Affected: 0%
 1883
-Affected: 99.1%
+Affected: 0%
 1884
-Affected: 99.1%
+Affected: 0%
 1885
-Affected: 99.1%
+Affected: 0%
 1886
-Affected: 99.1%
+Affected: 0%
 1887
-Affected: 99.1%
+Affected: 0%
 1888
-Affected: 99.1%
+Affected: 0%
 1889
-Affected: 99.1%
+Affected: 0%
 1890
-Affected: 99.1%
+Affected: 0%
 1891
-Affected: 99.1%
+Affected: 0%
 1892
-Affected: 99.1%
+Affected: 0%
 1893
-Affected: 99.1%
+Affected: 0%
 1894
-Affected: 99.1%
+Affected: 0%
 1895
-Affected: 99.1%
+Affected: 0%
 1896
-Affected: 99.1%
+Affected: 0%
 1897
-Affected: 99.1%
+Affected: 0%
 1898
-Affected: 99.1%
+Affected: 0%
 1899
-Affected: 99.1%
+Affected: 0%
 1900
-Affected: 99.1%
+Affected: 0%
 1901
-Affected: 99.1%
+Affected: 0%
 1902
-Affected: 99.1%
+Affected: 0%
 1903
-Affected: 99.1%
+Affected: 0%
 1904
-Affected: 99.1%
+Affected: 0%
 1905
-Affected: 99.1%
+Affected: 0%
 1906
-Affected: 99.1%
+Affected: 0%
 1907
-Affected: 99.1%
+Affected: 0%
 1908
-Affected: 99.1%
+Affected: 0%
 1909
-Affected: 99.1%
+Affected: 0%
 1910
-Affected: 99.1%
+Affected: 0%
 1911
-Affected: 99.1%
+Affected: 0%
 1912
-Affected: 99.1%
+Affected: 0%
 1913
-Affected: 99.1%
+Affected: 0%
 1914
-Affected: 99.1%
+Affected: 0%
 1915
-Affected: 99.1%
+Affected: 0%
 1916
-Affected: 99.1%
+Affected: 0%
 1917
-Affected: 99.1%
+Affected: 0%
 1918
-Affected: 99.1%
+Affected: 0%
 1919
-Affected: 99.1%
+Affected: 0%
 1920
-Affected: 99.1%
+Affected: 0%
 1921
-Affected: 99.1%
+Affected: 0%
 1922
-Affected: 99.1%
+Affected: 0%
 1923
-Affected: 99.1%
+Affected: 0%
 1924
-Affected: 99.1%
+Affected: 0%
 1925
-Affected: 99.1%
+Affected: 0%
 1926
-Affected: 99.1%
+Affected: 0%
 1927
-Affected: 99.1%
+Affected: 0%
 1928
-Affected: 99.1%
+Affected: 0%
 1929
-Affected: 99.1%
+Affected: 0%
 1930
-Affected: 99.1%
+Affected: 0%
 1931
-Affected: 99.1%
+Affected: 0%
 1932
-Affected: 99.1%
+Affected: 0%
 1933
-Affected: 99.1%
+Affected: 0%
 1934
-Affected: 99.1%
+Affected: 0%
 1935
-Affected: 99.2%
+Affected: 0%
 1936
-Affected: 99.2%
+Affected: 0%
 1937
-Affected: 99.2%
+Affected: 0%
 1938
-Affected: 99.2%
+Affected: 0%
 1939
-Affected: 99.2%
+Affected: 0%
 1940
-Affected: 99.2%
+Affected: 0%
 1941
-Affected: 99.2%
+Affected: 0%
 1942
-Affected: 99.2%
+Affected: 0%
 1943
-Affected: 99.2%
+Affected: 0%
 1944
-Affected: 99.2%
+Affected: 0%
 1945
-Affected: 99.2%
+Affected: 0%
 1946
-Affected: 99.2%
+Affected: 0%
 1947
-Affected: 99.2%
+Affected: 0%
 1948
-Affected: 99.2%
+Affected: 0%
 1949
-Affected: 99.2%
+Affected: 0%
 1950
-Affected: 99.2%
+Affected: 0%
 1951
-Affected: 99.2%
+Affected: 0%
 1952
-Affected: 99.2%
+Affected: 0%
 1953
-Affected: 99.2%
+Affected: 0%
 1954
-Affected: 99.2%
+Affected: 0%
 1955
-Affected: 99.2%
+Affected: 0%
 1956
-Affected: 99.2%
+Affected: 0%
 1957
-Affected: 99.2%
+Affected: 0%
 1958
-Affected: 99.2%
+Affected: 0%
 1959
-Affected: 99.2%
+Affected: 0%
 1960
-Affected: 99.2%
+Affected: 0%
 1961
-Affected: 99.2%
+Affected: 0%
 1962
-Affected: 99.2%
+Affected: 0%
 1963
-Affected: 99.2%
+Affected: 0%
 1964
-Affected: 99.2%
+Affected: 0%
 1965
-Affected: 99.2%
+Affected: 0%
 1966
-Affected: 99.2%
+Affected: 0%
 1967
-Affected: 99.2%
+Affected: 0%
 1968
-Affected: 99.2%
+Affected: 0%
 1969
-Affected: 99.2%
+Affected: 0%
 1970
-Affected: 99.2%
+Affected: 0%
 1971
-Affected: 99.2%
+Affected: 0%
 1972
-Affected: 99.2%
+Affected: 0%
 1973
-Affected: 99.2%
+Affected: 0%
 1974
-Affected: 99.2%
+Affected: 0%
 1975
-Affected: 99.2%
+Affected: 0%
 1976
-Affected: 99.2%
+Affected: 0%
 1977
-Affected: 99.2%
+Affected: 0%
 1978
-Affected: 99.2%
+Affected: 0%
 1979
-Affected: 99.2%
+Affected: 0%
 1980
-Affected: 99.2%
+Affected: 0%
 1981
-Affected: 99.2%
+Affected: 0%
 1982
-Affected: 99.2%
+Affected: 0%
 1983
-Affected: 99.2%
+Affected: 0%
 1984
-Affected: 99.2%
+Affected: 0%
 1985
-Affected: 99.2%
+Affected: 0%
 1986
-Affected: 99.2%
+Affected: 0%
 1987
-Affected: 99.2%
+Affected: 0%
 1988
-Affected: 99.2%
+Affected: 0%
 1989
-Affected: 99.2%
+Affected: 0%
 1990
-Affected: 99.2%
+Affected: 0%
 1991
-Affected: 99.2%
+Affected: 0%
 1992
-Affected: 99.2%
+Affected: 0%
 1993
-Affected: 99.2%
+Affected: 0%
 1994
-Affected: 99.2%
+Affected: 0%
 1995
-Affected: 99.2%
+Affected: 0%
 1996
-Affected: 99.2%
+Affected: 0%
 1997
-Affected: 99.2%
+Affected: 0%
 1998
-Affected: 99.2%
+Affected: 0%
 1999
-Affected: 99.2%
+Affected: 0%
 2000
-Affected: 99.2%
+Affected: 0%
 2001
-Affected: 99.2%
+Affected: 0%
 2002
-Affected: 99.2%
+Affected: 0%
 2003
-Affected: 99.2%
+Affected: 0%
 2004
-Affected: 99.2%
+Affected: 0%
 2005
-Affected: 99.2%
+Affected: 0%
 2006
-Affected: 99.2%
+Affected: 0%
 2007
-Affected: 99.2%
+Affected: 0%
 2008
-Affected: 99.2%
+Affected: 0%
 2009
-Affected: 99.2%
+Affected: 0%
 2010
-Affected: 99.2%
+Affected: 0%
 2011
-Affected: 99.2%
+Affected: 0%
 2012
-Affected: 99.2%
+Affected: 0%
 2013
-Affected: 99.2%
+Affected: 0%
 2014
-Affected: 99.2%
+Affected: 0%
 2015
-Affected: 99.2%
+Affected: 0%
 2016
-Affected: 99.2%
+Affected: 0%
 2017
-Affected: 99.2%
+Affected: 0%
 2018
-Affected: 99.2%
+Affected: 0%
 2019
-Affected: 99.2%
+Affected: 0%
 2020
-Affected: 99.2%
+Affected: 0%
 2021
-Affected: 99.2%
+Affected: 0%
 2022
-Affected: 99.2%
+Affected: 0%
 2023
-Affected: 99.2%
+Affected: 0%
 2024
-Affected: 99.2%
+Affected: 0%
 2025
-Affected: 99.2%
+Affected: 0%
 2026
-Affected: 99.2%
+Affected: 0%
 2027
-Affected: 99.2%
+Affected: 0%
 2028
-Affected: 99.2%
+Affected: 0%
 2029
-Affected: 99.2%
+Affected: 0%
 2030
-Affected: 99.2%
+Affected: 0%
 2031
-Affected: 99.2%
+Affected: 0%
 2032
-Affected: 99.2%
+Affected: 0%
 2033
-Affected: 99.2%
+Affected: 0%
 2034
-Affected: 99.2%
+Affected: 0%
 2035
-Affected: 99.2%
+Affected: 0%
 2036
-Affected: 99.2%
+Affected: 0%
 2037
-Affected: 99.2%
+Affected: 0%
 2038
-Affected: 99.2%
+Affected: 0%
 2039
-Affected: 99.2%
+Affected: 0%
 2040
-Affected: 99.2%
+Affected: 0%
 2041
-Affected: 99.2%
+Affected: 0%
 2042
-Affected: 99.2%
+Affected: 0%
 2043
-Affected: 99.2%
+Affected: 0%
 2044
-Affected: 99.2%
+Affected: 0%
 2045
-Affected: 99.2%
+Affected: 0%
 2046
-Affected: 99.2%
+Affected: 0%
 2047
-Affected: 99.2%
+Affected: 0%
 2048
-Affected: 99.2%
+Affected: 0%
 2049
-Affected: 99.2%
+Affected: 0%
 2050
-Affected: 99.2%
+Affected: 0%
 2051
-Affected: 99.2%
+Affected: 0%
 2052
-Affected: 99.2%
+Affected: 0%
 2053
-Affected: 99.2%
+Affected: 0%
 2054
-Affected: 99.2%
+Affected: 0%
 2055
-Affected: 99.2%
+Affected: 0%
 2056
-Affected: 99.2%
+Affected: 0%
 2057
-Affected: 99.2%
+Affected: 0%
 2058
-Affected: 99.2%
+Affected: 0%
 2059
-Affected: 99.2%
+Affected: 0%
 2060
-Affected: 99.2%
+Affected: 0%
 2061
-Affected: 99.2%
+Affected: 0%
 2062
-Affected: 99.2%
+Affected: 0%
 2063
-Affected: 99.2%
+Affected: 0%
 2064
-Affected: 99.2%
+Affected: 0%
 2065
-Affected: 99.2%
+Affected: 0%
 2066
-Affected: 99.2%
+Affected: 0%
 2067
-Affected: 99.2%
+Affected: 0%
 2068
-Affected: 99.2%
+Affected: 0%
 2069
-Affected: 99.2%
+Affected: 0%
 2070
-Affected: 99.2%
+Affected: 0%
 2071
-Affected: 99.2%
+Affected: 0%
 2072
-Affected: 99.2%
+Affected: 0%
 2073
-Affected: 99.2%
+Affected: 0%
 2074
-Affected: 99.2%
+Affected: 0%
 2075
-Affected: 99.2%
+Affected: 0%
 2076
-Affected: 99.2%
+Affected: 0%
 2077
-Affected: 99.2%
+Affected: 0%
 2078
-Affected: 99.2%
+Affected: 0%
 2079
-Affected: 99.2%
+Affected: 0%
 2080
-Affected: 99.2%
+Affected: 0%
 2081
-Affected: 99.2%
+Affected: 0%
 2082
-Affected: 99.2%
+Affected: 0%
 2083
-Affected: 99.2%
+Affected: 0%
 2084
-Affected: 99.2%
+Affected: 0%
 2085
-Affected: 99.2%
+Affected: 0%
 2086
-Affected: 99.2%
+Affected: 0%
 2087
-Affected: 99.2%
+Affected: 0%
 2088
-Affected: 99.2%
+Affected: 0%
 2089
-Affected: 99.2%
+Affected: 0%
 2090
-Affected: 99.2%
+Affected: 0%
 2091
-Affected: 99.2%
+Affected: 0%
 2092
-Affected: 99.2%
+Affected: 0%
 2093
-Affected: 99.2%
+Affected: 0%
 2094
-Affected: 99.2%
+Affected: 0%
 2095
-Affected: 99.2%
+Affected: 0%
 2096
-Affected: 99.2%
+Affected: 0%
 2097
-Affected: 99.2%
+Affected: 0%
 2098
-Affected: 99.2%
+Affected: 0%
 2099
-Affected: 99.2%
+Affected: 0%
 2100
-Affected: 99.2%
+Affected: 0%
 2101
-Affected: 99.2%
+Affected: 0%
 2102
-Affected: 99.2%
+Affected: 0%
 2103
-Affected: 99.2%
+Affected: 0%
 2104
-Affected: 99.2%
+Affected: 0%
 2105
-Affected: 99.2%
+Affected: 0%
 2106
-Affected: 99.2%
+Affected: 0%
 2107
-Affected: 99.2%
+Affected: 0%
 2108
-Affected: 99.2%
+Affected: 0%
 2109
-Affected: 99.2%
+Affected: 0%
 2110
-Affected: 99.2%
+Affected: 0%
 2111
-Affected: 99.2%
+Affected: 0%
 2112
-Affected: 99.2%
+Affected: 0%
 2113
-Affected: 99.2%
+Affected: 0%
 2114
-Affected: 99.2%
+Affected: 0%
 2115
-Affected: 99.2%
+Affected: 0%
 2116
-Affected: 99.2%
+Affected: 0%
 2117
-Affected: 99.2%
+Affected: 0%
 2118
-Affected: 99.2%
+Affected: 0%
 2119
-Affected: 99.2%
+Affected: 0%
 2120
-Affected: 99.2%
+Affected: 0%
 2121
-Affected: 99.2%
+Affected: 0%
 2122
-Affected: 99.2%
+Affected: 0%
 2123
-Affected: 99.2%
+Affected: 0%
 2124
-Affected: 99.2%
+Affected: 0%
 2125
-Affected: 99.2%
+Affected: 0%
 2126
-Affected: 99.2%
+Affected: 0%
 2127
-Affected: 99.2%
+Affected: 0%
 2128
-Affected: 99.2%
+Affected: 0%
 2129
-Affected: 99.2%
+Affected: 0%
 2130
-Affected: 99.2%
+Affected: 0%
 2131
-Affected: 99.2%
+Affected: 0%
 2132
-Affected: 99.2%
+Affected: 0%
 2133
-Affected: 99.2%
+Affected: 0%
 2134
-Affected: 99.2%
+Affected: 0%
 2135
-Affected: 99.2%
+Affected: 0%
 2136
-Affected: 99.2%
+Affected: 0%
 2137
-Affected: 99.2%
+Affected: 0%
 2138
-Affected: 99.2%
+Affected: 0%
 2139
-Affected: 99.2%
+Affected: 0%
 2140
-Affected: 99.2%
+Affected: 0%
 2141
-Affected: 99.2%
+Affected: 0%
 2142
-Affected: 99.2%
+Affected: 0%
 2143
-Affected: 99.2%
+Affected: 0%
 2144
-Affected: 99.2%
+Affected: 0%
 2145
-Affected: 99.2%
+Affected: 0%
 2146
-Affected: 99.2%
+Affected: 0%
 2147
-Affected: 99.2%
+Affected: 0%
 2148
-Affected: 99.2%
+Affected: 0%
 2149
-Affected: 99.2%
+Affected: 0%
 2150
-Affected: 99.2%
+Affected: 0%
 2151
-Affected: 99.2%
+Affected: 0%
 2152
-Affected: 99.2%
+Affected: 0%
 2153
-Affected: 99.2%
+Affected: 0%
 2154
-Affected: 99.2%
+Affected: 0%
 2155
-Affected: 99.2%
+Affected: 0%
 2156
-Affected: 99.2%
+Affected: 0%
 2157
-Affected: 99.2%
+Affected: 0%
 2158
-Affected: 99.2%
+Affected: 0%
 2159
-Affected: 99.2%
+Affected: 0%
 2160
-Affected: 99.2%
+Affected: 0%
 2161
-Affected: 99.2%
+Affected: 0%
 2162
-Affected: 99.2%
+Affected: 0%
 2163
-Affected: 99.2%
+Affected: 0%
 2164
-Affected: 99.2%
+Affected: 0%
 2165
-Affected: 99.2%
+Affected: 0%
 2166
-Affected: 99.2%
+Affected: 0%
 2167
-Affected: 99.2%
+Affected: 0%
 2168
-Affected: 99.2%
+Affected: 0%
 2169
-Affected: 99.2%
+Affected: 0%
 2170
-Affected: 99.2%
+Affected: 0%
 2171
-Affected: 99.2%
+Affected: 0%
 2172
-Affected: 99.2%
+Affected: 0%
 2173
-Affected: 99.2%
+Affected: 0%
 2174
-Affected: 99.2%
+Affected: 0%
 2175
-Affected: 99.2%
+Affected: 0%
 2176
-Affected: 99.2%
+Affected: 0%
 2177
-Affected: 99.2%
+Affected: 0%
 2178
-Affected: 99.2%
+Affected: 0%
 2179
-Affected: 99.2%
+Affected: 0%
 2180
-Affected: 99.2%
+Affected: 0%
 2181
-Affected: 99.2%
+Affected: 0%
 2182
-Affected: 99.2%
+Affected: 0%
 2183
-Affected: 99.2%
+Affected: 0%
 2184
-Affected: 99.2%
+Affected: 0%
 2185
-Affected: 99.2%
+Affected: 0%
 2186
-Affected: 99.2%
+Affected: 0%
 2187
-Affected: 99.2%
+Affected: 0%
 2188
-Affected: 99.2%
+Affected: 0%
 2189
-Affected: 99.2%
+Affected: 0%
 2190
-Affected: 99.2%
+Affected: 0%
 2191
-Affected: 99.2%
+Affected: 0%
 2192
-Affected: 99.2%
+Affected: 0%
 2193
-Affected: 99.2%
+Affected: 0%
 2194
-Affected: 99.2%
+Affected: 0%
 2195
-Affected: 99.2%
+Affected: 0%
 2196
-Affected: 99.2%
+Affected: 0%
 2197
-Affected: 99.2%
+Affected: 0%
 2198
-Affected: 99.2%
+Affected: 0%
 2199
-Affected: 99.2%
+Affected: 0%
 2200
-Affected: 99.2%
+Affected: 0%
 2201
-Affected: 99.2%
+Affected: 0%
 2202
-Affected: 99.2%
+Affected: 0%
 2203
-Affected: 99.2%
+Affected: 0%
 2204
-Affected: 99.2%
+Affected: 0%
 2205
-Affected: 99.2%
+Affected: 0%
 2206
-Affected: 99.2%
+Affected: 0%
 2207
-Affected: 99.2%
+Affected: 0%
 2208
-Affected: 99.2%
+Affected: 0%
 2209
-Affected: 99.2%
+Affected: 0%
 2210
-Affected: 99.2%
+Affected: 0%
 2211
-Affected: 99.2%
+Affected: 0%
 2212
-Affected: 99.2%
+Affected: 0%
 2213
-Affected: 99.2%
+Affected: 0%
 2214
-Affected: 99.2%
+Affected: 0%
 2215
-Affected: 99.2%
+Affected: 0%
 2216
-Affected: 99.2%
+Affected: 0%
 2217
-Affected: 99.2%
+Affected: 0%
 2218
-Affected: 99.2%
+Affected: 0%
 2219
-Affected: 99.2%
+Affected: 0%
 2220
-Affected: 99.2%
+Affected: 0%
 2221
-Affected: 99.2%
+Affected: 0%
 2222
-Affected: 99.2%
+Affected: 0%
 2223
-Affected: 99.2%
+Affected: 0%
 2224
-Affected: 99.2%
+Affected: 0%
 2225
-Affected: 99.2%
+Affected: 0%
 2226
-Affected: 99.2%
+Affected: 0%
 2227
-Affected: 99.2%
+Affected: 0%
 2228
-Affected: 99.2%
+Affected: 0%
 2229
-Affected: 99.2%
+Affected: 0%
 2230
-Affected: 99.2%
+Affected: 0%
 2231
-Affected: 99.2%
+Affected: 0%
 2232
-Affected: 99.2%
+Affected: 0%
 2233
-Affected: 99.2%
+Affected: 0%
 2234
-Affected: 99.2%
+Affected: 0%
 2235
-Affected: 99.2%
+Affected: 0%
 2236
-Affected: 99.2%
+Affected: 0%
 2237
-Affected: 99.2%
+Affected: 0%
 2238
-Affected: 99.2%
+Affected: 0%
 2239
-Affected: 99.2%
+Affected: 0%
 2240
-Affected: 99.2%
+Affected: 0%
 2241
-Affected: 99.2%
+Affected: 0%
 2242
-Affected: 99.2%
+Affected: 0%
 2243
-Affected: 99.2%
+Affected: 0%
 2244
-Affected: 99.2%
+Affected: 0%
 2245
-Affected: 99.2%
+Affected: 0%
 2246
-Affected: 99.2%
+Affected: 0%
 2247
-Affected: 99.2%
+Affected: 0%
 2248
-Affected: 99.2%
+Affected: 0%
 2249
-Affected: 99.2%
+Affected: 0%
 2250
-Affected: 99.2%
+Affected: 0%
 2251
-Affected: 99.2%
+Affected: 0%
 2252
-Affected: 99.2%
+Affected: 0%
 2253
-Affected: 99.2%
+Affected: 0%
 2254
-Affected: 99.2%
+Affected: 0%
 2255
-Affected: 99.2%
+Affected: 0%
 2256
-Affected: 99.2%
+Affected: 0%
 2257
-Affected: 99.2%
+Affected: 0%
 2258
-Affected: 99.2%
+Affected: 0%
 2259
-Affected: 99.2%
+Affected: 0%
 2260
-Affected: 99.2%
+Affected: 0%
 2261
-Affected: 99.2%
+Affected: 0%
 2262
-Affected: 99.2%
+Affected: 0%
 2263
-Affected: 99.2%
+Affected: 0%
 2264
-Affected: 99.2%
+Affected: 0%
 2265
-Affected: 99.2%
+Affected: 0%
 2266
-Affected: 99.2%
+Affected: 0%
 2267
-Affected: 99.2%
+Affected: 0%
 2268
-Affected: 99.2%
+Affected: 0%
 2269
-Affected: 99.2%
+Affected: 0%
 2270
-Affected: 99.2%
+Affected: 0%
 2271
-Affected: 99.2%
+Affected: 0%
 2272
-Affected: 99.2%
+Affected: 0%
 2273
-Affected: 99.2%
+Affected: 0%
 2274
-Affected: 99.2%
+Affected: 0%
 2275
-Affected: 99.2%
+Affected: 0%
 2276
-Affected: 99.2%
+Affected: 0%
 2277
-Affected: 99.2%
+Affected: 0%
 2278
-Affected: 99.2%
+Affected: 0%
 2279
-Affected: 99.2%
+Affected: 0%
 2280
-Affected: 99.2%
+Affected: 0%
 2281
-Affected: 99.2%
+Affected: 0%
 2282
-Affected: 99.2%
+Affected: 0%
 2283
-Affected: 99.2%
+Affected: 0%
 2284
-Affected: 99.2%
+Affected: 0%
 2285
-Affected: 99.2%
+Affected: 0%
 2286
-Affected: 99.2%
+Affected: 0%
 2287
-Affected: 99.2%
+Affected: 0%
 2288
-Affected: 99.2%
+Affected: 0%
 2289
-Affected: 99.2%
+Affected: 0%
 2290
-Affected: 99.3%
+Affected: 0%
 2291
-Affected: 99.3%
+Affected: 0%
 2292
-Affected: 99.3%
+Affected: 0%
 2293
-Affected: 99.3%
+Affected: 0%
 2294
-Affected: 99.3%
+Affected: 0%
 2295
-Affected: 99.3%
+Affected: 0%
 2296
-Affected: 99.3%
+Affected: 0%
 2297
-Affected: 99.3%
+Affected: 0%
 2298
-Affected: 99.3%
+Affected: 0%
 2299
-Affected: 99.3%
+Affected: 0%
 2300
-Affected: 99.3%
+Affected: 0%
 2301
-Affected: 99.3%
+Affected: 0%
 2302
-Affected: 99.3%
+Affected: 0%
 2303
-Affected: 99.3%
+Affected: 0%
 2304
-Affected: 99.3%
+Affected: 0%
 2305
-Affected: 99.3%
+Affected: 0%
 2306
-Affected: 99.3%
+Affected: 0%
 2307
-Affected: 99.3%
+Affected: 0%
 2308
-Affected: 99.3%
+Affected: 0%
 2309
-Affected: 99.3%
+Affected: 0%
 2310
-Affected: 99.3%
+Affected: 0%
 2311
-Affected: 99.3%
+Affected: 0%
 2312
-Affected: 99.3%
+Affected: 0%
 2313
-Affected: 99.3%
+Affected: 0%
 2314
-Affected: 99.3%
+Affected: 0%
 2315
-Affected: 99.3%
+Affected: 0%
 2316
-Affected: 99.3%
+Affected: 0%
 2317
-Affected: 99.3%
+Affected: 0%
 2318
-Affected: 99.3%
+Affected: 0%
 2319
-Affected: 99.3%
+Affected: 0%
 2320
-Affected: 99.3%
+Affected: 0%
 2321
-Affected: 99.3%
+Affected: 0%
 2322
-Affected: 99.3%
+Affected: 0%
 2323
-Affected: 99.3%
+Affected: 0%
 2324
-Affected: 99.3%
+Affected: 0%
 2325
-Affected: 99.3%
+Affected: 0%
 2326
-Affected: 99.3%
+Affected: 0%
 2327
-Affected: 99.3%
+Affected: 0%
 2328
-Affected: 99.3%
+Affected: 0%
 2329
-Affected: 99.3%
+Affected: 0%
 2330
-Affected: 99.3%
+Affected: 0%
 2331
-Affected: 99.3%
+Affected: 0%
 2332
-Affected: 99.3%
+Affected: 0%
 2333
-Affected: 99.3%
+Affected: 0%
 2334
-Affected: 99.3%
+Affected: 0%
 2335
-Affected: 99.3%
+Affected: 0%
 2336
-Affected: 99.3%
+Affected: 0%
 2337
-Affected: 99.3%
-2338
-Affected: 99.3%
-2339
-Affected: 99.3%
-2340
-Affected: 99.3%
-2341
-Affected: 99.3%
-2342
-Affected: 99.3%
-2343
-Affected: 99.3%
-2344
-Affected: 99.3%
-2345
-Affected: 99.3%
-2346
-Affected: 99.3%
-2347
-Affected: 99.3%
-2348
-Affected: 99.3%
-2349
-Affected: 99.3%
-2350
-Affected: 99.3%
-2351
-Affected: 99.3%
-2352
-Affected: 99.3%
-2353
-Affected: 99.3%
-2354
-Affected: 99.3%
-2355
-Affected: 99.3%
-2356
-Affected: 99.3%
-2357
-Affected: 99.3%
-2358
-Affected: 99.3%
-2359
-Affected: 99.3%
-2360
-Affected: 99.3%
-2361
-Affected: 99.3%
-2362
-Affected: 99.3%
-2363
-Affected: 99.3%
-2364
-Affected: 99.3%
-2365
-Affected: 99.3%
-2366
-Affected: 99.3%
-2367
-Affected: 99.3%
-2368
-Affected: 99.3%
-2369
-Affected: 99.3%
-2370
-Affected: 99.3%
-2371
-Affected: 99.3%
-2372
-Affected: 99.3%
-2373
-Affected: 99.3%
-2374
-Affected: 99.3%
-2375
-Affected: 99.3%
-2376
-Affected: 99.3%
-2377
-Affected: 99.3%
-2378
-Affected: 99.3%
-2379
-Affected: 99.3%
-2380
-Affected: 99.3%
-2381
-Affected: 99.3%
-2382
-Affected: 99.3%
-2383
-Affected: 99.3%
-2384
-Affected: 99.3%
-2385
-Affected: 99.3%
-2386
-Affected: 99.3%
-2387
-Affected: 99.3%
-2388
-Affected: 99.3%
-2389
-Affected: 99.3%
-2390
-Affected: 99.3%
-2391
-Affected: 99.3%
-2392
-Affected: 99.3%
-2393
-Affected: 99.3%
-2394
-Affected: 99.3%
-2395
-Affected: 99.3%
-2396
-Affected: 99.3%
-2397
-Affected: 99.3%
-2398
-Affected: 99.3%
-2399
-Affected: 99.3%
-2400
-Affected: 99.3%
-2401
-Affected: 99.3%
-2402
-Affected: 99.3%
-2403
-Affected: 99.3%
-2404
-Affected: 99.3%
-2405
-Affected: 99.3%
-2406
-Affected: 99.3%
-2407
-Affected: 99.3%
-2408
-Affected: 99.3%
-2409
-Affected: 99.3%
-2410
-Affected: 99.3%
-2411
-Affected: 99.3%
-2412
-Affected: 99.3%
-2413
-Affected: 99.3%
-2414
-Affected: 99.3%
-2415
-Affected: 99.3%
-2416
-Affected: 99.3%
-2417
-Affected: 99.3%
-2418
-Affected: 99.3%
-2419
-Affected: 99.3%
-2420
-Affected: 99.3%
-2421
-Affected: 99.3%
-2422
-Affected: 99.3%
-2423
-Affected: 99.3%
-2424
-Affected: 99.3%
-2425
-Affected: 99.3%
-2426
-Affected: 99.3%
-2427
-Affected: 99.3%
-2428
-Affected: 99.3%
-2429
-Affected: 99.3%
-2430
-Affected: 99.3%
-2431
-Affected: 99.3%
-2432
-Affected: 99.3%
-2433
-Affected: 99.3%
-2434
-Affected: 99.3%
-2435
-Affected: 99.3%
-2436
-Affected: 99.3%
-2437
-Affected: 99.3%
-2438
-Affected: 99.3%
-2439
-Affected: 99.3%
-2440
-Affected: 99.3%
-2441
-Affected: 99.3%
-2442
-Affected: 99.3%
-2443
-Affected: 99.3%
-2444
-Affected: 99.3%
-2445
-Affected: 99.3%
-2446
-Affected: 99.3%
-2447
-Affected: 99.3%
-2448
-Affected: 99.3%
-2449
-Affected: 99.3%
-2450
-Affected: 99.3%
-2451
-Affected: 99.3%
-2452
-Affected: 99.3%
-2453
-Affected: 99.3%
-2454
-Affected: 99.3%
-2455
-Affected: 99.3%
-2456
-Affected: 99.3%
-2457
-Affected: 99.3%
-2458
-Affected: 99.3%
-2459
-Affected: 99.3%
-2460
-Affected: 99.3%
-2461
-Affected: 99.3%
-2462
-Affected: 99.3%
-2463
-Affected: 99.3%
-2464
-Affected: 99.3%
-2465
-Affected: 99.3%
-2466
-Affected: 99.3%
-2467
-Affected: 99.3%
-2468
-Affected: 99.3%
-2469
-Affected: 99.3%
-2470
-Affected: 99.3%
-2471
-Affected: 99.3%
-2472
-Affected: 99.3%
-2473
-Affected: 99.3%
-2474
-Affected: 99.3%
-2475
-Affected: 99.3%
-2476
-Affected: 99.3%
-2477
-Affected: 99.3%
-2478
-Affected: 99.3%
-2479
-Affected: 99.3%
-2480
-Affected: 99.3%
-2481
-Affected: 99.3%
-2482
-Affected: 99.3%
-2483
-Affected: 99.3%
-2484
-Affected: 99.3%
-2485
-Affected: 99.3%
-2486
-Affected: 99.3%
-2487
-Affected: 99.3%
-2488
-Affected: 99.3%
-2489
-Affected: 99.3%
-2490
-Affected: 99.3%
-2491
-Affected: 99.3%
-2492
-Affected: 99.3%
-2493
-Affected: 99.3%
-2494
-Affected: 99.3%
-2495
-Affected: 99.3%
-2496
-Affected: 99.3%
-2497
-Affected: 99.3%
-2498
-Affected: 99.3%
-2499
-Affected: 99.3%
-2500
-Affected: 99.3%
-2501
-Affected: 99.3%
-2502
-Affected: 99.3%
-2503
-Affected: 99.3%
-2504
-Affected: 99.3%
-2505
-Affected: 99.3%
-2506
-Affected: 99.3%
-2507
-Affected: 99.3%
-2508
-Affected: 99.3%
-2509
-Affected: 99.3%
-2510
-Affected: 99.3%
-2511
-Affected: 99.3%
-2512
-Affected: 99.3%
-2513
-Affected: 99.3%
-2514
-Affected: 99.3%
-2515
-Affected: 99.3%
-2516
-Affected: 99.3%
-2517
-Affected: 99.3%
-2518
-Affected: 99.3%
-2519
-Affected: 99.3%
-2520
-Affected: 99.3%
-2521
-Affected: 99.3%
-2522
-Affected: 99.3%
-2523
-Affected: 99.3%
-2524
-Affected: 99.3%
-2525
-Affected: 99.3%
-2526
-Affected: 99.3%
-2527
-Affected: 99.3%
-2528
-Affected: 99.3%
-2529
-Affected: 99.3%
-2530
-Affected: 99.3%
-2531
-Affected: 99.3%
-2532
-Affected: 99.3%
-2533
-Affected: 99.3%
-2534
-Affected: 99.3%
-2535
-Affected: 99.3%
-2536
-Affected: 99.3%
-2537
-Affected: 99.3%
-2538
-Affected: 99.3%
-2539
-Affected: 99.3%
-2540
-Affected: 99.3%
-2541
-Affected: 99.3%
-2542
-Affected: 99.3%
-2543
-Affected: 99.3%
-2544
-Affected: 99.3%
-2545
-Affected: 99.3%
-2546
-Affected: 99.3%
-2547
-Affected: 99.3%
-2548
-Affected: 99.3%
-2549
-Affected: 99.3%
-2550
-Affected: 99.3%
-2551
-Affected: 99.3%
-2552
-Affected: 99.3%
-2553
-Affected: 99.3%
-2554
-Affected: 99.3%
-2555
-Affected: 99.3%
-2556
-Affected: 99.3%
-2557
-Affected: 99.3%
-2558
-Affected: 99.3%
-2559
-Affected: 99.3%
-2560
-Affected: 99.3%
-2561
-Affected: 99.3%
-2562
-Affected: 99.3%
-2563
-Affected: 99.3%
-2564
-Affected: 99.3%
-2565
-Affected: 99.3%
-2566
-Affected: 99.3%
-2567
-Affected: 99.3%
-2568
-Affected: 99.3%
-2569
-Affected: 99.3%
-2570
-Affected: 99.3%
-2571
-Affected: 99.3%
-2572
-Affected: 99.3%
-2573
-Affected: 99.3%
-2574
-Affected: 99.3%
-2575
-Affected: 99.3%
-2576
-Affected: 99.3%
-2577
-Affected: 99.3%
-2578
-Affected: 99.3%
-2579
-Affected: 99.3%
-2580
-Affected: 99.3%
-2581
-Affected: 99.3%
-2582
-Affected: 99.3%
-2583
-Affected: 99.3%
-2584
-Affected: 99.3%
-2585
-Affected: 99.3%
-2586
-Affected: 99.3%
-2587
-Affected: 99.3%
-2588
-Affected: 99.3%
-2589
-Affected: 99.3%
-2590
-Affected: 99.3%
-2591
-Affected: 99.3%
-2592
-Affected: 99.3%
-2593
-Affected: 99.3%
-2594
-Affected: 99.3%
-2595
-Affected: 99.3%
-2596
-Affected: 99.3%
-2597
-Affected: 99.3%
-2598
-Affected: 99.3%
-2599
-Affected: 99.3%
-2600
-Affected: 99.3%
-2601
-Affected: 99.3%
-2602
-Affected: 99.3%
-2603
-Affected: 99.3%
-2604
-Affected: 99.3%
-2605
-Affected: 99.3%
-2606
-Affected: 99.3%
-2607
-Affected: 99.3%
-2608
-Affected: 99.3%
-2609
-Affected: 99.3%
-2610
-Affected: 99.3%
-2611
-Affected: 99.3%
-2612
-Affected: 99.3%
-2613
-Affected: 99.3%
-2614
-Affected: 99.3%
-2615
-Affected: 99.3%
-2616
-Affected: 99.3%
-2617
-Affected: 99.3%
-2618
-Affected: 99.3%
-2619
-Affected: 99.3%
-2620
-Affected: 99.3%
-2621
-Affected: 99.3%
-2622
-Affected: 99.3%
-2623
-Affected: 99.3%
-2624
-Affected: 99.3%
-2625
-Affected: 99.3%
-2626
-Affected: 99.3%
-2627
-Affected: 99.3%
-2628
-Affected: 99.3%
-2629
-Affected: 99.3%
-2630
-Affected: 99.3%
-2631
-Affected: 99.3%
-2632
-Affected: 99.3%
-2633
-Affected: 99.3%
-2634
-Affected: 99.3%
-2635
-Affected: 99.3%
-2636
-Affected: 99.3%
-2637
-Affected: 99.3%
-2638
-Affected: 99.3%
-2639
-Affected: 99.3%
-2640
-Affected: 99.3%
-2641
-Affected: 99.3%
-2642
-Affected: 99.3%
-2643
-Affected: 99.3%
-2644
-Affected: 99.3%
-2645
-Affected: 99.3%
-2646
-Affected: 99.3%
-2647
-Affected: 99.3%
-2648
-Affected: 99.3%
-2649
-Affected: 99.3%
-2650
-Affected: 99.3%
-2651
-Affected: 99.3%
-2652
-Affected: 99.3%
-2653
-Affected: 99.3%
-2654
-Affected: 99.3%
-2655
-Affected: 99.3%
-2656
-Affected: 99.3%
-2657
-Affected: 99.3%
-2658
-Affected: 99.3%
-2659
-Affected: 99.3%
-2660
-Affected: 99.3%
-2661
-Affected: 99.3%
-2662
-Affected: 99.3%
-2663
-Affected: 99.3%
-2664
-Affected: 99.3%
-2665
-Affected: 99.3%
-2666
-Affected: 99.3%
-2667
-Affected: 99.3%
-2668
-Affected: 99.3%
-2669
-Affected: 99.3%
-2670
-Affected: 99.3%
-2671
-Affected: 99.3%
-2672
-Affected: 99.3%
-2673
-Affected: 99.3%
-2674
-Affected: 99.3%
-2675
-Affected: 99.3%
-2676
-Affected: 99.3%
-2677
-Affected: 99.3%
-2678
-Affected: 99.3%
-2679
-Affected: 99.3%
-2680
-Affected: 99.3%
-2681
-Affected: 99.3%
-2682
-Affected: 99.3%
-2683
-Affected: 99.3%
-2684
-Affected: 99.3%
-2685
-Affected: 99.3%
-2686
-Affected: 99.3%
-2687
-Affected: 99.3%
-2688
-Affected: 99.3%
-2689
-Affected: 99.3%
-2690
-Affected: 99.3%
-2691
-Affected: 99.3%
-2692
-Affected: 99.3%
-2693
-Affected: 99.3%
-2694
-Affected: 99.3%
-2695
-Affected: 99.3%
-2696
-Affected: 99.3%
-2697
-Affected: 99.3%
-2698
-Affected: 99.3%
-2699
-Affected: 99.3%
-2700
-Affected: 99.3%
-2701
-Affected: 99.3%
-2702
-Affected: 99.3%
-2703
-Affected: 99.3%
-2704
-Affected: 99.3%
-2705
-Affected: 99.3%
-2706
-Affected: 99.3%
-2707
-Affected: 99.3%
-2708
-Affected: 99.3%
-2709
-Affected: 99.3%
-2710
-Affected: 99.3%
-2711
-Affected: 99.3%
-2712
-Affected: 99.3%
-2713
-Affected: 99.3%
-2714
-Affected: 99.3%
-2715
-Affected: 99.3%
-2716
-Affected: 99.3%
-2717
-Affected: 99.3%
-2718
-Affected: 99.3%
-2719
-Affected: 99.3%
-2720
-Affected: 99.3%
-2721
-Affected: 99.3%
-2722
-Affected: 99.3%
-2723
-Affected: 99.3%
-2724
-Affected: 99.3%
-2725
-Affected: 99.3%
-2726
-Affected: 99.3%
-2727
-Affected: 99.3%
-2728
-Affected: 99.3%
-2729
-Affected: 99.3%
-2730
-Affected: 99.3%
-2731
-Affected: 99.3%
-2732
-Affected: 99.3%
-2733
-Affected: 99.3%
-2734
-Affected: 99.3%
-2735
-Affected: 99.3%
-2736
-Affected: 99.3%
-2737
-Affected: 99.3%
-2738
-Affected: 99.3%
-2739
-Affected: 99.3%
-2740
-Affected: 99.3%
-2741
-Affected: 99.3%
-2742
-Affected: 99.3%
-2743
-Affected: 99.3%
-2744
-Affected: 99.3%
-2745
-Affected: 99.3%
-2746
-Affected: 99.3%
-2747
-Affected: 99.3%
-2748
-Affected: 99.3%
-2749
-Affected: 99.3%
-2750
-Affected: 99.3%
-2751
-Affected: 99.3%
-2752
-Affected: 99.3%
-2753
-Affected: 99.3%
-2754
-Affected: 99.3%
-2755
-Affected: 99.3%
-2756
-Affected: 99.3%
-2757
-Affected: 99.3%
-2758
-Affected: 99.3%
-2759
-Affected: 99.3%
-2760
-Affected: 99.3%
-2761
-Affected: 99.3%
-2762
-Affected: 99.3%
-2763
-Affected: 99.3%
-2764
-Affected: 99.3%
-2765
-Affected: 99.3%
-2766
-Affected: 99.3%
-2767
-Affected: 99.3%
-2768
-Affected: 99.3%
-2769
-Affected: 99.3%
-2770
-Affected: 99.3%
-2771
-Affected: 99.3%
-2772
-Affected: 99.3%
-2773
-Affected: 99.3%
-2774
-Affected: 99.3%
-2775
-Affected: 99.3%
-2776
-Affected: 99.3%
-2777
-Affected: 99.3%
-2778
-Affected: 99.3%
-2779
-Affected: 99.3%
-2780
-Affected: 99.3%
-2781
-Affected: 99.3%
-2782
-Affected: 99.3%
-2783
-Affected: 99.3%
-2784
-Affected: 99.3%
-2785
-Affected: 99.3%
-2786
-Affected: 99.3%
-2787
-Affected: 99.3%
-2788
-Affected: 99.3%
-2789
-Affected: 99.3%
-2790
-Affected: 99.3%
-2791
-Affected: 99.3%
-2792
-Affected: 99.3%
-2793
-Affected: 99.3%
-2794
-Affected: 99.3%
-2795
-Affected: 99.3%
-2796
-Affected: 99.3%
-2797
-Affected: 99.3%
-2798
-Affected: 99.3%
-2799
-Affected: 99.3%
-2800
-Affected: 99.3%
-2801
-Affected: 99.3%
-2802
-Affected: 99.3%
-2803
-Affected: 99.3%
-2804
-Affected: 99.3%
-2805
-Affected: 99.3%
-2806
-Affected: 99.3%
-2807
-Affected: 99.3%
-2808
-Affected: 99.3%
-2809
-Affected: 99.3%
-2810
-Affected: 99.3%
-2811
-Affected: 99.3%
-2812
-Affected: 99.3%
-2813
-Affected: 99.3%
-2814
-Affected: 99.3%
-2815
-Affected: 99.3%
-2816
-Affected: 99.3%
-2817
-Affected: 99.3%
-2818
-Affected: 99.3%
-2819
-Affected: 99.3%
-2820
-Affected: 99.3%
-2821
-Affected: 99.3%
-2822
-Affected: 99.3%
-2823
-Affected: 99.3%
-2824
-Affected: 99.3%
-2825
-Affected: 99.3%
-2826
-Affected: 99.3%
-2827
-Affected: 99.3%
-2828
-Affected: 99.3%
-2829
-Affected: 99.3%
-2830
-Affected: 99.3%
-2831
-Affected: 99.3%
-2832
-Affected: 99.3%
-2833
-Affected: 99.3%
-2834
-Affected: 99.3%
-2835
-Affected: 99.3%
-2836
-Affected: 99.3%
-2837
-Affected: 99.3%
-2838
-Affected: 99.3%
-2839
-Affected: 99.3%
-2840
-Affected: 99.3%
-2841
-Affected: 99.3%
-2842
-Affected: 99.3%
-2843
-Affected: 99.3%
-2844
-Affected: 99.3%
-2845
-Affected: 99.3%
-2846
-Affected: 99.3%
-2847
-Affected: 99.3%
-2848
-Affected: 99.3%
-2849
-Affected: 99.3%
-2850
-Affected: 99.3%
-2851
-Affected: 99.3%
-2852
-Affected: 99.3%
-2853
-Affected: 99.3%
-2854
-Affected: 99.3%
-2855
-Affected: 99.3%
-2856
-Affected: 99.3%
-2857
-Affected: 99.3%
-2858
-Affected: 99.3%
-2859
-Affected: 99.3%
-2860
-Affected: 99.3%
-2861
-Affected: 99.3%
-2862
-Affected: 99.3%
-2863
-Affected: 99.3%
-2864
-Affected: 99.3%
-2865
-Affected: 99.3%
-2866
-Affected: 99.3%
-2867
-Affected: 99.3%
-2868
-Affected: 99.3%
-2869
-Affected: 99.3%
-2870
-Affected: 99.3%
-2871
-Affected: 99.3%
-2872
-Affected: 99.3%
-2873
-Affected: 99.3%
-2874
-Affected: 99.3%
-2875
-Affected: 99.3%
-2876
-Affected: 99.3%
-2877
-Affected: 99.3%
-2878
-Affected: 99.3%
-2879
-Affected: 99.3%
-2880
-Affected: 99.3%
-2881
-Affected: 99.3%
-2882
-Affected: 99.3%
-2883
-Affected: 99.3%
-2884
-Affected: 99.3%
-2885
-Affected: 99.3%
-2886
-Affected: 99.3%
-2887
-Affected: 99.3%
-2888
-Affected: 99.3%
-2889
-Affected: 99.3%
-2890
-Affected: 99.3%
-2891
-Affected: 99.3%
-2892
-Affected: 99.3%
-2893
-Affected: 99.3%
-2894
-Affected: 99.3%
-2895
-Affected: 99.3%
-2896
-Affected: 99.3%
-2897
-Affected: 99.3%
-2898
-Affected: 99.3%
-2899
-Affected: 99.3%
-2900
-Affected: 99.3%
-2901
-Affected: 99.3%
-2902
-Affected: 99.3%
-2903
-Affected: 99.3%
-2904
-Affected: 99.3%
-2905
-Affected: 99.3%
-2906
-Affected: 99.3%
-2907
-Affected: 99.3%
-2908
-Affected: 99.3%
-2909
-Affected: 99.3%
-2910
-Affected: 99.3%
-2911
-Affected: 99.3%
-2912
-Affected: 99.3%
-2913
-Affected: 99.3%
-2914
-Affected: 99.3%
-2915
-Affected: 99.3%
-2916
-Affected: 99.3%
-2917
-Affected: 99.3%
-2918
-Affected: 99.3%
-2919
-Affected: 99.3%
-2920
-Affected: 99.3%
-2921
-Affected: 99.3%
-2922
-Affected: 99.3%
-2923
-Affected: 99.3%
-2924
-Affected: 99.3%
-2925
-Affected: 99.3%
-2926
-Affected: 99.3%
-2927
-Affected: 99.3%
-2928
-Affected: 99.3%
-2929
-Affected: 99.3%
-2930
-Affected: 99.3%
-2931
-Affected: 99.3%
-2932
-Affected: 99.3%
-2933
-Affected: 99.3%
-2934
-Affected: 99.3%
-2935
-Affected: 99.3%
-2936
-Affected: 99.3%
-2937
-Affected: 99.3%
-2938
-Affected: 99.3%
-2939
-Affected: 99.3%
-2940
-Affected: 99.3%
-2941
-Affected: 99.3%
-2942
-Affected: 99.3%
-2943
-Affected: 99.3%
-2944
-Affected: 99.3%
-2945
-Affected: 99.3%
-2946
-Affected: 99.3%
-2947
-Affected: 99.3%
-2948
-Affected: 99.3%
-2949
-Affected: 99.3%
-2950
-Affected: 99.3%
-2951
-Affected: 99.3%
-2952
-Affected: 99.3%
-2953
-Affected: 99.3%
-2954
-Affected: 99.3%
-2955
-Affected: 99.3%
-2956
-Affected: 99.3%
-2957
-Affected: 99.3%
-2958
-Affected: 99.3%
-2959
-Affected: 99.3%
-2960
-Affected: 99.3%
-2961
-Affected: 99.3%
-2962
-Affected: 99.3%
-2963
-Affected: 99.3%
-2964
-Affected: 99.3%
-2965
-Affected: 99.3%
-2966
-Affected: 99.3%
-2967
-Affected: 99.3%
-2968
-Affected: 99.3%
-2969
-Affected: 99.3%
-2970
-Affected: 99.3%
-2971
-Affected: 99.3%
-2972
-Affected: 99.3%
-2973
-Affected: 99.3%
-2974
-Affected: 99.3%
-2975
-Affected: 99.3%
-2976
-Affected: 99.3%
-2977
-Affected: 99.3%
-2978
-Affected: 99.3%
-2979
-Affected: 99.3%
-2980
-Affected: 99.3%
-2981
-Affected: 99.3%
-2982
-Affected: 99.3%
-2983
-Affected: 99.3%
-2984
-Affected: 99.3%
-2985
-Affected: 99.3%
-2986
-Affected: 99.3%
-2987
-Affected: 99.3%
-2988
-Affected: 99.3%
-2989
-Affected: 99.3%
-2990
-Affected: 99.3%
-2991
-Affected: 99.3%
-2992
-Affected: 99.3%
-2993
-Affected: 99.3%
-2994
-Affected: 99.3%
-2995
-Affected: 99.3%
-2996
-Affected: 99.3%
-2997
-Affected: 99.3%
-2998
-Affected: 99.3%
-2999
-Affected: 99.3%
-3000
-Affected: 99.3%
-3001
-Affected: 99.3%
-3002
-Affected: 99.3%
-3003
-Affected: 99.3%
-3004
-Affected: 99.3%
-3005
-Affected: 99.3%
-3006
-Affected: 99.3%
-3007
-Affected: 99.3%
-3008
-Affected: 99.3%
-3009
-Affected: 99.3%
-3010
-Affected: 99.3%
-3011
-Affected: 99.3%
-3012
-Affected: 99.3%
-3013
-Affected: 99.3%
-3014
-Affected: 99.3%
-3015
-Affected: 99.3%
-3016
-Affected: 99.3%
-3017
-Affected: 99.3%
-3018
-Affected: 99.3%
-3019
-Affected: 99.3%
-3020
-Affected: 99.3%
-3021
-Affected: 99.3%
-3022
-Affected: 99.3%
-3023
-Affected: 99.3%
-3024
-Affected: 99.3%
-3025
-Affected: 99.3%
-3026
-Affected: 99.3%
-3027
-Affected: 99.3%
-3028
-Affected: 99.3%
-3029
-Affected: 99.3%
-3030
-Affected: 99.3%
-3031
-Affected: 99.3%
-3032
-Affected: 99.3%
-3033
-Affected: 99.3%
-3034
-Affected: 99.3%
-3035
-Affected: 99.3%
-3036
-Affected: 99.3%
-3037
-Affected: 99.3%
-3038
-Affected: 99.3%
-3039
-Affected: 99.3%
-3040
-Affected: 99.3%
-3041
-Affected: 99.3%
-3042
-Affected: 99.3%
-3043
-Affected: 99.3%
-3044
-Affected: 99.3%
-3045
-Affected: 99.3%
-3046
-Affected: 99.3%
-3047
-Affected: 99.3%
-3048
-Affected: 99.3%
-3049
-Affected: 99.3%
-3050
-Affected: 99.3%
-3051
-Affected: 99.3%
-3052
-Affected: 99.3%
-3053
-Affected: 99.3%
-3054
-Affected: 99.3%
-3055
-Affected: 99.3%
-3056
-Affected: 99.3%
-3057
-Affected: 99.3%
-3058
-Affected: 99.3%
-3059
-Affected: 99.3%
-3060
-Affected: 99.3%
-3061
-Affected: 99.3%
-3062
-Affected: 99.3%
-3063
-Affected: 99.3%
-3064
-Affected: 99.3%
-3065
-Affected: 99.3%
-3066
-Affected: 99.3%
-3067
-Affected: 99.3%
-3068
-Affected: 99.3%
-3069
-Affected: 99.3%
-3070
-Affected: 99.3%
-3071
-Affected: 99.3%
-3072
-Affected: 99.3%
-3073
-Affected: 99.3%
-3074
-Affected: 99.3%
-3075
-Affected: 99.3%
-3076
-Affected: 99.3%
-3077
-Affected: 99.3%
-3078
-Affected: 99.3%
-3079
-Affected: 99.3%
-3080
-Affected: 99.3%
-3081
-Affected: 99.3%
-3082
-Affected: 99.3%
-3083
-Affected: 99.3%
-3084
-Affected: 99.3%
-3085
-Affected: 99.3%
-3086
-Affected: 99.3%
-3087
-Affected: 99.3%
-3088
-Affected: 99.3%
-3089
-Affected: 99.3%
-3090
-Affected: 99.3%
-3091
-Affected: 99.3%
-3092
-Affected: 99.3%
-3093
-Affected: 99.3%
-3094
-Affected: 99.3%
-3095
-Affected: 99.3%
-3096
-Affected: 99.3%
-3097
-Affected: 99.3%
-3098
-Affected: 99.3%
-3099
-Affected: 99.3%
-3100
-Affected: 99.3%
-3101
-Affected: 99.3%
-3102
-Affected: 99.3%
-3103
-Affected: 99.3%
-3104
-Affected: 99.3%
-3105
-Affected: 99.3%
-3106
-Affected: 99.3%
-3107
-Affected: 99.3%
-3108
-Affected: 99.3%
-3109
-Affected: 99.3%
-3110
-Affected: 99.3%
-3111
-Affected: 99.3%
-3112
-Affected: 99.3%
-3113
-Affected: 99.3%
-3114
-Affected: 99.3%
-3115
-Affected: 99.3%
-3116
-Affected: 99.3%
-3117
-Affected: 99.3%
-3118
-Affected: 99.3%
-3119
-Affected: 99.3%
-3120
-Affected: 99.3%
-3121
-Affected: 99.3%
-3122
-Affected: 99.3%
-3123
-Affected: 99.3%
-3124
-Affected: 99.3%
-3125
-Affected: 99.3%
-3126
-Affected: 99.3%
-3127
-Affected: 99.3%
-3128
-Affected: 99.3%
-3129
-Affected: 99.3%
-3130
-Affected: 99.3%
-3131
-Affected: 99.3%
-3132
-Affected: 99.3%
-3133
-Affected: 99.3%
-3134
-Affected: 99.3%
-3135
-Affected: 99.3%
-3136
-Affected: 99.3%
-3137
-Affected: 99.3%
-3138
-Affected: 99.3%
-3139
-Affected: 99.3%
-3140
-Affected: 99.3%
-3141
-Affected: 99.3%
-3142
-Affected: 99.3%
-3143
-Affected: 99.3%
-3144
-Affected: 99.3%
-3145
-Affected: 99.3%
-3146
-Affected: 99.3%
-3147
-Affected: 99.3%
-3148
-Affected: 99.3%
-3149
-Affected: 99.3%
-3150
-Affected: 99.3%
-3151
-Affected: 99.3%
-3152
-Affected: 99.3%
-3153
-Affected: 99.3%
-3154
-Affected: 99.3%
-3155
-Affected: 99.3%
-3156
-Affected: 99.3%
-3157
-Affected: 99.3%
-3158
-Affected: 99.3%
-3159
-Affected: 99.3%
-3160
-Affected: 99.3%
-3161
-Affected: 99.3%
-3162
-Affected: 99.3%
-3163
-Affected: 99.3%
-3164
-Affected: 99.3%
-3165
-Affected: 99.3%
-3166
-Affected: 99.3%
-3167
-Affected: 99.3%
-3168
-Affected: 99.3%
-3169
-Affected: 99.3%
-3170
-Affected: 99.3%
-3171
-Affected: 99.3%
-3172
-Affected: 99.3%
-3173
-Affected: 99.3%
-3174
-Affected: 99.3%
-3175
-Affected: 99.3%
-3176
-Affected: 99.3%
-3177
-Affected: 99.3%
-3178
-Affected: 99.3%
-3179
-Affected: 99.3%
-3180
-Affected: 99.3%
-3181
-Affected: 99.3%
-3182
-Affected: 99.3%
-3183
-Affected: 99.3%
-3184
-Affected: 99.3%
-3185
-Affected: 99.3%
-3186
-Affected: 99.3%
-3187
-Affected: 99.3%
-3188
-Affected: 99.3%
-3189
-Affected: 99.3%
-3190
-Affected: 99.3%
-3191
-Affected: 99.3%
-3192
-Affected: 99.3%
-3193
-Affected: 99.3%
-3194
-Affected: 99.3%
-3195
-Affected: 99.3%
-3196
-Affected: 99.3%
-3197
-Affected: 99.3%
-3198
-Affected: 99.3%
-3199
-Affected: 99.3%
-3200
-Affected: 99.3%
-3201
-Affected: 99.3%
-3202
-Affected: 99.3%
-3203
-Affected: 99.3%
-3204
-Affected: 99.3%
-3205
-Affected: 99.3%
-3206
-Affected: 99.3%
-3207
-Affected: 99.3%
-3208
-Affected: 99.3%
-3209
-Affected: 99.3%
-3210
-Affected: 99.3%
-3211
-Affected: 99.3%
-3212
-Affected: 99.3%
-3213
-Affected: 99.3%
-3214
-Affected: 99.3%
-3215
-Affected: 99.3%
-3216
-Affected: 99.3%
-3217
-Affected: 99.3%
-3218
-Affected: 99.3%
-3219
-Affected: 99.3%
-3220
-Affected: 99.3%
-3221
-Affected: 99.3%
-3222
-Affected: 99.3%
-3223
-Affected: 99.3%
-3224
-Affected: 99.3%
-3225
-Affected: 99.3%
-3226
-Affected: 99.3%
-3227
-Affected: 99.3%
-3228
-Affected: 99.3%
-3229
-Affected: 99.3%
-3230
-Affected: 99.3%
-3231
-Affected: 99.3%
-3232
-Affected: 99.3%
-3233
-Affected: 99.3%
-3234
-Affected: 99.3%
-3235
-Affected: 99.3%
-3236
-Affected: 99.3%
-3237
-Affected: 99.3%
-3238
-Affected: 99.3%
-3239
-Affected: 99.3%
-3240
-Affected: 99.3%
-3241
-Affected: 99.3%
-3242
-Affected: 99.3%
-3243
-Affected: 99.3%
-3244
-Affected: 99.3%
-3245
-Affected: 99.3%
-3246
-Affected: 99.3%
-3247
-Affected: 99.3%
-3248
-Affected: 99.3%
-3249
-Affected: 99.3%
-3250
-Affected: 99.3%
-3251
-Affected: 99.3%
-3252
-Affected: 99.3%
-3253
-Affected: 99.3%
-3254
-Affected: 99.3%
-3255
-Affected: 99.3%
-3256
-Affected: 99.3%
-3257
-Affected: 99.3%
-3258
-Affected: 99.3%
-3259
-Affected: 99.3%
-3260
-Affected: 99.3%
-3261
-Affected: 99.3%
-3262
-Affected: 99.3%
-3263
-Affected: 99.3%
-3264
-Affected: 99.3%
-3265
-Affected: 99.3%
-3266
-Affected: 99.3%
-3267
-Affected: 99.3%
-3268
-Affected: 99.3%
-3269
-Affected: 99.3%
-3270
-Affected: 99.3%
-3271
-Affected: 99.3%
-3272
-Affected: 99.3%
-3273
-Affected: 99.3%
-3274
-Affected: 99.3%
-3275
-Affected: 99.3%
-3276
-Affected: 99.3%
-3277
-Affected: 99.3%
-3278
-Affected: 99.3%
-3279
-Affected: 99.3%
-3280
-Affected: 99.3%
-3281
-Affected: 99.3%
-3282
-Affected: 99.3%
-3283
-Affected: 99.3%
-3284
-Affected: 99.3%
-3285
-Affected: 99.3%
-3286
-Affected: 99.3%
-3287
-Affected: 99.3%
-3288
-Affected: 99.3%
-3289
-Affected: 99.3%
-3290
-Affected: 99.3%
-3291
-Affected: 99.3%
-3292
-Affected: 99.3%
-3293
-Affected: 99.3%
-3294
-Affected: 99.3%
-3295
-Affected: 99.3%
-3296
-Affected: 99.3%
-3297
-Affected: 99.3%
-3298
-Affected: 99.3%
-3299
-Affected: 99.3%
-3300
-Affected: 99.3%
-3301
-Affected: 99.3%
-3302
-Affected: 99.3%
-3303
-Affected: 99.3%
-3304
-Affected: 99.3%
-3305
-Affected: 99.3%
-3306
-Affected: 99.3%
-3307
-Affected: 99.3%
-3308
-Affected: 99.3%
-3309
-Affected: 99.3%
-3310
-Affected: 99.3%
-3311
-Affected: 99.3%
-3312
-Affected: 99.3%
-3313
-Affected: 99.3%
-3314
-Affected: 99.3%
-3315
-Affected: 99.3%
-3316
-Affected: 99.3%
-3317
-Affected: 99.3%
-3318
-Affected: 99.3%
-3319
-Affected: 99.3%
-3320
-Affected: 99.3%
-3321
-Affected: 99.3%
-3322
-Affected: 99.3%
-3323
-Affected: 99.3%
-3324
-Affected: 99.3%
-3325
-Affected: 99.3%
-3326
-Affected: 99.3%
-3327
-Affected: 99.3%
-3328
-Affected: 99.3%
-3329
-Affected: 99.3%
-3330
-Affected: 99.3%
-3331
-Affected: 99.3%
-3332
-Affected: 99.3%
-3333
-Affected: 99.3%
-3334
-Affected: 99.3%
-3335
-Affected: 99.3%
-3336
-Affected: 99.3%
-3337
-Affected: 99.3%
-3338
-Affected: 99.3%
-3339
-Affected: 99.3%
-3340
-Affected: 99.3%
-3341
-Affected: 99.3%
-3342
-Affected: 99.3%
-3343
-Affected: 99.3%
-3344
-Affected: 99.3%
-3345
-Affected: 99.3%
-3346
-Affected: 99.3%
-3347
-Affected: 99.3%
-3348
-Affected: 99.3%
-3349
-Affected: 99.3%
-3350
-Affected: 99.3%
-3351
-Affected: 99.3%
-3352
-Affected: 99.3%
-3353
-Affected: 99.3%
-3354
-Affected: 99.3%
-3355
-Affected: 99.3%
-3356
-Affected: 99.3%
-3357
-Affected: 99.3%
-3358
-Affected: 99.3%
-3359
-Affected: 99.3%
-3360
-Affected: 99.3%
-3361
-Affected: 99.3%
-3362
-Affected: 99.3%
-3363
-Affected: 99.3%
-3364
-Affected: 99.3%
-3365
-Affected: 99.3%
-3366
-Affected: 99.3%
-3367
-Affected: 99.3%
-3368
-Affected: 99.3%
-3369
-Affected: 99.3%
-3370
-Affected: 99.3%
-3371
-Affected: 99.3%
-3372
-Affected: 99.3%
-3373
-Affected: 99.3%
-3374
-Affected: 99.3%
-3375
-Affected: 99.3%
-3376
-Affected: 99.3%
-3377
-Affected: 99.3%
-3378
-Affected: 99.3%
-3379
-Affected: 99.3%
-3380
-Affected: 99.3%
-3381
-Affected: 99.3%
-3382
-Affected: 99.3%
-3383
-Affected: 99.3%
-3384
-Affected: 99.3%
-3385
-Affected: 99.3%
-3386
-Affected: 99.3%
-3387
-Affected: 99.3%
-3388
-Affected: 99.3%
-3389
-Affected: 99.3%
-3390
-Affected: 99.3%
-3391
-Affected: 99.3%
-3392
-Affected: 99.3%
-3393
-Affected: 99.3%
-3394
-Affected: 99.3%
-3395
-Affected: 99.3%
-3396
-Affected: 99.3%
-3397
-Affected: 99.3%
-3398
-Affected: 99.3%
-3399
-Affected: 99.3%
-3400
-Affected: 99.3%
-3401
-Affected: 99.3%
-3402
-Affected: 99.3%
-3403
-Affected: 99.3%
-3404
-Affected: 99.3%
-3405
-Affected: 99.3%
-3406
-Affected: 99.3%
-3407
-Affected: 99.3%
-3408
-Affected: 99.3%
-3409
-Affected: 99.3%
-3410
-Affected: 99.3%
-3411
-Affected: 99.3%
-3412
-Affected: 99.3%
-3413
-Affected: 99.3%
-3414
-Affected: 99.3%
-3415
-Affected: 99.3%
-3416
-Affected: 99.3%
-3417
-Affected: 99.3%
-3418
-Affected: 99.3%
-3419
-Affected: 99.3%
-3420
-Affected: 99.3%
-3421
-Affected: 99.3%
-3422
-Affected: 99.3%
-3423
-Affected: 99.3%
-3424
-Affected: 99.3%
-3425
-Affected: 99.3%
-3426
-Affected: 99.3%
-3427
-Affected: 99.3%
-3428
-Affected: 99.3%
-3429
-Affected: 99.3%
-3430
-Affected: 99.3%
-3431
-Affected: 99.3%
-3432
-Affected: 99.3%
-3433
-Affected: 99.3%
-3434
-Affected: 99.3%
-3435
-Affected: 99.3%
-3436
-Affected: 99.3%
-3437
-Affected: 99.3%
-3438
-Affected: 99.3%
-3439
-Affected: 99.3%
-3440
-Affected: 99.3%
-3441
-Affected: 99.3%
-3442
-Affected: 99.3%
-3443
-Affected: 99.3%
-3444
-Affected: 99.3%
-3445
-Affected: 99.3%
-3446
-Affected: 99.3%
-3447
-Affected: 99.3%
-3448
-Affected: 99.3%
-3449
-Affected: 99.3%
-3450
-Affected: 99.3%
-3451
-Affected: 99.3%
-3452
-Affected: 99.3%
-3453
-Affected: 99.3%
-3454
-Affected: 99.3%
-3455
-Affected: 99.3%
-3456
-Affected: 99.3%
-3457
-Affected: 99.3%
-3458
-Affected: 99.3%
-3459
-Affected: 99.3%
-3460
-Affected: 99.3%
-3461
-Affected: 99.3%
-3462
-Affected: 99.3%
-3463
-Affected: 99.3%
-3464
-Affected: 99.3%
-3465
-Affected: 99.3%
-3466
-Affected: 99.3%
-3467
-Affected: 99.3%
-3468
-Affected: 99.3%
-3469
-Affected: 99.3%
-3470
-Affected: 99.3%
-3471
-Affected: 99.3%
-3472
-Affected: 99.3%
-3473
-Affected: 99.3%
-3474
-Affected: 99.3%
-3475
-Affected: 99.3%
-3476
-Affected: 99.3%
-3477
-Affected: 99.3%
-3478
-Affected: 99.3%
-3479
-Affected: 99.3%
-3480
-Affected: 99.3%
-3481
-Affected: 99.3%
-3482
-Affected: 99.3%
-3483
-Affected: 99.3%
-3484
-Affected: 99.3%
-3485
-Affected: 99.3%
-3486
-Affected: 99.3%
-3487
-Affected: 99.3%
-3488
-Affected: 99.3%
-3489
-Affected: 99.3%
-3490
-Affected: 99.3%
-3491
-Affected: 99.3%
-3492
-Affected: 99.3%
-3493
-Affected: 99.3%
-3494
-Affected: 99.3%
-3495
-Affected: 99.3%
-3496
-Affected: 99.3%
-3497
-Affected: 99.3%
-3498
-Affected: 99.3%
-3499
-Affected: 99.3%
-3500
-Affected: 99.3%
-3501
-Affected: 99.3%
-3502
-Affected: 99.3%
-3503
-Affected: 99.3%
-3504
-Affected: 99.3%
-3505
-Affected: 99.3%
-3506
-Affected: 99.3%
-3507
-Affected: 99.3%
-3508
-Affected: 99.3%
-3509
-Affected: 99.3%
-3510
-Affected: 99.3%
-3511
-Affected: 99.3%
-3512
-Affected: 99.3%
-3513
-Affected: 99.3%
-3514
-Affected: 99.3%
-3515
-Affected: 99.3%
-3516
-Affected: 99.3%
-3517
-Affected: 99.3%
-3518
-Affected: 99.3%
-3519
-Affected: 99.3%
-3520
-Affected: 99.3%
-3521
-Affected: 99.3%
-3522
-Affected: 99.3%
-3523
-Affected: 99.3%
-3524
-Affected: 99.3%
-3525
-Affected: 99.3%
-3526
-Affected: 99.3%
-3527
-Affected: 99.3%
-3528
-Affected: 99.3%
-3529
-Affected: 99.3%
-3530
-Affected: 99.3%
-3531
-Affected: 99.3%
-3532
-Affected: 99.3%
-3533
-Affected: 99.3%
-3534
-Affected: 99.3%
-3535
-Affected: 99.3%
-3536
-Affected: 99.3%
-3537
-Affected: 99.3%
-3538
-Affected: 99.3%
-3539
-Affected: 99.3%
-3540
-Affected: 99.3%
-3541
-Affected: 99.3%
-3542
-Affected: 99.3%
-3543
-Affected: 99.3%
-3544
-Affected: 99.3%
-3545
-Affected: 99.3%
-3546
-Affected: 99.3%
-3547
-Affected: 99.3%
-3548
-Affected: 99.3%
-3549
-Affected: 99.3%
-3550
-Affected: 99.3%
-3551
-Affected: 99.3%
-3552
-Affected: 99.3%
-3553
-Affected: 99.3%
-3554
-Affected: 99.3%
-3555
-Affected: 99.3%
-3556
-Affected: 99.3%
-3557
-Affected: 99.3%
-3558
-Affected: 99.3%
-3559
-Affected: 99.3%
-3560
-Affected: 99.3%
-3561
-Affected: 99.3%
-3562
-Affected: 99.3%
-3563
-Affected: 99.3%
-3564
-Affected: 99.3%
-3565
-Affected: 99.3%
-3566
-Affected: 99.3%
-3567
-Affected: 99.3%
-3568
-Affected: 99.3%
-3569
-Affected: 99.3%
-3570
-Affected: 99.3%
-3571
-Affected: 99.3%
-3572
-Affected: 99.3%
-3573
-Affected: 99.3%
-3574
-Affected: 99.3%
-3575
-Affected: 99.3%
-3576
-Affected: 99.3%
-3577
-Affected: 99.3%
-3578
-Affected: 99.3%
-3579
-Affected: 99.3%
-3580
-Affected: 99.3%
-3581
-Affected: 99.3%
-3582
-Affected: 99.3%
-3583
-Affected: 99.3%
-3584
-Affected: 99.3%
-3585
-Affected: 99.3%
-3586
-Affected: 99.3%
-3587
-Affected: 99.3%
-3588
-Affected: 99.3%
-3589
-Affected: 99.3%
-3590
-Affected: 99.3%
-3591
-Affected: 99.3%
-3592
-Affected: 99.3%
-3593
-Affected: 99.3%
-3594
-Affected: 99.3%
-3595
-Affected: 99.3%
-3596
-Affected: 99.3%
-3597
-Affected: 99.3%
-3598
-Affected: 99.3%
-3599
-Affected: 99.3%
-3600
-Affected: 99.3%
-3601
-Affected: 99.3%
-3602
-Affected: 99.3%
-3603
-Affected: 99.3%
-3604
-Affected: 99.3%
-3605
-Affected: 99.3%
-3606
-Affected: 99.3%
-3607
-Affected: 99.3%
-3608
-Affected: 99.3%
-3609
-Affected: 99.3%
-3610
-Affected: 99.3%
-3611
-Affected: 99.3%
-3612
-Affected: 99.3%
-3613
-Affected: 99.3%
-3614
-Affected: 99.3%
-3615
-Affected: 99.3%
-3616
-Affected: 99.3%
-3617
-Affected: 99.3%
-3618
-Affected: 99.3%
-3619
-Affected: 99.3%
-3620
-Affected: 99.3%
-3621
-Affected: 99.3%
-3622
-Affected: 99.3%
-3623
-Affected: 99.3%
-3624
-Affected: 99.3%
-3625
-Affected: 99.3%
-3626
-Affected: 99.3%
-3627
-Affected: 99.3%
-3628
-Affected: 99.3%
-3629
-Affected: 99.3%
-3630
-Affected: 99.3%
-3631
-Affected: 99.3%
-3632
-Affected: 99.3%
-3633
-Affected: 99.3%
-3634
-Affected: 99.3%
-3635
-Affected: 99.3%
-3636
-Affected: 99.3%
-3637
-Affected: 99.3%
-3638
-Affected: 99.3%
-3639
-Affected: 99.3%
-3640
-Affected: 99.3%
-3641
-Affected: 99.3%
-3642
-Affected: 99.3%
-3643
-Affected: 99.3%
-3644
-Affected: 99.3%
-3645
-Affected: 99.3%
-3646
-Affected: 99.3%
-3647
-Affected: 99.3%
-3648
-Affected: 99.3%
-3649
-Affected: 99.3%
-3650
-Affected: 99.3%
-3651
-Affected: 99.3%
-3652
-Affected: 99.3%
-3653
-Affected: 99.3%
-3654
-Affected: 99.3%
-3655
-Affected: 99.3%
-3656
-Affected: 99.3%
-3657
-Affected: 99.3%
-3658
-Affected: 99.3%
-3659
-Affected: 99.3%
-3660
-Affected: 99.3%
-3661
-Affected: 99.3%
-3662
-Affected: 99.3%
-3663
-Affected: 99.3%
-3664
-Affected: 99.3%
-3665
-Affected: 99.3%
-3666
-Affected: 99.3%
-3667
-Affected: 99.3%
-3668
-Affected: 99.3%
-3669
-Affected: 99.3%
-3670
-Affected: 99.3%
-3671
-Affected: 99.3%
-3672
-Affected: 99.3%
-3673
-Affected: 99.3%
-3674
-Affected: 99.3%
-3675
-Affected: 99.3%
-3676
-Affected: 99.3%
-3677
-Affected: 99.3%
-3678
-Affected: 99.3%
-3679
-Affected: 99.3%
-3680
-Affected: 99.3%
-3681
-Affected: 99.3%
-3682
-Affected: 99.3%
-3683
-Affected: 99.3%
-3684
-Affected: 99.3%
-3685
-Affected: 99.3%
-3686
-Affected: 99.3%
-3687
-Affected: 99.3%
-3688
-Affected: 99.3%
-3689
-Affected: 99.3%
-3690
-Affected: 99.3%
-3691
-Affected: 99.3%
-3692
-Affected: 99.3%
-3693
-Affected: 99.3%
-3694
-Affected: 99.3%
-3695
-Affected: 99.3%
-3696
-Affected: 99.3%
-3697
-Affected: 99.3%
-3698
-Affected: 99.3%
-3699
-Affected: 99.3%
-3700
-Affected: 99.3%
-3701
-Affected: 99.3%
-3702
-Affected: 99.3%
-3703
-Affected: 99.3%
-3704
-Affected: 99.3%
-3705
-Affected: 99.3%
-3706
-Affected: 99.3%
-3707
-Affected: 99.3%
-3708
-Affected: 99.3%
-3709
-Affected: 99.3%
-3710
-Affected: 99.3%
-3711
-Affected: 99.3%
-3712
-Affected: 99.3%
-3713
-Affected: 99.3%
-3714
-Affected: 99.3%
-3715
-Affected: 99.3%
-3716
-Affected: 99.3%
-3717
-Affected: 99.3%
-3718
-Affected: 99.3%
-3719
-Affected: 99.3%
-3720
-Affected: 99.3%
-3721
-Affected: 99.3%
-3722
-Affected: 99.3%
-3723
-Affected: 99.3%
-3724
-Affected: 99.3%
-3725
-Affected: 99.3%
-3726
-Affected: 99.3%
-3727
-Affected: 99.3%
-3728
-Affected: 99.3%
-3729
-Affected: 99.3%
-3730
-Affected: 99.3%
-3731
-Affected: 99.3%
-3732
-Affected: 99.3%
-3733
-Affected: 99.3%
-3734
-Affected: 99.3%
-3735
-Affected: 99.3%
-3736
-Affected: 99.3%
-3737
-Affected: 99.3%
-3738
-Affected: 99.3%
-3739
-Affected: 99.3%
-3740
-Affected: 99.3%
-3741
-Affected: 99.3%
-3742
-Affected: 99.3%
-3743
-Affected: 99.3%
-3744
-Affected: 99.3%
-3745
-Affected: 99.3%
-3746
-Affected: 99.3%
-3747
-Affected: 99.3%
-3748
-Affected: 99.3%
-3749
-Affected: 99.3%
-3750
-Affected: 99.3%
-3751
-Affected: 99.3%
-3752
-Affected: 99.3%
-3753
-Affected: 99.3%
-3754
-Affected: 99.3%
-3755
-Affected: 99.3%
-3756
-Affected: 99.3%
-3757
-Affected: 99.3%
-3758
-Affected: 99.3%
-3759
-Affected: 99.3%
-3760
-Affected: 99.3%
-3761
-Affected: 99.3%
-3762
-Affected: 99.3%
-3763
-Affected: 99.3%
-3764
-Affected: 99.3%
-3765
-Affected: 99.3%
-3766
-Affected: 99.3%
-3767
-Affected: 99.3%
-3768
-Affected: 99.3%
-3769
-Affected: 99.3%
-3770
-Affected: 99.3%
-3771
-Affected: 99.3%
-3772
-Affected: 99.3%
-3773
-Affected: 99.3%
-3774
-Affected: 99.3%
-3775
-Affected: 99.3%
-3776
-Affected: 99.3%
-3777
-Affected: 99.3%
-3778
-Affected: 99.3%
-3779
-Affected: 99.3%
-3780
-Affected: 99.3%
-3781
-Affected: 99.3%
-3782
-Affected: 99.3%
-3783
-Affected: 99.3%
-3784
-Affected: 99.3%
-3785
-Affected: 99.3%
-3786
-Affected: 99.3%
-3787
-Affected: 99.3%
-3788
-Affected: 99.3%
-3789
-Affected: 99.3%
-3790
-Affected: 99.3%
-3791
-Affected: 99.3%
-3792
-Affected: 99.3%
-3793
-Affected: 99.3%
-3794
-Affected: 99.3%
-3795
-Affected: 99.3%
-3796
-Affected: 99.3%
-3797
-Affected: 99.3%
-3798
-Affected: 99.3%
-3799
-Affected: 99.3%
-3800
-Affected: 99.3%
-3801
-Affected: 99.3%
-3802
-Affected: 99.3%
-3803
-Affected: 99.3%
-3804
-Affected: 99.3%
-3805
-Affected: 99.3%
-3806
-Affected: 99.3%
-3807
-Affected: 99.3%
-3808
-Affected: 99.3%
-3809
-Affected: 99.3%
-3810
-Affected: 99.3%
-3811
-Affected: 99.3%
-3812
-Affected: 99.3%
-3813
-Affected: 99.3%
-3814
-Affected: 99.3%
-3815
-Affected: 99.3%
-3816
-Affected: 99.3%
-3817
-Affected: 99.3%
-3818
-Affected: 99.3%
-3819
-Affected: 99.3%
-3820
-Affected: 99.3%
-3821
-Affected: 99.3%
-3822
-Affected: 99.3%
-3823
-Affected: 99.3%
-3824
-Affected: 99.3%
-3825
-Affected: 99.3%
-3826
-Affected: 99.3%
-3827
-Affected: 99.3%
-3828
-Affected: 99.3%
-3829
-Affected: 99.3%
-3830
-Affected: 99.3%
-3831
-Affected: 99.3%
-3832
-Affected: 99.3%
-3833
-Affected: 99.3%
-3834
-Affected: 99.3%
-3835
-Affected: 99.3%
-3836
-Affected: 99.3%
-3837
-Affected: 99.3%
-3838
-Affected: 99.3%
-3839
-Affected: 99.3%
-3840
-Affected: 99.3%
-3841
-Affected: 99.3%
-3842
-Affected: 99.3%
-3843
-Affected: 99.3%
-3844
-Affected: 99.3%
-3845
-Affected: 99.3%
-3846
-Affected: 99.3%
-3847
-Affected: 99.3%
-3848
-Affected: 99.3%
-3849
-Affected: 99.3%
-3850
-Affected: 99.3%
-3851
-Affected: 99.3%
-3852
-Affected: 99.3%
-3853
-Affected: 99.3%
-3854
-Affected: 99.3%
-3855
-Affected: 99.3%
-3856
-Affected: 99.3%
-3857
-Affected: 99.3%
-3858
-Affected: 99.3%
-3859
-Affected: 99.3%
-3860
-Affected: 99.3%
-3861
-Affected: 99.3%
-3862
-Affected: 99.3%
-3863
-Affected: 99.3%
-3864
-Affected: 99.3%
-3865
-Affected: 99.3%
-3866
-Affected: 99.3%
-3867
-Affected: 99.3%
-3868
-Affected: 99.3%
-3869
-Affected: 99.3%
-3870
-Affected: 99.3%
-3871
-Affected: 99.3%
-3872
-Affected: 99.3%
-3873
-Affected: 99.3%
-3874
-Affected: 99.3%
-3875
-Affected: 99.3%
-3876
-Affected: 99.3%
-3877
-Affected: 99.3%
-3878
-Affected: 99.3%
-3879
-Affected: 99.3%
-3880
-Affected: 99.3%
-3881
-Affected: 99.3%
-3882
-Affected: 99.3%
-3883
-Affected: 99.3%
-3884
-Affected: 99.3%
-3885
-Affected: 99.3%
-3886
-Affected: 99.3%
-3887
-Affected: 99.3%
-3888
-Affected: 99.3%
-3889
-Affected: 99.3%
-3890
-Affected: 99.3%
-3891
-Affected: 99.3%
-3892
-Affected: 99.3%
-3893
-Affected: 99.3%
-3894
-Affected: 99.3%
-3895
-Affected: 99.3%
-3896
-Affected: 99.3%
-3897
-Affected: 99.3%
-3898
-Affected: 99.3%
-3899
-Affected: 99.3%
-3900
-Affected: 99.3%
-3901
-Affected: 99.3%
-3902
-Affected: 99.3%
-3903
-Affected: 99.3%
-3904
-Affected: 99.3%
-3905
-Affected: 99.3%
-3906
-Affected: 99.3%
-3907
-Affected: 99.3%
-3908
-Affected: 99.3%
-3909
-Affected: 99.3%
-3910
-Affected: 99.3%
-3911
-Affected: 99.3%
-3912
-Affected: 99.3%
-3913
-Affected: 99.3%
-3914
-Affected: 99.3%
-3915
-Affected: 99.3%
-3916
-Affected: 99.3%
-3917
-Affected: 99.3%
-3918
-Affected: 99.3%
-3919
-Affected: 99.3%
-3920
-Affected: 99.3%
-3921
-Affected: 99.3%
-3922
-Affected: 99.3%
-3923
-Affected: 99.3%
-3924
-Affected: 99.3%
-3925
-Affected: 99.3%
-3926
-Affected: 99.3%
-3927
-Affected: 99.3%
-3928
-Affected: 99.3%
-3929
-Affected: 99.3%
-3930
-Affected: 99.3%
-3931
-Affected: 99.3%
-3932
-Affected: 99.3%
-3933
-Affected: 99.3%
-3934
-Affected: 99.3%
-3935
-Affected: 99.3%
-3936
-Affected: 99.3%
-3937
-Affected: 99.3%
-3938
-Affected: 99.3%
-3939
-Affected: 99.3%
-3940
-Affected: 99.3%
-3941
-Affected: 99.3%
-3942
-Affected: 99.3%
-3943
-Affected: 99.3%
-3944
-Affected: 99.3%
-3945
-Affected: 99.3%
-3946
-Affected: 99.3%
-3947
-Affected: 99.3%
-3948
-Affected: 99.3%
-3949
-Affected: 99.3%
-3950
-Affected: 99.3%
-3951
-Affected: 99.3%
-3952
-Affected: 99.3%
-3953
-Affected: 99.3%
-3954
-Affected: 99.3%
-3955
-Affected: 99.3%
-3956
-Affected: 99.3%
-3957
-Affected: 99.3%
-3958
-Affected: 99.3%
-3959
-Affected: 99.3%
-3960
-Affected: 99.3%
-3961
-Affected: 99.3%
-3962
-Affected: 99.3%
-3963
-Affected: 99.3%
-3964
-Affected: 99.3%
-3965
-Affected: 99.3%
-3966
-Affected: 99.
+A

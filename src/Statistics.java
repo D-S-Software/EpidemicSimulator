@@ -55,8 +55,6 @@ public class Statistics implements ActionListener {
         x.addTime(time);
         x.addSpace();
 
-        updateBoard();
-
         printResults();
 
         boolean close;
@@ -68,19 +66,6 @@ public class Statistics implements ActionListener {
         {
             /**x.closeFile();
             System.exit(0); TODO Add back in at some point */
-        }
-    }
-
-    public void updateBoard()
-    {
-        simBoard.updateDistanceFromSick();
-
-        simBoard.updatePerson();
-
-        for(int i = 0; i < pList.size(); i++)
-        {
-            pList.get(i).updateDimens(gui.getBoardRec()); //Checks the borders of the BoardPanel each tick to update each person move / bounce method
-            pList.get(i).draw(gui.getBoardPanel().getGraphics());
         }
     }
 
