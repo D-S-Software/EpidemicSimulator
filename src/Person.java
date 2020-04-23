@@ -97,8 +97,10 @@ public class Person {
 
     public void updateDimens(Rectangle rect)
     {
-        dimens.setxLen(rect.width);
-        dimens.setyLen(rect.height);
+        dimens.setxOrigin(rect.x);
+        dimens.setyOrigin(rect.y);
+        dimens.setxLen(rect.width - circleRad);
+        dimens.setyLen(rect.height - circleRad);
     }
 
     public void draw(Graphics2D g2D)

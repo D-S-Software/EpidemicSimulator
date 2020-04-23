@@ -1,6 +1,6 @@
 import java.awt.*;
 
-//TODO Replace this class with java Rectangle
+//TODO Replace this class with java Rectangle and Dimension
 /** Dimensions contains values that will be used in the creation of a Board object and are passed to a Person object */
 public class Dimensions {
 
@@ -30,11 +30,9 @@ public class Dimensions {
         this.yLen = dimensions.yLen;
     }
 
-    /** Default board dimensions */
-    public Dimensions()
+    public Dimensions(Rectangle rect)
     {
-        this(0,0,800,450);
-        //TODO: Fix xOrigin, yOrigin when not equal to 0
+        this(rect.x, rect.y, rect.width, rect.height);
     }
 
     public void setxOrigin(int num)

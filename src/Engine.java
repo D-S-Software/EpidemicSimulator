@@ -6,12 +6,11 @@ public class Engine {
     private GUI gui;
     private Board simBoard;
 
-    public Engine(GUI gui, Disease disease, int numPeople, int baseXLen, int baseYLen)
+    public Engine(GUI gui, Disease disease, int numPeople)
     {
         this.gui = gui;
 
-        //TODO make this formula so people spawn across the entire BoardPanel (based on the baseXLen and baseYLen)
-        Dimensions boardDimens = new Dimensions(0, 0, baseXLen/2, (baseYLen+50)/2);
+        Dimensions boardDimens = new Dimensions(gui.getBoardRec());
 
         simBoard = new Board(disease, boardDimens, numPeople);
 

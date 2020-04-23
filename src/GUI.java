@@ -111,7 +111,7 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        controlPanel = new ControlPanel(this, preWidth, preHeight);
+        controlPanel = new ControlPanel(this);
         controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         controlPanel.getMainPanel().setBackground(Color.LIGHT_GRAY);
         leftPanel.add(controlPanel.getMainPanel(), gbc);
