@@ -131,9 +131,13 @@ public class GUI {
         talleyPanel = new TalleyPanel(new GridLayout(2, 2));
         talleyPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         numHealthyLabel.setPreferredSize(new Dimension(20, 10));
+        numHealthyLabel.setText("NumHealthy: ");
         numSickLabel.setPreferredSize(new Dimension(20, 10));
+        numSickLabel.setText("NumSick: ");
         numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
+        numRecoveredLabel.setText("NumRecovered: ");
         numDeadLabel.setPreferredSize(new Dimension(20, 10));
+        numDeadLabel.setText("NumDead: ");
         talleyPanel.add(numHealthyLabel);
         talleyPanel.add(numRecoveredLabel);
         talleyPanel.add(numSickLabel);

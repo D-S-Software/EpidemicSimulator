@@ -16,7 +16,7 @@ public class Statistics implements ActionListener {
         pList = simBoard.getPList();
         this.numPeople = numPeople;
         this.gui = gui;
-        x.openFile();
+        //x.openFile(); TODO Add back in at some point
     }
 
     public static CreateFile getCreateFile()
@@ -50,12 +50,11 @@ public class Statistics implements ActionListener {
         gui.getNumRecoveredLabel().setText("NumRecovered: " + numRecovered);
         gui.getNumDeadLabel().setText("NumDead: " + numDead);
 
+        /**
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
         x.addSpace();
         x.addTime(time);
         x.addSpace();
-
-        printResults();
 
         boolean close;
         if(numSick > 0)
@@ -64,9 +63,9 @@ public class Statistics implements ActionListener {
             close = true;
         if(close)
         {
-            /**x.closeFile();
-            System.exit(0); TODO Add back in at some point */
-        }
+            x.closeFile();
+            System.exit(0); TODO Add back in at some point
+        }*/
     }
 
     /** Getter and Setter Methods */
