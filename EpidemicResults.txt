@@ -1,0 +1,14934 @@
+Affected: 4.6%
+1
+Affected: 4.6%
+2
+Affected: 4.6%
+3
+Affected: 4.7%
+4
+Affected: 4.7%
+5
+Affected: 4.7%
+6
+Affected: 4.7%
+7
+Affected: 4.7%
+8
+Affected: 4.7%
+9
+Affected: 4.7%
+10
+Affected: 4.7%
+11
+Affected: 4.7%
+12
+Affected: 4.7%
+13
+Affected: 4.8%
+14
+Affected: 5%
+15
+Affected: 5%
+16
+Affected: 5%
+17
+Affected: 5.1%
+18
+Affected: 5.1%
+19
+Affected: 5.1%
+20
+Affected: 5.1%
+21
+Affected: 5.1%
+22
+Affected: 5.1%
+23
+Affected: 5.1%
+24
+Affected: 5.2%
+25
+Affected: 5.2%
+26
+Affected: 5.2%
+27
+Affected: 5.2%
+28
+Affected: 5.2%
+29
+Affected: 5.3%
+30
+Affected: 5.3%
+31
+Affected: 5.3%
+32
+Affected: 5.4%
+33
+Affected: 5.4%
+34
+Affected: 5.4%
+35
+Affected: 5.4%
+36
+Affected: 5.4%
+37
+Affected: 5.4%
+38
+Affected: 5.5%
+39
+Affected: 5.5%
+40
+Affected: 5.5%
+41
+Affected: 5.601%
+42
+Affected: 5.7%
+43
+Affected: 5.801%
+44
+Affected: 5.801%
+45
+Affected: 5.801%
+46
+Affected: 5.9%
+47
+Affected: 5.9%
+48
+Affected: 6%
+49
+Affected: 6.2%
+50
+Affected: 6.4%
+51
+Affected: 6.5%
+52
+Affected: 6.601%
+53
+Affected: 6.601%
+54
+Affected: 6.801%
+55
+Affected: 7.001%
+56
+Affected: 7.1%
+57
+Affected: 7.2%
+58
+Affected: 7.2%
+59
+Affected: 7.3%
+60
+Affected: 7.3%
+61
+Affected: 7.3%
+62
+Affected: 7.3%
+63
+Affected: 7.4%
+64
+Affected: 7.4%
+65
+Affected: 7.6%
+66
+Affected: 7.7%
+67
+Affected: 7.7%
+68
+Affected: 7.8%
+69
+Affected: 7.9%
+70
+Affected: 8%
+71
+Affected: 8.1%
+72
+Affected: 8.1%
+73
+Affected: 8.1%
+74
+Affected: 8.3%
+75
+Affected: 8.3%
+76
+Affected: 8.4%
+77
+Affected: 8.6%
+78
+Affected: 8.7%
+79
+Affected: 8.7%
+80
+Affected: 8.8%
+81
+Affected: 8.9%
+82
+Affected: 9%
+83
+Affected: 9%
+84
+Affected: 9.1%
+85
+Affected: 9.2%
+86
+Affected: 9.3%
+87
+Affected: 9.5%
+88
+Affected: 9.6%
+89
+Affected: 9.6%
+90
+Affected: 9.701%
+91
+Affected: 9.701%
+92
+Affected: 9.701%
+93
+Affected: 9.701%
+94
+Affected: 9.8%
+95
+Affected: 9.8%
+96
+Affected: 9.8%
+97
+Affected: 9.8%
+98
+Affected: 9.9%
+99
+Affected: 9.9%
+100
+Affected: 9.9%
+101
+Affected: 9.9%
+102
+Affected: 9.9%
+103
+Affected: 10%
+104
+Affected: 10%
+105
+Affected: 10%
+106
+Affected: 10%
+107
+Affected: 10%
+108
+Affected: 10%
+109
+Affected: 10.101%
+110
+Affected: 10.101%
+111
+Affected: 10.2%
+112
+Affected: 10.3%
+113
+Affected: 10.4%
+114
+Affected: 10.4%
+115
+Affected: 10.4%
+116
+Affected: 10.8%
+117
+Affected: 10.8%
+118
+Affected: 10.9%
+119
+Affected: 11%
+120
+Affected: 11.3%
+121
+Affected: 11.3%
+122
+Affected: 11.3%
+123
+Affected: 11.3%
+124
+Affected: 11.4%
+125
+Affected: 11.4%
+126
+Affected: 11.4%
+127
+Affected: 11.5%
+128
+Affected: 11.601%
+129
+Affected: 11.701%
+130
+Affected: 12%
+131
+Affected: 12%
+132
+Affected: 12%
+133
+Affected: 12%
+134
+Affected: 12.1%
+135
+Affected: 12.3%
+136
+Affected: 12.3%
+137
+Affected: 12.3%
+138
+Affected: 12.4%
+139
+Affected: 12.5%
+140
+Affected: 12.6%
+141
+Affected: 12.6%
+142
+Affected: 12.7%
+143
+Affected: 12.7%
+144
+Affected: 12.7%
+145
+Affected: 12.7%
+146
+Affected: 12.9%
+147
+Affected: 12.9%
+148
+Affected: 13%
+149
+Affected: 13.101%
+150
+Affected: 13.201%
+151
+Affected: 13.201%
+152
+Affected: 13.3%
+153
+Affected: 13.3%
+154
+Affected: 13.3%
+155
+Affected: 13.3%
+156
+Affected: 13.5%
+157
+Affected: 13.5%
+158
+Affected: 13.5%
+159
+Affected: 13.601%
+160
+Affected: 13.601%
+161
+Affected: 13.8%
+162
+Affected: 13.901%
+163
+Affected: 14.001%
+164
+Affected: 14.001%
+165
+Affected: 14.001%
+166
+Affected: 14.4%
+167
+Affected: 14.4%
+168
+Affected: 14.5%
+169
+Affected: 14.6%
+170
+Affected: 15%
+171
+Affected: 15.3%
+172
+Affected: 15.5%
+173
+Affected: 15.5%
+174
+Affected: 15.8%
+175
+Affected: 16%
+176
+Affected: 16.2%
+177
+Affected: 16.3%
+178
+Affected: 16.401%
+179
+Affected: 16.5%
+180
+Affected: 16.901%
+181
+Affected: 17.1%
+182
+Affected: 17.2%
+183
+Affected: 17.4%
+184
+Affected: 17.4%
+185
+Affected: 17.5%
+186
+Affected: 17.5%
+187
+Affected: 17.5%
+188
+Affected: 17.6%
+189
+Affected: 17.8%
+190
+Affected: 17.8%
+191
+Affected: 17.9%
+192
+Affected: 17.9%
+193
+Affected: 17.9%
+194
+Affected: 18%
+195
+Affected: 18.3%
+196
+Affected: 18.4%
+197
+Affected: 18.4%
+198
+Affected: 18.6%
+199
+Affected: 18.6%
+200
+Affected: 18.6%
+201
+Affected: 18.6%
+202
+Affected: 18.6%
+203
+Affected: 18.9%
+204
+Affected: 19.2%
+205
+Affected: 19.401%
+206
+Affected: 19.6%
+207
+Affected: 19.6%
+208
+Affected: 19.8%
+209
+Affected: 19.8%
+210
+Affected: 19.901%
+211
+Affected: 19.901%
+212
+Affected: 20%
+213
+Affected: 20.1%
+214
+Affected: 20.3%
+215
+Affected: 20.3%
+216
+Affected: 20.3%
+217
+Affected: 20.5%
+218
+Affected: 20.6%
+219
+Affected: 20.8%
+220
+Affected: 21.2%
+221
+Affected: 21.2%
+222
+Affected: 21.2%
+223
+Affected: 21.3%
+224
+Affected: 21.4%
+225
+Affected: 21.4%
+226
+Affected: 21.5%
+227
+Affected: 21.7%
+228
+Affected: 21.8%
+229
+Affected: 22%
+230
+Affected: 22%
+231
+Affected: 22.2%
+232
+Affected: 22.401%
+233
+Affected: 22.5%
+234
+Affected: 22.8%
+235
+Affected: 23%
+236
+Affected: 23.201%
+237
+Affected: 23.401%
+238
+Affected: 23.8%
+239
+Affected: 23.9%
+240
+Affected: 23.9%
+241
+Affected: 24.1%
+242
+Affected: 24.3%
+243
+Affected: 24.3%
+244
+Affected: 24.4%
+245
+Affected: 24.5%
+246
+Affected: 24.7%
+247
+Affected: 24.7%
+248
+Affected: 24.9%
+249
+Affected: 25%
+250
+Affected: 25.1%
+251
+Affected: 25.3%
+252
+Affected: 25.4%
+253
+Affected: 25.6%
+254
+Affected: 25.901%
+255
+Affected: 26%
+256
+Affected: 26.201%
+257
+Affected: 26.401%
+258
+Affected: 26.5%
+259
+Affected: 26.6%
+260
+Affected: 26.8%
+261
+Affected: 26.901%
+262
+Affected: 27.201%
+263
+Affected: 27.3%
+264
+Affected: 27.3%
+265
+Affected: 27.3%
+266
+Affected: 27.501%
+267
+Affected: 27.501%
+268
+Affected: 27.701%
+269
+Affected: 27.701%
+270
+Affected: 27.701%
+271
+Affected: 27.801%
+272
+Affected: 27.901%
+273
+Affected: 27.901%
+274
+Affected: 27.901%
+275
+Affected: 28.1%
+276
+Affected: 28.3%
+277
+Affected: 28.6%
+278
+Affected: 28.8%
+279
+Affected: 29.3%
+280
+Affected: 29.8%
+281
+Affected: 30.2%
+282
+Affected: 30.4%
+283
+Affected: 30.5%
+284
+Affected: 30.8%
+285
+Affected: 31%
+286
+Affected: 31.3%
+287
+Affected: 31.5%
+288
+Affected: 32%
+289
+Affected: 32.5%
+290
+Affected: 32.7%
+291
+Affected: 32.9%
+292
+Affected: 33%
+293
+Affected: 33%
+294
+Affected: 33.301%
+295
+Affected: 33.7%
+296
+Affected: 33.7%
+297
+Affected: 34.1%
+298
+Affected: 34.5%
+299
+Affected: 34.8%
+300
+Affected: 34.9%
+301
+Affected: 35.3%
+302
+Affected: 35.5%
+303
+Affected: 35.7%
+304
+Affected: 35.7%
+305
+Affected: 36%
+306
+Affected: 36.4%
+307
+Affected: 37%
+308
+Affected: 37.1%
+309
+Affected: 37.2%
+310
+Affected: 37.3%
+311
+Affected: 37.4%
+312
+Affected: 37.6%
+313
+Affected: 37.7%
+314
+Affected: 38.1%
+315
+Affected: 38.2%
+316
+Affected: 39%
+317
+Affected: 39.2%
+318
+Affected: 39.7%
+319
+Affected: 39.7%
+320
+Affected: 39.7%
+321
+Affected: 39.801%
+322
+Affected: 40%
+323
+Affected: 40.7%
+324
+Affected: 41.3%
+325
+Affected: 41.5%
+326
+Affected: 41.6%
+327
+Affected: 42.1%
+328
+Affected: 42.3%
+329
+Affected: 42.7%
+330
+Affected: 42.9%
+331
+Affected: 43.7%
+332
+Affected: 43.8%
+333
+Affected: 44%
+334
+Affected: 44.2%
+335
+Affected: 44.7%
+336
+Affected: 45%
+337
+Affected: 45.1%
+338
+Affected: 45.2%
+339
+Affected: 45.7%
+340
+Affected: 46.1%
+341
+Affected: 46.7%
+342
+Affected: 47.1%
+343
+Affected: 47.5%
+344
+Affected: 47.5%
+345
+Affected: 47.9%
+346
+Affected: 48.4%
+347
+Affected: 48.7%
+348
+Affected: 49.2%
+349
+Affected: 49.7%
+350
+Affected: 50.3%
+351
+Affected: 50.8%
+352
+Affected: 51.2%
+353
+Affected: 51.301%
+354
+Affected: 51.7%
+355
+Affected: 51.801%
+356
+Affected: 51.801%
+357
+Affected: 51.9%
+358
+Affected: 52%
+359
+Affected: 52.1%
+360
+Affected: 52.2%
+361
+Affected: 52.301%
+362
+Affected: 52.5%
+363
+Affected: 52.5%
+364
+Affected: 52.5%
+365
+Affected: 52.5%
+366
+Affected: 52.7%
+367
+Affected: 52.801%
+368
+Affected: 53.2%
+369
+Affected: 53.7%
+370
+Affected: 54.1%
+371
+Affected: 54.401%
+372
+Affected: 54.501%
+373
+Affected: 54.901%
+374
+Affected: 55.301%
+375
+Affected: 55.901%
+376
+Affected: 56.001%
+377
+Affected: 56.101%
+378
+Affected: 56.7%
+379
+Affected: 56.9%
+380
+Affected: 57.2%
+381
+Affected: 57.7%
+382
+Affected: 57.9%
+383
+Affected: 58.2%
+384
+Affected: 58.7%
+385
+Affected: 58.9%
+386
+Affected: 59.3%
+387
+Affected: 59.9%
+388
+Affected: 60.2%
+389
+Affected: 60.4%
+390
+Affected: 60.7%
+391
+Affected: 60.8%
+392
+Affected: 60.9%
+393
+Affected: 61%
+394
+Affected: 61.7%
+395
+Affected: 62.2%
+396
+Affected: 62.5%
+397
+Affected: 62.9%
+398
+Affected: 63%
+399
+Affected: 63.2%
+400
+Affected: 63.5%
+401
+Affected: 64%
+402
+Affected: 64.4%
+403
+Affected: 64.5%
+404
+Affected: 64.7%
+405
+Affected: 64.8%
+406
+Affected: 64.8%
+407
+Affected: 64.9%
+408
+Affected: 65.101%
+409
+Affected: 65.3%
+410
+Affected: 65.4%
+411
+Affected: 65.4%
+412
+Affected: 65.601%
+413
+Affected: 65.7%
+414
+Affected: 65.8%
+415
+Affected: 66%
+416
+Affected: 66.101%
+417
+Affected: 66.2%
+418
+Affected: 66.3%
+419
+Affected: 66.4%
+420
+Affected: 66.5%
+421
+Affected: 66.8%
+422
+Affected: 67.601%
+423
+Affected: 67.9%
+424
+Affected: 68%
+425
+Affected: 68.2%
+426
+Affected: 68.301%
+427
+Affected: 68.4%
+428
+Affected: 68.8%
+429
+Affected: 69.1%
+430
+Affected: 69.2%
+431
+Affected: 69.4%
+432
+Affected: 69.5%
+433
+Affected: 69.7%
+434
+Affected: 70.3%
+435
+Affected: 70.3%
+436
+Affected: 70.7%
+437
+Affected: 70.8%
+438
+Affected: 71%
+439
+Affected: 71.2%
+440
+Affected: 71.4%
+441
+Affected: 71.7%
+442
+Affected: 71.8%
+443
+Affected: 71.8%
+444
+Affected: 71.9%
+445
+Affected: 72.2%
+446
+Affected: 72.3%
+447
+Affected: 72.5%
+448
+Affected: 72.6%
+449
+Affected: 72.6%
+450
+Affected: 72.8%
+451
+Affected: 72.9%
+452
+Affected: 73.2%
+453
+Affected: 73.3%
+454
+Affected: 73.5%
+455
+Affected: 73.7%
+456
+Affected: 73.9%
+457
+Affected: 74%
+458
+Affected: 74%
+459
+Affected: 74%
+460
+Affected: 74.1%
+461
+Affected: 74.3%
+462
+Affected: 74.3%
+463
+Affected: 74.5%
+464
+Affected: 74.5%
+465
+Affected: 74.6%
+466
+Affected: 74.6%
+467
+Affected: 74.6%
+468
+Affected: 74.7%
+469
+Affected: 74.7%
+470
+Affected: 74.9%
+471
+Affected: 75%
+472
+Affected: 75.4%
+473
+Affected: 75.8%
+474
+Affected: 76.2%
+475
+Affected: 76.7%
+476
+Affected: 76.9%
+477
+Affected: 76.9%
+478
+Affected: 77.2%
+479
+Affected: 77.4%
+480
+Affected: 77.5%
+481
+Affected: 77.8%
+482
+Affected: 77.8%
+483
+Affected: 77.9%
+484
+Affected: 78.3%
+485
+Affected: 78.601%
+486
+Affected: 78.9%
+487
+Affected: 79.2%
+488
+Affected: 79.5%
+489
+Affected: 79.5%
+490
+Affected: 79.7%
+491
+Affected: 79.9%
+492
+Affected: 79.9%
+493
+Affected: 79.9%
+494
+Affected: 80%
+495
+Affected: 80.101%
+496
+Affected: 80.101%
+497
+Affected: 80.301%
+498
+Affected: 80.4%
+499
+Affected: 80.4%
+500
+Affected: 80.4%
+501
+Affected: 80.4%
+502
+Affected: 80.4%
+503
+Affected: 80.4%
+504
+Affected: 80.4%
+505
+Affected: 80.4%
+506
+Affected: 80.4%
+507
+Affected: 80.5%
+508
+Affected: 80.601%
+509
+Affected: 80.601%
+510
+Affected: 80.601%
+511
+Affected: 80.801%
+512
+Affected: 81%
+513
+Affected: 81.2%
+514
+Affected: 81.2%
+515
+Affected: 81.3%
+516
+Affected: 81.4%
+517
+Affected: 81.5%
+518
+Affected: 81.5%
+519
+Affected: 81.6%
+520
+Affected: 81.7%
+521
+Affected: 81.7%
+522
+Affected: 81.7%
+523
+Affected: 81.8%
+524
+Affected: 81.8%
+525
+Affected: 82.2%
+526
+Affected: 82.5%
+527
+Affected: 82.6%
+528
+Affected: 82.7%
+529
+Affected: 82.8%
+530
+Affected: 82.8%
+531
+Affected: 83%
+532
+Affected: 83%
+533
+Affected: 83%
+534
+Affected: 83%
+535
+Affected: 83%
+536
+Affected: 83.1%
+537
+Affected: 83.1%
+538
+Affected: 83.2%
+539
+Affected: 83.2%
+540
+Affected: 83.2%
+541
+Affected: 83.2%
+542
+Affected: 83.2%
+543
+Affected: 83.2%
+544
+Affected: 83.2%
+545
+Affected: 83.3%
+546
+Affected: 83.3%
+547
+Affected: 83.3%
+548
+Affected: 83.4%
+549
+Affected: 83.4%
+550
+Affected: 83.4%
+551
+Affected: 83.4%
+552
+Affected: 83.6%
+553
+Affected: 83.7%
+554
+Affected: 83.9%
+555
+Affected: 83.9%
+556
+Affected: 83.9%
+557
+Affected: 83.9%
+558
+Affected: 84.1%
+559
+Affected: 84.2%
+560
+Affected: 84.2%
+561
+Affected: 84.2%
+562
+Affected: 84.6%
+563
+Affected: 84.7%
+564
+Affected: 84.8%
+565
+Affected: 84.9%
+566
+Affected: 85%
+567
+Affected: 85%
+568
+Affected: 85%
+569
+Affected: 85.1%
+570
+Affected: 85.1%
+571
+Affected: 85.1%
+572
+Affected: 85.1%
+573
+Affected: 85.3%
+574
+Affected: 85.4%
+575
+Affected: 85.5%
+576
+Affected: 85.6%
+577
+Affected: 85.6%
+578
+Affected: 85.8%
+579
+Affected: 85.9%
+580
+Affected: 86.1%
+581
+Affected: 86.1%
+582
+Affected: 86.4%
+583
+Affected: 86.4%
+584
+Affected: 86.6%
+585
+Affected: 86.6%
+586
+Affected: 86.6%
+587
+Affected: 86.7%
+588
+Affected: 86.7%
+589
+Affected: 86.7%
+590
+Affected: 86.7%
+591
+Affected: 86.7%
+592
+Affected: 86.7%
+593
+Affected: 86.9%
+594
+Affected: 87%
+595
+Affected: 87.1%
+596
+Affected: 87.2%
+597
+Affected: 87.3%
+598
+Affected: 87.3%
+599
+Affected: 87.3%
+600
+Affected: 87.3%
+601
+Affected: 87.4%
+602
+Affected: 87.5%
+603
+Affected: 87.7%
+604
+Affected: 87.8%
+605
+Affected: 88%
+606
+Affected: 88%
+607
+Affected: 88.1%
+608
+Affected: 88.1%
+609
+Affected: 88.1%
+610
+Affected: 88.3%
+611
+Affected: 88.4%
+612
+Affected: 88.5%
+613
+Affected: 88.7%
+614
+Affected: 88.7%
+615
+Affected: 88.9%
+616
+Affected: 89%
+617
+Affected: 89.2%
+618
+Affected: 89.2%
+619
+Affected: 89.2%
+620
+Affected: 89.3%
+621
+Affected: 89.3%
+622
+Affected: 89.3%
+623
+Affected: 89.4%
+624
+Affected: 89.4%
+625
+Affected: 89.4%
+626
+Affected: 89.601%
+627
+Affected: 89.601%
+628
+Affected: 89.601%
+629
+Affected: 89.7%
+630
+Affected: 89.7%
+631
+Affected: 89.7%
+632
+Affected: 89.9%
+633
+Affected: 90%
+634
+Affected: 90.101%
+635
+Affected: 90.101%
+636
+Affected: 90.101%
+637
+Affected: 90.101%
+638
+Affected: 90.101%
+639
+Affected: 90.101%
+640
+Affected: 90.101%
+641
+Affected: 90.2%
+642
+Affected: 90.3%
+643
+Affected: 90.4%
+644
+Affected: 90.9%
+645
+Affected: 90.9%
+646
+Affected: 90.9%
+647
+Affected: 90.9%
+648
+Affected: 90.9%
+649
+Affected: 91.101%
+650
+Affected: 91.101%
+651
+Affected: 91.2%
+652
+Affected: 91.4%
+653
+Affected: 91.5%
+654
+Affected: 91.5%
+655
+Affected: 91.7%
+656
+Affected: 91.7%
+657
+Affected: 91.8%
+658
+Affected: 92%
+659
+Affected: 92%
+660
+Affected: 92%
+661
+Affected: 92%
+662
+Affected: 92.301%
+663
+Affected: 92.301%
+664
+Affected: 92.301%
+665
+Affected: 92.301%
+666
+Affected: 92.5%
+667
+Affected: 92.601%
+668
+Affected: 92.7%
+669
+Affected: 92.7%
+670
+Affected: 92.7%
+671
+Affected: 93.101%
+672
+Affected: 93.101%
+673
+Affected: 93.101%
+674
+Affected: 93.101%
+675
+Affected: 93.101%
+676
+Affected: 93.101%
+677
+Affected: 93.101%
+678
+Affected: 93.101%
+679
+Affected: 93.101%
+680
+Affected: 93.101%
+681
+Affected: 93.101%
+682
+Affected: 93.101%
+683
+Affected: 93.101%
+684
+Affected: 93.101%
+685
+Affected: 93.301%
+686
+Affected: 93.5%
+687
+Affected: 93.601%
+688
+Affected: 93.7%
+689
+Affected: 93.9%
+690
+Affected: 93.9%
+691
+Affected: 94.1%
+692
+Affected: 94.2%
+693
+Affected: 94.3%
+694
+Affected: 94.3%
+695
+Affected: 94.3%
+696
+Affected: 94.3%
+697
+Affected: 94.3%
+698
+Affected: 94.3%
+699
+Affected: 94.3%
+700
+Affected: 94.4%
+701
+Affected: 94.4%
+702
+Affected: 94.4%
+703
+Affected: 94.5%
+704
+Affected: 94.5%
+705
+Affected: 94.5%
+706
+Affected: 94.5%
+707
+Affected: 94.6%
+708
+Affected: 94.7%
+709
+Affected: 94.7%
+710
+Affected: 94.7%
+711
+Affected: 94.9%
+712
+Affected: 94.9%
+713
+Affected: 94.9%
+714
+Affected: 94.9%
+715
+Affected: 95%
+716
+Affected: 95.1%
+717
+Affected: 95.3%
+718
+Affected: 95.4%
+719
+Affected: 95.5%
+720
+Affected: 95.5%
+721
+Affected: 95.5%
+722
+Affected: 95.5%
+723
+Affected: 95.5%
+724
+Affected: 95.5%
+725
+Affected: 95.5%
+726
+Affected: 95.5%
+727
+Affected: 95.5%
+728
+Affected: 95.5%
+729
+Affected: 95.6%
+730
+Affected: 95.6%
+731
+Affected: 95.6%
+732
+Affected: 95.6%
+733
+Affected: 95.6%
+734
+Affected: 95.7%
+735
+Affected: 95.7%
+736
+Affected: 95.9%
+737
+Affected: 96%
+738
+Affected: 96%
+739
+Affected: 96.1%
+740
+Affected: 96.1%
+741
+Affected: 96.1%
+742
+Affected: 96.2%
+743
+Affected: 96.3%
+744
+Affected: 96.3%
+745
+Affected: 96.4%
+746
+Affected: 96.4%
+747
+Affected: 96.4%
+748
+Affected: 96.4%
+749
+Affected: 96.4%
+750
+Affected: 96.4%
+751
+Affected: 96.4%
+752
+Affected: 96.4%
+753
+Affected: 96.4%
+754
+Affected: 96.4%
+755
+Affected: 96.5%
+756
+Affected: 96.6%
+757
+Affected: 96.6%
+758
+Affected: 96.6%
+759
+Affected: 96.6%
+760
+Affected: 96.6%
+761
+Affected: 96.6%
+762
+Affected: 96.6%
+763
+Affected: 96.6%
+764
+Affected: 96.6%
+765
+Affected: 96.6%
+766
+Affected: 96.6%
+767
+Affected: 96.6%
+768
+Affected: 96.6%
+769
+Affected: 96.6%
+770
+Affected: 96.6%
+771
+Affected: 96.6%
+772
+Affected: 96.6%
+773
+Affected: 96.6%
+774
+Affected: 96.6%
+775
+Affected: 96.6%
+776
+Affected: 96.6%
+777
+Affected: 96.6%
+778
+Affected: 96.6%
+779
+Affected: 96.6%
+780
+Affected: 96.6%
+781
+Affected: 96.7%
+782
+Affected: 96.8%
+783
+Affected: 96.8%
+784
+Affected: 96.8%
+785
+Affected: 96.8%
+786
+Affected: 96.8%
+787
+Affected: 96.9%
+788
+Affected: 97%
+789
+Affected: 97.1%
+790
+Affected: 97.1%
+791
+Affected: 97.1%
+792
+Affected: 97.1%
+793
+Affected: 97.1%
+794
+Affected: 97.1%
+795
+Affected: 97.1%
+796
+Affected: 97.3%
+797
+Affected: 97.3%
+798
+Affected: 97.3%
+799
+Affected: 97.3%
+800
+Affected: 97.4%
+801
+Affected: 97.4%
+802
+Affected: 97.4%
+803
+Affected: 97.4%
+804
+Affected: 97.4%
+805
+Affected: 97.4%
+806
+Affected: 97.4%
+807
+Affected: 97.4%
+808
+Affected: 97.4%
+809
+Affected: 97.4%
+810
+Affected: 97.4%
+811
+Affected: 97.5%
+812
+Affected: 97.5%
+813
+Affected: 97.6%
+814
+Affected: 97.6%
+815
+Affected: 97.6%
+816
+Affected: 97.6%
+817
+Affected: 97.6%
+818
+Affected: 97.6%
+819
+Affected: 97.6%
+820
+Affected: 97.7%
+821
+Affected: 97.7%
+822
+Affected: 97.7%
+823
+Affected: 97.7%
+824
+Affected: 97.7%
+825
+Affected: 97.8%
+826
+Affected: 97.8%
+827
+Affected: 97.8%
+828
+Affected: 97.8%
+829
+Affected: 97.8%
+830
+Affected: 97.8%
+831
+Affected: 97.8%
+832
+Affected: 97.8%
+833
+Affected: 97.8%
+834
+Affected: 97.8%
+835
+Affected: 97.8%
+836
+Affected: 97.8%
+837
+Affected: 97.8%
+838
+Affected: 97.8%
+839
+Affected: 97.8%
+840
+Affected: 97.8%
+841
+Affected: 97.8%
+842
+Affected: 97.8%
+843
+Affected: 97.9%
+844
+Affected: 97.9%
+845
+Affected: 97.9%
+846
+Affected: 97.9%
+847
+Affected: 97.9%
+848
+Affected: 97.9%
+849
+Affected: 98%
+850
+Affected: 98%
+851
+Affected: 98%
+852
+Affected: 98%
+853
+Affected: 98%
+854
+Affected: 98%
+855
+Affected: 98.1%
+856
+Affected: 98.2%
+857
+Affected: 98.2%
+858
+Affected: 98.3%
+859
+Affected: 98.3%
+860
+Affected: 98.4%
+861
+Affected: 98.4%
+862
+Affected: 98.4%
+863
+Affected: 98.4%
+864
+Affected: 98.4%
+865
+Affected: 98.4%
+866
+Affected: 98.4%
+867
+Affected: 98.4%
+868
+Affected: 98.4%
+869
+Affected: 98.5%
+870
+Affected: 98.5%
+871
+Affected: 98.5%
+872
+Affected: 98.5%
+873
+Affected: 98.5%
+874
+Affected: 98.5%
+875
+Affected: 98.5%
+876
+Affected: 98.5%
+877
+Affected: 98.5%
+878
+Affected: 98.5%
+879
+Affected: 98.5%
+880
+Affected: 98.5%
+881
+Affected: 98.5%
+882
+Affected: 98.5%
+883
+Affected: 98.5%
+884
+Affected: 98.6%
+885
+Affected: 98.6%
+886
+Affected: 98.6%
+887
+Affected: 98.6%
+888
+Affected: 98.6%
+889
+Affected: 98.6%
+890
+Affected: 98.6%
+891
+Affected: 98.6%
+892
+Affected: 98.6%
+893
+Affected: 98.6%
+894
+Affected: 98.6%
+895
+Affected: 98.6%
+896
+Affected: 98.6%
+897
+Affected: 98.6%
+898
+Affected: 98.6%
+899
+Affected: 98.7%
+900
+Affected: 98.7%
+901
+Affected: 98.7%
+902
+Affected: 98.7%
+903
+Affected: 98.7%
+904
+Affected: 98.7%
+905
+Affected: 98.7%
+906
+Affected: 98.7%
+907
+Affected: 98.7%
+908
+Affected: 98.7%
+909
+Affected: 98.7%
+910
+Affected: 98.7%
+911
+Affected: 98.7%
+912
+Affected: 98.7%
+913
+Affected: 98.7%
+914
+Affected: 98.7%
+915
+Affected: 98.7%
+916
+Affected: 98.7%
+917
+Affected: 98.7%
+918
+Affected: 98.7%
+919
+Affected: 98.7%
+920
+Affected: 98.7%
+921
+Affected: 98.8%
+922
+Affected: 98.8%
+923
+Affected: 98.8%
+924
+Affected: 98.8%
+925
+Affected: 98.8%
+926
+Affected: 98.9%
+927
+Affected: 98.9%
+928
+Affected: 98.9%
+929
+Affected: 98.9%
+930
+Affected: 98.9%
+931
+Affected: 99%
+932
+Affected: 99%
+933
+Affected: 99%
+934
+Affected: 99.1%
+935
+Affected: 99.1%
+936
+Affected: 99.1%
+937
+Affected: 99.1%
+938
+Affected: 99.2%
+939
+Affected: 99.3%
+940
+Affected: 99.3%
+941
+Affected: 99.3%
+942
+Affected: 99.3%
+943
+Affected: 99.3%
+944
+Affected: 99.3%
+945
+Affected: 99.3%
+946
+Affected: 99.3%
+947
+Affected: 99.3%
+948
+Affected: 99.3%
+949
+Affected: 99.3%
+950
+Affected: 99.3%
+951
+Affected: 99.3%
+952
+Affected: 99.3%
+953
+Affected: 99.3%
+954
+Affected: 99.3%
+955
+Affected: 99.3%
+956
+Affected: 99.3%
+957
+Affected: 99.3%
+958
+Affected: 99.3%
+959
+Affected: 99.3%
+960
+Affected: 99.3%
+961
+Affected: 99.3%
+962
+Affected: 99.3%
+963
+Affected: 99.3%
+964
+Affected: 99.3%
+965
+Affected: 99.3%
+966
+Affected: 99.3%
+967
+Affected: 99.3%
+968
+Affected: 99.3%
+969
+Affected: 99.3%
+970
+Affected: 99.3%
+971
+Affected: 99.3%
+972
+Affected: 99.3%
+973
+Affected: 99.3%
+974
+Affected: 99.3%
+975
+Affected: 99.3%
+976
+Affected: 99.3%
+977
+Affected: 99.3%
+978
+Affected: 99.3%
+979
+Affected: 99.3%
+980
+Affected: 99.3%
+981
+Affected: 99.3%
+982
+Affected: 99.3%
+983
+Affected: 99.3%
+984
+Affected: 99.3%
+985
+Affected: 99.3%
+986
+Affected: 99.3%
+987
+Affected: 99.3%
+988
+Affected: 99.3%
+989
+Affected: 99.3%
+990
+Affected: 99.3%
+991
+Affected: 99.3%
+992
+Affected: 99.3%
+993
+Affected: 99.3%
+994
+Affected: 99.3%
+995
+Affected: 99.3%
+996
+Affected: 99.3%
+997
+Affected: 99.3%
+998
+Affected: 99.3%
+999
+Affected: 99.3%
+1000
+Affected: 99.3%
+1001
+Affected: 99.4%
+1002
+Affected: 99.4%
+1003
+Affected: 99.4%
+1004
+Affected: 99.4%
+1005
+Affected: 99.4%
+1006
+Affected: 99.4%
+1007
+Affected: 99.4%
+1008
+Affected: 99.4%
+1009
+Affected: 99.4%
+1010
+Affected: 99.4%
+1011
+Affected: 99.4%
+1012
+Affected: 99.4%
+1013
+Affected: 99.4%
+1014
+Affected: 99.4%
+1015
+Affected: 99.4%
+1016
+Affected: 99.4%
+1017
+Affected: 99.4%
+1018
+Affected: 99.4%
+1019
+Affected: 99.4%
+1020
+Affected: 99.4%
+1021
+Affected: 99.4%
+1022
+Affected: 99.4%
+1023
+Affected: 99.4%
+1024
+Affected: 99.4%
+1025
+Affected: 99.4%
+1026
+Affected: 99.4%
+1027
+Affected: 99.4%
+1028
+Affected: 99.4%
+1029
+Affected: 99.4%
+1030
+Affected: 99.4%
+1031
+Affected: 99.4%
+1032
+Affected: 99.4%
+1033
+Affected: 99.4%
+1034
+Affected: 99.4%
+1035
+Affected: 99.4%
+1036
+Affected: 99.4%
+1037
+Affected: 99.4%
+1038
+Affected: 99.4%
+1039
+Affected: 99.4%
+1040
+Affected: 99.4%
+1041
+Affected: 99.4%
+1042
+Affected: 99.4%
+1043
+Affected: 99.4%
+1044
+Affected: 99.4%
+1045
+Affected: 99.4%
+1046
+Affected: 99.4%
+1047
+Affected: 99.4%
+1048
+Affected: 99.4%
+1049
+Affected: 99.4%
+1050
+Affected: 99.4%
+1051
+Affected: 99.4%
+1052
+Affected: 99.4%
+1053
+Affected: 99.4%
+1054
+Affected: 99.4%
+1055
+Affected: 99.4%
+1056
+Affected: 99.4%
+1057
+Affected: 99.4%
+1058
+Affected: 99.4%
+1059
+Affected: 99.4%
+1060
+Affected: 99.4%
+1061
+Affected: 99.4%
+1062
+Affected: 99.4%
+1063
+Affected: 99.4%
+1064
+Affected: 99.4%
+1065
+Affected: 99.4%
+1066
+Affected: 99.4%
+1067
+Affected: 99.4%
+1068
+Affected: 99.4%
+1069
+Affected: 99.4%
+1070
+Affected: 99.4%
+1071
+Affected: 99.4%
+1072
+Affected: 99.4%
+1073
+Affected: 99.4%
+1074
+Affected: 99.4%
+1075
+Affected: 99.4%
+1076
+Affected: 99.4%
+1077
+Affected: 99.4%
+1078
+Affected: 99.4%
+1079
+Affected: 99.4%
+1080
+Affected: 99.4%
+1081
+Affected: 99.4%
+1082
+Affected: 99.4%
+1083
+Affected: 99.4%
+1084
+Affected: 99.4%
+1085
+Affected: 99.4%
+1086
+Affected: 99.4%
+1087
+Affected: 99.4%
+1088
+Affected: 99.4%
+1089
+Affected: 99.4%
+1090
+Affected: 99.4%
+1091
+Affected: 99.5%
+1092
+Affected: 99.5%
+1093
+Affected: 99.5%
+1094
+Affected: 99.5%
+1095
+Affected: 99.5%
+1096
+Affected: 99.5%
+1097
+Affected: 99.5%
+1098
+Affected: 99.5%
+1099
+Affected: 99.5%
+1100
+Affected: 99.5%
+1101
+Affected: 99.5%
+1102
+Affected: 99.5%
+1103
+Affected: 99.5%
+1104
+Affected: 99.5%
+1105
+Affected: 99.5%
+1106
+Affected: 99.5%
+1107
+Affected: 99.5%
+1108
+Affected: 99.5%
+1109
+Affected: 99.5%
+1110
+Affected: 99.5%
+1111
+Affected: 99.5%
+1112
+Affected: 99.5%
+1113
+Affected: 99.5%
+1114
+Affected: 99.5%
+1115
+Affected: 99.5%
+1116
+Affected: 99.5%
+1117
+Affected: 99.5%
+1118
+Affected: 99.5%
+1119
+Affected: 99.5%
+1120
+Affected: 99.5%
+1121
+Affected: 99.5%
+1122
+Affected: 99.5%
+1123
+Affected: 99.5%
+1124
+Affected: 99.5%
+1125
+Affected: 99.5%
+1126
+Affected: 99.5%
+1127
+Affected: 99.5%
+1128
+Affected: 99.5%
+1129
+Affected: 99.5%
+1130
+Affected: 99.5%
+1131
+Affected: 99.5%
+1132
+Affected: 99.5%
+1133
+Affected: 99.5%
+1134
+Affected: 99.5%
+1135
+Affected: 99.5%
+1136
+Affected: 99.5%
+1137
+Affected: 99.5%
+1138
+Affected: 99.5%
+1139
+Affected: 99.5%
+1140
+Affected: 99.5%
+1141
+Affected: 99.5%
+1142
+Affected: 99.5%
+1143
+Affected: 99.5%
+1144
+Affected: 99.5%
+1145
+Affected: 99.5%
+1146
+Affected: 99.5%
+1147
+Affected: 99.5%
+1148
+Affected: 99.5%
+1149
+Affected: 99.5%
+1150
+Affected: 99.5%
+1151
+Affected: 99.5%
+1152
+Affected: 99.5%
+1153
+Affected: 99.5%
+1154
+Affected: 99.5%
+1155
+Affected: 99.5%
+1156
+Affected: 99.5%
+1157
+Affected: 99.5%
+1158
+Affected: 99.5%
+1159
+Affected: 99.5%
+1160
+Affected: 99.5%
+1161
+Affected: 99.5%
+1162
+Affected: 99.5%
+1163
+Affected: 99.5%
+1164
+Affected: 99.5%
+1165
+Affected: 99.5%
+1166
+Affected: 99.5%
+1167
+Affected: 99.5%
+1168
+Affected: 99.5%
+1169
+Affected: 99.5%
+1170
+Affected: 99.5%
+1171
+Affected: 99.5%
+1172
+Affected: 99.5%
+1173
+Affected: 99.5%
+1174
+Affected: 99.5%
+1175
+Affected: 99.5%
+1176
+Affected: 99.5%
+1177
+Affected: 99.5%
+1178
+Affected: 99.5%
+1179
+Affected: 99.6%
+1180
+Affected: 99.6%
+1181
+Affected: 99.6%
+1182
+Affected: 99.6%
+1183
+Affected: 99.6%
+1184
+Affected: 99.6%
+1185
+Affected: 99.6%
+1186
+Affected: 99.6%
+1187
+Affected: 99.6%
+1188
+Affected: 99.6%
+1189
+Affected: 99.6%
+1190
+Affected: 99.6%
+1191
+Affected: 99.6%
+1192
+Affected: 99.6%
+1193
+Affected: 99.6%
+1194
+Affected: 99.6%
+1195
+Affected: 99.6%
+1196
+Affected: 99.6%
+1197
+Affected: 99.6%
+1198
+Affected: 99.6%
+1199
+Affected: 99.6%
+1200
+Affected: 99.6%
+1201
+Affected: 99.6%
+1202
+Affected: 99.6%
+1203
+Affected: 99.6%
+1204
+Affected: 99.6%
+1205
+Affected: 99.6%
+1206
+Affected: 99.6%
+1207
+Affected: 99.6%
+1208
+Affected: 99.6%
+1209
+Affected: 99.6%
+1210
+Affected: 99.6%
+1211
+Affected: 99.6%
+1212
+Affected: 99.6%
+1213
+Affected: 99.6%
+1214
+Affected: 99.6%
+1215
+Affected: 99.6%
+1216
+Affected: 99.6%
+1217
+Affected: 99.6%
+1218
+Affected: 99.6%
+1219
+Affected: 99.6%
+1220
+Affected: 99.6%
+1221
+Affected: 99.6%
+1222
+Affected: 99.6%
+1223
+Affected: 99.6%
+1224
+Affected: 99.6%
+1225
+Affected: 99.6%
+1226
+Affected: 99.6%
+1227
+Affected: 99.6%
+1228
+Affected: 99.6%
+1229
+Affected: 99.6%
+1230
+Affected: 99.6%
+1231
+Affected: 99.6%
+1232
+Affected: 99.6%
+1233
+Affected: 99.6%
+1234
+Affected: 99.6%
+1235
+Affected: 99.6%
+1236
+Affected: 99.6%
+1237
+Affected: 99.6%
+1238
+Affected: 99.6%
+1239
+Affected: 99.6%
+1240
+Affected: 99.6%
+1241
+Affected: 99.6%
+1242
+Affected: 99.6%
+1243
+Affected: 99.6%
+1244
+Affected: 99.6%
+1245
+Affected: 99.6%
+1246
+Affected: 99.6%
+1247
+Affected: 99.6%
+1248
+Affected: 99.6%
+1249
+Affected: 99.6%
+1250
+Affected: 99.6%
+1251
+Affected: 99.6%
+1252
+Affected: 99.6%
+1253
+Affected: 99.6%
+1254
+Affected: 99.6%
+1255
+Affected: 99.6%
+1256
+Affected: 99.6%
+1257
+Affected: 99.6%
+1258
+Affected: 99.6%
+1259
+Affected: 99.6%
+1260
+Affected: 99.6%
+1261
+Affected: 99.6%
+1262
+Affected: 99.6%
+1263
+Affected: 99.6%
+1264
+Affected: 99.6%
+1265
+Affected: 99.6%
+1266
+Affected: 99.6%
+1267
+Affected: 99.6%
+1268
+Affected: 99.6%
+1269
+Affected: 99.6%
+1270
+Affected: 99.6%
+1271
+Affected: 99.6%
+1272
+Affected: 99.6%
+1273
+Affected: 99.6%
+1274
+Affected: 99.6%
+1275
+Affected: 99.6%
+1276
+Affected: 99.6%
+1277
+Affected: 99.6%
+1278
+Affected: 99.6%
+1279
+Affected: 99.6%
+1280
+Affected: 99.6%
+1281
+Affected: 99.6%
+1282
+Affected: 99.6%
+1283
+Affected: 99.6%
+1284
+Affected: 99.6%
+1285
+Affected: 99.6%
+1286
+Affected: 99.6%
+1287
+Affected: 99.6%
+1288
+Affected: 99.6%
+1289
+Affected: 99.6%
+1290
+Affected: 99.6%
+1291
+Affected: 99.6%
+1292
+Affected: 99.6%
+1293
+Affected: 99.6%
+1294
+Affected: 99.6%
+1295
+Affected: 99.6%
+1296
+Affected: 99.6%
+1297
+Affected: 99.6%
+1298
+Affected: 99.6%
+1299
+Affected: 99.6%
+1300
+Affected: 99.6%
+1301
+Affected: 99.6%
+1302
+Affected: 99.6%
+1303
+Affected: 99.6%
+1304
+Affected: 99.6%
+1305
+Affected: 99.6%
+1306
+Affected: 99.6%
+1307
+Affected: 99.6%
+1308
+Affected: 99.6%
+1309
+Affected: 99.6%
+1310
+Affected: 99.6%
+1311
+Affected: 99.6%
+1312
+Affected: 99.6%
+1313
+Affected: 99.6%
+1314
+Affected: 99.6%
+1315
+Affected: 99.6%
+1316
+Affected: 99.6%
+1317
+Affected: 99.6%
+1318
+Affected: 99.6%
+1319
+Affected: 99.6%
+1320
+Affected: 99.6%
+1321
+Affected: 99.6%
+1322
+Affected: 99.6%
+1323
+Affected: 99.6%
+1324
+Affected: 99.6%
+1325
+Affected: 99.6%
+1326
+Affected: 99.6%
+1327
+Affected: 99.6%
+1328
+Affected: 99.6%
+1329
+Affected: 99.6%
+1330
+Affected: 99.6%
+1331
+Affected: 99.6%
+1332
+Affected: 99.6%
+1333
+Affected: 99.6%
+1334
+Affected: 99.6%
+1335
+Affected: 99.6%
+1336
+Affected: 99.6%
+1337
+Affected: 99.6%
+1338
+Affected: 99.6%
+1339
+Affected: 99.6%
+1340
+Affected: 99.6%
+1341
+Affected: 99.6%
+1342
+Affected: 99.6%
+1343
+Affected: 99.6%
+1344
+Affected: 99.6%
+1345
+Affected: 99.6%
+1346
+Affected: 99.6%
+1347
+Affected: 99.6%
+1348
+Affected: 99.6%
+1349
+Affected: 99.6%
+1350
+Affected: 99.6%
+1351
+Affected: 99.6%
+1352
+Affected: 99.6%
+1353
+Affected: 99.6%
+1354
+Affected: 99.6%
+1355
+Affected: 99.6%
+1356
+Affected: 99.6%
+1357
+Affected: 99.6%
+1358
+Affected: 99.6%
+1359
+Affected: 99.6%
+1360
+Affected: 99.6%
+1361
+Affected: 99.6%
+1362
+Affected: 99.6%
+1363
+Affected: 99.6%
+1364
+Affected: 99.6%
+1365
+Affected: 99.6%
+1366
+Affected: 99.6%
+1367
+Affected: 99.6%
+1368
+Affected: 99.6%
+1369
+Affected: 99.6%
+1370
+Affected: 99.6%
+1371
+Affected: 99.6%
+1372
+Affected: 99.6%
+1373
+Affected: 99.6%
+1374
+Affected: 99.6%
+1375
+Affected: 99.6%
+1376
+Affected: 99.6%
+1377
+Affected: 99.6%
+1378
+Affected: 99.6%
+1379
+Affected: 99.6%
+1380
+Affected: 99.6%
+1381
+Affected: 99.6%
+1382
+Affected: 99.6%
+1383
+Affected: 99.6%
+1384
+Affected: 99.6%
+1385
+Affected: 99.6%
+1386
+Affected: 99.6%
+1387
+Affected: 99.6%
+1388
+Affected: 99.6%
+1389
+Affected: 99.6%
+1390
+Affected: 99.6%
+1391
+Affected: 99.6%
+1392
+Affected: 99.6%
+1393
+Affected: 99.6%
+1394
+Affected: 99.6%
+1395
+Affected: 99.6%
+1396
+Affected: 99.6%
+1397
+Affected: 99.6%
+1398
+Affected: 99.6%
+1399
+Affected: 99.6%
+1400
+Affected: 99.6%
+1401
+Affected: 99.6%
+1402
+Affected: 99.6%
+1403
+Affected: 99.6%
+1404
+Affected: 99.6%
+1405
+Affected: 99.6%
+1406
+Affected: 99.6%
+1407
+Affected: 99.6%
+1408
+Affected: 99.6%
+1409
+Affected: 99.6%
+1410
+Affected: 99.6%
+1411
+Affected: 99.6%
+1412
+Affected: 99.6%
+1413
+Affected: 99.6%
+1414
+Affected: 99.6%
+1415
+Affected: 99.6%
+1416
+Affected: 99.6%
+1417
+Affected: 99.6%
+1418
+Affected: 99.6%
+1419
+Affected: 99.6%
+1420
+Affected: 99.6%
+1421
+Affected: 99.6%
+1422
+Affected: 99.6%
+1423
+Affected: 99.6%
+1424
+Affected: 99.6%
+1425
+Affected: 99.6%
+1426
+Affected: 99.6%
+1427
+Affected: 99.6%
+1428
+Affected: 99.6%
+1429
+Affected: 99.6%
+1430
+Affected: 99.6%
+1431
+Affected: 99.6%
+1432
+Affected: 99.6%
+1433
+Affected: 99.6%
+1434
+Affected: 99.6%
+1435
+Affected: 99.6%
+1436
+Affected: 99.6%
+1437
+Affected: 99.6%
+1438
+Affected: 99.6%
+1439
+Affected: 99.6%
+1440
+Affected: 99.6%
+1441
+Affected: 99.6%
+1442
+Affected: 99.6%
+1443
+Affected: 99.6%
+1444
+Affected: 99.6%
+1445
+Affected: 99.6%
+1446
+Affected: 99.6%
+1447
+Affected: 99.6%
+1448
+Affected: 99.6%
+1449
+Affected: 99.6%
+1450
+Affected: 99.6%
+1451
+Affected: 99.6%
+1452
+Affected: 99.6%
+1453
+Affected: 99.6%
+1454
+Affected: 99.6%
+1455
+Affected: 99.6%
+1456
+Affected: 99.6%
+1457
+Affected: 99.6%
+1458
+Affected: 99.6%
+1459
+Affected: 99.6%
+1460
+Affected: 99.6%
+1461
+Affected: 99.6%
+1462
+Affected: 99.6%
+1463
+Affected: 99.6%
+1464
+Affected: 99.6%
+1465
+Affected: 99.6%
+1466
+Affected: 99.6%
+1467
+Affected: 99.6%
+1468
+Affected: 99.6%
+1469
+Affected: 99.6%
+1470
+Affected: 99.6%
+1471
+Affected: 99.6%
+1472
+Affected: 99.6%
+1473
+Affected: 99.6%
+1474
+Affected: 99.6%
+1475
+Affected: 99.6%
+1476
+Affected: 99.6%
+1477
+Affected: 99.6%
+1478
+Affected: 99.6%
+1479
+Affected: 99.6%
+1480
+Affected: 99.6%
+1481
+Affected: 99.6%
+1482
+Affected: 99.6%
+1483
+Affected: 99.6%
+1484
+Affected: 99.6%
+1485
+Affected: 99.6%
+1486
+Affected: 99.6%
+1487
+Affected: 99.6%
+1488
+Affected: 99.6%
+1489
+Affected: 99.6%
+1490
+Affected: 99.6%
+1491
+Affected: 99.6%
+1492
+Affected: 99.6%
+1493
+Affected: 99.6%
+1494
+Affected: 99.6%
+1495
+Affected: 99.6%
+1496
+Affected: 99.6%
+1497
+Affected: 99.6%
+1498
+Affected: 99.6%
+1499
+Affected: 99.6%
+1500
+Affected: 99.6%
+1501
+Affected: 99.6%
+1502
+Affected: 99.6%
+1503
+Affected: 99.6%
+1504
+Affected: 99.6%
+1505
+Affected: 99.6%
+1506
+Affected: 99.6%
+1507
+Affected: 99.6%
+1508
+Affected: 99.6%
+1509
+Affected: 99.6%
+1510
+Affected: 99.6%
+1511
+Affected: 99.6%
+1512
+Affected: 99.6%
+1513
+Affected: 99.6%
+1514
+Affected: 99.6%
+1515
+Affected: 99.6%
+1516
+Affected: 99.6%
+1517
+Affected: 99.6%
+1518
+Affected: 99.6%
+1519
+Affected: 99.6%
+1520
+Affected: 99.6%
+1521
+Affected: 99.6%
+1522
+Affected: 99.6%
+1523
+Affected: 99.6%
+1524
+Affected: 99.6%
+1525
+Affected: 99.6%
+1526
+Affected: 99.6%
+1527
+Affected: 99.6%
+1528
+Affected: 99.6%
+1529
+Affected: 99.6%
+1530
+Affected: 99.6%
+1531
+Affected: 99.6%
+1532
+Affected: 99.6%
+1533
+Affected: 99.6%
+1534
+Affected: 99.6%
+1535
+Affected: 99.6%
+1536
+Affected: 99.6%
+1537
+Affected: 99.6%
+1538
+Affected: 99.6%
+1539
+Affected: 99.6%
+1540
+Affected: 99.6%
+1541
+Affected: 99.6%
+1542
+Affected: 99.6%
+1543
+Affected: 99.6%
+1544
+Affected: 99.6%
+1545
+Affected: 99.6%
+1546
+Affected: 99.6%
+1547
+Affected: 99.6%
+1548
+Affected: 99.6%
+1549
+Affected: 99.6%
+1550
+Affected: 99.6%
+1551
+Affected: 99.6%
+1552
+Affected: 99.6%
+1553
+Affected: 99.6%
+1554
+Affected: 99.6%
+1555
+Affected: 99.6%
+1556
+Affected: 99.6%
+1557
+Affected: 99.6%
+1558
+Affected: 99.6%
+1559
+Affected: 99.6%
+1560
+Affected: 99.6%
+1561
+Affected: 99.6%
+1562
+Affected: 99.6%
+1563
+Affected: 99.6%
+1564
+Affected: 99.6%
+1565
+Affected: 99.6%
+1566
+Affected: 99.6%
+1567
+Affected: 99.6%
+1568
+Affected: 99.6%
+1569
+Affected: 99.6%
+1570
+Affected: 99.6%
+1571
+Affected: 99.6%
+1572
+Affected: 99.6%
+1573
+Affected: 99.6%
+1574
+Affected: 99.6%
+1575
+Affected: 99.6%
+1576
+Affected: 99.6%
+1577
+Affected: 99.6%
+1578
+Affected: 99.6%
+1579
+Affected: 99.6%
+1580
+Affected: 99.6%
+1581
+Affected: 99.6%
+1582
+Affected: 99.6%
+1583
+Affected: 99.6%
+1584
+Affected: 99.6%
+1585
+Affected: 99.6%
+1586
+Affected: 99.6%
+1587
+Affected: 99.6%
+1588
+Affected: 99.6%
+1589
+Affected: 99.6%
+1590
+Affected: 99.6%
+1591
+Affected: 99.6%
+1592
+Affected: 99.6%
+1593
+Affected: 99.6%
+1594
+Affected: 99.6%
+1595
+Affected: 99.6%
+1596
+Affected: 99.6%
+1597
+Affected: 99.6%
+1598
+Affected: 99.6%
+1599
+Affected: 99.6%
+1600
+Affected: 99.6%
+1601
+Affected: 99.6%
+1602
+Affected: 99.6%
+1603
+Affected: 99.6%
+1604
+Affected: 99.6%
+1605
+Affected: 99.6%
+1606
+Affected: 99.6%
+1607
+Affected: 99.6%
+1608
+Affected: 99.6%
+1609
+Affected: 99.6%
+1610
+Affected: 99.6%
+1611
+Affected: 99.6%
+1612
+Affected: 99.6%
+1613
+Affected: 99.6%
+1614
+Affected: 99.6%
+1615
+Affected: 99.6%
+1616
+Affected: 99.6%
+1617
+Affected: 99.6%
+1618
+Affected: 99.6%
+1619
+Affected: 99.6%
+1620
+Affected: 99.6%
+1621
+Affected: 99.6%
+1622
+Affected: 99.6%
+1623
+Affected: 99.6%
+1624
+Affected: 99.6%
+1625
+Affected: 99.6%
+1626
+Affected: 99.6%
+1627
+Affected: 99.6%
+1628
+Affected: 99.6%
+1629
+Affected: 99.6%
+1630
+Affected: 99.6%
+1631
+Affected: 99.6%
+1632
+Affected: 99.6%
+1633
+Affected: 99.6%
+1634
+Affected: 99.6%
+1635
+Affected: 99.6%
+1636
+Affected: 99.6%
+1637
+Affected: 99.6%
+1638
+Affected: 99.6%
+1639
+Affected: 99.6%
+1640
+Affected: 99.6%
+1641
+Affected: 99.6%
+1642
+Affected: 99.6%
+1643
+Affected: 99.6%
+1644
+Affected: 99.6%
+1645
+Affected: 99.6%
+1646
+Affected: 99.6%
+1647
+Affected: 99.6%
+1648
+Affected: 99.6%
+1649
+Affected: 99.6%
+1650
+Affected: 99.6%
+1651
+Affected: 99.6%
+1652
+Affected: 99.6%
+1653
+Affected: 99.6%
+1654
+Affected: 99.6%
+1655
+Affected: 99.6%
+1656
+Affected: 99.6%
+1657
+Affected: 99.6%
+1658
+Affected: 99.6%
+1659
+Affected: 99.6%
+1660
+Affected: 99.6%
+1661
+Affected: 99.6%
+1662
+Affected: 99.6%
+1663
+Affected: 99.6%
+1664
+Affected: 99.6%
+1665
+Affected: 99.6%
+1666
+Affected: 99.6%
+1667
+Affected: 99.6%
+1668
+Affected: 99.6%
+1669
+Affected: 99.6%
+1670
+Affected: 99.6%
+1671
+Affected: 99.6%
+1672
+Affected: 99.6%
+1673
+Affected: 99.6%
+1674
+Affected: 99.6%
+1675
+Affected: 99.6%
+1676
+Affected: 99.6%
+1677
+Affected: 99.6%
+1678
+Affected: 99.6%
+1679
+Affected: 99.6%
+1680
+Affected: 99.6%
+1681
+Affected: 99.6%
+1682
+Affected: 99.6%
+1683
+Affected: 99.6%
+1684
+Affected: 99.6%
+1685
+Affected: 99.6%
+1686
+Affected: 99.6%
+1687
+Affected: 99.6%
+1688
+Affected: 99.6%
+1689
+Affected: 99.6%
+1690
+Affected: 99.6%
+1691
+Affected: 99.6%
+1692
+Affected: 99.6%
+1693
+Affected: 99.6%
+1694
+Affected: 99.6%
+1695
+Affected: 99.6%
+1696
+Affected: 99.6%
+1697
+Affected: 99.6%
+1698
+Affected: 99.6%
+1699
+Affected: 99.6%
+1700
+Affected: 99.6%
+1701
+Affected: 99.6%
+1702
+Affected: 99.6%
+1703
+Affected: 99.6%
+1704
+Affected: 99.6%
+1705
+Affected: 99.6%
+1706
+Affected: 99.6%
+1707
+Affected: 99.6%
+1708
+Affected: 99.6%
+1709
+Affected: 99.6%
+1710
+Affected: 99.6%
+1711
+Affected: 99.6%
+1712
+Affected: 99.6%
+1713
+Affected: 99.6%
+1714
+Affected: 99.6%
+1715
+Affected: 99.6%
+1716
+Affected: 99.6%
+1717
+Affected: 99.6%
+1718
+Affected: 99.6%
+1719
+Affected: 99.6%
+1720
+Affected: 99.6%
+1721
+Affected: 99.6%
+1722
+Affected: 99.6%
+1723
+Affected: 99.6%
+1724
+Affected: 99.6%
+1725
+Affected: 99.6%
+1726
+Affected: 99.6%
+1727
+Affected: 99.6%
+1728
+Affected: 99.6%
+1729
+Affected: 99.6%
+1730
+Affected: 99.6%
+1731
+Affected: 99.6%
+1732
+Affected: 99.6%
+1733
+Affected: 99.6%
+1734
+Affected: 99.6%
+1735
+Affected: 99.6%
+1736
+Affected: 99.6%
+1737
+Affected: 99.6%
+1738
+Affected: 99.6%
+1739
+Affected: 99.6%
+1740
+Affected: 99.6%
+1741
+Affected: 99.6%
+1742
+Affected: 99.6%
+1743
+Affected: 99.6%
+1744
+Affected: 99.6%
+1745
+Affected: 99.6%
+1746
+Affected: 99.6%
+1747
+Affected: 99.6%
+1748
+Affected: 99.6%
+1749
+Affected: 99.6%
+1750
+Affected: 99.6%
+1751
+Affected: 99.6%
+1752
+Affected: 99.6%
+1753
+Affected: 99.6%
+1754
+Affected: 99.6%
+1755
+Affected: 99.6%
+1756
+Affected: 99.6%
+1757
+Affected: 99.6%
+1758
+Affected: 99.6%
+1759
+Affected: 99.6%
+1760
+Affected: 99.6%
+1761
+Affected: 99.6%
+1762
+Affected: 99.6%
+1763
+Affected: 99.6%
+1764
+Affected: 99.6%
+1765
+Affected: 99.6%
+1766
+Affected: 99.6%
+1767
+Affected: 99.6%
+1768
+Affected: 99.6%
+1769
+Affected: 99.6%
+1770
+Affected: 99.6%
+1771
+Affected: 99.6%
+1772
+Affected: 99.6%
+1773
+Affected: 99.6%
+1774
+Affected: 99.6%
+1775
+Affected: 99.6%
+1776
+Affected: 99.6%
+1777
+Affected: 99.6%
+1778
+Affected: 99.6%
+1779
+Affected: 99.6%
+1780
+Affected: 99.6%
+1781
+Affected: 99.6%
+1782
+Affected: 99.6%
+1783
+Affected: 99.6%
+1784
+Affected: 99.6%
+1785
+Affected: 99.6%
+1786
+Affected: 99.6%
+1787
+Affected: 99.6%
+1788
+Affected: 99.6%
+1789
+Affected: 99.6%
+1790
+Affected: 99.6%
+1791
+Affected: 99.6%
+1792
+Affected: 99.6%
+1793
+Affected: 99.6%
+1794
+Affected: 99.6%
+1795
+Affected: 99.6%
+1796
+Affected: 99.6%
+1797
+Affected: 99.6%
+1798
+Affected: 99.6%
+1799
+Affected: 99.6%
+1800
+Affected: 99.6%
+1801
+Affected: 99.6%
+1802
+Affected: 99.6%
+1803
+Affected: 99.6%
+1804
+Affected: 99.6%
+1805
+Affected: 99.6%
+1806
+Affected: 99.6%
+1807
+Affected: 99.6%
+1808
+Affected: 99.6%
+1809
+Affected: 99.6%
+1810
+Affected: 99.6%
+1811
+Affected: 99.6%
+1812
+Affected: 99.6%
+1813
+Affected: 99.6%
+1814
+Affected: 99.6%
+1815
+Affected: 99.6%
+1816
+Affected: 99.6%
+1817
+Affected: 99.6%
+1818
+Affected: 99.6%
+1819
+Affected: 99.6%
+1820
+Affected: 99.6%
+1821
+Affected: 99.6%
+1822
+Affected: 99.6%
+1823
+Affected: 99.6%
+1824
+Affected: 99.6%
+1825
+Affected: 99.6%
+1826
+Affected: 99.6%
+1827
+Affected: 99.6%
+1828
+Affected: 99.6%
+1829
+Affected: 99.6%
+1830
+Affected: 99.6%
+1831
+Affected: 99.6%
+1832
+Affected: 99.6%
+1833
+Affected: 99.6%
+1834
+Affected: 99.6%
+1835
+Affected: 99.6%
+1836
+Affected: 99.6%
+1837
+Affected: 99.6%
+1838
+Affected: 99.6%
+1839
+Affected: 99.6%
+1840
+Affected: 99.6%
+1841
+Affected: 99.6%
+1842
+Affected: 99.6%
+1843
+Affected: 99.6%
+1844
+Affected: 99.6%
+1845
+Affected: 99.6%
+1846
+Affected: 99.6%
+1847
+Affected: 99.6%
+1848
+Affected: 99.6%
+1849
+Affected: 99.6%
+1850
+Affected: 99.6%
+1851
+Affected: 99.6%
+1852
+Affected: 99.6%
+1853
+Affected: 99.6%
+1854
+Affected: 99.6%
+1855
+Affected: 99.6%
+1856
+Affected: 99.6%
+1857
+Affected: 99.6%
+1858
+Affected: 99.6%
+1859
+Affected: 99.6%
+1860
+Affected: 99.6%
+1861
+Affected: 99.6%
+1862
+Affected: 99.6%
+1863
+Affected: 99.6%
+1864
+Affected: 99.6%
+1865
+Affected: 99.6%
+1866
+Affected: 99.6%
+1867
+Affected: 99.6%
+1868
+Affected: 99.6%
+1869
+Affected: 99.6%
+1870
+Affected: 99.6%
+1871
+Affected: 99.6%
+1872
+Affected: 99.6%
+1873
+Affected: 99.6%
+1874
+Affected: 99.6%
+1875
+Affected: 99.6%
+1876
+Affected: 99.6%
+1877
+Affected: 99.6%
+1878
+Affected: 99.6%
+1879
+Affected: 99.6%
+1880
+Affected: 99.6%
+1881
+Affected: 99.6%
+1882
+Affected: 99.6%
+1883
+Affected: 99.6%
+1884
+Affected: 99.6%
+1885
+Affected: 99.6%
+1886
+Affected: 99.6%
+1887
+Affected: 99.6%
+1888
+Affected: 99.6%
+1889
+Affected: 99.6%
+1890
+Affected: 99.6%
+1891
+Affected: 99.6%
+1892
+Affected: 99.6%
+1893
+Affected: 99.6%
+1894
+Affected: 99.6%
+1895
+Affected: 99.6%
+1896
+Affected: 99.6%
+1897
+Affected: 99.6%
+1898
+Affected: 99.6%
+1899
+Affected: 99.6%
+1900
+Affected: 99.6%
+1901
+Affected: 99.6%
+1902
+Affected: 99.6%
+1903
+Affected: 99.6%
+1904
+Affected: 99.6%
+1905
+Affected: 99.6%
+1906
+Affected: 99.6%
+1907
+Affected: 99.6%
+1908
+Affected: 99.6%
+1909
+Affected: 99.6%
+1910
+Affected: 99.6%
+1911
+Affected: 99.6%
+1912
+Affected: 99.6%
+1913
+Affected: 99.6%
+1914
+Affected: 99.6%
+1915
+Affected: 99.6%
+1916
+Affected: 99.6%
+1917
+Affected: 99.6%
+1918
+Affected: 99.6%
+1919
+Affected: 99.6%
+1920
+Affected: 99.6%
+1921
+Affected: 99.6%
+1922
+Affected: 99.6%
+1923
+Affected: 99.6%
+1924
+Affected: 99.6%
+1925
+Affected: 99.6%
+1926
+Affected: 99.6%
+1927
+Affected: 99.6%
+1928
+Affected: 99.6%
+1929
+Affected: 99.6%
+1930
+Affected: 99.6%
+1931
+Affected: 99.6%
+1932
+Affected: 99.6%
+1933
+Affected: 99.6%
+1934
+Affected: 99.6%
+1935
+Affected: 99.6%
+1936
+Affected: 99.6%
+1937
+Affected: 99.6%
+1938
+Affected: 99.6%
+1939
+Affected: 99.6%
+1940
+Affected: 99.6%
+1941
+Affected: 99.6%
+1942
+Affected: 99.6%
+1943
+Affected: 99.6%
+1944
+Affected: 99.6%
+1945
+Affected: 99.6%
+1946
+Affected: 99.6%
+1947
+Affected: 99.6%
+1948
+Affected: 99.6%
+1949
+Affected: 99.6%
+1950
+Affected: 99.6%
+1951
+Affected: 99.6%
+1952
+Affected: 99.6%
+1953
+Affected: 99.6%
+1954
+Affected: 99.6%
+1955
+Affected: 99.6%
+1956
+Affected: 99.6%
+1957
+Affected: 99.6%
+1958
+Affected: 99.6%
+1959
+Affected: 99.6%
+1960
+Affected: 99.6%
+1961
+Affected: 99.6%
+1962
+Affected: 99.6%
+1963
+Affected: 99.6%
+1964
+Affected: 99.6%
+1965
+Affected: 99.6%
+1966
+Affected: 99.6%
+1967
+Affected: 99.6%
+1968
+Affected: 99.6%
+1969
+Affected: 99.6%
+1970
+Affected: 99.6%
+1971
+Affected: 99.6%
+1972
+Affected: 99.6%
+1973
+Affected: 99.6%
+1974
+Affected: 99.6%
+1975
+Affected: 99.6%
+1976
+Affected: 99.6%
+1977
+Affected: 99.6%
+1978
+Affected: 99.6%
+1979
+Affected: 99.6%
+1980
+Affected: 99.6%
+1981
+Affected: 99.6%
+1982
+Affected: 99.6%
+1983
+Affected: 99.6%
+1984
+Affected: 99.6%
+1985
+Affected: 99.6%
+1986
+Affected: 99.6%
+1987
+Affected: 99.6%
+1988
+Affected: 99.6%
+1989
+Affected: 99.6%
+1990
+Affected: 99.6%
+1991
+Affected: 99.6%
+1992
+Affected: 99.6%
+1993
+Affected: 99.6%
+1994
+Affected: 99.6%
+1995
+Affected: 99.6%
+1996
+Affected: 99.6%
+1997
+Affected: 99.6%
+1998
+Affected: 99.6%
+1999
+Affected: 99.6%
+2000
+Affected: 99.6%
+2001
+Affected: 99.6%
+2002
+Affected: 99.6%
+2003
+Affected: 99.6%
+2004
+Affected: 99.6%
+2005
+Affected: 99.6%
+2006
+Affected: 99.6%
+2007
+Affected: 99.6%
+2008
+Affected: 99.6%
+2009
+Affected: 99.6%
+2010
+Affected: 99.6%
+2011
+Affected: 99.6%
+2012
+Affected: 99.6%
+2013
+Affected: 99.6%
+2014
+Affected: 99.6%
+2015
+Affected: 99.6%
+2016
+Affected: 99.6%
+2017
+Affected: 99.6%
+2018
+Affected: 99.6%
+2019
+Affected: 99.6%
+2020
+Affected: 99.6%
+2021
+Affected: 99.6%
+2022
+Affected: 99.6%
+2023
+Affected: 99.6%
+2024
+Affected: 99.6%
+2025
+Affected: 99.6%
+2026
+Affected: 99.6%
+2027
+Affected: 99.6%
+2028
+Affected: 99.6%
+2029
+Affected: 99.6%
+2030
+Affected: 99.6%
+2031
+Affected: 99.6%
+2032
+Affected: 99.6%
+2033
+Affected: 99.6%
+2034
+Affected: 99.6%
+2035
+Affected: 99.6%
+2036
+Affected: 99.6%
+2037
+Affected: 99.6%
+2038
+Affected: 99.6%
+2039
+Affected: 99.6%
+2040
+Affected: 99.6%
+2041
+Affected: 99.6%
+2042
+Affected: 99.6%
+2043
+Affected: 99.6%
+2044
+Affected: 99.6%
+2045
+Affected: 99.6%
+2046
+Affected: 99.6%
+2047
+Affected: 99.6%
+2048
+Affected: 99.6%
+2049
+Affected: 99.6%
+2050
+Affected: 99.6%
+2051
+Affected: 99.6%
+2052
+Affected: 99.6%
+2053
+Affected: 99.6%
+2054
+Affected: 99.6%
+2055
+Affected: 99.6%
+2056
+Affected: 99.6%
+2057
+Affected: 99.6%
+2058
+Affected: 99.6%
+2059
+Affected: 99.6%
+2060
+Affected: 99.6%
+2061
+Affected: 99.6%
+2062
+Affected: 99.6%
+2063
+Affected: 99.6%
+2064
+Affected: 99.6%
+2065
+Affected: 99.6%
+2066
+Affected: 99.6%
+2067
+Affected: 99.6%
+2068
+Affected: 99.6%
+2069
+Affected: 99.6%
+2070
+Affected: 99.6%
+2071
+Affected: 99.6%
+2072
+Affected: 99.6%
+2073
+Affected: 99.6%
+2074
+Affected: 99.6%
+2075
+Affected: 99.6%
+2076
+Affected: 99.6%
+2077
+Affected: 99.6%
+2078
+Affected: 99.6%
+2079
+Affected: 99.6%
+2080
+Affected: 99.6%
+2081
+Affected: 99.6%
+2082
+Affected: 99.6%
+2083
+Affected: 99.6%
+2084
+Affected: 99.6%
+2085
+Affected: 99.6%
+2086
+Affected: 99.6%
+2087
+Affected: 99.6%
+2088
+Affected: 99.6%
+2089
+Affected: 99.6%
+2090
+Affected: 99.6%
+2091
+Affected: 99.6%
+2092
+Affected: 99.6%
+2093
+Affected: 99.6%
+2094
+Affected: 99.6%
+2095
+Affected: 99.6%
+2096
+Affected: 99.6%
+2097
+Affected: 99.6%
+2098
+Affected: 99.6%
+2099
+Affected: 99.6%
+2100
+Affected: 99.6%
+2101
+Affected: 99.6%
+2102
+Affected: 99.6%
+2103
+Affected: 99.6%
+2104
+Affected: 99.6%
+2105
+Affected: 99.6%
+2106
+Affected: 99.6%
+2107
+Affected: 99.6%
+2108
+Affected: 99.6%
+2109
+Affected: 99.6%
+2110
+Affected: 99.6%
+2111
+Affected: 99.6%
+2112
+Affected: 99.6%
+2113
+Affected: 99.6%
+2114
+Affected: 99.6%
+2115
+Affected: 99.6%
+2116
+Affected: 99.6%
+2117
+Affected: 99.6%
+2118
+Affected: 99.6%
+2119
+Affected: 99.6%
+2120
+Affected: 99.6%
+2121
+Affected: 99.6%
+2122
+Affected: 99.6%
+2123
+Affected: 99.6%
+2124
+Affected: 99.6%
+2125
+Affected: 99.6%
+2126
+Affected: 99.6%
+2127
+Affected: 99.6%
+2128
+Affected: 99.6%
+2129
+Affected: 99.6%
+2130
+Affected: 99.6%
+2131
+Affected: 99.6%
+2132
+Affected: 99.6%
+2133
+Affected: 99.6%
+2134
+Affected: 99.6%
+2135
+Affected: 99.6%
+2136
+Affected: 99.6%
+2137
+Affected: 99.6%
+2138
+Affected: 99.6%
+2139
+Affected: 99.6%
+2140
+Affected: 99.6%
+2141
+Affected: 99.6%
+2142
+Affected: 99.6%
+2143
+Affected: 99.6%
+2144
+Affected: 99.6%
+2145
+Affected: 99.6%
+2146
+Affected: 99.6%
+2147
+Affected: 99.6%
+2148
+Affected: 99.6%
+2149
+Affected: 99.6%
+2150
+Affected: 99.6%
+2151
+Affected: 99.6%
+2152
+Affected: 99.6%
+2153
+Affected: 99.6%
+2154
+Affected: 99.6%
+2155
+Affected: 99.6%
+2156
+Affected: 99.6%
+2157
+Affected: 99.6%
+2158
+Affected: 99.6%
+2159
+Affected: 99.6%
+2160
+Affected: 99.6%
+2161
+Affected: 99.6%
+2162
+Affected: 99.6%
+2163
+Affected: 99.6%
+2164
+Affected: 99.6%
+2165
+Affected: 99.6%
+2166
+Affected: 99.6%
+2167
+Affected: 99.6%
+2168
+Affected: 99.6%
+2169
+Affected: 99.6%
+2170
+Affected: 99.6%
+2171
+Affected: 99.6%
+2172
+Affected: 99.6%
+2173
+Affected: 99.6%
+2174
+Affected: 99.6%
+2175
+Affected: 99.6%
+2176
+Affected: 99.6%
+2177
+Affected: 99.6%
+2178
+Affected: 99.6%
+2179
+Affected: 99.6%
+2180
+Affected: 99.6%
+2181
+Affected: 99.6%
+2182
+Affected: 99.6%
+2183
+Affected: 99.6%
+2184
+Affected: 99.6%
+2185
+Affected: 99.6%
+2186
+Affected: 99.6%
+2187
+Affected: 99.6%
+2188
+Affected: 99.6%
+2189
+Affected: 99.6%
+2190
+Affected: 99.6%
+2191
+Affected: 99.6%
+2192
+Affected: 99.6%
+2193
+Affected: 99.6%
+2194
+Affected: 99.6%
+2195
+Affected: 99.6%
+2196
+Affected: 99.6%
+2197
+Affected: 99.6%
+2198
+Affected: 99.6%
+2199
+Affected: 99.6%
+2200
+Affected: 99.6%
+2201
+Affected: 99.6%
+2202
+Affected: 99.6%
+2203
+Affected: 99.6%
+2204
+Affected: 99.6%
+2205
+Affected: 99.6%
+2206
+Affected: 99.6%
+2207
+Affected: 99.6%
+2208
+Affected: 99.6%
+2209
+Affected: 99.6%
+2210
+Affected: 99.6%
+2211
+Affected: 99.6%
+2212
+Affected: 99.6%
+2213
+Affected: 99.6%
+2214
+Affected: 99.6%
+2215
+Affected: 99.6%
+2216
+Affected: 99.6%
+2217
+Affected: 99.6%
+2218
+Affected: 99.6%
+2219
+Affected: 99.6%
+2220
+Affected: 99.6%
+2221
+Affected: 99.6%
+2222
+Affected: 99.6%
+2223
+Affected: 99.6%
+2224
+Affected: 99.6%
+2225
+Affected: 99.6%
+2226
+Affected: 99.6%
+2227
+Affected: 99.6%
+2228
+Affected: 99.6%
+2229
+Affected: 99.6%
+2230
+Affected: 99.6%
+2231
+Affected: 99.6%
+2232
+Affected: 99.6%
+2233
+Affected: 99.6%
+2234
+Affected: 99.6%
+2235
+Affected: 99.6%
+2236
+Affected: 99.6%
+2237
+Affected: 99.6%
+2238
+Affected: 99.6%
+2239
+Affected: 99.6%
+2240
+Affected: 99.6%
+2241
+Affected: 99.6%
+2242
+Affected: 99.6%
+2243
+Affected: 99.6%
+2244
+Affected: 99.6%
+2245
+Affected: 99.6%
+2246
+Affected: 99.6%
+2247
+Affected: 99.6%
+2248
+Affected: 99.6%
+2249
+Affected: 99.6%
+2250
+Affected: 99.6%
+2251
+Affected: 99.6%
+2252
+Affected: 99.6%
+2253
+Affected: 99.6%
+2254
+Affected: 99.6%
+2255
+Affected: 99.6%
+2256
+Affected: 99.6%
+2257
+Affected: 99.6%
+2258
+Affected: 99.6%
+2259
+Affected: 99.6%
+2260
+Affected: 99.6%
+2261
+Affected: 99.6%
+2262
+Affected: 99.6%
+2263
+Affected: 99.6%
+2264
+Affected: 99.6%
+2265
+Affected: 99.6%
+2266
+Affected: 99.6%
+2267
+Affected: 99.6%
+2268
+Affected: 99.6%
+2269
+Affected: 99.6%
+2270
+Affected: 99.6%
+2271
+Affected: 99.6%
+2272
+Affected: 99.6%
+2273
+Affected: 99.6%
+2274
+Affected: 99.6%
+2275
+Affected: 99.6%
+2276
+Affected: 99.6%
+2277
+Affected: 99.6%
+2278
+Affected: 99.6%
+2279
+Affected: 99.6%
+2280
+Affected: 99.6%
+2281
+Affected: 99.6%
+2282
+Affected: 99.6%
+2283
+Affected: 99.6%
+2284
+Affected: 99.6%
+2285
+Affected: 99.6%
+2286
+Affected: 99.6%
+2287
+Affected: 99.6%
+2288
+Affected: 99.6%
+2289
+Affected: 99.6%
+2290
+Affected: 99.6%
+2291
+Affected: 99.6%
+2292
+Affected: 99.6%
+2293
+Affected: 99.6%
+2294
+Affected: 99.6%
+2295
+Affected: 99.6%
+2296
+Affected: 99.6%
+2297
+Affected: 99.6%
+2298
+Affected: 99.6%
+2299
+Affected: 99.6%
+2300
+Affected: 99.6%
+2301
+Affected: 99.6%
+2302
+Affected: 99.6%
+2303
+Affected: 99.6%
+2304
+Affected: 99.6%
+2305
+Affected: 99.6%
+2306
+Affected: 99.6%
+2307
+Affected: 99.6%
+2308
+Affected: 99.6%
+2309
+Affected: 99.6%
+2310
+Affected: 99.6%
+2311
+Affected: 99.6%
+2312
+Affected: 99.6%
+2313
+Affected: 99.6%
+2314
+Affected: 99.6%
+2315
+Affected: 99.6%
+2316
+Affected: 99.6%
+2317
+Affected: 99.6%
+2318
+Affected: 99.6%
+2319
+Affected: 99.6%
+2320
+Affected: 99.6%
+2321
+Affected: 99.6%
+2322
+Affected: 99.6%
+2323
+Affected: 99.6%
+2324
+Affected: 99.6%
+2325
+Affected: 99.6%
+2326
+Affected: 99.6%
+2327
+Affected: 99.6%
+2328
+Affected: 99.6%
+2329
+Affected: 99.6%
+2330
+Affected: 99.6%
+2331
+Affected: 99.6%
+2332
+Affected: 99.6%
+2333
+Affected: 99.6%
+2334
+Affected: 99.6%
+2335
+Affected: 99.6%
+2336
+Affected: 99.6%
+2337
+Affected: 99.6%
+2338
+Affected: 99.6%
+2339
+Affected: 99.6%
+2340
+Affected: 99.6%
+2341
+Affected: 99.6%
+2342
+Affected: 99.6%
+2343
+Affected: 99.6%
+2344
+Affected: 99.6%
+2345
+Affected: 99.6%
+2346
+Affected: 99.6%
+2347
+Affected: 99.6%
+2348
+Affected: 99.6%
+2349
+Affected: 99.6%
+2350
+Affected: 99.6%
+2351
+Affected: 99.6%
+2352
+Affected: 99.6%
+2353
+Affected: 99.6%
+2354
+Affected: 99.6%
+2355
+Affected: 99.6%
+2356
+Affected: 99.6%
+2357
+Affected: 99.6%
+2358
+Affected: 99.6%
+2359
+Affected: 99.6%
+2360
+Affected: 99.6%
+2361
+Affected: 99.6%
+2362
+Affected: 99.6%
+2363
+Affected: 99.6%
+2364
+Affected: 99.6%
+2365
+Affected: 99.6%
+2366
+Affected: 99.6%
+2367
+Affected: 99.6%
+2368
+Affected: 99.6%
+2369
+Affected: 99.6%
+2370
+Affected: 99.6%
+2371
+Affected: 99.6%
+2372
+Affected: 99.6%
+2373
+Affected: 99.6%
+2374
+Affected: 99.6%
+2375
+Affected: 99.6%
+2376
+Affected: 99.6%
+2377
+Affected: 99.6%
+2378
+Affected: 99.6%
+2379
+Affected: 99.6%
+2380
+Affected: 99.6%
+2381
+Affected: 99.6%
+2382
+Affected: 99.6%
+2383
+Affected: 99.6%
+2384
+Affected: 99.6%
+2385
+Affected: 99.6%
+2386
+Affected: 99.6%
+2387
+Affected: 99.6%
+2388
+Affected: 99.6%
+2389
+Affected: 99.6%
+2390
+Affected: 99.6%
+2391
+Affected: 99.6%
+2392
+Affected: 99.6%
+2393
+Affected: 99.6%
+2394
+Affected: 99.6%
+2395
+Affected: 99.6%
+2396
+Affected: 99.6%
+2397
+Affected: 99.6%
+2398
+Affected: 99.6%
+2399
+Affected: 99.6%
+2400
+Affected: 99.6%
+2401
+Affected: 99.6%
+2402
+Affected: 99.6%
+2403
+Affected: 99.6%
+2404
+Affected: 99.6%
+2405
+Affected: 99.6%
+2406
+Affected: 99.6%
+2407
+Affected: 99.6%
+2408
+Affected: 99.6%
+2409
+Affected: 99.6%
+2410
+Affected: 99.6%
+2411
+Affected: 99.6%
+2412
+Affected: 99.6%
+2413
+Affected: 99.6%
+2414
+Affected: 99.6%
+2415
+Affected: 99.6%
+2416
+Affected: 99.6%
+2417
+Affected: 99.6%
+2418
+Affected: 99.6%
+2419
+Affected: 99.6%
+2420
+Affected: 99.6%
+2421
+Affected: 99.6%
+2422
+Affected: 99.6%
+2423
+Affected: 99.6%
+2424
+Affected: 99.6%
+2425
+Affected: 99.6%
+2426
+Affected: 99.6%
+2427
+Affected: 99.6%
+2428
+Affected: 99.6%
+2429
+Affected: 99.6%
+2430
+Affected: 99.6%
+2431
+Affected: 99.6%
+2432
+Affected: 99.6%
+2433
+Affected: 99.6%
+2434
+Affected: 99.6%
+2435
+Affected: 99.6%
+2436
+Affected: 99.6%
+2437
+Affected: 99.6%
+2438
+Affected: 99.6%
+2439
+Affected: 99.6%
+2440
+Affected: 99.6%
+2441
+Affected: 99.6%
+2442
+Affected: 99.6%
+2443
+Affected: 99.6%
+2444
+Affected: 99.6%
+2445
+Affected: 99.6%
+2446
+Affected: 99.6%
+2447
+Affected: 99.6%
+2448
+Affected: 99.6%
+2449
+Affected: 99.6%
+2450
+Affected: 99.6%
+2451
+Affected: 99.6%
+2452
+Affected: 99.6%
+2453
+Affected: 99.6%
+2454
+Affected: 99.6%
+2455
+Affected: 99.6%
+2456
+Affected: 99.6%
+2457
+Affected: 99.6%
+2458
+Affected: 99.6%
+2459
+Affected: 99.6%
+2460
+Affected: 99.6%
+2461
+Affected: 99.6%
+2462
+Affected: 99.6%
+2463
+Affected: 99.6%
+2464
+Affected: 99.6%
+2465
+Affected: 99.6%
+2466
+Affected: 99.6%
+2467
+Affected: 99.6%
+2468
+Affected: 99.6%
+2469
+Affected: 99.6%
+2470
+Affected: 99.6%
+2471
+Affected: 99.6%
+2472
+Affected: 99.6%
+2473
+Affected: 99.6%
+2474
+Affected: 99.6%
+2475
+Affected: 99.6%
+2476
+Affected: 99.6%
+2477
+Affected: 99.6%
+2478
+Affected: 99.6%
+2479
+Affected: 99.6%
+2480
+Affected: 99.6%
+2481
+Affected: 99.6%
+2482
+Affected: 99.6%
+2483
+Affected: 99.6%
+2484
+Affected: 99.6%
+2485
+Affected: 99.6%
+2486
+Affected: 99.6%
+2487
+Affected: 99.6%
+2488
+Affected: 99.6%
+2489
+Affected: 99.6%
+2490
+Affected: 99.6%
+2491
+Affected: 99.6%
+2492
+Affected: 99.6%
+2493
+Affected: 99.6%
+2494
+Affected: 99.6%
+2495
+Affected: 99.6%
+2496
+Affected: 99.6%
+2497
+Affected: 99.6%
+2498
+Affected: 99.6%
+2499
+Affected: 99.6%
+2500
+Affected: 99.6%
+2501
+Affected: 99.6%
+2502
+Affected: 99.6%
+2503
+Affected: 99.6%
+2504
+Affected: 99.6%
+2505
+Affected: 99.6%
+2506
+Affected: 99.6%
+2507
+Affected: 99.6%
+2508
+Affected: 99.6%
+2509
+Affected: 99.6%
+2510
+Affected: 99.6%
+2511
+Affected: 99.6%
+2512
+Affected: 99.6%
+2513
+Affected: 99.6%
+2514
+Affected: 99.6%
+2515
+Affected: 99.6%
+2516
+Affected: 99.6%
+2517
+Affected: 99.6%
+2518
+Affected: 99.6%
+2519
+Affected: 99.6%
+2520
+Affected: 99.6%
+2521
+Affected: 99.6%
+2522
+Affected: 99.6%
+2523
+Affected: 99.6%
+2524
+Affected: 99.6%
+2525
+Affected: 99.6%
+2526
+Affected: 99.6%
+2527
+Affected: 99.6%
+2528
+Affected: 99.6%
+2529
+Affected: 99.6%
+2530
+Affected: 99.6%
+2531
+Affected: 99.6%
+2532
+Affected: 99.6%
+2533
+Affected: 99.6%
+2534
+Affected: 99.6%
+2535
+Affected: 99.6%
+2536
+Affected: 99.6%
+2537
+Affected: 99.6%
+2538
+Affected: 99.6%
+2539
+Affected: 99.6%
+2540
+Affected: 99.6%
+2541
+Affected: 99.6%
+2542
+Affected: 99.6%
+2543
+Affected: 99.6%
+2544
+Affected: 99.6%
+2545
+Affected: 99.6%
+2546
+Affected: 99.6%
+2547
+Affected: 99.6%
+2548
+Affected: 99.6%
+2549
+Affected: 99.6%
+2550
+Affected: 99.6%
+2551
+Affected: 99.6%
+2552
+Affected: 99.6%
+2553
+Affected: 99.6%
+2554
+Affected: 99.6%
+2555
+Affected: 99.6%
+2556
+Affected: 99.6%
+2557
+Affected: 99.6%
+2558
+Affected: 99.6%
+2559
+Affected: 99.6%
+2560
+Affected: 99.6%
+2561
+Affected: 99.6%
+2562
+Affected: 99.6%
+2563
+Affected: 99.6%
+2564
+Affected: 99.6%
+2565
+Affected: 99.6%
+2566
+Affected: 99.6%
+2567
+Affected: 99.6%
+2568
+Affected: 99.6%
+2569
+Affected: 99.6%
+2570
+Affected: 99.6%
+2571
+Affected: 99.6%
+2572
+Affected: 99.6%
+2573
+Affected: 99.6%
+2574
+Affected: 99.6%
+2575
+Affected: 99.6%
+2576
+Affected: 99.6%
+2577
+Affected: 99.6%
+2578
+Affected: 99.6%
+2579
+Affected: 99.6%
+2580
+Affected: 99.6%
+2581
+Affected: 99.6%
+2582
+Affected: 99.6%
+2583
+Affected: 99.6%
+2584
+Affected: 99.6%
+2585
+Affected: 99.6%
+2586
+Affected: 99.6%
+2587
+Affected: 99.6%
+2588
+Affected: 99.6%
+2589
+Affected: 99.6%
+2590
+Affected: 99.6%
+2591
+Affected: 99.6%
+2592
+Affected: 99.6%
+2593
+Affected: 99.6%
+2594
+Affected: 99.6%
+2595
+Affected: 99.6%
+2596
+Affected: 99.6%
+2597
+Affected: 99.6%
+2598
+Affected: 99.6%
+2599
+Affected: 99.6%
+2600
+Affected: 99.6%
+2601
+Affected: 99.6%
+2602
+Affected: 99.6%
+2603
+Affected: 99.6%
+2604
+Affected: 99.6%
+2605
+Affected: 99.6%
+2606
+Affected: 99.6%
+2607
+Affected: 99.6%
+2608
+Affected: 99.6%
+2609
+Affected: 99.6%
+2610
+Affected: 99.6%
+2611
+Affected: 99.6%
+2612
+Affected: 99.6%
+2613
+Affected: 99.6%
+2614
+Affected: 99.6%
+2615
+Affected: 99.6%
+2616
+Affected: 99.6%
+2617
+Affected: 99.6%
+2618
+Affected: 99.6%
+2619
+Affected: 99.6%
+2620
+Affected: 99.6%
+2621
+Affected: 99.6%
+2622
+Affected: 99.6%
+2623
+Affected: 99.6%
+2624
+Affected: 99.6%
+2625
+Affected: 99.6%
+2626
+Affected: 99.6%
+2627
+Affected: 99.6%
+2628
+Affected: 99.6%
+2629
+Affected: 99.6%
+2630
+Affected: 99.6%
+2631
+Affected: 99.6%
+2632
+Affected: 99.6%
+2633
+Affected: 99.6%
+2634
+Affected: 99.6%
+2635
+Affected: 99.6%
+2636
+Affected: 99.6%
+2637
+Affected: 99.6%
+2638
+Affected: 99.6%
+2639
+Affected: 99.6%
+2640
+Affected: 99.6%
+2641
+Affected: 99.6%
+2642
+Affected: 99.6%
+2643
+Affected: 99.6%
+2644
+Affected: 99.6%
+2645
+Affected: 99.6%
+2646
+Affected: 99.6%
+2647
+Affected: 99.6%
+2648
+Affected: 99.6%
+2649
+Affected: 99.6%
+2650
+Affected: 99.6%
+2651
+Affected: 99.6%
+2652
+Affected: 99.6%
+2653
+Affected: 99.6%
+2654
+Affected: 99.6%
+2655
+Affected: 99.6%
+2656
+Affected: 99.6%
+2657
+Affected: 99.6%
+2658
+Affected: 99.6%
+2659
+Affected: 99.6%
+2660
+Affected: 99.6%
+2661
+Affected: 99.6%
+2662
+Affected: 99.6%
+2663
+Affected: 99.6%
+2664
+Affected: 99.6%
+2665
+Affected: 99.6%
+2666
+Affected: 99.6%
+2667
+Affected: 99.6%
+2668
+Affected: 99.6%
+2669
+Affected: 99.6%
+2670
+Affected: 99.6%
+2671
+Affected: 99.6%
+2672
+Affected: 99.6%
+2673
+Affected: 99.6%
+2674
+Affected: 99.6%
+2675
+Affected: 99.6%
+2676
+Affected: 99.6%
+2677
+Affected: 99.6%
+2678
+Affected: 99.6%
+2679
+Affected: 99.6%
+2680
+Affected: 99.6%
+2681
+Affected: 99.6%
+2682
+Affected: 99.6%
+2683
+Affected: 99.6%
+2684
+Affected: 99.6%
+2685
+Affected: 99.6%
+2686
+Affected: 99.6%
+2687
+Affected: 99.6%
+2688
+Affected: 99.6%
+2689
+Affected: 99.6%
+2690
+Affected: 99.6%
+2691
+Affected: 99.6%
+2692
+Affected: 99.6%
+2693
+Affected: 99.6%
+2694
+Affected: 99.6%
+2695
+Affected: 99.6%
+2696
+Affected: 99.6%
+2697
+Affected: 99.6%
+2698
+Affected: 99.6%
+2699
+Affected: 99.6%
+2700
+Affected: 99.6%
+2701
+Affected: 99.6%
+2702
+Affected: 99.6%
+2703
+Affected: 99.6%
+2704
+Affected: 99.6%
+2705
+Affected: 99.6%
+2706
+Affected: 99.6%
+2707
+Affected: 99.6%
+2708
+Affected: 99.6%
+2709
+Affected: 99.6%
+2710
+Affected: 99.6%
+2711
+Affected: 99.6%
+2712
+Affected: 99.6%
+2713
+Affected: 99.6%
+2714
+Affected: 99.6%
+2715
+Affected: 99.6%
+2716
+Affected: 99.6%
+2717
+Affected: 99.6%
+2718
+Affected: 99.6%
+2719
+Affected: 99.6%
+2720
+Affected: 99.6%
+2721
+Affected: 99.6%
+2722
+Affected: 99.6%
+2723
+Affected: 99.6%
+2724
+Affected: 99.6%
+2725
+Affected: 99.6%
+2726
+Affected: 99.6%
+2727
+Affected: 99.6%
+2728
+Affected: 99.6%
+2729
+Affected: 99.6%
+2730
+Affected: 99.6%
+2731
+Affected: 99.6%
+2732
+Affected: 99.6%
+2733
+Affected: 99.6%
+2734
+Affected: 99.6%
+2735
+Affected: 99.6%
+2736
+Affected: 99.6%
+2737
+Affected: 99.6%
+2738
+Affected: 99.6%
+2739
+Affected: 99.6%
+2740
+Affected: 99.6%
+2741
+Affected: 99.6%
+2742
+Affected: 99.6%
+2743
+Affected: 99.6%
+2744
+Affected: 99.6%
+2745
+Affected: 99.6%
+2746
+Affected: 99.6%
+2747
+Affected: 99.6%
+2748
+Affected: 99.6%
+2749
+Affected: 99.6%
+2750
+Affected: 99.6%
+2751
+Affected: 99.6%
+2752
+Affected: 99.6%
+2753
+Affected: 99.6%
+2754
+Affected: 99.6%
+2755
+Affected: 99.6%
+2756
+Affected: 99.6%
+2757
+Affected: 99.6%
+2758
+Affected: 99.6%
+2759
+Affected: 99.6%
+2760
+Affected: 99.6%
+2761
+Affected: 99.6%
+2762
+Affected: 99.6%
+2763
+Affected: 99.6%
+2764
+Affected: 99.6%
+2765
+Affected: 99.6%
+2766
+Affected: 99.6%
+2767
+Affected: 99.6%
+2768
+Affected: 99.6%
+2769
+Affected: 99.6%
+2770
+Affected: 99.6%
+2771
+Affected: 99.6%
+2772
+Affected: 99.6%
+2773
+Affected: 99.6%
+2774
+Affected: 99.6%
+2775
+Affected: 99.6%
+2776
+Affected: 99.6%
+2777
+Affected: 99.6%
+2778
+Affected: 99.6%
+2779
+Affected: 99.6%
+2780
+Affected: 99.6%
+2781
+Affected: 99.6%
+2782
+Affected: 99.6%
+2783
+Affected: 99.6%
+2784
+Affected: 99.6%
+2785
+Affected: 99.6%
+2786
+Affected: 99.6%
+2787
+Affected: 99.6%
+2788
+Affected: 99.6%
+2789
+Affected: 99.6%
+2790
+Affected: 99.6%
+2791
+Affected: 99.6%
+2792
+Affected: 99.6%
+2793
+Affected: 99.6%
+2794
+Affected: 99.6%
+2795
+Affected: 99.6%
+2796
+Affected: 99.6%
+2797
+Affected: 99.6%
+2798
+Affected: 99.6%
+2799
+Affected: 99.6%
+2800
+Affected: 99.6%
+2801
+Affected: 99.6%
+2802
+Affected: 99.6%
+2803
+Affected: 99.6%
+2804
+Affected: 99.6%
+2805
+Affected: 99.6%
+2806
+Affected: 99.6%
+2807
+Affected: 99.6%
+2808
+Affected: 99.6%
+2809
+Affected: 99.6%
+2810
+Affected: 99.6%
+2811
+Affected: 99.6%
+2812
+Affected: 99.6%
+2813
+Affected: 99.6%
+2814
+Affected: 99.6%
+2815
+Affected: 99.6%
+2816
+Affected: 99.6%
+2817
+Affected: 99.6%
+2818
+Affected: 99.6%
+2819
+Affected: 99.6%
+2820
+Affected: 99.6%
+2821
+Affected: 99.6%
+2822
+Affected: 99.6%
+2823
+Affected: 99.6%
+2824
+Affected: 99.6%
+2825
+Affected: 99.6%
+2826
+Affected: 99.6%
+2827
+Affected: 99.6%
+2828
+Affected: 99.6%
+2829
+Affected: 99.6%
+2830
+Affected: 99.6%
+2831
+Affected: 99.6%
+2832
+Affected: 99.6%
+2833
+Affected: 99.6%
+2834
+Affected: 99.6%
+2835
+Affected: 99.6%
+2836
+Affected: 99.6%
+2837
+Affected: 99.6%
+2838
+Affected: 99.6%
+2839
+Affected: 99.6%
+2840
+Affected: 99.6%
+2841
+Affected: 99.6%
+2842
+Affected: 99.6%
+2843
+Affected: 99.6%
+2844
+Affected: 99.6%
+2845
+Affected: 99.6%
+2846
+Affected: 99.6%
+2847
+Affected: 99.6%
+2848
+Affected: 99.6%
+2849
+Affected: 99.6%
+2850
+Affected: 99.6%
+2851
+Affected: 99.6%
+2852
+Affected: 99.6%
+2853
+Affected: 99.6%
+2854
+Affected: 99.6%
+2855
+Affected: 99.6%
+2856
+Affected: 99.6%
+2857
+Affected: 99.6%
+2858
+Affected: 99.6%
+2859
+Affected: 99.6%
+2860
+Affected: 99.6%
+2861
+Affected: 99.6%
+2862
+Affected: 99.6%
+2863
+Affected: 99.6%
+2864
+Affected: 99.6%
+2865
+Affected: 99.6%
+2866
+Affected: 99.6%
+2867
+Affected: 99.6%
+2868
+Affected: 99.6%
+2869
+Affected: 99.6%
+2870
+Affected: 99.6%
+2871
+Affected: 99.6%
+2872
+Affected: 99.6%
+2873
+Affected: 99.6%
+2874
+Affected: 99.6%
+2875
+Affected: 99.6%
+2876
+Affected: 99.6%
+2877
+Affected: 99.6%
+2878
+Affected: 99.6%
+2879
+Affected: 99.6%
+2880
+Affected: 99.6%
+2881
+Affected: 99.6%
+2882
+Affected: 99.6%
+2883
+Affected: 99.6%
+2884
+Affected: 99.6%
+2885
+Affected: 99.6%
+2886
+Affected: 99.6%
+2887
+Affected: 99.6%
+2888
+Affected: 99.6%
+2889
+Affected: 99.6%
+2890
+Affected: 99.6%
+2891
+Affected: 99.6%
+2892
+Affected: 99.6%
+2893
+Affected: 99.6%
+2894
+Affected: 99.6%
+2895
+Affected: 99.6%
+2896
+Affected: 99.6%
+2897
+Affected: 99.6%
+2898
+Affected: 99.6%
+2899
+Affected: 99.6%
+2900
+Affected: 99.6%
+2901
+Affected: 99.6%
+2902
+Affected: 99.6%
+2903
+Affected: 99.6%
+2904
+Affected: 99.6%
+2905
+Affected: 99.6%
+2906
+Affected: 99.6%
+2907
+Affected: 99.6%
+2908
+Affected: 99.6%
+2909
+Affected: 99.6%
+2910
+Affected: 99.6%
+2911
+Affected: 99.6%
+2912
+Affected: 99.6%
+2913
+Affected: 99.6%
+2914
+Affected: 99.6%
+2915
+Affected: 99.6%
+2916
+Affected: 99.6%
+2917
+Affected: 99.6%
+2918
+Affected: 99.6%
+2919
+Affected: 99.6%
+2920
+Affected: 99.6%
+2921
+Affected: 99.6%
+2922
+Affected: 99.6%
+2923
+Affected: 99.6%
+2924
+Affected: 99.6%
+2925
+Affected: 99.6%
+2926
+Affected: 99.6%
+2927
+Affected: 99.6%
+2928
+Affected: 99.6%
+2929
+Affected: 99.6%
+2930
+Affected: 99.6%
+2931
+Affected: 99.6%
+2932
+Affected: 99.6%
+2933
+Affected: 99.6%
+2934
+Affected: 99.6%
+2935
+Affected: 99.6%
+2936
+Affected: 99.6%
+2937
+Affected: 99.6%
+2938
+Affected: 99.6%
+2939
+Affected: 99.6%
+2940
+Affected: 99.6%
+2941
+Affected: 99.6%
+2942
+Affected: 99.6%
+2943
+Affected: 99.6%
+2944
+Affected: 99.6%
+2945
+Affected: 99.6%
+2946
+Affected: 99.6%
+2947
+Affected: 99.6%
+2948
+Affected: 99.6%
+2949
+Affected: 99.6%
+2950
+Affected: 99.6%
+2951
+Affected: 99.6%
+2952
+Affected: 99.6%
+2953
+Affected: 99.6%
+2954
+Affected: 99.6%
+2955
+Affected: 99.6%
+2956
+Affected: 99.6%
+2957
+Affected: 99.6%
+2958
+Affected: 99.6%
+2959
+Affected: 99.6%
+2960
+Affected: 99.6%
+2961
+Affected: 99.6%
+2962
+Affected: 99.6%
+2963
+Affected: 99.6%
+2964
+Affected: 99.6%
+2965
+Affected: 99.6%
+2966
+Affected: 99.6%
+2967
+Affected: 99.6%
+2968
+Affected: 99.6%
+2969
+Affected: 99.6%
+2970
+Affected: 99.6%
+2971
+Affected: 99.6%
+2972
+Affected: 99.6%
+2973
+Affected: 99.6%
+2974
+Affected: 99.6%
+2975
+Affected: 99.6%
+2976
+Affected: 99.6%
+2977
+Affected: 99.6%
+2978
+Affected: 99.6%
+2979
+Affected: 99.6%
+2980
+Affected: 99.6%
+2981
+Affected: 99.6%
+2982
+Affected: 99.6%
+2983
+Affected: 99.6%
+2984
+Affected: 99.6%
+2985
+Affected: 99.6%
+2986
+Affected: 99.6%
+2987
+Affected: 99.6%
+2988
+Affected: 99.6%
+2989
+Affected: 99.6%
+2990
+Affected: 99.6%
+2991
+Affected: 99.6%
+2992
+Affected: 99.6%
+2993
+Affected: 99.6%
+2994
+Affected: 99.6%
+2995
+Affected: 99.6%
+2996
+Affected: 99.6%
+2997
+Affected: 99.6%
+2998
+Affected: 99.6%
+2999
+Affected: 99.6%
+3000
+Affected: 99.6%
+3001
+Affected: 99.6%
+3002
+Affected: 99.6%
+3003
+Affected: 99.6%
+3004
+Affected: 99.6%
+3005
+Affected: 99.6%
+3006
+Affected: 99.6%
+3007
+Affected: 99.6%
+3008
+Affected: 99.6%
+3009
+Affected: 99.6%
+3010
+Affected: 99.6%
+3011
+Affected: 99.6%
+3012
+Affected: 99.6%
+3013
+Affected: 99.6%
+3014
+Affected: 99.6%
+3015
+Affected: 99.6%
+3016
+Affected: 99.6%
+3017
+Affected: 99.6%
+3018
+Affected: 99.6%
+3019
+Affected: 99.6%
+3020
+Affected: 99.6%
+3021
+Affected: 99.6%
+3022
+Affected: 99.6%
+3023
+Affected: 99.6%
+3024
+Affected: 99.6%
+3025
+Affected: 99.6%
+3026
+Affected: 99.6%
+3027
+Affected: 99.6%
+3028
+Affected: 99.6%
+3029
+Affected: 99.6%
+3030
+Affected: 99.6%
+3031
+Affected: 99.6%
+3032
+Affected: 99.6%
+3033
+Affected: 99.6%
+3034
+Affected: 99.6%
+3035
+Affected: 99.6%
+3036
+Affected: 99.6%
+3037
+Affected: 99.6%
+3038
+Affected: 99.6%
+3039
+Affected: 99.6%
+3040
+Affected: 99.6%
+3041
+Affected: 99.6%
+3042
+Affected: 99.6%
+3043
+Affected: 99.6%
+3044
+Affected: 99.6%
+3045
+Affected: 99.6%
+3046
+Affected: 99.6%
+3047
+Affected: 99.6%
+3048
+Affected: 99.6%
+3049
+Affected: 99.6%
+3050
+Affected: 99.6%
+3051
+Affected: 99.6%
+3052
+Affected: 99.6%
+3053
+Affected: 99.6%
+3054
+Affected: 99.6%
+3055
+Affected: 99.6%
+3056
+Affected: 99.6%
+3057
+Affected: 99.6%
+3058
+Affected: 99.6%
+3059
+Affected: 99.6%
+3060
+Affected: 99.6%
+3061
+Affected: 99.6%
+3062
+Affected: 99.6%
+3063
+Affected: 99.6%
+3064
+Affected: 99.6%
+3065
+Affected: 99.6%
+3066
+Affected: 99.6%
+3067
+Affected: 99.6%
+3068
+Affected: 99.6%
+3069
+Affected: 99.6%
+3070
+Affected: 99.6%
+3071
+Affected: 99.6%
+3072
+Affected: 99.6%
+3073
+Affected: 99.6%
+3074
+Affected: 99.6%
+3075
+Affected: 99.6%
+3076
+Affected: 99.6%
+3077
+Affected: 99.6%
+3078
+Affected: 99.6%
+3079
+Affected: 99.6%
+3080
+Affected: 99.6%
+3081
+Affected: 99.6%
+3082
+Affected: 99.6%
+3083
+Affected: 99.6%
+3084
+Affected: 99.6%
+3085
+Affected: 99.6%
+3086
+Affected: 99.6%
+3087
+Affected: 99.6%
+3088
+Affected: 99.6%
+3089
+Affected: 99.6%
+3090
+Affected: 99.6%
+3091
+Affected: 99.6%
+3092
+Affected: 99.6%
+3093
+Affected: 99.6%
+3094
+Affected: 99.6%
+3095
+Affected: 99.6%
+3096
+Affected: 99.6%
+3097
+Affected: 99.6%
+3098
+Affected: 99.6%
+3099
+Affected: 99.6%
+3100
+Affected: 99.6%
+3101
+Affected: 99.6%
+3102
+Affected: 99.6%
+3103
+Affected: 99.6%
+3104
+Affected: 99.6%
+3105
+Affected: 99.6%
+3106
+Affected: 99.6%
+3107
+Affected: 99.6%
+3108
+Affected: 99.6%
+3109
+Affected: 99.6%
+3110
+Affected: 99.6%
+3111
+Affected: 99.6%
+3112
+Affected: 99.6%
+3113
+Affected: 99.6%
+3114
+Affected: 99.6%
+3115
+Affected: 99.6%
+3116
+Affected: 99.6%
+3117
+Affected: 99.6%
+3118
+Affected: 99.6%
+3119
+Affected: 99.6%
+3120
+Affected: 99.6%
+3121
+Affected: 99.6%
+3122
+Affected: 99.6%
+3123
+Affected: 99.6%
+3124
+Affected: 99.6%
+3125
+Affected: 99.6%
+3126
+Affected: 99.6%
+3127
+Affected: 99.6%
+3128
+Affected: 99.6%
+3129
+Affected: 99.6%
+3130
+Affected: 99.6%
+3131
+Affected: 99.6%
+3132
+Affected: 99.6%
+3133
+Affected: 99.6%
+3134
+Affected: 99.6%
+3135
+Affected: 99.6%
+3136
+Affected: 99.6%
+3137
+Affected: 99.6%
+3138
+Affected: 99.6%
+3139
+Affected: 99.6%
+3140
+Affected: 99.6%
+3141
+Affected: 99.6%
+3142
+Affected: 99.6%
+3143
+Affected: 99.6%
+3144
+Affected: 99.6%
+3145
+Affected: 99.6%
+3146
+Affected: 99.6%
+3147
+Affected: 99.6%
+3148
+Affected: 99.6%
+3149
+Affected: 99.6%
+3150
+Affected: 99.6%
+3151
+Affected: 99.6%
+3152
+Affected: 99.6%
+3153
+Affected: 99.6%
+3154
+Affected: 99.6%
+3155
+Affected: 99.6%
+3156
+Affected: 99.6%
+3157
+Affected: 99.6%
+3158
+Affected: 99.6%
+3159
+Affected: 99.6%
+3160
+Affected: 99.6%
+3161
+Affected: 99.6%
+3162
+Affected: 99.6%
+3163
+Affected: 99.6%
+3164
+Affected: 99.6%
+3165
+Affected: 99.6%
+3166
+Affected: 99.6%
+3167
+Affected: 99.6%
+3168
+Affected: 99.6%
+3169
+Affected: 99.6%
+3170
+Affected: 99.6%
+3171
+Affected: 99.6%
+3172
+Affected: 99.6%
+3173
+Affected: 99.6%
+3174
+Affected: 99.6%
+3175
+Affected: 99.6%
+3176
+Affected: 99.6%
+3177
+Affected: 99.6%
+3178
+Affected: 99.6%
+3179
+Affected: 99.6%
+3180
+Affected: 99.6%
+3181
+Affected: 99.6%
+3182
+Affected: 99.6%
+3183
+Affected: 99.6%
+3184
+Affected: 99.6%
+3185
+Affected: 99.6%
+3186
+Affected: 99.6%
+3187
+Affected: 99.6%
+3188
+Affected: 99.6%
+3189
+Affected: 99.6%
+3190
+Affected: 99.6%
+3191
+Affected: 99.6%
+3192
+Affected: 99.6%
+3193
+Affected: 99.6%
+3194
+Affected: 99.6%
+3195
+Affected: 99.6%
+3196
+Affected: 99.6%
+3197
+Affected: 99.6%
+3198
+Affected: 99.6%
+3199
+Affected: 99.6%
+3200
+Affected: 99.6%
+3201
+Affected: 99.6%
+3202
+Affected: 99.6%
+3203
+Affected: 99.6%
+3204
+Affected: 99.6%
+3205
+Affected: 99.6%
+3206
+Affected: 99.6%
+3207
+Affected: 99.6%
+3208
+Affected: 99.6%
+3209
+Affected: 99.6%
+3210
+Affected: 99.6%
+3211
+Affected: 99.6%
+3212
+Affected: 99.6%
+3213
+Affected: 99.6%
+3214
+Affected: 99.6%
+3215
+Affected: 99.6%
+3216
+Affected: 99.6%
+3217
+Affected: 99.6%
+3218
+Affected: 99.6%
+3219
+Affected: 99.6%
+3220
+Affected: 99.6%
+3221
+Affected: 99.6%
+3222
+Affected: 99.6%
+3223
+Affected: 99.6%
+3224
+Affected: 99.6%
+3225
+Affected: 99.6%
+3226
+Affected: 99.6%
+3227
+Affected: 99.6%
+3228
+Affected: 99.6%
+3229
+Affected: 99.6%
+3230
+Affected: 99.6%
+3231
+Affected: 99.6%
+3232
+Affected: 99.6%
+3233
+Affected: 99.6%
+3234
+Affected: 99.6%
+3235
+Affected: 99.6%
+3236
+Affected: 99.6%
+3237
+Affected: 99.6%
+3238
+Affected: 99.6%
+3239
+Affected: 99.6%
+3240
+Affected: 99.6%
+3241
+Affected: 99.6%
+3242
+Affected: 99.6%
+3243
+Affected: 99.6%
+3244
+Affected: 99.6%
+3245
+Affected: 99.6%
+3246
+Affected: 99.6%
+3247
+Affected: 99.6%
+3248
+Affected: 99.6%
+3249
+Affected: 99.6%
+3250
+Affected: 99.6%
+3251
+Affected: 99.6%
+3252
+Affected: 99.6%
+3253
+Affected: 99.6%
+3254
+Affected: 99.6%
+3255
+Affected: 99.6%
+3256
+Affected: 99.6%
+3257
+Affected: 99.6%
+3258
+Affected: 99.6%
+3259
+Affected: 99.6%
+3260
+Affected: 99.6%
+3261
+Affected: 99.6%
+3262
+Affected: 99.6%
+3263
+Affected: 99.6%
+3264
+Affected: 99.6%
+3265
+Affected: 99.6%
+3266
+Affected: 99.6%
+3267
+Affected: 99.6%
+3268
+Affected: 99.6%
+3269
+Affected: 99.6%
+3270
+Affected: 99.6%
+3271
+Affected: 99.6%
+3272
+Affected: 99.6%
+3273
+Affected: 99.6%
+3274
+Affected: 99.6%
+3275
+Affected: 99.6%
+3276
+Affected: 99.6%
+3277
+Affected: 99.6%
+3278
+Affected: 99.6%
+3279
+Affected: 99.6%
+3280
+Affected: 99.6%
+3281
+Affected: 99.6%
+3282
+Affected: 99.6%
+3283
+Affected: 99.6%
+3284
+Affected: 99.6%
+3285
+Affected: 99.6%
+3286
+Affected: 99.6%
+3287
+Affected: 99.6%
+3288
+Affected: 99.6%
+3289
+Affected: 99.6%
+3290
+Affected: 99.6%
+3291
+Affected: 99.6%
+3292
+Affected: 99.6%
+3293
+Affected: 99.6%
+3294
+Affected: 99.6%
+3295
+Affected: 99.6%
+3296
+Affected: 99.6%
+3297
+Affected: 99.6%
+3298
+Affected: 99.6%
+3299
+Affected: 99.6%
+3300
+Affected: 99.6%
+3301
+Affected: 99.6%
+3302
+Affected: 99.6%
+3303
+Affected: 99.6%
+3304
+Affected: 99.6%
+3305
+Affected: 99.6%
+3306
+Affected: 99.6%
+3307
+Affected: 99.6%
+3308
+Affected: 99.6%
+3309
+Affected: 99.6%
+3310
+Affected: 99.6%
+3311
+Affected: 99.6%
+3312
+Affected: 99.6%
+3313
+Affected: 99.6%
+3314
+Affected: 99.6%
+3315
+Affected: 99.6%
+3316
+Affected: 99.6%
+3317
+Affected: 99.6%
+3318
+Affected: 99.6%
+3319
+Affected: 99.6%
+3320
+Affected: 99.6%
+3321
+Affected: 99.6%
+3322
+Affected: 99.6%
+3323
+Affected: 99.6%
+3324
+Affected: 99.6%
+3325
+Affected: 99.6%
+3326
+Affected: 99.6%
+3327
+Affected: 99.6%
+3328
+Affected: 99.6%
+3329
+Affected: 99.6%
+3330
+Affected: 99.6%
+3331
+Affected: 99.6%
+3332
+Affected: 99.6%
+3333
+Affected: 99.6%
+3334
+Affected: 99.6%
+3335
+Affected: 99.6%
+3336
+Affected: 99.6%
+3337
+Affected: 99.6%
+3338
+Affected: 99.6%
+3339
+Affected: 99.6%
+3340
+Affected: 99.6%
+3341
+Affected: 99.6%
+3342
+Affected: 99.6%
+3343
+Affected: 99.6%
+3344
+Affected: 99.6%
+3345
+Affected: 99.6%
+3346
+Affected: 99.6%
+3347
+Affected: 99.6%
+3348
+Affected: 99.6%
+3349
+Affected: 99.6%
+3350
+Affected: 99.6%
+3351
+Affected: 99.6%
+3352
+Affected: 99.6%
+3353
+Affected: 99.6%
+3354
+Affected: 99.6%
+3355
+Affected: 99.6%
+3356
+Affected: 99.6%
+3357
+Affected: 99.6%
+3358
+Affected: 99.6%
+3359
+Affected: 99.6%
+3360
+Affected: 99.6%
+3361
+Affected: 99.6%
+3362
+Affected: 99.6%
+3363
+Affected: 99.6%
+3364
+Affected: 99.6%
+3365
+Affected: 99.6%
+3366
+Affected: 99.6%
+3367
+Affected: 99.6%
+3368
+Affected: 99.6%
+3369
+Affected: 99.6%
+3370
+Affected: 99.6%
+3371
+Affected: 99.6%
+3372
+Affected: 99.6%
+3373
+Affected: 99.6%
+3374
+Affected: 99.6%
+3375
+Affected: 99.6%
+3376
+Affected: 99.6%
+3377
+Affected: 99.6%
+3378
+Affected: 99.6%
+3379
+Affected: 99.6%
+3380
+Affected: 99.6%
+3381
+Affected: 99.6%
+3382
+Affected: 99.6%
+3383
+Affected: 99.6%
+3384
+Affected: 99.6%
+3385
+Affected: 99.6%
+3386
+Affected: 99.6%
+3387
+Affected: 99.6%
+3388
+Affected: 99.6%
+3389
+Affected: 99.6%
+3390
+Affected: 99.6%
+3391
+Affected: 99.6%
+3392
+Affected: 99.6%
+3393
+Affected: 99.6%
+3394
+Affected: 99.6%
+3395
+Affected: 99.6%
+3396
+Affected: 99.6%
+3397
+Affected: 99.6%
+3398
+Affected: 99.6%
+3399
+Affected: 99.6%
+3400
+Affected: 99.6%
+3401
+Affected: 99.6%
+3402
+Affected: 99.6%
+3403
+Affected: 99.6%
+3404
+Affected: 99.6%
+3405
+Affected: 99.6%
+3406
+Affected: 99.6%
+3407
+Affected: 99.6%
+3408
+Affected: 99.6%
+3409
+Affected: 99.6%
+3410
+Affected: 99.6%
+3411
+Affected: 99.6%
+3412
+Affected: 99.6%
+3413
+Affected: 99.6%
+3414
+Affected: 99.6%
+3415
+Affected: 99.6%
+3416
+Affected: 99.6%
+3417
+Affected: 99.6%
+3418
+Affected: 99.6%
+3419
+Affected: 99.6%
+3420
+Affected: 99.6%
+3421
+Affected: 99.6%
+3422
+Affected: 99.6%
+3423
+Affected: 99.6%
+3424
+Affected: 99.6%
+3425
+Affected: 99.6%
+3426
+Affected: 99.6%
+3427
+Affected: 99.6%
+3428
+Affected: 99.6%
+3429
+Affected: 99.6%
+3430
+Affected: 99.6%
+3431
+Affected: 99.6%
+3432
+Affected: 99.6%
+3433
+Affected: 99.6%
+3434
+Affected: 99.6%
+3435
+Affected: 99.6%
+3436
+Affected: 99.6%
+3437
+Affected: 99.6%
+3438
+Affected: 99.6%
+3439
+Affected: 99.6%
+3440
+Affected: 99.6%
+3441
+Affected: 99.6%
+3442
+Affected: 99.6%
+3443
+Affected: 99.6%
+3444
+Affected: 99.6%
+3445
+Affected: 99.6%
+3446
+Affected: 99.6%
+3447
+Affected: 99.6%
+3448
+Affected: 99.6%
+3449
+Affected: 99.6%
+3450
+Affected: 99.6%
+3451
+Affected: 99.6%
+3452
+Affected: 99.6%
+3453
+Affected: 99.6%
+3454
+Affected: 99.6%
+3455
+Affected: 99.6%
+3456
+Affected: 99.6%
+3457
+Affected: 99.6%
+3458
+Affected: 99.6%
+3459
+Affected: 99.6%
+3460
+Affected: 99.6%
+3461
+Affected: 99.6%
+3462
+Affected: 99.6%
+3463
+Affected: 99.6%
+3464
+Affected: 99.6%
+3465
+Affected: 99.6%
+3466
+Affected: 99.6%
+3467
+Affected: 99.6%
+3468
+Affected: 99.6%
+3469
+Affected: 99.6%
+3470
+Affected: 99.6%
+3471
+Affected: 99.6%
+3472
+Affected: 99.6%
+3473
+Affected: 99.6%
+3474
+Affected: 99.6%
+3475
+Affected: 99.6%
+3476
+Affected: 99.6%
+3477
+Affected: 99.6%
+3478
+Affected: 99.6%
+3479
+Affected: 99.6%
+3480
+Affected: 99.6%
+3481
+Affected: 99.6%
+3482
+Affected: 99.6%
+3483
+Affected: 99.6%
+3484
+Affected: 99.6%
+3485
+Affected: 99.6%
+3486
+Affected: 99.6%
+3487
+Affected: 99.6%
+3488
+Affected: 99.6%
+3489
+Affected: 99.6%
+3490
+Affected: 99.6%
+3491
+Affected: 99.6%
+3492
+Affected: 99.6%
+3493
+Affected: 99.6%
+3494
+Affected: 99.6%
+3495
+Affected: 99.6%
+3496
+Affected: 99.6%
+3497
+Affected: 99.6%
+3498
+Affected: 99.6%
+3499
+Affected: 99.6%
+3500
+Affected: 99.6%
+3501
+Affected: 99.6%
+3502
+Affected: 99.6%
+3503
+Affected: 99.6%
+3504
+Affected: 99.6%
+3505
+Affected: 99.6%
+3506
+Affected: 99.6%
+3507
+Affected: 99.6%
+3508
+Affected: 99.6%
+3509
+Affected: 99.6%
+3510
+Affected: 99.6%
+3511
+Affected: 99.6%
+3512
+Affected: 99.6%
+3513
+Affected: 99.6%
+3514
+Affected: 99.6%
+3515
+Affected: 99.6%
+3516
+Affected: 99.6%
+3517
+Affected: 99.6%
+3518
+Affected: 99.6%
+3519
+Affected: 99.6%
+3520
+Affected: 99.6%
+3521
+Affected: 99.6%
+3522
+Affected: 99.6%
+3523
+Affected: 99.6%
+3524
+Affected: 99.6%
+3525
+Affected: 99.6%
+3526
+Affected: 99.6%
+3527
+Affected: 99.6%
+3528
+Affected: 99.6%
+3529
+Affected: 99.6%
+3530
+Affected: 99.6%
+3531
+Affected: 99.6%
+3532
+Affected: 99.6%
+3533
+Affected: 99.6%
+3534
+Affected: 99.6%
+3535
+Affected: 99.6%
+3536
+Affected: 99.6%
+3537
+Affected: 99.6%
+3538
+Affected: 99.6%
+3539
+Affected: 99.6%
+3540
+Affected: 99.6%
+3541
+Affected: 99.6%
+3542
+Affected: 99.6%
+3543
+Affected: 99.6%
+3544
+Affected: 99.6%
+3545
+Affected: 99.6%
+3546
+Affected: 99.6%
+3547
+Affected: 99.6%
+3548
+Affected: 99.6%
+3549
+Affected: 99.6%
+3550
+Affected: 99.6%
+3551
+Affected: 99.6%
+3552
+Affected: 99.6%
+3553
+Affected: 99.6%
+3554
+Affected: 99.6%
+3555
+Affected: 99.6%
+3556
+Affected: 99.6%
+3557
+Affected: 99.6%
+3558
+Affected: 99.6%
+3559
+Affected: 99.6%
+3560
+Affected: 99.6%
+3561
+Affected: 99.6%
+3562
+Affected: 99.6%
+3563
+Affected: 99.6%
+3564
+Affected: 99.6%
+3565
+Affected: 99.6%
+3566
+Affected: 99.6%
+3567
+Affected: 99.6%
+3568
+Affected: 99.6%
+3569
+Affected: 99.6%
+3570
+Affected: 99.6%
+3571
+Affected: 99.6%
+3572
+Affected: 99.6%
+3573
+Affected: 99.6%
+3574
+Affected: 99.6%
+3575
+Affected: 99.6%
+3576
+Affected: 99.6%
+3577
+Affected: 99.6%
+3578
+Affected: 99.6%
+3579
+Affected: 99.6%
+3580
+Affected: 99.6%
+3581
+Affected: 99.6%
+3582
+Affected: 99.6%
+3583
+Affected: 99.6%
+3584
+Affected: 99.6%
+3585
+Affected: 99.6%
+3586
+Affected: 99.6%
+3587
+Affected: 99.6%
+3588
+Affected: 99.6%
+3589
+Affected: 99.6%
+3590
+Affected: 99.6%
+3591
+Affected: 99.6%
+3592
+Affected: 99.6%
+3593
+Affected: 99.6%
+3594
+Affected: 99.6%
+3595
+Affected: 99.6%
+3596
+Affected: 99.6%
+3597
+Affected: 99.6%
+3598
+Affected: 99.6%
+3599
+Affected: 99.6%
+3600
+Affected: 99.6%
+3601
+Affected: 99.6%
+3602
+Affected: 99.6%
+3603
+Affected: 99.6%
+3604
+Affected: 99.6%
+3605
+Affected: 99.6%
+3606
+Affected: 99.6%
+3607
+Affected: 99.6%
+3608
+Affected: 99.6%
+3609
+Affected: 99.6%
+3610
+Affected: 99.6%
+3611
+Affected: 99.6%
+3612
+Affected: 99.6%
+3613
+Affected: 99.6%
+3614
+Affected: 99.6%
+3615
+Affected: 99.6%
+3616
+Affected: 99.6%
+3617
+Affected: 99.6%
+3618
+Affected: 99.6%
+3619
+Affected: 99.6%
+3620
+Affected: 99.6%
+3621
+Affected: 99.6%
+3622
+Affected: 99.6%
+3623
+Affected: 99.6%
+3624
+Affected: 99.6%
+3625
+Affected: 99.6%
+3626
+Affected: 99.6%
+3627
+Affected: 99.6%
+3628
+Affected: 99.6%
+3629
+Affected: 99.6%
+3630
+Affected: 99.6%
+3631
+Affected: 99.6%
+3632
+Affected: 99.6%
+3633
+Affected: 99.6%
+3634
+Affected: 99.6%
+3635
+Affected: 99.6%
+3636
+Affected: 99.6%
+3637
+Affected: 99.6%
+3638
+Affected: 99.6%
+3639
+Affected: 99.6%
+3640
+Affected: 99.6%
+3641
+Affected: 99.6%
+3642
+Affected: 99.6%
+3643
+Affected: 99.6%
+3644
+Affected: 99.6%
+3645
+Affected: 99.6%
+3646
+Affected: 99.6%
+3647
+Affected: 99.6%
+3648
+Affected: 99.6%
+3649
+Affected: 99.6%
+3650
+Affected: 99.6%
+3651
+Affected: 99.6%
+3652
+Affected: 99.6%
+3653
+Affected: 99.6%
+3654
+Affected: 99.6%
+3655
+Affected: 99.6%
+3656
+Affected: 99.6%
+3657
+Affected: 99.6%
+3658
+Affected: 99.6%
+3659
+Affected: 99.6%
+3660
+Affected: 99.6%
+3661
+Affected: 99.6%
+3662
+Affected: 99.6%
+3663
+Affected: 99.6%
+3664
+Affected: 99.6%
+3665
+Affected: 99.6%
+3666
+Affected: 99.6%
+3667
+Affected: 99.6%
+3668
+Affected: 99.6%
+3669
+Affected: 99.6%
+3670
+Affected: 99.6%
+3671
+Affected: 99.6%
+3672
+Affected: 99.6%
+3673
+Affected: 99.6%
+3674
+Affected: 99.6%
+3675
+Affected: 99.6%
+3676
+Affected: 99.6%
+3677
+Affected: 99.6%
+3678
+Affected: 99.6%
+3679
+Affected: 99.6%
+3680
+Affected: 99.6%
+3681
+Affected: 99.6%
+3682
+Affected: 99.6%
+3683
+Affected: 99.6%
+3684
+Affected: 99.6%
+3685
+Affected: 99.6%
+3686
+Affected: 99.6%
+3687
+Affected: 99.6%
+3688
+Affected: 99.6%
+3689
+Affected: 99.6%
+3690
+Affected: 99.6%
+3691
+Affected: 99.6%
+3692
+Affected: 99.6%
+3693
+Affected: 99.6%
+3694
+Affected: 99.6%
+3695
+Affected: 99.6%
+3696
+Affected: 99.6%
+3697
+Affected: 99.6%
+3698
+Affected: 99.6%
+3699
+Affected: 99.6%
+3700
+Affected: 99.6%
+3701
+Affected: 99.6%
+3702
+Affected: 99.6%
+3703
+Affected: 99.6%
+3704
+Affected: 99.6%
+3705
+Affected: 99.6%
+3706
+Affected: 99.6%
+3707
+Affected: 99.6%
+3708
+Affected: 99.6%
+3709
+Affected: 99.6%
+3710
+Affected: 99.6%
+3711
+Affected: 99.6%
+3712
+Affected: 99.6%
+3713
+Affected: 99.6%
+3714
+Affected: 99.6%
+3715
+Affected: 99.6%
+3716
+Affected: 99.6%
+3717
+Affected: 99.6%
+3718
+Affected: 99.6%
+3719
+Affected: 99.6%
+3720
+Affected: 99.6%
+3721
+Affected: 99.6%
+3722
+Affected: 99.6%
+3723
+Affected: 99.6%
+3724
+Affected: 99.6%
+3725
+Affected: 99.6%
+3726
+Affected: 99.6%
+3727
+Affected: 99.6%
+3728
+Affected: 99.6%
+3729
+Affected: 99.6%
+3730
+Affected: 99.6%
+3731
+Affected: 99.6%
+3732
+Affected: 99.6%
+3733
+Affected: 99.6%
+3734
+Affected: 99.6%
+3735
+Affected: 99.6%
+3736
+Affected: 99.6%
+3737
+Affected: 99.6%
+3738
+Affected: 99.6%
+3739
+Affected: 99.6%
+3740
+Affected: 99.6%
+3741
+Affected: 99.6%
+3742
+Affected: 99.6%
+3743
+Affected: 99.6%
+3744
+Affected: 99.6%
+3745
+Affected: 99.6%
+3746
+Affected: 99.6%
+3747
+Affected: 99.6%
+3748
+Affected: 99.6%
+3749
+Affected: 99.6%
+3750
+Affected: 99.6%
+3751
+Affected: 99.6%
+3752
+Affected: 99.6%
+3753
+Affected: 99.6%
+3754
+Affected: 99.6%
+3755
+Affected: 99.6%
+3756
+Affected: 99.6%
+3757
+Affected: 99.6%
+3758
+Affected: 99.6%
+3759
+Affected: 99.6%
+3760
+Affected: 99.6%
+3761
+Affected: 99.6%
+3762
+Affected: 99.6%
+3763
+Affected: 99.6%
+3764
+Affected: 99.6%
+3765
+Affected: 99.6%
+3766
+Affected: 99.6%
+3767
+Affected: 99.6%
+3768
+Affected: 99.6%
+3769
+Affected: 99.6%
+3770
+Affected: 99.6%
+3771
+Affected: 99.6%
+3772
+Affected: 99.6%
+3773
+Affected: 99.6%
+3774
+Affected: 99.6%
+3775
+Affected: 99.6%
+3776
+Affected: 99.6%
+3777
+Affected: 99.6%
+3778
+Affected: 99.6%
+3779
+Affected: 99.6%
+3780
+Affected: 99.6%
+3781
+Affected: 99.6%
+3782
+Affected: 99.6%
+3783
+Affected: 99.6%
+3784
+Affected: 99.6%
+3785
+Affected: 99.6%
+3786
+Affected: 99.6%
+3787
+Affected: 99.6%
+3788
+Affected: 99.6%
+3789
+Affected: 99.6%
+3790
+Affected: 99.6%
+3791
+Affected: 99.6%
+3792
+Affected: 99.6%
+3793
+Affected: 99.6%
+3794
+Affected: 99.6%
+3795
+Affected: 99.6%
+3796
+Affected: 99.6%
+3797
+Affected: 99.6%
+3798
+Affected: 99.6%
+3799
+Affected: 99.6%
+3800
+Affected: 99.6%
+3801
+Affected: 99.6%
+3802
+Affected: 99.6%
+3803
+Affected: 99.6%
+3804
+Affected: 99.6%
+3805
+Affected: 99.6%
+3806
+Affected: 99.6%
+3807
+Affected: 99.6%
+3808
+Affected: 99.6%
+3809
+Affected: 99.6%
+3810
+Affected: 99.6%
+3811
+Affected: 99.6%
+3812
+Affected: 99.6%
+3813
+Affected: 99.6%
+3814
+Affected: 99.6%
+3815
+Affected: 99.6%
+3816
+Affected: 99.6%
+3817
+Affected: 99.6%
+3818
+Affected: 99.6%
+3819
+Affected: 99.6%
+3820
+Affected: 99.6%
+3821
+Affected: 99.6%
+3822
+Affected: 99.6%
+3823
+Affected: 99.6%
+3824
+Affected: 99.6%
+3825
+Affected: 99.6%
+3826
+Affected: 99.6%
+3827
+Affected: 99.6%
+3828
+Affected: 99.6%
+3829
+Affected: 99.6%
+3830
+Affected: 99.6%
+3831
+Affected: 99.6%
+3832
+Affected: 99.6%
+3833
+Affected: 99.6%
+3834
+Affected: 99.6%
+3835
+Affected: 99.6%
+3836
+Affected: 99.6%
+3837
+Affected: 99.6%
+3838
+Affected: 99.6%
+3839
+Affected: 99.6%
+3840
+Affected: 99.6%
+3841
+Affected: 99.6%
+3842
+Affected: 99.6%
+3843
+Affected: 99.6%
+3844
+Affected: 99.6%
+3845
+Affected: 99.6%
+3846
+Affected: 99.6%
+3847
+Affected: 99.6%
+3848
+Affected: 99.6%
+3849
+Affected: 99.6%
+3850
+Affected: 99.6%
+3851
+Affected: 99.6%
+3852
+Affected: 99.6%
+3853
+Affected: 99.6%
+3854
+Affected: 99.6%
+3855
+Affected: 99.6%
+3856
+Affected: 99.6%
+3857
+Affected: 99.6%
+3858
+Affected: 99.6%
+3859
+Affected: 99.6%
+3860
+Affected: 99.6%
+3861
+Affected: 99.6%
+3862
+Affected: 99.6%
+3863
+Affected: 99.6%
+3864
+Affected: 99.6%
+3865
+Affected: 99.6%
+3866
+Affected: 99.6%
+3867
+Affected: 99.6%
+3868
+Affected: 99.6%
+3869
+Affected: 99.6%
+3870
+Affected: 99.6%
+3871
+Affected: 99.6%
+3872
+Affected: 99.6%
+3873
+Affected: 99.6%
+3874
+Affected: 99.6%
+3875
+Affected: 99.6%
+3876
+Affected: 99.6%
+3877
+Affected: 99.6%
+3878
+Affected: 99.6%
+3879
+Affected: 99.6%
+3880
+Affected: 99.6%
+3881
+Affected: 99.6%
+3882
+Affected: 99.6%
+3883
+Affected: 99.6%
+3884
+Affected: 99.6%
+3885
+Affected: 99.6%
+3886
+Affected: 99.6%
+3887
+Affected: 99.6%
+3888
+Affected: 99.6%
+3889
+Affected: 99.6%
+3890
+Affected: 99.6%
+3891
+Affected: 99.6%
+3892
+Affected: 99.6%
+3893
+Affected: 99.6%
+3894
+Affected: 99.6%
+3895
+Affected: 99.6%
+3896
+Affected: 99.6%
+3897
+Affected: 99.6%
+3898
+Affected: 99.6%
+3899
+Affected: 99.6%
+3900
+Affected: 99.6%
+3901
+Affected: 99.6%
+3902
+Affected: 99.6%
+3903
+Affected: 99.6%
+3904
+Affected: 99.6%
+3905
+Affected: 99.6%
+3906
+Affected: 99.6%
+3907
+Affected: 99.6%
+3908
+Affected: 99.6%
+3909
+Affected: 99.6%
+3910
+Affected: 99.6%
+3911
+Affected: 99.6%
+3912
+Affected: 99.6%
+3913
+Affected: 99.6%
+3914
+Affected: 99.6%
+3915
+Affected: 99.6%
+3916
+Affected: 99.6%
+3917
+Affected: 99.6%
+3918
+Affected: 99.6%
+3919
+Affected: 99.6%
+3920
+Affected: 99.6%
+3921
+Affected: 99.6%
+3922
+Affected: 99.6%
+3923
+Affected: 99.6%
+3924
+Affected: 99.6%
+3925
+Affected: 99.6%
+3926
+Affected: 99.6%
+3927
+Affected: 99.6%
+3928
+Affected: 99.6%
+3929
+Affected: 99.6%
+3930
+Affected: 99.6%
+3931
+Affected: 99.6%
+3932
+Affected: 99.6%
+3933
+Affected: 99.6%
+3934
+Affected: 99.6%
+3935
+Affected: 99.6%
+3936
+Affected: 99.6%
+3937
+Affected: 99.6%
+3938
+Affected: 99.6%
+3939
+Affected: 99.6%
+3940
+Affected: 99.6%
+3941
+Affected: 99.6%
+3942
+Affected: 99.6%
+3943
+Affected: 99.6%
+3944
+Affected: 99.6%
+3945
+Affected: 99.6%
+3946
+Affected: 99.6%
+3947
+Affected: 99.6%
+3948
+Affected: 99.6%
+3949
+Affected: 99.6%
+3950
+Affected: 99.6%
+3951
+Affected: 99.6%
+3952
+Affected: 99.6%
+3953
+Affected: 99.6%
+3954
+Affected: 99.6%
+3955
+Affected: 99.6%
+3956
+Affected: 99.6%
+3957
+Affected: 99.6%
+3958
+Affected: 99.6%
+3959
+Affected: 99.6%
+3960
+Affected: 99.6%
+3961
+Affected: 99.6%
+3962
+Affected: 99.6%
+3963
+Affected: 99.6%
+3964
+Affected: 99.6%
+3965
+Affected: 99.6%
+3966
+Affected: 99.6%
+3967
+Affected: 99.6%
+3968
+Affected: 99.6%
+3969
+Affected: 99.6%
+3970
+Affected: 99.6%
+3971
+Affected: 99.6%
+3972
+Affected: 99.6%
+3973
+Affected: 99.6%
+3974
+Affected: 99.6%
+3975
+Affected: 99.6%
+3976
+Affected: 99.6%
+3977
+Affected: 99.6%
+3978
+Affected: 99.6%
+3979
+Affected: 99.6%
+3980
+Affected: 99.6%
+3981
+Affected: 99.6%
+3982
+Affected: 99.6%
+3983
+Affected: 99.6%
+3984
+Affected: 99.6%
+3985
+Affected: 99.6%
+3986
+Affected: 99.6%
+3987
+Affected: 99.6%
+3988
+Affected: 99.6%
+3989
+Affected: 99.6%
+3990
+Affected: 99.6%
+3991
+Affected: 99.6%
+3992
+Affected: 99.6%
+3993
+Affected: 99.6%
+3994
+Affected: 99.6%
+3995
+Affected: 99.6%
+3996
+Affected: 99.6%
+3997
+Affected: 99.6%
+3998
+Affected: 99.6%
+3999
+Affected: 99.6%
+4000
+Affected: 99.6%
+4001
+Affected: 99.6%
+4002
+Affected: 99.6%
+4003
+Affected: 99.6%
+4004
+Affected: 99.6%
+4005
+Affected: 99.6%
+4006
+Affected: 99.6%
+4007
+Affected: 99.6%
+4008
+Affected: 99.6%
+4009
+Affected: 99.6%
+4010
+Affected: 99.6%
+4011
+Affected: 99.6%
+4012
+Affected: 99.6%
+4013
+Affected: 99.6%
+4014
+Affected: 99.6%
+4015
+Affected: 99.6%
+4016
+Affected: 99.6%
+4017
+Affected: 99.6%
+4018
+Affected: 99.6%
+4019
+Affected: 99.6%
+4020
+Affected: 99.6%
+4021
+Affected: 99.6%
+4022
+Affected: 99.6%
+4023
+Affected: 99.6%
+4024
+Affected: 99.6%
+4025
+Affected: 99.6%
+4026
+Affected: 99.6%
+4027
+Affected: 99.6%
+4028
+Affected: 99.6%
+4029
+Affected: 99.6%
+4030
+Affected: 99.6%
+4031
+Affected: 99.6%
+4032
+Affected: 99.6%
+4033
+Affected: 99.6%
+4034
+Affected: 99.6%
+4035
+Affected: 99.6%
+4036
+Affected: 99.6%
+4037
+Affected: 99.6%
+4038
+Affected: 99.6%
+4039
+Affected: 99.6%
+4040
+Affected: 99.6%
+4041
+Affected: 99.6%
+4042
+Affected: 99.6%
+4043
+Affected: 99.6%
+4044
+Affected: 99.6%
+4045
+Affected: 99.6%
+4046
+Affected: 99.6%
+4047
+Affected: 99.6%
+4048
+Affected: 99.6%
+4049
+Affected: 99.6%
+4050
+Affected: 99.6%
+4051
+Affected: 99.6%
+4052
+Affected: 99.6%
+4053
+Affected: 99.6%
+4054
+Affected: 99.6%
+4055
+Affected: 99.6%
+4056
+Affected: 99.6%
+4057
+Affected: 99.6%
+4058
+Affected: 99.6%
+4059
+Affected: 99.6%
+4060
+Affected: 99.6%
+4061
+Affected: 99.6%
+4062
+Affected: 99.6%
+4063
+Affected: 99.6%
+4064
+Affected: 99.6%
+4065
+Affected: 99.6%
+4066
+Affected: 99.6%
+4067
+Affected: 99.6%
+4068
+Affected: 99.6%
+4069
+Affected: 99.6%
+4070
+Affected: 99.6%
+4071
+Affected: 99.6%
+4072
+Affected: 99.6%
+4073
+Affected: 99.6%
+4074
+Affected: 99.6%
+4075
+Affected: 99.6%
+4076
+Affected: 99.6%
+4077
+Affected: 99.6%
+4078
+Affected: 99.6%
+4079
+Affected: 99.6%
+4080
+Affected: 99.6%
+4081
+Affected: 99.6%
+4082
+Affected: 99.6%
+4083
+Affected: 99.6%
+4084
+Affected: 99.6%
+4085
+Affected: 99.6%
+4086
+Affected: 99.6%
+4087
+Affected: 99.6%
+4088
+Affected: 99.6%
+4089
+Affected: 99.6%
+4090
+Affected: 99.6%
+4091
+Affected: 99.6%
+4092
+Affected: 99.6%
+4093
+Affected: 99.6%
+4094
+Affected: 99.6%
+4095
+Affected: 99.6%
+4096
+Affected: 99.6%
+4097
+Affected: 99.6%
+4098
+Affected: 99.6%
+4099
+Affected: 99.6%
+4100
+Affected: 99.6%
+4101
+Affected: 99.6%
+4102
+Affected: 99.6%
+4103
+Affected: 99.6%
+4104
+Affected: 99.6%
+4105
+Affected: 99.6%
+4106
+Affected: 99.6%
+4107
+Affected: 99.6%
+4108
+Affected: 99.6%
+4109
+Affected: 99.6%
+4110
+Affected: 99.6%
+4111
+Affected: 99.6%
+4112
+Affected: 99.6%
+4113
+Affected: 99.6%
+4114
+Affected: 99.6%
+4115
+Affected: 99.6%
+4116
+Affected: 99.6%
+4117
+Affected: 99.6%
+4118
+Affected: 99.6%
+4119
+Affected: 99.6%
+4120
+Affected: 99.6%
+4121
+Affected: 99.6%
+4122
+Affected: 99.6%
+4123
+Affected: 99.6%
+4124
+Affected: 99.6%
+4125
+Affected: 99.6%
+4126
+Affected: 99.6%
+4127
+Affected: 99.6%
+4128
+Affected: 99.6%
+4129
+Affected: 99.6%
+4130
+Affected: 99.6%
+4131
+Affected: 99.6%
+4132
+Affected: 99.6%
+4133
+Affected: 99.6%
+4134
+Affected: 99.6%
+4135
+Affected: 99.6%
+4136
+Affected: 99.6%
+4137
+Affected: 99.6%
+4138
+Affected: 99.6%
+4139
+Affected: 99.6%
+4140
+Affected: 99.6%
+4141
+Affected: 99.6%
+4142
+Affected: 99.6%
+4143
+Affected: 99.6%
+4144
+Affected: 99.6%
+4145
+Affected: 99.6%
+4146
+Affected: 99.6%
+4147
+Affected: 99.6%
+4148
+Affected: 99.6%
+4149
+Affected: 99.6%
+4150
+Affected: 99.6%
+4151
+Affected: 99.6%
+4152
+Affected: 99.6%
+4153
+Affected: 99.6%
+4154
+Affected: 99.6%
+4155
+Affected: 99.6%
+4156
+Affected: 99.6%
+4157
+Affected: 99.6%
+4158
+Affected: 99.6%
+4159
+Affected: 99.6%
+4160
+Affected: 99.6%
+4161
+Affected: 99.6%
+4162
+Affected: 99.6%
+4163
+Affected: 99.6%
+4164
+Affected: 99.6%
+4165
+Affected: 99.6%
+4166
+Affected: 99.6%
+4167
+Affected: 99.6%
+4168
+Affected: 99.6%
+4169
+Affected: 99.6%
+4170
+Affected: 99.6%
+4171
+Affected: 99.6%
+4172
+Affected: 99.6%
+4173
+Affected: 99.6%
+4174
+Affected: 99.6%
+4175
+Affected: 99.6%
+4176
+Affected: 99.6%
+4177
+Affected: 99.6%
+4178
+Affected: 99.6%
+4179
+Affected: 99.6%
+4180
+Affected: 99.6%
+4181
+Affected: 99.6%
+4182
+Affected: 99.6%
+4183
+Affected: 99.6%
+4184
+Affected: 99.6%
+4185
+Affected: 99.6%
+4186
+Affected: 99.6%
+4187
+Affected: 99.6%
+4188
+Affected: 99.6%
+4189
+Affected: 99.6%
+4190
+Affected: 99.6%
+4191
+Affected: 99.6%
+4192
+Affected: 99.6%
+4193
+Affected: 99.6%
+4194
+Affected: 99.6%
+4195
+Affected: 99.6%
+4196
+Affected: 99.6%
+4197
+Affected: 99.6%
+4198
+Affected: 99.6%
+4199
+Affected: 99.6%
+4200
+Affected: 99.6%
+4201
+Affected: 99.6%
+4202
+Affected: 99.6%
+4203
+Affected: 99.6%
+4204
+Affected: 99.6%
+4205
+Affected: 99.6%
+4206
+Affected: 99.6%
+4207
+Affected: 99.6%
+4208
+Affected: 99.6%
+4209
+Affected: 99.6%
+4210
+Affected: 99.6%
+4211
+Affected: 99.6%
+4212
+Affected: 99.6%
+4213
+Affected: 99.6%
+4214
+Affected: 99.6%
+4215
+Affected: 99.6%
+4216
+Affected: 99.6%
+4217
+Affected: 99.6%
+4218
+Affected: 99.6%
+4219
+Affected: 99.6%
+4220
+Affected: 99.6%
+4221
+Affected: 99.6%
+4222
+Affected: 99.6%
+4223
+Affected: 99.6%
+4224
+Affected: 99.6%
+4225
+Affected: 99.6%
+4226
+Affected: 99.6%
+4227
+Affected: 99.6%
+4228
+Affected: 99.6%
+4229
+Affected: 99.6%
+4230
+Affected: 99.6%
+4231
+Affected: 99.6%
+4232
+Affected: 99.6%
+4233
+Affected: 99.6%
+4234
+Affected: 99.6%
+4235
+Affected: 99.6%
+4236
+Affected: 99.6%
+4237
+Affected: 99.6%
+4238
+Affected: 99.6%
+4239
+Affected: 99.6%
+4240
+Affected: 99.6%
+4241
+Affected: 99.6%
+4242
+Affected: 99.6%
+4243
+Affected: 99.6%
+4244
+Affected: 99.6%
+4245
+Affected: 99.6%
+4246
+Affected: 99.6%
+4247
+Affected: 99.6%
+4248
+Affected: 99.6%
+4249
+Affected: 99.6%
+4250
+Affected: 99.6%
+4251
+Affected: 99.6%
+4252
+Affected: 99.6%
+4253
+Affected: 99.6%
+4254
+Affected: 99.6%
+4255
+Affected: 99.6%
+4256
+Affected: 99.6%
+4257
+Affected: 99.6%
+4258
+Affected: 99.6%
+4259
+Affected: 99.6%
+4260
+Affected: 99.6%
+4261
+Affected: 99.6%
+4262
+Affected: 99.6%
+4263
+Affected: 99.6%
+4264
+Affected: 99.6%
+4265
+Affected: 99.6%
+4266
+Affected: 99.6%
+4267
+Affected: 99.6%
+4268
+Affected: 99.6%
+4269
+Affected: 99.6%
+4270
+Affected: 99.6%
+4271
+Affected: 99.6%
+4272
+Affected: 99.6%
+4273
+Affected: 99.6%
+4274
+Affected: 99.6%
+4275
+Affected: 99.6%
+4276
+Affected: 99.6%
+4277
+Affected: 99.6%
+4278
+Affected: 99.6%
+4279
+Affected: 99.6%
+4280
+Affected: 99.6%
+4281
+Affected: 99.6%
+4282
+Affected: 99.6%
+4283
+Affected: 99.6%
+4284
+Affected: 99.6%
+4285
+Affected: 99.6%
+4286
+Affected: 99.6%
+4287
+Affected: 99.6%
+4288
+Affected: 99.6%
+4289
+Affected: 99.6%
+4290
+Affected: 99.6%
+4291
+Affected: 99.6%
+4292
+Affected: 99.6%
+4293
+Affected: 99.6%
+4294
+Affected: 99.6%
+4295
+Affected: 99.6%
+4296
+Affected: 99.6%
+4297
+Affected: 99.6%
+4298
+Affected: 99.6%
+4299
+Affected: 99.6%
+4300
+Affected: 99.6%
+4301
+Affected: 99.6%
+4302
+Affected: 99.6%
+4303
+Affected: 99.6%
+4304
+Affected: 99.6%
+4305
+Affected: 99.6%
+4306
+Affected: 99.6%
+4307
+Affected: 99.6%
+4308
+Affected: 99.6%
+4309
+Affected: 99.6%
+4310
+Affected: 99.6%
+4311
+Affected: 99.6%
+4312
+Affected: 99.6%
+4313
+Affected: 99.6%
+4314
+Affected: 99.6%
+4315
+Affected: 99.6%
+4316
+Affected: 99.6%
+4317
+Affected: 99.6%
+4318
+Affected: 99.6%
+4319
+Affected: 99.6%
+4320
+Affected: 99.6%
+4321
+Affected: 99.6%
+4322
+Affected: 99.6%
+4323
+Affected: 99.6%
+4324
+Affected: 99.6%
+4325
+Affected: 99.6%
+4326
+Affected: 99.6%
+4327
+Affected: 99.6%
+4328
+Affected: 99.6%
+4329
+Affected: 99.6%
+4330
+Affected: 99.6%
+4331
+Affected: 99.6%
+4332
+Affected: 99.6%
+4333
+Affected: 99.6%
+4334
+Affected: 99.6%
+4335
+Affected: 99.6%
+4336
+Affected: 99.6%
+4337
+Affected: 99.6%
+4338
+Affected: 99.6%
+4339
+Affected: 99.6%
+4340
+Affected: 99.6%
+4341
+Affected: 99.6%
+4342
+Affected: 99.6%
+4343
+Affected: 99.6%
+4344
+Affected: 99.6%
+4345
+Affected: 99.6%
+4346
+Affected: 99.6%
+4347
+Affected: 99.6%
+4348
+Affected: 99.6%
+4349
+Affected: 99.6%
+4350
+Affected: 99.6%
+4351
+Affected: 99.6%
+4352
+Affected: 99.6%
+4353
+Affected: 99.6%
+4354
+Affected: 99.6%
+4355
+Affected: 99.6%
+4356
+Affected: 99.6%
+4357
+Affected: 99.6%
+4358
+Affected: 99.6%
+4359
+Affected: 99.6%
+4360
+Affected: 99.6%
+4361
+Affected: 99.6%
+4362
+Affected: 99.6%
+4363
+Affected: 99.6%
+4364
+Affected: 99.6%
+4365
+Affected: 99.6%
+4366
+Affected: 99.6%
+4367
+Affected: 99.6%
+4368
+Affected: 99.6%
+4369
+Affected: 99.6%
+4370
+Affected: 99.6%
+4371
+Affected: 99.6%
+4372
+Affected: 99.6%
+4373
+Affected: 99.6%
+4374
+Affected: 99.6%
+4375
+Affected: 99.6%
+4376
+Affected: 99.6%
+4377
+Affected: 99.6%
+4378
+Affected: 99.6%
+4379
+Affected: 99.6%
+4380
+Affected: 99.6%
+4381
+Affected: 99.6%
+4382
+Affected: 99.6%
+4383
+Affected: 99.6%
+4384
+Affected: 99.6%
+4385
+Affected: 99.6%
+4386
+Affected: 99.6%
+4387
+Affected: 99.6%
+4388
+Affected: 99.6%
+4389
+Affected: 99.6%
+4390
+Affected: 99.6%
+4391
+Affected: 99.6%
+4392
+Affected: 99.6%
+4393
+Affected: 99.6%
+4394
+Affected: 99.6%
+4395
+Affected: 99.6%
+4396
+Affected: 99.6%
+4397
+Affected: 99.6%
+4398
+Affected: 99.6%
+4399
+Affected: 99.6%
+4400
+Affected: 99.6%
+4401
+Affected: 99.6%
+4402
+Affected: 99.6%
+4403
+Affected: 99.6%
+4404
+Affected: 99.6%
+4405
+Affected: 99.6%
+4406
+Affected: 99.6%
+4407
+Affected: 99.6%
+4408
+Affected: 99.6%
+4409
+Affected: 99.6%
+4410
+Affected: 99.6%
+4411
+Affected: 99.6%
+4412
+Affected: 99.6%
+4413
+Affected: 99.6%
+4414
+Affected: 99.6%
+4415
+Affected: 99.6%
+4416
+Affected: 99.6%
+4417
+Affected: 99.6%
+4418
+Affected: 99.6%
+4419
+Affected: 99.6%
+4420
+Affected: 99.6%
+4421
+Affected: 99.6%
+4422
+Affected: 99.6%
+4423
+Affected: 99.6%
+4424
+Affected: 99.6%
+4425
+Affected: 99.6%
+4426
+Affected: 99.6%
+4427
+Affected: 99.6%
+4428
+Affected: 99.6%
+4429
+Affected: 99.6%
+4430
+Affected: 99.6%
+4431
+Affected: 99.6%
+4432
+Affected: 99.6%
+4433
+Affected: 99.6%
+4434
+Affected: 99.6%
+4435
+Affected: 99.6%
+4436
+Affected: 99.6%
+4437
+Affected: 99.6%
+4438
+Affected: 99.6%
+4439
+Affected: 99.6%
+4440
+Affected: 99.6%
+4441
+Affected: 99.6%
+4442
+Affected: 99.6%
+4443
+Affected: 99.6%
+4444
+Affected: 99.6%
+4445
+Affected: 99.6%
+4446
+Affected: 99.6%
+4447
+Affected: 99.6%
+4448
+Affected: 99.6%
+4449
+Affected: 99.6%
+4450
+Affected: 99.6%
+4451
+Affected: 99.6%
+4452
+Affected: 99.6%
+4453
+Affected: 99.6%
+4454
+Affected: 99.6%
+4455
+Affected: 99.6%
+4456
+Affected: 99.6%
+4457
+Affected: 99.6%
+4458
+Affected: 99.6%
+4459
+Affected: 99.6%
+4460
+Affected: 99.6%
+4461
+Affected: 99.6%
+4462
+Affected: 99.6%
+4463
+Affected: 99.6%
+4464
+Affected: 99.6%
+4465
+Affected: 99.6%
+4466
+Affected: 99.6%
+4467
+Affected: 99.6%
+4468
+Affected: 99.6%
+4469
+Affected: 99.6%
+4470
+Affected: 99.6%
+4471
+Affected: 99.6%
+4472
+Affected: 99.6%
+4473
+Affected: 99.6%
+4474
+Affected: 99.6%
+4475
+Affected: 99.6%
+4476
+Affected: 99.6%
+4477
+Affected: 99.6%
+4478
+Affected: 99.6%
+4479
+Affected: 99.6%
+4480
+Affected: 99.6%
+4481
+Affected: 99.6%
+4482
+Affected: 99.6%
+4483
+Affected: 99.6%
+4484
+Affected: 99.6%
+4485
+Affected: 99.6%
+4486
+Affected: 99.6%
+4487
+Affected: 99.6%
+4488
+Affected: 99.6%
+4489
+Affected: 99.6%
+4490
+Affected: 99.6%
+4491
+Affected: 99.6%
+4492
+Affected: 99.6%
+4493
+Affected: 99.6%
+4494
+Affected: 99.6%
+4495
+Affected: 99.6%
+4496
+Affected: 99.6%
+4497
+Affected: 99.6%
+4498
+Affected: 99.6%
+4499
+Affected: 99.6%
+4500
+Affected: 99.6%
+4501
+Affected: 99.6%
+4502
+Affected: 99.6%
+4503
+Affected: 99.6%
+4504
+Affected: 99.6%
+4505
+Affected: 99.6%
+4506
+Affected: 99.6%
+4507
+Affected: 99.6%
+4508
+Affected: 99.6%
+4509
+Affected: 99.6%
+4510
+Affected: 99.6%
+4511
+Affected: 99.6%
+4512
+Affected: 99.6%
+4513
+Affected: 99.6%
+4514
+Affected: 99.6%
+4515
+Affected: 99.6%
+4516
+Affected: 99.6%
+4517
+Affected: 99.6%
+4518
+Affected: 99.6%
+4519
+Affected: 99.6%
+4520
+Affected: 99.6%
+4521
+Affected: 99.6%
+4522
+Affected: 99.6%
+4523
+Affected: 99.6%
+4524
+Affected: 99.6%
+4525
+Affected: 99.6%
+4526
+Affected: 99.6%
+4527
+Affected: 99.6%
+4528
+Affected: 99.6%
+4529
+Affected: 99.6%
+4530
+Affected: 99.6%
+4531
+Affected: 99.6%
+4532
+Affected: 99.6%
+4533
+Affected: 99.6%
+4534
+Affected: 99.6%
+4535
+Affected: 99.6%
+4536
+Affected: 99.6%
+4537
+Affected: 99.6%
+4538
+Affected: 99.6%
+4539
+Affected: 99.6%
+4540
+Affected: 99.6%
+4541
+Affected: 99.6%
+4542
+Affected: 99.6%
+4543
+Affected: 99.6%
+4544
+Affected: 99.6%
+4545
+Affected: 99.6%
+4546
+Affected: 99.6%
+4547
+Affected: 99.6%
+4548
+Affected: 99.6%
+4549
+Affected: 99.6%
+4550
+Affected: 99.6%
+4551
+Affected: 99.6%
+4552
+Affected: 99.6%
+4553
+Affected: 99.6%
+4554
+Affected: 99.6%
+4555
+Affected: 99.6%
+4556
+Affected: 99.6%
+4557
+Affected: 99.6%
+4558
+Affected: 99.6%
+4559
+Affected: 99.6%
+4560
+Affected: 99.6%
+4561
+Affected: 99.6%
+4562
+Affected: 99.6%
+4563
+Affected: 99.6%
+4564
+Affected: 99.6%
+4565
+Affected: 99.6%
+4566
+Affected: 99.6%
+4567
+Affected: 99.6%
+4568
+Affected: 99.6%
+4569
+Affected: 99.6%
+4570
+Affected: 99.6%
+4571
+Affected: 99.6%
+4572
+Affected: 99.6%
+4573
+Affected: 99.6%
+4574
+Affected: 99.6%
+4575
+Affected: 99.6%
+4576
+Affected: 99.6%
+4577
+Affected: 99.6%
+4578
+Affected: 99.6%
+4579
+Affected: 99.6%
+4580
+Affected: 99.6%
+4581
+Affected: 99.6%
+4582
+Affected: 99.6%
+4583
+Affected: 99.6%
+4584
+Affected: 99.6%
+4585
+Affected: 99.6%
+4586
+Affected: 99.6%
+4587
+Affected: 99.6%
+4588
+Affected: 99.6%
+4589
+Affected: 99.6%
+4590
+Affected: 99.6%
+4591
+Affected: 99.6%
+4592
+Affected: 99.6%
+4593
+Affected: 99.6%
+4594
+Affected: 99.6%
+4595
+Affected: 99.6%
+4596
+Affected: 99.6%
+4597
+Affected: 99.6%
+4598
+Affected: 99.6%
+4599
+Affected: 99.6%
+4600
+Affected: 99.6%
+4601
+Affected: 99.6%
+4602
+Affected: 99.6%
+4603
+Affected: 99.6%
+4604
+Affected: 99.6%
+4605
+Affected: 99.6%
+4606
+Affected: 99.6%
+4607
+Affected: 99.6%
+4608
+Affected: 99.6%
+4609
+Affected: 99.6%
+4610
+Affected: 99.6%
+4611
+Affected: 99.6%
+4612
+Affected: 99.6%
+4613
+Affected: 99.6%
+4614
+Affected: 99.6%
+4615
+Affected: 99.6%
+4616
+Affected: 99.6%
+4617
+Affected: 99.6%
+4618
+Affected: 99.6%
+4619
+Affected: 99.6%
+4620
+Affected: 99.6%
+4621
+Affected: 99.6%
+4622
+Affected: 99.6%
+4623
+Affected: 99.6%
+4624
+Affected: 99.6%
+4625
+Affected: 99.6%
+4626
+Affected: 99.6%
+4627
+Affected: 99.6%
+4628
+Affected: 99.6%
+4629
+Affected: 99.6%
+4630
+Affected: 99.6%
+4631
+Affected: 99.6%
+4632
+Affected: 99.6%
+4633
+Affected: 99.6%
+4634
+Affected: 99.6%
+4635
+Affected: 99.6%
+4636
+Affected: 99.6%
+4637
+Affected: 99.6%
+4638
+Affected: 99.6%
+4639
+Affected: 99.6%
+4640
+Affected: 99.6%
+4641
+Affected: 99.6%
+4642
+Affected: 99.6%
+4643
+Affected: 99.6%
+4644
+Affected: 99.6%
+4645
+Affected: 99.6%
+4646
+Affected: 99.6%
+4647
+Affected: 99.6%
+4648
+Affected: 99.6%
+4649
+Affected: 99.6%
+4650
+Affected: 99.6%
+4651
+Affected: 99.6%
+4652
+Affected: 99.6%
+4653
+Affected: 99.6%
+4654
+Affected: 99.6%
+4655
+Affected: 99.6%
+4656
+Affected: 99.6%
+4657
+Affected: 99.6%
+4658
+Affected: 99.6%
+4659
+Affected: 99.6%
+4660
+Affected: 99.6%
+4661
+Affected: 99.6%
+4662
+Affected: 99.6%
+4663
+Affected: 99.6%
+4664
+Affected: 99.6%
+4665
+Affected: 99.6%
+4666
+Affected: 99.6%
+4667
+Affected: 99.6%
+4668
+Affected: 99.6%
+4669
+Affected: 99.6%
+4670
+Affected: 99.6%
+4671
+Affected: 99.6%
+4672
+Affected: 99.6%
+4673
+Affected: 99.6%
+4674
+Affected: 99.6%
+4675
+Affected: 99.6%
+4676
+Affected: 99.6%
+4677
+Affected: 99.6%
+4678
+Affected: 99.6%
+4679
+Affected: 99.6%
+4680
+Affected: 99.6%
+4681
+Affected: 99.6%
+4682
+Affected: 99.6%
+4683
+Affected: 99.6%
+4684
+Affected: 99.6%
+4685
+Affected: 99.6%
+4686
+Affected: 99.6%
+4687
+Affected: 99.6%
+4688
+Affected: 99.6%
+4689
+Affected: 99.6%
+4690
+Affected: 99.6%
+4691
+Affected: 99.6%
+4692
+Affected: 99.6%
+4693
+Affected: 99.6%
+4694
+Affected: 99.6%
+4695
+Affected: 99.6%
+4696
+Affected: 99.6%
+4697
+Affected: 99.6%
+4698
+Affected: 99.6%
+4699
+Affected: 99.6%
+4700
+Affected: 99.6%
+4701
+Affected: 99.6%
+4702
+Affected: 99.6%
+4703
+Affected: 99.6%
+4704
+Affected: 99.6%
+4705
+Affected: 99.6%
+4706
+Affected: 99.6%
+4707
+Affected: 99.6%
+4708
+Affected: 99.6%
+4709
+Affected: 99.6%
+4710
+Affected: 99.6%
+4711
+Affected: 99.6%
+4712
+Affected: 99.6%
+4713
+Affected: 99.6%
+4714
+Affected: 99.6%
+4715
+Affected: 99.6%
+4716
+Affected: 99.6%
+4717
+Affected: 99.6%
+4718
+Affected: 99.6%
+4719
+Affected: 99.6%
+4720
+Affected: 99.6%
+4721
+Affected: 99.6%
+4722
+Affected: 99.6%
+4723
+Affected: 99.6%
+4724
+Affected: 99.6%
+4725
+Affected: 99.6%
+4726
+Affected: 99.6%
+4727
+Affected: 99.6%
+4728
+Affected: 99.6%
+4729
+Affected: 99.6%
+4730
+Affected: 99.6%
+4731
+Affected: 99.6%
+4732
+Affected: 99.6%
+4733
+Affected: 99.6%
+4734
+Affected: 99.6%
+4735
+Affected: 99.6%
+4736
+Affected: 99.6%
+4737
+Affected: 99.6%
+4738
+Affected: 99.6%
+4739
+Affected: 99.6%
+4740
+Affected: 99.6%
+4741
+Affected: 99.6%
+4742
+Affected: 99.6%
+4743
+Affected: 99.6%
+4744
+Affected: 99.6%
+4745
+Affected: 99.6%
+4746
+Affected: 99.6%
+4747
+Affected: 99.6%
+4748
+Affected: 99.6%
+4749
+Affected: 99.6%
+4750
+Affected: 99.6%
+4751
+Affected: 99.6%
+4752
+Affected: 99.6%
+4753
+Affected: 99.6%
+4754
+Affected: 99.6%
+4755
+Affected: 99.6%
+4756
+Affected: 99.6%
+4757
+Affected: 99.6%
+4758
+Affected: 99.6%
+4759
+Affected: 99.6%
+4760
+Affected: 99.6%
+4761
+Affected: 99.6%
+4762
+Affected: 99.6%
+4763
+Affected: 99.6%
+4764
+Affected: 99.6%
+4765
+Affected: 99.6%
+4766
+Affected: 99.6%
+4767
+Affected: 99.6%
+4768
+Affected: 99.6%
+4769
+Affected: 99.6%
+4770
+Affected: 99.6%
+4771
+Affected: 99.6%
+4772
+Affected: 99.6%
+4773
+Affected: 99.6%
+4774
+Affected: 99.6%
+4775
+Affected: 99.6%
+4776
+Affected: 99.6%
+4777
+Affected: 99.6%
+4778
+Affected: 99.6%
+4779
+Affected: 99.6%
+4780
+Affected: 99.6%
+4781
+Affected: 99.6%
+4782
+Affected: 99.6%
+4783
+Affected: 99.6%
+4784
+Affected: 99.6%
+4785
+Affected: 99.6%
+4786
+Affected: 99.6%
+4787
+Affected: 99.6%
+4788
+Affected: 99.6%
+4789
+Affected: 99.6%
+4790
+Affected: 99.6%
+4791
+Affected: 99.6%
+4792
+Affected: 99.6%
+4793
+Affected: 99.6%
+4794
+Affected: 99.6%
+4795
+Affected: 99.6%
+4796
+Affected: 99.6%
+4797
+Affected: 99.6%
+4798
+Affected: 99.6%
+4799
+Affected: 99.6%
+4800
+Affected: 99.6%
+4801
+Affected: 99.6%
+4802
+Affected: 99.6%
+4803
+Affected: 99.6%
+4804
+Affected: 99.6%
+4805
+Affected: 99.6%
+4806
+Affected: 99.6%
+4807
+Affected: 99.6%
+4808
+Affected: 99.6%
+4809
+Affected: 99.6%
+4810
+Affected: 99.6%
+4811
+Affected: 99.6%
+4812
+Affected: 99.6%
+4813
+Affected: 99.6%
+4814
+Affected: 99.6%
+4815
+Affected: 99.6%
+4816
+Affected: 99.6%
+4817
+Affected: 99.6%
+4818
+Affected: 99.6%
+4819
+Affected: 99.6%
+4820
+Affected: 99.6%
+4821
+Affected: 99.6%
+4822
+Affected: 99.6%
+4823
+Affected: 99.6%
+4824
+Affected: 99.6%
+4825
+Affected: 99.6%
+4826
+Affected: 99.6%
+4827
+Affected: 99.6%
+4828
+Affected: 99.6%
+4829
+Affected: 99.6%
+4830
+Affected: 99.6%
+4831
+Affected: 99.6%
+4832
+Affected: 99.6%
+4833
+Affected: 99.6%
+4834
+Affected: 99.6%
+4835
+Affected: 99.6%
+4836
+Affected: 99.6%
+4837
+Affected: 99.6%
+4838
+Affected: 99.6%
+4839
+Affected: 99.6%
+4840
+Affected: 99.6%
+4841
+Affected: 99.6%
+4842
+Affected: 99.6%
+4843
+Affected: 99.6%
+4844
+Affected: 99.6%
+4845
+Affected: 99.6%
+4846
+Affected: 99.6%
+4847
+Affected: 99.6%
+4848
+Affected: 99.6%
+4849
+Affected: 99.6%
+4850
+Affected: 99.6%
+4851
+Affected: 99.6%
+4852
+Affected: 99.6%
+4853
+Affected: 99.6%
+4854
+Affected: 99.6%
+4855
+Affected: 99.6%
+4856
+Affected: 99.6%
+4857
+Affected: 99.6%
+4858
+Affected: 99.6%
+4859
+Affected: 99.6%
+4860
+Affected: 99.6%
+4861
+Affected: 99.6%
+4862
+Affected: 99.6%
+4863
+Affected: 99.6%
+4864
+Affected: 99.6%
+4865
+Affected: 99.6%
+4866
+Affected: 99.6%
+4867
+Affected: 99.6%
+4868
+Affected: 99.6%
+4869
+Affected: 99.6%
+4870
+Affected: 99.6%
+4871
+Affected: 99.6%
+4872
+Affected: 99.6%
+4873
+Affected: 99.6%
+4874
+Affected: 99.6%
+4875
+Affected: 99.6%
+4876
+Affected: 99.6%
+4877
+Affected: 99.6%
+4878
+Affected: 99.6%
+4879
+Affected: 99.6%
+4880
+Affected: 99.6%
+4881
+Affected: 99.6%
+4882
+Affected: 99.6%
+4883
+Affected: 99.6%
+4884
+Affected: 99.6%
+4885
+Affected: 99.6%
+4886
+Affected: 99.6%
+4887
+Affected: 99.6%
+4888
+Affected: 99.6%
+4889
+Affected: 99.6%
+4890
+Affected: 99.6%
+4891
+Affected: 99.6%
+4892
+Affected: 99.6%
+4893
+Affected: 99.6%
+4894
+Affected: 99.6%
+4895
+Affected: 99.6%
+4896
+Affected: 99.6%
+4897
+Affected: 99.6%
+4898
+Affected: 99.6%
+4899
+Affected: 99.6%
+4900
+Affected: 99.6%
+4901
+Affected: 99.6%
+4902
+Affected: 99.6%
+4903
+Affected: 99.6%
+4904
+Affected: 99.6%
+4905
+Affected: 99.6%
+4906
+Affected: 99.6%
+4907
+Affected: 99.6%
+4908
+Affected: 99.6%
+4909
+Affected: 99.6%
+4910
+Affected: 99.6%
+4911
+Affected: 99.6%
+4912
+Affected: 99.6%
+4913
+Affected: 99.6%
+4914
+Affected: 99.6%
+4915
+Affected: 99.6%
+4916
+Affected: 99.6%
+4917
+Affected: 99.6%
+4918
+Affected: 99.6%
+4919
+Affected: 99.6%
+4920
+Affected: 99.6%
+4921
+Affected: 99.6%
+4922
+Affected: 99.6%
+4923
+Affected: 99.6%
+4924
+Affected: 99.6%
+4925
+Affected: 99.6%
+4926
+Affected: 99.6%
+4927
+Affected: 99.6%
+4928
+Affected: 99.6%
+4929
+Affected: 99.6%
+4930
+Affected: 99.6%
+4931
+Affected: 99.6%
+4932
+Affected: 99.6%
+4933
+Affected: 99.6%
+4934
+Affected: 99.6%
+4935
+Affected: 99.6%
+4936
+Affected: 99.6%
+4937
+Affected: 99.6%
+4938
+Affected: 99.6%
+4939
+Affected: 99.6%
+4940
+Affected: 99.6%
+4941
+Affected: 99.6%
+4942
+Affected: 99.6%
+4943
+Affected: 99.6%
+4944
+Affected: 99.6%
+4945
+Affected: 99.6%
+4946
+Affected: 99.6%
+4947
+Affected: 99.6%
+4948
+Affected: 99.6%
+4949
+Affected: 99.6%
+4950
+Affected: 99.6%
+4951
+Affected: 99.6%
+4952
+Affected: 99.6%
+4953
+Affected: 99.6%
+4954
+Affected: 99.6%
+4955
+Affected: 99.6%
+4956
+Affected: 99.6%
+4957
+Affected: 99.6%
+4958
+Affected: 99.6%
+4959
+Affected: 99.6%
+4960
+Affected: 99.6%
+4961
+Affected: 99.6%
+4962
+Affected: 99.6%
+4963
+Affected: 99.6%
+4964
+Affected: 99.6%
+4965
+Affected: 99.6%
+4966
+Affected: 99.6%
+4967
+Affected: 99.6%
+4968
+Affected: 99.6%
+4969
+Affected: 99.6%
+4970
+Affected: 99.6%
+4971
+Affected: 99.6%
+4972
+Affected: 99.6%
+4973
+Affected: 99.6%
+4974
+Affected: 99.6%
+4975
+Affected: 99.6%
+4976
+Affected: 99.6%
+4977
+Affected: 99.6%
+4978
+Affected: 99.6%
+4979
+Affected: 99.6%
+4980
+Affected: 99.6%
+4981
+Affected: 99.6%
+4982
+Affected: 99.6%
+4983
+Affected: 99.6%
+4984
+Affected: 99.6%
+4985
+Affected: 99.6%
+4986
+Affected: 99.6%
+4987
+Affected: 99.6%
+4988
+Affected: 99.6%
+4989
+Affected: 99.6%
+4990
+Affected: 99.6%
+4991
+Affected: 99.6%
+4992
+Affected: 99.6%
+4993
+Affected: 99.6%
+4994
+Affected: 99.6%
+4995
+Affected: 99.6%
+4996
+Affected: 99.6%
+4997
+Affected: 99.6%
+4998
+Affected: 99.6%
+4999
+Affected: 99.6%
+5000
+Affected: 99.6%
+5001
+Affected: 99.6%
+5002
+Affected: 99.6%
+5003
+Affected: 99.6%
+5004
+Affected: 99.6%
+5005
+Affected: 99.6%
+5006
+Affected: 99.6%
+5007
+Affected: 99.6%
+5008
+Affected: 99.6%
+5009
+Affected: 99.6%
+5010
+Affected: 99.6%
+5011
+Affected: 99.6%
+5012
+Affected: 99.6%
+5013
+Affected: 99.6%
+5014
+Affected: 99.6%
+5015
+Affected: 99.6%
+5016
+Affected: 99.6%
+5017
+Affected: 99.6%
+5018
+Affected: 99.6%
+5019
+Affected: 99.6%
+5020
+Affected: 99.6%
+5021
+Affected: 99.6%
+5022
+Affected: 99.6%
+5023
+Affected: 99.6%
+5024
+Affected: 99.6%
+5025
+Affected: 99.6%
+5026
+Affected: 99.6%
+5027
+Affected: 99.6%
+5028
+Affected: 99.6%
+5029
+Affected: 99.6%
+5030
+Affected: 99.6%
+5031
+Affected: 99.6%
+5032
+Affected: 99.6%
+5033
+Affected: 99.6%
+5034
+Affected: 99.6%
+5035
+Affected: 99.6%
+5036
+Affected: 99.6%
+5037
+Affected: 99.6%
+5038
+Affected: 99.6%
+5039
+Affected: 99.6%
+5040
+Affected: 99.6%
+5041
+Affected: 99.6%
+5042
+Affected: 99.6%
+5043
+Affected: 99.6%
+5044
+Affected: 99.6%
+5045
+Affected: 99.6%
+5046
+Affected: 99.6%
+5047
+Affected: 99.6%
+5048
+Affected: 99.6%
+5049
+Affected: 99.6%
+5050
+Affected: 99.6%
+5051
+Affected: 99.6%
+5052
+Affected: 99.6%
+5053
+Affected: 99.6%
+5054
+Affected: 99.6%
+5055
+Affected: 99.6%
+5056
+Affected: 99.6%
+5057
+Affected: 99.6%
+5058
+Affected: 99.6%
+5059
+Affected: 99.6%
+5060
+Affected: 99.6%
+5061
+Affected: 99.6%
+5062
+Affected: 99.6%
+5063
+Affected: 99.6%
+5064
+Affected: 99.6%
+5065
+Affected: 99.6%
+5066
+Affected: 99.6%
+5067
+Affected: 99.6%
+5068
+Affected: 99.6%
+5069
+Affected: 99.6%
+5070
+Affected: 99.6%
+5071
+Affected: 99.6%
+5072
+Affected: 99.6%
+5073
+Affected: 99.6%
+5074
+Affected: 99.6%
+5075
+Affected: 99.6%
+5076
+Affected: 99.6%
+5077
+Affected: 99.6%
+5078
+Affected: 99.6%
+5079
+Affected: 99.6%
+5080
+Affected: 99.6%
+5081
+Affected: 99.6%
+5082
+Affected: 99.6%
+5083
+Affected: 99.6%
+5084
+Affected: 99.6%
+5085
+Affected: 99.6%
+5086
+Affected: 99.6%
+5087
+Affected: 99.6%
+5088
+Affected: 99.6%
+5089
+Affected: 99.6%
+5090
+Affected: 99.6%
+5091
+Affected: 99.6%
+5092
+Affected: 99.6%
+5093
+Affected: 99.6%
+5094
+Affected: 99.6%
+5095
+Affected: 99.6%
+5096
+Affected: 99.6%
+5097
+Affected: 99.6%
+5098
+Affected: 99.6%
+5099
+Affected: 99.6%
+5100
+Affected: 99.6%
+5101
+Affected: 99.6%
+5102
+Affected: 99.6%
+5103
+Affected: 99.6%
+5104
+Affected: 99.6%
+5105
+Affected: 99.6%
+5106
+Affected: 99.6%
+5107
+Affected: 99.6%
+5108
+Affected: 99.6%
+5109
+Affected: 99.6%
+5110
+Affected: 99.6%
+5111
+Affected: 99.6%
+5112
+Affected: 99.6%
+5113
+Affected: 99.6%
+5114
+Affected: 99.6%
+5115
+Affected: 99.6%
+5116
+Affected: 99.6%
+5117
+Affected: 99.6%
+5118
+Affected: 99.6%
+5119
+Affected: 99.6%
+5120
+Affected: 99.6%
+5121
+Affected: 99.6%
+5122
+Affected: 99.6%
+5123
+Affected: 99.6%
+5124
+Affected: 99.6%
+5125
+Affected: 99.6%
+5126
+Affected: 99.6%
+5127
+Affected: 99.6%
+5128
+Affected: 99.6%
+5129
+Affected: 99.6%
+5130
+Affected: 99.6%
+5131
+Affected: 99.6%
+5132
+Affected: 99.6%
+5133
+Affected: 99.6%
+5134
+Affected: 99.6%
+5135
+Affected: 99.6%
+5136
+Affected: 99.6%
+5137
+Affected: 99.6%
+5138
+Affected: 99.6%
+5139
+Affected: 99.6%
+5140
+Affected: 99.6%
+5141
+Affected: 99.6%
+5142
+Affected: 99.6%
+5143
+Affected: 99.6%
+5144
+Affected: 99.6%
+5145
+Affected: 99.6%
+5146
+Affected: 99.6%
+5147
+Affected: 99.6%
+5148
+Affected: 99.6%
+5149
+Affected: 99.6%
+5150
+Affected: 99.6%
+5151
+Affected: 99.6%
+5152
+Affected: 99.6%
+5153
+Affected: 99.6%
+5154
+Affected: 99.6%
+5155
+Affected: 99.6%
+5156
+Affected: 99.6%
+5157
+Affected: 99.6%
+5158
+Affected: 99.6%
+5159
+Affected: 99.6%
+5160
+Affected: 99.6%
+5161
+Affected: 99.6%
+5162
+Affected: 99.6%
+5163
+Affected: 99.6%
+5164
+Affected: 99.6%
+5165
+Affected: 99.6%
+5166
+Affected: 99.6%
+5167
+Affected: 99.6%
+5168
+Affected: 99.6%
+5169
+Affected: 99.6%
+5170
+Affected: 99.6%
+5171
+Affected: 99.6%
+5172
+Affected: 99.6%
+5173
+Affected: 99.6%
+5174
+Affected: 99.6%
+5175
+Affected: 99.6%
+5176
+Affected: 99.6%
+5177
+Affected: 99.6%
+5178
+Affected: 99.6%
+5179
+Affected: 99.6%
+5180
+Affected: 99.6%
+5181
+Affected: 99.6%
+5182
+Affected: 99.6%
+5183
+Affected: 99.6%
+5184
+Affected: 99.6%
+5185
+Affected: 99.6%
+5186
+Affected: 99.6%
+5187
+Affected: 99.6%
+5188
+Affected: 99.6%
+5189
+Affected: 99.6%
+5190
+Affected: 99.6%
+5191
+Affected: 99.6%
+5192
+Affected: 99.6%
+5193
+Affected: 99.6%
+5194
+Affected: 99.6%
+5195
+Affected: 99.6%
+5196
+Affected: 99.6%
+5197
+Affected: 99.6%
+5198
+Affected: 99.6%
+5199
+Affected: 99.6%
+5200
+Affected: 99.6%
+5201
+Affected: 99.6%
+5202
+Affected: 99.6%
+5203
+Affected: 99.6%
+5204
+Affected: 99.6%
+5205
+Affected: 99.6%
+5206
+Affected: 99.6%
+5207
+Affected: 99.6%
+5208
+Affected: 99.6%
+5209
+Affected: 99.6%
+5210
+Affected: 99.6%
+5211
+Affected: 99.6%
+5212
+Affected: 99.6%
+5213
+Affected: 99.6%
+5214
+Affected: 99.6%
+5215
+Affected: 99.6%
+5216
+Affected: 99.6%
+5217
+Affected: 99.6%
+5218
+Affected: 99.6%
+5219
+Affected: 99.6%
+5220
+Affected: 99.6%
+5221
+Affected: 99.6%
+5222
+Affected: 99.6%
+5223
+Affected: 99.6%
+5224
+Affected: 99.6%
+5225
+Affected: 99.6%
+5226
+Affected: 99.6%
+5227
+Affected: 99.6%
+5228
+Affected: 99.6%
+5229
+Affected: 99.6%
+5230
+Affected: 99.6%
+5231
+Affected: 99.6%
+5232
+Affected: 99.6%
+5233
+Affected: 99.6%
+5234
+Affected: 99.6%
+5235
+Affected: 99.6%
+5236
+Affected: 99.6%
+5237
+Affected: 99.6%
+5238
+Affected: 99.6%
+5239
+Affected: 99.6%
+5240
+Affected: 99.6%
+5241
+Affected: 99.6%
+5242
+Affected: 99.6%
+5243
+Affected: 99.6%
+5244
+Affected: 99.6%
+5245
+Affected: 99.6%
+5246
+Affected: 99.6%
+5247
+Affected: 99.6%
+5248
+Affected: 99.6%
+5249
+Affected: 99.6%
+5250
+Affected: 99.6%
+5251
+Affected: 99.6%
+5252
+Affected: 99.6%
+5253
+Affected: 99.6%
+5254
+Affected: 99.6%
+5255
+Affected: 99.6%
+5256
+Affected: 99.6%
+5257
+Affected: 99.6%
+5258
+Affected: 99.6%
+5259
+Affected: 99.6%
+5260
+Affected: 99.6%
+5261
+Affected: 99.6%
+5262
+Affected: 99.6%
+5263
+Affected: 99.6%
+5264
+Affected: 99.6%
+5265
+Affected: 99.6%
+5266
+Affected: 99.6%
+5267
+Affected: 99.6%
+5268
+Affected: 99.6%
+5269
+Affected: 99.6%
+5270
+Affected: 99.6%
+5271
+Affected: 99.6%
+5272
+Affected: 99.6%
+5273
+Affected: 99.6%
+5274
+Affected: 99.6%
+5275
+Affected: 99.6%
+5276
+Affected: 99.6%
+5277
+Affected: 99.6%
+5278
+Affected: 99.6%
+5279
+Affected: 99.6%
+5280
+Affected: 99.6%
+5281
+Affected: 99.6%
+5282
+Affected: 99.6%
+5283
+Affected: 99.6%
+5284
+Affected: 99.6%
+5285
+Affected: 99.6%
+5286
+Affected: 99.6%
+5287
+Affected: 99.6%
+5288
+Affected: 99.6%
+5289
+Affected: 99.6%
+5290
+Affected: 99.6%
+5291
+Affected: 99.6%
+5292
+Affected: 99.6%
+5293
+Affected: 99.6%
+5294
+Affected: 99.6%
+5295
+Affected: 99.6%
+5296
+Affected: 99.6%
+5297
+Affected: 99.6%
+5298
+Affected: 99.6%
+5299
+Affected: 99.6%
+5300
+Affected: 99.6%
+5301
+Affected: 99.6%
+5302
+Affected: 99.6%
+5303
+Affected: 99.6%
+5304
+Affected: 99.6%
+5305
+Affected: 99.6%
+5306
+Affected: 99.6%
+5307
+Affected: 99.6%
+5308
+Affected: 99.6%
+5309
+Affected: 99.6%
+5310
+Affected: 99.6%
+5311
+Affected: 99.6%
+5312
+Affected: 99.6%
+5313
+Affected: 99.6%
+5314
+Affected: 99.6%
+5315
+Affected: 99.6%
+5316
+Affected: 99.6%
+5317
+Affected: 99.6%
+5318
+Affected: 99.6%
+5319
+Affected: 99.6%
+5320
+Affected: 99.6%
+5321
+Affected: 99.6%
+5322
+Affected: 99.6%
+5323
+Affected: 99.6%
+5324
+Affected: 99.6%
+5325
+Affected: 99.6%
+5326
+Affected: 99.6%
+5327
+Affected: 99.6%
+5328
+Affected: 99.6%
+5329
+Affected: 99.6%
+5330
+Affected: 99.6%
+5331
+Affected: 99.6%
+5332
+Affected: 99.6%
+5333
+Affected: 99.6%
+5334
+Affected: 99.6%
+5335
+Affected: 99.6%
+5336
+Affected: 99.6%
+5337
+Affected: 99.6%
+5338
+Affected: 99.6%
+5339
+Affected: 99.6%
+5340
+Affected: 99.6%
+5341
+Affected: 99.6%
+5342
+Affected: 99.6%
+5343
+Affected: 99.6%
+5344
+Affected: 99.6%
+5345
+Affected: 99.6%
+5346
+Affected: 99.6%
+5347
+Affected: 99.6%
+5348
+Affected: 99.6%
+5349
+Affected: 99.6%
+5350
+Affected: 99.6%
+5351
+Affected: 99.6%
+5352
+Affected: 99.6%
+5353
+Affected: 99.6%
+5354
+Affected: 99.6%
+5355
+Affected: 99.6%
+5356
+Affected: 99.6%
+5357
+Affected: 99.6%
+5358
+Affected: 99.6%
+5359
+Affected: 99.6%
+5360
+Affected: 99.6%
+5361
+Affected: 99.6%
+5362
+Affected: 99.6%
+5363
+Affected: 99.6%
+5364
+Affected: 99.6%
+5365
+Affected: 99.6%
+5366
+Affected: 99.6%
+5367
+Affected: 99.6%
+5368
+Affected: 99.6%
+5369
+Affected: 99.6%
+5370
+Affected: 99.6%
+5371
+Affected: 99.6%
+5372
+Affected: 99.6%
+5373
+Affected: 99.6%
+5374
+Affected: 99.6%
+5375
+Affected: 99.6%
+5376
+Affected: 99.6%
+5377
+Affected: 99.6%
+5378
+Affected: 99.6%
+5379
+Affected: 99.6%
+5380
+Affected: 99.6%
+5381
+Affected: 99.6%
+5382
+Affected: 99.6%
+5383
+Affected: 99.6%
+5384
+Affected: 99.6%
+5385
+Affected: 99.6%
+5386
+Affected: 99.6%
+5387
+Affected: 99.6%
+5388
+Affected: 99.6%
+5389
+Affected: 99.6%
+5390
+Affected: 99.6%
+5391
+Affected: 99.6%
+5392
+Affected: 99.6%
+5393
+Affected: 99.6%
+5394
+Affected: 99.6%
+5395
+Affected: 99.6%
+5396
+Affected: 99.6%
+5397
+Affected: 99.6%
+5398
+Affected: 99.6%
+5399
+Affected: 99.6%
+5400
+Affected: 99.6%
+5401
+Affected: 99.6%
+5402
+Affected: 99.6%
+5403
+Affected: 99.6%
+5404
+Affected: 99.6%
+5405
+Affected: 99.6%
+5406
+Affected: 99.6%
+5407
+Affected: 99.6%
+5408
+Affected: 99.6%
+5409
+Affected: 99.6%
+5410
+Affected: 99.6%
+5411
+Affected: 99.6%
+5412
+Affected: 99.6%
+5413
+Affected: 99.6%
+5414
+Affected: 99.6%
+5415
+Affected: 99.6%
+5416
+Affected: 99.6%
+5417
+Affected: 99.6%
+5418
+Affected: 99.6%
+5419
+Affected: 99.6%
+5420
+Affected: 99.6%
+5421
+Affected: 99.6%
+5422
+Affected: 99.6%
+5423
+Affected: 99.6%
+5424
+Affected: 99.6%
+5425
+Affected: 99.6%
+5426
+Affected: 99.6%
+5427
+Affected: 99.6%
+5428
+Affected: 99.6%
+5429
+Affected: 99.6%
+5430
+Affected: 99.6%
+5431
+Affected: 99.6%
+5432
+Affected: 99.6%
+5433
+Affected: 99.6%
+5434
+Affected: 99.6%
+5435
+Affected: 99.6%
+5436
+Affected: 99.6%
+5437
+Affected: 99.6%
+5438
+Affected: 99.6%
+5439
+Affected: 99.6%
+5440
+Affected: 99.6%
+5441
+Affected: 99.6%
+5442
+Affected: 99.6%
+5443
+Affected: 99.6%
+5444
+Affected: 99.6%
+5445
+Affected: 99.6%
+5446
+Affected: 99.6%
+5447
+Affected: 99.6%
+5448
+Affected: 99.6%
+5449
+Affected: 99.6%
+5450
+Affected: 99.6%
+5451
+Affected: 99.6%
+5452
+Affected: 99.6%
+5453
+Affected: 99.6%
+5454
+Affected: 99.6%
+5455
+Affected: 99.6%
+5456
+Affected: 99.6%
+5457
+Affected: 99.6%
+5458
+Affected: 99.6%
+5459
+Affected: 99.6%
+5460
+Affected: 99.6%
+5461
+Affected: 99.6%
+5462
+Affected: 99.6%
+5463
+Affected: 99.6%
+5464
+Affected: 99.6%
+5465
+Affected: 99.6%
+5466
+Affected: 99.6%
+5467
+Affected: 99.6%
+5468
+Affected: 99.6%
+5469
+Affected: 99.6%
+5470
+Affected: 99.6%
+5471
+Affected: 99.6%
+5472
+Affected: 99.6%
+5473
+Affected: 99.6%
+5474
+Affected: 99.6%
+5475
+Affected: 99.6%
+5476
+Affected: 99.6%
+5477
+Affected: 99.6%
+5478
+Affected: 99.6%
+5479
+Affected: 99.6%
+5480
+Affected: 99.6%
+5481
+Affected: 99.6%
+5482
+Affected: 99.6%
+5483
+Affected: 99.6%
+5484
+Affected: 99.6%
+5485
+Affected: 99.6%
+5486
+Affected: 99.6%
+5487
+Affected: 99.6%
+5488
+Affected: 99.6%
+5489
+Affected: 99.6%
+5490
+Affected: 99.6%
+5491
+Affected: 99.6%
+5492
+Affected: 99.6%
+5493
+Affected: 99.6%
+5494
+Affected: 99.6%
+5495
+Affected: 99.6%
+5496
+Affected: 99.6%
+5497
+Affected: 99.6%
+5498
+Affected: 99.6%
+5499
+Affected: 99.6%
+5500
+Affected: 99.6%
+5501
+Affected: 99.6%
+5502
+Affected: 99.6%
+5503
+Affected: 99.6%
+5504
+Affected: 99.6%
+5505
+Affected: 99.6%
+5506
+Affected: 99.6%
+5507
+Affected: 99.6%
+5508
+Affected: 99.6%
+5509
+Affected: 99.6%
+5510
+Affected: 99.6%
+5511
+Affected: 99.6%
+5512
+Affected: 99.6%
+5513
+Affected: 99.6%
+5514
+Affected: 99.6%
+5515
+Affected: 99.6%
+5516
+Affected: 99.6%
+5517
+Affected: 99.6%
+5518
+Affected: 99.6%
+5519
+Affected: 99.6%
+5520
+Affected: 99.6%
+5521
+Affected: 99.6%
+5522
+Affected: 99.6%
+5523
+Affected: 99.6%
+5524
+Affected: 99.6%
+5525
+Affected: 99.6%
+5526
+Affected: 99.6%
+5527
+Affected: 99.6%
+5528
+Affected: 99.6%
+5529
+Affected: 99.6%
+5530
+Affected: 99.6%
+5531
+Affected: 99.6%
+5532
+Affected: 99.6%
+5533
+Affected: 99.6%
+5534
+Affected: 99.6%
+5535
+Affected: 99.6%
+5536
+Affected: 99.6%
+5537
+Affected: 99.6%
+5538
+Affected: 99.6%
+5539
+Affected: 99.6%
+5540
+Affected: 99.6%
+5541
+Affected: 99.6%
+5542
+Affected: 99.6%
+5543
+Affected: 99.6%
+5544
+Affected: 99.6%
+5545
+Affected: 99.6%
+5546
+Affected: 99.6%
+5547
+Affected: 99.6%
+5548
+Affected: 99.6%
+5549
+Affected: 99.6%
+5550
+Affected: 99.6%
+5551
+Affected: 99.6%
+5552
+Affected: 99.6%
+5553
+Affected: 99.6%
+5554
+Affected: 99.6%
+5555
+Affected: 99.6%
+5556
+Affected: 99.6%
+5557
+Affected: 99.6%
+5558
+Affected: 99.6%
+5559
+Affected: 99.6%
+5560
+Affected: 99.6%
+5561
+Affected: 99.6%
+5562
+Affected: 99.6%
+5563
+Affected: 99.6%
+5564
+Affected: 99.6%
+5565
+Affected: 99.6%
+5566
+Affected: 99.6%
+5567
+Affected: 99.6%
+5568
+Affected: 99.6%
+5569
+Affected: 99.6%
+5570
+Affected: 99.6%
+5571
+Affected: 99.6%
+5572
+Affected: 99.6%
+5573
+Affected: 99.6%
+5574
+Affected: 99.6%
+5575
+Affected: 99.6%
+5576
+Affected: 99.6%
+5577
+Affected: 99.6%
+5578
+Affected: 99.6%
+5579
+Affected: 99.6%
+5580
+Affected: 99.6%
+5581
+Affected: 99.6%
+5582
+Affected: 99.6%
+5583
+Affected: 99.6%
+5584
+Affected: 99.6%
+5585
+Affected: 99.6%
+5586
+Affected: 99.6%
+5587
+Affected: 99.6%
+5588
+Affected: 99.6%
+5589
+Affected: 99.6%
+5590
+Affected: 99.6%
+5591
+Affected: 99.6%
+5592
+Affected: 99.6%
+5593
+Affected: 99.6%
+5594
+Affected: 99.6%
+5595
+Affected: 99.6%
+5596
+Affected: 99.6%
+5597
+Affected: 99.6%
+5598
+Affected: 99.6%
+5599
+Affected: 99.6%
+5600
+Affected: 99.6%
+5601
+Affected: 99.6%
+5602
+Affected: 99.6%
+5603
+Affected: 99.6%
+5604
+Affected: 99.6%
+5605
+Affected: 99.6%
+5606
+Affected: 99.6%
+5607
+Affected: 99.6%
+5608
+Affected: 99.6%
+5609
+Affected: 99.6%
+5610
+Affected: 99.6%
+5611
+Affected: 99.6%
+5612
+Affected: 99.6%
+5613
+Affected: 99.6%
+5614
+Affected: 99.6%
+5615
+Affected: 99.6%
+5616
+Affected: 99.6%
+5617
+Affected: 99.6%
+5618
+Affected: 99.6%
+5619
+Affected: 99.6%
+5620
+Affected: 99.6%
+5621
+Affected: 99.6%
+5622
+Affected: 99.6%
+5623
+Affected: 99.6%
+5624
+Affected: 99.6%
+5625
+Affected: 99.6%
+5626
+Affected: 99.6%
+5627
+Affected: 99.6%
+5628
+Affected: 99.6%
+5629
+Affected: 99.6%
+5630
+Affected: 99.6%
+5631
+Affected: 99.6%
+5632
+Affected: 99.6%
+5633
+Affected: 99.6%
+5634
+Affected: 99.6%
+5635
+Affected: 99.6%
+5636
+Affected: 99.6%
+5637
+Affected: 99.6%
+5638
+Affected: 99.6%
+5639
+Affected: 99.6%
+5640
+Affected: 99.6%
+5641
+Affected: 99.6%
+5642
+Affected: 99.6%
+5643
+Affected: 99.6%
+5644
+Affected: 99.6%
+5645
+Affected: 99.6%
+5646
+Affected: 99.6%
+5647
+Affected: 99.6%
+5648
+Affected: 99.6%
+5649
+Affected: 99.6%
+5650
+Affected: 99.6%
+5651
+Affected: 99.6%
+5652
+Affected: 99.6%
+5653
+Affected: 99.6%
+5654
+Affected: 99.6%
+5655
+Affected: 99.6%
+5656
+Affected: 99.6%
+5657
+Affected: 99.6%
+5658
+Affected: 99.6%
+5659
+Affected: 99.6%
+5660
+Affected: 99.6%
+5661
+Affected: 99.6%
+5662
+Affected: 99.6%
+5663
+Affected: 99.6%
+5664
+Affected: 99.6%
+5665
+Affected: 99.6%
+5666
+Affected: 99.6%
+5667
+Affected: 99.6%
+5668
+Affected: 99.6%
+5669
+Affected: 99.6%
+5670
+Affected: 99.6%
+5671
+Affected: 99.6%
+5672
+Affected: 99.6%
+5673
+Affected: 99.6%
+5674
+Affected: 99.6%
+5675
+Affected: 99.6%
+5676
+Affected: 99.6%
+5677
+Affected: 99.6%
+5678
+Affected: 99.6%
+5679
+Affected: 99.6%
+5680
+Affected: 99.6%
+5681
+Affected: 99.6%
+5682
+Affected: 99.6%
+5683
+Affected: 99.6%
+5684
+Affected: 99.6%
+5685
+Affected: 99.6%
+5686
+Affected: 99.6%
+5687
+Affected: 99.6%
+5688
+Affected: 99.6%
+5689
+Affected: 99.6%
+5690
+Affected: 99.6%
+5691
+Affected: 99.6%
+5692
+Affected: 99.6%
+5693
+Affected: 99.6%
+5694
+Affected: 99.6%
+5695
+Affected: 99.6%
+5696
+Affected: 99.6%
+5697
+Affected: 99.6%
+5698
+Affected: 99.6%
+5699
+Affected: 99.6%
+5700
+Affected: 99.6%
+5701
+Affected: 99.6%
+5702
+Affected: 99.6%
+5703
+Affected: 99.6%
+5704
+Affected: 99.6%
+5705
+Affected: 99.6%
+5706
+Affected: 99.6%
+5707
+Affected: 99.6%
+5708
+Affected: 99.6%
+5709
+Affected: 99.6%
+5710
+Affected: 99.6%
+5711
+Affected: 99.6%
+5712
+Affected: 99.6%
+5713
+Affected: 99.6%
+5714
+Affected: 99.6%
+5715
+Affected: 99.6%
+5716
+Affected: 99.6%
+5717
+Affected: 99.6%
+5718
+Affected: 99.6%
+5719
+Affected: 99.6%
+5720
+Affected: 99.6%
+5721
+Affected: 99.6%
+5722
+Affected: 99.6%
+5723
+Affected: 99.6%
+5724
+Affected: 99.6%
+5725
+Affected: 99.6%
+5726
+Affected: 99.6%
+5727
+Affected: 99.6%
+5728
+Affected: 99.6%
+5729
+Affected: 99.6%
+5730
+Affected: 99.6%
+5731
+Affected: 99.6%
+5732
+Affected: 99.6%
+5733
+Affected: 99.6%
+5734
+Affected: 99.6%
+5735
+Affected: 99.6%
+5736
+Affected: 99.6%
+5737
+Affected: 99.6%
+5738
+Affected: 99.6%
+5739
+Affected: 99.6%
+5740
+Affected: 99.6%
+5741
+Affected: 99.6%
+5742
+Affected: 99.6%
+5743
+Affected: 99.6%
+5744
+Affected: 99.6%
+5745
+Affected: 99.6%
+5746
+Affected: 99.6%
+5747
+Affected: 99.6%
+5748
+Affected: 99.6%
+5749
+Affected: 99.6%
+5750
+Affected: 99.6%
+5751
+Affected: 99.6%
+5752
+Affected: 99.6%
+5753
+Affected: 99.6%
+5754
+Affected: 99.6%
+5755
+Affected: 99.6%
+5756
+Affected: 99.6%
+5757
+Affected: 99.6%
+5758
+Affected: 99.6%
+5759
+Affected: 99.6%
+5760
+Affected: 99.6%
+5761
+Affected: 99.6%
+5762
+Affected: 99.6%
+5763
+Affected: 99.6%
+5764
+Affected: 99.6%
+5765
+Affected: 99.6%
+5766
+Affected: 99.6%
+5767
+Affected: 99.6%
+5768
+Affected: 99.6%
+5769
+Affected: 99.6%
+5770
+Affected: 99.6%
+5771
+Affected: 99.6%
+5772
+Affected: 99.6%
+5773
+Affected: 99.6%
+5774
+Affected: 99.6%
+5775
+Affected: 99.6%
+5776
+Affected: 99.6%
+5777
+Affected: 99.6%
+5778
+Affected: 99.6%
+5779
+Affected: 99.6%
+5780
+Affected: 99.6%
+5781
+Affected: 99.6%
+5782
+Affected: 99.6%
+5783
+Affected: 99.6%
+5784
+Affected: 99.6%
+5785
+Affected: 99.6%
+5786
+Affected: 99.6%
+5787
+Affected: 99.6%
+5788
+Affected: 99.6%
+5789
+Affected: 99.6%
+5790
+Affected: 99.6%
+5791
+Affected: 99.6%
+5792
+Affected: 99.6%
+5793
+Affected: 99.6%
+5794
+Affected: 99.6%
+5795
+Affected: 99.6%
+5796
+Affected: 99.6%
+5797
+Affected: 99.6%
+5798
+Affected: 99.6%
+5799
+Affected: 99.6%
+5800
+Affected: 99.6%
+5801
+Affected: 99.6%
+5802
+Affected: 99.6%
+5803
+Affected: 99.6%
+5804
+Affected: 99.6%
+5805
+Affected: 99.6%
+5806
+Affected: 99.6%
+5807
+Affected: 99.6%
+5808
+Affected: 99.6%
+5809
+Affected: 99.6%
+5810
+Affected: 99.6%
+5811
+Affected: 99.6%
+5812
+Affected: 99.6%
+5813
+Affected: 99.6%
+5814
+Affected: 99.6%
+5815
+Affected: 99.6%
+5816
+Affected: 99.6%
+5817
+Affected: 99.6%
+5818
+Affected: 99.6%
+5819
+Affected: 99.6%
+5820
+Affected: 99.6%
+5821
+Affected: 99.6%
+5822
+Affected: 99.6%
+5823
+Affected: 99.6%
+5824
+Affected: 99.6%
+5825
+Affected: 99.6%
+5826
+Affected: 99.6%
+5827
+Affected: 99.6%
+5828
+Affected: 99.6%
+5829
+Affected: 99.6%
+5830
+Affected: 99.6%
+5831
+Affected: 99.6%
+5832
+Affected: 99.6%
+5833
+Affected: 99.6%
+5834
+Affected: 99.6%
+5835
+Affected: 99.6%
+5836
+Affected: 99.6%
+5837
+Affected: 99.6%
+5838
+Affected: 99.6%
+5839
+Affected: 99.6%
+5840
+Affected: 99.6%
+5841
+Affected: 99.6%
+5842
+Affected: 99.6%
+5843
+Affected: 99.6%
+5844
+Affected: 99.6%
+5845
+Affected: 99.6%
+5846
+Affected: 99.6%
+5847
+Affected: 99.6%
+5848
+Affected: 99.6%
+5849
+Affected: 99.6%
+5850
+Affected: 99.6%
+5851
+Affected: 99.6%
+5852
+Affected: 99.6%
+5853
+Affected: 99.6%
+5854
+Affected: 99.6%
+5855
+Affected: 99.6%
+5856
+Affected: 99.6%
+5857
+Affected: 99.6%
+5858
+Affected: 99.6%
+5859
+Affected: 99.6%
+5860
+Affected: 99.6%
+5861
+Affected: 99.6%
+5862
+Affected: 99.6%
+5863
+Affected: 99.6%
+5864
+Affected: 99.6%
+5865
+Affected: 99.6%
+5866
+Affected: 99.6%
+5867
+Affected: 99.6%
+5868
+Affected: 99.6%
+5869
+Affected: 99.6%
+5870
+Affected: 99.6%
+5871
+Affected: 99.6%
+5872
+Affected: 99.6%
+5873
+Affected: 99.6%
+5874
+Affected: 99.6%
+5875
+Affected: 99.6%
+5876
+Affected: 99.6%
+5877
+Affected: 99.6%
+5878
+Affected: 99.6%
+5879
+Affected: 99.6%
+5880
+Affected: 99.6%
+5881
+Affected: 99.6%
+5882
+Affected: 99.6%
+5883
+Affected: 99.6%
+5884
+Affected: 99.6%
+5885
+Affected: 99.6%
+5886
+Affected: 99.6%
+5887
+Affected: 99.6%
+5888
+Affected: 99.6%
+5889
+Affected: 99.6%
+5890
+Affected: 99.6%
+5891
+Affected: 99.6%
+5892
+Affected: 99.6%
+5893
+Affected: 99.6%
+5894
+Affected: 99.6%
+5895
+Affected: 99.6%
+5896
+Affected: 99.6%
+5897
+Affected: 99.6%
+5898
+Affected: 99.6%
+5899
+Affected: 99.6%
+5900
+Affected: 99.6%
+5901
+Affected: 99.6%
+5902
+Affected: 99.6%
+5903
+Affected: 99.6%
+5904
+Affected: 99.6%
+5905
+Affected: 99.6%
+5906
+Affected: 99.6%
+5907
+Affected: 99.6%
+5908
+Affected: 99.6%
+5909
+Affected: 99.6%
+5910
+Affected: 99.6%
+5911
+Affected: 99.6%
+5912
+Affected: 99.6%
+5913
+Affected: 99.6%
+5914
+Affected: 99.6%
+5915
+Affected: 99.6%
+5916
+Affected: 99.6%
+5917
+Affected: 99.6%
+5918
+Affected: 99.6%
+5919
+Affected: 99.6%
+5920
+Affected: 99.6%
+5921
+Affected: 99.6%
+5922
+Affected: 99.6%
+5923
+Affected: 99.6%
+5924
+Affected: 99.6%
+5925
+Affected: 99.6%
+5926
+Affected: 99.6%
+5927
+Affected: 99.6%
+5928
+Affected: 99.6%
+5929
+Affected: 99.6%
+5930
+Affected: 99.6%
+5931
+Affected: 99.6%
+5932
+Affected: 99.6%
+5933
+Affected: 99.6%
+5934
+Affected: 99.6%
+5935
+Affected: 99.6%
+5936
+Affected: 99.6%
+5937
+Affected: 99.6%
+5938
+Affected: 99.6%
+5939
+Affected: 99.6%
+5940
+Affected: 99.6%
+5941
+Affected: 99.6%
+5942
+Affected: 99.6%
+5943
+Affected: 99.6%
+5944
+Affected: 99.6%
+5945
+Affected: 99.6%
+5946
+Affected: 99.6%
+5947
+Affected: 99.6%
+5948
+Affected: 99.6%
+5949
+Affected: 99.6%
+5950
+Affected: 99.6%
+5951
+Affected: 99.6%
+5952
+Affected: 99.6%
+5953
+Affected: 99.6%
+5954
+Affected: 99.6%
+5955
+Affected: 99.6%
+5956
+Affected: 99.6%
+5957
+Affected: 99.6%
+5958
+Affected: 99.6%
+5959
+Affected: 99.6%
+5960
+Affected: 99.6%
+5961
+Affected: 99.6%
+5962
+Affected: 99.6%
+5963
+Affected: 99.6%
+5964
+Affected: 99.6%
+5965
+Affected: 99.6%
+5966
+Affected: 99.6%
+5967
+Affected: 99.6%
+5968
+Affected: 99.6%
+5969
+Affected: 99.6%
+5970
+Affected: 99.6%
+5971
+Affected: 99.6%
+5972
+Affected: 99.6%
+5973
+Affected: 99.6%
+5974
+Affected: 99.6%
+5975
+Affected: 99.6%
+5976
+Affected: 99.6%
+5977
+Affected: 99.6%
+5978
+Affected: 99.6%
+5979
+Affected: 99.6%
+5980
+Affected: 99.6%
+5981
+Affected: 99.6%
+5982
+Affected: 99.6%
+5983
+Affected: 99.6%
+5984
+Affected: 99.6%
+5985
+Affected: 99.6%
+5986
+Affected: 99.6%
+5987
+Affected: 99.6%
+5988
+Affected: 99.6%
+5989
+Affected: 99.6%
+5990
+Affected: 99.6%
+5991
+Affected: 99.6%
+5992
+Affected: 99.6%
+5993
+Affected: 99.6%
+5994
+Affected: 99.6%
+5995
+Affected: 99.6%
+5996
+Affected: 99.6%
+5997
+Affected: 99.6%
+5998
+Affected: 99.6%
+5999
+Affected: 99.6%
+6000
+Affected: 99.6%
+6001
+Affected: 99.6%
+6002
+Affected: 99.6%
+6003
+Affected: 99.6%
+6004
+Affected: 99.6%
+6005
+Affected: 99.6%
+6006
+Affected: 99.6%
+6007
+Affected: 99.6%
+6008
+Affected: 99.6%
+6009
+Affected: 99.6%
+6010
+Affected: 99.6%
+6011
+Affected: 99.6%
+6012
+Affected: 99.6%
+6013
+Affected: 99.6%
+6014
+Affected: 99.6%
+6015
+Affected: 99.6%
+6016
+Affected: 99.6%
+6017
+Affected: 99.6%
+6018
+Affected: 99.6%
+6019
+Affected: 99.6%
+6020
+Affected: 99.6%
+6021
+Affected: 99.6%
+6022
+Affected: 99.6%
+6023
+Affected: 99.6%
+6024
+Affected: 99.6%
+6025
+Affected: 99.6%
+6026
+Affected: 99.6%
+6027
+Affected: 99.6%
+6028
+Affected: 99.6%
+6029
+Affected: 99.6%
+6030
+Affected: 99.6%
+6031
+Affected: 99.6%
+6032
+Affected: 99.6%
+6033
+Affected: 99.6%
+6034
+Affected: 99.6%
+6035
+Affected: 99.6%
+6036
+Affected: 99.6%
+6037
+Affected: 99.6%
+6038
+Affected: 99.6%
+6039
+Affected: 99.6%
+6040
+Affected: 99.6%
+6041
+Affected: 99.6%
+6042
+Affected: 99.6%
+6043
+Affected: 99.6%
+6044
+Affected: 99.6%
+6045
+Affected: 99.6%
+6046
+Affected: 99.6%
+6047
+Affected: 99.6%
+6048
+Affected: 99.6%
+6049
+Affected: 99.6%
+6050
+Affected: 99.6%
+6051
+Affected: 99.6%
+6052
+Affected: 99.6%
+6053
+Affected: 99.6%
+6054
+Affected: 99.6%
+6055
+Affected: 99.6%
+6056
+Affected: 99.6%
+6057
+Affected: 99.6%
+6058
+Affected: 99.6%
+6059
+Affected: 99.6%
+6060
+Affected: 99.6%
+6061
+Affected: 99.6%
+6062
+Affected: 99.6%
+6063
+Affected: 99.6%
+6064
+Affected: 99.6%
+6065
+Affected: 99.6%
+6066
+Affected: 99.6%
+6067
+Affected: 99.6%
+6068
+Affected: 99.6%
+6069
+Affected: 99.6%
+6070
+Affected: 99.6%
+6071
+Affected: 99.6%
+6072
+Affected: 99.6%
+6073
+Affected: 99.6%
+6074
+Affected: 99.6%
+6075
+Affected: 99.6%
+6076
+Affected: 99.6%
+6077
+Affected: 99.6%
+6078
+Affected: 99.6%
+6079
+Affected: 99.6%
+6080
+Affected: 99.6%
+6081
+Affected: 99.6%
+6082
+Affected: 99.6%
+6083
+Affected: 99.6%
+6084
+Affected: 99.6%
+6085
+Affected: 99.6%
+6086
+Affected: 99.6%
+6087
+Affected: 99.6%
+6088
+Affected: 99.6%
+6089
+Affected: 99.6%
+6090
+Affected: 99.6%
+6091
+Affected: 99.6%
+6092
+Affected: 99.6%
+6093
+Affected: 99.6%
+6094
+Affected: 99.6%
+6095
+Affected: 99.6%
+6096
+Affected: 99.6%
+6097
+Affected: 99.6%
+6098
+Affected: 99.6%
+6099
+Affected: 99.6%
+6100
+Affected: 99.6%
+6101
+Affected: 99.6%
+6102
+Affected: 99.6%
+6103
+Affected: 99.6%
+6104
+Affected: 99.6%
+6105
+Affected: 99.6%
+6106
+Affected: 99.6%
+6107
+Affected: 99.6%
+6108
+Affected: 99.6%
+6109
+Affected: 99.6%
+6110
+Affected: 99.6%
+6111
+Affected: 99.6%
+6112
+Affected: 99.6%
+6113
+Affected: 99.6%
+6114
+Affected: 99.6%
+6115
+Affected: 99.6%
+6116
+Affected: 99.6%
+6117
+Affected: 99.6%
+6118
+Affected: 99.6%
+6119
+Affected: 99.6%
+6120
+Affected: 99.6%
+6121
+Affected: 99.6%
+6122
+Affected: 99.6%
+6123
+Affected: 99.6%
+6124
+Affected: 99.6%
+6125
+Affected: 99.6%
+6126
+Affected: 99.6%
+6127
+Affected: 99.6%
+6128
+Affected: 99.6%
+6129
+Affected: 99.6%
+6130
+Affected: 99.6%
+6131
+Affected: 99.6%
+6132
+Affected: 99.6%
+6133
+Affected: 99.6%
+6134
+Affected: 99.6%
+6135
+Affected: 99.6%
+6136
+Affected: 99.6%
+6137
+Affected: 99.6%
+6138
+Affected: 99.6%
+6139
+Affected: 99.6%
+6140
+Affected: 99.6%
+6141
+Affected: 99.6%
+6142
+Affected: 99.6%
+6143
+Affected: 99.6%
+6144
+Affected: 99.6%
+6145
+Affected: 99.6%
+6146
+Affected: 99.6%
+6147
+Affected: 99.6%
+6148
+Affected: 99.6%
+6149
+Affected: 99.6%
+6150
+Affected: 99.6%
+6151
+Affected: 99.6%
+6152
+Affected: 99.6%
+6153
+Affected: 99.6%
+6154
+Affected: 99.6%
+6155
+Affected: 99.6%
+6156
+Affected: 99.6%
+6157
+Affected: 99.6%
+6158
+Affected: 99.6%
+6159
+Affected: 99.6%
+6160
+Affected: 99.6%
+6161
+Affected: 99.6%
+6162
+Affected: 99.6%
+6163
+Affected: 99.6%
+6164
+Affected: 99.6%
+6165
+Affected: 99.6%
+6166
+Affected: 99.6%
+6167
+Affected: 99.6%
+6168
+Affected: 99.6%
+6169
+Affected: 99.6%
+6170
+Affected: 99.6%
+6171
+Affected: 99.6%
+6172
+Affected: 99.6%
+6173
+Affected: 99.6%
+6174
+Affected: 99.6%
+6175
+Affected: 99.6%
+6176
+Affected: 99.6%
+6177
+Affected: 99.6%
+6178
+Affected: 99.6%
+6179
+Affected: 99.6%
+6180
+Affected: 99.6%
+6181
+Affected: 99.6%
+6182
+Affected: 99.6%
+6183
+Affected: 99.6%
+6184
+Affected: 99.6%
+6185
+Affected: 99.6%
+6186
+Affected: 99.6%
+6187
+Affected: 99.6%
+6188
+Affected: 99.6%
+6189
+Affected: 99.6%
+6190
+Affected: 99.6%
+6191
+Affected: 99.6%
+6192
+Affected: 99.6%
+6193
+Affected: 99.6%
+6194
+Affected: 99.6%
+6195
+Affected: 99.6%
+6196
+Affected: 99.6%
+6197
+Affected: 99.6%
+6198
+Affected: 99.6%
+6199
+Affected: 99.6%
+6200
+Affected: 99.6%
+6201
+Affected: 99.6%
+6202
+Affected: 99.6%
+6203
+Affected: 99.6%
+6204
+Affected: 99.6%
+6205
+Affected: 99.6%
+6206
+Affected: 99.6%
+6207
+Affected: 99.6%
+6208
+Affected: 99.6%
+6209
+Affected: 99.6%
+6210
+Affected: 99.6%
+6211
+Affected: 99.6%
+6212
+Affected: 99.6%
+6213
+Affected: 99.6%
+6214
+Affected: 99.6%
+6215
+Affected: 99.6%
+6216
+Affected: 99.6%
+6217
+Affected: 99.6%
+6218
+Affected: 99.6%
+6219
+Affected: 99.6%
+6220
+Affected: 99.6%
+6221
+Affected: 99.6%
+6222
+Affected: 99.6%
+6223
+Affected: 99.6%
+6224
+Affected: 99.6%
+6225
+Affected: 99.6%
+6226
+Affected: 99.6%
+6227
+Affected: 99.6%
+6228
+Affected: 99.6%
+6229
+Affected: 99.6%
+6230
+Affected: 99.6%
+6231
+Affected: 99.6%
+6232
+Affected: 99.6%
+6233
+Affected: 99.6%
+6234
+Affected: 99.6%
+6235
+Affected: 99.6%
+6236
+Affected: 99.6%
+6237
+Affected: 99.6%
+6238
+Affected: 99.6%
+6239
+Affected: 99.6%
+6240
+Affected: 99.6%
+6241
+Affected: 99.6%
+6242
+Affected: 99.6%
+6243
+Affected: 99.6%
+6244
+Affected: 99.6%
+6245
+Affected: 99.6%
+6246
+Affected: 99.6%
+6247
+Affected: 99.6%
+6248
+Affected: 99.6%
+6249
+Affected: 99.6%
+6250
+Affected: 99.6%
+6251
+Affected: 99.6%
+6252
+Affected: 99.6%
+6253
+Affected: 99.6%
+6254
+Affected: 99.6%
+6255
+Affected: 99.6%
+6256
+Affected: 99.6%
+6257
+Affected: 99.6%
+6258
+Affected: 99.6%
+6259
+Affected: 99.6%
+6260
+Affected: 99.6%
+6261
+Affected: 99.6%
+6262
+Affected: 99.6%
+6263
+Affected: 99.6%
+6264
+Affected: 99.6%
+6265
+Affected: 99.6%
+6266
+Affected: 99.6%
+6267
+Affected: 99.6%
+6268
+Affected: 99.6%
+6269
+Affected: 99.6%
+6270
+Affected: 99.6%
+6271
+Affected: 99.6%
+6272
+Affected: 99.6%
+6273
+Affected: 99.6%
+6274
+Affected: 99.6%
+6275
+Affected: 99.6%
+6276
+Affected: 99.6%
+6277
+Affected: 99.6%
+6278
+Affected: 99.6%
+6279
+Affected: 99.6%
+6280
+Affected: 99.6%
+6281
+Affected: 99.6%
+6282
+Affected: 99.6%
+6283
+Affected: 99.6%
+6284
+Affected: 99.6%
+6285
+Affected: 99.6%
+6286
+Affected: 99.6%
+6287
+Affected: 99.6%
+6288
+Affected: 99.6%
+6289
+Affected: 99.6%
+6290
+Affected: 99.6%
+6291
+Affected: 99.6%
+6292
+Affected: 99.6%
+6293
+Affected: 99.6%
+6294
+Affected: 99.6%
+6295
+Affected: 99.6%
+6296
+Affected: 99.6%
+6297
+Affected: 99.6%
+6298
+Affected: 99.6%
+6299
+Affected: 99.6%
+6300
+Affected: 99.6%
+6301
+Affected: 99.6%
+6302
+Affected: 99.6%
+6303
+Affected: 99.6%
+6304
+Affected: 99.6%
+6305
+Affected: 99.6%
+6306
+Affected: 99.6%
+6307
+Affected: 99.6%
+6308
+Affected: 99.6%
+6309
+Affected: 99.6%
+6310
+Affected: 99.6%
+6311
+Affected: 99.6%
+6312
+Affected: 99.6%
+6313
+Affected: 99.6%
+6314
+Affected: 99.6%
+6315
+Affected: 99.6%
+6316
+Affected: 99.6%
+6317
+Affected: 99.6%
+6318
+Affected: 99.6%
+6319
+Affected: 99.6%
+6320
+Affected: 99.6%
+6321
+Affected: 99.6%
+6322
+Affected: 99.6%
+6323
+Affected: 99.6%
+6324
+Affected: 99.6%
+6325
+Affected: 99.6%
+6326
+Affected: 99.6%
+6327
+Affected: 99.6%
+6328
+Affected: 99.6%
+6329
+Affected: 99.6%
+6330
+Affected: 99.6%
+6331
+Affected: 99.6%
+6332
+Affected: 99.6%
+6333
+Affected: 99.6%
+6334
+Affected: 99.6%
+6335
+Affected: 99.6%
+6336
+Affected: 99.6%
+6337
+Affected: 99.6%
+6338
+Affected: 99.6%
+6339
+Affected: 99.6%
+6340
+Affected: 99.6%
+6341
+Affected: 99.6%
+6342
+Affected: 99.6%
+6343
+Affected: 99.6%
+6344
+Affected: 99.6%
+6345
+Affected: 99.6%
+6346
+Affected: 99.6%
+6347
+Affected: 99.6%
+6348
+Affected: 99.6%
+6349
+Affected: 99.6%
+6350
+Affected: 99.6%
+6351
+Affected: 99.6%
+6352
+Affected: 99.6%
+6353
+Affected: 99.6%
+6354
+Affected: 99.6%
+6355
+Affected: 99.6%
+6356
+Affected: 99.6%
+6357
+Affected: 99.6%
+6358
+Affected: 99.6%
+6359
+Affected: 99.6%
+6360
+Affected: 99.6%
+6361
+Affected: 99.6%
+6362
+Affected: 99.6%
+6363
+Affected: 99.6%
+6364
+Affected: 99.6%
+6365
+Affected: 99.6%
+6366
+Affected: 99.6%
+6367
+Affected: 99.6%
+6368
+Affected: 99.6%
+6369
+Affected: 99.6%
+6370
+Affected: 99.6%
+6371
+Affected: 99.6%
+6372
+Affected: 99.6%
+6373
+Affected: 99.6%
+6374
+Affected: 99.6%
+6375
+Affected: 99.6%
+6376
+Affected: 99.6%
+6377
+Affected: 99.6%
+6378
+Affected: 99.6%
+6379
+Affected: 99.6%
+6380
+Affected: 99.6%
+6381
+Affected: 99.6%
+6382
+Affected: 99.6%
+6383
+Affected: 99.6%
+6384
+Affected: 99.6%
+6385
+Affected: 99.6%
+6386
+Affected: 99.6%
+6387
+Affected: 99.6%
+6388
+Affected: 99.6%
+6389
+Affected: 99.6%
+6390
+Affected: 99.6%
+6391
+Affected: 99.6%
+6392
+Affected: 99.6%
+6393
+Affected: 99.6%
+6394
+Affected: 99.6%
+6395
+Affected: 99.6%
+6396
+Affected: 99.6%
+6397
+Affected: 99.6%
+6398
+Affected: 99.6%
+6399
+Affected: 99.6%
+6400
+Affected: 99.6%
+6401
+Affected: 99.6%
+6402
+Affected: 99.6%
+6403
+Affected: 99.6%
+6404
+Affected: 99.6%
+6405
+Affected: 99.6%
+6406
+Affected: 99.6%
+6407
+Affected: 99.6%
+6408
+Affected: 99.6%
+6409
+Affected: 99.6%
+6410
+Affected: 99.6%
+6411
+Affected: 99.6%
+6412
+Affected: 99.6%
+6413
+Affected: 99.6%
+6414
+Affected: 99.6%
+6415
+Affected: 99.6%
+6416
+Affected: 99.6%
+6417
+Affected: 99.6%
+6418
+Affected: 99.6%
+6419
+Affected: 99.6%
+6420
+Affected: 99.6%
+6421
+Affected: 99.6%
+6422
+Affected: 99.6%
+6423
+Affected: 99.6%
+6424
+Affected: 99.6%
+6425
+Affected: 99.6%
+6426
+Affected: 99.6%
+6427
+Affected: 99.6%
+6428
+Affected: 99.6%
+6429
+Affected: 99.6%
+6430
+Affected: 99.6%
+6431
+Affected: 99.6%
+6432
+Affected: 99.6%
+6433
+Affected: 99.6%
+6434
+Affected: 99.6%
+6435
+Affected: 99.6%
+6436
+Affected: 99.6%
+6437
+Affected: 99.6%
+6438
+Affected: 99.6%
+6439
+Affected: 99.6%
+6440
+Affected: 99.6%
+6441
+Affected: 99.6%
+6442
+Affected: 99.6%
+6443
+Affected: 99.6%
+6444
+Affected: 99.6%
+6445
+Affected: 99.6%
+6446
+Affected: 99.6%
+6447
+Affected: 99.6%
+6448
+Affected: 99.6%
+6449
+Affected: 99.6%
+6450
+Affected: 99.6%
+6451
+Affected: 99.6%
+6452
+Affected: 99.6%
+6453
+Affected: 99.6%
+6454
+Affected: 99.6%
+6455
+Affected: 99.6%
+6456
+Affected: 99.6%
+6457
+Affected: 99.6%
+6458
+Affected: 99.6%
+6459
+Affected: 99.6%
+6460
+Affected: 99.6%
+6461
+Affected: 99.6%
+6462
+Affected: 99.6%
+6463
+Affected: 99.6%
+6464
+Affected: 99.6%
+6465
+Affected: 99.6%
+6466
+Affected: 99.6%
+6467
+Affected: 99.6%
+6468
+Affected: 99.6%
+6469
+Affected: 99.6%
+6470
+Affected: 99.6%
+6471
+Affected: 99.6%
+6472
+Affected: 99.6%
+6473
+Affected: 99.6%
+6474
+Affected: 99.6%
+6475
+Affected: 99.6%
+6476
+Affected: 99.6%
+6477
+Affected: 99.6%
+6478
+Affected: 99.6%
+6479
+Affected: 99.6%
+6480
+Affected: 99.6%
+6481
+Affected: 99.6%
+6482
+Affected: 99.6%
+6483
+Affected: 99.6%
+6484
+Affected: 99.6%
+6485
+Affected: 99.6%
+6486
+Affected: 99.6%
+6487
+Affected: 99.6%
+6488
+Affected: 99.6%
+6489
+Affected: 99.6%
+6490
+Affected: 99.6%
+6491
+Affected: 99.6%
+6492
+Affected: 99.6%
+6493
+Affected: 99.6%
+6494
+Affected: 99.6%
+6495
+Affected: 99.6%
+6496
+Affected: 99.6%
+6497
+Affected: 99.6%
+6498
+Affected: 99.6%
+6499
+Affected: 99.6%
+6500
+Affected: 99.6%
+6501
+Affected: 99.6%
+6502
+Affected: 99.6%
+6503
+Affected: 99.6%
+6504
+Affected: 99.6%
+6505
+Affected: 99.6%
+6506
+Affected: 99.6%
+6507
+Affected: 99.6%
+6508
+Affected: 99.6%
+6509
+Affected: 99.6%
+6510
+Affected: 99.6%
+6511
+Affected: 99.6%
+6512
+Affected: 99.6%
+6513
+Affected: 99.6%
+6514
+Affected: 99.6%
+6515
+Affected: 99.6%
+6516
+Affected: 99.6%
+6517
+Affected: 99.6%
+6518
+Affected: 99.6%
+6519
+Affected: 99.6%
+6520
+Affected: 99.6%
+6521
+Affected: 99.6%
+6522
+Affected: 99.6%
+6523
+Affected: 99.6%
+6524
+Affected: 99.6%
+6525
+Affected: 99.6%
+6526
+Affected: 99.6%
+6527
+Affected: 99.6%
+6528
+Affected: 99.6%
+6529
+Affected: 99.6%
+6530
+Affected: 99.6%
+6531
+Affected: 99.6%
+6532
+Affected: 99.6%
+6533
+Affected: 99.6%
+6534
+Affected: 99.6%
+6535
+Affected: 99.6%
+6536
+Affected: 99.6%
+6537
+Affected: 99.6%
+6538
+Affected: 99.6%
+6539
+Affected: 99.6%
+6540
+Affected: 99.6%
+6541
+Affected: 99.6%
+6542
+Affected: 99.6%
+6543
+Affected: 99.6%
+6544
+Affected: 99.6%
+6545
+Affected: 99.6%
+6546
+Affected: 99.6%
+6547
+Affected: 99.6%
+6548
+Affected: 99.6%
+6549
+Affected: 99.6%
+6550
+Affected: 99.6%
+6551
+Affected: 99.6%
+6552
+Affected: 99.6%
+6553
+Affected: 99.6%
+6554
+Affected: 99.6%
+6555
+Affected: 99.6%
+6556
+Affected: 99.6%
+6557
+Affected: 99.6%
+6558
+Affected: 99.6%
+6559
+Affected: 99.6%
+6560
+Affected: 99.6%
+6561
+Affected: 99.6%
+6562
+Affected: 99.6%
+6563
+Affected: 99.6%
+6564
+Affected: 99.6%
+6565
+Affected: 99.6%
+6566
+Affected: 99.6%
+6567
+Affected: 99.6%
+6568
+Affected: 99.6%
+6569
+Affected: 99.6%
+6570
+Affected: 99.6%
+6571
+Affected: 99.6%
+6572
+Affected: 99.6%
+6573
+Affected: 99.6%
+6574
+Affected: 99.6%
+6575
+Affected: 99.6%
+6576
+Affected: 99.6%
+6577
+Affected: 99.6%
+6578
+Affected: 99.6%
+6579
+Affected: 99.6%
+6580
+Affected: 99.6%
+6581
+Affected: 99.6%
+6582
+Affected: 99.6%
+6583
+Affected: 99.6%
+6584
+Affected: 99.6%
+6585
+Affected: 99.6%
+6586
+Affected: 99.6%
+6587
+Affected: 99.6%
+6588
+Affected: 99.6%
+6589
+Affected: 99.6%
+6590
+Affected: 99.6%
+6591
+Affected: 99.6%
+6592
+Affected: 99.6%
+6593
+Affected: 99.6%
+6594
+Affected: 99.6%
+6595
+Affected: 99.6%
+6596
+Affected: 99.6%
+6597
+Affected: 99.6%
+6598
+Affected: 99.6%
+6599
+Affected: 99.6%
+6600
+Affected: 99.6%
+6601
+Affected: 99.6%
+6602
+Affected: 99.6%
+6603
+Affected: 99.6%
+6604
+Affected: 99.6%
+6605
+Affected: 99.6%
+6606
+Affected: 99.6%
+6607
+Affected: 99.6%
+6608
+Affected: 99.6%
+6609
+Affected: 99.6%
+6610
+Affected: 99.6%
+6611
+Affected: 99.6%
+6612
+Affected: 99.6%
+6613
+Affected: 99.6%
+6614
+Affected: 99.6%
+6615
+Affected: 99.6%
+6616
+Affected: 99.6%
+6617
+Affected: 99.6%
+6618
+Affected: 99.6%
+6619
+Affected: 99.6%
+6620
+Affected: 99.6%
+6621
+Affected: 99.6%
+6622
+Affected: 99.6%
+6623
+Affected: 99.6%
+6624
+Affected: 99.6%
+6625
+Affected: 99.6%
+6626
+Affected: 99.6%
+6627
+Affected: 99.6%
+6628
+Affected: 99.6%
+6629
+Affected: 99.6%
+6630
+Affected: 99.6%
+6631
+Affected: 99.6%
+6632
+Affected: 99.6%
+6633
+Affected: 99.6%
+6634
+Affected: 99.6%
+6635
+Affected: 99.6%
+6636
+Affected: 99.6%
+6637
+Affected: 99.6%
+6638
+Affected: 99.6%
+6639
+Affected: 99.6%
+6640
+Affected: 99.6%
+6641
+Affected: 99.6%
+6642
+Affected: 99.6%
+6643
+Affected: 99.6%
+6644
+Affected: 99.6%
+6645
+Affected: 99.6%
+6646
+Affected: 99.6%
+6647
+Affected: 99.6%
+6648
+Affected: 99.6%
+6649
+Affected: 99.6%
+6650
+Affected: 99.6%
+6651
+Affected: 99.6%
+6652
+Affected: 99.6%
+6653
+Affected: 99.6%
+6654
+Affected: 99.6%
+6655
+Affected: 99.6%
+6656
+Affected: 99.6%
+6657
+Affected: 99.6%
+6658
+Affected: 99.6%
+6659
+Affected: 99.6%
+6660
+Affected: 99.6%
+6661
+Affected: 99.6%
+6662
+Affected: 99.6%
+6663
+Affected: 99.6%
+6664
+Affected: 99.6%
+6665
+Affected: 99.6%
+6666
+Affected: 99.6%
+6667
+Affected: 99.6%
+6668
+Affected: 99.6%
+6669
+Affected: 99.6%
+6670
+Affected: 99.6%
+6671
+Affected: 99.6%
+6672
+Affected: 99.6%
+6673
+Affected: 99.6%
+6674
+Affected: 99.6%
+6675
+Affected: 99.6%
+6676
+Affected: 99.6%
+6677
+Affected: 99.6%
+6678
+Affected: 99.6%
+6679
+Affected: 99.6%
+6680
+Affected: 99.6%
+6681
+Affected: 99.6%
+6682
+Affected: 99.6%
+6683
+Affected: 99.6%
+6684
+Affected: 99.6%
+6685
+Affected: 99.6%
+6686
+Affected: 99.6%
+6687
+Affected: 99.6%
+6688
+Affected: 99.6%
+6689
+Affected: 99.6%
+6690
+Affected: 99.6%
+6691
+Affected: 99.6%
+6692
+Affected: 99.6%
+6693
+Affected: 99.6%
+6694
+Affected: 99.6%
+6695
+Affected: 99.6%
+6696
+Affected: 99.6%
+6697
+Affected: 99.6%
+6698
+Affected: 99.6%
+6699
+Affected: 99.6%
+6700
+Affected: 99.6%
+6701
+Affected: 99.6%
+6702
+Affected: 99.6%
+6703
+Affected: 99.6%
+6704
+Affected: 99.6%
+6705
+Affected: 99.6%
+6706
+Affected: 99.6%
+6707
+Affected: 99.6%
+6708
+Affected: 99.6%
+6709
+Affected: 99.6%
+6710
+Affected: 99.6%
+6711
+Affected: 99.6%
+6712
+Affected: 99.6%
+6713
+Affected: 99.6%
+6714
+Affected: 99.6%
+6715
+Affected: 99.6%
+6716
+Affected: 99.6%
+6717
+Affected: 99.6%
+6718
+Affected: 99.6%
+6719
+Affected: 99.6%
+6720
+Affected: 99.6%
+6721
+Affected: 99.6%
+6722
+Affected: 99.6%
+6723
+Affected: 99.6%
+6724
+Affected: 99.6%
+6725
+Affected: 99.6%
+6726
+Affected: 99.6%
+6727
+Affected: 99.6%
+6728
+Affected: 99.6%
+6729
+Affected: 99.6%
+6730
+Affected: 99.6%
+6731
+Affected: 99.6%
+6732
+Affected: 99.6%
+6733
+Affected: 99.6%
+6734
+Affected: 99.6%
+6735
+Affected: 99.6%
+6736
+Affected: 99.6%
+6737
+Affected: 99.6%
+6738
+Affected: 99.6%
+6739
+Affected: 99.6%
+6740
+Affected: 99.6%
+6741
+Affected: 99.6%
+6742
+Affected: 99.6%
+6743
+Affected: 99.6%
+6744
+Affected: 99.6%
+6745
+Affected: 99.6%
+6746
+Affected: 99.6%
+6747
+Affected: 99.6%
+6748
+Affected: 99.6%
+6749
+Affected: 99.6%
+6750
+Affected: 99.6%
+6751
+Affected: 99.6%
+6752
+Affected: 99.6%
+6753
+Affected: 99.6%
+6754
+Affected: 99.6%
+6755
+Affected: 99.6%
+6756
+Affected: 99.6%
+6757
+Affected: 99.6%
+6758
+Affected: 99.6%
+6759
+Affected: 99.6%
+6760
+Affected: 99.6%
+6761
+Affected: 99.6%
+6762
+Affected: 99.6%
+6763
+Affected: 99.6%
+6764
+Affected: 99.6%
+6765
+Affected: 99.6%
+6766
+Affected: 99.6%
+6767
+Affected: 99.6%
+6768
+Affected: 99.6%
+6769
+Affected: 99.6%
+6770
+Affected: 99.6%
+6771
+Affected: 99.6%
+6772
+Affected: 99.6%
+6773
+Affected: 99.6%
+6774
+Affected: 99.6%
+6775
+Affected: 99.6%
+6776
+Affected: 99.6%
+6777
+Affected: 99.6%
+6778
+Affected: 99.6%
+6779
+Affected: 99.6%
+6780
+Affected: 99.6%
+6781
+Affected: 99.6%
+6782
+Affected: 99.6%
+6783
+Affected: 99.6%
+6784
+Affected: 99.6%
+6785
+Affected: 99.6%
+6786
+Affected: 99.6%
+6787
+Affected: 99.6%
+6788
+Affected: 99.6%
+6789
+Affected: 99.6%
+6790
+Affected: 99.6%
+6791
+Affected: 99.6%
+6792
+Affected: 99.6%
+6793
+Affected: 99.6%
+6794
+Affected: 99.6%
+6795
+Affected: 99.6%
+6796
+Affected: 99.6%
+6797
+Affected: 99.6%
+6798
+Affected: 99.6%
+6799
+Affected: 99.6%
+6800
+Affected: 99.6%
+6801
+Affected: 99.6%
+6802
+Affected: 99.6%
+6803
+Affected: 99.6%
+6804
+Affected: 99.6%
+6805
+Affected: 99.6%
+6806
+Affected: 99.6%
+6807
+Affected: 99.6%
+6808
+Affected: 99.6%
+6809
+Affected: 99.6%
+6810
+Affected: 99.6%
+6811
+Affected: 99.6%
+6812
+Affected: 99.6%
+6813
+Affected: 99.6%
+6814
+Affected: 99.6%
+6815
+Affected: 99.6%
+6816
+Affected: 99.6%
+6817
+Affected: 99.6%
+6818
+Affected: 99.6%
+6819
+Affected: 99.6%
+6820
+Affected: 99.6%
+6821
+Affected: 99.6%
+6822
+Affected: 99.6%
+6823
+Affected: 99.6%
+6824
+Affected: 99.6%
+6825
+Affected: 99.6%
+6826
+Affected: 99.6%
+6827
+Affected: 99.6%
+6828
+Affected: 99.6%
+6829
+Affected: 99.6%
+6830
+Affected: 99.6%
+6831
+Affected: 99.6%
+6832
+Affected: 99.6%
+6833
+Affected: 99.6%
+6834
+Affected: 99.6%
+6835
+Affected: 99.6%
+6836
+Affected: 99.6%
+6837
+Affected: 99.6%
+6838
+Affected: 99.6%
+6839
+Affected: 99.6%
+6840
+Affected: 99.6%
+6841
+Affected: 99.6%
+6842
+Affected: 99.6%
+6843
+Affected: 99.6%
+6844
+Affected: 99.6%
+6845
+Affected: 99.6%
+6846
+Affected: 99.6%
+6847
+Affected: 99.6%
+6848
+Affected: 99.6%
+6849
+Affected: 99.6%
+6850
+Affected: 99.6%
+6851
+Affected: 99.6%
+6852
+Affected: 99.6%
+6853
+Affected: 99.6%
+6854
+Affected: 99.6%
+6855
+Affected: 99.6%
+6856
+Affected: 99.6%
+6857
+Affected: 99.6%
+6858
+Affected: 99.6%
+6859
+Affected: 99.6%
+6860
+Affected: 99.6%
+6861
+Affected: 99.6%
+6862
+Affected: 99.6%
+6863
+Affected: 99.6%
+6864
+Affected: 99.6%
+6865
+Affected: 99.6%
+6866
+Affected: 99.6%
+6867
+Affected: 99.6%
+6868
+Affected: 99.6%
+6869
+Affected: 99.6%
+6870
+Affected: 99.6%
+6871
+Affected: 99.6%
+6872
+Affected: 99.6%
+6873
+Affected: 99.6%
+6874
+Affected: 99.6%
+6875
+Affected: 99.6%
+6876
+Affected: 99.6%
+6877
+Affected: 99.6%
+6878
+Affected: 99.6%
+6879
+Affected: 99.6%
+6880
+Affected: 99.6%
+6881
+Affected: 99.6%
+6882
+Affected: 99.6%
+6883
+Affected: 99.6%
+6884
+Affected: 99.6%
+6885
+Affected: 99.6%
+6886
+Affected: 99.6%
+6887
+Affected: 99.6%
+6888
+Affected: 99.6%
+6889
+Affected: 99.6%
+6890
+Affected: 99.6%
+6891
+Affected: 99.6%
+6892
+Affected: 99.6%
+6893
+Affected: 99.6%
+6894
+Affected: 99.6%
+6895
+Affected: 99.6%
+6896
+Affected: 99.6%
+6897
+Affected: 99.6%
+6898
+Affected: 99.6%
+6899
+Affected: 99.6%
+6900
+Affected: 99.6%
+6901
+Affected: 99.6%
+6902
+Affected: 99.6%
+6903
+Affected: 99.6%
+6904
+Affected: 99.6%
+6905
+Affected: 99.6%
+6906
+Affected: 99.6%
+6907
+Affected: 99.6%
+6908
+Affected: 99.6%
+6909
+Affected: 99.6%
+6910
+Affected: 99.6%
+6911
+Affected: 99.6%
+6912
+Affected: 99.6%
+6913
+Affected: 99.6%
+6914
+Affected: 99.6%
+6915
+Affected: 99.6%
+6916
+Affected: 99.6%
+6917
+Affected: 99.6%
+6918
+Affected: 99.6%
+6919
+Affected: 99.6%
+6920
+Affected: 99.6%
+6921
+Affected: 99.6%
+6922
+Affected: 99.6%
+6923
+Affected: 99.6%
+6924
+Affected: 99.6%
+6925
+Affected: 99.6%
+6926
+Affected: 99.6%
+6927
+Affected: 99.6%
+6928
+Affected: 99.6%
+6929
+Affected: 99.6%
+6930
+Affected: 99.6%
+6931
+Affected: 99.6%
+6932
+Affected: 99.6%
+6933
+Affected: 99.6%
+6934
+Affected: 99.6%
+6935
+Affected: 99.6%
+6936
+Affected: 99.6%
+6937
+Affected: 99.6%
+6938
+Affected: 99.6%
+6939
+Affected: 99.6%
+6940
+Affected: 99.6%
+6941
+Affected: 99.6%
+6942
+Affected: 99.6%
+6943
+Affected: 99.6%
+6944
+Affected: 99.6%
+6945
+Affected: 99.6%
+6946
+Affected: 99.6%
+6947
+Affected: 99.6%
+6948
+Affected: 99.6%
+6949
+Affected: 99.6%
+6950
+Affected: 99.6%
+6951
+Affected: 99.6%
+6952
+Affected: 99.6%
+6953
+Affected: 99.6%
+6954
+Affected: 99.6%
+6955
+Affected: 99.6%
+6956
+Affected: 99.6%
+6957
+Affected: 99.6%
+6958
+Affected: 99.6%
+6959
+Affected: 99.6%
+6960
+Affected: 99.6%
+6961
+Affected: 99.6%
+6962
+Affected: 99.6%
+6963
+Affected: 99.6%
+6964
+Affected: 99.6%
+6965
+Affected: 99.6%
+6966
+Affected: 99.6%
+6967
+Affected: 99.6%
+6968
+Affected: 99.6%
+6969
+Affected: 99.6%
+6970
+Affected: 99.6%
+6971
+Affected: 99.6%
+6972
+Affected: 99.6%
+6973
+Affected: 99.6%
+6974
+Affected: 99.6%
+6975
+Affected: 99.6%
+6976
+Affected: 99.6%
+6977
+Affected: 99.6%
+6978
+Affected: 99.6%
+6979
+Affected: 99.6%
+6980
+Affected: 99.6%
+6981
+Affected: 99.6%
+6982
+Affected: 99.6%
+6983
+Affected: 99.6%
+6984
+Affected: 99.6%
+6985
+Affected: 99.6%
+6986
+Affected: 99.6%
+6987
+Affected: 99.6%
+6988
+Affected: 99.6%
+6989
+Affected: 99.6%
+6990
+Affected: 99.6%
+6991
+Affected: 99.6%
+6992
+Affected: 99.6%
+6993
+Affected: 99.6%
+6994
+Affected: 99.6%
+6995
+Affected: 99.6%
+6996
+Affected: 99.6%
+6997
+Affected: 99.6%
+6998
+Affected: 99.6%
+6999
+Affected: 99.6%
+7000
+Affected: 99.6%
+7001
+Affected: 99.6%
+7002
+Affected: 99.6%
+7003
+Affected: 99.6%
+7004
+Affected: 99.6%
+7005
+Affected: 99.6%
+7006
+Affected: 99.6%
+7007
+Affected: 99.6%
+7008
+Affected: 99.6%
+7009
+Affected: 99.6%
+7010
+Affected: 99.6%
+7011
+Affected: 99.6%
+7012
+Affected: 99.6%
+7013
+Affected: 99.6%
+7014
+Affected: 99.6%
+7015
+Affected: 99.6%
+7016
+Affected: 99.6%
+7017
+Affected: 99.6%
+7018
+Affected: 99.6%
+7019
+Affected: 99.6%
+7020
+Affected: 99.6%
+7021
+Affected: 99.6%
+7022
+Affected: 99.6%
+7023
+Affected: 99.6%
+7024
+Affected: 99.6%
+7025
+Affected: 99.6%
+7026
+Affected: 99.6%
+7027
+Affected: 99.6%
+7028
+Affected: 99.6%
+7029
+Affected: 99.6%
+7030
+Affected: 99.6%
+7031
+Affected: 99.6%
+7032
+Affected: 99.6%
+7033
+Affected: 99.6%
+7034
+Affected: 99.6%
+7035
+Affected: 99.6%
+7036
+Affected: 99.6%
+7037
+Affected: 99.6%
+7038
+Affected: 99.6%
+7039
+Affected: 99.6%
+7040
+Affected: 99.6%
+7041
+Affected: 99.6%
+7042
+Affected: 99.6%
+7043
+Affected: 99.6%
+7044
+Affected: 99.6%
+7045
+Affected: 99.6%
+7046
+Affected: 99.6%
+7047
+Affected: 99.6%
+7048
+Affected: 99.6%
+7049
+Affected: 99.6%
+7050
+Affected: 99.6%
+7051
+Affected: 99.6%
+7052
+Affected: 99.6%
+7053
+Affected: 99.6%
+7054
+Affected: 99.6%
+7055
+Affected: 99.6%
+7056
+Affected: 99.6%
+7057
+Affected: 99.6%
+7058
+Affected: 99.6%
+7059
+Affected: 99.6%
+7060
+Affected: 99.6%
+7061
+Affected: 99.6%
+7062
+Affected: 99.6%
+7063
+Affected: 99.6%
+7064
+Affected: 99.6%
+7065
+Affected: 99.6%
+7066
+Affected: 99.6%
+7067
+Affected: 99.6%
+7068
+Affected: 99.6%
+7069
+Affected: 99.6%
+7070
+Affected: 99.6%
+7071
+Affected: 99.6%
+7072
+Affected: 99.6%
+7073
+Affected: 99.6%
+7074
+Affected: 99.6%
+7075
+Affected: 99.6%
+7076
+Affected: 99.6%
+7077
+Affected: 99.6%
+7078
+Affected: 99.6%
+7079
+Affected: 99.6%
+7080
+Affected: 99.6%
+7081
+Affected: 99.6%
+7082
+Affected: 99.6%
+7083
+Affected: 99.6%
+7084
+Affected: 99.6%
+7085
+Affected: 99.6%
+7086
+Affected: 99.6%
+7087
+Affected: 99.6%
+7088
+Affected: 99.6%
+7089
+Affected: 99.6%
+7090
+Affected: 99.6%
+7091
+Affected: 99.6%
+7092
+Affected: 99.6%
+7093
+Affected: 99.6%
+7094
+Affected: 99.6%
+7095
+Affected: 99.6%
+7096
+Affected: 99.6%
+7097
+Affected: 99.6%
+7098
+Affected: 99.6%
+7099
+Affected: 99.6%
+7100
+Affected: 99.6%
+7101
+Affected: 99.6%
+7102
+Affected: 99.6%
+7103
+Affected: 99.6%
+7104
+Affected: 99.6%
+7105
+Affected: 99.6%
+7106
+Affected: 99.6%
+7107
+Affected: 99.6%
+7108
+Affected: 99.6%
+7109
+Affected: 99.6%
+7110
+Affected: 99.6%
+7111
+Affected: 99.6%
+7112
+Affected: 99.6%
+7113
+Affected: 99.6%
+7114
+Affected: 99.6%
+7115
+Affected: 99.6%
+7116
+Affected: 99.6%
+7117
+Affected: 99.6%
+7118
+Affected: 99.6%
+7119
+Affected: 99.6%
+7120
+Affected: 99.6%
+7121
+Affected: 99.6%
+7122
+Affected: 99.6%
+7123
+Affected: 99.6%
+7124
+Affected: 99.6%
+7125
+Affected: 99.6%
+7126
+Affected: 99.6%
+7127
+Affected: 99.6%
+7128
+Affected: 99.6%
+7129
+Affected: 99.6%
+7130
+Affected: 99.6%
+7131
+Affected: 99.6%
+7132
+Affected: 99.6%
+7133
+Affected: 99.6%
+7134
+Affected: 99.6%
+7135
+Affected: 99.6%
+7136
+Affected: 99.6%
+7137
+Affected: 99.6%
+7138
+Affected: 99.6%
+7139
+Affected: 99.6%
+7140
+Affected: 99.6%
+7141
+Affected: 99.6%
+7142
+Affected: 99.6%
+7143
+Affected: 99.6%
+7144
+Affected: 99.6%
+7145
+Affected: 99.6%
+7146
+Affected: 99.6%
+7147
+Affected: 99.6%
+7148
+Affected: 99.6%
+7149
+Affected: 99.6%
+7150
+Affected: 99.6%
+7151
+Affected: 99.6%
+7152
+Affected: 99.6%
+7153
+Affected: 99.6%
+7154
+Affected: 99.6%
+7155
+Affected: 99.6%
+7156
+Affected: 99.6%
+7157
+Affected: 99.6%
+7158
+Affected: 99.6%
+7159
+Affected: 99.6%
+7160
+Affected: 99.6%
+7161
+Affected: 99.6%
+7162
+Affected: 99.6%
+7163
+Affected: 99.6%
+7164
+Affected: 99.6%
+7165
+Affected: 99.6%
+7166
+Affected: 99.6%
+7167
+Affected: 99.6%
+7168
+Affected: 99.6%
+7169
+Affected: 99.6%
+7170
+Affected: 99.6%
+7171
+Affected: 99.6%
+7172
+Affected: 99.6%
+7173
+Affected: 99.6%
+7174
+Affected: 99.6%
+7175
+Affected: 99.6%
+7176
+Affected: 99.6%
+7177
+Affected: 99.6%
+7178
+Affected: 99.6%
+7179
+Affected: 99.6%
+7180
+Affected: 99.6%
+7181
+Affected: 99.6%
+7182
+Affected: 99.6%
+7183
+Affected: 99.6%
+7184
+Affected: 99.6%
+7185
+Affected: 99.6%
+7186
+Affected: 99.6%
+7187
+Affected: 99.6%
+7188
+Affected: 99.6%
+7189
+Affected: 99.6%
+7190
+Affected: 99.6%
+7191
+Affected: 99.6%
+7192
+Affected: 99.6%
+7193
+Affected: 99.6%
+7194
+Affected: 99.6%
+7195
+Affected: 99.6%
+7196
+Affected: 99.6%
+7197
+Affected: 99.6%
+7198
+Affected: 99.6%
+7199
+Affected: 99.6%
+7200
+Affected: 99.6%
+7201
+Affected: 99.6%
+7202
+Affected: 99.6%
+7203
+Affected: 99.6%
+7204
+Affected: 99.6%
+7205
+Affected: 99.6%
+7206
+Affected: 99.6%
+7207
+Affected: 99.6%
+7208
+Affected: 99.6%
+7209
+Affected: 99.6%
+7210
+Affected: 99.6%
+7211
+Affected: 99.6%
+7212
+Affected: 99.6%
+7213
+Affected: 99.6%
+7214
+Affected: 99.6%
+7215
+Affected: 99.6%
+7216
+Affected: 99.6%
+7217
+Affected: 99.6%
+7218
+Affected: 99.6%
+7219
+Affected: 99.6%
+7220
+Affected: 99.6%
+7221
+Affected: 99.6%
+7222
+Affected: 99.6%
+7223
+Affected: 99.6%
+7224
+Affected: 99.6%
+7225
+Affected: 99.6%
+7226
+Affected: 99.6%
+7227
+Affected: 99.6%
+7228
+Affected: 99.6%
+7229
+Affected: 99.6%
+7230
+Affected: 99.6%
+7231
+Affected: 99.6%
+7232
+Affected: 99.6%
+7233
+Affected: 99.6%
+7234
+Affected: 99.6%
+7235
+Affected: 99.6%
+7236
+Affected: 99.6%
+7237
+Affected: 99.6%
+7238
+Affected: 99.6%
+7239
+Affected: 99.6%
+7240
+Affected: 99.6%
+7241
+Affected: 99.6%
+7242
+Affected: 99.6%
+7243
+Affected: 99.6%
+7244
+Affected: 99.6%
+7245
+Affected: 99.6%
+7246
+Affected: 99.6%
+7247
+Affected: 99.6%
+7248
+Affected: 99.6%
+7249
+Affected: 99.6%
+7250
+Affected: 99.6%
+7251
+Affected: 99.6%
+7252
+Affected: 99.6%
+7253
+Affected: 99.6%
+7254
+Affected: 99.6%
+7255
+Affected: 99.6%
+7256
+Affected: 99.6%
+7257
+Affected: 99.6%
+7258
+Affected: 99.6%
+7259
+Affected: 99.6%
+7260
+Affected: 99.6%
+7261
+Affected: 99.6%
+7262
+Affected: 99.6%
+7263
+Affected: 99.6%
+7264
+Affected: 99.6%
+7265
+Affected: 99.6%
+7266
+Affected: 99.6%
+7267
+Affected: 99.6%
+7268
+Affected: 99.6%
+7269
+Affected: 99.6%
+7270
+Affected: 99.6%
+7271
+Affected: 99.6%
+7272
+Affected: 99.6%
+7273
+Affected: 99.6%
+7274
+Affected: 99.6%
+7275
+Affected: 99.6%
+7276
+Affected: 99.6%
+7277
+Affected: 99.6%
+7278
+Affected: 99.6%
+7279
+Affected: 99.6%
+7280
+Affected: 99.6%
+7281
+Affected: 99.6%
+7282
+Affected: 99.6%
+7283
+Affected: 99.6%
+7284
+Affected: 99.6%
+7285
+Affected: 99.6%
+7286
+Affected: 99.6%
+7287
+Affected: 99.6%
+7288
+Affected: 99.6%
+7289
+Affected: 99.6%
+7290
+Affected: 99.6%
+7291
+Affected: 99.6%
+7292
+Affected: 99.6%
+7293
+Affected: 99.6%
+7294
+Affected: 99.6%
+7295
+Affected: 99.6%
+7296
+Affected: 99.6%
+7297
+Affected: 99.6%
+7298
+Affected: 99.6%
+7299
+Affected: 99.6%
+7300
+Affected: 99.6%
+7301
+Affected: 99.6%
+7302
+Affected: 99.6%
+7303
+Affected: 99.6%
+7304
+Affected: 99.6%
+7305
+Affected: 99.6%
+7306
+Affected: 99.6%
+7307
+Affected: 99.6%
+7308
+Affected: 99.6%
+7309
+Affected: 99.6%
+7310
+Affected: 99.6%
+7311
+Affected: 99.6%
+7312
+Affected: 99.6%
+7313
+Affected: 99.6%
+7314
+Affected: 99.6%
+7315
+Affected: 99.6%
+7316
+Affected: 99.6%
+7317
+Affected: 99.6%
+7318
+Affected: 99.6%
+7319
+Affected: 99.6%
+7320
+Affected: 99.6%
+7321
+Affected: 99.6%
+7322
+Affected: 99.6%
+7323
+Affected: 99.6%
+7324
+Affected: 99.6%
+7325
+Affected: 99.6%
+7326
+Affected: 99.6%
+7327
+Affected: 99.6%
+7328
+Affected: 99.6%
+7329
+Affected: 99.6%
+7330
+Affected: 99.6%
+7331
+Affected: 99.6%
+7332
+Affected: 99.6%
+7333
+Affected: 99.6%
+7334
+Affected: 99.6%
+7335
+Affected: 99.6%
+7336
+Affected: 99.6%
+7337
+Affected: 99.6%
+7338
+Affected: 99.6%
+7339
+Affected: 99.6%
+7340
+Affected: 99.6%
+7341
+Affected: 99.6%
+7342
+Affected: 99.6%
+7343
+Affected: 99.6%
+7344
+Affected: 99.6%
+7345
+Affected: 99.6%
+7346
+Affected: 99.6%
+7347
+Affected: 99.6%
+7348
+Affected: 99.6%
+7349
+Affected: 99.6%
+7350
+Affected: 99.6%
+7351
+Affected: 99.6%
+7352
+Affected: 99.6%
+7353
+Affected: 99.6%
+7354
+Affected: 99.6%
+7355
+Affected: 99.6%
+7356
+Affected: 99.6%
+7357
+Affected: 99.6%
+7358
+Affected: 99.6%
+7359
+Affected: 99.6%
+7360
+Affected: 99.6%
+7361
+Affected: 99.6%
+7362
+Affected: 99.6%
+7363
+Affected: 99.6%
+7364
+Affected: 99.6%
+7365
+Affected: 99.6%
+7366
+Affected: 99.6%
+7367
+Affected: 99.6%
+7368
+Affected: 99.6%
+7369
+Affected: 99.6%
+7370
+Affected: 99.6%
+7371
+Affected: 99.6%
+7372
+Affected: 99.6%
+7373
+Affected: 99.6%
+7374
+Affected: 99.6%
+7375
+Affected: 99.6%
+7376
+Affected: 99.6%
+7377
+Affected: 99.6%
+7378
+Affected: 99.6%
+7379
+Affected: 99.6%
+7380
+Affected: 99.6%
+7381
+Affected: 99.6%
+7382
+Affected: 99.6%
+7383
+Affected: 99.6%
+7384
+Affected: 99.6%
+7385
+Affected: 99.6%
+7386
+Affected: 99.6%
+7387
+Affected: 99.6%
+7388
+Affected: 99.6%
+7389
+Affected: 99.6%
+7390
+Affected: 99.6%
+7391
+Affected: 99.6%
+7392
+Affected: 99.6%
+7393
+Affected: 99.6%
+7394
+Affected: 99.6%
+7395
+Affected: 99.6%
+7396
+Affected: 99.6%
+7397
+Affected: 99.6%
+7398
+Affected: 99.6%
+7399
+Affected: 99.6%
+7400
+Affected: 99.6%
+7401
+Affected: 99.6%
+7402
+Affected: 99.6%
+7403
+Affected: 99.6%
+7404
+Affected: 99.6%
+7405
+Affected: 99.6%
+7406
+Affected: 99.6%
+7407
+Affected: 99.6%
+7408
+Affected: 99.6%
+7409
+Affected: 99.6%
+7410
+Affected: 99.6%
+7411
+Affected: 99.6%
+7412
+Affected: 99.6%
+7413
+Affected: 99.6%
+7414
+Affected: 99.6%
+7415
+Affected: 99.6%
+7416
+Affected: 99.6%
+7417
+Affected: 99.6%
+7418
+Affected: 99.6%
+7419
+Affected: 99.6%
+7420
+Affected: 99.6%
+7421
+Affected: 99.6%
+7422
+Affected: 99.6%
+7423
+Affected: 99.6%
+7424
+Affected: 99.6%
+7425
+Affected: 99.6%
+7426
+Affected: 99.6%
+7427
+Affected: 99.6%
+7428
+Affected: 99.6%
+7429
+Affected: 99.6%
+7430
+Affected: 99.6%
+7431
+Affected: 99.6%
+7432
+Affected: 99.6%
+7433
+Affected: 99.6%
+7434
+Affected: 99.6%
+7435
+Affected: 99.6%
+7436
+Affected: 99.6%
+7437
+Affected: 99.6%
+7438
+Affected: 99.6%
+7439
+Affected: 99.6%
+7440
+Affected: 99.6%
+7441
+Affected: 99.6%
+7442
+Affected: 99.6%
+7443
+Affected: 99.6%
+7444
+Affected: 99.6%
+7445
+Affected: 99.6%
+7446
+Affected: 99.6%
+7447
+Affected: 99.6%
+7448
+Affected: 99.6%
+7449
+Affected: 99.6%
+7450
+Affected: 99.6%
+7451
+Affected: 99.6%
+7452
+Affected: 99.6%
+7453
+Affected: 99.6%
+7454
+Affected: 99.6%
+7455
+Affected: 99.6%
+7456
+Affected: 99.6%
+7457
+Affected: 99.6%
+7458
+Affected: 99.6%
+7459
+Affected: 99.6%
+7460
+Affected: 99.6%
+7461
+Affected: 99.6%
+7462
+Affected: 99.6%
+7463
+Affected: 99.6%
+7464
+Affected: 99.6%
+7465
+Affected: 99.6%
+7466
+Affected: 99.6%
+7467

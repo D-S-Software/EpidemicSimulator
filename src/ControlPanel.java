@@ -15,7 +15,6 @@ public class ControlPanel extends JPanel {
     private Engine simEngine;
     boolean toPause = true, canStart = true;
     private GUI gui;
-    private int numPeople;
     private int baseXLen, baseYLen;
 
     public ControlPanel(GUI gui, int baseXLen, int baseYLen)
