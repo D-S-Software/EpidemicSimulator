@@ -1,14 +1,17 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 public class Main {
 
+    GUI gui;
 
-    public Main(Disease disease, int numPeople, int baseXLen, int baseYLen)
+    public Main(int numPeople, int baseXLen, int baseYLen)
     {
-        GUI gui = new GUI(baseXLen, baseYLen);
-        Engine run = new Engine(gui, disease, numPeople, baseXLen, baseYLen);
+        gui = new GUI(baseXLen, baseYLen);
     }
     public static void main(String[] args)
     {
-        Main test = new Main(new Disease1(), 300, 1000, 600);
+        Main test = new Main(500, 1500, 1000);
     }
 }
 

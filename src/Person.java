@@ -101,6 +101,7 @@ public class Person implements ActionListener {
     {
         dimens.setxLen(rect.width);
         dimens.setyLen(rect.height);
+
         //TODO Remove when not needed for testing
         //System.out.println(rect.x + " " + rect.y + " " + rect.width + " " + rect.height);
     }

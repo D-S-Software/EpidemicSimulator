@@ -29,7 +29,7 @@ public class GUI {
         gbcMain.gridy = 0;
         gbcMain.gridwidth = 2;
         gbcMain.gridheight = 1;
-        gbcMain.weightx = .3;
+        gbcMain.weightx = .1;
         gbcMain.weighty = 1;
         gbcMain.anchor = GridBagConstraints.CENTER;
         gbcMain.fill = GridBagConstraints.BOTH;
@@ -76,7 +76,9 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         titlePanel = new TitlePanel();
         titlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        titlePanel.add(new JLabel("Epidemic Simulator"));
+        JLabel titleFont = new JLabel("Epidemic Simulator");
+        titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
+        titlePanel.add(titleFont);
         titlePanel.setBackground(Color.GREEN);
         topPanel.add(titlePanel, gbc);
     }
@@ -105,14 +107,14 @@ public class GUI {
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 1;
-        gbc.weighty = 5;
+        gbc.weighty = 1;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        controlPanel = new ControlPanel();
-        controlPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.setBackground(Color.LIGHT_GRAY);
-        leftPanel.add(controlPanel, gbc);
+        controlPanel = new ControlPanel(this);
+        controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        controlPanel.getMainPanel().setBackground(Color.LIGHT_GRAY);
+        leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
     private void addTallyPanel()
     {
@@ -161,6 +163,10 @@ public class GUI {
     public BoardPanel getBoardPanel()
     {
         return boardPanel;
+    }
+
+    public ControlPanel getControlPanel() {
+        return controlPanel;
     }
 
     public Rectangle getBoardRec()
