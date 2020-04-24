@@ -6,16 +6,11 @@ import java.awt.event.ActionListener;
 public class TallyPanel extends JPanel implements ActionListener {
 
     GUI gui;
-    //public TallyPanel()
-    {
-        //super();
-    }
 
     public TallyPanel(GUI gui, GridLayout gl)
     {
         super(gl);
         this.gui = gui;
-
     }
 
     public void actionPerformed(ActionEvent e)

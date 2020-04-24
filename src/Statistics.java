@@ -2,14 +2,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import org.knowm.xchart.XYChart;
-
 public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList;
     private int time = 0, numHealthy=0, numSick=0, numRecovered=0, numDead=0, numPeople=0;
-   // private GUI gui;
-    private Board simBoard;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
@@ -21,12 +17,9 @@ public class Statistics implements ActionListener {
 
     public Statistics(Board simBoard, int numPeople)
     {
-        this.simBoard = simBoard;
         pList = simBoard.getPList();
         this.numPeople = numPeople;
-        //this.gui = gui;
         //x.openFile(); TODO Add back in at some point
-
     }
 
     public static CreateFile getCreateFile()
@@ -82,7 +75,6 @@ public class Statistics implements ActionListener {
             x.closeFile();
             System.exit(0); TODO Add back in at some point
         }*/
-
     }
 
     /** Getter and Setter Methods */

@@ -1,6 +1,5 @@
 import org.knowm.xchart.XChartPanel;
 import org.knowm.xchart.XYChart;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,7 +23,4 @@ public class ChartPanel extends XChartPanel implements ActionListener {
 
         repaint();
     }
-
-    //TODO Put Chart into Chart Panel
-
 }

@@ -365,6 +365,5 @@ public class ControlPanel extends JPanel implements ActionListener{
             startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
             canType = true;
         }
-
     }
 }

@@ -1,5 +1,3 @@
-import org.knowm.xchart.XChartPanel;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,10 +11,7 @@ public class GUI {
     private Chart myChart;
     private ChartPanel chartPanel;
     private int preWidth, preHeight;
-    private JLabel numHealthyLabel = new JLabel();
-    private JLabel numSickLabel = new JLabel();
-    private JLabel numRecoveredLabel = new JLabel();
-    private JLabel numDeadLabel = new JLabel();
+    private JLabel numHealthyLabel = new JLabel(), numSickLabel = new JLabel(), numRecoveredLabel = new JLabel(), numDeadLabel = new JLabel();
     private GUI gui = this;
     private JFrame frame;
     private Statistics stats;
@@ -165,16 +160,11 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
 
-        myChart = new Chart(); /* This is not in the constructor because a GUI object must be created first,
+        myChart = new Chart(); /** This is not in the constructor because a GUI object must be created first,
                                      *then gui.stats() is called in Engine. Then myChart.setStats(stats) can be called here.*/
-        //myChart.setStats(stats);
-
-        //chartPanel = new XChartPanel(myChart.getChart());
-
 
         chartPanel = new ChartPanel(myChart.getXYChart(), this);
         chartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        //chartPanel.add(new JLabel("Graph Panel"));
         chartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
         rightPanel.add(chartPanel, gbc);
     }
@@ -187,15 +177,6 @@ public class GUI {
     public TallyPanel getTallyPanel()
     {
         return tallyPanel;
-    }
-
-    public JFrame getFrame()
-    {
-        return frame;
-    }
-
-    public ControlPanel getControlPanel() {
-        return controlPanel;
     }
 
     public Rectangle getBoardRec()
@@ -224,14 +205,11 @@ public class GUI {
         return chartPanel;
     }
 
-    public Chart getMyChart()
-    {
-        return myChart;
-    }
     public Statistics getStats()
     {
         return stats;
     }
+
     public void setStats(Statistics stats)
     {
         this.stats = stats;
