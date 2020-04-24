@@ -42,5 +42,7 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
             count = 0;
         }
         count++;
+        if(gui.getStats().getNumSick() == 0)
+            count = graphDelay+1;
     }
 }

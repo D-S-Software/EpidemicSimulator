@@ -72,11 +72,13 @@ public class TallyPanel extends JPanel implements ActionListener {
                 if(gui.getPieChartPanel().isVisible())
                 {
                     gui.getXYChartPanel().setVisible(true);
+                    gui.getXyChartPanel2().setVisible(true);
                     gui.getPieChartPanel().setVisible(false);
                 }
                 else
                 {
                     gui.getXYChartPanel().setVisible(false);
+                    gui.getXyChartPanel2().setVisible(false);
                     gui.getPieChartPanel().setVisible(true);
                 }
             }
