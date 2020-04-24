@@ -9,7 +9,7 @@ public class Chart{
     public XYChart getXYChart()
     {
         // Create Chart
-        xychart = new XYChartBuilder().width(400).height(300).title("Population Breakdown vs TIme").xAxisTitle("Time").yAxisTitle("% of Pop").build();
+        xychart = new XYChartBuilder().width(400).height(300).title("Population Breakdown vs TIme").xAxisTitle("Time").yAxisTitle("Pop").build();
 
         // Customize Chart
         xychart.getStyler().setLegendPosition(LegendPosition.InsideNE);
