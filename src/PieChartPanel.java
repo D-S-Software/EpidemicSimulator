@@ -8,6 +8,8 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
     private GUI gui;
     private PieChart pc;
 
+    private int count;
+
     public PieChartPanel(PieChart pc, GUI gui)
     {
         super(pc);
@@ -17,11 +19,18 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
 
     public void actionPerformed(ActionEvent e)
     {
-        pc.updatePieSeries("Healthy", gui.getStats().getNumHealthy());
-        pc.updatePieSeries("Sick", gui.getStats().getNumSick());
-        pc.updatePieSeries("Recovered", gui.getStats().getNumRecovered());
-        pc.updatePieSeries("Dead", gui.getStats().getNumDead());
+        /** Update limiter to once every 15 ticks (once every 150 ms)*/
+        if(count == 14 ) {
+            pc.updatePieSeries("Healthy", gui.getStats().getNumHealthy());
+            pc.updatePieSeries("Sick", gui.getStats().getNumSick());
+            pc.updatePieSeries("Recovered", gui.getStats().getNumRecovered());
+            pc.updatePieSeries("Dead", gui.getStats().getNumDead());
 
-        repaint();
+            repaint();
+
+            count = 0;
+        }
+        count++;
     }
+
 }
