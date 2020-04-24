@@ -11,7 +11,6 @@ public class GUI {
     private Chart myChart;
     private ChartPanel chartPanel;
     private int preWidth, preHeight;
-    private JLabel numHealthyLabel = new JLabel(), numSickLabel = new JLabel(), numRecoveredLabel = new JLabel(), numDeadLabel = new JLabel();
     private GUI gui = this;
     private JFrame frame;
     private Statistics stats;
@@ -61,8 +60,6 @@ public class GUI {
         frame.pack();
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
-
-
     }
 
     private void addTitlePanel()
@@ -130,21 +127,8 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        tallyPanel = new TallyPanel(this, new GridLayout(2, 2));
-        tallyPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        numHealthyLabel.setPreferredSize(new Dimension(20, 10));
-        numHealthyLabel.setText("NumHealthy: ");
-        numSickLabel.setPreferredSize(new Dimension(20, 10));
-        numSickLabel.setText("NumSick: ");
-        numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
-        numRecoveredLabel.setText("NumRecovered: ");
-        numDeadLabel.setPreferredSize(new Dimension(20, 10));
-        numDeadLabel.setText("NumDead: ");
-        tallyPanel.add(numHealthyLabel);
-        tallyPanel.add(numRecoveredLabel);
-        tallyPanel.add(numSickLabel);
-        tallyPanel.add(numDeadLabel);
-        tallyPanel.setBackground(Color.ORANGE);
+        tallyPanel = new TallyPanel(this, new GridLayout(2, 3));
+
         rightPanel.add(tallyPanel, gbc);
     }
     private void addChartPanel()
@@ -184,23 +168,6 @@ public class GUI {
         return boardPanel.getBounds();
     }
 
-    public JLabel getNumHealthyLabel()
-    {
-        return numHealthyLabel;
-    }
-
-    public JLabel getNumSickLabel() {
-        return numSickLabel;
-    }
-
-    public JLabel getNumRecoveredLabel() {
-        return numRecoveredLabel;
-    }
-
-    public JLabel getNumDeadLabel() {
-        return numDeadLabel;
-    }
-
     public ChartPanel getChartPanel(){
         return chartPanel;
     }
@@ -213,22 +180,5 @@ public class GUI {
     public void setStats(Statistics stats)
     {
         this.stats = stats;
-    }
-
-    public void setNumHealthyLabel(String s)
-    {
-        numHealthyLabel.setText(s);
-    }
-    public void setNumSickLabel(String s)
-    {
-        numSickLabel.setText(s);
-    }
-    public void setNumRecoveredLabel(String s)
-    {
-        numRecoveredLabel.setText(s);
-    }
-    public void setNumDeadLabel(String s)
-    {
-        numDeadLabel.setText(s);
     }
 }
