@@ -107,7 +107,6 @@ public class TallyPanel extends JPanel implements ActionListener {
         add(numSickLabel);
         add(numDeadLabel);
         add(switchGraph);
-         //TODO Add color for TallyPanel
     }
 
     public void setShowCases(boolean showCases)

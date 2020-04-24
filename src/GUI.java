@@ -1,5 +1,4 @@
 import Library.CustomColor;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -134,7 +133,7 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         controlPanel = new ControlPanel(this);
         controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.getMainPanel().setBackground(CustomColor.BACKGROUND); //TODO Add Control Panel Color
+        controlPanel.getMainPanel().setBackground(CustomColor.BACKGROUND);
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
     private void addTallyPanel()
@@ -172,7 +171,6 @@ public class GUI {
 
         xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
         xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        xyChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
         xyChartPanel.setVisible(!showPieFirst & !showCasesFirst);
         rightPanel.add(xyChartPanel, gbc);
     }
@@ -193,7 +191,6 @@ public class GUI {
 
         xyChartPanel2 = new XYChartPanel2(myXYChart2.getXYChart(), this);
         xyChartPanel2.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        xyChartPanel2.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
         xyChartPanel2.setVisible(!showPieFirst && showCasesFirst);
         rightPanel.add(xyChartPanel2, gbc);
     }
@@ -215,7 +212,6 @@ public class GUI {
 
         pieChartPanel = new PieChartPanel(myPieChart.getMyPieChart(),this);
         pieChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-       // pieChartPanel.setBackground(CustomColor.JET); //Being over-rid by Graph background TODO Do we need to change the color here?
 
         pieChartPanel.setVisible(showPieFirst);
         rightPanel.add(pieChartPanel, gbc);

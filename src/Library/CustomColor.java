@@ -20,7 +20,10 @@ public class CustomColor extends Color{
     public static final Color BURNT_ORANGE = new Color(191, 87, 0);
     public static final Color BURNT_UMBER = new Color(138, 51, 36);
     public static final Color KOBICHA = new Color(107, 68, 35);
-
+    public static final Color JASPER = new Color(208, 83, 64);
+    public static final Color SARACUSE_ORANGE = new Color(212, 69, 0);
+    public static final Color OCHRE = new Color(204, 119, 34);
+    public static final Color CHESTNUT = new Color(149, 69, 53);
 
     //Yellow
     public static final Color GOLDENROD = new Color(218, 165, 32);
@@ -28,6 +31,9 @@ public class CustomColor extends Color{
     public static final Color SAFTEY_YELLOW = new Color(255, 211, 0);
 
     //Green
+    public static final Color ARTICHOKE_GREEN = new Color(75, 111, 68);
+    public static final Color DARK_MOSS_GREEN = new Color(74, 93, 35);
+    public static final Color DARK_GREEN_BLUE = new Color(1, 50, 36);
 
     //Blue
     public static final Color SAVOY_BLUE = new Color(75, 97, 209);/** Blue based */
@@ -47,6 +53,9 @@ public class CustomColor extends Color{
     public static final Color ONYX = new Color(53, 56, 57);
     public static final Color CINEROUS = new Color(152, 129, 123);
 
+    //Brown
+    public static final Color ZINNWALDITE_BROWN = new Color(44, 22, 8);
+    public static final Color SEAL_BROWN = new Color(89, 38, 11);
 
 
     //Epidemic Specific
@@ -56,7 +65,7 @@ public class CustomColor extends Color{
     public static final Color DEAD = CustomColor.DIM_GRAY;
 
     public static final Color BACKGROUND = CustomColor.EERIE_BLACK;
-    public static final Color BUTTON = CustomColor.ALLOY_ORANGE;
+    public static final Color BUTTON = CustomColor.CHESTNUT;
     public static final Color FIELD = CustomColor.CINEROUS;
     public static final Color ON_BLOOD_RED_LABEL = CustomColor.WHITE;
     public static final Color ON_BUTTON_LABEL = Color.BLACK; /** Also for Fields , which are also Gold-based */

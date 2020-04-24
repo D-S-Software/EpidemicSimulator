@@ -12,7 +12,8 @@ public class Main {
         Main test = new Main(1600, 900); //Should be 16.9 to scale nicely with most screens
     }
 
-    //TODO Bug with Pie chart disappearing after reset
+    //TODO Set Font size in Graphs
+
     //TODO Clean up code (make packages, check parameters (age, mortality rate, windowSize, delays ect.)
     //TODO Make Sim Settings (walls, other changes, behavior ect.) - Graphic settings (higher graphics = more chart updates);
     //TODO Make opening screen (start with music)

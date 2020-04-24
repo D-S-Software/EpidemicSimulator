@@ -120,7 +120,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.KOBICHA); //TODO add color for selection Panel
+        p.setBackground(CustomColor.KOBICHA);
         mainPanel.add(p, gbc);
     }
     public void addTitleControlPanel()
@@ -137,7 +137,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel();
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED); //TODO add color for Control Title Panel
+        p.setBackground(CustomColor.BLOOD_RED);
         JLabel controls = new JLabel("Controls:");
         controls.setFont(controls.getFont ().deriveFont (24.0f));
         controls.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
@@ -158,7 +158,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel();
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED); //TODO Add color for sim setting panel
+        p.setBackground(CustomColor.BLOOD_RED);
 
         ImageIcon pic = new ImageIcon("SettingsIcon.jpg");
         Image image = pic.getImage();
@@ -251,7 +251,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(startPercentHealthy);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.KOBICHA); //TODO add color for Parameter Panel
+        p.setBackground(CustomColor.KOBICHA);
         mainPanel.add(p, gbc);
     }
     public void addButtonPanel()
@@ -393,7 +393,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(reset);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED); //TODO add color for Button Panel
+        p.setBackground(CustomColor.BLOOD_RED);
         mainPanel.add(p, gbc);
     }
 
