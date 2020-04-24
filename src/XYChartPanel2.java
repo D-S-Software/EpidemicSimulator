@@ -8,8 +8,8 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
 
     private GUI gui;
     private XYChart xychart2;
-    private int graphDelay;
-    private int count;
+    private int count = 99;
+    private boolean slowGraph;
 
     public XYChartPanel2(XYChart c, GUI gui)
     {
@@ -18,10 +18,9 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
         xychart2 = c;
     }
 
-    public void setGraphDelay(int delay)
+    public void isSlowGraph(boolean slowGraph)
     {
-        graphDelay = delay;
-        count = delay;
+        this.slowGraph = slowGraph;
     }
 
     public void resetXY()
@@ -35,15 +34,22 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
 
     public void actionPerformed(ActionEvent e)
     {
-        if(count == graphDelay)
+        if(slowGraph)
+        {
+            count++;
+            if(count == 100)
+            {
+                xychart2.updateXYSeries("cases", gui.getStats().getTimeList(), gui.getStats().getCasesList(),null );
+
+                repaint();
+                count = 0;
+            }
+        }
+        else
         {
             xychart2.updateXYSeries("cases", gui.getStats().getTimeList(), gui.getStats().getCasesList(),null );
 
             repaint();
-            count = 0;
         }
-        count++;
-        if(gui.getStats().getNumSick() == 0)
-            count = graphDelay+1;
     }
 }

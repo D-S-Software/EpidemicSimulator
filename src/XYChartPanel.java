@@ -8,8 +8,8 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
 
     private GUI gui;
     private XYChart xychart;
-    private int graphDelay;
-    private int count;
+    private int count = 99;
+    private boolean slowGraph;
 
     public XYChartPanel(XYChart c, GUI gui)
     {
@@ -18,10 +18,9 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
         xychart = c;
     }
 
-    public void setGraphDelay(int delay)
+    public void isSlowGraph(boolean slowGraph)
     {
-        graphDelay = delay;
-        count = delay;
+        this.slowGraph = slowGraph;
     }
 
     public void resetXY()
@@ -37,7 +36,21 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
 
     public void actionPerformed(ActionEvent e)
     {
-        if(count == graphDelay)
+        if(slowGraph)
+        {
+            count++;
+            if(count == 100)
+            {
+                xychart.updateXYSeries("healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
+                xychart.updateXYSeries("sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
+                xychart.updateXYSeries("recovered",gui.getStats().getTimeList(), gui.getStats().getRecoveredList(),null );
+                xychart.updateXYSeries("dead",gui.getStats().getTimeList(), gui.getStats().getDeadList(),null ); //Maybe updateXYSeries has to be in Chart class
+
+                repaint();
+                count = 0;
+            }
+        }
+        else
         {
             xychart.updateXYSeries("healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
             xychart.updateXYSeries("sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
@@ -45,10 +58,6 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
             xychart.updateXYSeries("dead",gui.getStats().getTimeList(), gui.getStats().getDeadList(),null ); //Maybe updateXYSeries has to be in Chart class
 
             repaint();
-            count = 0;
         }
-        count++;
-        if(gui.getStats().getNumSick() == 0)
-            count = graphDelay+1;
     }
 }
