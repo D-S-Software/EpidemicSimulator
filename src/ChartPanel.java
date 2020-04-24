@@ -29,4 +29,5 @@ public class ChartPanel extends XChartPanel implements ActionListener {
         }
         count++;
     }
+
 }

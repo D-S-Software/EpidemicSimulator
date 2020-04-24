@@ -8,9 +8,12 @@ public class GUI {
     private BoardPanel boardPanel;
     private ControlPanel controlPanel;
     private TallyPanel tallyPanel;
+
     private Chart myChart;
     private ChartPanel chartPanel;
+    private MyPieChart myPieChart;
     private PieChartPanel pieChartPanel;
+
     private int preWidth, preHeight;
     private GUI gui = this;
     private JFrame frame;
@@ -54,7 +57,8 @@ public class GUI {
 
         rightPanel = new JPanel(new GridBagLayout());
         addTallyPanel();
-        addChartPanel();
+        //addChartPanel();
+        addPieChartPanel();
         frame.add(rightPanel, gbcMain);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -167,8 +171,9 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
 
+        myPieChart = new MyPieChart();
 
-
+        pieChartPanel = new PieChartPanel(myPieChart.getMyPieChart(),this);
         pieChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         pieChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
         rightPanel.add(pieChartPanel, gbc);

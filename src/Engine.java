@@ -19,6 +19,7 @@ public class Engine {
         clock = new Timer(10, gui.getBoardPanel());
         clock.addActionListener(stats);
         clock.addActionListener(gui.getChartPanel());
+        clock.addActionListener(gui.getPieChartPanel());
         clock.addActionListener(gui.getTallyPanel());
     }
 
