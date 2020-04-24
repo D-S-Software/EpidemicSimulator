@@ -10,7 +10,7 @@ public class TallyPanel extends JPanel implements ActionListener {
     GUI gui;
     JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel;
     JButton switchGraph, toggle;
-    boolean casesDisplayed = true;
+    boolean showCases;
 
     public TallyPanel(GUI gui, GridLayout gl)
     {
@@ -42,22 +42,25 @@ public class TallyPanel extends JPanel implements ActionListener {
 
         toggle = new JButton("Graph Mode");
         toggle.setFont(toggle.getFont ().deriveFont (18.0f));
+        toggle.setVisible(false);
 
         toggle.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if(casesDisplayed)
+                if(gui.getXYChartPanel2().isVisible())
                 {
-                    gui.getXyChartPanel2().setVisible(false);
+                    gui.getXYChartPanel2().setVisible(false);
                     gui.getXYChartPanel().setVisible(true);
-                    casesDisplayed = false;
+                    gui.getPieChartPanel().setVisible(false);
+                    showCases = false;
                 }
                 else
                 {
                     gui.getXYChartPanel().setVisible(false);
-                    gui.getXyChartPanel2().setVisible(true);
-                    casesDisplayed = true;
+                    gui.getXYChartPanel2().setVisible(true);
+                    gui.getPieChartPanel().setVisible(false);
+                    showCases = true;
                 }
             }
         });
@@ -71,15 +74,23 @@ public class TallyPanel extends JPanel implements ActionListener {
 
                 if(gui.getPieChartPanel().isVisible())
                 {
-                    gui.getXYChartPanel().setVisible(true);
-                    gui.getXyChartPanel2().setVisible(true);
                     gui.getPieChartPanel().setVisible(false);
+                    if(showCases)
+                    {
+                        gui.getXYChartPanel2().setVisible(true);
+                        gui.getXYChartPanel().setVisible(false);
+                    }
+                    else
+                    {
+                        gui.getXYChartPanel().setVisible(true);
+                        gui.getXYChartPanel2().setVisible(false);
+                    }
                 }
                 else
                 {
-                    gui.getXYChartPanel().setVisible(false);
-                    gui.getXyChartPanel2().setVisible(false);
                     gui.getPieChartPanel().setVisible(true);
+                    gui.getXYChartPanel2().setVisible(false);
+                    gui.getXYChartPanel().setVisible(false);
                 }
             }
         });
@@ -94,6 +105,16 @@ public class TallyPanel extends JPanel implements ActionListener {
         setBackground(Color.ORANGE); //TODO Add color for TallyPanel
     }
 
+    public void setShowCases(boolean showCases)
+    {
+        this.showCases = showCases;
+    }
+
+    public void showGraphModeButton()
+    {
+        toggle.setVisible(true);
+    }
+
     public void actionPerformed(ActionEvent e)
     {
         numHealthyLabel.setText("Healthy: " + gui.getStats().getNumHealthy() + "  ");
@@ -101,7 +122,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         numRecoveredLabel.setText("Recovered: " + gui.getStats().getNumRecovered() + "  ");
         numDeadLabel.setText("Dead: " + gui.getStats().getNumDead() + "    ");
 
-        if(gui.getXYChartPanel().isVisible() || gui.getXyChartPanel2().isVisible())
+        if(gui.getXYChartPanel().isVisible() || gui.getXYChartPanel2().isVisible())
             toggle.setVisible(true);
         else
             toggle.setVisible(false);

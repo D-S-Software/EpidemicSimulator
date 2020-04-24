@@ -9,7 +9,7 @@ public class ControlPanel extends JPanel implements ActionListener{
 
     private JPanel mainPanel = new JPanel(new GridBagLayout());
     private JRadioButton choice1, choice2, choice3, choice4, custom;
-    private JButton startStop, playPause, reset;
+    private JButton start, playPause, reset;
     private ButtonGroup g1;
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy, numPeopleField;
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel;
@@ -231,11 +231,11 @@ public class ControlPanel extends JPanel implements ActionListener{
         numPeopleField.setFont(numPeopleField.getFont ().deriveFont (20.0f));
         p.add(numPeopleField);
 
-        startStop = new JButton("Start");
-        startStop.setFont(startStop.getFont ().deriveFont (18.0f));
-        startStop.setPreferredSize(new Dimension(100,30));
+        start = new JButton("Start");
+        start.setFont(start.getFont ().deriveFont (18.0f));
+        start.setPreferredSize(new Dimension(100,30));
 
-        startStop.addActionListener(new ActionListener() {
+        start.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -271,6 +271,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         canStart = false;
                         checkTick.stop();
                     }
+                    gui.getTallyPanel().showGraphModeButton();
                 }
             }
         });
@@ -294,6 +295,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         simEngine.getClock().start();
                         toPause = true;
                     }
+                    gui.getTallyPanel().showGraphModeButton();
                 }
             }
         });
@@ -321,14 +323,14 @@ public class ControlPanel extends JPanel implements ActionListener{
                 gui.getBoardPanel().repaint();
 
                 gui.getXYChartPanel().resetXY();
-                gui.getXyChartPanel2().resetXY();
+                gui.getXYChartPanel2().resetXY();
                 gui.getPieChartPanel().resetPie();
 
                 checkTick.start();
             }
         });
 
-        p.add(startStop);
+        p.add(start);
         p.add(playPause);
         p.add(reset);
 

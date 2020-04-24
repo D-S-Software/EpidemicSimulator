@@ -13,8 +13,8 @@ public class Statistics implements ActionListener {
     private ArrayList<Integer> recoveredList = new ArrayList<>();
     private ArrayList<Integer> deadList = new ArrayList<>();
     private ArrayList<Integer> casesList = new ArrayList<>();
-    private int graphDelay = 124;
-    private int count = graphDelay;
+    private int graphDelay = 100;
+    private int count = graphDelay-1;
 
     public Statistics(Board simBoard, int numPeople)
     {
@@ -45,9 +45,10 @@ public class Statistics implements ActionListener {
 
     public void actionPerformed(ActionEvent e)
     {
+        count++;
         if(count == graphDelay)
         {
-            timeList.add(time);
+            timeList.add(time/100);
             healthyList.add(numHealthy);
             sickList.add(numSick);
             recoveredList.add(numRecovered);
@@ -56,7 +57,6 @@ public class Statistics implements ActionListener {
 
             count = 0;
         }
-        count++;
 
         int healthyCount = 0;
         int sickCount = 0;

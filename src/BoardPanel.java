@@ -1,3 +1,5 @@
+import Library.CustomColor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -6,7 +8,7 @@ import java.awt.event.ActionListener;
 public class BoardPanel extends JPanel implements ActionListener
 {
     Board simBoard;
-    Color background = Color.WHITE;
+    Color background = CustomColor.JET;
     Graphics2D g2D;
     boolean reset = false;
 
@@ -24,7 +26,7 @@ public class BoardPanel extends JPanel implements ActionListener
     public void resetBoard()
     {
         g2D.setColor(background);
-        g2D.clearRect(getBounds().x, getBounds().y, getBounds().width, getBounds().height);
+        g2D.fillRect(getBounds().x, getBounds().y, getBounds().width, getBounds().height);
     }
 
     public void updateBoard()

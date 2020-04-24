@@ -23,6 +23,7 @@ public class GUI {
     private JFrame frame;
     private Statistics stats;
     private boolean showPieFirst = true;
+    private boolean showCasesFirst = true;
 
 
     public GUI(int preWidth, int preHeight)
@@ -78,6 +79,8 @@ public class GUI {
         frame.pack();
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
+
+        tallyPanel.setShowCases(showCasesFirst);
     }
 
     private void addTitlePanel()
@@ -98,7 +101,7 @@ public class GUI {
         titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
         titleFont.setForeground(CustomColor.SILVER);
         titlePanel.add(titleFont);
-        titlePanel.setBackground(CustomColor.BLOOD_RED); //TODO Add Title Panel Color
+        titlePanel.setBackground(CustomColor.BLOOD_RED);
         topPanel.add(titlePanel, gbc);
     }
     private void addBoardPanel()
@@ -114,7 +117,6 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
         boardPanel = new BoardPanel();
-        boardPanel.setBackground(CustomColor.JET);
         boardPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         leftPanel.add(boardPanel, gbc);
     }
@@ -171,7 +173,7 @@ public class GUI {
         xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
         xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         xyChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
-        xyChartPanel.setVisible(!showPieFirst);
+        xyChartPanel.setVisible(!showPieFirst & !showCasesFirst);
         rightPanel.add(xyChartPanel, gbc);
     }
     private void addXYChartPanel2()
@@ -192,7 +194,7 @@ public class GUI {
         xyChartPanel2 = new XYChartPanel2(myXYChart2.getXYChart(), this);
         xyChartPanel2.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         xyChartPanel2.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
-        xyChartPanel2.setVisible(!showPieFirst);
+        xyChartPanel2.setVisible(!showPieFirst && showCasesFirst);
         rightPanel.add(xyChartPanel2, gbc);
     }
 
@@ -238,7 +240,7 @@ public class GUI {
         return xyChartPanel;
     }
 
-    public XYChartPanel2 getXyChartPanel2()
+    public XYChartPanel2 getXYChartPanel2()
     {
         return xyChartPanel2;
     }
@@ -257,6 +259,6 @@ public class GUI {
     {
         this.stats = stats;
         getXYChartPanel().setGraphDelay(stats.getGraphDelay());
-        getXyChartPanel2().setGraphDelay(stats.getGraphDelay());
+        getXYChartPanel2().setGraphDelay(stats.getGraphDelay());
     }
 }
