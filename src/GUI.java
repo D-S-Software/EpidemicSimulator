@@ -85,7 +85,7 @@ public class GUI {
         JLabel titleFont = new JLabel("Epidemic Simulator");
         titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
         titlePanel.add(titleFont);
-        titlePanel.setBackground(Color.GREEN);
+        titlePanel.setBackground(Color.GREEN); //TODO Add Title Panel Color
         topPanel.add(titlePanel, gbc);
     }
     private void addBoardPanel()
@@ -118,7 +118,7 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         controlPanel = new ControlPanel(this);
         controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.getMainPanel().setBackground(Color.LIGHT_GRAY);
+        controlPanel.getMainPanel().setBackground(Color.LIGHT_GRAY); //TODO Add Control Panel Color
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
     private void addTallyPanel()
@@ -155,7 +155,7 @@ public class GUI {
 
         xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
         xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        xyChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
+        xyChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
         xyChartPanel.setVisible(!showPieFirst);
         rightPanel.add(xyChartPanel, gbc);
     }
@@ -177,7 +177,7 @@ public class GUI {
 
         pieChartPanel = new PieChartPanel(myPieChart.getMyPieChart(),this);
         pieChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        pieChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
+        pieChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
 
         pieChartPanel.setVisible(showPieFirst);
         rightPanel.add(pieChartPanel, gbc);

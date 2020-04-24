@@ -60,7 +60,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         add(numDeadLabel);
         add(switchGraph);
 
-        setBackground(Color.ORANGE);
+        setBackground(Color.ORANGE); //TODO Add color for TallyPanel
     }
 
     public void actionPerformed(ActionEvent e)
