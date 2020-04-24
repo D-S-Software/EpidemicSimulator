@@ -2,21 +2,31 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import org.knowm.xchart.XYChart;
+
 public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList;
     private int time = 0, numHealthy=0, numSick=0, numRecovered=0, numDead=0, numPeople=0;
-    private GUI gui;
+   // private GUI gui;
     private Board simBoard;
     private static CreateFile x = new CreateFile();
+    private ArrayList<Integer> timeList = new ArrayList<>();
+    private ArrayList<Integer> healthyList = new ArrayList<>();
+    private ArrayList<Integer> sickList = new ArrayList<>();
+    private ArrayList<Integer> recoveredList = new ArrayList<>();
+    private ArrayList<Integer> deadList = new ArrayList<>();
 
-    public Statistics(Board simBoard, GUI gui, int numPeople)
+
+
+    public Statistics(Board simBoard, int numPeople)
     {
         this.simBoard = simBoard;
         pList = simBoard.getPList();
         this.numPeople = numPeople;
-        this.gui = gui;
+        //this.gui = gui;
         //x.openFile(); TODO Add back in at some point
+
     }
 
     public static CreateFile getCreateFile()
@@ -39,16 +49,22 @@ public class Statistics implements ActionListener {
             if(!pList.get(i).getHasDisease() && pList.get(i).getIsHealthy())
                 healthyCount++;
         }
-        numRecovered = recoveredCount;
-        numSick = sickCount;
-        numHealthy = healthyCount;
-        numDead = numPeople - numHealthy - numSick - numRecovered;
-        time++;
 
-        gui.getNumHealthyLabel().setText("NumHealthy: " + numHealthy);
-        gui.getNumSickLabel().setText("NumSick: " + numSick);
-        gui.getNumRecoveredLabel().setText("NumRecovered: " + numRecovered);
-        gui.getNumDeadLabel().setText("NumDead: " + numDead);
+        time++;
+        timeList.add(time);
+
+        numRecovered = recoveredCount;
+        recoveredList.add(numRecovered);
+
+        numSick = sickCount;
+        sickList.add(numSick);
+
+        numHealthy = healthyCount;
+        healthyList.add(numHealthy);
+
+        numDead = numPeople - numHealthy - numSick - numRecovered;
+        deadList.add(numDead);
+
 
         /**
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
@@ -66,6 +82,7 @@ public class Statistics implements ActionListener {
             x.closeFile();
             System.exit(0); TODO Add back in at some point
         }*/
+
     }
 
     /** Getter and Setter Methods */
@@ -88,6 +105,22 @@ public class Statistics implements ActionListener {
     public int getTime()
     {
         return time;
+    }
+
+    public ArrayList<Integer> getTimeList() {
+        return timeList;
+    }
+    public ArrayList<Integer> getHealthyList() {
+        return healthyList;
+    }
+    public ArrayList<Integer> getSickList() {
+        return sickList;
+    }
+    public ArrayList<Integer> getRecoveredList() {
+        return recoveredList;
+    }
+    public ArrayList<Integer> getDeadList() {
+        return deadList;
     }
 
     // TODO Remove when not needed for testing
