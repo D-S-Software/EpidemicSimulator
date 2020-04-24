@@ -10,6 +10,7 @@ public class GUI {
     private TallyPanel tallyPanel;
     private Chart myChart;
     private ChartPanel chartPanel;
+    private PieChartPanel pieChartPanel;
     private int preWidth, preHeight;
     private GUI gui = this;
     private JFrame frame;
@@ -153,6 +154,26 @@ public class GUI {
         rightPanel.add(chartPanel, gbc);
     }
 
+    private void addPieChartPanel()
+    {
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 1;
+        gbc.weighty = 20;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.insets = new Insets(5, 5, 5, 5);
+
+
+
+        pieChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        pieChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
+        rightPanel.add(pieChartPanel, gbc);
+    }
+
     public BoardPanel getBoardPanel()
     {
         return boardPanel;
@@ -170,6 +191,11 @@ public class GUI {
 
     public ChartPanel getChartPanel(){
         return chartPanel;
+    }
+
+    public PieChartPanel getPieChartPanel()
+    {
+        return pieChartPanel;
     }
 
     public Statistics getStats()
