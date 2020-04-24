@@ -150,7 +150,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
         tallyPanel = new TallyPanel(this, new GridLayout(2, 3));
-        tallyPanel.setBackground(CustomColor.ALLOY_ORANGE);
+        tallyPanel.setBackground(CustomColor.KOBICHA);
 
         rightPanel.add(tallyPanel, gbc);
     }

@@ -17,6 +17,10 @@ public class CustomColor extends Color{
 
     //Orange
     public static final Color ALLOY_ORANGE = new Color(196, 98, 16);
+    public static final Color BURNT_ORANGE = new Color(191, 87, 0);
+    public static final Color BURNT_UMBER = new Color(138, 51, 36);
+    public static final Color KOBICHA = new Color(107, 68, 35);
+
 
     //Yellow
     public static final Color GOLDENROD = new Color(218, 165, 32);
@@ -40,7 +44,8 @@ public class CustomColor extends Color{
     public static final Color EERIE_BLACK = new Color(27, 27, 27);
     public static final Color DAVYS_GRAY = new Color(85, 85, 85);
     public static final Color OUTER_SPACE = new Color(65, 74, 76);
-    public static final Color Onyx = new Color(53, 56, 57);
+    public static final Color ONYX = new Color(53, 56, 57);
+    public static final Color CINEROUS = new Color(152, 129, 123);
 
 
 
@@ -51,8 +56,8 @@ public class CustomColor extends Color{
     public static final Color DEAD = CustomColor.DIM_GRAY;
 
     public static final Color BACKGROUND = CustomColor.EERIE_BLACK;
-    public static final Color BUTTON = CustomColor.GOLDENROD;
-    public static final Color FIELD = CustomColor.GOLDENROD;
+    public static final Color BUTTON = CustomColor.ALLOY_ORANGE;
+    public static final Color FIELD = CustomColor.CINEROUS;
     public static final Color ON_BLOOD_RED_LABEL = CustomColor.WHITE;
     public static final Color ON_BUTTON_LABEL = Color.BLACK; /** Also for Fields , which are also Gold-based */
 

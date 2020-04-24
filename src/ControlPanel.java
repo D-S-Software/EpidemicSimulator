@@ -120,7 +120,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.ALLOY_ORANGE); //TODO add color for selection Panel
+        p.setBackground(CustomColor.KOBICHA); //TODO add color for selection Panel
         mainPanel.add(p, gbc);
     }
     public void addTitleControlPanel()
@@ -186,45 +186,56 @@ public class ControlPanel extends JPanel implements ActionListener{
         contagiousPercent.setFont(contagiousPercent.getFont ().deriveFont (18.0f));
         contagiousPercent.setBackground(CustomColor.FIELD);
         contagiousPercent.setForeground(CustomColor.ON_BUTTON_LABEL);
+        contagiousPercent.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         contagiousRange = new JTextField(1);
         contagiousRange.setFont(contagiousRange.getFont ().deriveFont (18.0f));
         contagiousRange.setBackground(CustomColor.FIELD);
         contagiousRange.setForeground(CustomColor.ON_BUTTON_LABEL);
+        contagiousRange.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         baseMortalityRate = new JTextField(1);
         baseMortalityRate.setFont(baseMortalityRate.getFont ().deriveFont (18.0f));
         baseMortalityRate.setBackground(CustomColor.FIELD);
         baseMortalityRate.setForeground(CustomColor.ON_BUTTON_LABEL);
+        baseMortalityRate.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         baseMinTimeSick = new JTextField(1);
         baseMinTimeSick.setFont(baseMinTimeSick.getFont ().deriveFont (18.0f));
         baseMinTimeSick.setBackground(CustomColor.FIELD);
         baseMinTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
+        baseMinTimeSick.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         baseMaxTimeSick = new JTextField(1);
         baseMaxTimeSick.setFont(baseMaxTimeSick.getFont ().deriveFont (18.0f));
         baseMaxTimeSick.setBackground(CustomColor.FIELD);
         baseMaxTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
+        baseMaxTimeSick.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         startPercentHealthy = new JTextField(1);
         startPercentHealthy.setFont(startPercentHealthy.getFont ().deriveFont (18.0f));
         startPercentHealthy.setBackground(CustomColor.FIELD);
         startPercentHealthy.setForeground(CustomColor.ON_BUTTON_LABEL);
+        startPercentHealthy.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         contagiousPercentLabel = new JLabel("Contagious %");
         contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
+        contagiousPercentLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
         contagiousRangeLabel = new JLabel("Contagious Range");
         contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
+        contagiousRangeLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
         baseMortalityRateLabel = new JLabel("  Mortality Rate");
         baseMortalityRateLabel.setFont(baseMortalityRateLabel.getFont ().deriveFont (15.0f));
+        baseMortalityRateLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
         baseMinTimeSickLabel = new JLabel("  Min Time Sick");
         baseMinTimeSickLabel.setFont( baseMinTimeSickLabel.getFont ().deriveFont (15.0f));
+        baseMinTimeSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
         baseMaxTimeSickLabel = new JLabel("  Max Time Sick");
         baseMaxTimeSickLabel.setFont(baseMaxTimeSickLabel.getFont ().deriveFont (15.0f));
+        baseMaxTimeSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
         startPercentHealthyLabel = new JLabel("  Start Healthy %");
         startPercentHealthyLabel.setFont(startPercentHealthyLabel.getFont ().deriveFont (15.0f));
-
+        startPercentHealthyLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
         p.add(contagiousPercentLabel);
         p.add(contagiousPercent);
@@ -240,7 +251,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(startPercentHealthy);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.ALLOY_ORANGE); //TODO add color for Parameter Panel
+        p.setBackground(CustomColor.KOBICHA); //TODO add color for Parameter Panel
         mainPanel.add(p, gbc);
     }
     public void addButtonPanel()
