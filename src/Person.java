@@ -19,7 +19,7 @@ public class Person {
         this.disease = disease;
         this.xPos = xPos;
         this.yPos = yPos;
-        maxTimeSick = disease.getBaseMaxTimeSick() + 1000 * (int)(age*Math.random());
+        maxTimeSick = disease.getBaseMaxTimeSick() + 100 * (int)(age*Math.random());
         mortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         directionAngle = (int)(360*Math.random());
 
