@@ -1,3 +1,5 @@
+import Library.CustomColor;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -84,8 +86,9 @@ public class GUI {
         titlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         JLabel titleFont = new JLabel("Epidemic Simulator");
         titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
+        titleFont.setForeground(CustomColor.SILVER);
         titlePanel.add(titleFont);
-        titlePanel.setBackground(Color.GREEN); //TODO Add Title Panel Color
+        titlePanel.setBackground(CustomColor.BLOOD_RED); //TODO Add Title Panel Color
         topPanel.add(titlePanel, gbc);
     }
     private void addBoardPanel()
@@ -101,6 +104,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
         boardPanel = new BoardPanel();
+        boardPanel.setBackground(CustomColor.JET);
         boardPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         leftPanel.add(boardPanel, gbc);
     }
@@ -118,7 +122,7 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         controlPanel = new ControlPanel(this);
         controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.getMainPanel().setBackground(Color.LIGHT_GRAY); //TODO Add Control Panel Color
+        controlPanel.getMainPanel().setBackground(CustomColor.GUNMETAL); //TODO Add Control Panel Color
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
     private void addTallyPanel()

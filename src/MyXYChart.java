@@ -9,10 +9,10 @@ public class MyXYChart {
     public XYChart getXYChart()
     {
         // Create Chart
-        xychart = new XYChartBuilder().width(400).height(300).title("Population Breakdown vs TIme").xAxisTitle("Time").yAxisTitle("Pop").build();
+        xychart = new XYChartBuilder().width(400).height(300).title("Population Breakdown vs Time").xAxisTitle("Time (.01s))").yAxisTitle("Population (#)").build();
 
         // Customize Chart
-        xychart.getStyler().setLegendPosition(LegendPosition.InsideNE);
+        xychart.getStyler().setLegendPosition(LegendPosition.OutsideS);
 
         // Series TODO Add colors for the line graph
         //TODO Chagne the front size for the line graph

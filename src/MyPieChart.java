@@ -20,7 +20,7 @@ public class MyPieChart {
         healthySeries.setFillColor(CustomColor.SAVOY_BLUE);
 
         PieSeries sickSeries = pieChart.addSeries("Sick",0);
-        sickSeries.setFillColor(Color.RED);
+        sickSeries.setFillColor(CustomColor.CARMINE);
 
         PieSeries recoveredSeries = pieChart.addSeries("Recovered", 0);
         recoveredSeries.setFillColor(CustomColor.SILVER);

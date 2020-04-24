@@ -1,3 +1,5 @@
+import Library.CustomColor;
+
 import java.awt.*;
 
 public class Person {
@@ -19,7 +21,7 @@ public class Person {
         this.disease = disease;
         this.xPos = xPos;
         this.yPos = yPos;
-        maxTimeSick = disease.getBaseMaxTimeSick() + 100 * (int)(age*Math.random());
+        maxTimeSick = disease.getBaseMaxTimeSick() + 100 * (int)(age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
         mortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         directionAngle = (int)(360*Math.random());
 
@@ -109,14 +111,14 @@ public class Person {
     {
         Color color;
         if(hasDisease && !isHealthy)
-            color = Color.RED;
+            color = CustomColor.CARMINE;
         else if(!hasDisease && isHealthy)
         {
-            color = Color.BLUE;
+            color = CustomColor.SAVOY_BLUE;
         }
         else // (hasDisease && isHealthy)
         {
-            color = Color.GRAY;
+            color = CustomColor.SILVER;
         }
 
         g2D.setPaint(color);

@@ -2,16 +2,38 @@ package Library;
 
 import java.awt.*;
 
-public class CustomColor {
+public class CustomColor extends Color{
 
-    private CustomColor()
+    public CustomColor(int r, int g, int b)
     {
-
+        super(r,b,g);
     }
 
-    public static final Color DIM_GRAY = new Color(105,105,105);
-    public static final Color SILVER = new Color(192,192,192);
-    public static final Color SAVOY_BLUE = new Color(75, 97, 209);
+
+    public static final Color REDWOOD = new Color(164, 90, 82);/** Red based */
+    public static final Color DARK_RED = new Color(139, 0, 0);/** Red based */
+    public static final Color CARMINE = new Color(150, 0, 24);/** Red based */
+    public static final Color BLOOD_RED = new Color(102, 0, 0);/** Red based */
+
+    //Orange
+
+    //Yellow
+
+    //Green
+
+    //Blue
+    public static final Color SAVOY_BLUE = new Color(75, 97, 209);/** Blue based */
+
+    //Violet
+
+    //Gray
+    public static final Color DIM_GRAY = new Color(105,105,105); /** Gray based */
+    public static final Color SILVER = new Color(192,192,192);/** Gray based */
+    public static final Color JET = new Color(52, 52, 52);/** Gray based */
+    public static final Color SLATE_GRAY = new Color(112, 128, 144);
+    public static final Color GUNMETAL = new Color(42, 52, 57);
+    public static final Color CHARCOAL = new Color(54, 69, 79);
+
 
 
 }
