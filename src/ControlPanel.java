@@ -21,14 +21,14 @@ public class ControlPanel extends JPanel implements ActionListener{
     {
         this.gui = gui;
 
-        checkTick = new Timer(10, this);
-        checkTick.start();
-
         addSelectionPanel();
         addLabelPanel();
         addParamPanel();
         addButtonPanel();
         addTypeControlPanel();
+
+        checkTick = new Timer(10, this);
+        checkTick.start();
     }
 
     public void addSelectionPanel()
