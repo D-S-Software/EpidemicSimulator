@@ -15,18 +15,23 @@ public class MyPieChart {
         pieChart = new PieChartBuilder().width(400).height(400).title("Percent per Condition").build();
         pieChart.getStyler().setLegendPosition(Styler.LegendPosition.OutsideS);
         pieChart.getStyler().setLegendLayout(Styler.LegendLayout.Horizontal);
+        pieChart.getStyler().setChartBackgroundColor(CustomColor.JET);
+        pieChart.getStyler().setLegendBackgroundColor(CustomColor.JET);
+        pieChart.getStyler().setChartFontColor(CustomColor.WHITE);
+        pieChart.getStyler().setPlotBackgroundColor(CustomColor.JET);
+        pieChart.getStyler().setPlotBorderColor(CustomColor.JET);
 
         PieSeries healthySeries = pieChart.addSeries("Healthy", 0);
-        healthySeries.setFillColor(CustomColor.SAVOY_BLUE);
+        healthySeries.setFillColor(CustomColor.HEALTHY);
 
         PieSeries sickSeries = pieChart.addSeries("Sick",0);
-        sickSeries.setFillColor(CustomColor.CARMINE);
+        sickSeries.setFillColor(CustomColor.SICK);
 
         PieSeries recoveredSeries = pieChart.addSeries("Recovered", 0);
-        recoveredSeries.setFillColor(CustomColor.SILVER);
+        recoveredSeries.setFillColor(CustomColor.RECOVERED);
 
         PieSeries deadSeries = pieChart.addSeries("Dead",0);
-        deadSeries.setFillColor(CustomColor.DIM_GRAY);
+        deadSeries.setFillColor(CustomColor.DEAD);
 
         return pieChart;
     }

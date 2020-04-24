@@ -31,6 +31,10 @@ public class GUI {
         this.preWidth = preWidth;
 
         frame = new JFrame("EpidemicSimulator");
+        frame.getContentPane().setBackground(CustomColor.EERIE_BLACK);
+        ImageIcon pic1 = new ImageIcon("corona.jpg");
+        Image image1 = pic1.getImage();
+        frame.setIconImage(image1);
         frame.setPreferredSize(new Dimension(preWidth, preHeight));
         frame.setLayout(new GridBagLayout());
         GridBagConstraints gbcMain = new GridBagConstraints();
@@ -45,6 +49,7 @@ public class GUI {
         gbcMain.insets = new Insets(2, 2, 2, 2);
 
         topPanel = new JPanel(new GridBagLayout());
+        topPanel.setBackground(CustomColor.EERIE_BLACK);
         addTitlePanel();
         frame.add(topPanel, gbcMain);
 
@@ -53,6 +58,7 @@ public class GUI {
         gbcMain.weighty = 40;
 
         leftPanel = new JPanel(new GridBagLayout());
+        leftPanel.setBackground(CustomColor.EERIE_BLACK);
         addBoardPanel();
         addControlPanel();
         frame.add(leftPanel, gbcMain);
@@ -61,6 +67,7 @@ public class GUI {
         gbcMain.weightx = .1;
 
         rightPanel = new JPanel(new GridBagLayout());
+        rightPanel.setBackground(CustomColor.EERIE_BLACK);
         addTallyPanel();
         addXYChartPanel2();
         addXYChartPanel();
@@ -125,7 +132,7 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         controlPanel = new ControlPanel(this);
         controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.getMainPanel().setBackground(CustomColor.GUNMETAL); //TODO Add Control Panel Color
+        controlPanel.getMainPanel().setBackground(CustomColor.EERIE_BLACK); //TODO Add Control Panel Color
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
     private void addTallyPanel()
@@ -141,6 +148,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
         tallyPanel = new TallyPanel(this, new GridLayout(2, 3));
+        tallyPanel.setBackground(CustomColor.ALLOY_ORANGE);
 
         rightPanel.add(tallyPanel, gbc);
     }
@@ -205,7 +213,7 @@ public class GUI {
 
         pieChartPanel = new PieChartPanel(myPieChart.getMyPieChart(),this);
         pieChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        pieChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
+       // pieChartPanel.setBackground(CustomColor.JET); //Being over-rid by Graph background TODO Do we need to change the color here?
 
         pieChartPanel.setVisible(showPieFirst);
         rightPanel.add(pieChartPanel, gbc);

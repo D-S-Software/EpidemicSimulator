@@ -1,3 +1,5 @@
+import Library.CustomColor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -19,19 +21,23 @@ public class TallyPanel extends JPanel implements ActionListener {
 
         numHealthyLabel = new JLabel("Healthy: ");
         numHealthyLabel.setFont(numHealthyLabel.getFont ().deriveFont (18.0f));
+        numHealthyLabel.setForeground(CustomColor.BLACK);
         numHealthyLabel.setPreferredSize(new Dimension(20, 10));
 
 
         numSickLabel = new JLabel("Sick: ");
         numSickLabel.setFont(numSickLabel.getFont ().deriveFont (18.0f));
+        numSickLabel.setForeground(CustomColor.BLACK);
         numSickLabel.setPreferredSize(new Dimension(20, 10));
 
         numRecoveredLabel = new JLabel("Recovered: ");
         numRecoveredLabel.setFont(numRecoveredLabel.getFont ().deriveFont (18.0f));
+        numRecoveredLabel.setForeground(CustomColor.BLACK);
         numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
 
         numDeadLabel = new JLabel("Dead: ");
         numDeadLabel.setFont(numDeadLabel.getFont ().deriveFont (18.0f));
+        numDeadLabel.setForeground(CustomColor.BLACK);
         numDeadLabel.setPreferredSize(new Dimension(20, 10));
 
         toggle = new JButton("Graph Mode");
