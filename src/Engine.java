@@ -4,16 +4,12 @@ import java.awt.*;
 public class Engine {
 
     private Timer clock;
-    private GUI gui;
-    private Board simBoard;
 
     public Engine(GUI gui, Disease disease, int numPeople)
     {
-        this.gui = gui;
-
         Rectangle boardDimens = new Rectangle(gui.getBoardRec());
 
-        simBoard = new Board(disease, boardDimens, numPeople);
+        Board simBoard = new Board(disease, boardDimens, numPeople);
 
         gui.getBoardPanel().setBoard(simBoard);
 
