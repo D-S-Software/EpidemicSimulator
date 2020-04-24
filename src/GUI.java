@@ -1,3 +1,5 @@
+import org.knowm.xchart.XChartPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,8 +9,9 @@ public class GUI {
     private TitlePanel titlePanel;
     private BoardPanel boardPanel;
     private ControlPanel controlPanel;
-    private TalleyPanel talleyPanel;
-    private GraphPanel graphPanel;
+    private TallyPanel tallyPanel;
+    private Chart myChart;
+    private ChartPanel chartPanel;
     private int preWidth, preHeight;
     private JLabel numHealthyLabel = new JLabel();
     private JLabel numSickLabel = new JLabel();
@@ -16,6 +19,8 @@ public class GUI {
     private JLabel numDeadLabel = new JLabel();
     private GUI gui = this;
     private JFrame frame;
+    private Statistics stats;
+
 
     public GUI(int preWidth, int preHeight)
     {
@@ -54,13 +59,15 @@ public class GUI {
 
         rightPanel = new JPanel(new GridBagLayout());
         addTallyPanel();
-        addGraphPanel();
+        addChartPanel();
         frame.add(rightPanel, gbcMain);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
+
+
     }
 
     private void addTitlePanel()
@@ -128,8 +135,8 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        talleyPanel = new TalleyPanel(new GridLayout(2, 2));
-        talleyPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        tallyPanel = new TallyPanel(this, new GridLayout(2, 2));
+        tallyPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         numHealthyLabel.setPreferredSize(new Dimension(20, 10));
         numHealthyLabel.setText("NumHealthy: ");
         numSickLabel.setPreferredSize(new Dimension(20, 10));
@@ -138,14 +145,14 @@ public class GUI {
         numRecoveredLabel.setText("NumRecovered: ");
         numDeadLabel.setPreferredSize(new Dimension(20, 10));
         numDeadLabel.setText("NumDead: ");
-        talleyPanel.add(numHealthyLabel);
-        talleyPanel.add(numRecoveredLabel);
-        talleyPanel.add(numSickLabel);
-        talleyPanel.add(numDeadLabel);
-        talleyPanel.setBackground(Color.ORANGE);
-        rightPanel.add(talleyPanel, gbc);
+        tallyPanel.add(numHealthyLabel);
+        tallyPanel.add(numRecoveredLabel);
+        tallyPanel.add(numSickLabel);
+        tallyPanel.add(numDeadLabel);
+        tallyPanel.setBackground(Color.ORANGE);
+        rightPanel.add(tallyPanel, gbc);
     }
-    private void addGraphPanel()
+    private void addChartPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
@@ -157,16 +164,29 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        graphPanel = new GraphPanel();
-        graphPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        graphPanel.add(new JLabel("Graph Panel"));
-        graphPanel.setBackground(Color.YELLOW);
-        rightPanel.add(graphPanel, gbc);
+
+        myChart = new Chart(); /* This is not in the constructor because a GUI object must be created first,
+                                     *then gui.stats() is called in Engine. Then myChart.setStats(stats) can be called here.*/
+        //myChart.setStats(stats);
+
+        //chartPanel = new XChartPanel(myChart.getChart());
+
+
+        chartPanel = new ChartPanel(myChart.getXYChart(), this);
+        chartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        //chartPanel.add(new JLabel("Graph Panel"));
+        chartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
+        rightPanel.add(chartPanel, gbc);
     }
 
     public BoardPanel getBoardPanel()
     {
         return boardPanel;
+    }
+
+    public TallyPanel getTallyPanel()
+    {
+        return tallyPanel;
     }
 
     public JFrame getFrame()
@@ -199,6 +219,24 @@ public class GUI {
     public JLabel getNumDeadLabel() {
         return numDeadLabel;
     }
+
+    public ChartPanel getChartPanel(){
+        return chartPanel;
+    }
+
+    public Chart getMyChart()
+    {
+        return myChart;
+    }
+    public Statistics getStats()
+    {
+        return stats;
+    }
+    public void setStats(Statistics stats)
+    {
+        this.stats = stats;
+    }
+
     public void setNumHealthyLabel(String s)
     {
         numHealthyLabel.setText(s);

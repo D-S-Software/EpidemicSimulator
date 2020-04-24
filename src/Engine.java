@@ -16,10 +16,13 @@ public class Engine {
 
         gui.getBoardPanel().setBoard(simBoard);
 
-        Statistics stats = new Statistics(simBoard, gui, numPeople);
+        Statistics stats = new Statistics(simBoard, numPeople);
+        gui.setStats(stats);
 
         clock = new Timer(10, gui.getBoardPanel());
         clock.addActionListener(stats);
+        clock.addActionListener(gui.getChartPanel());
+        clock.addActionListener(gui.getTallyPanel());
     }
 
    public Timer getClock()
