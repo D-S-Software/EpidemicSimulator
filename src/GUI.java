@@ -57,7 +57,7 @@ public class GUI {
 
         rightPanel = new JPanel(new GridBagLayout());
         addTallyPanel();
-        //addChartPanel();
+        addChartPanel();
         addPieChartPanel();
         frame.add(rightPanel, gbcMain);
 

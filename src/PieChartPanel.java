@@ -8,7 +8,7 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
     private GUI gui;
     private PieChart pc;
 
-    
+    private int count;
 
     public PieChartPanel(PieChart pc, GUI gui)
     {
@@ -19,13 +19,17 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
 
     public void actionPerformed(ActionEvent e)
     {
-        if()
-        pc.updatePieSeries("Healthy", gui.getStats().getNumHealthy());
-        pc.updatePieSeries("Sick", gui.getStats().getNumSick());
-        pc.updatePieSeries("Recovered", gui.getStats().getNumRecovered());
-        pc.updatePieSeries("Dead", gui.getStats().getNumDead());
+        if(count == 9)
+        {
+            pc.updatePieSeries("Healthy", gui.getStats().getNumHealthy());
+            pc.updatePieSeries("Sick", gui.getStats().getNumSick());
+            pc.updatePieSeries("Recovered", gui.getStats().getNumRecovered());
+            pc.updatePieSeries("Dead", gui.getStats().getNumDead());
 
-        repaint();
+            repaint();
 
+            count = 0;
+        }
+        count++;
     }
 }
