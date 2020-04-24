@@ -19,6 +19,9 @@ public class CustomColor extends Color{
     public static final Color ALLOY_ORANGE = new Color(196, 98, 16);
 
     //Yellow
+    public static final Color GOLDENROD = new Color(218, 165, 32);
+    public static final Color ROYAL_YELLOW = new Color(250, 218, 94);
+    public static final Color SAFTEY_YELLOW = new Color(255, 211, 0);
 
     //Green
 
@@ -46,6 +49,12 @@ public class CustomColor extends Color{
     public static final Color SICK = CustomColor.CARMINE;
     public static final Color RECOVERED = CustomColor.SILVER;
     public static final Color DEAD = CustomColor.DIM_GRAY;
+
+    public static final Color BACKGROUND = CustomColor.EERIE_BLACK;
+    public static final Color BUTTON = CustomColor.GOLDENROD;
+    public static final Color FIELD = CustomColor.GOLDENROD;
+    public static final Color ON_BLOOD_RED_LABEL = CustomColor.WHITE;
+    public static final Color ON_BUTTON_LABEL = Color.BLACK; /** Also for Fields , which are also Gold-based */
 
 
 

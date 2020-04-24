@@ -32,7 +32,7 @@ public class GUI {
         this.preWidth = preWidth;
 
         frame = new JFrame("EpidemicSimulator");
-        frame.getContentPane().setBackground(CustomColor.EERIE_BLACK);
+        frame.getContentPane().setBackground(CustomColor.BACKGROUND);
         ImageIcon pic1 = new ImageIcon("corona.jpg");
         Image image1 = pic1.getImage();
         frame.setIconImage(image1);
@@ -50,7 +50,7 @@ public class GUI {
         gbcMain.insets = new Insets(2, 2, 2, 2);
 
         topPanel = new JPanel(new GridBagLayout());
-        topPanel.setBackground(CustomColor.EERIE_BLACK);
+        topPanel.setBackground(CustomColor.BACKGROUND);
         addTitlePanel();
         frame.add(topPanel, gbcMain);
 
@@ -59,7 +59,7 @@ public class GUI {
         gbcMain.weighty = 40;
 
         leftPanel = new JPanel(new GridBagLayout());
-        leftPanel.setBackground(CustomColor.EERIE_BLACK);
+        leftPanel.setBackground(CustomColor.BACKGROUND);
         addBoardPanel();
         addControlPanel();
         frame.add(leftPanel, gbcMain);
@@ -68,7 +68,7 @@ public class GUI {
         gbcMain.weightx = .1;
 
         rightPanel = new JPanel(new GridBagLayout());
-        rightPanel.setBackground(CustomColor.EERIE_BLACK);
+        rightPanel.setBackground(CustomColor.BACKGROUND);
         addTallyPanel();
         addXYChartPanel2();
         addXYChartPanel();
@@ -99,7 +99,7 @@ public class GUI {
         titlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         JLabel titleFont = new JLabel("Epidemic Simulator");
         titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
-        titleFont.setForeground(CustomColor.SILVER);
+        titleFont.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
         titlePanel.add(titleFont);
         titlePanel.setBackground(CustomColor.BLOOD_RED);
         topPanel.add(titlePanel, gbc);
@@ -134,7 +134,7 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         controlPanel = new ControlPanel(this);
         controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.getMainPanel().setBackground(CustomColor.EERIE_BLACK); //TODO Add Control Panel Color
+        controlPanel.getMainPanel().setBackground(CustomColor.BACKGROUND); //TODO Add Control Panel Color
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
     private void addTallyPanel()

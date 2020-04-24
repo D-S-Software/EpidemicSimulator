@@ -49,14 +49,29 @@ public class ControlPanel extends JPanel implements ActionListener{
 
         choice1 = new JRadioButton("Disease 1   ");
         choice1.setFont(choice1.getFont ().deriveFont (16.0f));
+        choice1.setBackground(CustomColor.BUTTON);
+        choice1.setForeground(CustomColor.ON_BUTTON_LABEL);
+        choice1.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         choice2 = new JRadioButton("Disease 2   ");
         choice2.setFont(choice2.getFont ().deriveFont (16.0f));
+        choice2.setBackground(CustomColor.BUTTON);
+        choice2.setForeground(CustomColor.ON_BUTTON_LABEL);
+        choice2.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         choice3 = new JRadioButton("Disease 3   ");
         choice3.setFont(choice3.getFont ().deriveFont (16.0f));
+        choice3.setBackground(CustomColor.BUTTON);
+        choice3.setForeground(CustomColor.ON_BUTTON_LABEL);
+        choice3.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         choice4 = new JRadioButton("Disease 4   ");
         choice4.setFont(choice4.getFont ().deriveFont (16.0f));
+        choice4.setBackground(CustomColor.BUTTON);
+        choice4.setForeground(CustomColor.ON_BUTTON_LABEL);
+        choice4.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         custom = new JRadioButton("Custom");
         custom.setFont(custom.getFont ().deriveFont (16.0f));
+        custom.setBackground(CustomColor.BUTTON);
+        custom.setForeground(CustomColor.ON_BUTTON_LABEL);
+        custom.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         g1 = new ButtonGroup();
         g1.add(choice1);
@@ -105,7 +120,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED); //TODO add color for selection Panel
+        p.setBackground(CustomColor.ALLOY_ORANGE); //TODO add color for selection Panel
         mainPanel.add(p, gbc);
     }
     public void addTitleControlPanel()
@@ -122,9 +137,10 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel();
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(Color.getHSBColor((2 - 1) / 9f, 0.75f, 0.95f)); //TODO add color for Control Title Panel
+        p.setBackground(CustomColor.BLOOD_RED); //TODO add color for Control Title Panel
         JLabel controls = new JLabel("Controls:");
         controls.setFont(controls.getFont ().deriveFont (24.0f));
+        controls.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
         p.add(controls);
         mainPanel.add(p, gbc);
     }
@@ -142,8 +158,14 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel();
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(Color.getHSBColor((3 - 1) / 9f, 0.75f, 0.95f)); //TODO Add color for sim setting panel
-        p.add(new JLabel("[Sim Settings Location]"));
+        p.setBackground(CustomColor.BLOOD_RED); //TODO Add color for sim setting panel
+
+        ImageIcon pic = new ImageIcon("SettingsIcon.jpg");
+        Image image = pic.getImage();
+      //  JButton settings = new JButton((new ImageIcon(image.getScaledInstance(120,120, java.awt.Image.SCALE_SMOOTH))));
+        JButton settings = new JButton(pic);
+
+        p.add(settings);
         mainPanel.add(p, gbc);
     }
     public void addParamPanel()
@@ -162,16 +184,28 @@ public class ControlPanel extends JPanel implements ActionListener{
 
         contagiousPercent = new JTextField(1);
         contagiousPercent.setFont(contagiousPercent.getFont ().deriveFont (18.0f));
+        contagiousPercent.setBackground(CustomColor.FIELD);
+        contagiousPercent.setForeground(CustomColor.ON_BUTTON_LABEL);
         contagiousRange = new JTextField(1);
         contagiousRange.setFont(contagiousRange.getFont ().deriveFont (18.0f));
+        contagiousRange.setBackground(CustomColor.FIELD);
+        contagiousRange.setForeground(CustomColor.ON_BUTTON_LABEL);
         baseMortalityRate = new JTextField(1);
         baseMortalityRate.setFont(baseMortalityRate.getFont ().deriveFont (18.0f));
+        baseMortalityRate.setBackground(CustomColor.FIELD);
+        baseMortalityRate.setForeground(CustomColor.ON_BUTTON_LABEL);
         baseMinTimeSick = new JTextField(1);
         baseMinTimeSick.setFont(baseMinTimeSick.getFont ().deriveFont (18.0f));
+        baseMinTimeSick.setBackground(CustomColor.FIELD);
+        baseMinTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
         baseMaxTimeSick = new JTextField(1);
         baseMaxTimeSick.setFont(baseMaxTimeSick.getFont ().deriveFont (18.0f));
+        baseMaxTimeSick.setBackground(CustomColor.FIELD);
+        baseMaxTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
         startPercentHealthy = new JTextField(1);
         startPercentHealthy.setFont(startPercentHealthy.getFont ().deriveFont (18.0f));
+        startPercentHealthy.setBackground(CustomColor.FIELD);
+        startPercentHealthy.setForeground(CustomColor.ON_BUTTON_LABEL);
 
         contagiousPercentLabel = new JLabel("Contagious %");
         contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
@@ -206,7 +240,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(startPercentHealthy);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(Color.getHSBColor((4 - 1) / 9f, 0.75f, 0.95f)); //TODO add color for Parameter Panel
+        p.setBackground(CustomColor.ALLOY_ORANGE); //TODO add color for Parameter Panel
         mainPanel.add(p, gbc);
     }
     public void addButtonPanel()
@@ -225,14 +259,21 @@ public class ControlPanel extends JPanel implements ActionListener{
 
         numPeopleLabel = new JLabel("NumPeople:");
         numPeopleLabel.setFont(numPeopleLabel.getFont ().deriveFont (20.0f));
+        numPeopleLabel.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
         p.add(numPeopleLabel);
 
         numPeopleField = new JTextField(1);
+        numPeopleField.setBackground(CustomColor.FIELD);
         numPeopleField.setFont(numPeopleField.getFont ().deriveFont (20.0f));
+        numPeopleField.setForeground(CustomColor.ON_BUTTON_LABEL);
+        numPeopleField.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         p.add(numPeopleField);
 
         start = new JButton("Start");
+        start.setBackground(CustomColor.BUTTON);
+        start.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         start.setFont(start.getFont ().deriveFont (18.0f));
+        start.setForeground(CustomColor.ON_BUTTON_LABEL);
         start.setPreferredSize(new Dimension(100,30));
 
         start.addActionListener(new ActionListener() {
@@ -277,8 +318,11 @@ public class ControlPanel extends JPanel implements ActionListener{
         });
 
         playPause = new JButton("Play/Pause");
+        playPause.setBackground(CustomColor.BUTTON);
         playPause.setFont(playPause.getFont ().deriveFont (18.0f));
+        playPause.setForeground(CustomColor.ON_BUTTON_LABEL);
         playPause.setPreferredSize(new Dimension(100,30));
+        playPause.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         playPause.addActionListener(new ActionListener() {
             @Override
@@ -301,8 +345,11 @@ public class ControlPanel extends JPanel implements ActionListener{
         });
 
         reset = new JButton("Reset");
+        reset.setBackground(CustomColor.BUTTON);
         reset.setFont(reset.getFont ().deriveFont (18.0f));
+        reset.setForeground(CustomColor.ON_BUTTON_LABEL);
         reset.setPreferredSize(new Dimension(100,30));
+        reset.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         reset.addActionListener(new ActionListener() {
             @Override
@@ -335,7 +382,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(reset);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(Color.getHSBColor((5 - 1) / 9f, 0.75f, 0.95f)); //TODO add color for Button Panel
+        p.setBackground(CustomColor.BLOOD_RED); //TODO add color for Button Panel
         mainPanel.add(p, gbc);
     }
 
