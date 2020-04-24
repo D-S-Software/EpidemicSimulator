@@ -12,7 +12,9 @@ public class GUI {
     private TallyPanel tallyPanel;
 
     private MyXYChart myXYChart;
+    private MyXYChart2 myXYChart2;
     private XYChartPanel xyChartPanel;
+    private XYChartPanel2 xyChartPanel2;
     private MyPieChart myPieChart;
     private PieChartPanel pieChartPanel;
 
@@ -60,6 +62,7 @@ public class GUI {
 
         rightPanel = new JPanel(new GridBagLayout());
         addTallyPanel();
+        addXYChartPanel2();
         addXYChartPanel();
         addPieChartPanel();
         frame.add(rightPanel, gbcMain);
@@ -163,6 +166,27 @@ public class GUI {
         xyChartPanel.setVisible(!showPieFirst);
         rightPanel.add(xyChartPanel, gbc);
     }
+    private void addXYChartPanel2()
+    {
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 1;
+        gbc.weighty = 20;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.insets = new Insets(5, 5, 5, 5);
+
+        myXYChart2 = new MyXYChart2();
+
+        xyChartPanel2 = new XYChartPanel2(myXYChart2.getXYChart(), this);
+        xyChartPanel2.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        xyChartPanel2.setBackground(Color.YELLOW); //Being over-rid by Graph background TODO Do we need to change the color here?
+        xyChartPanel2.setVisible(!showPieFirst);
+        rightPanel.add(xyChartPanel2, gbc);
+    }
 
     private void addPieChartPanel()
     {
@@ -206,6 +230,11 @@ public class GUI {
         return xyChartPanel;
     }
 
+    public XYChartPanel2 getXyChartPanel2()
+    {
+        return xyChartPanel2;
+    }
+
     public PieChartPanel getPieChartPanel()
     {
         return pieChartPanel;
@@ -220,5 +249,6 @@ public class GUI {
     {
         this.stats = stats;
         getXYChartPanel().setGraphDelay(stats.getGraphDelay());
+        getXyChartPanel2().setGraphDelay(stats.getGraphDelay());
     }
 }

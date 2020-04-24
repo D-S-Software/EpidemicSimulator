@@ -5,13 +5,14 @@ import java.util.ArrayList;
 public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList;
-    private int time, numHealthy, numSick, numRecovered, numDead, numPeople;
+    private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
     private ArrayList<Integer> sickList = new ArrayList<>();
     private ArrayList<Integer> recoveredList = new ArrayList<>();
     private ArrayList<Integer> deadList = new ArrayList<>();
+    private ArrayList<Integer> casesList = new ArrayList<>();
     private int graphDelay = 249;
     private int count = graphDelay;
 
@@ -34,6 +35,7 @@ public class Statistics implements ActionListener {
         numHealthy = healthyCount;
         numSick = sickCount;
         numPeople = pList.size();
+        numCases = numSick + numRecovered + numDead;
     }
 
     public static CreateFile getCreateFile()
@@ -50,6 +52,7 @@ public class Statistics implements ActionListener {
             sickList.add(numSick);
             recoveredList.add(numRecovered);
             deadList.add(numDead);
+            casesList.add(numCases);
 
             count = 0;
         }
@@ -74,6 +77,7 @@ public class Statistics implements ActionListener {
         numSick = sickCount;
         numHealthy = healthyCount;
         numDead = numPeople - numHealthy - numSick - numRecovered;
+        numCases = numSick + numRecovered + numDead;
 
         /**
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
@@ -118,6 +122,9 @@ public class Statistics implements ActionListener {
     {
         return graphDelay;
     }
+    public int getNumCases() {
+        return numCases;
+    }
 
     public ArrayList<Integer> getTimeList() {
         return timeList;
@@ -133,5 +140,8 @@ public class Statistics implements ActionListener {
     }
     public ArrayList<Integer> getDeadList() {
         return deadList;
+    }
+    public ArrayList<Integer> getCasesList() {
+        return casesList;
     }
 }

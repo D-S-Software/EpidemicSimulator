@@ -6,7 +6,9 @@ import java.awt.event.ActionListener;
 public class TallyPanel extends JPanel implements ActionListener {
 
     GUI gui;
-    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, fillLater;
+    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel;
+    JButton switchGraph, toggle;
+    boolean casesDisplayed = true;
 
     public TallyPanel(GUI gui, GridLayout gl)
     {
@@ -32,8 +34,29 @@ public class TallyPanel extends JPanel implements ActionListener {
         numDeadLabel.setFont(numDeadLabel.getFont ().deriveFont (18.0f));
         numDeadLabel.setPreferredSize(new Dimension(20, 10));
 
-        fillLater = new JLabel();
-        JButton switchGraph = new JButton("Switch Graph");
+        toggle = new JButton("Graph Mode");
+        toggle.setFont(toggle.getFont ().deriveFont (18.0f));
+
+        toggle.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if(casesDisplayed)
+                {
+                    gui.getXyChartPanel2().setVisible(false);
+                    gui.getXYChartPanel().setVisible(true);
+                    casesDisplayed = false;
+                }
+                else
+                {
+                    gui.getXYChartPanel().setVisible(false);
+                    gui.getXyChartPanel2().setVisible(true);
+                    casesDisplayed = true;
+                }
+            }
+        });
+
+        switchGraph = new JButton("Switch Graph");
         switchGraph.setFont(switchGraph.getFont ().deriveFont (18.0f));
 
         switchGraph.addActionListener(new ActionListener() {
@@ -55,7 +78,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
         add(numHealthyLabel);
         add(numRecoveredLabel);
-        add(fillLater);
+        add(toggle);
         add(numSickLabel);
         add(numDeadLabel);
         add(switchGraph);
@@ -69,6 +92,11 @@ public class TallyPanel extends JPanel implements ActionListener {
         numSickLabel.setText("Sick: " + gui.getStats().getNumSick() + "  ");
         numRecoveredLabel.setText("Recovered: " + gui.getStats().getNumRecovered() + "  ");
         numDeadLabel.setText("Dead: " + gui.getStats().getNumDead() + "    ");
+
+        if(gui.getXYChartPanel().isVisible() || gui.getXyChartPanel2().isVisible())
+            toggle.setVisible(true);
+        else
+            toggle.setVisible(false);
     }
 
     public void setNumHealthyLabel(String s)

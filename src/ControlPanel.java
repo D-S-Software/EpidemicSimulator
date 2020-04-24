@@ -319,6 +319,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                 gui.getBoardPanel().repaint();
 
                 gui.getXYChartPanel().resetXY();
+                gui.getXyChartPanel2().resetXY();
                 gui.getPieChartPanel().resetPie();
 
                 checkTick.start();
