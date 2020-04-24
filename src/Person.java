@@ -4,7 +4,8 @@ public class Person {
 
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, directionAngle, minTimeSick, maxTimeSick;
-    private int circleRad = 8, timeSinceSick = 0, step = 2;
+    private int circleRad = 8, timeSinceSick = 0;
+    private double step = 1.75;
     private double distanceFromSick, mortalityRate;
     private Rectangle dimens;
     private Disease disease;
