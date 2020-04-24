@@ -7,6 +7,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
     GUI gui;
     JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, fillLater;
+    boolean pieChart = false;
 
     public TallyPanel(GUI gui, GridLayout gl)
     {
@@ -35,7 +36,16 @@ public class TallyPanel extends JPanel implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //TODO enter code for switching the graph
+                if(pieChart)
+                {
+                    gui.getChartPanel().setVisible(true);
+                    gui.getPieChartPanel().setVisible(false);
+                }
+                else
+                {
+                    gui.getChartPanel().setVisible(false);
+                    gui.getPieChartPanel().setVisible(true);
+                }
             }
         });
 
