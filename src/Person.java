@@ -6,13 +6,13 @@ public class Person {
     private int xPos, yPos, dx, dy, directionAngle, minTimeSick, maxTimeSick;
     private int circleRad = 8, timeSinceSick = 0, step = 2;
     private double distanceFromSick, mortalityRate;
-    private Dimensions dimens;
+    private Rectangle dimens;
     private Disease disease;
 
 
-    public Person(int age, boolean preExistingConditions, int xPos, int yPos, Dimensions dimens, Disease disease)
+    public Person(int age, boolean preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease)
     {
-        this.dimens = new Dimensions(dimens);
+        this.dimens = new Rectangle(dimens);
         this.disease = disease;
         this.xPos = xPos;
         this.yPos = yPos;
@@ -42,26 +42,26 @@ public class Person {
         dx = (int)(step*Math.cos(directionAngle));
         dy = (int)(step*Math.sin(directionAngle));
 
-        if(xPos + dx > dimens.getxOrigin() + dimens.getxLen() - circleRad)
+        if(xPos + dx > dimens.x + dimens.width - circleRad)
         {
-            xPos = dimens.getxOrigin() + dimens.getxLen() - circleRad - 1;
+            xPos = dimens.x + dimens.width - circleRad - 1;
             directionAngle += 180;
         }
-        if(xPos + dx < dimens.getxOrigin() + circleRad)
+        if(xPos + dx < dimens.x + circleRad)
         {
-            xPos = dimens.getxOrigin() + circleRad;
+            xPos = dimens.x + circleRad;
             directionAngle += 180;
         }
         else xPos += dx;
 
-        if(yPos + dy > dimens.getyOrigin() + dimens.getyLen()  - circleRad)
+        if(yPos + dy > dimens.y + dimens.height  - circleRad)
         {
-            yPos = dimens.getyOrigin() + dimens.getyLen() - circleRad - 1;
+            yPos = dimens.y + dimens.height - circleRad - 1;
             directionAngle *= -1;
         }
-        if(yPos + dy < dimens.getyOrigin() + circleRad)
+        if(yPos + dy < dimens.y + circleRad)
         {
-            yPos = dimens.getyOrigin() + circleRad;
+            yPos = dimens.y + circleRad;
             directionAngle *= -1;
         }
         else
@@ -97,10 +97,9 @@ public class Person {
 
     public void updateDimens(Rectangle rect)
     {
-        dimens.setxOrigin(rect.x);
-        dimens.setyOrigin(rect.y);
-        dimens.setxLen(rect.width - circleRad);
-        dimens.setyLen(rect.height - circleRad);
+        dimens.setBounds(rect);
+        dimens.width -= circleRad;
+        dimens.height -= circleRad;
     }
 
     public void draw(Graphics2D g2D)
