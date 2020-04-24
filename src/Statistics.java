@@ -14,7 +14,6 @@ public class Statistics implements ActionListener {
     private ArrayList<Integer> deadList = new ArrayList<>();
     private int count;
 
-
     public Statistics(Board simBoard, int numPeople)
     {
         pList = simBoard.getPList();
@@ -63,7 +62,6 @@ public class Statistics implements ActionListener {
         }
 
         count++;
-
 
         /**
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);

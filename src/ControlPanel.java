@@ -283,10 +283,10 @@ public class ControlPanel extends JPanel implements ActionListener{
             public void actionPerformed(ActionEvent e) {
 
                 simEngine.getClock().stop();
-                gui.setNumHealthyLabel("NumHealthy: ");
-                gui.setNumSickLabel("NumSick: ");
-                gui.setNumRecoveredLabel("NumRecovered: ");
-                gui.setNumDeadLabel("NumDead: ");
+                gui.getTallyPanel().setNumHealthyLabel("NumHealthy: ");
+                gui.getTallyPanel().setNumSickLabel("NumSick: ");
+                gui.getTallyPanel().setNumRecoveredLabel("NumRecovered: ");
+                gui.getTallyPanel().setNumDeadLabel("NumDead: ");
                 disease = null;
                 canStart = true;
                 gui.getBoardPanel().setReset(true);
