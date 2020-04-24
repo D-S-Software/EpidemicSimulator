@@ -5,6 +5,10 @@ public class Board {
 
    private Rectangle dimens;
    private ArrayList<Person> pList;
+   private int minAge = 20;
+   private int maxAge = 80;
+   private int minPreExistingConditions = 0;
+    private int maxPreExistingConditions = 3;
 
     public Board(Disease disease, int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
     {
@@ -16,7 +20,8 @@ public class Board {
             int xPos = xOrigin + (int)(xLen*Math.random());
             int yPos = yOrigin + (int)(yLen*Math.random());
 
-            pList.add(new Person(20, false, xPos, yPos, dimens, disease));
+            pList.add(new Person((int)(minAge + (maxAge-minAge)*Math.random()),
+                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease));
         }
     }
 

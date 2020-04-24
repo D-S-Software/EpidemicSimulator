@@ -3,23 +3,24 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, directionAngle, minTimeSick, maxTimeSick;
+    private int xPos, yPos, dx, dy, directionAngle, maxTimeSick;
     private int circleRad = 8, timeSinceSick = 0;
-    private double step = 1.75;
+    private double step = 2;
     private double distanceFromSick, mortalityRate;
     private Rectangle dimens;
     private Disease disease;
+    private double ageMortalityFactor = 0.0007;
+    private double conditionsMortalityFactor = 0.02;
 
 
-    public Person(int age, boolean preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease)
+    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
         this.xPos = xPos;
         this.yPos = yPos;
-        minTimeSick = disease.getBaseMinTimeSick(); //TODO change based on person age and preExistingConditions
-        maxTimeSick = disease.getBaseMaxTimeSick() ; //TODO change based on person age and preExistingConditions
-        mortalityRate = disease.getBaseMortalityRate(); //TODO increase this to make the person more likely to die (0 --> 1) Use age and preExistingConditions
+        maxTimeSick = disease.getBaseMaxTimeSick() + 1000 * (int)(age*Math.random());
+        mortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         directionAngle = (int)(360*Math.random());
 
         if(Math.random() > disease.getStartPercentHealthy())
@@ -32,9 +33,10 @@ public class Person {
         else isHealthy = true;
     }
 
+    //TODO: Person objects should not phase through each other
     /**
      * Moves the person and decides if to change direction
-     *///TODO: Person objects should not phase through each other
+     */
     public void move()
     {
         if(Math.random() >= .95)
@@ -87,7 +89,7 @@ public class Person {
         {
             timeSinceSick++;
             //If sick for min time has increasing chance to die / recover until guaranteed at max time
-            if(timeSinceSick >  minTimeSick + (int)((maxTimeSick - minTimeSick)*Math.random()))
+            if(timeSinceSick >  disease.getBaseMinTimeSick() + (int)((maxTimeSick - disease.getBaseMinTimeSick())*Math.random()))
             {
                 if(Math.random() > mortalityRate)
                     isHealthy = true;    // Recovers
