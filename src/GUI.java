@@ -9,8 +9,8 @@ public class GUI {
     private ControlPanel controlPanel;
     private TallyPanel tallyPanel;
 
-    private Chart myChart;
-    private ChartPanel chartPanel;
+    private MyXYChart myXYChart;
+    private XYChartPanel xyChartPanel;
     private MyPieChart myPieChart;
     private PieChartPanel pieChartPanel;
 
@@ -57,7 +57,7 @@ public class GUI {
 
         rightPanel = new JPanel(new GridBagLayout());
         addTallyPanel();
-        //addChartPanel();
+        addXYChartPanel();
         addPieChartPanel();
         frame.add(rightPanel, gbcMain);
 
@@ -136,7 +136,7 @@ public class GUI {
 
         rightPanel.add(tallyPanel, gbc);
     }
-    private void addChartPanel()
+    private void addXYChartPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
@@ -149,13 +149,14 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
 
-        myChart = new Chart(); /** This is not in the constructor because a GUI object must be created first,
+        myXYChart = new MyXYChart(); /** This is not in the constructor because a GUI object must be created first,
                                      *then gui.stats() is called in Engine. Then myChart.setStats(stats) can be called here.*/
 
-        chartPanel = new ChartPanel(myChart.getXYChart(), this);
-        chartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        chartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
-        rightPanel.add(chartPanel, gbc);
+        xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
+        xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        xyChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
+        xyChartPanel.setVisible(false);
+        rightPanel.add(xyChartPanel, gbc);
     }
 
     private void addPieChartPanel()
@@ -194,8 +195,8 @@ public class GUI {
         return boardPanel.getBounds();
     }
 
-    public ChartPanel getChartPanel(){
-        return chartPanel;
+    public XYChartPanel getXYChartPanel(){
+        return xyChartPanel;
     }
 
     public PieChartPanel getPieChartPanel()

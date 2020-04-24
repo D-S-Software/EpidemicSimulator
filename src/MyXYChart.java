@@ -2,7 +2,7 @@ import org.knowm.xchart.XYChart;
 import org.knowm.xchart.XYChartBuilder;
 import org.knowm.xchart.style.Styler.LegendPosition;
 
-public class Chart{
+public class MyXYChart {
 
     private XYChart xychart;
 

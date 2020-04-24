@@ -1,8 +1,5 @@
 import org.knowm.xchart.PieChartBuilder;
-import org.knowm.xchart.PieSeries;
 import org.knowm.xchart.PieChart;
-
-
 
 public class MyPieChart {
 

@@ -7,7 +7,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
     GUI gui;
     JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, fillLater;
-    boolean pieChart = false;
+    boolean pieChart = true;
 
     public TallyPanel(GUI gui, GridLayout gl)
     {
@@ -38,13 +38,15 @@ public class TallyPanel extends JPanel implements ActionListener {
 
                 if(pieChart)
                 {
-                    gui.getChartPanel().setVisible(true);
+                    gui.getXYChartPanel().setVisible(true);
                     gui.getPieChartPanel().setVisible(false);
+                    pieChart = false;
                 }
                 else
                 {
-                    gui.getChartPanel().setVisible(false);
+                    gui.getXYChartPanel().setVisible(false);
                     gui.getPieChartPanel().setVisible(true);
+                    pieChart = true;
                 }
             }
         });

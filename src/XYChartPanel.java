@@ -3,13 +3,13 @@ import org.knowm.xchart.XYChart;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ChartPanel extends XChartPanel implements ActionListener {
+public class XYChartPanel extends XChartPanel implements ActionListener {
 
     private GUI gui;
     private XYChart xychart;
     private int count;
 
-    public ChartPanel(XYChart c, GUI gui)
+    public XYChartPanel(XYChart c, GUI gui)
     {
         super(c);
         this.gui = gui;
