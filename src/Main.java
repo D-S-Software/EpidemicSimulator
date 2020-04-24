@@ -9,6 +9,6 @@ public class Main {
 
     public static void main(String[] args)
     {
-        Main test = new Main(1500, 1000);
+        Main test = new Main(1750, 1000);
     }
 }

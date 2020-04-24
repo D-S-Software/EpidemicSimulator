@@ -22,10 +22,10 @@ public class ControlPanel extends JPanel implements ActionListener{
         this.gui = gui;
 
         addSelectionPanel();
-        addLabelPanel();
+        addSimSettingPanel();
         addParamPanel();
         addButtonPanel();
-        addTypeControlPanel();
+        addTitleControlPanel();
 
         checkTick = new Timer(10, this);
         checkTick.start();
@@ -46,10 +46,15 @@ public class ControlPanel extends JPanel implements ActionListener{
         JPanel p = new JPanel(new GridLayout(5, 2));
 
         choice1 = new JRadioButton("Disease 1   ");
+        choice1.setFont(choice1.getFont ().deriveFont (16.0f));
         choice2 = new JRadioButton("Disease 2   ");
+        choice2.setFont(choice2.getFont ().deriveFont (16.0f));
         choice3 = new JRadioButton("Disease 3   ");
+        choice3.setFont(choice3.getFont ().deriveFont (16.0f));
         choice4 = new JRadioButton("Disease 4   ");
+        choice4.setFont(choice4.getFont ().deriveFont (16.0f));
         custom = new JRadioButton("Custom");
+        custom.setFont(custom.getFont ().deriveFont (16.0f));
 
         g1 = new ButtonGroup();
         g1.add(choice1);
@@ -101,7 +106,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBackground(Color.getHSBColor((1 - 1) / 9f, 0.75f, 0.95f));
         mainPanel.add(p, gbc);
     }
-    public void addTypeControlPanel()
+    public void addTitleControlPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 1;
@@ -121,7 +126,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(controls);
         mainPanel.add(p, gbc);
     }
-    public void addLabelPanel()
+    public void addSimSettingPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 2;
@@ -136,7 +141,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         JPanel p = new JPanel();
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(Color.getHSBColor((3 - 1) / 9f, 0.75f, 0.95f));
-        p.add(new JLabel("[Sim Type Controls Location]"));
+        p.add(new JLabel("[Sim Settings Location]"));
         mainPanel.add(p, gbc);
     }
     public void addParamPanel()
@@ -154,24 +159,36 @@ public class ControlPanel extends JPanel implements ActionListener{
         JPanel p = new JPanel(new GridLayout(2, 6));
 
         contagiousPercent = new JTextField(1);
+        contagiousPercent.setFont(contagiousPercent.getFont ().deriveFont (18.0f));
         contagiousRange = new JTextField(1);
+        contagiousRange.setFont(contagiousRange.getFont ().deriveFont (18.0f));
         baseMortalityRate = new JTextField(1);
+        baseMortalityRate.setFont(baseMortalityRate.getFont ().deriveFont (18.0f));
         baseMinTimeSick = new JTextField(1);
+        baseMinTimeSick.setFont(baseMinTimeSick.getFont ().deriveFont (18.0f));
         baseMaxTimeSick = new JTextField(1);
+        baseMaxTimeSick.setFont(baseMaxTimeSick.getFont ().deriveFont (18.0f));
         startPercentHealthy = new JTextField(1);
+        startPercentHealthy.setFont(startPercentHealthy.getFont ().deriveFont (18.0f));
 
-        contagiousPercentLabel = new JLabel("contagiousPercent");
-        //contagiousPercentLabel.setPreferredSize(new Dimension(110,10));
-        contagiousRangeLabel = new JLabel("contagiousRange");
-        //contagiousRangeLabel.setPreferredSize(new Dimension(110,10));
-        baseMortalityRateLabel = new JLabel("  baseMortalityRate");
-        //baseMortalityRateLabel.setPreferredSize(new Dimension(110,10));
-        baseMinTimeSickLabel = new JLabel("  baseMinTimeSick");
-        //baseMinTimeSickLabel.setPreferredSize(new Dimension(110,10));
-        baseMaxTimeSickLabel = new JLabel("  baseMaxTimeSick");
-        //baseMaxTimeSickLabel.setPreferredSize(new Dimension(110,10));
-        startPercentHealthyLabel = new JLabel("  startPercentHealthy");
-        //startPercentHealthyLabel.setPreferredSize(new Dimension(110,10));
+        contagiousPercentLabel = new JLabel("Contagious %");
+        contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
+
+        contagiousRangeLabel = new JLabel("Contagious Range");
+        contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
+
+        baseMortalityRateLabel = new JLabel("  Mortality Rate");
+        baseMortalityRateLabel.setFont(baseMortalityRateLabel.getFont ().deriveFont (15.0f));
+
+        baseMinTimeSickLabel = new JLabel("  Min Time Sick");
+        baseMinTimeSickLabel.setFont( baseMinTimeSickLabel.getFont ().deriveFont (15.0f));
+
+        baseMaxTimeSickLabel = new JLabel("  Max Time Sick");
+        baseMaxTimeSickLabel.setFont(baseMaxTimeSickLabel.getFont ().deriveFont (15.0f));
+
+        startPercentHealthyLabel = new JLabel("  Start Healthy %");
+        startPercentHealthyLabel.setFont(startPercentHealthyLabel.getFont ().deriveFont (15.0f));
+
 
         p.add(contagiousPercentLabel);
         p.add(contagiousPercent);
@@ -204,13 +221,16 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel(new GridLayout(1, 5));
 
-        numPeopleLabel = new JLabel("NumPeople: ");
+        numPeopleLabel = new JLabel("NumPeople:");
+        numPeopleLabel.setFont(numPeopleLabel.getFont ().deriveFont (20.0f));
         p.add(numPeopleLabel);
 
         numPeopleField = new JTextField(1);
+        numPeopleField.setFont(numPeopleField.getFont ().deriveFont (20.0f));
         p.add(numPeopleField);
 
         startStop = new JButton("Start");
+        startStop.setFont(startStop.getFont ().deriveFont (18.0f));
         startStop.setPreferredSize(new Dimension(100,30));
 
         startStop.addActionListener(new ActionListener() {
@@ -230,9 +250,9 @@ public class ControlPanel extends JPanel implements ActionListener{
                         }
                         else
                         {
-                            disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()),
-                                    Double.parseDouble(baseMortalityRate.getText()), Integer.parseInt(baseMinTimeSick.getText()),
-                                    Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()));
+                            disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
+                                    Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()),
+                                    Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()) / 100);
                         }
                     }
                     if(disease != null)
@@ -254,6 +274,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         });
 
         playPause = new JButton("Play/Pause");
+        playPause.setFont(playPause.getFont ().deriveFont (18.0f));
         playPause.setPreferredSize(new Dimension(100,30));
 
         playPause.addActionListener(new ActionListener() {
@@ -276,6 +297,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         });
 
         reset = new JButton("Reset");
+        reset.setFont(reset.getFont ().deriveFont (18.0f));
         reset.setPreferredSize(new Dimension(100,30));
 
         reset.addActionListener(new ActionListener() {
@@ -331,45 +353,45 @@ public class ControlPanel extends JPanel implements ActionListener{
         if(choice1.isSelected())
         {
             disease = new Disease1();
-            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
-            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
         if(choice2.isSelected())
         {
             disease = new Disease2();
-            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
-            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
         if(choice3.isSelected())
         {
             disease = new Disease3();
-            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
-            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
         if(choice4.isSelected())
         {
             disease = new Disease4();
-            contagiousPercent.setText(disease.getContagiousPercent() + "");
+            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
-            startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
+            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
     }

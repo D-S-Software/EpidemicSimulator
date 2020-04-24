@@ -20,12 +20,13 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
 
     public void resetPie()
     {
+        boolean show = isVisible();
         setVisible(false);
         pc.updatePieSeries("Healthy", 0);
         pc.updatePieSeries("Sick", 0);
         pc.updatePieSeries("Recovered", 0);
         pc.updatePieSeries("Dead", 0);
-        setVisible(true);
+        setVisible(show);
     }
 
     public void actionPerformed(ActionEvent e)

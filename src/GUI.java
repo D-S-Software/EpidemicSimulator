@@ -18,6 +18,7 @@ public class GUI {
     private GUI gui = this;
     private JFrame frame;
     private Statistics stats;
+    private boolean showPieFirst = true;
 
 
     public GUI(int preWidth, int preHeight)
@@ -155,7 +156,7 @@ public class GUI {
         xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
         xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         xyChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
-        xyChartPanel.setVisible(false);
+        xyChartPanel.setVisible(!showPieFirst);
         rightPanel.add(xyChartPanel, gbc);
     }
 
@@ -177,6 +178,8 @@ public class GUI {
         pieChartPanel = new PieChartPanel(myPieChart.getMyPieChart(),this);
         pieChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         pieChartPanel.setBackground(Color.YELLOW); //Being over-rid by Graph background
+
+        pieChartPanel.setVisible(showPieFirst);
         rightPanel.add(pieChartPanel, gbc);
     }
 

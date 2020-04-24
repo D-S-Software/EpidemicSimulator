@@ -26,12 +26,13 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
 
     public void resetXY()
     {
+        boolean show = isVisible();
         setVisible(false);
         xychart.updateXYSeries("healthy", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
         xychart.updateXYSeries("sick", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
         xychart.updateXYSeries("recovered", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
         xychart.updateXYSeries("dead", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
-        setVisible(true);
+        setVisible(show);
     }
 
     public void actionPerformed(ActionEvent e)
