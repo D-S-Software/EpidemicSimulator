@@ -9,18 +9,12 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
     private GUI gui;
     private XYChart xychart;
     private int count = 99;
-    private boolean slowGraph;
 
     public XYChartPanel(XYChart c, GUI gui)
     {
         super(c);
         this.gui = gui;
         xychart = c;
-    }
-
-    public void isSlowGraph(boolean slowGraph)
-    {
-        this.slowGraph = slowGraph;
     }
 
     public void resetXY()
@@ -36,21 +30,8 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
 
     public void actionPerformed(ActionEvent e)
     {
-        if(slowGraph)
-        {
-            count++;
-            if(count == 100)
-            {
-                xychart.updateXYSeries("healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
-                xychart.updateXYSeries("sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
-                xychart.updateXYSeries("recovered",gui.getStats().getTimeList(), gui.getStats().getRecoveredList(),null );
-                xychart.updateXYSeries("dead",gui.getStats().getTimeList(), gui.getStats().getDeadList(),null ); //Maybe updateXYSeries has to be in Chart class
-
-                repaint();
-                count = 0;
-            }
-        }
-        else
+        count++;
+        if(count == 100)
         {
             xychart.updateXYSeries("healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
             xychart.updateXYSeries("sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
@@ -58,6 +39,9 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
             xychart.updateXYSeries("dead",gui.getStats().getTimeList(), gui.getStats().getDeadList(),null ); //Maybe updateXYSeries has to be in Chart class
 
             repaint();
+            count = 0;
         }
+        if(gui.getStats().getNumSick() == 0)
+            count = 101;
     }
 }

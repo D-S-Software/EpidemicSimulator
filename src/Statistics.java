@@ -14,7 +14,6 @@ public class Statistics implements ActionListener {
     private ArrayList<Integer> deadList = new ArrayList<>();
     private ArrayList<Integer> casesList = new ArrayList<>();
     private int count = 99;
-    private boolean slowGraph = true;
 
     public Statistics(Board simBoard, int numPeople)
     {
@@ -38,36 +37,19 @@ public class Statistics implements ActionListener {
         numCases = numSick + numRecovered + numDead;
     }
 
-    public static CreateFile getCreateFile()
-    {
-        return x;
-    }
-
     public void actionPerformed(ActionEvent e)
     {
-        if(slowGraph && numSick > 0)
+        count++;
+        if(count == 100)
         {
-            count++;
-            if(count == 100)
-            {
-                timeList.add(time/100);
-                healthyList.add(numHealthy);
-                sickList.add(numSick);
-                recoveredList.add(numRecovered);
-                deadList.add(numDead);
-                casesList.add(numCases);
-
-                count = 0;
-            }
-        }
-        else if(numSick > 0)
-        {
-            timeList.add(time);
+            timeList.add(time/100);
             healthyList.add(numHealthy);
             sickList.add(numSick);
             recoveredList.add(numRecovered);
             deadList.add(numDead);
             casesList.add(numCases);
+
+            count = 0;
         }
 
         int healthyCount = 0;
@@ -110,6 +92,12 @@ public class Statistics implements ActionListener {
     }
 
     /** Getter and Setter Methods */
+
+    public static CreateFile getCreateFile()
+    {
+        return x;
+    }
+
     public int getNumHealthy()
     {
         return numHealthy;
@@ -132,10 +120,6 @@ public class Statistics implements ActionListener {
     }
     public int getNumCases() {
         return numCases;
-    }
-
-    public boolean isSlowGraph() {
-        return slowGraph;
     }
 
     public ArrayList<Integer> getTimeList() {

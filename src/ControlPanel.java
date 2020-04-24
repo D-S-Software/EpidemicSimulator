@@ -207,22 +207,22 @@ public class ControlPanel extends JPanel implements ActionListener{
         startPercentHealthy.setBackground(CustomColor.FIELD);
         startPercentHealthy.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        contagiousPercentLabel = new JLabel("Contagious %");
+        contagiousPercentLabel = new JLabel("Contagious (%)");
         contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
 
         contagiousRangeLabel = new JLabel("Contagious Range");
         contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
 
-        baseMortalityRateLabel = new JLabel("  Mortality Rate");
+        baseMortalityRateLabel = new JLabel("  Mortality Rate (%)");
         baseMortalityRateLabel.setFont(baseMortalityRateLabel.getFont ().deriveFont (15.0f));
 
-        baseMinTimeSickLabel = new JLabel("  Min Time Sick");
+        baseMinTimeSickLabel = new JLabel("  Min Time Sick (s)");
         baseMinTimeSickLabel.setFont( baseMinTimeSickLabel.getFont ().deriveFont (15.0f));
 
-        baseMaxTimeSickLabel = new JLabel("  Max Time Sick");
+        baseMaxTimeSickLabel = new JLabel("  Max Time Sick (s)");
         baseMaxTimeSickLabel.setFont(baseMaxTimeSickLabel.getFont ().deriveFont (15.0f));
 
-        startPercentHealthyLabel = new JLabel("  Start Healthy %");
+        startPercentHealthyLabel = new JLabel("  Start Healthy (%)");
         startPercentHealthyLabel.setFont(startPercentHealthyLabel.getFont ().deriveFont (15.0f));
 
 
@@ -294,8 +294,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else
                         {
                             disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
-                                    Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()),
-                                    Integer.parseInt(baseMaxTimeSick.getText()), Double.parseDouble(startPercentHealthy.getText()) / 100);
+                                    Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()) /100,
+                                    Integer.parseInt(baseMaxTimeSick.getText()) /100, Double.parseDouble(startPercentHealthy.getText()) / 100);
                         }
                     }
                     if(disease != null)
@@ -408,8 +408,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
             baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
@@ -419,8 +419,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
             baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
@@ -430,8 +430,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
             baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
@@ -441,8 +441,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
             contagiousRange.setText("" + disease.getContagiousRange());
             baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick());
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick());
+            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
+            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }

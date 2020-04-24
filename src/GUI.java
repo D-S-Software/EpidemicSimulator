@@ -258,7 +258,5 @@ public class GUI {
     public void setStats(Statistics stats)
     {
         this.stats = stats;
-        getXYChartPanel().isSlowGraph(stats.isSlowGraph());
-        getXYChartPanel2().isSlowGraph(stats.isSlowGraph());
     }
 }
