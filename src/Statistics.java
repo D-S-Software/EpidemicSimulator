@@ -5,20 +5,35 @@ import java.util.ArrayList;
 public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList;
-    private int time = 0, numHealthy=0, numSick=0, numRecovered=0, numDead=0, numPeople=0;
+    private int time, numHealthy, numSick, numRecovered, numDead, numPeople;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
     private ArrayList<Integer> sickList = new ArrayList<>();
     private ArrayList<Integer> recoveredList = new ArrayList<>();
     private ArrayList<Integer> deadList = new ArrayList<>();
-    private int count;
+    private int graphDelay = 249;
+    private int count = graphDelay;
 
     public Statistics(Board simBoard, int numPeople)
     {
         pList = simBoard.getPList();
         this.numPeople = numPeople;
         //x.openFile(); TODO Add back in at some point
+
+        int healthyCount = 0;
+        int sickCount = 0;
+
+        for(int i = 0; i < pList.size(); i++)
+        {
+            if(pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
+                sickCount++;
+            if(!pList.get(i).getHasDisease() && pList.get(i).getIsHealthy())
+                healthyCount++;
+        }
+        numHealthy = healthyCount;
+        numSick = sickCount;
+        numPeople = pList.size();
     }
 
     public static CreateFile getCreateFile()
@@ -28,6 +43,18 @@ public class Statistics implements ActionListener {
 
     public void actionPerformed(ActionEvent e)
     {
+        if(count == graphDelay)
+        {
+            timeList.add(time);
+            healthyList.add(numHealthy);
+            sickList.add(numSick);
+            recoveredList.add(numRecovered);
+            deadList.add(numDead);
+
+            count = 0;
+        }
+        count++;
+
         int healthyCount = 0;
         int sickCount = 0;
         int recoveredCount = 0;
@@ -42,26 +69,11 @@ public class Statistics implements ActionListener {
                 healthyCount++;
         }
 
-
-
         time++;
         numRecovered = recoveredCount;
         numSick = sickCount;
         numHealthy = healthyCount;
         numDead = numPeople - numHealthy - numSick - numRecovered;
-
-        if(count == 249)
-        {
-            timeList.add(time);
-            healthyList.add(numHealthy);
-            sickList.add(numSick);
-            recoveredList.add(numRecovered);
-            deadList.add(numDead);
-
-            count = 0;
-        }
-
-        count++;
 
         /**
         x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
@@ -102,6 +114,10 @@ public class Statistics implements ActionListener {
     {
         return time;
     }
+    public int getGraphDelay()
+    {
+        return graphDelay;
+    }
 
     public ArrayList<Integer> getTimeList() {
         return timeList;
@@ -117,21 +133,5 @@ public class Statistics implements ActionListener {
     }
     public ArrayList<Integer> getDeadList() {
         return deadList;
-    }
-
-    // TODO Remove when not needed for testing
-    boolean lastPrint;
-    public void printResults()
-    {
-        if(numSick > 0)
-        {
-            System.out.println("H| " + numHealthy + " S| " + numSick + " R| " + numRecovered + " D| " + numDead + " T| " + time);
-            lastPrint = true;
-        }
-        else if(lastPrint && numSick == 0)
-        {
-            System.out.println("H| " + numHealthy + " S| " + numSick + " R| " + numRecovered + " D| " + numDead + " T| " + time);
-            lastPrint = false;
-        }
     }
 }

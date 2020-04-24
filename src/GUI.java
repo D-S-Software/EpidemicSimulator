@@ -212,5 +212,6 @@ public class GUI {
     public void setStats(Statistics stats)
     {
         this.stats = stats;
+        getXYChartPanel().setGraphDelay(stats.getGraphDelay());
     }
 }

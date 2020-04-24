@@ -2,11 +2,13 @@ import org.knowm.xchart.XChartPanel;
 import org.knowm.xchart.XYChart;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class XYChartPanel extends XChartPanel implements ActionListener {
 
     private GUI gui;
     private XYChart xychart;
+    private int graphDelay;
     private int count;
 
     public XYChartPanel(XYChart c, GUI gui)
@@ -15,9 +17,26 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
         this.gui = gui;
         xychart = c;
     }
+
+    public void setGraphDelay(int delay)
+    {
+        graphDelay = delay;
+        count = delay;
+    }
+
+    public void resetXY()
+    {
+        setVisible(false);
+        xychart.updateXYSeries("healthy", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        xychart.updateXYSeries("sick", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        xychart.updateXYSeries("recovered", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        xychart.updateXYSeries("dead", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        setVisible(true);
+    }
+
     public void actionPerformed(ActionEvent e)
     {
-        if(count == 249)
+        if(count == graphDelay)
         {
             xychart.updateXYSeries("healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
             xychart.updateXYSeries("sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
@@ -29,5 +48,4 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
         }
         count++;
     }
-
 }
