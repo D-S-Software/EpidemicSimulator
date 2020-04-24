@@ -26,6 +26,4 @@ public class Engine {
    {
        return clock;
    }
-
-
 }
