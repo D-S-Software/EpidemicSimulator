@@ -10,7 +10,7 @@ public class MyXYChart2 {
     public XYChart getXYChart()
     {
         // Create Chart
-        xychart2 = new XYChartBuilder().width(400).height(300).title("Total Cases vs Time").xAxisTitle("Time (s)").yAxisTitle("Population (#)").build();
+        xychart2 = new XYChartBuilder().width(400).height(300).title("Total Cases vs Time").xAxisTitle("Time (s)").yAxisTitle("Number of Cases").build();
 
         // Customize Chart
         xychart2.getStyler().setLegendPosition(LegendPosition.OutsideS);

@@ -4,7 +4,6 @@ import org.knowm.xchart.PieChart;
 import org.knowm.xchart.PieSeries;
 import org.knowm.xchart.style.Styler;
 
-import java.awt.*;
 
 public class MyPieChart {
 
