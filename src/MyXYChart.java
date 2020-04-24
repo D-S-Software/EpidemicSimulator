@@ -14,7 +14,8 @@ public class MyXYChart {
         // Customize Chart
         xychart.getStyler().setLegendPosition(LegendPosition.InsideNE);
 
-        // Series
+        // Series TODO Add colors for the line graph
+        //TODO Chagne the front size for the line graph
         xychart.addSeries("healthy", new double[]{0}, new double[]{0});
         xychart.addSeries("sick", new double[]{0}, new double[]{0});
         xychart.addSeries("dead", new double[]{0}, new double[]{0});
