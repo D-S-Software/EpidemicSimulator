@@ -13,7 +13,7 @@ public class Statistics implements ActionListener {
     private ArrayList<Integer> recoveredList = new ArrayList<>();
     private ArrayList<Integer> deadList = new ArrayList<>();
     private ArrayList<Integer> casesList = new ArrayList<>();
-    private int graphDelay = 249;
+    private int graphDelay = 124;
     private int count = graphDelay;
 
     public Statistics(Board simBoard, int numPeople)

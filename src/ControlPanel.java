@@ -1,3 +1,5 @@
+import Library.CustomColor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -103,7 +105,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(Color.getHSBColor((1 - 1) / 9f, 0.75f, 0.95f)); //TODO add color for selection Panel
+        p.setBackground(CustomColor.BLOOD_RED); //TODO add color for selection Panel
         mainPanel.add(p, gbc);
     }
     public void addTitleControlPanel()
