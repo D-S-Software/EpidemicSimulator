@@ -12,7 +12,7 @@ public class Statistics implements ActionListener {
     private ArrayList<Integer> sickList = new ArrayList<>();
     private ArrayList<Integer> recoveredList = new ArrayList<>();
     private ArrayList<Integer> deadList = new ArrayList<>();
-
+    private int count;
 
 
     public Statistics(Board simBoard, int numPeople)
@@ -43,20 +43,26 @@ public class Statistics implements ActionListener {
                 healthyCount++;
         }
 
+
+
         time++;
-        timeList.add(time);
-
         numRecovered = recoveredCount;
-        recoveredList.add(numRecovered);
-
         numSick = sickCount;
-        sickList.add(numSick);
-
         numHealthy = healthyCount;
-        healthyList.add(numHealthy);
-
         numDead = numPeople - numHealthy - numSick - numRecovered;
-        deadList.add(numDead);
+
+        if(count == 249)
+        {
+            timeList.add(time);
+            healthyList.add(numHealthy);
+            sickList.add(numSick);
+            recoveredList.add(numRecovered);
+            deadList.add(numDead);
+
+            count = 0;
+        }
+
+        count++;
 
 
         /**

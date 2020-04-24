@@ -17,7 +17,7 @@ public class ChartPanel extends XChartPanel implements ActionListener {
     }
     public void actionPerformed(ActionEvent e)
     {
-        if(count == 99)
+        if(count == 249)
         {
             xychart.updateXYSeries("healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
             xychart.updateXYSeries("sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
