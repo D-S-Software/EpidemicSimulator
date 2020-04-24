@@ -5,8 +5,6 @@ public class MyPieChart {
 
     private PieChart pieChart;
 
-    //TODO Legend location and series color scheme.
-
     public PieChart getMyPieChart()
     {
         pieChart = new PieChartBuilder().width(400).height(400).title("Percent per Condition").build();
@@ -18,5 +16,4 @@ public class MyPieChart {
 
         return pieChart;
     }
-
 }
