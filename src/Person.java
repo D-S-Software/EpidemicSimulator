@@ -111,14 +111,14 @@ public class Person {
     {
         Color color;
         if(hasDisease && !isHealthy)
-            color = CustomColor.CARMINE;
+            color = CustomColor.SICK;
         else if(!hasDisease && isHealthy)
         {
-            color = CustomColor.SAVOY_BLUE;
+            color = CustomColor.HEALTHY;
         }
         else // (hasDisease && isHealthy)
         {
-            color = CustomColor.SILVER;
+            color = CustomColor.RECOVERED;
         }
 
         g2D.setPaint(color);
