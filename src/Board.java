@@ -1,13 +1,14 @@
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Board {
 
-   public final Dimensions dimens;
+   private Rectangle dimens;
    private ArrayList<Person> pList;
 
     public Board(Disease disease, int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
     {
-        this.dimens = new Dimensions(xOrigin, yOrigin, xLen, yLen);
+        dimens = new Rectangle(xOrigin, yOrigin, xLen, yLen);
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
@@ -19,9 +20,9 @@ public class Board {
         }
     }
 
-    public Board(Disease disease, Dimensions dimens, int numPeople)
+    public Board(Disease disease, Rectangle dimens, int numPeople)
     {
-        this(disease, dimens.getxOrigin(), dimens.getyOrigin(), dimens.getxLen(), dimens.getyLen(), numPeople);
+        this(disease, dimens.x, dimens.y, dimens.width, dimens.height, numPeople);
     }
 
     /**
@@ -32,7 +33,7 @@ public class Board {
     {
         for(int i = 0; i < pList.size(); i++)
         {
-            double minDist = Math.sqrt(Math.pow(dimens.getxLen(), 2) + Math.pow(dimens.getyLen(), 2));
+            double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
 
             if(!pList.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)

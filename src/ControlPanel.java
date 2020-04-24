@@ -309,23 +309,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         return mainPanel;
     }
 
-    public JButton getStartStop()
-    {
-        return startStop;
-    }
-
-    public JButton getPlayPause() {
-        return playPause;
-    }
-
-    public JButton getReset() {
-        return reset;
-    }
-
-    public Disease getDisease() {
-        return disease;
-    }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         if(custom.isSelected() && canType)

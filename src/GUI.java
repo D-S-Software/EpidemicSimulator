@@ -10,10 +10,7 @@ public class GUI {
     private TalleyPanel talleyPanel;
     private GraphPanel graphPanel;
     private int preWidth, preHeight;
-    private JLabel numHealthyLabel = new JLabel();
-    private JLabel numSickLabel = new JLabel();
-    private JLabel numRecoveredLabel = new JLabel();
-    private JLabel numDeadLabel = new JLabel();
+    private JLabel numHealthyLabel = new JLabel(), numSickLabel = new JLabel(), numRecoveredLabel = new JLabel(), numDeadLabel = new JLabel();
     private GUI gui = this;
     private JFrame frame;
 
@@ -167,15 +164,6 @@ public class GUI {
     public BoardPanel getBoardPanel()
     {
         return boardPanel;
-    }
-
-    public JFrame getFrame()
-    {
-        return frame;
-    }
-
-    public ControlPanel getControlPanel() {
-        return controlPanel;
     }
 
     public Rectangle getBoardRec()

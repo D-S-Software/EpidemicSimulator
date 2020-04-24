@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Engine {
 
@@ -10,7 +11,7 @@ public class Engine {
     {
         this.gui = gui;
 
-        Dimensions boardDimens = new Dimensions(gui.getBoardRec());
+        Rectangle boardDimens = new Rectangle(gui.getBoardRec());
 
         simBoard = new Board(disease, boardDimens, numPeople);
 
