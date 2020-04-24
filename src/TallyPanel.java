@@ -20,28 +20,31 @@ public class TallyPanel extends JPanel implements ActionListener {
         setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         numHealthyLabel = new JLabel("Healthy: ");
-        numHealthyLabel.setFont(numHealthyLabel.getFont ().deriveFont (18.0f));
-        numHealthyLabel.setForeground(CustomColor.BLACK);
+        numHealthyLabel.setFont(numHealthyLabel.getFont ().deriveFont (15.0f));
+        numHealthyLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
         numHealthyLabel.setPreferredSize(new Dimension(20, 10));
 
 
         numSickLabel = new JLabel("Sick: ");
-        numSickLabel.setFont(numSickLabel.getFont ().deriveFont (18.0f));
-        numSickLabel.setForeground(CustomColor.BLACK);
+        numSickLabel.setFont(numSickLabel.getFont ().deriveFont (15.0f));
+        numSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
         numSickLabel.setPreferredSize(new Dimension(20, 10));
 
         numRecoveredLabel = new JLabel("Recovered: ");
-        numRecoveredLabel.setFont(numRecoveredLabel.getFont ().deriveFont (18.0f));
-        numRecoveredLabel.setForeground(CustomColor.BLACK);
+        numRecoveredLabel.setFont(numRecoveredLabel.getFont ().deriveFont (15.0f));
+        numRecoveredLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
         numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
 
         numDeadLabel = new JLabel("Dead: ");
-        numDeadLabel.setFont(numDeadLabel.getFont ().deriveFont (18.0f));
-        numDeadLabel.setForeground(CustomColor.BLACK);
+        numDeadLabel.setFont(numDeadLabel.getFont ().deriveFont (15.0f));
+        numDeadLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
         numDeadLabel.setPreferredSize(new Dimension(20, 10));
 
         toggle = new JButton("Graph Mode");
-        toggle.setFont(toggle.getFont ().deriveFont (18.0f));
+        toggle.setFont(toggle.getFont ().deriveFont (15.0f));
+        toggle.setForeground(CustomColor.ON_BUTTON_LABEL);
+        toggle.setBackground(CustomColor.BUTTON);
+        toggle.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         toggle.setVisible(false);
 
         toggle.addActionListener(new ActionListener() {
@@ -66,7 +69,10 @@ public class TallyPanel extends JPanel implements ActionListener {
         });
 
         switchGraph = new JButton("Switch Graph");
-        switchGraph.setFont(switchGraph.getFont ().deriveFont (18.0f));
+        switchGraph.setFont(switchGraph.getFont ().deriveFont (15.0f));
+        switchGraph.setBackground(CustomColor.BUTTON);
+        switchGraph.setForeground(CustomColor.ON_BUTTON_LABEL);
+        switchGraph.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         switchGraph.addActionListener(new ActionListener() {
             @Override
@@ -101,8 +107,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         add(numSickLabel);
         add(numDeadLabel);
         add(switchGraph);
-
-        setBackground(Color.ORANGE); //TODO Add color for TallyPanel
+         //TODO Add color for TallyPanel
     }
 
     public void setShowCases(boolean showCases)
