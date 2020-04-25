@@ -35,7 +35,6 @@ public class Person {
         else isHealthy = true;
     }
 
-    //TODO: Person objects should not phase through each other
     /**
      * Moves the person and decides if to change direction
      */

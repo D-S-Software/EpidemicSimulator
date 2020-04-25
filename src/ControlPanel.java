@@ -334,8 +334,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else
                         {
                             disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
-                                    Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()) /100,
-                                    Integer.parseInt(baseMaxTimeSick.getText()) /100, Double.parseDouble(startPercentHealthy.getText()) / 100);
+                                    Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()) *100,
+                                    Integer.parseInt(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
                         }
                     }
                     if(disease != null)
