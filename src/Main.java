@@ -19,4 +19,17 @@ public class Main {
     //TODO Make opening screen (start with music)
     //TODO make a button to toggle music (ex. Black Ops Zombies, Plague Inc., Break Bad Intro) (Other sounds to implement?)
     //TODO Find Diseases and set parameters for Disease 1-4
+
+    //SimControl:
+    // Have control over the ages and conditions of people (just send to board class (already implemented)
+    // Behavior Settings --> How people are allowed to move
+    // "Action Events" --> make people do something on an event
+
+    //Behavior Settings:
+    //1. Random Motion
+    //2. 4 Corners with some travelers
+    //3. Social Distancing (stay put / small movement)
+
+    //Action Events:
+    // First 10 deaths - move less --> just update step and direction in person
 }
