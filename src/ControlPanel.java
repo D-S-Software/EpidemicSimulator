@@ -8,13 +8,13 @@ public class ControlPanel extends JPanel implements ActionListener{
 
     private JPanel mainPanel = new JPanel(new GridBagLayout());
     private JRadioButton choice1, choice2, choice3, choice4, custom;
-    private JButton start, playPause, reset;
+    private JButton start, playPause, reset, toggleMusic;
     private ButtonGroup g1;
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy, numPeopleField;
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel;
     private Disease disease;
     private Engine simEngine;
-    boolean toPause = true, canStart = true, canType = true;
+    boolean toPause = true, canStart = true, canType = true, musicPlaying = true;
     private GUI gui;
     Timer checkTick;
     Music backgroundMusic = new Music("BlackOps.wav");
@@ -156,15 +156,45 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel();
+        JPanel p = new JPanel(new GridLayout(1, 3));
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
 
+        toggleMusic = new JButton("Toggle Music");
+        toggleMusic.setBackground(CustomColor.BUTTON);
+        toggleMusic.setFont(toggleMusic.getFont ().deriveFont (18.0f));
+        toggleMusic.setForeground(CustomColor.ON_BUTTON_LABEL);
+        toggleMusic.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+
+        toggleMusic.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if(musicPlaying)
+                {
+                    backgroundMusic.pause();
+                    musicPlaying = false;
+                }
+                else
+                {
+                    backgroundMusic.resume();
+                    musicPlaying = true;
+                }
+            }
+        });
+
         //ImageIcon pic = new ImageIcon(ClassLoader.getSystemResource("res/SettingsIcon.jpg"));
         //Image image = pic.getImage();
-      //  JButton settings = new JButton((new ImageIcon(image.getScaledInstance(120,120, java.awt.Image.SCALE_SMOOTH))));
+        //JButton settings = new JButton((new ImageIcon(image.getScaledInstance(120,120, java.awt.Image.SCALE_SMOOTH))));
         //JButton settings = new JButton(pic);
         //p.add(settings);
+
+        JLabel filler1 = new JLabel();
+        JLabel filler2 = new JLabel();
+
+        p.add(toggleMusic);
+        p.add(filler1);
+        p.add(filler2);
 
         mainPanel.add(p, gbc);
     }
@@ -285,7 +315,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         start.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         start.setFont(start.getFont ().deriveFont (18.0f));
         start.setForeground(CustomColor.ON_BUTTON_LABEL);
-        start.setPreferredSize(new Dimension(100,30));
 
         start.addActionListener(new ActionListener() {
             @Override
@@ -333,7 +362,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         playPause.setBackground(CustomColor.BUTTON);
         playPause.setFont(playPause.getFont ().deriveFont (18.0f));
         playPause.setForeground(CustomColor.ON_BUTTON_LABEL);
-        playPause.setPreferredSize(new Dimension(100,30));
         playPause.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         playPause.addActionListener(new ActionListener() {
@@ -345,12 +373,14 @@ public class ControlPanel extends JPanel implements ActionListener{
                     {
                         simEngine.getClock().stop();
                         backgroundMusic.pause();
+                        musicPlaying = false;
                         toPause = false;
                     }
                     else
                     {
                         simEngine.getClock().start();
                         backgroundMusic.resume();
+                        musicPlaying = true;
                         toPause = true;
                     }
                     gui.getTallyPanel().showGraphModeButton();
@@ -362,7 +392,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         reset.setBackground(CustomColor.BUTTON);
         reset.setFont(reset.getFont ().deriveFont (18.0f));
         reset.setForeground(CustomColor.ON_BUTTON_LABEL);
-        reset.setPreferredSize(new Dimension(100,30));
         reset.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         reset.addActionListener(new ActionListener() {

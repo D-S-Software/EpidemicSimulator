@@ -42,7 +42,7 @@ public class GUI {
         gbcMain.gridy = 0;
         gbcMain.gridwidth = 2;
         gbcMain.gridheight = 1;
-        gbcMain.weightx = .1;
+        gbcMain.weightx = 0;
         gbcMain.weighty = 1;
         gbcMain.anchor = GridBagConstraints.CENTER;
         gbcMain.fill = GridBagConstraints.BOTH;
@@ -64,7 +64,7 @@ public class GUI {
         frame.add(leftPanel, gbcMain);
 
         gbcMain.gridx = 1;
-        gbcMain.weightx = .1;
+        gbcMain.weightx = 20;
 
         rightPanel = new JPanel(new GridBagLayout());
         rightPanel.setBackground(CustomColor.BACKGROUND);
