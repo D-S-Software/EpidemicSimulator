@@ -351,9 +351,9 @@ public class ControlPanel extends JPanel implements ActionListener{
                         simEngine.getClock().start();
                         canStart = false;
                         checkTick.stop();
+                        gui.getTallyPanel().showGraphModeButton();
+                        backgroundMusic.loop();
                     }
-                    gui.getTallyPanel().showGraphModeButton();
-                    backgroundMusic.loop();
                 }
             }
         });
