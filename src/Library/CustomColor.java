@@ -42,6 +42,10 @@ public class CustomColor extends Color{
 
     //Blue
     public static final Color SAVOY_BLUE = new Color(75, 97, 209);/** Blue based */
+    public static final Color INDEPENDENCE = new Color(76, 81, 109);
+    public static final Color SPACE_CADET = new Color(30, 41, 82);
+    public static final Color Sapphire = new Color(8, 37, 103);
+
 
     //Violet
 

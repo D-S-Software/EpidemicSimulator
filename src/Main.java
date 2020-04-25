@@ -15,7 +15,7 @@ public class Main {
     /* Known Bugs
         1. Charts not resetting properly
      */
-    
+
 
     //TODO Set Font size in Graphs
 

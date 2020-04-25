@@ -125,7 +125,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED);
+        p.setBackground(CustomColor.SPACE_CADET);
         mainPanel.add(p, gbc);
     }
     public void addTitleControlPanel()
@@ -286,7 +286,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(startPercentHealthy);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.JET);
+        p.setBackground(CustomColor.SPACE_CADET);
         mainPanel.add(p, gbc);
     }
     public void addButtonPanel()
