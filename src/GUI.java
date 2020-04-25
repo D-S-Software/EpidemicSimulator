@@ -32,7 +32,7 @@ public class GUI {
 
         frame = new JFrame("EpidemicSimulator");
         frame.getContentPane().setBackground(CustomColor.BACKGROUND);
-        ImageIcon pic1 = new ImageIcon("corona.jpg");
+        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
         Image image1 = pic1.getImage();
         frame.setIconImage(image1);
         frame.setPreferredSize(new Dimension(preWidth, preHeight));

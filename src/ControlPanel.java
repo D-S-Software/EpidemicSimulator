@@ -1,5 +1,4 @@
 import Library.CustomColor;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -18,6 +17,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     boolean toPause = true, canStart = true, canType = true;
     private GUI gui;
     Timer checkTick;
+    Music backgroundMusic = new Music("BlackOps.wav");
 
     public ControlPanel(GUI gui)
     {
@@ -80,22 +80,22 @@ public class ControlPanel extends JPanel implements ActionListener{
         g1.add(choice4);
         g1.add(custom);
 
-        ImageIcon pic1 = new ImageIcon("corona.jpg");
+        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
         Image image1 = pic1.getImage();
         Image image11 = image1.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
         ImageIcon edit1 = new ImageIcon(image11);
 
-        ImageIcon pic2 = new ImageIcon("bacteria1.jpg");
+        ImageIcon pic2 = new ImageIcon(ClassLoader.getSystemResource("res/bacteria1.jpg"));
         Image image2 = pic2.getImage();
         Image image22 = image2.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
         ImageIcon edit2 = new ImageIcon(image22);
 
-        ImageIcon pic3 = new ImageIcon("virus4.png");
+        ImageIcon pic3 = new ImageIcon(ClassLoader.getSystemResource("res/virus4.png"));
         Image image3 = pic3.getImage();
         Image image33 = image3.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
         ImageIcon edit3 = new ImageIcon(image33);
 
-        ImageIcon pic4 = new ImageIcon("virus3.jpg");
+        ImageIcon pic4 = new ImageIcon(ClassLoader.getSystemResource("res/virus3.jpg"));
         Image image4 = pic4.getImage();
         Image image44 = image4.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
         ImageIcon edit4 = new ImageIcon(image44);
@@ -160,12 +160,12 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
 
-        ImageIcon pic = new ImageIcon("SettingsIcon.jpg");
-        Image image = pic.getImage();
+        //ImageIcon pic = new ImageIcon(ClassLoader.getSystemResource("res/SettingsIcon.jpg"));
+        //Image image = pic.getImage();
       //  JButton settings = new JButton((new ImageIcon(image.getScaledInstance(120,120, java.awt.Image.SCALE_SMOOTH))));
-        JButton settings = new JButton(pic);
+        //JButton settings = new JButton(pic);
+        //p.add(settings);
 
-        p.add(settings);
         mainPanel.add(p, gbc);
     }
     public void addParamPanel()
@@ -268,7 +268,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel(new GridLayout(1, 5));
 
-        numPeopleLabel = new JLabel("NumPeople:");
+        numPeopleLabel = new JLabel("Number of People:  ");
         numPeopleLabel.setFont(numPeopleLabel.getFont ().deriveFont (20.0f));
         numPeopleLabel.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
         p.add(numPeopleLabel);
@@ -324,6 +324,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         checkTick.stop();
                     }
                     gui.getTallyPanel().showGraphModeButton();
+                    backgroundMusic.loop();
                 }
             }
         });
@@ -343,11 +344,13 @@ public class ControlPanel extends JPanel implements ActionListener{
                     if(toPause)
                     {
                         simEngine.getClock().stop();
+                        backgroundMusic.pause();
                         toPause = false;
                     }
                     else
                     {
                         simEngine.getClock().start();
+                        backgroundMusic.resume();
                         toPause = true;
                     }
                     gui.getTallyPanel().showGraphModeButton();
@@ -385,6 +388,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                 gui.getPieChartPanel().resetPie();
 
                 checkTick.start();
+                backgroundMusic.stop();
             }
         });
 
