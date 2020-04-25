@@ -1,33 +1,30 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-public class Board {
+public class SimBoardRandom extends SimBoard{
 
    private Rectangle dimens;
    private ArrayList<Person> pList;
    private int minAge = 20;
    private int maxAge = 80;
    private int minPreExistingConditions = 0;
-    private int maxPreExistingConditions = 3;
+   private int maxPreExistingConditions = 3;
+   private int numPeople;
 
-    public Board(Disease disease, int xOrigin, int yOrigin, int xLen, int yLen, int numPeople)
+    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople)
     {
-        dimens = new Rectangle(xOrigin, yOrigin, xLen, yLen);
+        this.dimens = dimens;
+        this.numPeople = numPeople;
 
         pList = new ArrayList<>();
         for(int i = 0; i < numPeople; i++)
         {
-            int xPos = xOrigin + (int)(xLen*Math.random());
-            int yPos = yOrigin + (int)(yLen*Math.random());
+            int xPos = dimens.x + (int)(dimens.width*Math.random());
+            int yPos = dimens.y + (int)(dimens.height*Math.random());
 
             pList.add(new Person((int)(minAge + (maxAge-minAge)*Math.random()),
-                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease));
+                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease, circleRad));
         }
-    }
-
-    public Board(Disease disease, Rectangle dimens, int numPeople)
-    {
-        this(disease, dimens.x, dimens.y, dimens.width, dimens.height, numPeople);
     }
 
     /**
@@ -69,5 +66,13 @@ public class Board {
 
     public ArrayList<Person> getPList() {
         return pList;
+    }
+
+    public Rectangle getDimens() {
+        return dimens;
+    }
+
+    public int getNumPeople() {
+        return numPeople;
     }
 }

@@ -351,7 +351,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else
                             numPeople = Integer.parseInt(numPeopleField.getText());
 
-                        gui.getBoardPanel().setReset(false);
+                        gui.getSimBoardPanel().setReset(false);
                         simEngine = new Engine(gui, disease, numPeople);
                         simEngine.getClock().start();
                         canStart = false;
@@ -413,9 +413,9 @@ public class ControlPanel extends JPanel implements ActionListener{
                 disease = null;
                 canStart = true;
 
-                gui.getBoardPanel().setReset(true);
+                gui.getSimBoardPanel().setReset(true);
 
-                gui.getBoardPanel().repaint();
+                gui.getSimBoardPanel().repaint();
 
                 gui.getXYChartPanel().resetXY();
                 gui.getXYChartPanel2().resetXY();

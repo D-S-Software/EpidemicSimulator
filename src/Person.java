@@ -6,7 +6,7 @@ public class Person {
 
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, directionAngle, maxTimeSick;
-    private int circleRad = 8, timeSinceSick = 0;
+    private int circleRad, timeSinceSick = 0;
     private double step = 2;
     private double distanceFromSick, mortalityRate;
     private Rectangle dimens;
@@ -15,10 +15,11 @@ public class Person {
     private double conditionsMortalityFactor = 0.02;
 
 
-    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease)
+    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, int circleRad)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
+        this.circleRad = circleRad;
         this.xPos = xPos;
         this.yPos = yPos;
         maxTimeSick = disease.getBaseMaxTimeSick() + 100 * (int)(age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
@@ -101,7 +102,7 @@ public class Person {
 
     public void updateDimens(Rectangle rect)
     {
-        dimens.setBounds(rect);
+        dimens = rect;
         dimens.width -= circleRad;
         dimens.height -= circleRad;
     }
@@ -150,5 +151,19 @@ public class Person {
     public int getYPos()
     {
         return yPos;
+    }
+
+    public void setxPos(int xPos)
+    {
+        this.xPos = xPos;
+    }
+
+    public void setyPos(int yPos)
+    {
+        this.yPos = yPos;
+    }
+
+    public void setDimens(Rectangle dimens) {
+        this.dimens = dimens;
     }
 }

@@ -9,14 +9,15 @@ public class Engine {
     {
         Rectangle boardDimens = new Rectangle(gui.getBoardRec());
 
-        Board simBoard = new Board(disease, boardDimens, numPeople);
+        SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople);
+        //SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople);
 
-        gui.getBoardPanel().setBoard(simBoard);
+        gui.getSimBoardPanel().setBoard(simBoard);
 
         Statistics stats = new Statistics(simBoard, numPeople);
         gui.setStats(stats);
 
-        clock = new Timer(10, gui.getBoardPanel());
+        clock = new Timer(10, gui.getSimBoardPanel());
         clock.addActionListener(stats);
         clock.addActionListener(gui.getXYChartPanel());
         clock.addActionListener(gui.getXYChartPanel2());

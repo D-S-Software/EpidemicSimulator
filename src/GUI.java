@@ -8,7 +8,7 @@ public class GUI {
 
     private JPanel topPanel, leftPanel, rightPanel;
     private TitlePanel titlePanel;
-    private BoardPanel boardPanel;
+    private SimBoardPanel simBoardPanel;
     private ControlPanel controlPanel;
     private TallyPanel tallyPanel;
 
@@ -118,9 +118,9 @@ public class GUI {
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
-        boardPanel = new BoardPanel();
-        boardPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        leftPanel.add(boardPanel, gbc);
+        simBoardPanel = new SimBoardPanel();
+        simBoardPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        leftPanel.add(simBoardPanel, gbc);
     }
     private void addControlPanel()
     {
@@ -220,9 +220,9 @@ public class GUI {
         rightPanel.add(pieChartPanel, gbc);
     }
 
-    public BoardPanel getBoardPanel()
+    public SimBoardPanel getSimBoardPanel()
     {
-        return boardPanel;
+        return simBoardPanel;
     }
 
     public TallyPanel getTallyPanel()
@@ -232,7 +232,7 @@ public class GUI {
 
     public Rectangle getBoardRec()
     {
-        return boardPanel.getBounds();
+        return simBoardPanel.getBounds();
     }
 
     public XYChartPanel getXYChartPanel(){
