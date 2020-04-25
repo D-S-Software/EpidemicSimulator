@@ -19,39 +19,16 @@ public class Statistics implements ActionListener {
     {
         pList = simBoard.getPList();
         this.numPeople = numPeople;
+        numPeople = pList.size();
+        time = -1;
+
         //x.openFile(); TODO Add back in at some point
 
-        int healthyCount = 0;
-        int sickCount = 0;
-
-        for(int i = 0; i < pList.size(); i++)
-        {
-            if(pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
-                sickCount++;
-            if(!pList.get(i).getHasDisease() && pList.get(i).getIsHealthy())
-                healthyCount++;
-        }
-        numHealthy = healthyCount;
-        numSick = sickCount;
-        numPeople = pList.size();
-        numCases = numSick + numRecovered + numDead;
+        updateStats();
     }
 
-    public void actionPerformed(ActionEvent e)
+    public void updateStats()
     {
-        count++;
-        if(count == 100)
-        {
-            timeList.add(time/100);
-            healthyList.add(numHealthy);
-            sickList.add(numSick);
-            recoveredList.add(numRecovered);
-            deadList.add(numDead);
-            casesList.add(numCases);
-
-            count = 0;
-        }
-
         int healthyCount = 0;
         int sickCount = 0;
         int recoveredCount = 0;
@@ -72,13 +49,26 @@ public class Statistics implements ActionListener {
         numHealthy = healthyCount;
         numDead = numPeople - numHealthy - numSick - numRecovered;
         numCases = numSick + numRecovered + numDead;
+    }
 
-        /**
-        x.addFindAffectedPercent((double)(numSick + numRecovered + numDead) / numPeople);
-        x.addSpace();
-        x.addTime(time);
-        x.addSpace();
+    public void actionPerformed(ActionEvent e)
+    {
+        count++;
+        if(count == 100)
+        {
+            timeList.add(time/100);
+            healthyList.add(numHealthy);
+            sickList.add(numSick);
+            recoveredList.add(numRecovered);
+            deadList.add(numDead);
+            casesList.add(numCases);
 
+            count = 0;
+        }
+
+        updateStats();
+
+        /** TODO Add back in at some point
         boolean close;
         if(numSick > 0)
             close = false;
@@ -87,7 +77,7 @@ public class Statistics implements ActionListener {
         if(close)
         {
             x.closeFile();
-            System.exit(0); TODO Add back in at some point
+            System.exit(0);
         }*/
     }
 
