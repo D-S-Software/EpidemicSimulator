@@ -12,6 +12,11 @@ public class Main {
         Main test = new Main(1600, 900); //Should be 16.9 to scale nicely with most screens
     }
 
+    /* Known Bugs
+        1. Charts not resetting properly
+     */
+
+
     //TODO Set Font size in Graphs
 
     //TODO Clean up code (make packages, check parameters (age, mortality rate, windowSize, delays ect.)
@@ -19,6 +24,7 @@ public class Main {
     //TODO Make opening screen (start with music)
     //TODO make a button to toggle music (ex. Black Ops Zombies, Plague Inc., Break Bad Intro) (Other sounds to implement?)
     //TODO Find Diseases and set parameters for Disease 1-4
+    //TODO Variable step size
 
     //SimControl:
     // Have control over the ages and conditions of people (just send to board class (already implemented)

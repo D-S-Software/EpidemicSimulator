@@ -1,11 +1,9 @@
 import Library.CustomColor;
 import org.knowm.xchart.XYChart;
 import org.knowm.xchart.XYChartBuilder;
+import org.knowm.xchart.XYSeries;
 import org.knowm.xchart.style.Styler;
 import org.knowm.xchart.style.Styler.LegendPosition;
-import org.knowm.xchart.style.markers.*;
-
-import java.awt.*;
 
 public class MyXYChart {
 
@@ -17,29 +15,38 @@ public class MyXYChart {
         // Create Chart
         xychart = new XYChartBuilder().width(400).height(300).title("Population Breakdown vs Time").xAxisTitle("Time (s)").yAxisTitle("Number of People").build();
 
-        // Customize Chart
-        xychart.getStyler().setLegendPosition(LegendPosition.OutsideS);
-        xychart.getStyler().setLegendPosition(Styler.LegendPosition.OutsideS);
-        xychart.getStyler().setLegendLayout(Styler.LegendLayout.Horizontal);
-        xychart.getStyler().setChartBackgroundColor(CustomColor.JET);
+        // Customize Chart //TODO: Organize
+        xychart.getStyler().setLegendPosition(LegendPosition.OutsideS).setLegendLayout(Styler.LegendLayout.Horizontal);
         xychart.getStyler().setLegendBackgroundColor(CustomColor.JET);
+        xychart.getStyler().setPlotBorderColor(CustomColor.JET).setPlotBackgroundColor(CustomColor.JET);
         xychart.getStyler().setPlotBackgroundColor(CustomColor.JET);
-        xychart.getStyler().setPlotBorderColor(CustomColor.JET);
-        xychart.getStyler().setChartFontColor(CustomColor.WHITE);
-        xychart.getStyler().setXAxisTickLabelsColor(CustomColor.WHITE);
-        xychart.getStyler().setYAxisTickLabelsColor(CustomColor.WHITE);
+        xychart.getStyler().setChartFontColor(CustomColor.CHART_LABEL);
+        xychart.getStyler().setChartBackgroundColor(CustomColor.JET);
+        xychart.getStyler().setAnnotationsFontColor(CustomColor.CHART_LABEL);
+        xychart.getStyler().setAxisTickMarksColor(CustomColor.CHART_LABEL);
+        xychart.getStyler().setXAxisTickLabelsColor(CustomColor.CHART_LABEL);
+        xychart.getStyler().setXAxisTickLabelsColor(CustomColor.CHART_LABEL);
+        xychart.getStyler().setYAxisTickLabelsColor(CustomColor.CHART_LABEL);
 
-        Color[] seriesColors = {CustomColor.SAVOY_BLUE, CustomColor.DARK_RED, CustomColor.SLATE_GRAY, CustomColor.EERIE_BLACK};
-        xychart.getStyler().setSeriesColors(seriesColors);
+        // Series TODO Add colors for the line graph
+        //TODO Change the front size for the line graph
+        XYSeries healthy = xychart.addSeries("Healthy",new double[]{0}, new double[]{0});
+        healthy.setLineColor(CustomColor.HEALTHY);
+        healthy.setMarkerColor(CustomColor.HEALTHY);
 
-        Marker[] markers = {new Circle(), new Diamond(), new TriangleUp(), new TriangleDown()};
-        xychart.getStyler().setSeriesMarkers(markers);
+        XYSeries sick = xychart.addSeries("Sick", new double[]{0}, new double[]{0});
+        sick.setLineColor(CustomColor.SICK);
+        sick.setMarkerColor(CustomColor.SICK);
 
-        // Series
-        xychart.addSeries("healthy", new double[]{0}, new double[]{0});
-        xychart.addSeries("sick", new double[]{0}, new double[]{0});
-        xychart.addSeries("recovered", new double[]{0}, new double[]{0});
-        xychart.addSeries("dead", new double[]{0}, new double[]{0});
+        XYSeries dead = xychart.addSeries("Dead", new double[]{0}, new double[]{0});
+        dead.setLineColor(CustomColor.RECOVERED);
+        dead.setMarkerColor(CustomColor.RECOVERED);
+
+        XYSeries recovered = xychart.addSeries("Recovered", new double[]{0}, new double[]{0});
+        recovered.setLineColor(CustomColor.DEAD);
+        recovered.setMarkerColor(CustomColor.DEAD);
+
+
 
         return xychart;
     }
