@@ -2,6 +2,8 @@ import Library.CustomColor;
 import javax.swing.*;
 import java.awt.*;
 
+import static java.awt.Font.BOLD;
+
 public class GUI {
 
     private JPanel topPanel, leftPanel, rightPanel;
@@ -97,8 +99,9 @@ public class GUI {
         titlePanel = new TitlePanel();
         titlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         JLabel titleFont = new JLabel("Epidemic Simulator");
-        titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
-        titleFont.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
+        //titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
+        titleFont.setFont(new Font("Helvetica",BOLD, 36));
+        titleFont.setForeground(CustomColor.SILVER);
         titlePanel.add(titleFont);
         titlePanel.setBackground(CustomColor.BLOOD_RED);
         topPanel.add(titlePanel, gbc);
@@ -149,7 +152,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
         tallyPanel = new TallyPanel(this, new GridLayout(2, 3));
-        tallyPanel.setBackground(CustomColor.KOBICHA);
+        tallyPanel.setBackground(CustomColor.BLOOD_RED);
 
         rightPanel.add(tallyPanel, gbc);
     }

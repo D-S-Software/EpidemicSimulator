@@ -9,11 +9,12 @@ public class CustomColor extends Color{
         super(r,b,g);
     }
 
-
+    //Red
     public static final Color REDWOOD = new Color(164, 90, 82);/** Red based */
     public static final Color DARK_RED = new Color(139, 0, 0);/** Red based */
     public static final Color CARMINE = new Color(150, 0, 24);/** Red based */
     public static final Color BLOOD_RED = new Color(102, 0, 0);/** Red based */
+    public static final Color GARNET = new Color(115, 54, 53);
 
     //Orange
     public static final Color ALLOY_ORANGE = new Color(196, 98, 16);
@@ -24,11 +25,15 @@ public class CustomColor extends Color{
     public static final Color SARACUSE_ORANGE = new Color(212, 69, 0);
     public static final Color OCHRE = new Color(204, 119, 34);
     public static final Color CHESTNUT = new Color(149, 69, 53);
+    public static final Color VERY_DEEP_GAMBOGE = new Color(51, 32, 0);
 
     //Yellow
     public static final Color GOLDENROD = new Color(218, 165, 32);
     public static final Color ROYAL_YELLOW = new Color(250, 218, 94);
     public static final Color SAFTEY_YELLOW = new Color(255, 211, 0);
+    public static final Color DEEP_GOLD = new Color(102, 88, 0);
+    public static final Color DARK_GOLD = new Color(127, 112, 25);
+    public static final Color VERY_DEEP_GOLD = new Color(51, 44, 0);
 
     //Green
     public static final Color ARTICHOKE_GREEN = new Color(75, 111, 68);
@@ -65,10 +70,10 @@ public class CustomColor extends Color{
     public static final Color DEAD = CustomColor.DIM_GRAY;
 
     public static final Color BACKGROUND = CustomColor.EERIE_BLACK;
-    public static final Color BUTTON = CustomColor.CHESTNUT;
-    public static final Color FIELD = CustomColor.CINEROUS;
-    public static final Color ON_BLOOD_RED_LABEL = CustomColor.WHITE;
-    public static final Color ON_BUTTON_LABEL = Color.BLACK; /** Also for Fields , which are also Gold-based */
+    public static final Color BUTTON = CustomColor.DAVYS_GRAY;
+    public static final Color FIELD = CustomColor.DAVYS_GRAY;
+    public static final Color ON_BLOOD_RED_LABEL = CustomColor.BLACK;
+    public static final Color ON_BUTTON_LABEL = Color.BLACK; /** Also for Fields */
     public static final Color CHART_LABEL = Color.WHITE;
 
 

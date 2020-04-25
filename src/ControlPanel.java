@@ -17,11 +17,16 @@ public class ControlPanel extends JPanel implements ActionListener{
     boolean toPause = true, canStart = true, canType = true, musicPlaying = true;
     private GUI gui;
     Timer checkTick;
-    Music backgroundMusic = new Music("BlackOps.wav");
+    Music backgroundMusic;
 
     public ControlPanel(GUI gui)
     {
         this.gui = gui;
+
+        if(Math.random() > .5)
+            backgroundMusic = new Music("BlackOps.wav");
+        else
+            backgroundMusic = new Music("BreakingBad.wav");
 
         addSelectionPanel();
         addSimSettingPanel();
@@ -120,7 +125,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.KOBICHA);
+        p.setBackground(CustomColor.BLOOD_RED);
         mainPanel.add(p, gbc);
     }
     public void addTitleControlPanel()
@@ -281,7 +286,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(startPercentHealthy);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.KOBICHA);
+        p.setBackground(CustomColor.JET);
         mainPanel.add(p, gbc);
     }
     public void addButtonPanel()
