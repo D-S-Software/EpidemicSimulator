@@ -21,22 +21,22 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
     {
         boolean show = isVisible();
         setVisible(false);
-        xychart.updateXYSeries("healthy", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
-        xychart.updateXYSeries("sick", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
-        xychart.updateXYSeries("recovered", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
-        xychart.updateXYSeries("dead", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        xychart.updateXYSeries("Healthy", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        xychart.updateXYSeries("Sick", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        xychart.updateXYSeries("Recovered", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
+        xychart.updateXYSeries("Dead", new ArrayList<Integer>(), new ArrayList<Integer>(),null );
         setVisible(show);
     }
 
     public void actionPerformed(ActionEvent e)
     {
         count++;
-        if(count == 100)
+        if(count == 100) //TODO Should this be 99?
         {
-            xychart.updateXYSeries("healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
-            xychart.updateXYSeries("sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
-            xychart.updateXYSeries("recovered",gui.getStats().getTimeList(), gui.getStats().getRecoveredList(),null );
-            xychart.updateXYSeries("dead",gui.getStats().getTimeList(), gui.getStats().getDeadList(),null ); //Maybe updateXYSeries has to be in Chart class
+            xychart.updateXYSeries("Healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
+            xychart.updateXYSeries("Sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );
+            xychart.updateXYSeries("Recovered",gui.getStats().getTimeList(), gui.getStats().getRecoveredList(),null );
+            xychart.updateXYSeries("Dead",gui.getStats().getTimeList(), gui.getStats().getDeadList(),null ); //Maybe updateXYSeries has to be in Chart class
 
             repaint();
             count = 0;

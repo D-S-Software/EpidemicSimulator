@@ -69,6 +69,7 @@ public class CustomColor extends Color{
     public static final Color FIELD = CustomColor.CINEROUS;
     public static final Color ON_BLOOD_RED_LABEL = CustomColor.WHITE;
     public static final Color ON_BUTTON_LABEL = Color.BLACK; /** Also for Fields , which are also Gold-based */
+    public static final Color CHART_LABEL = Color.WHITE;
 
 
 
