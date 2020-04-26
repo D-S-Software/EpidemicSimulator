@@ -4,14 +4,14 @@ import java.util.ArrayList;
 public class SimBoardQuad extends SimBoard{
 
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens;
-    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4;
+    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
     private int minAge = 20;
     private int maxAge = 80;
     private int minPreExistingConditions = 0;
     private int maxPreExistingConditions = 3;
     private int numPeople;
 
-    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople)
+    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, int travelers)
     {
         this.dimens = dimens;
         this.numPeople = numPeople;
@@ -22,9 +22,10 @@ public class SimBoardQuad extends SimBoard{
         pListQ2 = new ArrayList<>();
         pListQ3 = new ArrayList<>();
         pListQ4 = new ArrayList<>();
+        pListTravel = new ArrayList<>();
 
         int k = 0;
-        for(int i = 0; i < numPeople; i++) {
+        for(int i = 0; i < numPeople - travelers; i++) {
             int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
             int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
 
@@ -75,6 +76,16 @@ public class SimBoardQuad extends SimBoard{
             }
         }
 
+        for(int i = 0; i < travelers; i++)
+        {
+            int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
+            int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
+            int xPos = dimens.x + (int)(dimens.width*Math.random());
+            int yPos = dimens.y + (int)(dimens.height*Math.random());
+
+            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, dimens, disease, circleRad));
+        }
+
         for(int i = 0; i < pListQ1.size(); i++)
             pList.add(pListQ1.get(i));
         for(int i = 0; i < pListQ2.size(); i++)
@@ -83,6 +94,8 @@ public class SimBoardQuad extends SimBoard{
             pList.add(pListQ3.get(i));
         for(int i = 0; i < pListQ4.size(); i++)
             pList.add(pListQ4.get(i));
+        for(int i = 0; i < pListTravel.size(); i++)
+            pList.add(pListTravel.get(i));
     }
 
     public void updateAllDimens(Rectangle updatedRect)
@@ -175,6 +188,23 @@ public class SimBoardQuad extends SimBoard{
                 minDist = 0.1;
             pListQ4.get(i).setDistanceFromSick(minDist);
         }
+        for(int i = 0; i < pListTravel.size(); i++)
+        {
+            double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+
+            if(!pListTravel.get(i).getHasDisease())
+                for(int j = 0; j < pList.size(); j++)
+                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
+                    {
+                        double distTest = Math.sqrt(Math.pow(pListTravel.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListTravel.get(i).getYPos() - pList.get(j).getYPos(), 2));
+                        if(distTest < minDist)
+                            minDist = distTest;
+                    }
+            Double dist = minDist;
+            if(dist.equals(0))
+                minDist = 0.1;
+            pListTravel.get(i).setDistanceFromSick(minDist);
+        }
     }
 
     /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
@@ -220,6 +250,16 @@ public class SimBoardQuad extends SimBoard{
                 numPeople--;
             }
         }
+        for(int i = 0; i < pListTravel.size(); i++)
+        {
+            pListTravel.get(i).checkCondition();
+            pListTravel.get(i).move();
+            if(!pListTravel.get(i).getHasDisease() && !pListTravel.get(i).getIsHealthy())
+            {
+                pListTravel.remove(pListTravel.get(i));
+                numPeople--;
+            }
+        }
     }
 
     public ArrayList<Person> getpListQ1() {
@@ -236,6 +276,10 @@ public class SimBoardQuad extends SimBoard{
 
     public ArrayList<Person> getpListQ4() {
         return pListQ4;
+    }
+
+    public ArrayList<Person> getpListTravel() {
+        return pListTravel;
     }
 
     public Rectangle getDimens() {

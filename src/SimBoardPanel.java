@@ -73,6 +73,12 @@ public class SimBoardPanel extends JPanel implements ActionListener
                 simBoard.getpListQ4().get(i).updateDimens(newDimens);
                 simBoard.getpListQ4().get(i).draw(g2D);
             }
+            for(int i = 0; i < simBoard.getpListTravel().size(); i++)
+            {
+                newDimens = simBoard.getDimens();
+                simBoard.getpListTravel().get(i).updateDimens(newDimens);
+                simBoard.getpListTravel().get(i).draw(g2D);
+            }
         }
     }
 

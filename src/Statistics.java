@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Statistics implements ActionListener {
 
-    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4;
+    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
     private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
@@ -28,6 +28,7 @@ public class Statistics implements ActionListener {
             pListQ2 = simBoard.getpListQ2();
             pListQ3 = simBoard.getpListQ3();
             pListQ4 = simBoard.getpListQ4();
+            pListTravel = simBoard.getpListTravel();
         }
 
         this.simBoard = simBoard;
@@ -94,6 +95,15 @@ public class Statistics implements ActionListener {
                 if(pListQ4.get(i).getHasDisease() && !pListQ4.get(i).getIsHealthy())
                     sickCount++;
                 if(!pListQ4.get(i).getHasDisease() && pListQ4.get(i).getIsHealthy())
+                    healthyCount++;
+            }
+            for(int i = 0; i < pListTravel.size(); i++)
+            {
+                if(pListTravel.get(i).getHasDisease() && pListTravel.get(i).getIsHealthy())
+                    recoveredCount++;
+                if(pListTravel.get(i).getHasDisease() && !pListTravel.get(i).getIsHealthy())
+                    sickCount++;
+                if(!pListTravel.get(i).getHasDisease() && pListTravel.get(i).getIsHealthy())
                     healthyCount++;
             }
         }

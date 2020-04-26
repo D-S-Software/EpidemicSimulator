@@ -37,7 +37,7 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
             repaint();
             count = 0;
         }
-        if(gui.getStats().getNumSick() == 0)
+        if(gui.getStats().getNumSick() == 0 || gui.getStats().getNumHealthy() == 0)
             count = 101;
     }
 }

@@ -26,9 +26,10 @@ public class MyXYChart2 {
         xychart2.getStyler().setLegendBackgroundColor(CustomColor.JET);
         xychart2.getStyler().setPlotBackgroundColor(CustomColor.JET);
         xychart2.getStyler().setPlotBorderColor(CustomColor.JET);
-        xychart2.getStyler().setChartFontColor(CustomColor.WHITE);
-        xychart2.getStyler().setXAxisTickLabelsColor(CustomColor.WHITE);
-        xychart2.getStyler().setYAxisTickLabelsColor(CustomColor.WHITE);
+        xychart2.getStyler().setChartFontColor(CustomColor.CHART_LABEL);
+        xychart2.getStyler().setAxisTickMarksColor(CustomColor.CHART_LABEL);
+        xychart2.getStyler().setXAxisTickLabelsColor(CustomColor.CHART_LABEL);
+        xychart2.getStyler().setYAxisTickLabelsColor(CustomColor.CHART_LABEL);
 
         Color[] seriesColors = {CustomColor.DARK_RED};
         xychart2.getStyler().setSeriesColors(seriesColors);

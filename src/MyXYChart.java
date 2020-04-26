@@ -25,7 +25,6 @@ public class MyXYChart {
         xychart.getStyler().setAnnotationsFontColor(CustomColor.CHART_LABEL);
         xychart.getStyler().setAxisTickMarksColor(CustomColor.CHART_LABEL);
         xychart.getStyler().setXAxisTickLabelsColor(CustomColor.CHART_LABEL);
-        xychart.getStyler().setXAxisTickLabelsColor(CustomColor.CHART_LABEL);
         xychart.getStyler().setYAxisTickLabelsColor(CustomColor.CHART_LABEL);
 
         // Series TODO Add colors for the line graph
@@ -39,14 +38,12 @@ public class MyXYChart {
         sick.setMarkerColor(CustomColor.SICK);
 
         XYSeries dead = xychart.addSeries("Dead", new double[]{0}, new double[]{0});
-        dead.setLineColor(CustomColor.RECOVERED);
-        dead.setMarkerColor(CustomColor.RECOVERED);
+        dead.setLineColor(CustomColor.DEAD);
+        dead.setMarkerColor(CustomColor.DEAD);
 
         XYSeries recovered = xychart.addSeries("Recovered", new double[]{0}, new double[]{0});
-        recovered.setLineColor(CustomColor.DEAD);
-        recovered.setMarkerColor(CustomColor.DEAD);
-
-
+        recovered.setLineColor(CustomColor.RECOVERED);
+        recovered.setMarkerColor(CustomColor.RECOVERED);
 
         return xychart;
     }

@@ -4,13 +4,14 @@ import java.awt.*;
 public class Engine {
 
     private Timer clock;
+    private int travelers = 20;
 
     public Engine(GUI gui, Disease disease, int numPeople)
     {
         Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
 
         //SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople);
-        SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople);
+        SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople, travelers);
 
         gui.getSimBoardPanel().setBoard(simBoard);
 

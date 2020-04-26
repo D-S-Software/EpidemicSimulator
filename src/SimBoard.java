@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public abstract class SimBoard {
 
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens;
-    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4;
+    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
     public final int circleRad = 8;
 
 
@@ -37,6 +37,10 @@ public abstract class SimBoard {
 
     public ArrayList<Person> getpListQ4() {
         return pListQ4;
+    }
+
+    public ArrayList<Person> getpListTravel() {
+        return pListTravel;
     }
 
     public Rectangle getQ1Dimens() {
