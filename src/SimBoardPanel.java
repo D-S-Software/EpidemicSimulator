@@ -38,8 +38,10 @@ public class SimBoardPanel extends JPanel implements ActionListener
         simBoard.updateAllDimens(getBounds());
         Rectangle newDimens;
 
-        if(simBoard instanceof SimBoardIsolate)
-            ((SimBoardIsolate) simBoard).quarantineCheck();
+        if(simBoard instanceof SimBoardIsolateRandom)
+            ((SimBoardIsolateRandom) simBoard).quarantineCheck();
+        if(simBoard instanceof SimBoardIsolateQuad)
+            ((SimBoardIsolateQuad) simBoard).quarantineCheck();
         if(simBoard instanceof SimBoardRandom)
         {
             for(int i = 0; i < simBoard.getPList().size(); i++)

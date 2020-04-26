@@ -140,6 +140,11 @@ public class Person {
 
     /** Getter and Setter Methods */
 
+    public void setStep(double step)
+    {
+        this.step = step;
+    }
+
     public boolean getHasDisease()
     {
         return hasDisease;

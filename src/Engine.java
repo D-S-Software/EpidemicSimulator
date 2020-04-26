@@ -12,7 +12,8 @@ public class Engine {
 
         //SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople);
         //SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople, travelers);
-        SimBoardIsolate simBoard = new SimBoardIsolate(disease, boardDimens, numPeople, travelers, 200);
+        //SimBoardIsolateQuad simBoard = new SimBoardIsolateQuad(disease, boardDimens, numPeople, travelers, 200);
+        SimBoardIsolateRandom simBoard = new SimBoardIsolateRandom(disease, boardDimens, numPeople, 400);
 
         gui.getSimBoardPanel().setBoard(simBoard);
 

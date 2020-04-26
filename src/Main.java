@@ -38,4 +38,7 @@ public class Main {
 
     //Action Events:
     // First 10 deaths - move less --> just update step and direction in person
+
+    //Known Bugs
+    // The Isolation modes the beginning has weird movement
 }
