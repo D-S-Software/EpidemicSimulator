@@ -7,10 +7,10 @@ public class Engine {
 
     public Engine(GUI gui, Disease disease, int numPeople)
     {
-        Rectangle boardDimens = new Rectangle(gui.getBoardRec());
+        Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
 
-        SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople);
-        //SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople);
+        //SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople);
+        SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople);
 
         gui.getSimBoardPanel().setBoard(simBoard);
 

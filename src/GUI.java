@@ -230,7 +230,7 @@ public class GUI {
         return tallyPanel;
     }
 
-    public Rectangle getBoardRec()
+    public Rectangle getSimBoardRec()
     {
         return simBoardPanel.getBounds();
     }

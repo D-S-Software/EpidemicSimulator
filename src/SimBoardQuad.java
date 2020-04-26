@@ -43,6 +43,8 @@ public class SimBoardQuad extends SimBoard{
 
             Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad);
 
+
+
             k++;
             if(k == 1)
             {
@@ -79,10 +81,23 @@ public class SimBoardQuad extends SimBoard{
     public void updateAllDimens(Rectangle updatedRect)
     {
         dimens = updatedRect;
-        q1Dimens = new Rectangle(dimens.x, dimens.y, (dimens.width-dimens.x)/2 - 5*circleRad, (dimens.height-dimens.y)/2 - 5*circleRad);
-        q2Dimens = new Rectangle((dimens.width-dimens.x)/2 + 5*circleRad, dimens.y, dimens.width - ((dimens.width-dimens.x)/2 + 5*circleRad), (dimens.height-dimens.y)/2 - 5*circleRad);
-        q3Dimens = new Rectangle(dimens.x, (dimens.height-dimens.y)/2 + 5*circleRad, (dimens.width-dimens.x)/2 - 5*circleRad, dimens.height - ((dimens.height-dimens.y)/2 + 5*circleRad));
-        q4Dimens = new Rectangle((dimens.width-dimens.x)/2 + 5*circleRad, (dimens.height-dimens.y)/2 + 5*circleRad, dimens.width - ((dimens.width-dimens.x)/2 + 5*circleRad), dimens.height - ((dimens.height-dimens.y)/2 + 5*circleRad));
+
+        q1Dimens = new Rectangle(dimens);
+        q2Dimens = new Rectangle(dimens);
+        q3Dimens = new Rectangle(dimens);
+        q4Dimens = new Rectangle(dimens);
+
+        /**
+        int width = (dimens.width - dimens.x) / 2 - circleRad;
+        int height = (dimens.height - dimens.y) / 2 - circleRad;
+
+        int newXStart = (dimens.width - dimens.x) / 2 + circleRad;
+        int newYStart = (dimens.height - dimens.y) / 2 + circleRad;
+
+        q1Dimens = new Rectangle(dimens.x, dimens.y, width, height);
+        q2Dimens = new Rectangle(newXStart, dimens.y, width, height);
+        q3Dimens = new Rectangle(dimens.x, newYStart, width, height);
+        q4Dimens = new Rectangle(newXStart, newYStart, width, height);*/
     }
 
     /**
