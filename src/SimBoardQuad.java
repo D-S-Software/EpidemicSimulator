@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class SimBoardQuad extends SimBoard{
 
-    private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens;
+    private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, travelDimens;
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
     private int minAge = 20;
     private int maxAge = 80;
@@ -14,6 +14,7 @@ public class SimBoardQuad extends SimBoard{
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, int travelers)
     {
         this.dimens = dimens;
+        this.travelDimens = dimens;
         this.numPeople = numPeople;
         updateAllDimens(dimens);
 
@@ -50,6 +51,7 @@ public class SimBoardQuad extends SimBoard{
                 person.setDimens(q1Dimens);
                 person.setxPos(xPos1);
                 person.setyPos(yPos1);
+                person.setQuadLocation(1);
                 pListQ1.add(person);
             }
             if(k == 2)
@@ -57,6 +59,7 @@ public class SimBoardQuad extends SimBoard{
                 person.setDimens(q2Dimens);
                 person.setxPos(xPos2);
                 person.setyPos(yPos2);
+                person.setQuadLocation(2);
                 pListQ2.add(person);
             }
             if(k == 3)
@@ -64,6 +67,7 @@ public class SimBoardQuad extends SimBoard{
                 person.setDimens(q3Dimens);
                 person.setxPos(xPos3);
                 person.setyPos(yPos3);
+                person.setQuadLocation(3);
                 pListQ3.add(person);
             }
             if(k == 4)
@@ -71,6 +75,7 @@ public class SimBoardQuad extends SimBoard{
                 person.setDimens(q4Dimens);
                 person.setxPos(xPos4);
                 person.setyPos(yPos4);
+                person.setQuadLocation(4);
                 pListQ4.add(person);
                 k = 0;
             }
@@ -83,7 +88,7 @@ public class SimBoardQuad extends SimBoard{
             int xPos = dimens.x + (int)(dimens.width*Math.random());
             int yPos = dimens.y + (int)(dimens.height*Math.random());
 
-            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, dimens, disease, circleRad));
+            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad));
         }
 
         for(int i = 0; i < pListQ1.size(); i++)
@@ -112,6 +117,7 @@ public class SimBoardQuad extends SimBoard{
         q2Dimens = new Rectangle(newXStart, dimens.y, width, height);
         q3Dimens = new Rectangle(dimens.x, newYStart, width, height);
         q4Dimens = new Rectangle(newXStart, newYStart, width, height);
+        travelDimens = dimens;
     }
 
     /**
@@ -262,6 +268,10 @@ public class SimBoardQuad extends SimBoard{
         }
     }
 
+    public ArrayList<Person> getPList() {
+        return pList;
+    }
+
     public ArrayList<Person> getpListQ1() {
         return pListQ1;
     }
@@ -300,6 +310,30 @@ public class SimBoardQuad extends SimBoard{
 
     public Rectangle getQ4Dimens() {
         return q4Dimens;
+    }
+
+    public Rectangle getTravelDimens() {
+        return travelDimens;
+    }
+
+    public void setQ1Dimens(Rectangle rect) {
+        q1Dimens = rect;
+    }
+
+    public void setQ2Dimens(Rectangle rect) {
+        q2Dimens = rect;
+    }
+
+    public void setQ3Dimens(Rectangle rect) {
+        q3Dimens = rect;
+    }
+
+    public void setQ4Dimens(Rectangle rect) {
+        q4Dimens = rect;
+    }
+
+    public void setTravelDimens(Rectangle rect) {
+        travelDimens = rect;
     }
 
     public int getNumPeople() {

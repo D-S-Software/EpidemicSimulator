@@ -11,7 +11,8 @@ public class Engine {
         Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
 
         //SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople);
-        SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople, travelers);
+        //SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople, travelers);
+        SimBoardIsolate simBoard = new SimBoardIsolate(disease, boardDimens, numPeople, travelers, 200);
 
         gui.getSimBoardPanel().setBoard(simBoard);
 

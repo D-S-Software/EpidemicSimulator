@@ -11,6 +11,8 @@ public class Person {
     private double distanceFromSick, mortalityRate;
     private Rectangle dimens;
     private Disease disease;
+    private int quadLocation;
+    private boolean isoRecovered = false, isoSick = false;
     private double ageMortalityFactor = 0.0007;
     private double conditionsMortalityFactor = 0.02;
 
@@ -107,6 +109,16 @@ public class Person {
         dimens.height -= circleRad;
     }
 
+    public void resetDimens(Rectangle rect)
+    {
+        dimens = new Rectangle(rect);
+        dimens.width -= circleRad;
+        dimens.height -= circleRad;
+
+        xPos = dimens.x + (int) (dimens.width * Math.random());
+        yPos = dimens.y + (int) (dimens.height * Math.random());
+    }
+
     public void draw(Graphics2D g2D)
     {
         Color color;
@@ -165,5 +177,35 @@ public class Person {
 
     public void setDimens(Rectangle dimens) {
         this.dimens = dimens;
+    }
+
+    public int getTimeSinceSick()
+    {
+        return timeSinceSick;
+    }
+
+    public void setQuadLocation(int location)
+    {
+        quadLocation = location;
+    }
+
+    /** SimBoardIso Methods*/
+
+    public boolean isIsoRecovered() {
+        return isoRecovered;
+    }
+    public void setIsoRecovered(boolean isoRecovered) {
+        this.isoRecovered = isoRecovered;
+    }
+    public boolean isIsoSick() {
+        return isoSick;
+    }
+    public void setIsoSick(boolean isoSick) {
+        this.isoSick = isoSick;
+    }
+
+    public int getQuadLocation()
+    {
+        return quadLocation;
     }
 }
