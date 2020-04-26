@@ -19,6 +19,7 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
 
     public void resetXY()
     {
+        count = 99;
         boolean show = isVisible();
         setVisible(false);
 
@@ -29,7 +30,7 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
     public void actionPerformed(ActionEvent e)
     {
         count++;
-        if(count == 100)
+        if(count == 100) //TODO 100 not 99?
         {
             xychart2.updateXYSeries("cases", gui.getStats().getTimeList(), gui.getStats().getCasesList(),null );
 

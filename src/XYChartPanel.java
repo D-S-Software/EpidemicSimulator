@@ -19,6 +19,7 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
 
     public void resetXY() //TODO rename to reset?
     {
+        count = 99;
         boolean show = isVisible();
         setVisible(false);
         xychart.updateXYSeries("Healthy", new ArrayList<Integer>(), new ArrayList<Integer>(),null );

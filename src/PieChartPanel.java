@@ -20,6 +20,7 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
 
     public void resetPie()
     {
+        count = graphDelay;
         boolean show = isVisible();
         setVisible(false);
         pc.updatePieSeries("Healthy", 0);
