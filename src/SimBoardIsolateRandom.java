@@ -5,13 +5,15 @@ public class SimBoardIsolateRandom extends SimBoardRandom{
     private Rectangle dimens, quarantine;
     private int timeUntilIsolate;
     private int quarX, quarWidth;
+    private double quarentineChance;
     private int shift = 200;
 
-    public SimBoardIsolateRandom(Disease disease, Rectangle dimens, int numPeople, int timeUntilIsolate)
+    public SimBoardIsolateRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int timeUntilIsolate, double quarentineChance)
     {
-        super(disease, dimens, numPeople);
+        super(disease, dimens, numPeople, asymptomaticChance);
         this.dimens = dimens;
         this.timeUntilIsolate = timeUntilIsolate;
+        this.quarentineChance = quarentineChance;
         updateAllDimens(dimens);
 
         for(int i = 0; i < getPList().size(); i++)
@@ -34,10 +36,13 @@ public class SimBoardIsolateRandom extends SimBoardRandom{
     {
         for(int i = 0; i < getPList().size(); i++)
         {
-            if(getPList().get(i).getHasDisease() && !getPList().get(i).getIsHealthy() && getPList().get(i).getTimeSinceSick() > timeUntilIsolate && !getPList().get(i).isIsoSick())
+            if(getPList().get(i).getHasDisease() && !getPList().get(i).isAsymptomatic() && !getPList().get(i).getIsHealthy() && getPList().get(i).getTimeSinceSick() > timeUntilIsolate && !getPList().get(i).isIsoSick())
             {
-                getPList().get(i).resetDimens(quarantine);
-                getPList().get(i).setIsoSick(true);
+                if(Math.random() < quarentineChance)
+                {
+                    getPList().get(i).resetDimens(quarantine);
+                    getPList().get(i).setIsoSick(true);
+                }
             }
             if(getPList().get(i).getHasDisease() && getPList().get(i).getIsHealthy() && !getPList().get(i).isIsoRecovered())
             {

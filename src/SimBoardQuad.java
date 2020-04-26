@@ -10,8 +10,9 @@ public class SimBoardQuad extends SimBoard{
     private int minPreExistingConditions = 0;
     private int maxPreExistingConditions = 3;
     private int numPeople;
+    private boolean asymptomatic;
 
-    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, int travelers)
+    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int travelers)
     {
         this.dimens = dimens;
         this.travelDimens = dimens;
@@ -27,6 +28,11 @@ public class SimBoardQuad extends SimBoard{
 
         int k = 0;
         for(int i = 0; i < numPeople - travelers; i++) {
+            if(Math.random() < asymptomaticChance)
+                asymptomatic = true;
+            else
+                asymptomatic = false;
+
             int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
             int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
 
@@ -43,7 +49,7 @@ public class SimBoardQuad extends SimBoard{
             int yPos4 = q4Dimens.y + (int) (q4Dimens.height * Math.random());
 
 
-            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad);
+            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad, asymptomatic);
 
             k++;
             if(k == 1)
@@ -83,12 +89,17 @@ public class SimBoardQuad extends SimBoard{
 
         for(int i = 0; i < travelers; i++)
         {
+            if(Math.random() < asymptomaticChance)
+                asymptomatic = true;
+            else
+                asymptomatic = false;
+
             int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
             int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
             int xPos = dimens.x + (int)(dimens.width*Math.random());
             int yPos = dimens.y + (int)(dimens.height*Math.random());
 
-            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad));
+            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad, asymptomatic));
         }
 
         for(int i = 0; i < pListQ1.size(); i++)

@@ -70,6 +70,7 @@ public class CustomColor extends Color{
     //Epidemic Specific
     public static final Color HEALTHY  = CustomColor.SAVOY_BLUE;
     public static final Color SICK = CustomColor.CARMINE;
+    public static final Color ASYMPTOMATIC = Color.YELLOW;
     public static final Color RECOVERED = CustomColor.SILVER;
     public static final Color DEAD = CustomColor.DIM_GRAY;
 

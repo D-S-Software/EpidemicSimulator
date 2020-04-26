@@ -9,9 +9,10 @@ public class SimBoardRandom extends SimBoard{
    private int maxAge = 80;
    private int minPreExistingConditions = 0;
    private int maxPreExistingConditions = 3;
+   private boolean asymptomatic;
    private int numPeople;
 
-    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople)
+    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance)
     {
         this.dimens = dimens;
         this.numPeople = numPeople;
@@ -22,8 +23,13 @@ public class SimBoardRandom extends SimBoard{
             int xPos = dimens.x + (int)(dimens.width*Math.random());
             int yPos = dimens.y + (int)(dimens.height*Math.random());
 
+            if(Math.random() < asymptomaticChance)
+                asymptomatic = true;
+            else
+                asymptomatic = false;
+
             pList.add(new Person((int)(minAge + (maxAge-minAge)*Math.random()),
-                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease, circleRad));
+                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease, circleRad, asymptomatic));
         }
     }
 

@@ -12,15 +12,16 @@ public class Person {
     private Rectangle dimens;
     private Disease disease;
     private int quadLocation;
-    private boolean isoRecovered = false, isoSick = false;
+    private boolean isoRecovered = false, isoSick = false, asymptomatic;
     private double ageMortalityFactor = 0.0007;
     private double conditionsMortalityFactor = 0.02;
 
 
-    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, int circleRad)
+    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, int circleRad, boolean asymptomatic)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
+        this.asymptomatic = asymptomatic;
         this.circleRad = circleRad;
         this.xPos = xPos;
         this.yPos = yPos;
@@ -95,9 +96,10 @@ public class Person {
             //If sick for min time has increasing chance to die / recover until guaranteed at max time
             if(timeSinceSick >  disease.getBaseMinTimeSick() + (int)((maxTimeSick - disease.getBaseMinTimeSick())*Math.random()))
             {
-                if(Math.random() > mortalityRate)
+                if(Math.random() > mortalityRate || asymptomatic)
                     isHealthy = true;    // Recovers
-                else hasDisease = false; //Dies
+                else
+                    hasDisease = false; //Dies
             }
         }
     }
@@ -123,7 +125,12 @@ public class Person {
     {
         Color color;
         if(hasDisease && !isHealthy)
-            color = CustomColor.SICK;
+        {
+            if(asymptomatic)
+                color = CustomColor.ASYMPTOMATIC;
+            else
+                color = CustomColor.SICK;
+        }
         else if(!hasDisease && isHealthy)
         {
             color = CustomColor.HEALTHY;
@@ -207,6 +214,9 @@ public class Person {
     }
     public void setIsoSick(boolean isoSick) {
         this.isoSick = isoSick;
+    }
+    public boolean isAsymptomatic() {
+        return asymptomatic;
     }
 
     public int getQuadLocation()
