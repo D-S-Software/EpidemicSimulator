@@ -8,10 +8,10 @@ public class SimBoardIsolateRandom extends SimBoardRandom{
     private double quarentineChance;
     private int shift = 200;
 
-    public SimBoardIsolateRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue,
+    public SimBoardIsolateRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                                  int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int timeUntilIsolate, double quarentineChance)
     {
-        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
+        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
         this.dimens = dimens;
         this.timeUntilIsolate = timeUntilIsolate;
         this.quarentineChance = quarentineChance;

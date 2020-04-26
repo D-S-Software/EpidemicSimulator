@@ -35,7 +35,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
         {
             for(int j = 0; j < simBoard.getPList().size(); j++)
             {
-                if(i != j && Math.sqrt(Math.pow(simBoard.getPList().get(i).getXPos() - simBoard.getPList().get(j).getXPos(), 2) + Math.pow(simBoard.getPList().get(i).getYPos() - simBoard.getPList().get(j).getYPos(), 2)) < simBoard.getSocialDistanceValue())
+                if(i != j && simBoard.getPList().get(i).isSocialDistancing() && Math.sqrt(Math.pow(simBoard.getPList().get(i).getXPos() - simBoard.getPList().get(j).getXPos(), 2) + Math.pow(simBoard.getPList().get(i).getYPos() - simBoard.getPList().get(j).getYPos(), 2)) < simBoard.getSocialDistanceValue())
                     simBoard.getPList().get(i).changeDirectionAngle();
             }
         }

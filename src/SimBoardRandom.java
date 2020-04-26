@@ -5,11 +5,11 @@ public class SimBoardRandom extends SimBoard{
 
    private Rectangle dimens;
    private ArrayList<Person> pList;
-   private boolean asymptomatic;
+   private boolean asymptomatic, isSocialDistancing;
    private int numPeople;
    private int socialDistanceValue;
 
-    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, int minAge, int maxAge,
+    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
                           int minPreExistingConditions, int maxPreExistingConditions)
     {
         this.dimens = dimens;
@@ -27,8 +27,13 @@ public class SimBoardRandom extends SimBoard{
             else
                 asymptomatic = false;
 
+            if(Math.random() < socialDistanceChance)
+                isSocialDistancing = true;
+            else
+                isSocialDistancing = false;
+
             pList.add(new Person((int)(minAge + (maxAge-minAge)*Math.random()),
-                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease, circleRad, asymptomatic));
+                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease, circleRad, asymptomatic, isSocialDistancing));
         }
     }
 

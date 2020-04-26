@@ -12,16 +12,17 @@ public class Person {
     private Rectangle dimens;
     private Disease disease;
     private int quadLocation;
-    private boolean isoRecovered = false, isoSick = false, asymptomatic;
+    private boolean isSocialDistancing, isoRecovered = false, isoSick = false, asymptomatic;
     private double ageMortalityFactor = 0.0007;
     private double conditionsMortalityFactor = 0.02;
 
 
-    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, int circleRad, boolean asymptomatic)
+    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, int circleRad, boolean asymptomatic, boolean isSocialDistancing)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
         this.asymptomatic = asymptomatic;
+        this.isSocialDistancing = isSocialDistancing;
         this.circleRad = circleRad;
         this.xPos = xPos;
         this.yPos = yPos;
@@ -160,6 +161,11 @@ public class Person {
     public boolean getIsHealthy()
     {
         return isHealthy;
+    }
+
+    public boolean isSocialDistancing()
+    {
+        return isSocialDistancing;
     }
 
     public void setDistanceFromSick(double dist)

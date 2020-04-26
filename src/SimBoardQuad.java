@@ -6,10 +6,10 @@ public class SimBoardQuad extends SimBoard{
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, travelDimens;
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
     private int numPeople;
-    private boolean asymptomatic;
+    private boolean asymptomatic, isSocialDistancing;
     private int socialDistanceValue;
 
-    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue,
+    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers)
     {
         this.dimens = dimens;
@@ -27,10 +27,16 @@ public class SimBoardQuad extends SimBoard{
 
         int k = 0;
         for(int i = 0; i < numPeople - travelers; i++) {
+
             if(Math.random() < asymptomaticChance)
                 asymptomatic = true;
             else
                 asymptomatic = false;
+
+            if(Math.random() < socialDistanceChance)
+                isSocialDistancing = true;
+            else
+                isSocialDistancing = false;
 
             int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
             int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
@@ -48,7 +54,7 @@ public class SimBoardQuad extends SimBoard{
             int yPos4 = q4Dimens.y + (int) (q4Dimens.height * Math.random());
 
 
-            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad, asymptomatic);
+            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad, asymptomatic, isSocialDistancing);
 
             k++;
             if(k == 1)
@@ -93,12 +99,17 @@ public class SimBoardQuad extends SimBoard{
             else
                 asymptomatic = false;
 
+            if(Math.random() < socialDistanceChance)
+                isSocialDistancing = true;
+            else
+                isSocialDistancing = false;
+
             int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
             int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
             int xPos = dimens.x + (int)(dimens.width*Math.random());
             int yPos = dimens.y + (int)(dimens.height*Math.random());
 
-            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad, asymptomatic));
+            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad, asymptomatic, isSocialDistancing));
         }
 
         for(int i = 0; i < pListQ1.size(); i++)
