@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
-    private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases;
+    private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, averageRValue;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
@@ -133,10 +133,10 @@ public class Statistics implements ActionListener {
 
         updateStats();
 
-        /** TODO possible implementation of an "Action Event"
+        /** //TODO possible implementation of an "Action Event"
         if(numDead > 10)
             for(int i = 0; i < pList.size(); i++)
-                pList.get(i).setStep(0);*/
+                pList.get(i).setIsSocialDistancing(true);*/
 
 
         /** TODO Add back in at some point

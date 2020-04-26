@@ -150,6 +150,7 @@ public class SimBoardQuad extends SimBoard{
         for(int i = 0; i < pListQ1.size(); i++)
         {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
 
             if(!pListQ1.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)
@@ -157,16 +158,21 @@ public class SimBoardQuad extends SimBoard{
                     {
                         double distTest = Math.sqrt(Math.pow(pListQ1.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ1.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
+                        {
                             minDist = distTest;
+                            closestSickIndex = j;
+                        }
                     }
             Double dist = minDist;
             if(dist.equals(0))
                 minDist = 0.1;
             pListQ1.get(i).setDistanceFromSick(minDist);
+            pListQ1.get(i).setClosestSickIndex(closestSickIndex);
         }
         for(int i = 0; i < pListQ2.size(); i++)
         {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
 
             if(!pListQ2.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)
@@ -174,16 +180,21 @@ public class SimBoardQuad extends SimBoard{
                     {
                         double distTest = Math.sqrt(Math.pow(pListQ2.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ2.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
+                        {
                             minDist = distTest;
+                            closestSickIndex = j;
+                        }
                     }
             Double dist = minDist;
             if(dist.equals(0))
                 minDist = 0.1;
             pListQ2.get(i).setDistanceFromSick(minDist);
+            pListQ2.get(i).setClosestSickIndex(closestSickIndex);
         }
         for(int i = 0; i < pListQ3.size(); i++)
         {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
 
             if(!pListQ3.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)
@@ -191,16 +202,21 @@ public class SimBoardQuad extends SimBoard{
                     {
                         double distTest = Math.sqrt(Math.pow(pListQ3.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ3.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
+                        {
                             minDist = distTest;
+                            closestSickIndex = j;
+                        }
                     }
             Double dist = minDist;
             if(dist.equals(0))
                 minDist = 0.1;
             pListQ3.get(i).setDistanceFromSick(minDist);
+            pListQ3.get(i).setClosestSickIndex(closestSickIndex);
         }
         for(int i = 0; i < pListQ4.size(); i++)
         {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
 
             if(!pListQ4.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)
@@ -208,16 +224,21 @@ public class SimBoardQuad extends SimBoard{
                     {
                         double distTest = Math.sqrt(Math.pow(pListQ4.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ4.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
+                        {
                             minDist = distTest;
+                            closestSickIndex = j;
+                        }
                     }
             Double dist = minDist;
             if(dist.equals(0))
                 minDist = 0.1;
             pListQ4.get(i).setDistanceFromSick(minDist);
+            pListQ4.get(i).setClosestSickIndex(closestSickIndex);
         }
         for(int i = 0; i < pListTravel.size(); i++)
         {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
 
             if(!pListTravel.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)
@@ -225,12 +246,16 @@ public class SimBoardQuad extends SimBoard{
                     {
                         double distTest = Math.sqrt(Math.pow(pListTravel.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListTravel.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
+                        {
                             minDist = distTest;
+                            closestSickIndex = j;
+                        }
                     }
             Double dist = minDist;
             if(dist.equals(0))
                 minDist = 0.1;
             pListTravel.get(i).setDistanceFromSick(minDist);
+            pListTravel.get(i).setClosestSickIndex(closestSickIndex);
         }
     }
 
@@ -239,7 +264,10 @@ public class SimBoardQuad extends SimBoard{
     {
         for(int i = 0; i < pListQ1.size(); i++)
         {
+            boolean isHealthy = pListQ1.get(i).getIsHealthy();
             pListQ1.get(i).checkCondition();
+            if(!pListQ1.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
+                pList.get(pListQ1.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             pListQ1.get(i).move();
             if(!pListQ1.get(i).getHasDisease() && !pListQ1.get(i).getIsHealthy())
             {
@@ -249,7 +277,10 @@ public class SimBoardQuad extends SimBoard{
         }
         for(int i = 0; i < pListQ2.size(); i++)
         {
+            boolean isHealthy = pListQ2.get(i).getIsHealthy();
             pListQ2.get(i).checkCondition();
+            if(!pListQ2.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
+                pList.get(pListQ2.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             pListQ2.get(i).move();
             if(!pListQ2.get(i).getHasDisease() && !pListQ2.get(i).getIsHealthy())
             {
@@ -259,7 +290,10 @@ public class SimBoardQuad extends SimBoard{
         }
         for(int i = 0; i < pListQ3.size(); i++)
         {
+            boolean isHealthy = pListQ3.get(i).getIsHealthy();
             pListQ3.get(i).checkCondition();
+            if(!pListQ3.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
+                pList.get(pListQ3.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             pListQ3.get(i).move();
             if(!pListQ3.get(i).getHasDisease() && !pListQ3.get(i).getIsHealthy())
             {
@@ -269,7 +303,10 @@ public class SimBoardQuad extends SimBoard{
         }
         for(int i = 0; i < pListQ4.size(); i++)
         {
+            boolean isHealthy = pListQ4.get(i).getIsHealthy();
             pListQ4.get(i).checkCondition();
+            if(!pListQ4.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
+                pList.get(pListQ4.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             pListQ4.get(i).move();
             if(!pListQ4.get(i).getHasDisease() && !pListQ4.get(i).getIsHealthy())
             {
@@ -279,7 +316,10 @@ public class SimBoardQuad extends SimBoard{
         }
         for(int i = 0; i < pListTravel.size(); i++)
         {
+            boolean isHealthy = pListTravel.get(i).getIsHealthy();
             pListTravel.get(i).checkCondition();
+            if(!pListTravel.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
+                pList.get(pListTravel.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             pListTravel.get(i).move();
             if(!pListTravel.get(i).getHasDisease() && !pListTravel.get(i).getIsHealthy())
             {

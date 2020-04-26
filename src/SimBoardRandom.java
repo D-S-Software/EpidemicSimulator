@@ -51,6 +51,7 @@ public class SimBoardRandom extends SimBoard{
         for(int i = 0; i < pList.size(); i++)
         {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
 
             if(!pList.get(i).getHasDisease())
                 for(int j = 0; j < pList.size(); j++)
@@ -58,12 +59,16 @@ public class SimBoardRandom extends SimBoard{
                     {
                         double distTest = Math.sqrt(Math.pow(pList.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pList.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
+                        {
                             minDist = distTest;
+                            closestSickIndex = j;
+                        }
                     }
             Double dist = minDist;
             if(dist.equals(0))
                 minDist = 0.1;
             pList.get(i).setDistanceFromSick(minDist);
+            pList.get(i).setClosestSickIndex(closestSickIndex);
         }
     }
 
@@ -72,10 +77,16 @@ public class SimBoardRandom extends SimBoard{
     {
         for(int i = 0; i < pList.size(); i++)
         {
+            boolean isHealthy = pList.get(i).getIsHealthy();
             pList.get(i).checkCondition();
+            if(!pList.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
+                pList.get(pList.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             pList.get(i).move();
             if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
+            {
                 pList.remove(pList.get(i));
+                numPeople--;
+            }
         }
     }
 

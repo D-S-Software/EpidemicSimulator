@@ -13,6 +13,7 @@ public class Person {
     private Disease disease;
     private int quadLocation;
     private boolean isSocialDistancing, isoRecovered = false, isoSick = false, asymptomatic;
+    private int othersInfected, closestSickIndex;
     private double ageMortalityFactor = 0.0007;
     private double conditionsMortalityFactor = 0.02;
 
@@ -90,6 +91,7 @@ public class Person {
         {
             hasDisease = true;
             isHealthy = false;
+            //TODO set closestSickIndex in pList to have +1 infected
         }
         if(hasDisease && !isHealthy) // if is sick
         {
@@ -168,9 +170,34 @@ public class Person {
         return isSocialDistancing;
     }
 
+    public void setIsSocialDistancing(boolean socialDist)
+    {
+        isSocialDistancing = socialDist;
+    }
+
     public void setDistanceFromSick(double dist)
     {
         distanceFromSick = dist;
+    }
+
+    public void addOthersInfected()
+    {
+        othersInfected++;
+    }
+
+    public int getOthersInfected()
+    {
+        return othersInfected;
+    }
+
+    public void setClosestSickIndex(int index)
+    {
+        closestSickIndex = index;
+    }
+
+    public int getClosestSickIndex()
+    {
+        return closestSickIndex;
     }
 
     public int getXPos()
