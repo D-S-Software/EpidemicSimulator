@@ -5,16 +5,15 @@ public class SimBoardQuad extends SimBoard{
 
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, travelDimens;
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
-    private int minAge = 20;
-    private int maxAge = 80;
-    private int minPreExistingConditions = 0;
-    private int maxPreExistingConditions = 3;
     private int numPeople;
     private boolean asymptomatic;
+    private int socialDistanceValue;
 
-    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int travelers)
+    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue,
+                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers)
     {
         this.dimens = dimens;
+        this.socialDistanceValue = socialDistanceValue;
         this.travelDimens = dimens;
         this.numPeople = numPeople;
         updateAllDimens(dimens);
@@ -349,5 +348,10 @@ public class SimBoardQuad extends SimBoard{
 
     public int getNumPeople() {
         return numPeople;
+    }
+
+    public int getSocialDistanceValue()
+    {
+        return socialDistanceValue;
     }
 }

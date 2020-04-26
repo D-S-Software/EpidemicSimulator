@@ -29,6 +29,18 @@ public class SimBoardPanel extends JPanel implements ActionListener
         g2D.fillRect(getBounds().x, getBounds().y, getBounds().width, getBounds().height);
     }
 
+    public void socialDistanceUpdate()
+    {
+        for(int i = 0; i < simBoard.getPList().size(); i++)
+        {
+            for(int j = 0; j < simBoard.getPList().size(); j++)
+            {
+                if(i != j && Math.sqrt(Math.pow(simBoard.getPList().get(i).getXPos() - simBoard.getPList().get(j).getXPos(), 2) + Math.pow(simBoard.getPList().get(i).getYPos() - simBoard.getPList().get(j).getYPos(), 2)) < simBoard.getSocialDistanceValue())
+                    simBoard.getPList().get(i).changeDirectionAngle();
+            }
+        }
+    }
+
     public void updateBoard()
     {
         simBoard.updateDistanceFromSick();
@@ -90,6 +102,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
                 simBoard.getpListTravel().get(i).draw(g2D);
             }
         }
+        socialDistanceUpdate();
     }
 
     public void paintComponent(Graphics g)

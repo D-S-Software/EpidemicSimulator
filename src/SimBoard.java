@@ -18,6 +18,8 @@ public abstract class SimBoard {
 
     public abstract void updateAllDimens(Rectangle updatedRect);
 
+    public abstract int getSocialDistanceValue();
+
 
     public ArrayList<Person> getPList() {
         return pList;

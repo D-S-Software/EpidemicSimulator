@@ -8,9 +8,10 @@ public class SimBoardIsolateQuad extends SimBoardQuad{
     private double quarentineChance;
     private int shift = 50;
 
-    public SimBoardIsolateQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int travelers, int timeUntilIsolate, double quarentineChance)
+    public SimBoardIsolateQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue,
+                               int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers, int timeUntilIsolate, double quarentineChance)
     {
-        super(disease, dimens, numPeople, asymptomaticChance, travelers);
+        super(disease, dimens, numPeople, asymptomaticChance, travelers, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
         this.dimens = dimens;
         this.timeUntilIsolate = timeUntilIsolate;
         this.quarentineChance = quarentineChance;

@@ -5,10 +5,10 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, directionAngle, maxTimeSick;
+    private int xPos, yPos, dx, dy, maxTimeSick;
     private int circleRad, timeSinceSick = 0;
     private double step = 2;
-    private double distanceFromSick, mortalityRate;
+    private double directionAngle, distanceFromSick, mortalityRate;
     private Rectangle dimens;
     private Disease disease;
     private int quadLocation;
@@ -45,7 +45,7 @@ public class Person {
     public void move()
     {
         if(Math.random() >= .95)
-            directionAngle = (int)(360*Math.random());
+            directionAngle = (360*Math.random());
 
         dx = (int)(step*Math.cos(directionAngle));
         dy = (int)(step*Math.sin(directionAngle));
@@ -185,6 +185,11 @@ public class Person {
     public void setyPos(int yPos)
     {
         this.yPos = yPos;
+    }
+
+    public void changeDirectionAngle()
+    {
+        directionAngle += 180;
     }
 
     public void setDimens(Rectangle dimens) {

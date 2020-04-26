@@ -5,16 +5,15 @@ public class SimBoardRandom extends SimBoard{
 
    private Rectangle dimens;
    private ArrayList<Person> pList;
-   private int minAge = 20;
-   private int maxAge = 80;
-   private int minPreExistingConditions = 0;
-   private int maxPreExistingConditions = 3;
    private boolean asymptomatic;
    private int numPeople;
+   private int socialDistanceValue;
 
-    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance)
+    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, int minAge, int maxAge,
+                          int minPreExistingConditions, int maxPreExistingConditions)
     {
         this.dimens = dimens;
+        this.socialDistanceValue = socialDistanceValue;
         this.numPeople = numPeople;
 
         pList = new ArrayList<>();
@@ -85,5 +84,10 @@ public class SimBoardRandom extends SimBoard{
 
     public int getNumPeople() {
         return numPeople;
+    }
+
+    public int getSocialDistanceValue()
+    {
+        return socialDistanceValue;
     }
 }
