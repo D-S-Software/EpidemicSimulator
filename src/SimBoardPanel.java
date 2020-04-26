@@ -35,19 +35,20 @@ public class SimBoardPanel extends JPanel implements ActionListener
 
         simBoard.updatePerson();
 
+        simBoard.updateAllDimens(getBounds());
+        Rectangle newDimens;
+
         if(simBoard instanceof SimBoardRandom)
         {
             for(int i = 0; i < simBoard.getPList().size(); i++)
             {
-                simBoard.getPList().get(i).updateDimens(getBounds());
+                newDimens = simBoard.getDimens();
+                simBoard.getPList().get(i).updateDimens(newDimens);
                 simBoard.getPList().get(i).draw(g2D);
             }
         }
         if(simBoard instanceof SimBoardQuad)
         {
-            Rectangle newDimens;
-            simBoard.updateAllDimens(getBounds());
-
             for(int i = 0; i < simBoard.getpListQ1().size(); i++)
             {
                 newDimens = simBoard.getQ1Dimens();

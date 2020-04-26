@@ -27,6 +27,11 @@ public class SimBoardRandom extends SimBoard{
         }
     }
 
+    public void updateAllDimens(Rectangle updatedRect)
+    {
+        dimens = updatedRect;
+    }
+
     /**
      * Finds the closest sick person to each healthy person and returns the distance between them
      * Based on the default board size this is from 0 to 1000ish

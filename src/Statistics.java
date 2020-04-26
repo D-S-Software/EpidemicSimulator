@@ -87,7 +87,7 @@ public class Statistics implements ActionListener {
                 if(!pListQ3.get(i).getHasDisease() && pListQ3.get(i).getIsHealthy())
                     healthyCount++;
             }
-            for(int i = 0; i < pListQ3.size(); i++)
+            for(int i = 0; i < pListQ4.size(); i++)
             {
                 if(pListQ4.get(i).getHasDisease() && pListQ4.get(i).getIsHealthy())
                     recoveredCount++;

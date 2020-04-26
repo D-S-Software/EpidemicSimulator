@@ -102,7 +102,7 @@ public class Person {
 
     public void updateDimens(Rectangle rect)
     {
-        dimens = rect;
+        dimens = new Rectangle(rect);
         dimens.width -= circleRad;
         dimens.height -= circleRad;
     }

@@ -43,8 +43,6 @@ public class SimBoardQuad extends SimBoard{
 
             Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad);
 
-
-
             k++;
             if(k == 1)
             {
@@ -76,18 +74,21 @@ public class SimBoardQuad extends SimBoard{
                 k = 0;
             }
         }
+
+        for(int i = 0; i < pListQ1.size(); i++)
+            pList.add(pListQ1.get(i));
+        for(int i = 0; i < pListQ2.size(); i++)
+            pList.add(pListQ2.get(i));
+        for(int i = 0; i < pListQ3.size(); i++)
+            pList.add(pListQ3.get(i));
+        for(int i = 0; i < pListQ4.size(); i++)
+            pList.add(pListQ4.get(i));
     }
 
     public void updateAllDimens(Rectangle updatedRect)
     {
         dimens = updatedRect;
 
-        q1Dimens = new Rectangle(dimens);
-        q2Dimens = new Rectangle(dimens);
-        q3Dimens = new Rectangle(dimens);
-        q4Dimens = new Rectangle(dimens);
-
-        /**
         int width = (dimens.width - dimens.x) / 2 - circleRad;
         int height = (dimens.height - dimens.y) / 2 - circleRad;
 
@@ -97,7 +98,7 @@ public class SimBoardQuad extends SimBoard{
         q1Dimens = new Rectangle(dimens.x, dimens.y, width, height);
         q2Dimens = new Rectangle(newXStart, dimens.y, width, height);
         q3Dimens = new Rectangle(dimens.x, newYStart, width, height);
-        q4Dimens = new Rectangle(newXStart, newYStart, width, height);*/
+        q4Dimens = new Rectangle(newXStart, newYStart, width, height);
     }
 
     /**
@@ -111,10 +112,10 @@ public class SimBoardQuad extends SimBoard{
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
 
             if(!pListQ1.get(i).getHasDisease())
-                for(int j = 0; j < pListQ1.size(); j++)
-                    if(i != j && pListQ1.get(j).getHasDisease() && !pListQ1.get(j).getIsHealthy())
+                for(int j = 0; j < pList.size(); j++)
+                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
                     {
-                        double distTest = Math.sqrt(Math.pow(pListQ1.get(i).getXPos() - pListQ1.get(j).getXPos(), 2) + Math.pow(pListQ1.get(i).getYPos() - pListQ1.get(j).getYPos(), 2));
+                        double distTest = Math.sqrt(Math.pow(pListQ1.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ1.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
                             minDist = distTest;
                     }
@@ -128,10 +129,10 @@ public class SimBoardQuad extends SimBoard{
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
 
             if(!pListQ2.get(i).getHasDisease())
-                for(int j = 0; j < pListQ2.size(); j++)
-                    if(i != j && pListQ2.get(j).getHasDisease() && !pListQ2.get(j).getIsHealthy())
+                for(int j = 0; j < pList.size(); j++)
+                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
                     {
-                        double distTest = Math.sqrt(Math.pow(pListQ2.get(i).getXPos() - pListQ2.get(j).getXPos(), 2) + Math.pow(pListQ2.get(i).getYPos() - pListQ2.get(j).getYPos(), 2));
+                        double distTest = Math.sqrt(Math.pow(pListQ2.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ2.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
                             minDist = distTest;
                     }
@@ -145,10 +146,10 @@ public class SimBoardQuad extends SimBoard{
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
 
             if(!pListQ3.get(i).getHasDisease())
-                for(int j = 0; j < pListQ3.size(); j++)
-                    if(i != j && pListQ3.get(j).getHasDisease() && !pListQ3.get(j).getIsHealthy())
+                for(int j = 0; j < pList.size(); j++)
+                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
                     {
-                        double distTest = Math.sqrt(Math.pow(pListQ3.get(i).getXPos() - pListQ3.get(j).getXPos(), 2) + Math.pow(pListQ3.get(i).getYPos() - pListQ3.get(j).getYPos(), 2));
+                        double distTest = Math.sqrt(Math.pow(pListQ3.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ3.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
                             minDist = distTest;
                     }
@@ -162,10 +163,10 @@ public class SimBoardQuad extends SimBoard{
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
 
             if(!pListQ4.get(i).getHasDisease())
-                for(int j = 0; j < pListQ4.size(); j++)
-                    if(i != j && pListQ4.get(j).getHasDisease() && !pListQ4.get(j).getIsHealthy())
+                for(int j = 0; j < pList.size(); j++)
+                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
                     {
-                        double distTest = Math.sqrt(Math.pow(pListQ4.get(i).getXPos() - pListQ4.get(j).getXPos(), 2) + Math.pow(pListQ4.get(i).getYPos() - pListQ4.get(j).getYPos(), 2));
+                        double distTest = Math.sqrt(Math.pow(pListQ4.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ4.get(i).getYPos() - pList.get(j).getYPos(), 2));
                         if(distTest < minDist)
                             minDist = distTest;
                     }

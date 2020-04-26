@@ -32,7 +32,7 @@ public class Music {
         public void play()
         {
             clip.setFramePosition(0);
-            clip.start();
+            //clip.start();
         }
 
         public void pause()
@@ -50,7 +50,7 @@ public class Music {
         public void loop()
         {
             clip.setFramePosition(0);
-            clip.loop(Clip.LOOP_CONTINUOUSLY);
+            //clip.loop(Clip.LOOP_CONTINUOUSLY);
         }
 
         public void stop()

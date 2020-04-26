@@ -16,11 +16,8 @@ public abstract class SimBoard {
 
     public abstract int getNumPeople();
 
+    public abstract void updateAllDimens(Rectangle updatedRect);
 
-    public void updateAllDimens(Rectangle updatedRect)
-    {
-        dimens = updatedRect;
-    }
 
     public ArrayList<Person> getPList() {
         return pList;
