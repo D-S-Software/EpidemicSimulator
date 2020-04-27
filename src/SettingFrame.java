@@ -4,7 +4,30 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class SettingFrame extends JFrame {
+public class SettingFrame extends JFrame implements ActionListener{
+
+    private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine;
+    private double asymptomaticChance, socialDistanceChance, quarantineChance;
+    private boolean quarBoard;
+
+    JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue,percentSocialDist,minAge;
+    JTextField ;
+    JTextField ;
+
+    JTextField ;
+
+    JTextField ;
+
+    JTextField ;
+
+    JTextField ;
+
+    JTextField maxAge;
+
+    JTextField minConditions;
+
+    JTextField maxConditions;
+
 
     GridBagConstraints gbcMain = new GridBagConstraints();
     JPanel mainPanel = new JPanel(new GridBagLayout());
@@ -619,5 +642,11 @@ public class SettingFrame extends JFrame {
         bottomPanel.add(continueSim);
 
         mainPanel.add(bottomPanel, gbcMain);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+
     }
 }

@@ -20,6 +20,11 @@ public class ControlPanel extends JPanel implements ActionListener{
     Music backgroundMusic;
     SettingFrame settingFrame;
 
+    private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine;
+    private double asymptomaticChance, socialDistanceChance, quarantineChance;
+    private boolean quarBoard;
+
+
     public ControlPanel(GUI gui)
     {
         this.gui = gui;
@@ -39,6 +44,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         addSettingOnePanel();
 
         checkTick = new Timer(10, this);
+        checkTick.addActionListener(settingFrame);
         checkTick.start();
     }
 
@@ -248,7 +254,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        JButton slowDown = new JButton("SlowDown");
+        JButton slowDown = new JButton("Slow Down");
         slowDown.setBackground(CustomColor.BUTTON);
         slowDown.setFont(slowDown.getFont ().deriveFont (18.0f));
         slowDown.setForeground(CustomColor.ON_BUTTON_LABEL);
@@ -418,7 +424,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                             numPeople = Integer.parseInt(numPeopleField.getText());
 
                         gui.getSimBoardPanel().setReset(false);
-                        simEngine = new Engine(gui, disease, numPeople);
+                        simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine, quarantineChance);
                         simEngine.getClock().start();
                         canStart = false;
                         checkTick.stop();
