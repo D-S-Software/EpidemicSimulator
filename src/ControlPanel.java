@@ -16,9 +16,10 @@ public class ControlPanel extends JPanel implements ActionListener{
     private Engine simEngine;
     boolean toPause = true, canStart = true, canType = true, musicPlaying = true;
     private GUI gui;
-    Timer checkTick;
-    Music backgroundMusic;
-    SettingFrame settingFrame;
+    private Timer checkTick;
+    private Music backgroundMusic;
+    private SettingFrame settingFrame;
+    private boolean isPlaying = false;
 
     private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
@@ -221,7 +222,11 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //TODO Connect Button
+                if(isPlaying)
+                {
+                    //TODO set each person isSocialDistancing to false;
+                    //TODO make sure to save each value to be reset
+                }
             }
         });
 
@@ -250,7 +255,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //TODO Connect Button
+                if(isPlaying)
+                    simEngine.speedUp();
             }
         });
 
@@ -264,7 +270,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //TODO Connect Button
+                if(isPlaying)
+                    simEngine.slowDown();
             }
         });
 
@@ -448,6 +455,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         gui.getSimBoardPanel().setReset(false);
                         simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
                         simEngine.getClock().start();
+                        isPlaying = true;
                         canStart = false;
                         checkTick.stop();
                         gui.getTallyPanel().showGraphModeButton();
@@ -471,6 +479,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     if(toPause)
                     {
                         simEngine.getClock().stop();
+                        isPlaying = false;
                         backgroundMusic.pause();
                         musicPlaying = false;
                         toPause = false;
@@ -478,6 +487,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     else
                     {
                         simEngine.getClock().start();
+                        isPlaying = true;
                         backgroundMusic.resume();
                         musicPlaying = true;
                         toPause = true;
@@ -498,6 +508,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             public void actionPerformed(ActionEvent e) {
 
                 simEngine.getClock().stop();
+                isPlaying = false;
 
                 gui.getTallyPanel().setNumHealthyLabel("NumHealthy: ");
                 gui.getTallyPanel().setNumSickLabel("NumSick: ");
