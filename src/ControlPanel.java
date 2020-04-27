@@ -21,7 +21,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     private Timer checkTick;
     private Music backgroundMusic;
     private SettingFrame settingFrame;
-    private boolean isPlaying = false;
+    private boolean isPlaying = false, isSocialDist;
 
     private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
@@ -47,7 +47,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         addSettingOnePanel();
 
         checkTick = new Timer(10, this);
-        checkTick.addActionListener(settingFrame);
         checkTick.start();
     }
 
@@ -226,8 +225,16 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                 if(isPlaying)
                 {
-                    //TODO set each person isSocialDistancing to false;
-                    //TODO make sure to save each value to be reset
+                    if(isSocialDist)
+                    {
+                        simEngine.toggleSocDist(false);
+                        isSocialDist = false;
+                    }
+                    else
+                    {
+                        simEngine.toggleSocDist(true);
+                        isSocialDist = true;
+                    }
                 }
             }
         });
@@ -458,6 +465,9 @@ public class ControlPanel extends JPanel implements ActionListener{
                         simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
                         simEngine.getClock().start();
                         isPlaying = true;
+                        if(settingFrame.getSocialDistanceChanceNum() > 0)
+                            isSocialDist = true;
+                        else isSocialDist = false;
                         canStart = false;
                         checkTick.stop();
                         gui.getTallyPanel().showGraphModeButton();

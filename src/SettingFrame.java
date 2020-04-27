@@ -22,6 +22,8 @@ public class SettingFrame extends JFrame implements ActionListener{
 
     public SettingFrame()
     {
+        Timer checkOpen = new Timer(10, this);
+
         setBackground(CustomColor.BACKGROUND);
         setPreferredSize(new Dimension(850, 600));
 
@@ -137,19 +139,16 @@ public class SettingFrame extends JFrame implements ActionListener{
         generalBoard.setBackground(CustomColor.BUTTON);
         generalBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         generalBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        //generalBoard.setIcon(single);
 
         quadBoard = new JRadioButton("Quad    ");
         quadBoard.setBackground(CustomColor.BUTTON);
         quadBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         quadBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        //quadBoard.setIcon(quad);
 
         eightBoard = new JRadioButton("Octo    ");
         eightBoard.setBackground(CustomColor.BUTTON);
         eightBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         eightBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        //eightBoard.setIcon(oct);
 
         quarButton = new JRadioButton("Quarantine");
         quarButton.setBackground(CustomColor.BUTTON);
@@ -642,8 +641,11 @@ public class SettingFrame extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        selectBoard();
-        selectParams();
+        if(!isVisible())
+        {
+            selectBoard();
+            selectParams();
+        }
     }
 
     private void selectBoard()
