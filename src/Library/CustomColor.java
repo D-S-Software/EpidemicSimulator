@@ -81,7 +81,7 @@ public class CustomColor extends Color{
     public static final Color ON_BLOOD_RED_LABEL = CustomColor.BLACK;
     public static final Color ON_BUTTON_LABEL = Color.BLACK; /** Also for Fields */
     public static final Color CHART_LABEL = Color.WHITE;
-
+ //
 
 
 }
