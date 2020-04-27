@@ -7,13 +7,12 @@ public class SettingFrame extends JFrame {
 
     public SettingFrame()
     {
-        JFrame settingsFrame = new JFrame();
-        settingsFrame.getContentPane().setBackground(CustomColor.WHITE);
+        setBackground(CustomColor.BACKGROUND);
         ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
         Image image1 = pic1.getImage();
-        settingsFrame.setIconImage(image1);
-        settingsFrame.setPreferredSize(new Dimension(400, 200));
-        settingsFrame.setLayout(new GridBagLayout());
+        setIconImage(image1);
+        setPreferredSize(new Dimension(400, 200));
+        setLayout(new GridBagLayout());
         GridBagConstraints gbcMain = new GridBagConstraints();
         gbcMain.gridx = 0;
         gbcMain.gridy = 0;
@@ -163,9 +162,8 @@ public class SettingFrame extends JFrame {
         mainPanel.add(rightPanel, gbcMain);
 
 
-        settingsFrame.pack();
-        settingsFrame.setLocationByPlatform(true);
-        settingsFrame.setVisible(true);
+        pack();
+        setLocationByPlatform(true);
+        setVisible(true);
     }
-
 }
