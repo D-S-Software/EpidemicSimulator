@@ -14,6 +14,7 @@ public class Engine {
     private int minAge = 20, maxAge = 80;
     private int minPreExistingConditions = 0;
     private int maxPreExistingConditions = 3;
+    private int deley = 10; // Can chance this for a speed up button
 
     public Engine(GUI gui, Disease disease, int numPeople)
     {
@@ -33,7 +34,7 @@ public class Engine {
         Statistics stats = new Statistics(simBoard, numPeople);
         gui.setStats(stats);
 
-        clock = new Timer(10, gui.getSimBoardPanel());
+        clock = new Timer(deley, gui.getSimBoardPanel());
         clock.addActionListener(stats);
         clock.addActionListener(gui.getXYChartPanel());
         clock.addActionListener(gui.getXYChartPanel2());
