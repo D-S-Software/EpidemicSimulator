@@ -5,15 +5,21 @@ import java.awt.*;
 
 public class SettingFrame extends JFrame {
 
+    GridBagConstraints gbcMain = new GridBagConstraints();
+    JPanel mainPanel = new JPanel(new GridBagLayout());
+
     public SettingFrame()
     {
         setBackground(CustomColor.BACKGROUND);
+
         ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
         Image image1 = pic1.getImage();
         setIconImage(image1);
-        setPreferredSize(new Dimension(400, 200));
+
+        setPreferredSize(new Dimension(1200, 750));
+        setResizable(false);
+
         setLayout(new GridBagLayout());
-        GridBagConstraints gbcMain = new GridBagConstraints();
         gbcMain.gridx = 0;
         gbcMain.gridy = 0;
         gbcMain.gridwidth = 1;
@@ -24,47 +30,71 @@ public class SettingFrame extends JFrame {
         gbcMain.fill = GridBagConstraints.BOTH;
         gbcMain.insets = new Insets(2, 2, 2, 2);
 
-        JPanel mainPanel = new JPanel(new GridBagLayout());
+        addLeftPanel();
 
-        JPanel leftPanel = new JPanel(new GridLayout(5, 1));
-        leftPanel.setBackground(CustomColor.JET);
+        gbcMain.gridx = 1;
+        gbcMain.gridy = 0;
+        gbcMain.gridwidth = 1;
+        gbcMain.gridheight = 1;
+        gbcMain.weightx = 10;
+        gbcMain.weighty = 1;
+
+        addRightPanel();
+
+        add(mainPanel);
+
+        pack();
+        setLocationByPlatform(true);
+        setVisible(true);
+    }
+
+    private void addLeftPanel()
+    {
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.insets = new Insets(2, 2, 2, 2);
+
+        JPanel leftPanel = new JPanel(new GridBagLayout());
+        leftPanel.setBackground(CustomColor.WHITE);
+        leftPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         JLabel boardSelection = new JLabel("Select Board");
 
         ImageIcon singlePic = new ImageIcon(ClassLoader.getSystemResource("res/SimBoardMono.png"));
         Image singleIm = singlePic.getImage();
-        Image singleIm2 = singleIm.getScaledInstance(100,60, java.awt.Image.SCALE_SMOOTH);
+        Image singleIm2 = singleIm.getScaledInstance(400,200, java.awt.Image.SCALE_SMOOTH);
         ImageIcon single = new ImageIcon(singleIm2);
 
         ImageIcon quadPic = new ImageIcon(ClassLoader.getSystemResource("res/SimBoardQuad.png"));
         Image quadIm = quadPic.getImage();
-        Image quadIm2 = quadIm.getScaledInstance(100,60, java.awt.Image.SCALE_SMOOTH);
+        Image quadIm2 = quadIm.getScaledInstance(400,200, java.awt.Image.SCALE_SMOOTH);
         ImageIcon quad = new ImageIcon(quadIm2);
 
         ImageIcon octPic = new ImageIcon(ClassLoader.getSystemResource("res/SimBoardOcto.png"));
         Image octIm = octPic.getImage();
-        Image octIm2 = octIm.getScaledInstance(100,60, java.awt.Image.SCALE_SMOOTH);
+        Image octIm2 = octIm.getScaledInstance(400,200, java.awt.Image.SCALE_SMOOTH);
         ImageIcon oct = new ImageIcon(octIm2);
 
-        JRadioButton generalBoard = new JRadioButton();
+        JRadioButton generalBoard = new JRadioButton("Mono    ");
         generalBoard.setBackground(CustomColor.BUTTON);
         generalBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         generalBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        generalBoard.setIcon(single);
+        //generalBoard.setIcon(single);
 
-        JRadioButton quadBoard = new JRadioButton();
+        JRadioButton quadBoard = new JRadioButton("Quad    ");
         quadBoard.setBackground(CustomColor.BUTTON);
         quadBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         quadBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        quadBoard.setIcon(quad);
+        //quadBoard.setIcon(quad);
 
-        JRadioButton eightBoard = new JRadioButton();
+        JRadioButton eightBoard = new JRadioButton("Octo    ");
         eightBoard.setBackground(CustomColor.BUTTON);
         eightBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         eightBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        eightBoard.setIcon(oct);
+        //eightBoard.setIcon(oct);
 
-        JRadioButton quarButton = new JRadioButton("Quarantine Enabled");
+        JRadioButton quarButton = new JRadioButton("Quarantine");
         quarButton.setBackground(CustomColor.BUTTON);
         quarButton.setForeground(CustomColor.ON_BUTTON_LABEL);
         quarButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
@@ -83,87 +113,423 @@ public class SettingFrame extends JFrame {
         g2.add(quarButton);
         g2.add(regButton);
 
-        leftPanel.add(boardSelection);
-        leftPanel.add(generalBoard);
-        leftPanel.add(quadBoard);
-        leftPanel.add(eightBoard);
+        JLabel monoLabel = new JLabel();
+        monoLabel.setIcon(single);
+        JLabel quadLabel = new JLabel();
+        quadLabel.setIcon(quad);
+        JLabel octoLabel = new JLabel();
+        octoLabel.setIcon(oct);
+
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 2;
+        gbc.gridheight = 1;
+        gbc.weightx = 5;
+        gbc.weighty = 0;
+
+        leftPanel.add(boardSelection, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0;
+        gbc.weighty = 1;
+
+        leftPanel.add(generalBoard, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 10;
+        gbc.weighty = 1;
+
+        leftPanel.add(monoLabel, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0;
+        gbc.weighty = 1;
+
+        leftPanel.add(quadBoard, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 10;
+        gbc.weighty = 1;
+
+        leftPanel.add(quadLabel, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0;
+        gbc.weighty = 1;
+
+        leftPanel.add(eightBoard, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 10;
+        gbc.weighty = 1;
+
+        leftPanel.add(octoLabel, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 4;
+        gbc.gridwidth = 2;
+        gbc.gridheight = 1;
+        gbc.weightx = 5;
+        gbc.weighty = 1;
 
         JPanel quarPanel = new JPanel(new GridLayout(1, 2));
+        quarPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         quarPanel.add(quarButton);
         quarPanel.add(regButton);
 
-        leftPanel.add(quarPanel);
+        leftPanel.add(quarPanel, gbc);
 
         mainPanel.add(leftPanel, gbcMain);
+    }
 
-        gbcMain.gridx = 1;
-        gbcMain.gridy = 0;
-        gbcMain.gridwidth = 1;
-        gbcMain.gridheight = 1;
-        gbcMain.weightx = 10;
-        gbcMain.weighty = 1;
+    private void addRightPanel()
+    {
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.insets = new Insets(2, 2, 2, 2);
 
-        JPanel rightPanel = new JPanel(new GridLayout(6, 4));
-        rightPanel.setBackground(CustomColor.JET);
+        JPanel rightPanel = new JPanel(new GridBagLayout());
+        rightPanel.setBackground(CustomColor.WHITE);
+        rightPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         JLabel paramLabel = new JLabel("Select the Parameters");
 
-        JTextField delay = new JTextField(1);
-        JTextField travelers = new JTextField(1);
-        JTextField timeUntilQuarantine = new JTextField(1);
-        JTextField percentQuarantine = new JTextField(1);
-        JTextField asymptomaticChance = new JTextField(1);
-        JTextField socialDistanceValue = new JTextField(1);
-        JTextField percentSocialDist = new JTextField(1);
-        JTextField minAge = new JTextField(1);
-        JTextField maxAge = new JTextField(1);
-        JTextField minConditions = new JTextField(1);
-        JTextField maxConditions = new JTextField(1);
+        JTextField travelers = new JTextField(100);
+        travelers.setPreferredSize(new Dimension(50, 10));
+        JTextField timeUntilQuarantine = new JTextField(100);
+        timeUntilQuarantine.setPreferredSize(new Dimension(50, 10));
+        JTextField percentQuarantine = new JTextField(100);
+        percentQuarantine.setPreferredSize(new Dimension(50, 10));
+        JTextField asymptomaticChance = new JTextField(100);
+        asymptomaticChance.setPreferredSize(new Dimension(50, 10));
+        JTextField socialDistanceValue = new JTextField(100);
+        socialDistanceValue.setPreferredSize(new Dimension(50, 10));
+        JTextField percentSocialDist = new JTextField(100);
+        percentSocialDist.setPreferredSize(new Dimension(50, 10));
+        JTextField minAge = new JTextField(100);
+        minAge.setPreferredSize(new Dimension(50, 10));
+        JTextField maxAge = new JTextField(100);
+        maxAge.setPreferredSize(new Dimension(50, 10));
+        JTextField minConditions = new JTextField(100);
+        minConditions.setPreferredSize(new Dimension(50, 10));
+        JTextField maxConditions = new JTextField(100);
+        maxConditions.setPreferredSize(new Dimension(50, 10));
 
-        JLabel delayLabel = new JLabel("Delay");
         JLabel travelersLabel = new JLabel("Travelers");
         JLabel timeQuarLabel = new JLabel("Time until Quarantine");
         JLabel percentQuarLabel = new JLabel("Percent Quarantine");
         JLabel asPercentLabel = new JLabel("Percent Asymptomatic");
         JLabel socDistValLabel = new JLabel("Social Distance");
-        JLabel socialDisPercentLabel = new JLabel("Percent Social Distancing");
+        JLabel socialDisPercentLabel = new JLabel("Percent Social Distancing   ");
         JLabel minAgeLabel = new JLabel("Min Age");
         JLabel maxAgeLabel = new JLabel("Max Age");
         JLabel minCondLabel = new JLabel("Min Conditions");
         JLabel maxCondLabel = new JLabel("Max Conditions");
 
-        rightPanel.add(delayLabel);
-        rightPanel.add(delay);
-        rightPanel.add(travelersLabel);
-        rightPanel.add(travelers);
+        JTextArea travelersA = new JTextArea("\nThe number of people who can move \nwithout bound in a divided board");
+        JTextArea timeUntilQuarantineA = new JTextArea("\nThe amount of time until a \nsick person quarantines");
+        JTextArea percentQuarantineA = new JTextArea("\nThe percent of sick people \nwho will quarantine");
+        JTextArea asymptomaticChanceA = new JTextArea("\nThe percent of people who are asymptomatic \n(no quarantine or dying, yet contagious)");
+        JTextArea socialDistanceValueA = new JTextArea("\nThe amount of space needed during \nsocial distancing (50 recom.)");
+        JTextArea percentSocialDistA = new JTextArea("\nPercent of people who social \ndistance (0 to turn off)");
+        JTextArea minAgeA = new JTextArea("\nThe min possible age of a \nperson (affects total sick time \nand mortality rate)");
+        JTextArea maxAgeA = new JTextArea("\nThe max possible age of a \nperson (affects total sick time and \nmortality rate)");
+        JTextArea minConditionsA = new JTextArea("\nThe min possible preexisting condition \na person can have (affects mortality rate)");
+        JTextArea maxConditionsA = new JTextArea("\nThe max possible preexisting condition \na person can have (affects mortality rate)");
 
-        rightPanel.add(timeQuarLabel);
-        rightPanel.add(timeUntilQuarantine);
-        rightPanel.add(percentQuarLabel);
-        rightPanel.add(percentQuarantine);
+        double weightXLabel = 0;
+        double weightXFeild = 10;
+        double weightXArea = 0;
 
-        rightPanel.add(asPercentLabel);
-        rightPanel.add(asymptomaticChance);
-        rightPanel.add(socDistValLabel);
-        rightPanel.add(socialDistanceValue);
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
 
-        rightPanel.add(socialDisPercentLabel);
-        rightPanel.add(percentSocialDist);
-        rightPanel.add(minAgeLabel);
-        rightPanel.add(minAge);
+        rightPanel.add(travelersLabel, gbc);
 
-        rightPanel.add(maxAgeLabel);
-        rightPanel.add(maxAge);
-        rightPanel.add(minCondLabel);
-        rightPanel.add(minConditions);
-        rightPanel.add(maxCondLabel);
-        regButton.add(maxConditions);
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(travelers, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(travelersA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(timeQuarLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(timeUntilQuarantine, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(timeUntilQuarantineA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(percentQuarLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(percentQuarantine, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(percentQuarantineA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(asPercentLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(asymptomaticChance, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(asymptomaticChanceA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(socDistValLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(socialDistanceValue, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(socialDistanceValueA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 5;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(socialDisPercentLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 5;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(percentSocialDist, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 5;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(percentSocialDistA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 6;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(minAgeLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 6;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(minAge, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 6;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(minAgeA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 7;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(maxAgeLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 7;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(maxAge, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 7;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(maxAgeA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(minCondLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(minConditions, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(minConditionsA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 9;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(maxCondLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 9;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(maxConditions, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 9;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(maxConditionsA, gbc);
 
         mainPanel.add(rightPanel, gbcMain);
-
-
-        pack();
-        setLocationByPlatform(true);
-        setVisible(true);
     }
 }

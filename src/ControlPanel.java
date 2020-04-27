@@ -193,6 +193,8 @@ public class ControlPanel extends JPanel implements ActionListener{
         Image image = pic.getImage();
         JButton settings = new JButton((new ImageIcon(image.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH))));
         settings.setBackground(CustomColor.BUTTON);
+        settings.setForeground(CustomColor.ON_BUTTON_LABEL);
+        settings.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         settings.addActionListener(new ActionListener() {
             @Override
@@ -202,12 +204,37 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        JLabel filler1 = new JLabel();
-        JLabel filler2 = new JLabel();
+        JButton speedUp = new JButton("Speed up");
+        speedUp.setBackground(CustomColor.BUTTON);
+        speedUp.setFont(speedUp.getFont ().deriveFont (18.0f));
+        speedUp.setForeground(CustomColor.ON_BUTTON_LABEL);
+        speedUp.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+
+        speedUp.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                //TODO Connect Button
+            }
+        });
+
+        JButton slowDown = new JButton("SlowDown");
+        slowDown.setBackground(CustomColor.BUTTON);
+        slowDown.setFont(slowDown.getFont ().deriveFont (18.0f));
+        slowDown.setForeground(CustomColor.ON_BUTTON_LABEL);
+        slowDown.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+
+        slowDown.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                //TODO Connect Button
+            }
+        });
 
         p.add(toggleMusic);
-        p.add(filler1);
-        p.add(filler2);
+        p.add(speedUp);
+        p.add(slowDown);
         p.add(settings);
 
         mainPanel.add(p, gbc);
