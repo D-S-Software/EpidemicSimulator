@@ -6,28 +6,13 @@ import java.awt.event.*;
 
 public class SettingFrame extends JFrame implements ActionListener{
 
-    private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine;
-    private double asymptomaticChance, socialDistanceChance, quarantineChance;
-    private boolean quarBoard;
+    private int boardTypeNum = 0, socialDistanceValueNum, minAgeNum, maxAgeNum, minPreExistingConditionsNum, maxPreExistingConditionsNum, timeUntilQuarantineNum;
+    private double asymptomaticChanceNum, socialDistanceChanceNum, quarantineChanceNum,travelersPer;
+    private boolean quarBoardBool = false;
 
-    JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue,percentSocialDist,minAge;
-    JTextField ;
-    JTextField ;
+    JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue, percentSocialDist, minAge, maxAge, minConditions, maxConditions;
 
-    JTextField ;
-
-    JTextField ;
-
-    JTextField ;
-
-    JTextField ;
-
-    JTextField maxAge;
-
-    JTextField minConditions;
-
-    JTextField maxConditions;
-
+    JRadioButton generalBoard, quadBoard, eightBoard, quarButton, regButton;
 
     GridBagConstraints gbcMain = new GridBagConstraints();
     JPanel mainPanel = new JPanel(new GridBagLayout());
@@ -148,30 +133,30 @@ public class SettingFrame extends JFrame implements ActionListener{
         Image octIm2 = octIm.getScaledInstance(250,140, java.awt.Image.SCALE_SMOOTH);
         ImageIcon oct = new ImageIcon(octIm2);
 
-        JRadioButton generalBoard = new JRadioButton("Mono    ");
+        generalBoard = new JRadioButton("Mono    ");
         generalBoard.setBackground(CustomColor.BUTTON);
         generalBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         generalBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         //generalBoard.setIcon(single);
 
-        JRadioButton quadBoard = new JRadioButton("Quad    ");
+        quadBoard = new JRadioButton("Quad    ");
         quadBoard.setBackground(CustomColor.BUTTON);
         quadBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         quadBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         //quadBoard.setIcon(quad);
 
-        JRadioButton eightBoard = new JRadioButton("Octo    ");
+        eightBoard = new JRadioButton("Octo    ");
         eightBoard.setBackground(CustomColor.BUTTON);
         eightBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         eightBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         //eightBoard.setIcon(oct);
 
-        JRadioButton quarButton = new JRadioButton("Quarantine");
+        quarButton = new JRadioButton("Quarantine");
         quarButton.setBackground(CustomColor.BUTTON);
         quarButton.setForeground(CustomColor.ON_BUTTON_LABEL);
         quarButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
-        JRadioButton regButton = new JRadioButton("Standard");
+        regButton = new JRadioButton("Standard");
         regButton.setBackground(CustomColor.BUTTON);
         regButton.setForeground(CustomColor.ON_BUTTON_LABEL);
         regButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
@@ -285,25 +270,35 @@ public class SettingFrame extends JFrame implements ActionListener{
 
         JLabel paramLabel = new JLabel("Select the Parameters");
 
-        JTextField travelers = new JTextField(100);
+        travelers = new JTextField(100);
+        travelers.setText(".02");
         travelers.setMinimumSize(new Dimension(60, 10));
-        JTextField timeUntilQuarantine = new JTextField(100);
+        timeUntilQuarantine = new JTextField(100);
+        timeUntilQuarantine.setText("300");
         timeUntilQuarantine.setMinimumSize(new Dimension(60, 10));
-        JTextField percentQuarantine = new JTextField(100);
+        percentQuarantine = new JTextField(100);
+        percentQuarantine.setText(".8");
         percentQuarantine.setMinimumSize(new Dimension(60, 10));
-        JTextField asymptomaticChance = new JTextField(100);
+        asymptomaticChance = new JTextField(100);
+        asymptomaticChance.setText("0");
         asymptomaticChance.setMinimumSize(new Dimension(60, 10));
-        JTextField socialDistanceValue = new JTextField(100);
+        socialDistanceValue = new JTextField(100);
+        socialDistanceValue.setText("50");
         socialDistanceValue.setMinimumSize(new Dimension(60, 10));
-        JTextField percentSocialDist = new JTextField(100);
+        percentSocialDist = new JTextField(100);
+        percentSocialDist.setText(".9");
         percentSocialDist.setMinimumSize(new Dimension(60, 10));
-        JTextField minAge = new JTextField(100);
+        minAge = new JTextField(100);
+        minAge.setText("20");
         minAge.setMinimumSize(new Dimension(60, 10));
-        JTextField maxAge = new JTextField(100);
+        maxAge = new JTextField(100);
+        maxAge.setText("80");
         maxAge.setMinimumSize(new Dimension(60, 10));
-        JTextField minConditions = new JTextField(100);
+        minConditions = new JTextField(100);
+        minConditions.setText("0");
         minConditions.setMinimumSize(new Dimension(60, 10));
-        JTextField maxConditions = new JTextField(100);
+        maxConditions = new JTextField(100);
+        maxConditions.setText("3");
         maxConditions.setMinimumSize(new Dimension(60, 10));
 
         JLabel travelersLabel = new JLabel("Travelers");
@@ -317,7 +312,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         JLabel minCondLabel = new JLabel("Min Conditions");
         JLabel maxCondLabel = new JLabel("Max Conditions");
 
-        JLabel travelersA = new JLabel("<html>     The number of people who can move <br/>     without bound in a divided board</html>");
+        JLabel travelersA = new JLabel("<html>     The percent of people who can move <br/>     without bound in a divided board</html>");
         travelersA.setMinimumSize(new Dimension(250, 40));
         JLabel timeUntilQuarantineA = new JLabel("<html>     The amount of time until a <br/>     sick person quarantines</html>");
         timeUntilQuarantineA.setMinimumSize(new Dimension(250, 40));
@@ -647,6 +642,125 @@ public class SettingFrame extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        selectBoard();
+        selectParams();
+    }
 
+    private void selectBoard()
+    {
+        if(generalBoard.isSelected())
+            boardTypeNum = 0;
+        if(quadBoard.isSelected())
+            boardTypeNum = 1;
+        if(eightBoard.isSelected())
+            boardTypeNum = 2;
+
+        if(quarButton.isSelected())
+            quarBoardBool = true;
+        if(regButton.isSelected())
+            quarBoardBool = false;
+    }
+
+    private void selectParams()
+    {
+        travelersPer = Double.parseDouble(travelers.getText());
+        timeUntilQuarantineNum = Integer.parseInt(timeUntilQuarantine.getText());
+        quarantineChanceNum = Double.parseDouble(percentQuarantine.getText());
+        asymptomaticChanceNum = Double.parseDouble(asymptomaticChance.getText());
+        socialDistanceChanceNum = Double.parseDouble(percentSocialDist.getText());
+        socialDistanceValueNum = Integer.parseInt(socialDistanceValue.getText());
+        minAgeNum = Integer.parseInt(minAge.getText());
+        maxAgeNum = Integer.parseInt(maxAge.getText());
+        minPreExistingConditionsNum = Integer.parseInt(minConditions.getText());
+        maxPreExistingConditionsNum = Integer.parseInt(maxConditions.getText());
+    }
+
+    public double getTravelersPer()
+    {
+        return travelersPer;
+    }
+
+    public int getBoardTypeNum() {
+        return boardTypeNum;
+    }
+
+    public int getMinAgeNum() {
+        return minAgeNum;
+    }
+
+    public int getMaxAgeNum() {
+        return maxAgeNum;
+    }
+
+    public int getMinPreExistingConditionsNum() {
+        return minPreExistingConditionsNum;
+    }
+
+    public int getMaxPreExistingConditionsNum() {
+        return maxPreExistingConditionsNum;
+    }
+
+    public int getSocialDistanceValueNum() {
+        return socialDistanceValueNum;
+    }
+
+    public int getTimeUntilQuarantineNum() {
+        return timeUntilQuarantineNum;
+    }
+
+    public double getAsymptomaticChanceNum() {
+        return asymptomaticChanceNum;
+    }
+
+    public double getQuarantineChanceNum() {
+        return quarantineChanceNum;
+    }
+
+    public double getSocialDistanceChanceNum() {
+        return socialDistanceChanceNum;
+    }
+
+    public boolean isQuarBoardBool() {
+        return quarBoardBool;
+    }
+    public JTextField getTravelers()
+    {
+        return travelers;
+    }
+    public JTextField getTimeUntilQuarantine()
+    {
+        return timeUntilQuarantine;
+    }
+    public JTextField getPercentQuarantine()
+    {
+        return percentQuarantine;
+    }
+    public JTextField getAsymptomaticChance()
+    {
+        return asymptomaticChance;
+    }
+    public JTextField getSocialDistanceValue()
+    {
+        return socialDistanceValue;
+    }
+    public JTextField getPercentSocialDist()
+    {
+        return percentSocialDist;
+    }
+    public JTextField getMinAge()
+    {
+        return minAge;
+    }
+    public JTextField getMaxAge()
+    {
+        return maxAge;
+    }
+    public JTextField getMinConditions()
+    {
+        return minConditions;
+    }
+    public JTextField getMaxConditions()
+    {
+        return maxConditions;
     }
 }

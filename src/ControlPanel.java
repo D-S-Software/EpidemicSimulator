@@ -20,8 +20,8 @@ public class ControlPanel extends JPanel implements ActionListener{
     Music backgroundMusic;
     SettingFrame settingFrame;
 
-    private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine;
-    private double asymptomaticChance, socialDistanceChance, quarantineChance;
+    private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine;
+    private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
     private boolean quarBoard;
 
 
@@ -415,7 +415,16 @@ public class ControlPanel extends JPanel implements ActionListener{
                                     Integer.parseInt(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
                         }
                     }
-                    if(disease != null)
+                    boolean goodToStart = false;
+                    if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
+                    || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
+                    || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals(""))
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters before starting!");
+                    }
+                    else goodToStart = true;
+
+                    if(disease != null && goodToStart)
                     {
                         int numPeople;
                         if("".equals(numPeopleField.getText()))
@@ -423,8 +432,21 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else
                             numPeople = Integer.parseInt(numPeopleField.getText());
 
+                        boardType = settingFrame.getBoardTypeNum();
+                        socialDistanceValue = settingFrame.getSocialDistanceValueNum();
+                        minAge = settingFrame.getMinAgeNum();
+                        maxAge = settingFrame.getMaxAgeNum();
+                        minPreExistingConditions = settingFrame.getMinPreExistingConditionsNum();
+                        maxPreExistingConditions = settingFrame.getMaxPreExistingConditionsNum();
+                        timeUntilQuarantine = settingFrame.getTimeUntilQuarantineNum();
+                        asymptomaticChance = settingFrame.getAsymptomaticChanceNum();
+                        socialDistanceChance = settingFrame.getSocialDistanceChanceNum();
+                        quarantineChance = settingFrame.getQuarantineChanceNum();
+                        travelersPer = settingFrame.getTravelersPer();
+                        quarBoard = settingFrame.isQuarBoardBool();
+
                         gui.getSimBoardPanel().setReset(false);
-                        simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine, quarantineChance);
+                        simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
                         simEngine.getClock().start();
                         canStart = false;
                         checkTick.stop();
