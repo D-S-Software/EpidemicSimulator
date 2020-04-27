@@ -179,11 +179,11 @@ public class Statistics implements ActionListener {
 
         updateStats();
 
-        /** //TODO possible implementation of an "Action Event"
-        if(numDead > 10)
+        //TODO possible implementation of an "Action Event"
+        /** if(numDead > 10)
             for(int i = 0; i < pList.size(); i++)
-                pList.get(i).setIsSocialDistancing(true);*/
-
+                pList.get(i).setIsSocialDistancing(true);
+        */
 
         /** TODO Add back in at some point
          boolean close;
