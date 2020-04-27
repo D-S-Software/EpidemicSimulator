@@ -11,7 +11,7 @@ public class SimBoardOcto extends SimBoard{
     private int Xshift = 30, Yshift = 10;
 
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers)
+                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
         this.dimens = dimens;
         this.socialDistanceValue = socialDistanceValue;
@@ -29,6 +29,8 @@ public class SimBoardOcto extends SimBoard{
         pListQ7 = new ArrayList<>();
         pListQ8 = new ArrayList<>();
         pListTravel = new ArrayList<>();
+
+        int travelers = (int)(numPeople*travelersPer);
 
         int k = 0;
         for(int i = 0; i < numPeople - travelers; i++) {

@@ -10,7 +10,7 @@ public class SimBoardQuad extends SimBoard{
     private int socialDistanceValue;
 
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers)
+                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
         this.dimens = dimens;
         this.socialDistanceValue = socialDistanceValue;
@@ -24,6 +24,8 @@ public class SimBoardQuad extends SimBoard{
         pListQ3 = new ArrayList<>();
         pListQ4 = new ArrayList<>();
         pListTravel = new ArrayList<>();
+
+        int travelers = (int)(numPeople*travelersPer);
 
         int k = 0;
         for(int i = 0; i < numPeople - travelers; i++) {
