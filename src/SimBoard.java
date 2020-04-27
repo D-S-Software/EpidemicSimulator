@@ -10,7 +10,7 @@ public abstract class SimBoard {
 
     public abstract void updateDistanceFromSick();
 
-    public abstract void updatePerson();
+    public abstract void updatePList();
 
     public abstract Rectangle getDimens();
 

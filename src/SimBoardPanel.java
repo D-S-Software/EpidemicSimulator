@@ -9,7 +9,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
 {
     SimBoard simBoard;
     Color background = CustomColor.JET;
-    Graphics2D g2D;
+    Graphics2D g2D; //TODO Should not be a field??
     boolean reset = false;
 
     public SimBoardPanel()
@@ -41,11 +41,11 @@ public class SimBoardPanel extends JPanel implements ActionListener
         }
     }
 
-    public void updateBoard(Graphics g)
+    public void updateBoard(Graphics2D g2D)
     {
         simBoard.updateDistanceFromSick();
 
-        simBoard.updatePerson();
+        simBoard.updatePList();
 
         simBoard.updateAllDimens(getBounds());
         Rectangle newDimens;
@@ -53,7 +53,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
         if(simBoard instanceof Quarantinable)
         {
             ((Quarantinable) simBoard).quarantineCheck();
-            ((Quarantinable) simBoard).drawQuarLine(g);
+            ((Quarantinable) simBoard).drawQuarLine(g2D);
         }
 
 
@@ -156,7 +156,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
         g2D = (Graphics2D)g;
 
         if(simBoard != null)
-            updateBoard(g);
+            updateBoard(g2D);
 
         if(reset)
             resetBoard();

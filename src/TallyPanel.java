@@ -30,7 +30,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         numSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
         numSickLabel.setPreferredSize(new Dimension(20, 10));
 
-        numRecoveredLabel = new JLabel("Recovered: ");
+        numRecoveredLabel = new JLabel("Recov.: ");
         numRecoveredLabel.setFont(numRecoveredLabel.getFont ().deriveFont (15.0f));
         numRecoveredLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
         numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
@@ -123,7 +123,7 @@ public class TallyPanel extends JPanel implements ActionListener {
     {
         numHealthyLabel.setText("Healthy: " + gui.getStats().getNumHealthy() + "  ");
         numSickLabel.setText("Sick: " + gui.getStats().getNumSick() + "  ");
-        numRecoveredLabel.setText("Recovered: " + gui.getStats().getNumRecovered() + "  ");
+        numRecoveredLabel.setText("Recov.: " + gui.getStats().getNumRecovered() + "  ");
         numDeadLabel.setText("Dead: " + gui.getStats().getNumDead() + "    ");
 
         if(gui.getXYChartPanel().isVisible() || gui.getXYChartPanel2().isVisible())

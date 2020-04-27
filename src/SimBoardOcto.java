@@ -424,7 +424,7 @@ public class SimBoardOcto extends SimBoard{
     }
 
     /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
-    public void updatePerson()
+    public void updatePList()
     {
         for(int i = 0; i < pListQ1.size(); i++)
         {
