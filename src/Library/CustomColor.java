@@ -34,6 +34,7 @@ public class CustomColor extends Color{
     public static final Color DEEP_GOLD = new Color(102, 88, 0);
     public static final Color DARK_GOLD = new Color(127, 112, 25);
     public static final Color VERY_DEEP_GOLD = new Color(51, 44, 0);
+    public static final Color CREAM = new Color(255, 255, 204);
 
     //Green
     public static final Color ARTICHOKE_GREEN = new Color(75, 111, 68);
@@ -70,7 +71,7 @@ public class CustomColor extends Color{
     //Epidemic Specific
     public static final Color HEALTHY  = CustomColor.SAVOY_BLUE;
     public static final Color SICK = CustomColor.CARMINE;
-    public static final Color ASYMPTOMATIC = Color.YELLOW;
+    public static final Color ASYMPTOMATIC = CustomColor.ALLOY_ORANGE;
     public static final Color RECOVERED = CustomColor.SILVER;
     public static final Color DEAD = CustomColor.DIM_GRAY;
 
