@@ -1,4 +1,6 @@
 import Library.CustomColor;
+import org.knowm.xchart.internal.chartpart.InfoPanel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -165,7 +167,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                //TODO Connect Button
+                InfoFrame infoFrame = new InfoFrame();
             }
         });
 

@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class SettingFrame extends JFrame implements ActionListener{
 
-    private int boardTypeNum = 0, socialDistanceValueNum, minAgeNum, maxAgeNum, minPreExistingConditionsNum, maxPreExistingConditionsNum, timeUntilQuarantineNum;
+    private int boardTypeNum = 1, socialDistanceValueNum, minAgeNum, maxAgeNum, minPreExistingConditionsNum, maxPreExistingConditionsNum, timeUntilQuarantineNum;
     private double asymptomaticChanceNum, socialDistanceChanceNum, quarantineChanceNum,travelersPer;
     private boolean quarBoardBool = false;
 
@@ -649,11 +649,11 @@ public class SettingFrame extends JFrame implements ActionListener{
     private void selectBoard()
     {
         if(generalBoard.isSelected())
-            boardTypeNum = 0;
-        if(quadBoard.isSelected())
             boardTypeNum = 1;
+        if(quadBoard.isSelected())
+            boardTypeNum = 4;
         if(eightBoard.isSelected())
-            boardTypeNum = 2;
+            boardTypeNum = 8;
 
         if(quarButton.isSelected())
             quarBoardBool = true;
