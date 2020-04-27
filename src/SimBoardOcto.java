@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-public class SimBoardEight extends SimBoard{
+public class SimBoardOcto extends SimBoard{
 
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, q5Dimens, q6Dimens, q7Dimens, q8Dimens, travelDimens;
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
@@ -10,7 +10,7 @@ public class SimBoardEight extends SimBoard{
     private int socialDistanceValue;
     private int Xshift = 30, Yshift = 10;
 
-    public SimBoardEight(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
+    public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers)
     {
         this.dimens = dimens;

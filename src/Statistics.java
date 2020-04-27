@@ -18,11 +18,11 @@ public class Statistics implements ActionListener {
 
     public Statistics(SimBoard simBoard, int numPeople)
     {
-        if(simBoard instanceof SimBoardRandom)
+        if(simBoard instanceof SimBoardMono)
         {
             pList = simBoard.getPList();
         }
-        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardEight)
+        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardOcto)
         {
             pListQ1 = simBoard.getpListQ1();
             pListQ2 = simBoard.getpListQ2();
@@ -30,7 +30,7 @@ public class Statistics implements ActionListener {
             pListQ4 = simBoard.getpListQ4();
             pListTravel = simBoard.getpListTravel();
         }
-        if(simBoard instanceof SimBoardEight)
+        if(simBoard instanceof SimBoardOcto)
         {
             pListQ5 = simBoard.getpListQ5();
             pListQ6 = simBoard.getpListQ6();
@@ -54,7 +54,7 @@ public class Statistics implements ActionListener {
         int sickCount = 0;
         int recoveredCount = 0;
 
-        if(simBoard instanceof SimBoardRandom)
+        if(simBoard instanceof SimBoardMono)
         {
             for(int i = 0; i < pList.size(); i++)
             {
@@ -66,7 +66,7 @@ public class Statistics implements ActionListener {
                     healthyCount++;
             }
         }
-        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardEight)
+        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardOcto)
         {
             for(int i = 0; i < pListQ1.size(); i++)
             {
@@ -114,7 +114,7 @@ public class Statistics implements ActionListener {
                     healthyCount++;
             }
         }
-        if(simBoard instanceof SimBoardEight)
+        if(simBoard instanceof SimBoardOcto)
         {
             for(int i = 0; i < pListQ5.size(); i++)
             {

@@ -56,7 +56,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
             ((SimBoardQuarQuad) simBoard).quarantineCheck();
         if(simBoard instanceof SimBoardQuarOcto)
             ((SimBoardQuarOcto) simBoard).quarantineCheck();
-        if(simBoard instanceof SimBoardRandom)
+        if(simBoard instanceof SimBoardMono)
         {
             for(int i = 0; i < simBoard.getPList().size(); i++)
             {
@@ -66,7 +66,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
                 simBoard.getPList().get(i).draw(g2D);
             }
         }
-        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardEight)
+        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardOcto)
         {
             for(int i = 0; i < simBoard.getpListQ1().size(); i++)
             {
@@ -107,7 +107,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
                 simBoard.getpListTravel().get(i).draw(g2D);
             }
         }
-        if(simBoard instanceof SimBoardEight)
+        if(simBoard instanceof SimBoardOcto)
         {
             for(int i = 0; i < simBoard.getpListQ5().size(); i++)
             {
@@ -139,7 +139,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
             }
             for(int i = 0; i < simBoard.getpListTravel().size(); i++)
             {
-                newDimens = ((SimBoardEight) simBoard).getTravelDimens();
+                newDimens = ((SimBoardOcto) simBoard).getTravelDimens();
                 if(simBoard.getpListTravel().get(i).isIsoSick() == false)
                     simBoard.getpListTravel().get(i).updateDimens(newDimens);
                 simBoard.getpListTravel().get(i).draw(g2D);

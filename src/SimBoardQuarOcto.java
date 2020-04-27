@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class SimBoardQuarOcto extends SimBoardEight{
+public class SimBoardQuarOcto extends SimBoardOcto {
 
     private Rectangle dimens, quarantine;
     private int timeUntilIsolate;
