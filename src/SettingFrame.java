@@ -105,6 +105,7 @@ public class SettingFrame extends JFrame {
         gbcMain.weighty = 1;
 
         JPanel rightPanel = new JPanel(new GridLayout(6, 4));
+        rightPanel.setBackground(CustomColor.JET);
 
         JLabel paramLabel = new JLabel("Select the Parameters");
 
