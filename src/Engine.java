@@ -4,21 +4,7 @@ import java.awt.*;
 public class Engine {
 
     private Timer clock;
-    private int deley = 10; // Can chance this for a speed up button (go to 1 for ex)
-
-    private int travelers = 20; // --> how many people in a divided board can go anywhere
-
-    private int timeUntilQuarantine = 200; // --> how much time (centiseconds) until sick people quarantine
-    private double quarantineChance = .8; // --> what % of people decide to quarantine
-
-    private double asymptomaticChance = 0; // --> what % of people are asymptomatic (still contagious, do not quarantine, do not die (only recover))
-
-    private int socialDistanceValue = 0; // --> how far to stay apart if possible (0 for no social distancing)
-    private double socialDistanceChance = .9; // --> what % of people try to social distance
-
-    private int minAge = 20, maxAge = 80; // --> age affects how long someone is sick for and how deadly a disease is
-    private int minPreExistingConditions = 0; // --> preexisting conditions affect how deadly a disease is
-    private int maxPreExistingConditions = 3;
+    private int deley = 10;
     private SimBoard simBoard;
 
     public Engine(GUI gui, Disease disease, int numPeople, int boardType, boolean quarBoard,
@@ -64,5 +50,19 @@ public class Engine {
    {
        return clock;
    }
+    public void slowDown() {
+        if(clock.getDelay() < 20)
+            clock.setDelay(clock.getDelay() + 2);
+    }
 
+    public void speedUp()
+    {
+        if(clock.getDelay() > 0)
+            clock.setDelay(clock.getDelay() - 1);
+    }
+
+    private void toggleSocDist()
+    {
+
+    }
 }
