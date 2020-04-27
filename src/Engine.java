@@ -38,7 +38,7 @@ public class Engine {
 
     public void slowDown() {
         if(clock.getDelay() < 20)
-            clock.setDelay(clock.getDelay() + 1);
+            clock.setDelay(clock.getDelay() + 2);
     }
 
     public void speedUp()

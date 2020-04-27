@@ -286,7 +286,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         socialDistanceValue.setText("50");
         socialDistanceValue.setMinimumSize(new Dimension(60, 10));
         percentSocialDist = new JTextField(100);
-        percentSocialDist.setText(".9");
+        percentSocialDist.setText("0");
         percentSocialDist.setMinimumSize(new Dimension(60, 10));
         minAge = new JTextField(100);
         minAge.setText("20");
