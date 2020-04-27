@@ -63,8 +63,8 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
 
         Graphics2D g2D = (Graphics2D)g;
 
-        int segmentWidth = 3;
-        int xBuffer = 6;
+        int segmentWidth = 4;
+        int xBuffer = 12;
         int segmentLen = dimens.height/15;
 
         g2D.setColor(CustomColor.EERIE_BLACK);

@@ -14,7 +14,12 @@ public class Main {
 
     //TODO Set Font size in Graphs - V1
 
+    //TODO Fix Bugs
+    //1. Oddness with pop size 20 or less
+    //2. Bouncing is not really there (dimens are off)
+
     //TODO Clean up code (make packages, check parameters ect.) V1
+    //      Maybe try to put updateBoard back in each respective board class
     //TODO Make Sim Settings (All parameters in Engine class) - Graphic settings (higher graphics = more chart updates) . Use separate frame V1
     //TODO: Board selection (use array of SimBoard) - V1
     //TODO Find Diseases and set parameters for Disease 1-4 - V1
