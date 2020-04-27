@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class SimBoardQuarEight extends SimBoardEight{
+public class SimBoardQuarOcto extends SimBoardEight{
 
     private Rectangle dimens, quarantine;
     private int timeUntilIsolate;
@@ -8,8 +8,8 @@ public class SimBoardQuarEight extends SimBoardEight{
     private double quarantineChance;
     private int xShift = 30, yShift = 30;
 
-    public SimBoardQuarEight(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                             int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers, int timeUntilIsolate, double quarantineChance)
+    public SimBoardQuarOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
+                            int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers, int timeUntilIsolate, double quarantineChance)
     {
         super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers);
         this.dimens = dimens;
