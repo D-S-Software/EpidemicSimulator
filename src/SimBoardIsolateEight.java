@@ -1,12 +1,12 @@
 import java.awt.*;
 
-public class SimBoardIsolateEight extends SimBoardQuad{ //TODO Still have to edit this case from Quad Base
+public class SimBoardIsolateEight extends SimBoardEight{
 
     private Rectangle dimens, quarantine;
     private int timeUntilIsolate;
-    private int width, height, newXStart, newYStart, quarX, quarWidth;
+    private int width, height, newXStart, newYStart, new2XStart, new3XStart, quarX, quarWidth;
     private double quarentineChance;
-    private int shift = 50;
+    private int Xshift = 30, Yshift = 30;
 
     public SimBoardIsolateEight(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                                int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int travelers, int timeUntilIsolate, double quarentineChance)
@@ -64,23 +64,31 @@ public class SimBoardIsolateEight extends SimBoardQuad{ //TODO Still have to edi
     {
         dimens = updatedRect;
 
-        width = (dimens.width - dimens.x) / 2 - circleRad - shift;
-        height = (dimens.height - dimens.y) / 2 - circleRad;
+        width = (dimens.width - dimens.x) / 4 - 2*Xshift;
+        height = (dimens.height - dimens.y) / 2 - Yshift;
 
-        newXStart = (dimens.width - dimens.x) / 2 + circleRad - shift;
-        newYStart = (dimens.height - dimens.y) / 2 + circleRad;
+        newXStart = dimens.x + width + Xshift;
+        newYStart = (dimens.height - dimens.y) / 2 + Yshift;
 
-        quarX = newXStart + width - shift/2;
-        quarWidth = 2*shift + 4*circleRad;
+        new2XStart = dimens.x + 2*width + 2*Xshift;
+
+        new3XStart = dimens.x + 3*width + 3*Xshift;
+
+        quarX = new3XStart + width + Xshift;
+        quarWidth = dimens.width - 4*width - 4*Xshift - circleRad;
 
         quarantine = new Rectangle(quarX, dimens.y, quarWidth, dimens.height);
 
         setQ1Dimens(new Rectangle(dimens.x, dimens.y, width, height));
-        setQ2Dimens(new Rectangle(newXStart, dimens.y, width - shift, height));
-        setQ3Dimens(new Rectangle(dimens.x, newYStart, width, height));
-        setQ4Dimens(new Rectangle(newXStart, newYStart, width - shift, height));
+        setQ2Dimens(new Rectangle(newXStart, dimens.y, width, height));
+        setQ3Dimens(new Rectangle(new2XStart, dimens.y, width, height));
+        setQ4Dimens(new Rectangle(new3XStart, dimens.y, width, height));
+        setQ5Dimens(new Rectangle(dimens.x, newYStart, width, height));
+        setQ6Dimens(new Rectangle(newXStart, newYStart, width, height));
+        setQ7Dimens(new Rectangle(new2XStart, newYStart, width, height));
+        setQ8Dimens(new Rectangle(new3XStart, newYStart, width, height));
 
-        setTravelDimens(new Rectangle(dimens.x, dimens.y, dimens.width - shift - quarWidth, dimens.height));
+        setTravelDimens(new Rectangle(dimens.x, dimens.y, dimens.x + new3XStart + width, dimens.height));
     }
 
     public void quarantineCheck()

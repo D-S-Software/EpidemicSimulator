@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Statistics implements ActionListener {
 
-    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
+    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
     private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, averageRValue;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
@@ -22,13 +22,20 @@ public class Statistics implements ActionListener {
         {
             pList = simBoard.getPList();
         }
-        if(simBoard instanceof SimBoardQuad)
+        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardEight)
         {
             pListQ1 = simBoard.getpListQ1();
             pListQ2 = simBoard.getpListQ2();
             pListQ3 = simBoard.getpListQ3();
             pListQ4 = simBoard.getpListQ4();
             pListTravel = simBoard.getpListTravel();
+        }
+        if(simBoard instanceof SimBoardEight)
+        {
+            pListQ5 = simBoard.getpListQ5();
+            pListQ6 = simBoard.getpListQ6();
+            pListQ7 = simBoard.getpListQ7();
+            pListQ8 = simBoard.getpListQ8();
         }
 
         this.simBoard = simBoard;
@@ -59,7 +66,7 @@ public class Statistics implements ActionListener {
                     healthyCount++;
             }
         }
-        if(simBoard instanceof SimBoardQuad)
+        if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardEight)
         {
             for(int i = 0; i < pListQ1.size(); i++)
             {
@@ -104,6 +111,45 @@ public class Statistics implements ActionListener {
                 if(pListTravel.get(i).getHasDisease() && !pListTravel.get(i).getIsHealthy())
                     sickCount++;
                 if(!pListTravel.get(i).getHasDisease() && pListTravel.get(i).getIsHealthy())
+                    healthyCount++;
+            }
+        }
+        if(simBoard instanceof SimBoardEight)
+        {
+            for(int i = 0; i < pListQ5.size(); i++)
+            {
+                if(pListQ5.get(i).getHasDisease() && pListQ5.get(i).getIsHealthy())
+                    recoveredCount++;
+                if(pListQ5.get(i).getHasDisease() && !pListQ5.get(i).getIsHealthy())
+                    sickCount++;
+                if(!pListQ5.get(i).getHasDisease() && pListQ5.get(i).getIsHealthy())
+                    healthyCount++;
+            }
+            for(int i = 0; i < pListQ6.size(); i++)
+            {
+                if(pListQ6.get(i).getHasDisease() && pListQ6.get(i).getIsHealthy())
+                    recoveredCount++;
+                if(pListQ6.get(i).getHasDisease() && !pListQ6.get(i).getIsHealthy())
+                    sickCount++;
+                if(!pListQ6.get(i).getHasDisease() && pListQ6.get(i).getIsHealthy())
+                    healthyCount++;
+            }
+            for(int i = 0; i < pListQ7.size(); i++)
+            {
+                if(pListQ7.get(i).getHasDisease() && pListQ7.get(i).getIsHealthy())
+                    recoveredCount++;
+                if(pListQ7.get(i).getHasDisease() && !pListQ7.get(i).getIsHealthy())
+                    sickCount++;
+                if(!pListQ7.get(i).getHasDisease() && pListQ7.get(i).getIsHealthy())
+                    healthyCount++;
+            }
+            for(int i = 0; i < pListQ8.size(); i++)
+            {
+                if(pListQ8.get(i).getHasDisease() && pListQ8.get(i).getIsHealthy())
+                    recoveredCount++;
+                if(pListQ8.get(i).getHasDisease() && !pListQ8.get(i).getIsHealthy())
+                    sickCount++;
+                if(!pListQ8.get(i).getHasDisease() && pListQ8.get(i).getIsHealthy())
                     healthyCount++;
             }
         }
