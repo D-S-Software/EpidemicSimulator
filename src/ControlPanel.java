@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Set;
 
 public class ControlPanel extends JPanel implements ActionListener{
 
@@ -19,10 +18,19 @@ public class ControlPanel extends JPanel implements ActionListener{
     private GUI gui;
     Timer checkTick;
     Music backgroundMusic;
+    SettingFrame settingFrame;
+
+    private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine;
+    private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
+    private boolean quarBoard;
+
 
     public ControlPanel(GUI gui)
     {
         this.gui = gui;
+
+        settingFrame = new SettingFrame();
+        settingFrame.setVisible(false);
 
         if(Math.random() > .5)
             backgroundMusic = new Music("BlackOps.wav");
@@ -33,9 +41,10 @@ public class ControlPanel extends JPanel implements ActionListener{
         addSimSettingPanel();
         addParamPanel();
         addButtonPanel();
-        addTitleControlPanel();
+        addSettingOnePanel();
 
         checkTick = new Timer(10, this);
+        checkTick.addActionListener(settingFrame);
         checkTick.start();
     }
 
@@ -129,7 +138,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBackground(CustomColor.SPACE_CADET);
         mainPanel.add(p, gbc);
     }
-    public void addTitleControlPanel()
+    public void addSettingOnePanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 1;
@@ -141,30 +150,23 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel();
+        JPanel p = new JPanel(new GridLayout(1, 2));
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
-        JLabel controls = new JLabel("Controls:");
-        controls.setFont(controls.getFont ().deriveFont (24.0f));
-        controls.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
-        p.add(controls);
-        mainPanel.add(p, gbc);
-    }
-    public void addSimSettingPanel()
-    {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 2;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 50;
-        gbc.weighty = 10;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel(new GridLayout(1, 3));
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED);
+
+        JButton info = new JButton("Info");
+        info.setBackground(CustomColor.BUTTON);
+        info.setFont(info.getFont ().deriveFont (18.0f));
+        info.setForeground(CustomColor.ON_BUTTON_LABEL);
+        info.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+
+        info.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                //TODO Connect Button
+            }
+        });
 
         toggleMusic = new JButton("Toggle Music");
         toggleMusic.setBackground(CustomColor.BUTTON);
@@ -189,6 +191,40 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
+       p.add(info);
+       p.add(toggleMusic);
+        mainPanel.add(p, gbc);
+    }
+    public void addSimSettingPanel()
+    {
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridx = 2;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 50;
+        gbc.weighty = 10;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.insets = new Insets(2, 2, 2, 2);
+        JPanel p = new JPanel(new GridLayout(1, 4));
+        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        p.setBackground(CustomColor.BLOOD_RED);
+
+        JButton toggleSocDist = new JButton("Social Distancing");
+        toggleSocDist.setBackground(CustomColor.BUTTON);
+        toggleSocDist.setFont(toggleSocDist.getFont ().deriveFont (18.0f));
+        toggleSocDist.setForeground(CustomColor.ON_BUTTON_LABEL);
+        toggleSocDist.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+
+        toggleSocDist.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                //TODO Connect Button
+            }
+        });
+
         ImageIcon pic = new ImageIcon(ClassLoader.getSystemResource("res/setttingsIcon.png"));
         Image image = pic.getImage();
         JButton settings = new JButton((new ImageIcon(image.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH))));
@@ -200,7 +236,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                SettingFrame settingFrame = new SettingFrame();
+                settingFrame.setVisible(true);
             }
         });
 
@@ -218,7 +254,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        JButton slowDown = new JButton("SlowDown");
+        JButton slowDown = new JButton("Slow Down");
         slowDown.setBackground(CustomColor.BUTTON);
         slowDown.setFont(slowDown.getFont ().deriveFont (18.0f));
         slowDown.setForeground(CustomColor.ON_BUTTON_LABEL);
@@ -232,7 +268,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        p.add(toggleMusic);
+        p.add(toggleSocDist);
         p.add(speedUp);
         p.add(slowDown);
         p.add(settings);
@@ -379,7 +415,16 @@ public class ControlPanel extends JPanel implements ActionListener{
                                     Integer.parseInt(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
                         }
                     }
-                    if(disease != null)
+                    boolean goodToStart = false;
+                    if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
+                    || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
+                    || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals(""))
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters before starting!");
+                    }
+                    else goodToStart = true;
+
+                    if(disease != null && goodToStart)
                     {
                         int numPeople;
                         if("".equals(numPeopleField.getText()))
@@ -387,8 +432,21 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else
                             numPeople = Integer.parseInt(numPeopleField.getText());
 
+                        boardType = settingFrame.getBoardTypeNum();
+                        socialDistanceValue = settingFrame.getSocialDistanceValueNum();
+                        minAge = settingFrame.getMinAgeNum();
+                        maxAge = settingFrame.getMaxAgeNum();
+                        minPreExistingConditions = settingFrame.getMinPreExistingConditionsNum();
+                        maxPreExistingConditions = settingFrame.getMaxPreExistingConditionsNum();
+                        timeUntilQuarantine = settingFrame.getTimeUntilQuarantineNum();
+                        asymptomaticChance = settingFrame.getAsymptomaticChanceNum();
+                        socialDistanceChance = settingFrame.getSocialDistanceChanceNum();
+                        quarantineChance = settingFrame.getQuarantineChanceNum();
+                        travelersPer = settingFrame.getTravelersPer();
+                        quarBoard = settingFrame.isQuarBoardBool();
+
                         gui.getSimBoardPanel().setReset(false);
-                        simEngine = new Engine(gui, disease, numPeople);
+                        simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
                         simEngine.getClock().start();
                         canStart = false;
                         checkTick.stop();

@@ -20,7 +20,8 @@ public class Engine {
     private int minPreExistingConditions = 0; // --> preexisting conditions affect how deadly a disease is
     private int maxPreExistingConditions = 3;
 
-    public Engine(GUI gui, Disease disease, int numPeople)
+    public Engine(GUI gui, Disease disease, int numPeople, int boardType, boolean quarBoard,
+                  double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, int timeUntilQuarantine, double quarantineChance)
     {
         Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
 
