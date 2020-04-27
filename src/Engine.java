@@ -58,8 +58,21 @@ public class Engine {
         if(clock.getDelay() > 0)
             clock.setDelay(clock.getDelay() - 1);
     }
-    private void toggleSocDist()
+    public void toggleSocDist(boolean SocialDist)
     {
-
+        if(!SocialDist)
+        {
+            for(int i = 0; i < simBoard.getPList().size(); i++)
+            {
+                simBoard.getPList().get(i).setIsSocialDistancing(false);
+            }
+        }
+        else
+        {
+            for(int i = 0; i < simBoard.getPList().size(); i++)
+            {
+                simBoard.getPList().get(i).setIsSocialDistancing(simBoard.getPList().get(i).getIsSocialDistancingSaved());
+            }
+        }
     }
 }
