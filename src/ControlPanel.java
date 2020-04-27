@@ -67,7 +67,7 @@ public class ControlPanel extends JPanel implements ActionListener{
 
         choice1 = new JRadioButton("Disease 1   ");
         choice1.setFont(choice1.getFont ().deriveFont (16.0f));
-        choice1.setBackground(CustomColor.BUTTON);
+        choice1.setBackground(CustomColor.DAVYS_GRAY);
         choice1.setForeground(CustomColor.ON_BUTTON_LABEL);
         choice1.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         choice2 = new JRadioButton("Disease 2   ");
@@ -138,7 +138,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(custom);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.SPACE_CADET);
+        p.setBackground(CustomColor.SPACE_CADET_LIGHT);
         mainPanel.add(p, gbc);
     }
     public void addSettingOnePanel()
@@ -367,7 +367,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(startPercentHealthy);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.SPACE_CADET);
+        p.setBackground(CustomColor.SPACE_CADET_LIGHT);
         mainPanel.add(p, gbc);
     }
     public void addButtonPanel()
