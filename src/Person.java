@@ -91,7 +91,6 @@ public class Person {
         {
             hasDisease = true;
             isHealthy = false;
-            //TODO set closestSickIndex in pList to have +1 infected
         }
         if(hasDisease && !isHealthy) // if is sick
         {

@@ -181,7 +181,7 @@ public class SimBoardEight extends SimBoard{
             pList.add(pListTravel.get(i));
     }
 
-    public void updateAllDimens(Rectangle updatedRect) //TODO work in progress
+    public void updateAllDimens(Rectangle updatedRect)
     {
         dimens = updatedRect;
 

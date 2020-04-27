@@ -27,7 +27,7 @@ public class MyXYChart {
         xychart.getStyler().setXAxisTickLabelsColor(CustomColor.CHART_LABEL);
         xychart.getStyler().setYAxisTickLabelsColor(CustomColor.CHART_LABEL);
 
-        // Series TODO Add colors for the line graph
+        // Series
         //TODO Change the front size for the line graph
         XYSeries healthy = xychart.addSeries("Healthy",new double[]{0}, new double[]{0});
         healthy.setLineColor(CustomColor.HEALTHY);

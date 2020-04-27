@@ -17,7 +17,7 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
         xychart = c;
     }
 
-    public void resetXY() //TODO rename to reset?
+    public void resetXY()
     {
         count = 99;
         boolean show = isVisible();
