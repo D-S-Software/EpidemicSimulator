@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class SimBoardQuarRandom extends SimBoardRandom{
+public class SimBoardQuarMono extends SimBoardMono {
 
     private Rectangle dimens, quarantine;
     private int timeUntilIsolate;
@@ -8,8 +8,8 @@ public class SimBoardQuarRandom extends SimBoardRandom{
     private double quarantineChance;
     private int shift = 200;
 
-    public SimBoardQuarRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                              int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int timeUntilIsolate, double quarantineChance)
+    public SimBoardQuarMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
+                            int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int timeUntilIsolate, double quarantineChance)
     {
         super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
         this.dimens = dimens;

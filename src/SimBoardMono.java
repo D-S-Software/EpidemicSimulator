@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-public class SimBoardRandom extends SimBoard{
+public class SimBoardMono extends SimBoard{
 
    private Rectangle dimens;
    private ArrayList<Person> pList;
@@ -9,8 +9,8 @@ public class SimBoardRandom extends SimBoard{
    private int numPeople;
    private int socialDistanceValue;
 
-    public SimBoardRandom(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
-                          int minPreExistingConditions, int maxPreExistingConditions)
+    public SimBoardMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
+                        int minPreExistingConditions, int maxPreExistingConditions)
     {
         this.dimens = dimens;
         this.socialDistanceValue = socialDistanceValue;
