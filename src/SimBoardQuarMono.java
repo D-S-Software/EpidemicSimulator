@@ -1,6 +1,9 @@
-import java.awt.*;
+import Library.CustomColor;
 
-public class SimBoardQuarMono extends SimBoardMono {
+import java.awt.*;
+import java.beans.Customizer;
+
+public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
 
     private Rectangle dimens, quarantine;
     private int timeUntilIsolate;
@@ -52,6 +55,26 @@ public class SimBoardQuarMono extends SimBoardMono {
                 getPList().get(i).setIsoSick(false);
             }
         }
+    }
+
+
+    @Override
+    public void drawQuarLine(Graphics g) {
+
+        Graphics2D g2D = (Graphics2D)g;
+
+        int segmentWidth = 3;
+        int xBuffer = 6;
+        int segmentLen = dimens.height/15;
+
+        g2D.setColor(CustomColor.EERIE_BLACK);
+
+        for(int i = 0; i < 17; i++)
+        {
+            if(i%2 == 0)
+                g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen );
+        }
+
     }
 
     @Override

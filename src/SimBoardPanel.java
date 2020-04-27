@@ -41,7 +41,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
         }
     }
 
-    public void updateBoard()
+    public void updateBoard(Graphics g)
     {
         simBoard.updateDistanceFromSick();
 
@@ -50,12 +50,13 @@ public class SimBoardPanel extends JPanel implements ActionListener
         simBoard.updateAllDimens(getBounds());
         Rectangle newDimens;
 
-        if(simBoard instanceof SimBoardQuarMono)
-            ((SimBoardQuarMono) simBoard).quarantineCheck();
-        if(simBoard instanceof SimBoardQuarQuad)
-            ((SimBoardQuarQuad) simBoard).quarantineCheck();
-        if(simBoard instanceof SimBoardQuarOcto)
-            ((SimBoardQuarOcto) simBoard).quarantineCheck();
+        if(simBoard instanceof Quarantinable)
+        {
+            ((Quarantinable) simBoard).quarantineCheck();
+            ((Quarantinable) simBoard).drawQuarLine(g);
+        }
+
+
         if(simBoard instanceof SimBoardMono)
         {
             for(int i = 0; i < simBoard.getPList().size(); i++)
@@ -155,7 +156,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
         g2D = (Graphics2D)g;
 
         if(simBoard != null)
-            updateBoard();
+            updateBoard(g);
 
         if(reset)
             resetBoard();
