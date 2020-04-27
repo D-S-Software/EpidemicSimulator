@@ -31,6 +31,24 @@ public class Engine {
         clock.addActionListener(gui.getPieChartPanel());
         clock.addActionListener(gui.getTallyPanel());
     }
-//
+    public Timer getClock() {
+        return clock;
+    }
+
+    public void slowDown() {
+        if(clock.getDelay() < 20)
+            clock.setDelay(clock.getDelay() + 2);
+    }
+
+    public void speedUp()
+    {
+        if(clock.getDelay() > 0)
+            clock.setDelay(clock.getDelay() - 1);
+    }
+
+    private void toggleSocDist()
+    {
+
+    }
 
 }
