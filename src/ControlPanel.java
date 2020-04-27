@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Set;
 
 public class ControlPanel extends JPanel implements ActionListener{
 
@@ -188,11 +189,18 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        //ImageIcon pic = new ImageIcon(ClassLoader.getSystemResource("res/SettingsIcon.jpg"));
-        //Image image = pic.getImage();
-        //JButton settings = new JButton((new ImageIcon(image.getScaledInstance(120,120, java.awt.Image.SCALE_SMOOTH))));
-        //JButton settings = new JButton(pic);
-        //p.add(settings);
+        ImageIcon pic = new ImageIcon(ClassLoader.getSystemResource("res/setttingsIcon.png"));
+        Image image = pic.getImage();
+        JButton settings = new JButton((new ImageIcon(image.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH))));
+        settings.setBackground(CustomColor.BUTTON);
+
+        settings.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                SettingFrame settingFrame = new SettingFrame();
+            }
+        });
 
         JLabel filler1 = new JLabel();
         JLabel filler2 = new JLabel();
@@ -200,6 +208,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(toggleMusic);
         p.add(filler1);
         p.add(filler2);
+        p.add(settings);
 
         mainPanel.add(p, gbc);
     }

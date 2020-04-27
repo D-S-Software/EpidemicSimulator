@@ -11,7 +11,7 @@ public class Engine {
     private int timeUntilQuarantine = 200; // --> how much time (centiseconds) until sick people quarantine
     private double quarantineChance = .8; // --> what % of people decide to quarantine
 
-    private double asymptomaticChance = 0; // --> what % of people are asymptomatic (still contagious, do not quarantine, do not dry (only recover))
+    private double asymptomaticChance = 0; // --> what % of people are asymptomatic (still contagious, do not quarantine, do not die (only recover))
 
     private int socialDistanceValue = 0; // --> how far to stay apart if possible (0 for no social distancing)
     private double socialDistanceChance = .9; // --> what % of people try to social distance
@@ -24,14 +24,14 @@ public class Engine {
     {
         Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
 
-        //SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
-        //SimBoardQuarMono simBoard = new SimBoardQuarMono(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine, quarantineChance);
+        SimBoardRandom simBoard = new SimBoardRandom(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
+        //SimBoardQuarRandom simBoard = new SimBoardQuarRandom(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine, quarantineChance);
 
         //SimBoardQuad simBoard = new SimBoardQuad(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers);
         //SimBoardQuarQuad simBoard = new SimBoardQuarQuad(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine, quarantineChance);
 
         SimBoardEight simBoard = new SimBoardEight(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers);
-        //SimBoardQuarOcto simBoard = new SimBoardQuarOcto(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine, quarantineChance);
+        //SimBoardQuarEight simBoard = new SimBoardQuarEight(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers, timeUntilQuarantine, quarantineChance);
 
         gui.getSimBoardPanel().setBoard(simBoard);
 
