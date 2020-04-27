@@ -24,7 +24,7 @@ public class Person {
         this.disease = disease;
         this.asymptomatic = asymptomatic;
         this.isSocialDistancing = isSocialDistancing;
-        isSocialDistancingSaved = this.isSocialDistancing;
+        isSocialDistancingSaved = isSocialDistancing;
         this.circleRad = circleRad;
         this.xPos = xPos;
         this.yPos = yPos;

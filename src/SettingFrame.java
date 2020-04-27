@@ -22,8 +22,6 @@ public class SettingFrame extends JFrame implements ActionListener{
 
     public SettingFrame()
     {
-        Timer checkOpen = new Timer(10, this);
-
         setBackground(CustomColor.BACKGROUND);
         setPreferredSize(new Dimension(850, 600));
 
@@ -100,6 +98,9 @@ public class SettingFrame extends JFrame implements ActionListener{
         addBottomPanel();
 
         add(mainPanel);
+
+        Timer checkOpen = new Timer(10, this);
+        checkOpen.start();
 
         pack();
         setLocationByPlatform(true);

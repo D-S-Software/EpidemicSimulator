@@ -12,8 +12,6 @@ public class Engine {
     {
         Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
 
-        System.out.println(boardType);
-
         if(quarBoard) {
             if (boardType == 8)
                 simBoard = new SimBoardQuarOcto(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
@@ -57,22 +55,5 @@ public class Engine {
     {
         if(clock.getDelay() > 0)
             clock.setDelay(clock.getDelay() - 1);
-    }
-    public void toggleSocDist(boolean SocialDist)
-    {
-        if(!SocialDist)
-        {
-            for(int i = 0; i < simBoard.getPList().size(); i++)
-            {
-                simBoard.getPList().get(i).setIsSocialDistancing(false);
-            }
-        }
-        else
-        {
-            for(int i = 0; i < simBoard.getPList().size(); i++)
-            {
-                simBoard.getPList().get(i).setIsSocialDistancing(simBoard.getPList().get(i).getIsSocialDistancingSaved());
-            }
-        }
     }
 }

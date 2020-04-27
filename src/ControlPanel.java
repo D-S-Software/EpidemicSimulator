@@ -227,12 +227,12 @@ public class ControlPanel extends JPanel implements ActionListener{
                 {
                     if(isSocialDist)
                     {
-                        simEngine.toggleSocDist(false);
+                        gui.getSimBoardPanel().toggleSocDist(false);
                         isSocialDist = false;
                     }
                     else
                     {
-                        simEngine.toggleSocDist(true);
+                        gui.getSimBoardPanel().toggleSocDist(true);
                         isSocialDist = true;
                     }
                 }

@@ -40,6 +40,25 @@ public class SimBoardPanel extends JPanel implements ActionListener
             }
         }
     }
+    public void toggleSocDist(boolean SocialDist)
+    {
+        if(!SocialDist)
+        {
+            System.out.println("stop");
+            for(int i = 0; i < simBoard.getPList().size(); i++)
+            {
+                simBoard.getPList().get(i).setIsSocialDistancing(false);
+            }
+        }
+        else
+        {
+            System.out.println("start");
+            for(int i = 0; i < simBoard.getPList().size(); i++)
+            {
+                simBoard.getPList().get(i).setIsSocialDistancing(simBoard.getPList().get(i).getIsSocialDistancingSaved());
+            }
+        }
+    }
 
     public void updateBoard(Graphics2D g2D)
     {
