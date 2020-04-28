@@ -271,13 +271,13 @@ public class SettingFrame extends JFrame implements ActionListener{
         JLabel paramLabel = new JLabel("Select the Parameters");
 
         travelers = new JTextField(100);
-        travelers.setText(".02");
+        travelers.setText("20");
         travelers.setMinimumSize(new Dimension(60, 10));
         timeUntilQuarantine = new JTextField(100);
         timeUntilQuarantine.setText("300");
         timeUntilQuarantine.setMinimumSize(new Dimension(60, 10));
         percentQuarantine = new JTextField(100);
-        percentQuarantine.setText(".8");
+        percentQuarantine.setText("80");
         percentQuarantine.setMinimumSize(new Dimension(60, 10));
         asymptomaticChance = new JTextField(100);
         asymptomaticChance.setText("0");
@@ -666,11 +666,11 @@ public class SettingFrame extends JFrame implements ActionListener{
 
     private void selectParams()
     {
-        travelersPer = Double.parseDouble(travelers.getText());
+        travelersPer = Double.parseDouble(travelers.getText()) / 100;
         timeUntilQuarantineNum = Integer.parseInt(timeUntilQuarantine.getText());
-        quarantineChanceNum = Double.parseDouble(percentQuarantine.getText());
-        asymptomaticChanceNum = Double.parseDouble(asymptomaticChance.getText());
-        socialDistanceChanceNum = Double.parseDouble(percentSocialDist.getText());
+        quarantineChanceNum = Double.parseDouble(percentQuarantine.getText()) / 100;
+        asymptomaticChanceNum = Double.parseDouble(asymptomaticChance.getText()) / 100;
+        socialDistanceChanceNum = Double.parseDouble(percentSocialDist.getText()) / 100;
         socialDistanceValueNum = Integer.parseInt(socialDistanceValue.getText());
         minAgeNum = Integer.parseInt(minAge.getText());
         maxAgeNum = Integer.parseInt(maxAge.getText());

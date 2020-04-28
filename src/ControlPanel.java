@@ -244,7 +244,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else
                         {
                             gui.getSimBoardPanel().toggleSocDist(true);
-                            toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() + " % of people are set social distancing");
+                            toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
                         }
                         isSocialDist = true;
                     }
@@ -498,7 +498,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         gui.getTallyPanel().showGraphModeButton();
                         backgroundMusic.loop();
 
-                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() + " % of people are set social distancing");
+                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
                     }
                 }
             }
