@@ -630,7 +630,13 @@ public class SettingFrame extends JFrame implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                setVisible(false);
+                if(getTravelers().getText().equals("") || getTimeUntilQuarantine().getText().equals("") || getPercentQuarantine().getText().equals("") || getAsymptomaticChance().getText().equals("")
+                        || getSocialDistanceValue().getText().equals("") || getPercentSocialDist().getText().equals("") || getMinAge().getText().equals("") || getMaxAge().getText().equals("")
+                        || getMinConditions().getText().equals("") || getMaxConditions().getText().equals(""))
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
+                }
+                else setVisible(false);
             }
         });
 
