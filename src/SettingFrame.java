@@ -23,7 +23,10 @@ public class SettingFrame extends JFrame implements ActionListener{
     public SettingFrame()
     {
         setBackground(CustomColor.BACKGROUND);
-        setPreferredSize(new Dimension(850, 600));
+        setPreferredSize(new Dimension(920, 630));
+        getContentPane().setBackground(CustomColor.BACKGROUND);
+
+        mainPanel.setBackground(CustomColor.BACKGROUND);
 
         try
         {
@@ -116,10 +119,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
 
         JPanel leftPanel = new JPanel(new GridBagLayout());
-        leftPanel.setBackground(CustomColor.WHITE);
+        leftPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
         leftPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
+        JPanel leftTopPanel = new JPanel();
+        leftTopPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
+        leftTopPanel.setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, CustomColor.BACKGROUND));
+
         JLabel boardSelection = new JLabel("Select Board");
+        boardSelection.setForeground(CustomColor.LIGHT_GRAY);
+        boardSelection.setFont(boardSelection.getFont ().deriveFont (18.0f));
+
+        leftTopPanel.add(boardSelection);
 
         ImageIcon singlePic = new ImageIcon(ClassLoader.getSystemResource("res/SimBoardMono.png"));
         Image singleIm = singlePic.getImage();
@@ -140,26 +151,36 @@ public class SettingFrame extends JFrame implements ActionListener{
         generalBoard.setBackground(CustomColor.BUTTON);
         generalBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         generalBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        generalBoard.setForeground(CustomColor.LIGHT_GRAY);
+        generalBoard.setFont(generalBoard.getFont ().deriveFont (16.0f));
 
         quadBoard = new JRadioButton("Quad    ");
         quadBoard.setBackground(CustomColor.BUTTON);
         quadBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         quadBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        quadBoard.setForeground(CustomColor.LIGHT_GRAY);
+        quadBoard.setFont(quadBoard.getFont ().deriveFont (16.0f));
 
         eightBoard = new JRadioButton("Octo    ");
         eightBoard.setBackground(CustomColor.BUTTON);
         eightBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
         eightBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        eightBoard.setForeground(CustomColor.LIGHT_GRAY);
+        eightBoard.setFont(eightBoard.getFont ().deriveFont (16.0f));
 
         quarButton = new JRadioButton("Quarantine");
         quarButton.setBackground(CustomColor.BUTTON);
         quarButton.setForeground(CustomColor.ON_BUTTON_LABEL);
         quarButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        quarButton.setForeground(CustomColor.LIGHT_GRAY);
+        quarButton.setFont(quarButton.getFont ().deriveFont (16.0f));
 
         regButton = new JRadioButton("Standard");
         regButton.setBackground(CustomColor.BUTTON);
         regButton.setForeground(CustomColor.ON_BUTTON_LABEL);
         regButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        regButton.setForeground(CustomColor.LIGHT_GRAY);
+        regButton.setFont(regButton.getFont ().deriveFont (16.0f));
 
         ButtonGroup g1 = new ButtonGroup();
         g1.add(generalBoard);
@@ -184,7 +205,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         gbc.weightx = 5;
         gbc.weighty = .1;
 
-        leftPanel.add(boardSelection, gbc);
+        leftPanel.add(leftTopPanel, gbc);
 
         gbc.gridx = 0;
         gbc.gridy = 1;
@@ -249,6 +270,7 @@ public class SettingFrame extends JFrame implements ActionListener{
 
         JPanel quarPanel = new JPanel(new GridLayout(1, 2));
         quarPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        quarPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
         quarPanel.add(quarButton);
         quarPanel.add(regButton);
 
@@ -265,73 +287,168 @@ public class SettingFrame extends JFrame implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
 
         JPanel rightPanel = new JPanel(new GridBagLayout());
-        rightPanel.setBackground(CustomColor.WHITE);
+        rightPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
         rightPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
+        JPanel rightTopPanel = new JPanel();
+        rightTopPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
+        rightTopPanel.setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, CustomColor.BACKGROUND));
+
         JLabel paramLabel = new JLabel("Select the Parameters");
+        paramLabel.setForeground(CustomColor.LIGHT_GRAY);
+        paramLabel.setFont(paramLabel.getFont ().deriveFont (18.0f));
+
+        rightTopPanel.add(paramLabel);
 
         travelers = new JTextField(100);
         travelers.setText("20");
+        travelers.setBackground(CustomColor.LIGHT_GRAY);
         travelers.setMinimumSize(new Dimension(60, 10));
+        travelers.setFont(travelers.getFont ().deriveFont (15.0f));
+
         timeUntilQuarantine = new JTextField(100);
         timeUntilQuarantine.setText("3");
+        timeUntilQuarantine.setBackground(CustomColor.LIGHT_GRAY);
         timeUntilQuarantine.setMinimumSize(new Dimension(60, 10));
+        timeUntilQuarantine.setFont(timeUntilQuarantine.getFont ().deriveFont (15.0f));
+
         percentQuarantine = new JTextField(100);
         percentQuarantine.setText("80");
+        percentQuarantine.setBackground(CustomColor.LIGHT_GRAY);
         percentQuarantine.setMinimumSize(new Dimension(60, 10));
+        percentQuarantine.setFont(percentQuarantine.getFont ().deriveFont (15.0f));
+
         asymptomaticChance = new JTextField(100);
         asymptomaticChance.setText("0");
+        asymptomaticChance.setBackground(CustomColor.LIGHT_GRAY);
         asymptomaticChance.setMinimumSize(new Dimension(60, 10));
+        asymptomaticChance.setFont(asymptomaticChance.getFont ().deriveFont (15.0f));
+
         socialDistanceValue = new JTextField(100);
         socialDistanceValue.setText("50");
+        socialDistanceValue.setBackground(CustomColor.LIGHT_GRAY);
         socialDistanceValue.setMinimumSize(new Dimension(60, 10));
+        socialDistanceValue.setFont(socialDistanceValue.getFont ().deriveFont (15.0f));
+
         percentSocialDist = new JTextField(100);
         percentSocialDist.setText("0");
+        percentSocialDist.setBackground(CustomColor.LIGHT_GRAY);
         percentSocialDist.setMinimumSize(new Dimension(60, 10));
+        percentSocialDist.setFont(percentSocialDist.getFont ().deriveFont (15.0f));
+
         minAge = new JTextField(100);
         minAge.setText("20");
+        minAge.setBackground(CustomColor.LIGHT_GRAY);
         minAge.setMinimumSize(new Dimension(60, 10));
+        minAge.setFont(minAge.getFont ().deriveFont (15.0f));
+
         maxAge = new JTextField(100);
         maxAge.setText("80");
+        maxAge.setBackground(CustomColor.LIGHT_GRAY);
         maxAge.setMinimumSize(new Dimension(60, 10));
+        maxAge.setFont(maxAge.getFont ().deriveFont (15.0f));
+
         minConditions = new JTextField(100);
         minConditions.setText("0");
+        minConditions.setBackground(CustomColor.LIGHT_GRAY);
         minConditions.setMinimumSize(new Dimension(60, 10));
+        minConditions.setFont(minConditions.getFont ().deriveFont (15.0f));
+
         maxConditions = new JTextField(100);
         maxConditions.setText("3");
+        maxConditions.setBackground(CustomColor.LIGHT_GRAY);
         maxConditions.setMinimumSize(new Dimension(60, 10));
+        maxConditions.setFont(maxConditions.getFont ().deriveFont (15.0f));
 
         JLabel travelersLabel = new JLabel("Travelers (%)");
+        travelersLabel.setForeground(CustomColor.LIGHT_GRAY);
+        travelersLabel.setFont(travelersLabel.getFont ().deriveFont (16.0f));
+
         JLabel timeQuarLabel = new JLabel("Time until sick quarantine (s)");
+        timeQuarLabel.setForeground(CustomColor.LIGHT_GRAY);
+        timeQuarLabel.setFont(timeQuarLabel.getFont ().deriveFont (16.0f));
+
         JLabel percentQuarLabel = new JLabel("Sick who quarantine (%)");
+        percentQuarLabel.setForeground(CustomColor.LIGHT_GRAY);
+        percentQuarLabel.setFont(percentQuarLabel.getFont ().deriveFont (16.0f));
+
         JLabel asPercentLabel = new JLabel("Asymptomatic People (%)");
+        asPercentLabel.setForeground(CustomColor.LIGHT_GRAY);
+        asPercentLabel.setFont(asPercentLabel.getFont ().deriveFont (16.0f));
+
         JLabel socDistValLabel = new JLabel("Social Distance");
+        socDistValLabel.setForeground(CustomColor.LIGHT_GRAY);
+        socDistValLabel.setFont(socDistValLabel.getFont ().deriveFont (16.0f));
+
         JLabel socialDisPercentLabel = new JLabel("Social Dist. Participation (%)  ");
+        socialDisPercentLabel.setForeground(CustomColor.LIGHT_GRAY);
+        socialDisPercentLabel.setFont(socialDisPercentLabel.getFont ().deriveFont (16.0f));
+
         JLabel minAgeLabel = new JLabel("Min Age");
+        minAgeLabel.setForeground(CustomColor.LIGHT_GRAY);
+        minAgeLabel.setFont(minAgeLabel.getFont ().deriveFont (16.0f));
+
         JLabel maxAgeLabel = new JLabel("Max Age");
+        maxAgeLabel.setForeground(CustomColor.LIGHT_GRAY);
+        maxAgeLabel.setFont(maxAgeLabel.getFont ().deriveFont (16.0f));
+
         JLabel minCondLabel = new JLabel("Min Conditions");
+        minCondLabel.setForeground(CustomColor.LIGHT_GRAY);
+        minCondLabel.setFont(minCondLabel.getFont ().deriveFont (16.0f));
+
         JLabel maxCondLabel = new JLabel("Max Conditions");
+        maxCondLabel.setForeground(CustomColor.LIGHT_GRAY);
+        maxCondLabel.setFont(maxCondLabel.getFont ().deriveFont (16.0f));
 
         JLabel travelersA = new JLabel("<html>     The percent of people who can move <br/>     without bound in a divided board</html>");
         travelersA.setMinimumSize(new Dimension(250, 40));
+        travelersA.setForeground(CustomColor.LIGHT_GRAY);
+        travelersA.setFont(travelersA.getFont ().deriveFont (13.0f));
+
         JLabel timeUntilQuarantineA = new JLabel("<html>     The amount of time until a <br/>     sick person quarantines</html>");
         timeUntilQuarantineA.setMinimumSize(new Dimension(250, 40));
+        timeUntilQuarantineA.setForeground(CustomColor.LIGHT_GRAY);
+        timeUntilQuarantineA.setFont(timeUntilQuarantineA.getFont ().deriveFont (13.0f));
+
         JLabel percentQuarantineA = new JLabel("<html>     The percent of sick people <br/>     who will quarantine</html>");
         percentQuarantineA.setMinimumSize(new Dimension(250, 40));
-        JLabel asymptomaticChanceA = new JLabel("<html>     The percent of people who are asymptomatic <br/>     (no quarantine or dying, yet contagious)</html>");
+        percentQuarantineA.setForeground(CustomColor.LIGHT_GRAY);
+        percentQuarantineA.setFont(percentQuarantineA.getFont ().deriveFont (13.0f));
+
+        JLabel asymptomaticChanceA = new JLabel("<html>     The percent of people asymptomatic <br/>     (no quarantine or dying, yet contagious)</html>");
         asymptomaticChanceA.setMinimumSize(new Dimension(250, 40));
+        asymptomaticChanceA.setForeground(CustomColor.LIGHT_GRAY);
+        asymptomaticChanceA.setFont(asymptomaticChanceA.getFont ().deriveFont (13.0f));
+
         JLabel socialDistanceValueA = new JLabel("<html>     The amount of space needed during <br/>     social distancing (50 recom.)</html>");
         socialDistanceValueA.setMinimumSize(new Dimension(250, 40));
+        socialDistanceValueA.setForeground(CustomColor.LIGHT_GRAY);
+        socialDistanceValueA.setFont(socialDistanceValueA.getFont ().deriveFont (13.0f));
+
         JLabel percentSocialDistA = new JLabel("<html>     Percent of people who social <br/>     distance (0 to turn off)</html>");
-        percentQuarantineA.setMinimumSize(new Dimension(250, 40));
+        percentSocialDistA.setMinimumSize(new Dimension(250, 40));
+        percentSocialDistA.setForeground(CustomColor.LIGHT_GRAY);
+        percentSocialDistA.setFont(percentSocialDistA.getFont ().deriveFont (13.0f));
+
         JLabel minAgeA = new JLabel("<html>     The min possible age of a person <br/>     (affects total sick time and mortality rate)</html>");
         minAgeA.setMinimumSize(new Dimension(250, 40));
+        minAgeA.setForeground(CustomColor.LIGHT_GRAY);
+        minAgeA.setFont(minAgeA.getFont ().deriveFont (13.0f));
+
         JLabel maxAgeA = new JLabel("<html>     The max possible age of a person <br>     (affects total sick time and mortality rate)</html>");
         maxAgeA.setMinimumSize(new Dimension(250, 40));
+        maxAgeA.setForeground(CustomColor.LIGHT_GRAY);
+        maxAgeA.setFont(maxAgeA.getFont ().deriveFont (13.0f));
+
         JLabel minConditionsA = new JLabel("<html>     The min possible preexisting condition <br/>      a person can have (affects mortality rate)</html>");
         minConditionsA.setMinimumSize(new Dimension(250, 40));
+        minConditionsA.setForeground(CustomColor.LIGHT_GRAY);
+        minConditionsA.setFont(minConditionsA.getFont ().deriveFont (13.0f));
+
         JLabel maxConditionsA = new JLabel("<html>     The max possible preexisting condition <br/>     a person can have (affects mortality rate)</html>");
         maxConditionsA.setMinimumSize(new Dimension(250, 40));
+        maxConditionsA.setForeground(CustomColor.LIGHT_GRAY);
+        maxConditionsA.setFont(maxConditionsA.getFont ().deriveFont (13.0f));
 
         double weightXLabel = 5;
         double weightXFeild = 5;
@@ -339,12 +456,12 @@ public class SettingFrame extends JFrame implements ActionListener{
 
         gbc.gridx = 0;
         gbc.gridy = 0;
-        gbc.gridwidth = 2;
+        gbc.gridwidth = 3;
         gbc.gridheight = 1;
         gbc.weightx = 10;
         gbc.weighty = .1;
 
-        rightPanel.add(paramLabel);
+        rightPanel.add(rightTopPanel, gbc);
 
         gbc.gridx = 0;
         gbc.gridy = 1;
@@ -622,10 +739,14 @@ public class SettingFrame extends JFrame implements ActionListener{
     public void addBottomPanel()
     {
         JPanel bottomPanel = new JPanel(new GridBagLayout());
-        bottomPanel.setBackground(CustomColor.WHITE);
+        bottomPanel.setBackground(CustomColor.BACKGROUND);
         bottomPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         JButton continueSim = new JButton("Continue");
+        continueSim.setBackground(CustomColor.BUTTON);
+        continueSim.setFont(continueSim.getFont ().deriveFont (16.0f));
+        continueSim.setForeground(CustomColor.ON_BUTTON_LABEL);
+
         continueSim.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
