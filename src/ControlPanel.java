@@ -565,6 +565,9 @@ public class ControlPanel extends JPanel implements ActionListener{
                 gui.getXYChartPanel2().resetXY();
                 gui.getPieChartPanel().resetPie();
 
+                speedUp.setToolTipText("Increase Speed");
+                slowDown.setToolTipText("Slow Down");
+
                 checkTick.start();
                 backgroundMusic.stop();
             }
