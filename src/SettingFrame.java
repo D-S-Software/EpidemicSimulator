@@ -302,61 +302,71 @@ public class SettingFrame extends JFrame implements ActionListener{
 
         travelers = new JTextField(100);
         travelers.setText("20");
-        travelers.setBackground(CustomColor.LIGHT_GRAY);
+        travelers.setBackground(CustomColor.FIELD);
+        travelers.setForeground(CustomColor.ON_BUTTON_LABEL);
         travelers.setMinimumSize(new Dimension(60, 10));
         travelers.setFont(travelers.getFont ().deriveFont (15.0f));
 
         timeUntilQuarantine = new JTextField(100);
         timeUntilQuarantine.setText("3");
-        timeUntilQuarantine.setBackground(CustomColor.LIGHT_GRAY);
+        timeUntilQuarantine.setBackground(CustomColor.FIELD);
+        timeUntilQuarantine.setForeground(CustomColor.ON_BUTTON_LABEL);
         timeUntilQuarantine.setMinimumSize(new Dimension(60, 10));
         timeUntilQuarantine.setFont(timeUntilQuarantine.getFont ().deriveFont (15.0f));
 
         percentQuarantine = new JTextField(100);
         percentQuarantine.setText("80");
-        percentQuarantine.setBackground(CustomColor.LIGHT_GRAY);
+        percentQuarantine.setBackground(CustomColor.FIELD);
+        percentQuarantine.setForeground(CustomColor.ON_BUTTON_LABEL);
         percentQuarantine.setMinimumSize(new Dimension(60, 10));
         percentQuarantine.setFont(percentQuarantine.getFont ().deriveFont (15.0f));
 
         asymptomaticChance = new JTextField(100);
         asymptomaticChance.setText("0");
-        asymptomaticChance.setBackground(CustomColor.LIGHT_GRAY);
+        asymptomaticChance.setBackground(CustomColor.FIELD);
+        asymptomaticChance.setForeground(CustomColor.ON_BUTTON_LABEL);
         asymptomaticChance.setMinimumSize(new Dimension(60, 10));
         asymptomaticChance.setFont(asymptomaticChance.getFont ().deriveFont (15.0f));
 
         socialDistanceValue = new JTextField(100);
         socialDistanceValue.setText("50");
-        socialDistanceValue.setBackground(CustomColor.LIGHT_GRAY);
+        socialDistanceValue.setBackground(CustomColor.FIELD);
+        socialDistanceValue.setForeground(CustomColor.ON_BUTTON_LABEL);
         socialDistanceValue.setMinimumSize(new Dimension(60, 10));
         socialDistanceValue.setFont(socialDistanceValue.getFont ().deriveFont (15.0f));
 
         percentSocialDist = new JTextField(100);
         percentSocialDist.setText("0");
-        percentSocialDist.setBackground(CustomColor.LIGHT_GRAY);
+        percentSocialDist.setBackground(CustomColor.FIELD);
+        percentSocialDist.setForeground(CustomColor.ON_BUTTON_LABEL);
         percentSocialDist.setMinimumSize(new Dimension(60, 10));
         percentSocialDist.setFont(percentSocialDist.getFont ().deriveFont (15.0f));
 
         minAge = new JTextField(100);
         minAge.setText("20");
-        minAge.setBackground(CustomColor.LIGHT_GRAY);
+        minAge.setBackground(CustomColor.FIELD);
+        minAge.setForeground(CustomColor.ON_BUTTON_LABEL);
         minAge.setMinimumSize(new Dimension(60, 10));
         minAge.setFont(minAge.getFont ().deriveFont (15.0f));
 
         maxAge = new JTextField(100);
         maxAge.setText("80");
-        maxAge.setBackground(CustomColor.LIGHT_GRAY);
+        maxAge.setBackground(CustomColor.FIELD);
+        maxAge.setForeground(CustomColor.ON_BUTTON_LABEL);
         maxAge.setMinimumSize(new Dimension(60, 10));
         maxAge.setFont(maxAge.getFont ().deriveFont (15.0f));
 
         minConditions = new JTextField(100);
         minConditions.setText("0");
-        minConditions.setBackground(CustomColor.LIGHT_GRAY);
+        minConditions.setBackground(CustomColor.FIELD);
+        minConditions.setForeground(CustomColor.ON_BUTTON_LABEL);
         minConditions.setMinimumSize(new Dimension(60, 10));
         minConditions.setFont(minConditions.getFont ().deriveFont (15.0f));
 
         maxConditions = new JTextField(100);
         maxConditions.setText("3");
-        maxConditions.setBackground(CustomColor.LIGHT_GRAY);
+        maxConditions.setBackground(CustomColor.FIELD);
+        maxConditions.setForeground(CustomColor.ON_BUTTON_LABEL);
         maxConditions.setMinimumSize(new Dimension(60, 10));
         maxConditions.setFont(maxConditions.getFont ().deriveFont (15.0f));
 

@@ -84,7 +84,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
                 if(gui.getPieChartPanel().isVisible())
                 {
-                    switchGraph.setToolTipText("Switch to Pie");
+                    switchGraph.setToolTipText("Switch to Pie Chart");
                     gui.getPieChartPanel().setVisible(false);
                     if(showCases)
                     {

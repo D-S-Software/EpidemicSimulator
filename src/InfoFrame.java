@@ -18,6 +18,9 @@ public class InfoFrame extends JFrame {
     public InfoFrame() {
         setBackground(CustomColor.BACKGROUND);
         setPreferredSize(new Dimension(850, 600));
+        getContentPane().setBackground(CustomColor.BACKGROUND);
+
+        mainPanel.setBackground(CustomColor.BACKGROUND);
 
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
@@ -100,10 +103,12 @@ public class InfoFrame extends JFrame {
     public void addTopPanel()
     {
         JPanel topPanel = new JPanel();
-        topPanel.setBackground(CustomColor.WHITE);
+        topPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
         topPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         JLabel title = new JLabel("Epidemic Simulator Info");
+        title.setForeground(CustomColor.LIGHT_GRAY);
+        title.setFont(title.getFont ().deriveFont (25.0f));
 
         topPanel.add(title);
 
@@ -113,12 +118,15 @@ public class InfoFrame extends JFrame {
     public void addMiddlePanel()
     {
         JPanel middlePanel = new JPanel(new BorderLayout());
-        middlePanel.setBackground(CustomColor.WHITE);
+        middlePanel.setBackground(CustomColor.JET);
         middlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         JTextArea infoArea = new JTextArea();
         infoArea.setEditable(false);
-        infoArea.setText("Explain game and features and write bios here..."); //TODO Fill in info screen in this box
+        infoArea.setFont(infoArea.getFont ().deriveFont (18.0f));
+        infoArea.setBackground(CustomColor.JET);
+        infoArea.setForeground(CustomColor.SILVER);
+        infoArea.setText("<html>Explain game and features and write bios here...</html>"); //TODO Fill in info screen in this box
 
         middlePanel.add(infoArea, BorderLayout.BEFORE_FIRST_LINE);
 
@@ -128,10 +136,14 @@ public class InfoFrame extends JFrame {
     public void addBottomPanel()
     {
         JPanel bottomPanel = new JPanel();
-        bottomPanel.setBackground(CustomColor.WHITE);
+        bottomPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
         bottomPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
         JButton continueSim = new JButton("Close");
+        continueSim.setBackground(CustomColor.BUTTON);
+        continueSim.setFont(continueSim.getFont ().deriveFont (16.0f));
+        continueSim.setForeground(CustomColor.ON_BUTTON_LABEL);
+
         continueSim.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
