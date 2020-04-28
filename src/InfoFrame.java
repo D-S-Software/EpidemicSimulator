@@ -118,7 +118,7 @@ public class InfoFrame extends JFrame {
 
         JTextArea infoArea = new JTextArea();
         infoArea.setEditable(false);
-        infoArea.setText("Start here..."); //TODO Fill in info screen in this box
+        infoArea.setText("Explain game and features and write bios here..."); //TODO Fill in info screen in this box
 
         middlePanel.add(infoArea, BorderLayout.BEFORE_FIRST_LINE);
 

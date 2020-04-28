@@ -16,7 +16,6 @@ public class Main {
 
     //TODO Fix Bugs
     //1. Bouncing is not really there (dimens are off)
-    //2. When leaving Sim setting box blank
 
     //TODO Clean up code (make packages, check parameters ect.) V1
     //      Maybe try to put updateBoard back in each respective board class
@@ -25,7 +24,7 @@ public class Main {
     //TODO Find Diseases and set parameters for Disease 1-4 - V1
 
 
-
+    //TODO Write data to text fil (such as graph data to compare) - V2
     //TODO Make opening screen (start with music) - V2
     //TODO Leaderboard and finding R0 - V2
     //TODO Central Market - V2
