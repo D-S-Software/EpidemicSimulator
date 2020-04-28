@@ -274,7 +274,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         travelers.setText("20");
         travelers.setMinimumSize(new Dimension(60, 10));
         timeUntilQuarantine = new JTextField(100);
-        timeUntilQuarantine.setText("300");
+        timeUntilQuarantine.setText("3");
         timeUntilQuarantine.setMinimumSize(new Dimension(60, 10));
         percentQuarantine = new JTextField(100);
         percentQuarantine.setText("80");
@@ -301,12 +301,12 @@ public class SettingFrame extends JFrame implements ActionListener{
         maxConditions.setText("3");
         maxConditions.setMinimumSize(new Dimension(60, 10));
 
-        JLabel travelersLabel = new JLabel("Travelers");
-        JLabel timeQuarLabel = new JLabel("Time until Quarantine");
-        JLabel percentQuarLabel = new JLabel("Percent Quarantine");
-        JLabel asPercentLabel = new JLabel("Percent Asymptomatic");
+        JLabel travelersLabel = new JLabel("Travelers (%)");
+        JLabel timeQuarLabel = new JLabel("Time until sick quarantine (s)");
+        JLabel percentQuarLabel = new JLabel("Sick who quarantine (%)");
+        JLabel asPercentLabel = new JLabel("Asymptomatic People (%)");
         JLabel socDistValLabel = new JLabel("Social Distance");
-        JLabel socialDisPercentLabel = new JLabel("Percent Social Distancing   ");
+        JLabel socialDisPercentLabel = new JLabel("Social Dist. Participation (%)  ");
         JLabel minAgeLabel = new JLabel("Min Age");
         JLabel maxAgeLabel = new JLabel("Max Age");
         JLabel minCondLabel = new JLabel("Min Conditions");
@@ -673,7 +673,7 @@ public class SettingFrame extends JFrame implements ActionListener{
     private void selectParams()
     {
         travelersPer = Double.parseDouble(travelers.getText()) / 100;
-        timeUntilQuarantineNum = Integer.parseInt(timeUntilQuarantine.getText());
+        timeUntilQuarantineNum = Integer.parseInt(timeUntilQuarantine.getText()) * 100;
         quarantineChanceNum = Double.parseDouble(percentQuarantine.getText()) / 100;
         asymptomaticChanceNum = Double.parseDouble(asymptomaticChance.getText()) / 100;
         socialDistanceChanceNum = Double.parseDouble(percentSocialDist.getText()) / 100;
