@@ -45,6 +45,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         toggle.setForeground(CustomColor.ON_BUTTON_LABEL);
         toggle.setBackground(CustomColor.BUTTON);
         toggle.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        toggle.setToolTipText("Switch to Population Breakdown");
         toggle.setVisible(false);
 
         toggle.addActionListener(new ActionListener() {
@@ -53,6 +54,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
                 if(gui.getXYChartPanel2().isVisible())
                 {
+                    toggle.setToolTipText("Switch to Total Cases");
                     gui.getXYChartPanel2().setVisible(false);
                     gui.getXYChartPanel().setVisible(true);
                     gui.getPieChartPanel().setVisible(false);
@@ -60,6 +62,7 @@ public class TallyPanel extends JPanel implements ActionListener {
                 }
                 else
                 {
+                    toggle.setToolTipText("Switch to Population Breakdown");
                     gui.getXYChartPanel().setVisible(false);
                     gui.getXYChartPanel2().setVisible(true);
                     gui.getPieChartPanel().setVisible(false);
@@ -73,6 +76,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         switchGraph.setBackground(CustomColor.BUTTON);
         switchGraph.setForeground(CustomColor.ON_BUTTON_LABEL);
         switchGraph.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        switchGraph.setToolTipText("Switch to Line Graph");
 
         switchGraph.addActionListener(new ActionListener() {
             @Override
@@ -80,6 +84,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
                 if(gui.getPieChartPanel().isVisible())
                 {
+                    switchGraph.setToolTipText("Switch to Pie");
                     gui.getPieChartPanel().setVisible(false);
                     if(showCases)
                     {
@@ -94,6 +99,7 @@ public class TallyPanel extends JPanel implements ActionListener {
                 }
                 else
                 {
+                    switchGraph.setToolTipText("Switch to Line Graph");
                     gui.getPieChartPanel().setVisible(true);
                     gui.getXYChartPanel2().setVisible(false);
                     gui.getXYChartPanel().setVisible(false);

@@ -5,12 +5,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.math.BigDecimal;
 
 public class ControlPanel extends JPanel implements ActionListener{
 
     private JPanel mainPanel = new JPanel(new GridBagLayout());
     private JRadioButton choice1, choice2, choice3, choice4, custom;
-    private JButton start, playPause, reset, toggleMusic;
+    private JButton start, playPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp;
     private ButtonGroup g1;
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy, numPeopleField;
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel;
@@ -156,7 +157,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
 
-        JButton info = new JButton("Info");
+        ImageIcon picInfo = new ImageIcon(ClassLoader.getSystemResource("res/info.png"));
+        Image image = picInfo.getImage();
+        JButton info = new JButton((new ImageIcon(image.getScaledInstance(30,30, java.awt.Image.SCALE_SMOOTH))));
         info.setBackground(CustomColor.BUTTON);
         info.setFont(info.getFont ().deriveFont (18.0f));
         info.setForeground(CustomColor.ON_BUTTON_LABEL);
@@ -213,7 +216,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
 
-        JButton toggleSocDist = new JButton("Social Distancing");
+        toggleSocDist = new JButton("Social Distancing");
         toggleSocDist.setBackground(CustomColor.BUTTON);
         toggleSocDist.setFont(toggleSocDist.getFont ().deriveFont (18.0f));
         toggleSocDist.setForeground(CustomColor.ON_BUTTON_LABEL);
@@ -228,11 +231,21 @@ public class ControlPanel extends JPanel implements ActionListener{
                     if(isSocialDist)
                     {
                         gui.getSimBoardPanel().toggleSocDist(false);
+                        toggleSocDist.setToolTipText("No one is social distancing");
                         isSocialDist = false;
                     }
                     else
                     {
-                        gui.getSimBoardPanel().toggleSocDist(true);
+                        if(settingFrame.getSocialDistanceChanceNum() == 0.0)
+                        {
+                            gui.getSimBoardPanel().everyoneSocialDistance();
+                            toggleSocDist.setToolTipText("Everyone is social distancing");
+                        }
+                        else
+                        {
+                            gui.getSimBoardPanel().toggleSocDist(true);
+                            toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() + " % of people are set social distancing");
+                        }
                         isSocialDist = true;
                     }
                 }
@@ -254,33 +267,45 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        JButton speedUp = new JButton("Speed up");
+        speedUp = new JButton("Speed up");
         speedUp.setBackground(CustomColor.BUTTON);
         speedUp.setFont(speedUp.getFont ().deriveFont (18.0f));
         speedUp.setForeground(CustomColor.ON_BUTTON_LABEL);
         speedUp.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        speedUp.setToolTipText("Increase Speed");
 
         speedUp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 if(isPlaying)
+                {
                     simEngine.speedUp();
+                    slowDown.setToolTipText("Slow Down");
+                }
+                if(simEngine.getDeley() == 0)
+                    speedUp.setToolTipText("Max Speed");
             }
         });
 
-        JButton slowDown = new JButton("Slow Down");
+        slowDown = new JButton("Slow Down");
         slowDown.setBackground(CustomColor.BUTTON);
         slowDown.setFont(slowDown.getFont ().deriveFont (18.0f));
         slowDown.setForeground(CustomColor.ON_BUTTON_LABEL);
         slowDown.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        slowDown.setToolTipText("Slow Down");
 
         slowDown.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 if(isPlaying)
+                {
                     simEngine.slowDown();
+                    speedUp.setToolTipText("Increase Speed");
+                }
+                if(simEngine.getDeley() == 26)
+                    slowDown.setToolTipText("Min Speed");
             }
         });
 
@@ -436,7 +461,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
                     || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals(""))
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters before starting!");
+                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
                     }
                     else goodToStart = true;
 
@@ -472,6 +497,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                         checkTick.stop();
                         gui.getTallyPanel().showGraphModeButton();
                         backgroundMusic.loop();
+
+                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() + " % of people are set social distancing");
                     }
                 }
             }

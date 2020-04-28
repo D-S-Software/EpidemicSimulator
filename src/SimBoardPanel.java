@@ -44,7 +44,6 @@ public class SimBoardPanel extends JPanel implements ActionListener
     {
         if(!SocialDist)
         {
-            System.out.println("stop");
             for(int i = 0; i < simBoard.getPList().size(); i++)
             {
                 simBoard.getPList().get(i).setIsSocialDistancing(false);
@@ -52,11 +51,17 @@ public class SimBoardPanel extends JPanel implements ActionListener
         }
         else
         {
-            System.out.println("start");
             for(int i = 0; i < simBoard.getPList().size(); i++)
             {
                 simBoard.getPList().get(i).setIsSocialDistancing(simBoard.getPList().get(i).getIsSocialDistancingSaved());
             }
+        }
+    }
+    public void everyoneSocialDistance()
+    {
+        for(int i = 0; i < simBoard.getPList().size(); i++)
+        {
+            simBoard.getPList().get(i).setIsSocialDistancing(true);
         }
     }
 

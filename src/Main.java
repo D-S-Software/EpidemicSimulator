@@ -15,14 +15,17 @@ public class Main {
     //TODO Set Font size in Graphs - V1
 
     //TODO Fix Bugs
-    //1. Oddness with pop size 20 or less
-    //2. Bouncing is not really there (dimens are off)
+    //1. Bouncing is not really there (dimens are off)
+    //2. When leaving Sim setting box blank
 
     //TODO Clean up code (make packages, check parameters ect.) V1
     //      Maybe try to put updateBoard back in each respective board class
-    //TODO Make Sim Settings (All parameters in Engine class) - Graphic settings (higher graphics = more chart updates) . Use separate frame V1
+    //TODO Graphic settings (higher graphics = more chart updates) V1
     //TODO: Board selection (use array of SimBoard) - V1
     //TODO Find Diseases and set parameters for Disease 1-4 - V1
+
+
+
     //TODO Make opening screen (start with music) - V2
     //TODO Leaderboard and finding R0 - V2
     //TODO Central Market - V2
@@ -30,6 +33,6 @@ public class Main {
     //TODO ACTION EVENTS - V2
     // First 10 deaths - move less --> just update step and direction in person
     // going to a central location
-    //manual trigger
+    // manual trigger
 
 }

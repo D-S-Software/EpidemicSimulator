@@ -10,6 +10,7 @@ import java.awt.event.MouseEvent;
 public class InfoFrame extends JFrame {
 
     JPanel mainPanel = new JPanel(new GridBagLayout());
+    GridBagConstraints gbc = new GridBagConstraints();
     JMenuBar mb;
     JPanel p;
     int pX, pY;
@@ -57,6 +58,35 @@ public class InfoFrame extends JFrame {
         // Set the menu bar
         setJMenuBar(mb);
 
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.insets = new Insets(2, 2, 2, 2);
+
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 1;
+        gbc.weighty = .1;
+
+        addTopPanel();
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 1;
+        gbc.weighty = 20;
+
+        addMiddlePanel();
+
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 1;
+        gbc.weighty = .1;
+
         addBottomPanel();
 
         add(mainPanel);
@@ -67,13 +97,41 @@ public class InfoFrame extends JFrame {
         setLocationRelativeTo(null);
     }
 
+    public void addTopPanel()
+    {
+        JPanel topPanel = new JPanel();
+        topPanel.setBackground(CustomColor.WHITE);
+        topPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+
+        JLabel title = new JLabel("Epidemic Simulator Info");
+
+        topPanel.add(title);
+
+        mainPanel.add(topPanel, gbc);
+    }
+
+    public void addMiddlePanel()
+    {
+        JPanel middlePanel = new JPanel(new BorderLayout());
+        middlePanel.setBackground(CustomColor.WHITE);
+        middlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+
+        JTextArea infoArea = new JTextArea();
+        infoArea.setEditable(false);
+        infoArea.setText("Start here..."); //TODO Fill in info screen in this box
+
+        middlePanel.add(infoArea, BorderLayout.BEFORE_FIRST_LINE);
+
+        mainPanel.add(middlePanel, gbc);
+    }
+
     public void addBottomPanel()
     {
-        JPanel bottomPanel = new JPanel(new GridBagLayout());
+        JPanel bottomPanel = new JPanel();
         bottomPanel.setBackground(CustomColor.WHITE);
         bottomPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
-        JButton continueSim = new JButton("Continue");
+        JButton continueSim = new JButton("Close");
         continueSim.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -84,6 +142,6 @@ public class InfoFrame extends JFrame {
 
         bottomPanel.add(continueSim);
 
-        mainPanel.add(bottomPanel);
+        mainPanel.add(bottomPanel, gbc);
     }
 }
