@@ -1,5 +1,8 @@
 public class Disease3 extends Disease{
 
+    /**
+     * Creates a pre-made disease object
+     */
     public Disease3()
     {
         super(1, .01, .3, 500, 3000, .99);
