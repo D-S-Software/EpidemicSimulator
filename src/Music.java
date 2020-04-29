@@ -7,12 +7,20 @@ public class Music {
         private long clipTimePosition;
         private AudioInputStream sound;
 
-        public Music(String filename)
+    /**Creates a music object that can be used to play sounds on demand
+     *
+     * @param filename The name of the sound file to be played
+     */
+    public Music(String filename)
         {
             setFile(filename);
         }
 
-        public void setFile(String soundFile)
+    /**Finds the requested file and loads it to be played
+     *
+     * @param soundFile
+     */
+    public void setFile(String soundFile)
         {
             try
             {
@@ -29,25 +37,37 @@ public class Music {
             }
         }
 
-        public void play()
+    /**
+     * Plays the sound file
+     */
+    public void play()
         {
             clip.setFramePosition(0);
             //clip.start(); //TODO Add back in
         }
 
-        public void pause()
+    /**
+     * Pauses the sound file
+     */
+    public void pause()
         {
            clipTimePosition = clip.getMicrosecondPosition();
             clip.stop();
         }
 
-        public void resume()
+    /**
+     * Resumes the sound file after it is paused
+     */
+    public void resume()
         {
             clip.setMicrosecondPosition(clipTimePosition);
             clip.start();
         }
 
-        public void loop()
+    /**
+     * Plays the sound file and loops over it so it does not stop
+     */
+    public void loop()
         {
             clip.setFramePosition(0);
             //clip.loop(Clip.LOOP_CONTINUOUSLY); //TODO Add back in

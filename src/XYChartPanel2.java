@@ -10,6 +10,11 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
     private XYChart xychart2;
     private int count = 99;
 
+    /**Creates a chart panel for the total cases line graph
+     *
+     * @param c
+     * @param gui
+     */
     public XYChartPanel2(XYChart c, GUI gui)
     {
         super(c);
@@ -17,6 +22,9 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
         xychart2 = c;
     }
 
+    /**
+     * Resets the graph when the reset button is clicked
+     */
     public void resetXY()
     {
         count = 99;
@@ -27,6 +35,10 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
         setVisible(show);
     }
 
+    /**
+     * Updates the data in the graph each tick and decides when to top updating (when there is no sick people)
+     * @param e
+     */
     public void actionPerformed(ActionEvent e)
     {
         count++;

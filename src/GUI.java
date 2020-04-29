@@ -19,14 +19,17 @@ public class GUI {
     private MyPieChart myPieChart;
     private PieChartPanel pieChartPanel;
 
-    private int preWidth, preHeight;
     private GUI gui = this;
     private JFrame frame;
     private Statistics stats;
-    private boolean showPieFirst = true;
-    private boolean showCasesFirst = true;
+    private boolean showPieFirst = true, showCasesFirst = true;
+    private int preWidth, preHeight;
 
-
+    /** Creates the main GUI for the simulation
+     *
+     * @param preWidth The predetermined width for the simulation upon launch
+     * @param preHeight The predetermined height for the simulation upon launch
+     */
     public GUI(int preWidth, int preHeight)
     {
         this.preHeight = preHeight;
@@ -84,6 +87,9 @@ public class GUI {
         tallyPanel.setShowCases(showCasesFirst);
     }
 
+    /**
+     * Creates and adds the Title Panel for the main GUI
+     */
     private void addTitlePanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -106,6 +112,10 @@ public class GUI {
         titlePanel.setBackground(CustomColor.BLOOD_RED);
         topPanel.add(titlePanel, gbc);
     }
+
+    /**
+     * Creates and adds the SimBoard Panel for the main GUI
+     */
     private void addBoardPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -122,6 +132,10 @@ public class GUI {
         simBoardPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         leftPanel.add(simBoardPanel, gbc);
     }
+
+    /**
+     * Creates and adds the Control Panel for the main GUI
+     */
     private void addControlPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -139,6 +153,10 @@ public class GUI {
         controlPanel.getMainPanel().setBackground(CustomColor.BACKGROUND);
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
+
+    /**
+     * Creates and adds the Tally Panel for the main GUI
+     */
     private void addTallyPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -156,6 +174,10 @@ public class GUI {
 
         rightPanel.add(tallyPanel, gbc);
     }
+
+    /**
+     * Creates and adds the Line Graph (All stats) Panel for the main GUI. This is created after the first simulation runs with an engine constructor
+     */
     private void addXYChartPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -177,6 +199,10 @@ public class GUI {
         xyChartPanel.setVisible(!showPieFirst & !showCasesFirst);
         rightPanel.add(xyChartPanel, gbc);
     }
+
+    /**
+     * Creates and adds the Line Graph (total cases) Panel for the main GUI. This is created after the first simulation runs with an engine constructor
+     */
     private void addXYChartPanel2()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -198,6 +224,9 @@ public class GUI {
         rightPanel.add(xyChartPanel2, gbc);
     }
 
+    /**
+     * Creates and adds the Pie Chart Panel for the main GUI. This is created after the first simulation runs with an engine constructor
+     */
     private void addPieChartPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -219,6 +248,8 @@ public class GUI {
         pieChartPanel.setVisible(showPieFirst);
         rightPanel.add(pieChartPanel, gbc);
     }
+
+    /** Getter and Setter Methods*/
 
     public SimBoardPanel getSimBoardPanel()
     {

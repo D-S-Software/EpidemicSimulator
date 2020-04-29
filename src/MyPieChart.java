@@ -9,6 +9,10 @@ public class MyPieChart {
 
     private PieChart pieChart;
 
+    /**Creates a Pie Chart for the PieChartPanel
+     *
+     * @return Returns the pieChart
+     */
     public PieChart getMyPieChart()
     {
         pieChart = new PieChartBuilder().width(400).height(400).title("Percent per Condition").build();

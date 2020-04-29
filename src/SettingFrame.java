@@ -20,6 +20,9 @@ public class SettingFrame extends JFrame implements ActionListener{
     JPanel p;
     int pX, pY;
 
+    /**
+     * Creates a setting frame for the parameters of the simulation when the gear button is clicked
+     */
     public SettingFrame()
     {
         setBackground(CustomColor.BACKGROUND);
@@ -111,6 +114,9 @@ public class SettingFrame extends JFrame implements ActionListener{
         setLocationRelativeTo(null);
     }
 
+    /**
+     * Creates and adds the left panel for the setting frame
+     */
     private void addLeftPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -279,6 +285,9 @@ public class SettingFrame extends JFrame implements ActionListener{
         mainPanel.add(leftPanel, gbcMain);
     }
 
+    /**
+     * Creates and adds the right panel for the setting frame
+     */
     private void addRightPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -746,6 +755,9 @@ public class SettingFrame extends JFrame implements ActionListener{
         mainPanel.add(rightPanel, gbcMain);
     }
 
+    /**
+     * Creates and adds the bottom panel for the setting frame
+     */
     public void addBottomPanel()
     {
         JPanel bottomPanel = new JPanel(new GridBagLayout());
@@ -776,6 +788,10 @@ public class SettingFrame extends JFrame implements ActionListener{
         mainPanel.add(bottomPanel, gbcMain);
     }
 
+    /**Checks if the setting frame is being used and updates the board type and parameters that are selected each tick
+     *
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -786,6 +802,9 @@ public class SettingFrame extends JFrame implements ActionListener{
         }
     }
 
+    /**
+     * Collected the data from the board selection panel
+     */
     private void selectBoard()
     {
         if(generalBoard.isSelected())
@@ -801,6 +820,9 @@ public class SettingFrame extends JFrame implements ActionListener{
             quarBoardBool = false;
     }
 
+    /**
+     * Collects the data from the parameters board
+     */
     private void selectParams()
     {
         travelersPer = Double.parseDouble(travelers.getText()) / 100;
@@ -814,6 +836,8 @@ public class SettingFrame extends JFrame implements ActionListener{
         minPreExistingConditionsNum = Integer.parseInt(minConditions.getText());
         maxPreExistingConditionsNum = Integer.parseInt(maxConditions.getText());
     }
+
+    /** Getter and Setter methods*/
 
     public double getTravelersPer()
     {

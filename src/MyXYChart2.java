@@ -12,6 +12,10 @@ public class MyXYChart2 {
     private XYChart xychart2;
     String unit;
 
+    /**Creates the line graph for total cases for the chart panel
+     *
+     * @return Returns the xyChart
+     */
     public XYChart getXYChart()
     {
         // Create Chart

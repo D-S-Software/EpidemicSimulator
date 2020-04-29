@@ -7,6 +7,15 @@ public class Disease {
     private int baseMinTimeSick; //Time is measured in centiseconds
     private int baseMaxTimeSick;
 
+    /** Creates a disease object to be handed to each person
+     *
+     * @param contagiousRange The number of pixels two people must be within for a healthy person to become sick for an infected person
+     * @param contagiousPercent The percent chance each tick that a sick person will infect a healthy person when within range
+     * @param baseMortalityRate The base mortality rate for the disease (Changes depending on a person's age and pre-existing conditions
+     * @param baseMinTimeSick The minimum time sick a person can be sick for (affected by the age of the person)
+     * @param baseMaxTimeSick The maximum time sick a person can be sick for
+     * @param startPercentHealthy The percent of people that start off as healthy in the simulation
+     */
     public Disease(int contagiousRange, double contagiousPercent, double baseMortalityRate, int baseMinTimeSick, int baseMaxTimeSick, double startPercentHealthy)
     {
         this.contagiousRange = contagiousRange;
@@ -16,6 +25,8 @@ public class Disease {
         this.baseMinTimeSick = baseMinTimeSick;
         this.baseMaxTimeSick = baseMaxTimeSick;
     }
+
+    /** Getter and Setter Methods*/
 
     public int getContagiousRange()
     {

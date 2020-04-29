@@ -7,6 +7,9 @@ public class CreateFile {
 
     private Formatter resultsFile;
 
+    /**
+     * opens a new file to be written in
+     */
     public void openFile()
     {
         try
@@ -19,16 +22,28 @@ public class CreateFile {
         }
     }
 
+    /** Adds the person arrayList contents to the file
+     *
+     * @param array
+     */
     public void addDiseaseArray(ArrayList<Person> array)
     {
         resultsFile.format("%s%s%s", "[", arrayToString(array), "]");
     }
 
+    /**
+     * Adds the time stamps for the data being written
+     * @param time
+     */
     public void addTime(int time)
     {
         resultsFile.format("%s", "" + time);
     }
 
+    /**
+     * Adds the percent of people who have been affected by the epidemic
+     * @param decimalPercent
+     */
     public void addFindAffectedPercent(double decimalPercent)
     {
         DecimalFormat df = new DecimalFormat("##.###");
@@ -39,16 +54,27 @@ public class CreateFile {
         resultsFile.format("%s%s%s", "Affected: ", df.format(decimalPercent), "%");
     }
 
+    /**
+     * Adds a space in the file
+     */
     public void addSpace()
     {
         resultsFile.format("\n");
     }
 
+    /**
+     * Closes the file
+     */
     public void closeFile()
     {
         resultsFile.close();
     }
 
+    /**Converts an arrayList of people into a string to be written
+     *
+     * @param array
+     * @return
+     */
     public String arrayToString(ArrayList<Person> array)
     {
         String output = array.get(0).getHasDisease() + "";

@@ -12,6 +12,11 @@ public class TallyPanel extends JPanel implements ActionListener {
     JButton switchGraph, toggle;
     boolean showCases;
 
+    /**Creates a tally panel object to be displayed on the main gui
+     *
+     * @param gui The gui object that displays the tally panel
+     * @param gl The gridLayout being used in this panel
+     */
     public TallyPanel(GUI gui, GridLayout gl)
     {
         super(gl);
@@ -115,16 +120,27 @@ public class TallyPanel extends JPanel implements ActionListener {
         add(switchGraph);
     }
 
+    /**
+     * Sets the boolean parameter to decide which of the line graphs to currently display
+     * @param showCases The boolean parameter
+     */
     public void setShowCases(boolean showCases)
     {
         this.showCases = showCases;
     }
 
+    /**
+     * Shows the graph mode toggle button
+     */
     public void showGraphModeButton()
     {
         toggle.setVisible(true);
     }
 
+    /**
+     * Updates the stats on the info board based on the stats object
+     * @param e
+     */
     public void actionPerformed(ActionEvent e)
     {
         numHealthyLabel.setText("Healthy: " + gui.getStats().getNumHealthy() + "  ");
@@ -137,6 +153,8 @@ public class TallyPanel extends JPanel implements ActionListener {
         else
             toggle.setVisible(false);
     }
+
+    /** Getter and Setter Methods*/
 
     public void setNumHealthyLabel(String s)
     {

@@ -15,18 +15,19 @@ public class ControlPanel extends JPanel implements ActionListener{
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel;
     private Disease disease;
     private Engine simEngine;
-    boolean toPause = true, canStart = true, canType = true, musicPlaying = true;
     private GUI gui;
     private Timer checkTick;
     private Music backgroundMusic;
     private SettingFrame settingFrame;
-    private boolean isPlaying = false, isSocialDist;
 
     private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
-    private boolean quarBoard;
+    private boolean toPause = true, canStart = true, canType = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
 
-
+    /**Creates a control Panel object for the GUI
+     *
+     * @param gui The gui object needed to create the engine object when the user starts the simulation
+     */
     public ControlPanel(GUI gui)
     {
         this.gui = gui;
@@ -43,12 +44,15 @@ public class ControlPanel extends JPanel implements ActionListener{
         addSimSettingPanel();
         addParamPanel();
         addButtonPanel();
-        addSettingOnePanel();
+        addInfoPanel();
 
         checkTick = new Timer(10, this);
         checkTick.start();
     }
 
+    /**
+     * Creates and adds the disease selection panel
+     */
     public void addSelectionPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -139,7 +143,11 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBackground(CustomColor.SPACE_CADET_LIGHT);
         mainPanel.add(p, gbc);
     }
-    public void addSettingOnePanel()
+
+    /**
+     * Creates and adds the panel for the info and toggle music buttons
+     */
+    public void addInfoPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 1;
@@ -198,6 +206,10 @@ public class ControlPanel extends JPanel implements ActionListener{
        p.add(toggleMusic);
         mainPanel.add(p, gbc);
     }
+
+    /**
+     * Creates and adds the panel for social distancing, speed up and slow down, and the setting button
+     */
     public void addSimSettingPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -316,6 +328,10 @@ public class ControlPanel extends JPanel implements ActionListener{
 
         mainPanel.add(p, gbc);
     }
+
+    /**
+     * Creates and adds the panel for the disease parameters
+     */
     public void addParamPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -402,6 +418,10 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBackground(CustomColor.SPACE_CADET_LIGHT);
         mainPanel.add(p, gbc);
     }
+
+    /**
+     * Creates and adds the panel for the number of people text field and the start / pause / reset buttons
+     */
     public void addButtonPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
@@ -582,10 +602,10 @@ public class ControlPanel extends JPanel implements ActionListener{
         mainPanel.add(p, gbc);
     }
 
-    public JPanel getMainPanel() {
-        return mainPanel;
-    }
-
+    /**
+     * Sets the text for the disease parameter panel based on the disease parameters
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         if(custom.isSelected() && canType)
@@ -642,5 +662,9 @@ public class ControlPanel extends JPanel implements ActionListener{
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
+    }
+
+    public JPanel getMainPanel() {
+        return mainPanel;
     }
 }

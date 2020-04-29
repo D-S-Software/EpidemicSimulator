@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Statistics implements ActionListener {
 
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
-    private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, averageRValue;
+    private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, averageRValue, count = 99;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
@@ -14,8 +14,12 @@ public class Statistics implements ActionListener {
     private ArrayList<Integer> deadList = new ArrayList<>();
     private ArrayList<Integer> casesList = new ArrayList<>();
     private SimBoard simBoard;
-    private int count = 99;
 
+    /**Creates a statistics object that collects the data from the simulation to be displayed, used in chart, or printed to a text file
+     *
+     * @param simBoard The simulation board being used in the simulation
+     * @param numPeople The total number of people in the simulation
+     */
     public Statistics(SimBoard simBoard, int numPeople)
     {
         if(simBoard instanceof SimBoardMono)
@@ -48,6 +52,9 @@ public class Statistics implements ActionListener {
         updateStats();
     }
 
+    /**
+     * Updates the each of the statistics (Called every tick)
+     */
     public void updateStats()
     {
         int healthyCount = 0;
@@ -162,6 +169,10 @@ public class Statistics implements ActionListener {
         numCases = numSick + numRecovered + numDead;
     }
 
+    /**Calls the update stats methods, calls actions events when needed, and decides when to close a text file (called every tick)
+     *
+     * @param e
+     */
     public void actionPerformed(ActionEvent e)
     {
         count++;

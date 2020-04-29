@@ -7,10 +7,14 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
 
     private GUI gui;
     private PieChart pc;
-    /** Update limiter to once every 15 ticks (once every 150 ms)*/
-    private int graphDelay = 14;
+    private int graphDelay = 14; /** Update limiter to once every 15 ticks (once every 150 ms)*/
     private int count = graphDelay;
 
+    /**Creates a pie chart panel
+     *
+     * @param pc The pie chart object being displayed on the panel
+     * @param gui The gui object that is displaying the panel
+     */
     public PieChartPanel(PieChart pc, GUI gui)
     {
         super(pc);
@@ -18,6 +22,9 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
         this.pc = pc;
     }
 
+    /**
+     * Resets the pie chart once the simulation is being reset
+     */
     public void resetPie()
     {
         count = graphDelay;
@@ -30,6 +37,10 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
         setVisible(show);
     }
 
+    /**
+     * Updates the contents of the pie chart every tick and decides when to top updating (when there is no sick people)
+     * @param e
+     */
     public void actionPerformed(ActionEvent e)
     {
         if(count == graphDelay ) {

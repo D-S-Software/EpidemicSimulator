@@ -15,6 +15,9 @@ public class InfoFrame extends JFrame {
     JPanel p;
     int pX, pY;
 
+    /**
+     * Creates an info frame for the main gui when the info button is clicked
+     */
     public InfoFrame() {
         setBackground(CustomColor.BACKGROUND);
         setPreferredSize(new Dimension(850, 600));
@@ -100,6 +103,9 @@ public class InfoFrame extends JFrame {
         setLocationRelativeTo(null);
     }
 
+    /**
+     * Creates and adds the top title panel in the info frame
+     */
     public void addTopPanel()
     {
         JPanel topPanel = new JPanel();
@@ -115,6 +121,9 @@ public class InfoFrame extends JFrame {
         mainPanel.add(topPanel, gbc);
     }
 
+    /**
+     * Creates and adds the middle panel for the info frame
+     */
     public void addMiddlePanel()
     {
         JPanel middlePanel = new JPanel(new BorderLayout());
@@ -133,6 +142,9 @@ public class InfoFrame extends JFrame {
         mainPanel.add(middlePanel, gbc);
     }
 
+    /**
+     * Creates and adds the bottom panel for the info frame
+     */
     public void addBottomPanel()
     {
         JPanel bottomPanel = new JPanel();

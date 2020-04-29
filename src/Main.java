@@ -2,6 +2,11 @@ public class Main {
 
     GUI gui;
 
+    /**Creates the simulation object when the program is launched
+     *
+     * @param baseXLen The starting length of the window for the main gui
+     * @param baseYLen The starting height of the window for the main gui
+     */
     public Main(int baseXLen, int baseYLen)
     {
         gui = new GUI(baseXLen, baseYLen);
