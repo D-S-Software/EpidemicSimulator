@@ -4,7 +4,7 @@ import java.awt.*;
 public class Engine {
 
     private Timer clock;
-    private int deley = 10;
+    private int delay = 10;
     private SimBoard simBoard;
 
     /** Creates and engine object for a run of the simulation. Creates the requested board and sets parameters
@@ -53,7 +53,7 @@ public class Engine {
         Statistics stats = new Statistics(simBoard, numPeople);
         gui.setStats(stats);
 
-        clock = new Timer(deley, gui.getSimBoardPanel());
+        clock = new Timer(delay, gui.getSimBoardPanel());
         clock.addActionListener(stats);
         clock.addActionListener(gui.getXYChartPanel());
         clock.addActionListener(gui.getXYChartPanel2());
@@ -91,7 +91,7 @@ public class Engine {
      *
      * @return Returns the delay of the clock running the simulation
      */
-    public int getDeley()
+    public int getDelay()
     {
         return clock.getDelay();
     }
