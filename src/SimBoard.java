@@ -25,39 +25,39 @@ public abstract class SimBoard {
         return pList;
     }
 
-    public ArrayList<Person> getpListQ1() {
+    public ArrayList<Person> getPListQ1() {
         return pListQ1;
     }
 
-    public ArrayList<Person> getpListQ2() {
+    public ArrayList<Person> getPListQ2() {
         return pListQ2;
     }
 
-    public ArrayList<Person> getpListQ3() {
+    public ArrayList<Person> getPListQ3() {
         return pListQ3;
     }
 
-    public ArrayList<Person> getpListQ4() {
+    public ArrayList<Person> getPListQ4() {
         return pListQ4;
     }
 
-    public ArrayList<Person> getpListQ5() {
+    public ArrayList<Person> getPListQ5() {
         return pListQ5;
     }
 
-    public ArrayList<Person> getpListQ6() {
+    public ArrayList<Person> getPListQ6() {
         return pListQ6;
     }
 
-    public ArrayList<Person> getpListQ7() {
+    public ArrayList<Person> getPListQ7() {
         return pListQ7;
     }
 
-    public ArrayList<Person> getpListQ8() {
+    public ArrayList<Person> getPListQ8() {
         return pListQ8;
     }
 
-    public ArrayList<Person> getpListTravel() {
+    public ArrayList<Person> getPListTravel() {
         return pListTravel;
     }
 

@@ -335,23 +335,23 @@ public class SimBoardQuad extends SimBoard{
         return pList;
     }
 
-    public ArrayList<Person> getpListQ1() {
+    public ArrayList<Person> getPListQ1() {
         return pListQ1;
     }
 
-    public ArrayList<Person> getpListQ2() {
+    public ArrayList<Person> getPListQ2() {
         return pListQ2;
     }
 
-    public ArrayList<Person> getpListQ3() {
+    public ArrayList<Person> getPListQ3() {
         return pListQ3;
     }
 
-    public ArrayList<Person> getpListQ4() {
+    public ArrayList<Person> getPListQ4() {
         return pListQ4;
     }
 
-    public ArrayList<Person> getpListTravel() {
+    public ArrayList<Person> getPListTravel() {
         return pListTravel;
     }
 
