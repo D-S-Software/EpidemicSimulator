@@ -5,18 +5,11 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, maxTimeSick;
-    private int circleRad, timeSinceSick = 0;
-    private double step = 2;
-    private double directionAngle, distanceFromSick, mortalityRate;
+    private int xPos, yPos, dx, dy, maxTimeSick, circleRad, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
+    private double directionAngle, distanceFromSick, mortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02;
+    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic;
     private Rectangle dimens;
     private Disease disease;
-    private int quadLocation;
-    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic;
-    private int othersInfected, closestSickIndex;
-    private double ageMortalityFactor = 0.0007;
-    private double conditionsMortalityFactor = 0.02;
-
 
     public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, int circleRad, boolean asymptomatic, boolean isSocialDistancing)
     {
@@ -107,6 +100,10 @@ public class Person {
         }
     }
 
+    /** Updates the dimensions for the person to make sure they do not go out of bounds
+     *
+     * @param rect The Rectangle object that defines the dimensions
+     */
     public void updateDimens(Rectangle rect)
     {
         dimens = new Rectangle(rect);
@@ -114,6 +111,10 @@ public class Person {
         dimens.height -= circleRad;
     }
 
+    /** Resets the person's dimension if they move to another location (ie. Quarantine)
+     *
+     * @param rect The Rectangle object that defines the dimensions
+     */
     public void resetDimens(Rectangle rect)
     {
         dimens = new Rectangle(rect);
@@ -124,6 +125,10 @@ public class Person {
         yPos = dimens.y + (int) (dimens.height * Math.random());
     }
 
+    /** Draws the person as a circle and decides what color to display based on condition
+     *
+     * @param g2D The graphics object to draw circles
+     */
     public void draw(Graphics2D g2D)
     {
         Color color;
