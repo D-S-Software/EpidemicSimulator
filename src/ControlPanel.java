@@ -1,11 +1,9 @@
 import Library.CustomColor;
-import org.knowm.xchart.internal.chartpart.InfoPanel;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.math.BigDecimal;
 
 public class ControlPanel extends JPanel implements ActionListener{
 
@@ -283,7 +281,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     simEngine.speedUp();
                     slowDown.setToolTipText("Slow Down");
 
-                    if(simEngine.getDeley() == 0)
+                    if(simEngine.getDelay() == 0)
                         speedUp.setToolTipText("Max Speed");
                 }
             }
@@ -305,7 +303,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     simEngine.slowDown();
                     speedUp.setToolTipText("Increase Speed");
 
-                    if(simEngine.getDeley() == 26)
+                    if(simEngine.getDelay() == 26)
                         slowDown.setToolTipText("Min Speed");
                 }
             }

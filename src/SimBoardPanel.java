@@ -93,81 +93,81 @@ public class SimBoardPanel extends JPanel implements ActionListener
         }
         if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardOcto)
         {
-            for(int i = 0; i < simBoard.getpListQ1().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ1().size(); i++)
             {
                 newDimens = simBoard.getQ1Dimens();
-                if(simBoard.getpListQ1().get(i).isIsoSick() == false)
-                    simBoard.getpListQ1().get(i).updateDimens(newDimens);
-                simBoard.getpListQ1().get(i).draw(g2D);
+                if(simBoard.getPListQ1().get(i).isIsoSick() == false)
+                    simBoard.getPListQ1().get(i).updateDimens(newDimens);
+                simBoard.getPListQ1().get(i).draw(g2D);
             }
-            for(int i = 0; i < simBoard.getpListQ2().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ2().size(); i++)
             {
                 newDimens = simBoard.getQ2Dimens();
-                if(simBoard.getpListQ2().get(i).isIsoSick() == false)
-                    simBoard.getpListQ2().get(i).updateDimens(newDimens);
-                simBoard.getpListQ2().get(i).draw(g2D);
+                if(simBoard.getPListQ2().get(i).isIsoSick() == false)
+                    simBoard.getPListQ2().get(i).updateDimens(newDimens);
+                simBoard.getPListQ2().get(i).draw(g2D);
             }
-            for(int i = 0; i < simBoard.getpListQ3().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ3().size(); i++)
             {
                 newDimens = simBoard.getQ3Dimens();
-                if(simBoard.getpListQ3().get(i).isIsoSick() == false)
-                    simBoard.getpListQ3().get(i).updateDimens(newDimens);
-                simBoard.getpListQ3().get(i).draw(g2D);
+                if(simBoard.getPListQ3().get(i).isIsoSick() == false)
+                    simBoard.getPListQ3().get(i).updateDimens(newDimens);
+                simBoard.getPListQ3().get(i).draw(g2D);
             }
-            for(int i = 0; i < simBoard.getpListQ4().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ4().size(); i++)
             {
                 newDimens = simBoard.getQ4Dimens();
-                if(simBoard.getpListQ4().get(i).isIsoSick() == false)
-                    simBoard.getpListQ4().get(i).updateDimens(newDimens);
-                simBoard.getpListQ4().get(i).draw(g2D);
+                if(simBoard.getPListQ4().get(i).isIsoSick() == false)
+                    simBoard.getPListQ4().get(i).updateDimens(newDimens);
+                simBoard.getPListQ4().get(i).draw(g2D);
             }
         }
         if(simBoard instanceof SimBoardQuad)
         {
-            for(int i = 0; i < simBoard.getpListTravel().size(); i++)
+            for(int i = 0; i < simBoard.getPListTravel().size(); i++)
             {
                 newDimens = ((SimBoardQuad) simBoard).getTravelDimens();
-                if(simBoard.getpListTravel().get(i).isIsoSick() == false)
-                    simBoard.getpListTravel().get(i).updateDimens(newDimens);
-                simBoard.getpListTravel().get(i).draw(g2D);
+                if(simBoard.getPListTravel().get(i).isIsoSick() == false)
+                    simBoard.getPListTravel().get(i).updateDimens(newDimens);
+                simBoard.getPListTravel().get(i).draw(g2D);
             }
         }
         if(simBoard instanceof SimBoardOcto)
         {
-            for(int i = 0; i < simBoard.getpListQ5().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ5().size(); i++)
             {
                 newDimens = simBoard.getQ5Dimens();
-                if(simBoard.getpListQ5().get(i).isIsoSick() == false)
-                    simBoard.getpListQ5().get(i).updateDimens(newDimens);
-                simBoard.getpListQ5().get(i).draw(g2D);
+                if(simBoard.getPListQ5().get(i).isIsoSick() == false)
+                    simBoard.getPListQ5().get(i).updateDimens(newDimens);
+                simBoard.getPListQ5().get(i).draw(g2D);
             }
-            for(int i = 0; i < simBoard.getpListQ6().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ6().size(); i++)
             {
                 newDimens = simBoard.getQ6Dimens();
-                if(simBoard.getpListQ6().get(i).isIsoSick() == false)
-                    simBoard.getpListQ6().get(i).updateDimens(newDimens);
-                simBoard.getpListQ6().get(i).draw(g2D);
+                if(simBoard.getPListQ6().get(i).isIsoSick() == false)
+                    simBoard.getPListQ6().get(i).updateDimens(newDimens);
+                simBoard.getPListQ6().get(i).draw(g2D);
             }
-            for(int i = 0; i < simBoard.getpListQ7().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ7().size(); i++)
             {
                 newDimens = simBoard.getQ7Dimens();
-                if(simBoard.getpListQ7().get(i).isIsoSick() == false)
-                    simBoard.getpListQ7().get(i).updateDimens(newDimens);
-                simBoard.getpListQ7().get(i).draw(g2D);
+                if(simBoard.getPListQ7().get(i).isIsoSick() == false)
+                    simBoard.getPListQ7().get(i).updateDimens(newDimens);
+                simBoard.getPListQ7().get(i).draw(g2D);
             }
-            for(int i = 0; i < simBoard.getpListQ8().size(); i++)
+            for(int i = 0; i < simBoard.getPListQ8().size(); i++)
             {
                 newDimens = simBoard.getQ8Dimens();
-                if(simBoard.getpListQ8().get(i).isIsoSick() == false)
-                    simBoard.getpListQ8().get(i).updateDimens(newDimens);
-                simBoard.getpListQ8().get(i).draw(g2D);
+                if(simBoard.getPListQ8().get(i).isIsoSick() == false)
+                    simBoard.getPListQ8().get(i).updateDimens(newDimens);
+                simBoard.getPListQ8().get(i).draw(g2D);
             }
-            for(int i = 0; i < simBoard.getpListTravel().size(); i++)
+            for(int i = 0; i < simBoard.getPListTravel().size(); i++)
             {
                 newDimens = ((SimBoardOcto) simBoard).getTravelDimens();
-                if(simBoard.getpListTravel().get(i).isIsoSick() == false)
-                    simBoard.getpListTravel().get(i).updateDimens(newDimens);
-                simBoard.getpListTravel().get(i).draw(g2D);
+                if(simBoard.getPListTravel().get(i).isIsoSick() == false)
+                    simBoard.getPListTravel().get(i).updateDimens(newDimens);
+                simBoard.getPListTravel().get(i).draw(g2D);
             }
         }
         socialDistanceUpdate();

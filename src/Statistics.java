@@ -24,18 +24,18 @@ public class Statistics implements ActionListener {
         }
         if(simBoard instanceof SimBoardQuad || simBoard instanceof SimBoardOcto)
         {
-            pListQ1 = simBoard.getpListQ1();
-            pListQ2 = simBoard.getpListQ2();
-            pListQ3 = simBoard.getpListQ3();
-            pListQ4 = simBoard.getpListQ4();
-            pListTravel = simBoard.getpListTravel();
+            pListQ1 = simBoard.getPListQ1();
+            pListQ2 = simBoard.getPListQ2();
+            pListQ3 = simBoard.getPListQ3();
+            pListQ4 = simBoard.getPListQ4();
+            pListTravel = simBoard.getPListTravel();
         }
         if(simBoard instanceof SimBoardOcto)
         {
-            pListQ5 = simBoard.getpListQ5();
-            pListQ6 = simBoard.getpListQ6();
-            pListQ7 = simBoard.getpListQ7();
-            pListQ8 = simBoard.getpListQ8();
+            pListQ5 = simBoard.getPListQ5();
+            pListQ6 = simBoard.getPListQ6();
+            pListQ7 = simBoard.getPListQ7();
+            pListQ8 = simBoard.getPListQ8();
         }
 
         this.simBoard = simBoard;

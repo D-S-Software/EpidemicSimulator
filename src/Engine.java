@@ -4,7 +4,7 @@ import java.awt.*;
 public class Engine {
 
     private Timer clock;
-    private int deley = 10;
+    private int delay = 10;
     private SimBoard simBoard;
 
     public Engine(GUI gui, Disease disease, int numPeople, int boardType, boolean quarBoard,
@@ -35,7 +35,7 @@ public class Engine {
         Statistics stats = new Statistics(simBoard, numPeople);
         gui.setStats(stats);
 
-        clock = new Timer(deley, gui.getSimBoardPanel());
+        clock = new Timer(delay, gui.getSimBoardPanel());
         clock.addActionListener(stats);
         clock.addActionListener(gui.getXYChartPanel());
         clock.addActionListener(gui.getXYChartPanel2());
@@ -56,7 +56,7 @@ public class Engine {
         if(clock.getDelay() > 0)
             clock.setDelay(clock.getDelay() - 2);
     }
-    public int getDeley()
+    public int getDelay()
     {
         return clock.getDelay();
     }

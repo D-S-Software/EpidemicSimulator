@@ -790,14 +790,14 @@ public class SettingFrame extends JFrame implements ActionListener{
     {
         if(generalBoard.isSelected())
             boardTypeNum = 1;
-        if(quadBoard.isSelected())
+        else if(quadBoard.isSelected())
             boardTypeNum = 4;
-        if(eightBoard.isSelected())
+        else if(eightBoard.isSelected())
             boardTypeNum = 8;
 
         if(quarButton.isSelected())
             quarBoardBool = true;
-        if(regButton.isSelected())
+        else if(regButton.isSelected())
             quarBoardBool = false;
     }
 
