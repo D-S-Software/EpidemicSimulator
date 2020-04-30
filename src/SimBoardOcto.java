@@ -14,7 +14,6 @@ public class SimBoardOcto extends SimBoard{
             minPreExistingConditions, maxPreExistingConditions, travelersPer);
        // this.dimens = dimens;
 
-
       //  this.socialDistanceValue = socialDistanceValue;
        // this.travelDimens = dimens;
        // this.numPeople = numPeople;
