@@ -64,6 +64,63 @@ public abstract class SimBoard {
 
     public abstract void constructListPList();
 
+    public void constructPListTotal(ArrayList<ArrayList<Person>> ListPList, int startIndex)
+    {
+        for(int i = startIndex; i < ListPList.size(); i++)
+            constructPListTotalIteration(ListPList.get(i));
+    }
+
+    private void constructPListTotalIteration(ArrayList<Person> pListQN)
+    {
+        for(int i = 0; i < pListQN.size(); i++)
+            pList.add(pListQN.get(i));
+    }
+
+    public void constructPListNonTravel()
+    {
+        int i = 0;
+        while(i < numPeople - travelers)
+        {
+            for (int j = 1; j < listPList.size() - 1; j++)
+            {
+                listPList.get(j).add(constructPerson(dimensList.get(j), j)); //each pList in the listPList has a corresponding dimens object in dimensList
+                i++;
+            }
+        }
+    }
+
+    public void constructPListTravel()
+    {
+        for(int i = 0; i < travelers; i++)
+        {
+            pListTravel.add(constructPerson(dimensList.get(dimensList.size() - 1), dimensList.size() - 1));
+        }
+    }
+
+    public Person constructPerson(Rectangle dimensQN, int quadLocation)
+    {
+        boolean asymptomatic = (Math.random() < asymptomaticChance);
+        boolean isSocialDistancing = (Math.random() < socialDistanceChance);
+        //MAYBE make generate traits method
+        int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
+        int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - maxPreExistingConditions) * Math.random());
+
+
+        Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing);
+        p.setQuadLocation(quadLocation);
+        return p;
+    }
+
+    private int generateXCoord(Rectangle dimens)
+    {
+        return dimens.x + (int)(dimens.width * Math.random());
+    }
+
+    private int generateYCoord(Rectangle dimens)
+    {
+        return dimens.y + (int)(dimens.height * Math.random());
+    }
+
     public abstract void updateListPList();
 
     public abstract void updateDistanceFromSick();
@@ -186,6 +243,7 @@ public abstract class SimBoard {
         }
 
     }
+
 
     public ArrayList<Person> getPList()
     {

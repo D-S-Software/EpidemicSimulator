@@ -20,27 +20,12 @@ public class SimBoardMono extends SimBoard{
 
     public void constructListPList()
     {
+        getListPList().add(getPList());
+
         for(int i = 0; i < getNumPeople(); i++)
         {
-            int xPos = getDimens().x + (int)(getDimensList().get(0).width*Math.random());
-            int yPos = getDimens().y + (int)(getDimensList().get(0).height*Math.random());
-
-            if(Math.random() < getAsymptomaticChance())
-                asymptomatic = true;
-            else
-                asymptomatic = false;
-
-            if(Math.random() < getSocialDistanceChance())
-                isSocialDistancing = true;
-            else
-                isSocialDistancing = false;
-
-            int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
-            int personalConditions = (int) (getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions()) * Math.random());
-
-            getPList().add(new Person(personalAge, personalConditions, xPos, yPos, getDimens(), getDisease(), asymptomatic, isSocialDistancing));
+            getPList().add(constructPerson(getDimens(), 0));
         }
-        getListPList().add(getPList());
     }
 
     public void updateAllDimens(Rectangle updatedRect)
