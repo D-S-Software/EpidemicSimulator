@@ -42,6 +42,8 @@ public abstract class SimBoard {
         travelDimens = new Rectangle();
 
         dimensList = new ArrayList<>();
+        updateAllDimens(dimens);
+        constructDimensList();
 
         pList = new ArrayList<>();
         pListQ1 = new ArrayList<>();

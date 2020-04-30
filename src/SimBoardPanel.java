@@ -9,7 +9,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
 {
     SimBoard simBoard;
     Color background = CustomColor.JET;
-    Graphics2D g2D; //TODO Should not be a field??
+    Graphics2D g2D;
     boolean reset = false;
 
     public SimBoardPanel()
