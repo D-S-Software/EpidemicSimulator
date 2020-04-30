@@ -9,7 +9,6 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
     private int timeUntilIsolate;
     private int quarXOrigin, quarWidth;
     private double quarantineChance;
-    private int shift = 300;
 
     public SimBoardQuarMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                             int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int timeUntilIsolate, double quarantineChance)
@@ -22,8 +21,10 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
     @Override
     public void updateAllDimens(Rectangle updatedRect)
     {
-        setDimens(new Rectangle(updatedRect.x, updatedRect.y, updatedRect.width - 2*shift, updatedRect.height));
-        quarXOrigin = getDimens().width + getDimens().x + shift;
+        int shift = 150;
+
+        setDimens(new Rectangle(updatedRect.x, updatedRect.y, updatedRect.width - shift - 30, updatedRect.height));
+        quarXOrigin = getDimens().width + getDimens().x + 30;
         quarWidth = shift;
         quarantine = new Rectangle(quarXOrigin, getDimens().y, quarWidth, getDimens().height);
     }
@@ -63,7 +64,6 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
             if(i%2 == 0)
                 g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen);
         }
-
     }
 
     public Rectangle getQuarantine()

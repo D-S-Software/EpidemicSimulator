@@ -9,7 +9,6 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
     private int timeUntilIsolate;
     private int width, height, x2Start, y2Origin, quarXOrigin, quarWidth;
     private double quarantineChance;
-    private int xShift = 50, yShift = 20;
 
     public SimBoardQuarQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                             int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, int timeUntilIsolate, double quarantineChance)
@@ -48,6 +47,8 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
     @Override
     public void updateAllDimens(Rectangle updatedRect)
     {
+        int xShift = 100, yShift = 20;
+
         setDimens(updatedRect);
 
         width = getDimens().width / 2 - xShift;
@@ -108,7 +109,6 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
             }
         }
     }
-
 
     @Override
     public void drawQuarLine(Graphics2D g2D) {

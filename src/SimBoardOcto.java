@@ -30,8 +30,6 @@ public class SimBoardOcto extends SimBoard{
 
     public void constructListPList()
     {
-
-        System.out.println(getTravelers());
         int k = 0;
         for(int i = 0; i < getNumPeople() - getTravelers(); i++) {
 
