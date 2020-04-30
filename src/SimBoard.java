@@ -81,6 +81,8 @@ public abstract class SimBoard {
 
     public abstract void updateAllDimens(Rectangle updatedRect);
 
+    public abstract void drawListPList(Graphics2D g2D);
+
     public void drawPList(ArrayList<Person> pList, int dimensNum, Graphics2D g2D) //maybe make private
     {
         for(int j = 0; j < pList.size(); j++)
@@ -91,14 +93,6 @@ public abstract class SimBoard {
         }
     }
 
-    public void drawListPList(Graphics2D g2D)
-    {
-
-        for(int i = 0; i < listPList.size(); i++) //
-        {
-            drawPList(listPList.get(i), i, g2D); //i
-        }
-    }
 
     public void updateBoard(Graphics2D g2D)
     {
@@ -115,6 +109,7 @@ public abstract class SimBoard {
         this.drawListPList(g2D);
 
         socialDistanceUpdate();
+
     }
 
     private void socialDistanceUpdate()

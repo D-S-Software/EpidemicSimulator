@@ -32,6 +32,7 @@ public class SimBoardOcto extends SimBoard{
 
     public void constructListPList()
     {
+        System.out.println(("ConstructListPList is called"));
         int travelers = (int)(getNumPeople()*getTravelersPer());
 
         int k = 0;
@@ -235,6 +236,15 @@ public class SimBoardOcto extends SimBoard{
         for(int i = 1; i < getListPList().size(); i++)
         {
             updatePList(getListPList().get(i));
+        }
+    }
+
+    public void drawListPList(Graphics2D g2D)
+    {
+
+        for(int i = 1; i < getListPList().size(); i++) //
+        {
+            drawPList(getListPList().get(i), i, g2D); //i
         }
     }
 }

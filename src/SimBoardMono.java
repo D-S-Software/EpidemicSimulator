@@ -104,4 +104,13 @@ public class SimBoardMono extends SimBoard{
        updatePList(getPList());
     }
 
+    public void drawListPList(Graphics2D g2D)
+    {
+
+        for(int i = 0; i < getListPList().size(); i++) //
+        {
+            drawPList(getListPList().get(i), i, g2D); //i
+        }
+    }
+
 }

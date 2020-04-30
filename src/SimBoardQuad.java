@@ -161,5 +161,14 @@ public class SimBoardQuad extends SimBoard {
             updatePList(getListPList().get(i));
         }
     }
+
+    public void drawListPList(Graphics2D g2D)
+    {
+
+        for(int i = 1; i < getListPList().size(); i++) //
+        {
+            drawPList(getListPList().get(i), i, g2D); //i
+        }
+    }
 }
 
