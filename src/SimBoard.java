@@ -29,8 +29,6 @@ public abstract class SimBoard {
         this.minPreExistingConditions = minPreExistingConditions;
         this.maxPreExistingConditions = maxPreExistingConditions;
 
-        System.out.println(this.travelersPer);
-
         this.dimens = dimens;
         q1Dimens = new Rectangle();
         q2Dimens = new Rectangle();

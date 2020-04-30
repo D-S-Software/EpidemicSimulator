@@ -3,7 +3,6 @@ import java.util.ArrayList;
 
 public class SimBoardQuad extends SimBoard {
 
-
     private boolean asymptomatic, isSocialDistancing;
 
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
