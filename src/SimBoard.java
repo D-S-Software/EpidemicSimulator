@@ -11,7 +11,7 @@ public abstract class SimBoard {
 
     private Disease disease;
 
-    private double socialDistanceChance, asymptomaticChance, travelersPer;
+    private double socialDistanceChance, asymptomaticChance;
     private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions;
     public final int circleRad = 8;
 
@@ -432,10 +432,6 @@ public abstract class SimBoard {
 
     public void setDisease(Disease disease) {
         this.disease = disease;
-    }
-
-    public double getTravelersPer() {
-        return travelersPer;
     }
 
     public void setTravelersPer(double travelersPer) {
