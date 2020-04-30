@@ -13,6 +13,7 @@ public class SimBoardQuad extends SimBoard {
                 minPreExistingConditions, maxPreExistingConditions,travelersPer);
 
         updateAllDimens(dimens);
+        constructDimensList();
     }
 
     public void constructDimensList()

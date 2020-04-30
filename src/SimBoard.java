@@ -41,9 +41,7 @@ public abstract class SimBoard {
         q8Dimens = new Rectangle();
         travelDimens = new Rectangle();
 
-
         dimensList = new ArrayList<>();
-        constructDimensList();
 
         pList = new ArrayList<>();
         pListQ1 = new ArrayList<>();
@@ -71,8 +69,6 @@ public abstract class SimBoard {
 
     public abstract void constructDimensList();
 
-    //TODO make a constructPList() method
-
     public abstract void constructListPList();
 
     public abstract void updateListPList();
@@ -80,6 +76,7 @@ public abstract class SimBoard {
     public abstract void updateDistanceFromSick();
 
     public abstract void updateAllDimens(Rectangle updatedRect);
+
 
     public void drawPList(ArrayList<Person> pList, int dimensNum, Graphics2D g2D) //maybe make private
     {
@@ -93,7 +90,7 @@ public abstract class SimBoard {
 
     public void drawListPList(Graphics2D g2D)
     {
-        for(int i = 0; i < listPList.size(); i++)
+        for(int i = 1; i < listPList.size(); i++)
         {
             drawPList(listPList.get(i), i, g2D);
         }

@@ -14,6 +14,7 @@ public class SimBoardOcto extends SimBoard{
             minPreExistingConditions, maxPreExistingConditions, travelersPer);
 
         updateAllDimens(dimens);
+        constructDimensList();
     }
 
     public void constructDimensList()
@@ -32,7 +33,6 @@ public class SimBoardOcto extends SimBoard{
 
     public void constructListPList()
     {
-
         int travelers = (int)(getNumPeople()*getTravelersPer());
 
         int k = 0;
