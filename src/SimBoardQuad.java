@@ -1,41 +1,67 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-public class SimBoardQuad extends SimBoard{
+public class SimBoardQuad extends SimBoard {
 
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, travelDimens;
+    private ArrayList<Rectangle> dimensList;
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
+    private ArrayList<ArrayList<Person>> listPList;
     private int numPeople;
     private boolean asymptomatic, isSocialDistancing;
     private int socialDistanceValue;
 
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
-    {
-        this.dimens = dimens;
-        this.socialDistanceValue = socialDistanceValue;
+                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
+
+        super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
+                minPreExistingConditions, maxPreExistingConditions);
+        //this.dimens = dimens;
+
+        // this.socialDistanceValue = socialDistanceValue;
         this.travelDimens = dimens;
-        this.numPeople = numPeople;
+        // this.numPeople = numPeople;
         updateAllDimens(dimens);
 
-        pList = new ArrayList<>();
-        pListQ1 = new ArrayList<>();
-        pListQ2 = new ArrayList<>();
-        pListQ3 = new ArrayList<>();
-        pListQ4 = new ArrayList<>();
-        pListTravel = new ArrayList<>();
+        // pList = new ArrayList<>();
+        //pListQ1 = new ArrayList<>();
+       // pListQ2 = new ArrayList<>();
+      //  pListQ3 = new ArrayList<>();
+      //  pListQ4 = new ArrayList<>();
+      //  pListTravel = new ArrayList<>();
 
-        int travelers = (int)(numPeople*travelersPer);
+      //  listPList.add(pList);
+      //  listPList.add(pListQ1);
+      //  listPList.add(pListQ2);
+      //  listPList.add(pListQ3);
+       // listPList.add(pListQ4);
+       // listPList.add(pListTravel);
 
+        int travelers = (int) (numPeople * travelersPer);
+
+
+    }
+
+    public void constructDimensList() {
+        getDimensList().add(dimens);
+        getDimensList().add(q1Dimens);
+        getDimensList().add(q2Dimens);
+        getDimensList().add(q3Dimens);
+        getDimensList().add(q4Dimens);
+        getDimensList().add(travelDimens);
+
+    }
+
+    public void constructListPList() {
         int k = 0;
-        for(int i = 0; i < numPeople - travelers; i++) {
+        for (int i = 0; i < numPeople - travelers; i++) {
 
-            if(Math.random() < asymptomaticChance)
+            if (Math.random() < asymptomaticChance)
                 asymptomatic = true;
             else
                 asymptomatic = false;
 
-            if(Math.random() < socialDistanceChance)
+            if (Math.random() < socialDistanceChance)
                 isSocialDistancing = true;
             else
                 isSocialDistancing = false;
@@ -59,32 +85,28 @@ public class SimBoardQuad extends SimBoard{
             Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad, asymptomatic, isSocialDistancing);
 
             k++;
-            if(k == 1)
-            {
+            if (k == 1) {
                 person.setDimens(q1Dimens);
                 person.setxPos(xPos1);
                 person.setyPos(yPos1);
                 person.setQuadLocation(1);
                 pListQ1.add(person);
             }
-            if(k == 2)
-            {
+            if (k == 2) {
                 person.setDimens(q2Dimens);
                 person.setxPos(xPos2);
                 person.setyPos(yPos2);
                 person.setQuadLocation(2);
                 pListQ2.add(person);
             }
-            if(k == 3)
-            {
+            if (k == 3) {
                 person.setDimens(q3Dimens);
                 person.setxPos(xPos3);
                 person.setyPos(yPos3);
                 person.setQuadLocation(3);
                 pListQ3.add(person);
             }
-            if(k == 4)
-            {
+            if (k == 4) {
                 person.setDimens(q4Dimens);
                 person.setxPos(xPos4);
                 person.setyPos(yPos4);
@@ -94,40 +116,39 @@ public class SimBoardQuad extends SimBoard{
             }
         }
 
-        for(int i = 0; i < travelers; i++)
-        {
-            if(Math.random() < asymptomaticChance)
+        for (int i = 0; i < travelers; i++) {
+            if (Math.random() < asymptomaticChance)
                 asymptomatic = true;
             else
                 asymptomatic = false;
 
-            if(Math.random() < socialDistanceChance)
+            if (Math.random() < socialDistanceChance)
                 isSocialDistancing = true;
             else
                 isSocialDistancing = false;
 
             int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
             int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
-            int xPos = dimens.x + (int)(dimens.width*Math.random());
-            int yPos = dimens.y + (int)(dimens.height*Math.random());
+            int xPos = dimens.x + (int) (dimens.width * Math.random());
+            int yPos = dimens.y + (int) (dimens.height * Math.random());
 
             pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad, asymptomatic, isSocialDistancing));
         }
 
-        for(int i = 0; i < pListQ1.size(); i++)
+        for (int i = 0; i < pListQ1.size(); i++)
             pList.add(pListQ1.get(i));
-        for(int i = 0; i < pListQ2.size(); i++)
+        for (int i = 0; i < pListQ2.size(); i++)
             pList.add(pListQ2.get(i));
-        for(int i = 0; i < pListQ3.size(); i++)
+        for (int i = 0; i < pListQ3.size(); i++)
             pList.add(pListQ3.get(i));
-        for(int i = 0; i < pListQ4.size(); i++)
+        for (int i = 0; i < pListQ4.size(); i++)
             pList.add(pListQ4.get(i));
-        for(int i = 0; i < pListTravel.size(); i++)
+        for (int i = 0; i < pListTravel.size(); i++)
             pList.add(pListTravel.get(i));
+
     }
 
-    public void updateAllDimens(Rectangle updatedRect)
-    {
+    public void updateAllDimens(Rectangle updatedRect) {
         dimens = updatedRect;
 
         int width = (dimens.width - dimens.x) / 2 - circleRad;
@@ -147,264 +168,111 @@ public class SimBoardQuad extends SimBoard{
      * Finds the closest sick person to each healthy person and returns the distance between them
      * Based on the default board size this is from 0 to 1000ish
      */
-    public void updateDistanceFromSick()
-    {
-        for(int i = 0; i < pListQ1.size(); i++)
-        {
+    public void updateDistanceFromSick() {
+        for (int i = 0; i < pListQ1.size(); i++) {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
             int closestSickIndex = 0;
 
-            if(!pListQ1.get(i).getHasDisease())
-                for(int j = 0; j < pList.size(); j++)
-                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
-                    {
+            if (!pListQ1.get(i).getHasDisease())
+                for (int j = 0; j < pList.size(); j++)
+                    if (pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy()) {
                         double distTest = Math.sqrt(Math.pow(pListQ1.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ1.get(i).getYPos() - pList.get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
+                        if (distTest < minDist) {
                             minDist = distTest;
                             closestSickIndex = j;
                         }
                     }
             Double dist = minDist;
-            if(dist.equals(0))
+            if (dist.equals(0))
                 minDist = 0.1;
             pListQ1.get(i).setDistanceFromSick(minDist);
             pListQ1.get(i).setClosestSickIndex(closestSickIndex);
         }
-        for(int i = 0; i < pListQ2.size(); i++)
-        {
+        for (int i = 0; i < pListQ2.size(); i++) {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
             int closestSickIndex = 0;
 
-            if(!pListQ2.get(i).getHasDisease())
-                for(int j = 0; j < pList.size(); j++)
-                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
-                    {
+            if (!pListQ2.get(i).getHasDisease())
+                for (int j = 0; j < pList.size(); j++)
+                    if (pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy()) {
                         double distTest = Math.sqrt(Math.pow(pListQ2.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ2.get(i).getYPos() - pList.get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
+                        if (distTest < minDist) {
                             minDist = distTest;
                             closestSickIndex = j;
                         }
                     }
             Double dist = minDist;
-            if(dist.equals(0))
+            if (dist.equals(0))
                 minDist = 0.1;
             pListQ2.get(i).setDistanceFromSick(minDist);
             pListQ2.get(i).setClosestSickIndex(closestSickIndex);
         }
-        for(int i = 0; i < pListQ3.size(); i++)
-        {
+        for (int i = 0; i < pListQ3.size(); i++) {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
             int closestSickIndex = 0;
 
-            if(!pListQ3.get(i).getHasDisease())
-                for(int j = 0; j < pList.size(); j++)
-                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
-                    {
+            if (!pListQ3.get(i).getHasDisease())
+                for (int j = 0; j < pList.size(); j++)
+                    if (pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy()) {
                         double distTest = Math.sqrt(Math.pow(pListQ3.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ3.get(i).getYPos() - pList.get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
+                        if (distTest < minDist) {
                             minDist = distTest;
                             closestSickIndex = j;
                         }
                     }
             Double dist = minDist;
-            if(dist.equals(0))
+            if (dist.equals(0))
                 minDist = 0.1;
             pListQ3.get(i).setDistanceFromSick(minDist);
             pListQ3.get(i).setClosestSickIndex(closestSickIndex);
         }
-        for(int i = 0; i < pListQ4.size(); i++)
-        {
+        for (int i = 0; i < pListQ4.size(); i++) {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
             int closestSickIndex = 0;
 
-            if(!pListQ4.get(i).getHasDisease())
-                for(int j = 0; j < pList.size(); j++)
-                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
-                    {
+            if (!pListQ4.get(i).getHasDisease())
+                for (int j = 0; j < pList.size(); j++)
+                    if (pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy()) {
                         double distTest = Math.sqrt(Math.pow(pListQ4.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQ4.get(i).getYPos() - pList.get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
+                        if (distTest < minDist) {
                             minDist = distTest;
                             closestSickIndex = j;
                         }
                     }
             Double dist = minDist;
-            if(dist.equals(0))
+            if (dist.equals(0))
                 minDist = 0.1;
             pListQ4.get(i).setDistanceFromSick(minDist);
             pListQ4.get(i).setClosestSickIndex(closestSickIndex);
         }
-        for(int i = 0; i < pListTravel.size(); i++)
-        {
+        for (int i = 0; i < pListTravel.size(); i++) {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
             int closestSickIndex = 0;
 
-            if(!pListTravel.get(i).getHasDisease())
-                for(int j = 0; j < pList.size(); j++)
-                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
-                    {
+            if (!pListTravel.get(i).getHasDisease())
+                for (int j = 0; j < pList.size(); j++)
+                    if (pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy()) {
                         double distTest = Math.sqrt(Math.pow(pListTravel.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListTravel.get(i).getYPos() - pList.get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
+                        if (distTest < minDist) {
                             minDist = distTest;
                             closestSickIndex = j;
                         }
                     }
             Double dist = minDist;
-            if(dist.equals(0))
+            if (dist.equals(0))
                 minDist = 0.1;
             pListTravel.get(i).setDistanceFromSick(minDist);
             pListTravel.get(i).setClosestSickIndex(closestSickIndex);
         }
     }
 
+    public void updateListPList() {
+        for (int i = 1; i < getListPList().size(); i++) {
+            updatePList(getListPList().get(i), getListPList().get(0));
+        }
+    }
+
     /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
-    public void updatePList()
-    {
-        for(int i = 0; i < pListQ1.size(); i++)
-        {
-            boolean isHealthy = pListQ1.get(i).getIsHealthy();
-            pListQ1.get(i).checkCondition();
-            if(!pListQ1.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ1.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ1.get(i).move();
-            if(!pListQ1.get(i).getHasDisease() && !pListQ1.get(i).getIsHealthy())
-            {
-                pListQ1.remove(pListQ1.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ2.size(); i++)
-        {
-            boolean isHealthy = pListQ2.get(i).getIsHealthy();
-            pListQ2.get(i).checkCondition();
-            if(!pListQ2.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ2.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ2.get(i).move();
-            if(!pListQ2.get(i).getHasDisease() && !pListQ2.get(i).getIsHealthy())
-            {
-                pListQ2.remove(pListQ2.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ3.size(); i++)
-        {
-            boolean isHealthy = pListQ3.get(i).getIsHealthy();
-            pListQ3.get(i).checkCondition();
-            if(!pListQ3.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ3.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ3.get(i).move();
-            if(!pListQ3.get(i).getHasDisease() && !pListQ3.get(i).getIsHealthy())
-            {
-                pListQ3.remove(pListQ3.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ4.size(); i++)
-        {
-            boolean isHealthy = pListQ4.get(i).getIsHealthy();
-            pListQ4.get(i).checkCondition();
-            if(!pListQ4.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ4.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ4.get(i).move();
-            if(!pListQ4.get(i).getHasDisease() && !pListQ4.get(i).getIsHealthy())
-            {
-                pListQ4.remove(pListQ4.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListTravel.size(); i++)
-        {
-            boolean isHealthy = pListTravel.get(i).getIsHealthy();
-            pListTravel.get(i).checkCondition();
-            if(!pListTravel.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListTravel.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListTravel.get(i).move();
-            if(!pListTravel.get(i).getHasDisease() && !pListTravel.get(i).getIsHealthy())
-            {
-                pListTravel.remove(pListTravel.get(i));
-                numPeople--;
-            }
-        }
-    }
 
-    public ArrayList<Person> getPList() {
-        return pList;
-    }
-
-    public ArrayList<Person> getPListQ1() {
-        return pListQ1;
-    }
-
-    public ArrayList<Person> getPListQ2() {
-        return pListQ2;
-    }
-
-    public ArrayList<Person> getPListQ3() {
-        return pListQ3;
-    }
-
-    public ArrayList<Person> getPListQ4() {
-        return pListQ4;
-    }
-
-    public ArrayList<Person> getPListTravel() {
-        return pListTravel;
-    }
-
-    public Rectangle getDimens() {
-        return dimens;
-    }
-
-    public Rectangle getQ1Dimens() {
-        return q1Dimens;
-    }
-
-    public Rectangle getQ2Dimens() {
-        return q2Dimens;
-    }
-
-    public Rectangle getQ3Dimens() {
-        return q3Dimens;
-    }
-
-    public Rectangle getQ4Dimens() {
-        return q4Dimens;
-    }
-
-    public Rectangle getTravelDimens() {
-        return travelDimens;
-    }
-
-    public void setQ1Dimens(Rectangle rect) {
-        q1Dimens = rect;
-    }
-
-    public void setQ2Dimens(Rectangle rect) {
-        q2Dimens = rect;
-    }
-
-    public void setQ3Dimens(Rectangle rect) {
-        q3Dimens = rect;
-    }
-
-    public void setQ4Dimens(Rectangle rect) {
-        q4Dimens = rect;
-    }
-
-    public void setTravelDimens(Rectangle rect) {
-        travelDimens = rect;
-    }
-
-    public int getNumPeople() {
-        return numPeople;
-    }
-
-    public int getSocialDistanceValue()
-    {
-        return socialDistanceValue;
-    }
 }
+

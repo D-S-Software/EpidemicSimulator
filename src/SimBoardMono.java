@@ -3,43 +3,67 @@ import java.util.ArrayList;
 
 public class SimBoardMono extends SimBoard{
 
-   private Rectangle dimens;
-   private ArrayList<Person> pList;
-   private boolean asymptomatic, isSocialDistancing;
-   private int numPeople;
-   private int socialDistanceValue;
+   //private Rectangle dimens;
+   // ArrayList<Rectangle> dimensList;
+   //private ArrayList<Person> pList;
+  // private ArrayList<ArrayList<Person>> listPList;
+    private boolean asymptomatic, isSocialDistancing; //maybe add to super
+   //private int numPeople;
+   //private int socialDistanceValue;
 
     public SimBoardMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
                         int minPreExistingConditions, int maxPreExistingConditions)
     {
-        this.dimens = dimens;
-        this.socialDistanceValue = socialDistanceValue;
-        this.numPeople = numPeople;
 
-        pList = new ArrayList<>();
-        for(int i = 0; i < numPeople; i++)
+        super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
+        minPreExistingConditions, maxPreExistingConditions);
+       // this.dimens = dimens;
+       // dimensList = new ArrayList<>();
+
+
+        //this.socialDistanceValue = socialDistanceValue;
+        //this.numPeople = numPeople;
+
+       // pList = new ArrayList<>();
+       // listPList = new ArrayList<>();
+        //listPList.add(pList);
+
+    }
+
+    public void constructDimensList()
+    {
+        getDimensList().add(getDimens());
+
+    }
+
+    public void constructListPList()
+    {
+        for(int i = 0; i < getNumPeople(); i++)
         {
-            int xPos = dimens.x + (int)(dimens.width*Math.random());
-            int yPos = dimens.y + (int)(dimens.height*Math.random());
+            int xPos = getDimens().x + (int)(getDimensList().get(0).width*Math.random());
+            int yPos = getDimens().y + (int)(getDimensList().get(0).height*Math.random());
 
-            if(Math.random() < asymptomaticChance)
+            if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else
                 asymptomatic = false;
 
-            if(Math.random() < socialDistanceChance)
+            if(Math.random() < getSocialDistanceChance())
                 isSocialDistancing = true;
             else
                 isSocialDistancing = false;
 
-            pList.add(new Person((int)(minAge + (maxAge-minAge)*Math.random()),
-                    (int)(minPreExistingConditions + (maxPreExistingConditions-minPreExistingConditions)*Math.random()), xPos, yPos, dimens, disease, circleRad, asymptomatic, isSocialDistancing));
+            getPList().add(new Person((int)(getMinAge() + (getMaxAge() - getMinAge())*Math.random()),
+                    (int)(getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions())*Math.random()), xPos, yPos, getDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing));
         }
+        getListPList().add(getPList());
     }
+
+
 
     public void updateAllDimens(Rectangle updatedRect)
     {
-        dimens = updatedRect;
+        setDimens(updatedRect);
     }
 
     /**
@@ -48,16 +72,16 @@ public class SimBoardMono extends SimBoard{
      */
     public void updateDistanceFromSick()
     {
-        for(int i = 0; i < pList.size(); i++)
+        for(int i = 0; i < getPList().size(); i++)
         {
-            double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            double minDist = Math.sqrt(Math.pow(getDimens().width, 2) + Math.pow(getDimens().height, 2));
             int closestSickIndex = 0;
 
-            if(!pList.get(i).getHasDisease())
-                for(int j = 0; j < pList.size(); j++)
-                    if(i != j && pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
+            if(!getPList().get(i).getHasDisease())
+                for(int j = 0; j < getPList().size(); j++)
+                    if(i != j && getPList().get(j).getHasDisease() && !getPList().get(j).getIsHealthy())
                     {
-                        double distTest = Math.sqrt(Math.pow(pList.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pList.get(i).getYPos() - pList.get(j).getYPos(), 2));
+                        double distTest = Math.sqrt(Math.pow(getPList().get(i).getXPos() - getPList().get(j).getXPos(), 2) + Math.pow(getPList().get(i).getYPos() - getPList().get(j).getYPos(), 2));
                         if(distTest < minDist)
                         {
                             minDist = distTest;
@@ -67,43 +91,35 @@ public class SimBoardMono extends SimBoard{
             Double dist = minDist;
             if(dist.equals(0))
                 minDist = 0.1;
-            pList.get(i).setDistanceFromSick(minDist);
-            pList.get(i).setClosestSickIndex(closestSickIndex);
+            getPList().get(i).setDistanceFromSick(minDist);
+            getPList().get(i).setClosestSickIndex(closestSickIndex);
         }
     }
+
+
 
     /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
-    public void updatePList()
+    public void updateListPList()
     {
-        for(int i = 0; i < pList.size(); i++)
-        {
-            boolean isHealthy = pList.get(i).getIsHealthy();
-            pList.get(i).checkCondition();
-            if(!pList.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pList.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pList.get(i).move();
-            if(!pList.get(i).getHasDisease() && !pList.get(i).getIsHealthy())
-            {
-                pList.remove(pList.get(i));
-                numPeople--;
-            }
-        }
+       updatePList(getPList(),getPList());
     }
 
-    public ArrayList<Person> getPList() {
-        return pList;
-    }
 
-    public Rectangle getDimens() {
-        return dimens;
-    }
 
-    public int getNumPeople() {
-        return numPeople;
-    }
+    //public ArrayList<Person> getPList() {
+      //  return pList;
+    //}
 
-    public int getSocialDistanceValue()
-    {
-        return socialDistanceValue;
-    }
+    //public Rectangle getDimens() {
+      //  return dimens;
+    //}
+
+    //public int getNumPeople() {
+      //  return numPeople;
+   // }
+
+    //public int getSocialDistanceValue()
+    //{
+     //   return socialDistanceValue;
+    //}
 }
