@@ -170,6 +170,32 @@ public abstract class SimBoard {
         }
     }
 
+    public void updateDistanceFromSickIteration(ArrayList<Person> pListQN)
+    {
+        for(int i = 0; i < pListQN.size(); i++)
+        {
+            double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
+
+            if(!pListQN.get(i).getHasDisease())
+                for(int j = 0; j < pList.size(); j++)
+                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
+                    {
+                        double distTest = Math.sqrt(Math.pow(pListQN.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQN.get(i).getYPos() - pList.get(j).getYPos(), 2));
+                        if(distTest < minDist)
+                        {
+                            minDist = distTest;
+                            closestSickIndex = j;
+                        }
+                    }
+            Double dist = minDist;
+            if(dist.equals(0))
+                minDist = 0.1;
+            pListQN.get(i).setDistanceFromSick(minDist);
+            pListQN.get(i).setClosestSickIndex(closestSickIndex);
+        }
+    }
+
     public void updatePList(ArrayList<Person> pListQN)
     {
         for(int i = 0; i < pListQN.size(); i++)
