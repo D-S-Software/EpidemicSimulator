@@ -11,7 +11,7 @@ public class SimBoardOcto extends SimBoard{
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-            minPreExistingConditions, maxPreExistingConditions, travelersPer);
+            minPreExistingConditions, maxPreExistingConditions);
     }
 
     public void constructDimensList()

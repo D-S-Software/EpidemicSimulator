@@ -29,6 +29,7 @@ public abstract class SimBoard {
         this.minPreExistingConditions = minPreExistingConditions;
         this.maxPreExistingConditions = maxPreExistingConditions;
 
+        System.out.println(this.travelersPer);
 
         this.dimens = dimens;
         q1Dimens = new Rectangle();
@@ -58,15 +59,6 @@ public abstract class SimBoard {
 
         listPList = new ArrayList<>();
         constructListPList();
-    }
-
-    public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                    int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
-    {
-        this(disease, dimens,  numPeople, asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-                minPreExistingConditions, maxPreExistingConditions);
-
-        this.travelersPer = travelersPer;
     }
 
     public abstract void constructDimensList();

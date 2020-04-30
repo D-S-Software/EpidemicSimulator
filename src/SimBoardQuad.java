@@ -10,7 +10,7 @@ public class SimBoardQuad extends SimBoard {
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
 
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-                minPreExistingConditions, maxPreExistingConditions,travelersPer);
+                minPreExistingConditions, maxPreExistingConditions);
     }
 
     public void constructDimensList()
@@ -29,7 +29,6 @@ public class SimBoardQuad extends SimBoard {
 
         int k = 0;
         for (int i = 0; i < getNumPeople() - travelers; i++) {
-
 
 
             if(Math.random() < getAsymptomaticChance())
@@ -94,6 +93,7 @@ public class SimBoardQuad extends SimBoard {
                 person.setyPos(yPos4);
                 person.setQuadLocation(4);
                 getPListQ4().add(person);
+                k = 0;
             }
         }
 
@@ -133,11 +133,11 @@ public class SimBoardQuad extends SimBoard {
         getListPList().add(getPListQ3());
         getListPList().add(getPListQ4());
         getListPList().add(getPListTravel());
-
     }
 
     public void updateAllDimens(Rectangle updatedRect) {
-         setDimens(updatedRect);
+
+        setDimens(updatedRect);
 
         int width = (getDimens().width - getDimens().x) / 2 - circleRad;
         int height = (getDimens().height - getDimens().y) / 2 - circleRad;
