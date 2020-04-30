@@ -3,39 +3,66 @@ import java.util.ArrayList;
 
 public class SimBoardOcto extends SimBoard{
 
-    private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, q5Dimens, q6Dimens, q7Dimens, q8Dimens, travelDimens;
-    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
-    private int numPeople;
-    private boolean asymptomatic, isSocialDistancing;
-    private int socialDistanceValue;
     private int Xshift = 30, Yshift = 10;
 
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
-        this.dimens = dimens;
-        this.socialDistanceValue = socialDistanceValue;
-        this.travelDimens = dimens;
-        this.numPeople = numPeople;
+        super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
+            minPreExistingConditions, maxPreExistingConditions);
+       // this.dimens = dimens;
+
+
+      //  this.socialDistanceValue = socialDistanceValue;
+       // this.travelDimens = dimens;
+       // this.numPeople = numPeople;
         updateAllDimens(dimens);
 
-        pList = new ArrayList<>();
-        pListQ1 = new ArrayList<>();
-        pListQ2 = new ArrayList<>();
-        pListQ3 = new ArrayList<>();
-        pListQ4 = new ArrayList<>();
-        pListQ5 = new ArrayList<>();
-        pListQ6 = new ArrayList<>();
-        pListQ7 = new ArrayList<>();
-        pListQ8 = new ArrayList<>();
-        pListTravel = new ArrayList<>();
+      //  pList = new ArrayList<>();
+       // pListQ1 = new ArrayList<>();
+      //  pListQ2 = new ArrayList<>();
+      //  pListQ3 = new ArrayList<>();
+      //  pListQ4 = new ArrayList<>();
+     //   pListQ5 = new ArrayList<>();
+      //  pListQ6 = new ArrayList<>();
+       // pListQ7 = new ArrayList<>();
+       // pListQ8 = new ArrayList<>();
+       // listPList.add(pList);
+      //  listPList.add(pListQ1);
+      //  listPList.add(pListQ2);
+       // listPList.add(pListQ3);
+      //  listPList.add(pListQ4);
+       // listPList.add(pListQ5);
+//        listPList.add(pListQ7);
+//        listPList.add(pListTravel);
 
+
+    }
+
+    public void constructDimensList()
+    {
+        getDimensList().add(dimens);
+        getDimensList().add(q1Dimens);
+        getDimensList().add(q2Dimens);
+        getDimensList().add(q3Dimens);
+        getDimensList().add(q4Dimens);
+        getDimensList().add(q5Dimens);
+        getDimensList().add(q6Dimens);
+        getDimensList().add(q7Dimens);
+        getDimensList().add(q8Dimens);
+        getDimensList().add(travelDimens);
+
+
+    }
+
+    public void constructListPList()
+    {
         int travelers = (int)(numPeople*travelersPer);
 
         int k = 0;
         for(int i = 0; i < numPeople - travelers; i++) {
 
-            if(Math.random() < asymptomaticChance)
+            if(Math.random() < getas)
                 asymptomatic = true;
             else
                 asymptomatic = false;
@@ -183,7 +210,7 @@ public class SimBoardOcto extends SimBoard{
             pList.add(pListTravel.get(i));
     }
 
-    public void updateAllDimens(Rectangle updatedRect)
+    public void updateAllDimens(Rectangle updatedRect) //TODO make part of SimBoard
     {
         dimens = updatedRect;
 
@@ -425,250 +452,17 @@ public class SimBoardOcto extends SimBoard{
         }
     }
 
+    public void updateListPList()
+    {
+        for(int i = 1; i < getListPList().size(); i++)
+        {
+            updatePList(getListPList().get(i), getListPList().get(0));
+        }
+    }
+
     /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
-    public void updatePList()
-    {
-        for(int i = 0; i < pListQ1.size(); i++)
-        {
-            boolean isHealthy = pListQ1.get(i).getIsHealthy();
-            pListQ1.get(i).checkCondition();
-            if(!pListQ1.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ1.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ1.get(i).move();
-            if(!pListQ1.get(i).getHasDisease() && !pListQ1.get(i).getIsHealthy())
-            {
-                pListQ1.remove(pListQ1.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ2.size(); i++)
-        {
-            boolean isHealthy = pListQ2.get(i).getIsHealthy();
-            pListQ2.get(i).checkCondition();
-            if(!pListQ2.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ2.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ2.get(i).move();
-            if(!pListQ2.get(i).getHasDisease() && !pListQ2.get(i).getIsHealthy())
-            {
-                pListQ2.remove(pListQ2.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ3.size(); i++)
-        {
-            boolean isHealthy = pListQ3.get(i).getIsHealthy();
-            pListQ3.get(i).checkCondition();
-            if(!pListQ3.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ3.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ3.get(i).move();
-            if(!pListQ3.get(i).getHasDisease() && !pListQ3.get(i).getIsHealthy())
-            {
-                pListQ3.remove(pListQ3.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ4.size(); i++)
-        {
-            boolean isHealthy = pListQ4.get(i).getIsHealthy();
-            pListQ4.get(i).checkCondition();
-            if(!pListQ4.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ4.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ4.get(i).move();
-            if(!pListQ4.get(i).getHasDisease() && !pListQ4.get(i).getIsHealthy())
-            {
-                pListQ4.remove(pListQ4.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ5.size(); i++)
-        {
-            boolean isHealthy = pListQ5.get(i).getIsHealthy();
-            pListQ5.get(i).checkCondition();
-            if(!pListQ5.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ5.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ5.get(i).move();
-            if(!pListQ5.get(i).getHasDisease() && !pListQ5.get(i).getIsHealthy())
-            {
-                pListQ5.remove(pListQ5.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ6.size(); i++)
-        {
-            boolean isHealthy = pListQ6.get(i).getIsHealthy();
-            pListQ6.get(i).checkCondition();
-            if(!pListQ6.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ6.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ6.get(i).move();
-            if(!pListQ6.get(i).getHasDisease() && !pListQ6.get(i).getIsHealthy())
-            {
-                pListQ6.remove(pListQ6.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ7.size(); i++)
-        {
-            boolean isHealthy = pListQ7.get(i).getIsHealthy();
-            pListQ7.get(i).checkCondition();
-            if(!pListQ7.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ7.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ7.get(i).move();
-            if(!pListQ7.get(i).getHasDisease() && !pListQ7.get(i).getIsHealthy())
-            {
-                pListQ7.remove(pListQ7.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListQ8.size(); i++)
-        {
-            boolean isHealthy = pListQ8.get(i).getIsHealthy();
-            pListQ8.get(i).checkCondition();
-            if(!pListQ8.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQ8.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQ8.get(i).move();
-            if(!pListQ8.get(i).getHasDisease() && !pListQ8.get(i).getIsHealthy())
-            {
-                pListQ8.remove(pListQ8.get(i));
-                numPeople--;
-            }
-        }
-        for(int i = 0; i < pListTravel.size(); i++)
-        {
-            boolean isHealthy = pListTravel.get(i).getIsHealthy();
-            pListTravel.get(i).checkCondition();
-            if(!pListTravel.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListTravel.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListTravel.get(i).move();
-            if(!pListTravel.get(i).getHasDisease() && !pListTravel.get(i).getIsHealthy())
-            {
-                pListTravel.remove(pListTravel.get(i));
-                numPeople--;
-            }
-        }
-    }
 
-    public ArrayList<Person> getPList() {
-        return pList;
-    }
 
-    public ArrayList<Person> getPListQ1() {
-        return pListQ1;
-    }
 
-    public ArrayList<Person> getPListQ2() {
-        return pListQ2;
-    }
 
-    public ArrayList<Person> getPListQ3() {
-        return pListQ3;
-    }
-
-    public ArrayList<Person> getPListQ4() {
-        return pListQ4;
-    }
-
-    public ArrayList<Person> getPListQ5() {
-        return pListQ5;
-    }
-
-    public ArrayList<Person> getPListQ6() {
-        return pListQ6;
-    }
-
-    public ArrayList<Person> getPListQ7() {
-        return pListQ7;
-    }
-
-    public ArrayList<Person> getPListQ8() {
-        return pListQ8;
-    }
-
-    public ArrayList<Person> getPListTravel() {
-        return pListTravel;
-    }
-
-    public Rectangle getDimens() {
-        return dimens;
-    }
-
-    public Rectangle getQ1Dimens() {
-        return q1Dimens;
-    }
-
-    public Rectangle getQ2Dimens() {
-        return q2Dimens;
-    }
-
-    public Rectangle getQ3Dimens() {
-        return q3Dimens;
-    }
-
-    public Rectangle getQ4Dimens() {
-        return q4Dimens;
-    }
-
-    public Rectangle getQ5Dimens() {
-        return q5Dimens;
-    }
-
-    public Rectangle getQ6Dimens() {
-        return q6Dimens;
-    }
-
-    public Rectangle getQ7Dimens() {
-        return q7Dimens;
-    }
-
-    public Rectangle getQ8Dimens() {
-        return q8Dimens;
-    }
-
-    public Rectangle getTravelDimens() {
-        return travelDimens;
-    }
-
-    public void setQ1Dimens(Rectangle rect) {
-        q1Dimens = rect;
-    }
-
-    public void setQ2Dimens(Rectangle rect) {
-        q2Dimens = rect;
-    }
-
-    public void setQ3Dimens(Rectangle rect) {
-        q3Dimens = rect;
-    }
-
-    public void setQ4Dimens(Rectangle rect) {
-        q4Dimens = rect;
-    }
-
-    public void setQ5Dimens(Rectangle rect) {
-        q5Dimens = rect;
-    }
-
-    public void setQ6Dimens(Rectangle rect) {
-        q6Dimens = rect;
-    }
-
-    public void setQ7Dimens(Rectangle rect) {
-        q7Dimens = rect;
-    }
-
-    public void setQ8Dimens(Rectangle rect) {
-        q8Dimens = rect;
-    }
-
-    public void setTravelDimens(Rectangle rect) {
-        travelDimens = rect;
-    }
-
-    public int getNumPeople() {
-        return numPeople;
-    }
-
-    public int getSocialDistanceValue()
-    {
-        return socialDistanceValue;
-    }
 }

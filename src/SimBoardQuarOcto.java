@@ -149,6 +149,7 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
         }
     }
 
+
     @Override
     public void drawQuarLine(Graphics2D g2D) {
 

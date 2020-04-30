@@ -58,6 +58,8 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
     }
 
 
+
+
     @Override
     public void drawQuarLine(Graphics2D g2D) {
 
