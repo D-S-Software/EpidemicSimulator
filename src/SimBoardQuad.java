@@ -4,12 +4,15 @@ import java.util.ArrayList;
 public class SimBoardQuad extends SimBoard {
 
     private boolean asymptomatic, isSocialDistancing;
+    private int travelers;
 
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
 
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
                 minPreExistingConditions, maxPreExistingConditions);
+
+        travelers = (int)(travelersPer * numPeople);
     }
 
     public void constructDimensList()
@@ -24,7 +27,6 @@ public class SimBoardQuad extends SimBoard {
 
     public void constructListPList() {
 
-        int travelers = (int)(getNumPeople()*getTravelersPer());
 
         int k = 0;
         for (int i = 0; i < getNumPeople() - travelers; i++) {
@@ -115,6 +117,8 @@ public class SimBoardQuad extends SimBoard {
 
             getPListTravel().add(new Person(personalAge, personalConditions, xPos, yPos, getTravelDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing));
         }
+
+        System.out.println(getPListQ1().size());
         for(int i = 0; i < getPListQ1().size(); i++)
             getPList().add(getPListQ1().get(i));
         for(int i = 0; i < getPListQ2().size(); i++)

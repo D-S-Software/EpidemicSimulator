@@ -434,8 +434,6 @@ public abstract class SimBoard {
         this.disease = disease;
     }
 
-    public void setTravelersPer(double travelersPer) {
-        this.travelersPer = travelersPer;
-    }
+
 
 }
