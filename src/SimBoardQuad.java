@@ -15,126 +15,135 @@ public class SimBoardQuad extends SimBoard {
         updateAllDimens(dimens);
     }
 
-    public void constructDimensList() {
-        getDimensList().add(dimens);
-        getDimensList().add(q1Dimens);
-        getDimensList().add(q2Dimens);
-        getDimensList().add(q3Dimens);
-        getDimensList().add(q4Dimens);
-        getDimensList().add(travelDimens);
-
+    public void constructDimensList()
+    {
+        getDimensList().add(getDimens());
+        getDimensList().add(getQ1Dimens());
+        getDimensList().add(getQ2Dimens());
+        getDimensList().add(getQ3Dimens());
+        getDimensList().add(getQ4Dimens());
+        getDimensList().add(getTravelDimens()); //takes place as travel dimens to make things line up. MAYBE getDimens()
     }
 
-    public void constructListPList() {
-        int k = 0;
-        for (int i = 0; i < numPeople - travelers; i++) {
 
-            if (Math.random() < asymptomaticChance)
+    public void constructListPList() {
+
+        int travelers = (int)(getNumPeople()*getTravelersPer());
+
+        int k = 0;
+        for (int i = 0; i < getNumPeople() - travelers; i++) {
+
+            if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else
                 asymptomatic = false;
 
-            if (Math.random() < socialDistanceChance)
+            if(Math.random() < getSocialDistanceChance())
                 isSocialDistancing = true;
             else
                 isSocialDistancing = false;
 
-            int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
-            int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
 
-            int xPos1 = q1Dimens.x + (int) (q1Dimens.width * Math.random());
-            int yPos1 = q1Dimens.y + (int) (q1Dimens.height * Math.random());
-
-            int xPos2 = q2Dimens.x + (int) (q2Dimens.width * Math.random());
-            int yPos2 = q2Dimens.y + (int) (q2Dimens.height * Math.random());
-
-            int xPos3 = q3Dimens.x + (int) (q3Dimens.width * Math.random());
-            int yPos3 = q3Dimens.y + (int) (q3Dimens.height * Math.random());
-
-            int xPos4 = q4Dimens.x + (int) (q4Dimens.width * Math.random());
-            int yPos4 = q4Dimens.y + (int) (q4Dimens.height * Math.random());
+            int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
+            int personalConditions = (int) (getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions()) * Math.random());
 
 
-            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad, asymptomatic, isSocialDistancing);
+            int xPos1 = getQ1Dimens().x + (int) (getQ1Dimens().width * Math.random());
+            int yPos1 = getQ1Dimens().y + (int) (getQ1Dimens().height * Math.random());
+
+            int xPos2 = getQ2Dimens().x + (int) (getQ2Dimens().width * Math.random());
+            int yPos2 = getQ2Dimens().y + (int) (getQ2Dimens().height * Math.random());
+
+            int xPos3 = getQ3Dimens().x + (int) (getQ3Dimens().width * Math.random());
+            int yPos3 = getQ3Dimens().y + (int) (getQ3Dimens().height * Math.random());
+
+            int xPos4 = getQ4Dimens().x + (int) (getQ4Dimens().width * Math.random());
+            int yPos4 = getQ4Dimens().y + (int) (getQ4Dimens().height * Math.random());
+
+
+            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, getDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing);
 
             k++;
-            if (k == 1) {
-                person.setDimens(q1Dimens);
+            if(k == 1)
+            {
+                person.setDimens(getQ1Dimens());
                 person.setxPos(xPos1);
                 person.setyPos(yPos1);
                 person.setQuadLocation(1);
-                pListQ1.add(person);
+                getPListQ1().add(person);
             }
-            if (k == 2) {
-                person.setDimens(q2Dimens);
+            if(k == 2)
+            {
+                person.setDimens(getQ2Dimens());
                 person.setxPos(xPos2);
                 person.setyPos(yPos2);
                 person.setQuadLocation(2);
-                pListQ2.add(person);
+                getPListQ2().add(person);
             }
-            if (k == 3) {
-                person.setDimens(q3Dimens);
+            if(k == 3)
+            {
+                person.setDimens(getQ3Dimens());
                 person.setxPos(xPos3);
                 person.setyPos(yPos3);
                 person.setQuadLocation(3);
-                pListQ3.add(person);
+                getPListQ3().add(person);
             }
-            if (k == 4) {
-                person.setDimens(q4Dimens);
+            if(k == 4)
+            {
+                person.setDimens(getQ4Dimens());
                 person.setxPos(xPos4);
                 person.setyPos(yPos4);
                 person.setQuadLocation(4);
-                pListQ4.add(person);
-                k = 0;
+                getPListQ4().add(person);
             }
         }
 
-        for (int i = 0; i < travelers; i++) {
-            if (Math.random() < asymptomaticChance)
+        for(int i = 0; i < travelers; i++)
+        {
+            if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else
                 asymptomatic = false;
 
-            if (Math.random() < socialDistanceChance)
+            if(Math.random() < getSocialDistanceChance())
                 isSocialDistancing = true;
             else
                 isSocialDistancing = false;
 
-            int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
-            int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
-            int xPos = dimens.x + (int) (dimens.width * Math.random());
-            int yPos = dimens.y + (int) (dimens.height * Math.random());
+            int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
+            int personalConditions = (int) (getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions()) * Math.random());
+            int xPos = getDimens().x + (int)(getDimens().width*Math.random());
+            int yPos = getDimens().y + (int)(getDimens().height*Math.random());
 
-            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad, asymptomatic, isSocialDistancing));
+            getPListTravel().add(new Person(personalAge, personalConditions, xPos, yPos, getTravelDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing));
         }
-
-        for (int i = 0; i < pListQ1.size(); i++)
-            pList.add(pListQ1.get(i));
-        for (int i = 0; i < pListQ2.size(); i++)
-            pList.add(pListQ2.get(i));
-        for (int i = 0; i < pListQ3.size(); i++)
-            pList.add(pListQ3.get(i));
-        for (int i = 0; i < pListQ4.size(); i++)
-            pList.add(pListQ4.get(i));
-        for (int i = 0; i < pListTravel.size(); i++)
-            pList.add(pListTravel.get(i));
+        for(int i = 0; i < getPListQ1().size(); i++)
+            getPList().add(getPListQ1().get(i));
+        for(int i = 0; i < getPListQ2().size(); i++)
+            getPList().add(getPListQ2().get(i));
+        for(int i = 0; i < getPListQ3().size(); i++)
+            getPList().add(getPListQ3().get(i));
+        for(int i = 0; i < getPListQ4().size(); i++)
+            getPList().add(getPListQ4().get(i));
+        for(int i = 0; i < getPListTravel().size(); i++)
+            getPList().add(getPListTravel().get(i));
 
     }
 
     public void updateAllDimens(Rectangle updatedRect) {
-        dimens = updatedRect;
+         setDimens(updatedRect);
 
-        int width = (dimens.width - dimens.x) / 2 - circleRad;
-        int height = (dimens.height - dimens.y) / 2 - circleRad;
+        int width = (getDimens().width - getDimens().x) / 2 - circleRad;
+        int height = (getDimens().height - getDimens().y) / 2 - circleRad;
 
-        int newXStart = (dimens.width - dimens.x) / 2 + circleRad;
-        int newYStart = (dimens.height - dimens.y) / 2 + circleRad;
+        int newXStart = (getDimens().width - getDimens().x) / 2 + circleRad;
+        int newYStart = (getDimens().height - getDimens().y) / 2 + circleRad;
 
-        q1Dimens = new Rectangle(dimens.x, dimens.y, width, height);
-        q2Dimens = new Rectangle(newXStart, dimens.y, width, height);
-        q3Dimens = new Rectangle(dimens.x, newYStart, width, height);
-        q4Dimens = new Rectangle(newXStart, newYStart, width, height);
-        travelDimens = dimens;
+        setQ1Dimens( new Rectangle(getDimens().x, getDimens().y, width, height));
+        setQ2Dimens( new Rectangle(newXStart, getDimens().y, width, height));
+        setQ3Dimens( new Rectangle(getDimens().x, newYStart, width, height));
+        setQ4Dimens(new Rectangle(newXStart, newYStart, width, height));
+        setTravelDimens(getDimens());
     }
 
     /**
