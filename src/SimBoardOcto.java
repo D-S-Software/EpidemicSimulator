@@ -5,16 +5,13 @@ public class SimBoardOcto extends SimBoard{
 
     private boolean asymptomatic, isSocialDistancing;
 
-    private int travelers;
-
     private int Xshift = 30, Yshift = 10;
 
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-            minPreExistingConditions, maxPreExistingConditions);
-        travelers = (int)(travelersPer * numPeople);
+            minPreExistingConditions, maxPreExistingConditions, travelersPer);
     }
 
     public void constructDimensList()
@@ -34,9 +31,9 @@ public class SimBoardOcto extends SimBoard{
     public void constructListPList()
     {
 
-        System.out.println(travelers);
+        System.out.println(getTravelers());
         int k = 0;
-        for(int i = 0; i < getNumPeople() - travelers; i++) {
+        for(int i = 0; i < getNumPeople() - getTravelers(); i++) {
 
 
             if(Math.random() < getAsymptomaticChance())
@@ -147,7 +144,7 @@ public class SimBoardOcto extends SimBoard{
             }
         }
 
-        for(int i = 0; i < travelers; i++)
+        for(int i = 0; i < getTravelers(); i++)
         {
             if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;

@@ -12,12 +12,12 @@ public abstract class SimBoard {
     private Disease disease;
 
     private double socialDistanceChance, asymptomaticChance;
-    private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions;
+    private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers;
     public final int circleRad = 8;
 
 
     public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
-                    int minPreExistingConditions, int maxPreExistingConditions)
+                    int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
         this.disease = disease;
         this.numPeople = numPeople;
@@ -28,6 +28,7 @@ public abstract class SimBoard {
         this.maxAge = maxAge;
         this.minPreExistingConditions = minPreExistingConditions;
         this.maxPreExistingConditions = maxPreExistingConditions;
+        this.travelers = (int)(numPeople*travelersPer);
 
         this.dimens = dimens;
         q1Dimens = new Rectangle();
@@ -58,6 +59,7 @@ public abstract class SimBoard {
         listPList = new ArrayList<>();
         constructListPList();
     }
+
 
     public abstract void constructDimensList();
 
@@ -434,6 +436,9 @@ public abstract class SimBoard {
         this.disease = disease;
     }
 
+    public int getTravelers() {
+        return travelers;
+    }
 
 
 }
