@@ -166,21 +166,21 @@ public class SimBoardOcto extends SimBoard{
         }
 
         for(int i = 0; i < getPListQ1().size(); i++)
-            pList.add(getPListQ1().get(i));
+            getPList().add(getPListQ1().get(i));
         for(int i = 0; i < getPListQ2().size(); i++)
-            pList.add(getPListQ2().get(i));
+            getPList().add(getPListQ2().get(i));
         for(int i = 0; i < getPListQ3().size(); i++)
-            pList.add(getPListQ3().get(i));
+            getPList().add(getPListQ3().get(i));
         for(int i = 0; i < getPListQ4().size(); i++)
-            pList.add(getPListQ4().get(i));
+            getPList().add(getPListQ4().get(i));
         for(int i = 0; i < getPListQ5().size(); i++)
-            pList.add(getPListQ5().get(i));
+            getPList().add(getPListQ5().get(i));
         for(int i = 0; i < getPListQ6().size(); i++)
-            pList.add(getPListQ6().get(i));
+            getPList().add(getPListQ6().get(i));
         for(int i = 0; i < getPListQ7().size(); i++)
-            pList.add(getPListQ7().get(i));
+            getPList().add(getPListQ7().get(i));
         for(int i = 0; i < getPListQ8().size(); i++)
-            pList.add(getPListQ8().get(i));
+            getPList().add(getPListQ8().get(i));
         for(int i = 0; i < getPListTravel().size(); i++)
             getPList().add(getPListTravel().get(i));
     }
