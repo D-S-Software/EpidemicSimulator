@@ -38,7 +38,7 @@ public class SimBoardOcto extends SimBoard{
         int k = 0;
         for(int i = 0; i < getNumPeople() - travelers; i++) {
 
-            System.out.println(("ConstructListPList is called"));
+
             if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else

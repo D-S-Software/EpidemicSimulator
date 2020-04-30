@@ -33,6 +33,8 @@ public class SimBoardQuad extends SimBoard {
         int k = 0;
         for (int i = 0; i < getNumPeople() - travelers; i++) {
 
+            
+
             if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else
