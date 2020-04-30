@@ -3,13 +3,7 @@ import java.util.ArrayList;
 
 public class SimBoardMono extends SimBoard{
 
-   //private Rectangle dimens;
-   // ArrayList<Rectangle> dimensList;
-   //private ArrayList<Person> pList;
-  // private ArrayList<ArrayList<Person>> listPList;
     private boolean asymptomatic, isSocialDistancing; //maybe add to super
-   //private int numPeople;
-   //private int socialDistanceValue;
 
     public SimBoardMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
                         int minPreExistingConditions, int maxPreExistingConditions)
@@ -17,23 +11,11 @@ public class SimBoardMono extends SimBoard{
 
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
         minPreExistingConditions, maxPreExistingConditions);
-       // this.dimens = dimens;
-       // dimensList = new ArrayList<>();
-
-
-        //this.socialDistanceValue = socialDistanceValue;
-        //this.numPeople = numPeople;
-
-       // pList = new ArrayList<>();
-       // listPList = new ArrayList<>();
-        //listPList.add(pList);
-
     }
 
     public void constructDimensList()
     {
         getDimensList().add(getDimens());
-
     }
 
     public void constructListPList()
@@ -59,8 +41,6 @@ public class SimBoardMono extends SimBoard{
         getListPList().add(getPList());
     }
 
-
-
     public void updateAllDimens(Rectangle updatedRect)
     {
         setDimens(updatedRect);
@@ -72,28 +52,7 @@ public class SimBoardMono extends SimBoard{
      */
     public void updateDistanceFromSick()
     {
-        for(int i = 0; i < getPList().size(); i++)
-        {
-            double minDist = Math.sqrt(Math.pow(getDimens().width, 2) + Math.pow(getDimens().height, 2));
-            int closestSickIndex = 0;
-
-            if(!getPList().get(i).getHasDisease())
-                for(int j = 0; j < getPList().size(); j++)
-                    if(i != j && getPList().get(j).getHasDisease() && !getPList().get(j).getIsHealthy())
-                    {
-                        double distTest = Math.sqrt(Math.pow(getPList().get(i).getXPos() - getPList().get(j).getXPos(), 2) + Math.pow(getPList().get(i).getYPos() - getPList().get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
-                            minDist = distTest;
-                            closestSickIndex = j;
-                        }
-                    }
-            Double dist = minDist;
-            if(dist.equals(0))
-                minDist = 0.1;
-            getPList().get(i).setDistanceFromSick(minDist);
-            getPList().get(i).setClosestSickIndex(closestSickIndex);
-        }
+        updateDistanceFromSickIteration(getPList());
     }
 
     /**

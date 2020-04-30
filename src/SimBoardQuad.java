@@ -25,7 +25,6 @@ public class SimBoardQuad extends SimBoard {
         getDimensList().add(getTravelDimens()); //takes place as travel dimens to make things line up. MAYBE getDimens()
     }
 
-
     public void constructListPList() {
 
         int travelers = (int)(getNumPeople()*getTravelersPer());
@@ -166,6 +165,7 @@ public class SimBoardQuad extends SimBoard {
     }
 
     public void updateListPList() {
+
         for (int i = 1; i < getListPList().size(); i++) {
             updatePList(getListPList().get(i));
         }
