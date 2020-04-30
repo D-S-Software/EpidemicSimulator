@@ -3,23 +3,17 @@ import java.util.ArrayList;
 
 public class SimBoardQuad extends SimBoard {
 
-    private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, travelDimens;
-    private ArrayList<Rectangle> dimensList;
-    private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListTravel;
-    private ArrayList<ArrayList<Person>> listPList;
-    private int numPeople;
+
     private boolean asymptomatic, isSocialDistancing;
-    private int socialDistanceValue;
 
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
 
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-                minPreExistingConditions, maxPreExistingConditions);
+                minPreExistingConditions, maxPreExistingConditions,travelersPer);
         //this.dimens = dimens;
 
         // this.socialDistanceValue = socialDistanceValue;
-        this.travelDimens = dimens;
         // this.numPeople = numPeople;
         updateAllDimens(dimens);
 

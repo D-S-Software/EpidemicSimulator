@@ -3,13 +3,15 @@ import java.util.ArrayList;
 
 public class SimBoardOcto extends SimBoard{
 
+    private boolean asymptomatic, isSocialDistancing;
+
     private int Xshift = 30, Yshift = 10;
 
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-            minPreExistingConditions, maxPreExistingConditions);
+            minPreExistingConditions, maxPreExistingConditions, travelersPer);
        // this.dimens = dimens;
 
 
@@ -41,39 +43,37 @@ public class SimBoardOcto extends SimBoard{
 
     public void constructDimensList()
     {
-        getDimensList().add(dimens);
-        getDimensList().add(q1Dimens);
-        getDimensList().add(q2Dimens);
-        getDimensList().add(q3Dimens);
-        getDimensList().add(q4Dimens);
-        getDimensList().add(q5Dimens);
-        getDimensList().add(q6Dimens);
-        getDimensList().add(q7Dimens);
-        getDimensList().add(q8Dimens);
-        getDimensList().add(travelDimens);
-
-
+        getDimensList().add(getDimens());
+        getDimensList().add(getQ1Dimens());
+        getDimensList().add(getQ2Dimens());
+        getDimensList().add(getQ3Dimens());
+        getDimensList().add(getQ4Dimens());
+        getDimensList().add(getQ5Dimens());
+        getDimensList().add(getQ6Dimens());
+        getDimensList().add(getQ7Dimens());
+        getDimensList().add(getQ8Dimens());
+        getDimensList().add(getTravelDimens()); //takes place as travel dimens to make things line up. MAYBE getDimens()
     }
 
     public void constructListPList()
     {
-        int travelers = (int)(numPeople*travelersPer);
+        int travelers = (int)(getNumPeople()*getTravelersPer());
 
         int k = 0;
-        for(int i = 0; i < numPeople - travelers; i++) {
+        for(int i = 0; i < getNumPeople() - travelers; i++) {
 
-            if(Math.random() < getas)
+            if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else
                 asymptomatic = false;
 
-            if(Math.random() < socialDistanceChance)
+            if(Math.random() < getSocialDistanceChance())
                 isSocialDistancing = true;
             else
                 isSocialDistancing = false;
 
-            int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
-            int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
+            int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
+            int personalConditions = (int) (getMinPreExistingConditions() + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
 
             int xPos1 = q1Dimens.x + (int) (q1Dimens.width * Math.random());
             int yPos1 = q1Dimens.y + (int) (q1Dimens.height * Math.random());
