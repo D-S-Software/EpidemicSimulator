@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class SimBoardQuad extends SimBoard {
 
     private boolean asymptomatic, isSocialDistancing;
+    private int xShift = 30, yShift = 10;
 
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
@@ -57,7 +58,7 @@ public class SimBoardQuad extends SimBoard {
             int yPos4 = getQ4Dimens().y + (int) (getQ4Dimens().height * Math.random());
 
 
-            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, getDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing);
+            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, getDimens(), getDisease(), asymptomatic, isSocialDistancing);
 
             k++;
             if(k == 1)
@@ -112,7 +113,7 @@ public class SimBoardQuad extends SimBoard {
             int xPos = getDimens().x + (int)(getDimens().width*Math.random());
             int yPos = getDimens().y + (int)(getDimens().height*Math.random());
 
-            getPListTravel().add(new Person(personalAge, personalConditions, xPos, yPos, getTravelDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing));
+            getPListTravel().add(new Person(personalAge, personalConditions, xPos, yPos, getTravelDimens(), getDisease(), asymptomatic, isSocialDistancing));
         }
 
         System.out.println(getPListQ1().size());
@@ -139,16 +140,16 @@ public class SimBoardQuad extends SimBoard {
 
         setDimens(updatedRect);
 
-        int width = (getDimens().width - getDimens().x) / 2 - circleRad;
-        int height = (getDimens().height - getDimens().y) / 2 - circleRad;
+        int width = getDimens().width / 2 - xShift;
+        int height = getDimens().height / 2 - yShift;
 
-        int newXStart = (getDimens().width - getDimens().x) / 2 + circleRad;
-        int newYStart = (getDimens().height - getDimens().y) / 2 + circleRad;
+        int xS2tart = getDimens().x + width + xShift;
+        int y2Start = getDimens().y + height + yShift;
 
         setQ1Dimens( new Rectangle(getDimens().x, getDimens().y, width, height));
-        setQ2Dimens( new Rectangle(newXStart, getDimens().y, width, height));
-        setQ3Dimens( new Rectangle(getDimens().x, newYStart, width, height));
-        setQ4Dimens(new Rectangle(newXStart, newYStart, width, height));
+        setQ2Dimens( new Rectangle(xS2tart, getDimens().y, width, height));
+        setQ3Dimens( new Rectangle(getDimens().x, y2Start, width, height));
+        setQ4Dimens(new Rectangle(xS2tart, y2Start, width, height));
         setTravelDimens(getDimens());
     }
 

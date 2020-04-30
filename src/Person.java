@@ -5,20 +5,20 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, maxTimeSick, circleRad, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
+    private int xPos, yPos, dx, dy, maxTimeSick, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
     private double directionAngle, distanceFromSick, mortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02;
     private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic;
     private Rectangle dimens;
     private Disease disease;
+    private final int circleRad = 8;
 
-    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, int circleRad, boolean asymptomatic, boolean isSocialDistancing)
+    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
         this.asymptomatic = asymptomatic;
         this.isSocialDistancing = isSocialDistancing;
         isSocialDistancingSaved = isSocialDistancing;
-        this.circleRad = circleRad;
         this.xPos = xPos;
         this.yPos = yPos;
         maxTimeSick = disease.getBaseMaxTimeSick() + 100 * (int)(age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */

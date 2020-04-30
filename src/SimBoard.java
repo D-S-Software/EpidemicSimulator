@@ -13,7 +13,6 @@ public abstract class SimBoard {
 
     private double socialDistanceChance, asymptomaticChance;
     private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers;
-    public final int circleRad = 8;
 
 
     public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,

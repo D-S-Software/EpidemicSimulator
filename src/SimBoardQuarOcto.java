@@ -77,7 +77,7 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
         x4Origin = dimens.x + 3* width + 3* xShift;
 
         quarXOrigin = x4Origin + width + xShift;
-        quarWidth = dimens.width - 4* width - 4* xShift - circleRad;
+        quarWidth = dimens.width - 4* width - 4* xShift;
 
         quarantine = new Rectangle(quarXOrigin, dimens.y, quarWidth, dimens.height);
 

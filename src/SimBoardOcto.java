@@ -74,7 +74,7 @@ public class SimBoardOcto extends SimBoard{
             int yPos8 = getQ8Dimens().y + (int) (getQ8Dimens().height * Math.random());
 
 
-            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, getDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing);
+            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, getDimens(), getDisease(), asymptomatic, isSocialDistancing);
 
             k++;
             if(k == 1)
@@ -161,7 +161,7 @@ public class SimBoardOcto extends SimBoard{
             int xPos = getDimens().x + (int)(getDimens().width*Math.random());
             int yPos = getDimens().y + (int)(getDimens().height*Math.random());
 
-            getPListTravel().add(new Person(personalAge, personalConditions, xPos, yPos, getTravelDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing));
+            getPListTravel().add(new Person(personalAge, personalConditions, xPos, yPos, getTravelDimens(), getDisease(), asymptomatic, isSocialDistancing));
         }
 
         for(int i = 0; i < getPListQ1().size(); i++)
@@ -202,16 +202,16 @@ public class SimBoardOcto extends SimBoard{
     {
         setDimens(updatedRect);
 
-        int width = (getDimens().width / 4) - Xshift;
+        int width = (getDimens().width / 4) - 4*Xshift;
         int height = (getDimens().height / 2) - Yshift;
 
         int q1xStart = getDimens().x;
         int q1yStart = getDimens().y;
-        int q2xStart = getDimens().x + width + Xshift;
+        int q2xStart = getDimens().x + width + 4*Xshift;
         int q2yStart = getDimens().y;
-        int q3xStart = getDimens().x + 2*width + 2*Xshift;
+        int q3xStart = getDimens().x + 2*width + 8*Xshift;
         int q3yStart = getDimens().y;
-        int q4xStart = getDimens().x + 3*width + 3*Xshift;
+        int q4xStart = getDimens().x + 3*width + 12*Xshift;
         int q4yStart = getDimens().y;
         int q5xStart = q1xStart;
         int q5yStart = height + 2*Yshift;

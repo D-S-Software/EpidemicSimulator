@@ -35,8 +35,10 @@ public class SimBoardMono extends SimBoard{
             else
                 isSocialDistancing = false;
 
-            getPList().add(new Person((int)(getMinAge() + (getMaxAge() - getMinAge())*Math.random()),
-                    (int)(getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions())*Math.random()), xPos, yPos, getDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing));
+            int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
+            int personalConditions = (int) (getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions()) * Math.random());
+
+            getPList().add(new Person(personalAge, personalConditions, xPos, yPos, getDimens(), getDisease(), asymptomatic, isSocialDistancing));
         }
         getListPList().add(getPList());
     }
@@ -65,11 +67,9 @@ public class SimBoardMono extends SimBoard{
 
     public void drawListPList(Graphics2D g2D)
     {
-
-        for(int i = 0; i < getListPList().size(); i++) //
+        for(int i = 0; i < getListPList().size(); i++)
         {
-            drawPList(getListPList().get(i), i, g2D); //i
+            drawPList(getListPList().get(i), i, g2D);
         }
     }
-
 }

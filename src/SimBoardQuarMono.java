@@ -31,8 +31,8 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
     {
         dimens = new Rectangle(updatedRect.x, updatedRect.y, updatedRect.width - shift, updatedRect.height);
 
-        quarXOrigin = dimens.width + dimens.x + 2*circleRad;
-        quarWidth = shift - 2*circleRad;
+        quarXOrigin = dimens.width + dimens.x + shift;
+        quarWidth = 2*shift;
         quarantine = new Rectangle(quarXOrigin, dimens.y, quarWidth, dimens.height);
     }
 
@@ -56,10 +56,7 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
             }
         }
     }
-
-
-
-
+    
     @Override
     public void drawQuarLine(Graphics2D g2D) {
 

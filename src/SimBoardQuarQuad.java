@@ -50,14 +50,14 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
     {
         dimens = updatedRect;
 
-        width = (dimens.width - dimens.x) / 2 - circleRad - shift;
-        height = (dimens.height - dimens.y) / 2 - circleRad;
+        width = (dimens.width - dimens.x) / 2 - shift;
+        height = (dimens.height - dimens.y) / 2;
 
-        x2Start = (dimens.width - dimens.x) / 2 + circleRad - shift;
-        y2Origin = (dimens.height - dimens.y) / 2 + circleRad;
+        x2Start = (dimens.width - dimens.x) / 2 - shift;
+        y2Origin = (dimens.height - dimens.y) / 2;
 
         quarXOrigin = x2Start + width - shift/2;
-        quarWidth = 2*shift + 4*circleRad;
+        quarWidth = 3*shift;
 
         quarantine = new Rectangle(quarXOrigin, dimens.y, quarWidth, dimens.height);
 
