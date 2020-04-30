@@ -5,35 +5,27 @@ import java.beans.Customizer;
 
 public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
 
-    private Rectangle dimens, quarantine;
+    private Rectangle quarantine;
     private int timeUntilIsolate;
     private int quarXOrigin, quarWidth;
     private double quarantineChance;
-    private int shift = 200;
+    private int shift = 300;
 
     public SimBoardQuarMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                             int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, int timeUntilIsolate, double quarantineChance)
     {
         super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
-        this.dimens = dimens;
         this.timeUntilIsolate = timeUntilIsolate;
         this.quarantineChance = quarantineChance;
-        updateAllDimens(dimens);
-
-        for(int i = 0; i < getPList().size(); i++)
-        {
-            getPList().get(i).resetDimens(this.dimens);
-        }
     }
 
     @Override
     public void updateAllDimens(Rectangle updatedRect)
     {
-        dimens = new Rectangle(updatedRect.x, updatedRect.y, updatedRect.width - shift, updatedRect.height);
-
-        quarXOrigin = dimens.width + dimens.x + shift;
-        quarWidth = 2*shift;
-        quarantine = new Rectangle(quarXOrigin, dimens.y, quarWidth, dimens.height);
+        setDimens(new Rectangle(updatedRect.x, updatedRect.y, updatedRect.width - 2*shift, updatedRect.height));
+        quarXOrigin = getDimens().width + getDimens().x + shift;
+        quarWidth = shift;
+        quarantine = new Rectangle(quarXOrigin, getDimens().y, quarWidth, getDimens().height);
     }
 
     public void quarantineCheck()
@@ -56,28 +48,22 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
             }
         }
     }
-    
+
     @Override
     public void drawQuarLine(Graphics2D g2D) {
 
         int segmentWidth = 4;
         int xBuffer = 12;
-        int segmentLen = dimens.height/15;
+        int segmentLen = getDimens().height/15;
 
         g2D.setColor(CustomColor.EERIE_BLACK);
 
         for(int i = 0; i < 17; i++)
         {
             if(i%2 == 0)
-                g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen );
+                g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen);
         }
 
-    }
-
-    @Override
-    public Rectangle getDimens()
-    {
-        return dimens;
     }
 
     public Rectangle getQuarantine()

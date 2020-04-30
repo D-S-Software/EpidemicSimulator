@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
 
-    private Rectangle dimens, quarantine;
+    private Rectangle quarantine;
     private int timeUntilIsolate;
     private int width, height, x2Origin, y2Origin, x3Origin, x4Origin, quarXOrigin, quarWidth;
     private double quarantineChance;
@@ -14,7 +14,6 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
                             int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, int timeUntilIsolate, double quarantineChance)
     {
         super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer);
-        this.dimens = dimens;
         this.timeUntilIsolate = timeUntilIsolate;
         this.quarantineChance = quarantineChance;
 
@@ -64,33 +63,33 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
     @Override
     public void updateAllDimens(Rectangle updatedRect)
     {
-        dimens = updatedRect;
+        setDimens(updatedRect);
 
-        width = (dimens.width - dimens.x) / 4 - 2* xShift;
-        height = (dimens.height - dimens.y) / 2 - yShift;
+        width = getDimens().width / 4 - xShift;
+        height = getDimens().height / 2 - yShift;
 
-        x2Origin = dimens.x + width + xShift;
-        y2Origin = (dimens.height - dimens.y) / 2 + yShift;
+        x2Origin = getDimens().x + width + xShift;
+        y2Origin = height + 2*yShift;
 
-        x3Origin = dimens.x + 2* width + 2* xShift;
+        x3Origin = getDimens().x + 2* width + 2* xShift;
 
-        x4Origin = dimens.x + 3* width + 3* xShift;
+        x4Origin = getDimens().x + 3* width + 3* xShift;
 
         quarXOrigin = x4Origin + width + xShift;
-        quarWidth = dimens.width - 4* width - 4* xShift;
+        quarWidth = getDimens().width - 4* width - 4* xShift;
 
-        quarantine = new Rectangle(quarXOrigin, dimens.y, quarWidth, dimens.height);
+        quarantine = new Rectangle(quarXOrigin, getDimens().y, quarWidth, getDimens().height);
 
-        setQ1Dimens(new Rectangle(dimens.x, dimens.y, width, height));
-        setQ2Dimens(new Rectangle(x2Origin, dimens.y, width, height));
-        setQ3Dimens(new Rectangle(x3Origin, dimens.y, width, height));
-        setQ4Dimens(new Rectangle(x4Origin, dimens.y, width, height));
-        setQ5Dimens(new Rectangle(dimens.x, y2Origin, width, height));
+        setQ1Dimens(new Rectangle(getDimens().x, getDimens().y, width, height));
+        setQ2Dimens(new Rectangle(x2Origin, getDimens().y, width, height));
+        setQ3Dimens(new Rectangle(x3Origin, getDimens().y, width, height));
+        setQ4Dimens(new Rectangle(x4Origin, getDimens().y, width, height));
+        setQ5Dimens(new Rectangle(getDimens().x, y2Origin, width, height));
         setQ6Dimens(new Rectangle(x2Origin, y2Origin, width, height));
         setQ7Dimens(new Rectangle(x3Origin, y2Origin, width, height));
         setQ8Dimens(new Rectangle(x4Origin, y2Origin, width, height));
 
-        setTravelDimens(new Rectangle(dimens.x, dimens.y, dimens.x + x4Origin + width, dimens.height));
+        setTravelDimens(new Rectangle(getDimens().x, getDimens().y, getDimens().x + x4Origin + width, getDimens().height));
     }
 
     public void quarantineCheck()
@@ -155,7 +154,7 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
 
         int segmentWidth = 4;
         int xBuffer = 12;
-        int segmentLen = dimens.height/15;
+        int segmentLen = getDimens().height/15;
 
         g2D.setColor(CustomColor.EERIE_BLACK);
 
@@ -166,7 +165,6 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
         }
 
     }
-
 
     public Rectangle getQuarantine()
     {

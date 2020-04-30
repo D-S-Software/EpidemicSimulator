@@ -9,7 +9,7 @@ public class SimBoardMono extends SimBoard{
                         int minPreExistingConditions, int maxPreExistingConditions)
     {
 
-        super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
+        super(disease, dimens,  numPeople, asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
         minPreExistingConditions, maxPreExistingConditions, 0 );
     }
 
