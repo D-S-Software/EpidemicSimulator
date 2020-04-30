@@ -3,16 +3,7 @@ import java.util.ArrayList;
 
 public abstract class SimBoard {
 
-    private Rectangle dimens;
-    private Rectangle q1Dimens;
-    private Rectangle q2Dimens;
-    private Rectangle q3Dimens;
-    private Rectangle q4Dimens;
-    private Rectangle q5Dimens;
-    private Rectangle q6Dimens;
-    private Rectangle q7Dimens;
-    private Rectangle q8Dimens;
-    private Rectangle travelDimens;
+    private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, q5Dimens, q6Dimens, q7Dimens, q8Dimens, travelDimens;
     private ArrayList<Rectangle> dimensList;
 
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
@@ -20,15 +11,10 @@ public abstract class SimBoard {
 
     private Disease disease;
 
-    private double socialDistanceChance;
-    private int numPeople;
-    private int socialDistanceValue;
-    private double asymptomaticChance;
-    private int minAge, maxAge, minPreExistingConditions, maxPreExistingConditions;
-
-    private double travelersPer;
-
+    private double socialDistanceChance, asymptomaticChance, travelersPer;
+    private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions;
     public final int circleRad = 8;
+
 
     public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
                     int minPreExistingConditions, int maxPreExistingConditions)
@@ -90,8 +76,6 @@ public abstract class SimBoard {
     public abstract void constructListPList();
 
     public abstract void updateListPList();
-
-   // public ArrayList<Person> constructPList()
 
     public abstract void updateDistanceFromSick();
 
@@ -214,8 +198,6 @@ public abstract class SimBoard {
 
     }
 
-
-    //TODO get rid of all pList getter methods as we have an arrayList for them
     public ArrayList<Person> getPList()
     {
         return pList;
