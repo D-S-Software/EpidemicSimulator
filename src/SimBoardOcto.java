@@ -75,7 +75,7 @@ public class SimBoardOcto extends SimBoard{
             int yPos8 = getQ8Dimens().y + (int) (getQ8Dimens().height * Math.random());
 
 
-            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad, asymptomatic, isSocialDistancing);
+            Person person = new Person(personalAge, personalConditions, xPos1, yPos1, getDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing);
 
             k++;
             if(k == 1)
