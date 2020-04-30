@@ -75,7 +75,7 @@ public class SimBoardOcto extends SimBoard{
             int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
             int personalConditions = (int) (getMinPreExistingConditions() + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
 
-            int xPos1 = q1Dimens.x + (int) (q1Dimens.width * Math.random());
+            int xPos1 = getQ1Dimens().x + (int) (q1Dimens.width * Math.random());
             int yPos1 = q1Dimens.y + (int) (q1Dimens.height * Math.random());
 
             int xPos2 = q2Dimens.x + (int) (q2Dimens.width * Math.random());
@@ -145,86 +145,86 @@ public class SimBoardOcto extends SimBoard{
             }
             if(k == 6)
             {
-                person.setDimens(q6Dimens);
+                person.setDimens(getQ6Dimens());
                 person.setxPos(xPos6);
                 person.setyPos(yPos6);
                 person.setQuadLocation(6);
-                pListQ6.add(person);
+                getPListQ6().add(person);
             }
             if(k == 7)
             {
-                person.setDimens(q7Dimens);
+                person.setDimens(getQ7Dimens());
                 person.setxPos(xPos7);
                 person.setyPos(yPos7);
                 person.setQuadLocation(7);
-                pListQ7.add(person);
+                getPListQ7().add(person);
             }
             if(k == 8)
             {
-                person.setDimens(q8Dimens);
+                person.setDimens(getQ8Dimens());
                 person.setxPos(xPos8);
                 person.setyPos(yPos8);
                 person.setQuadLocation(8);
-                pListQ8.add(person);
+                getPListQ8().add(person);
                 k = 0;
             }
         }
 
         for(int i = 0; i < travelers; i++)
         {
-            if(Math.random() < asymptomaticChance)
+            if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else
                 asymptomatic = false;
 
-            if(Math.random() < socialDistanceChance)
+            if(Math.random() < getSocialDistanceChance())
                 isSocialDistancing = true;
             else
                 isSocialDistancing = false;
 
-            int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
-            int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
-            int xPos = dimens.x + (int)(dimens.width*Math.random());
-            int yPos = dimens.y + (int)(dimens.height*Math.random());
+            int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
+            int personalConditions = (int) (getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions()) * Math.random());
+            int xPos = getDimens().x + (int)(getDimens().width*Math.random());
+            int yPos = getDimens().y + (int)(getDimens().height*Math.random());
 
-            pListTravel.add(new Person(personalAge, personalConditions, xPos, yPos, travelDimens, disease, circleRad, asymptomatic, isSocialDistancing));
+            getPListTravel().add(new Person(personalAge, personalConditions, xPos, yPos, getTravelDimens(), getDisease(), circleRad, asymptomatic, isSocialDistancing));
         }
 
-        for(int i = 0; i < pListQ1.size(); i++)
-            pList.add(pListQ1.get(i));
-        for(int i = 0; i < pListQ2.size(); i++)
-            pList.add(pListQ2.get(i));
-        for(int i = 0; i < pListQ3.size(); i++)
-            pList.add(pListQ3.get(i));
-        for(int i = 0; i < pListQ4.size(); i++)
-            pList.add(pListQ4.get(i));
-        for(int i = 0; i < pListQ5.size(); i++)
-            pList.add(pListQ5.get(i));
-        for(int i = 0; i < pListQ6.size(); i++)
-            pList.add(pListQ6.get(i));
-        for(int i = 0; i < pListQ7.size(); i++)
-            pList.add(pListQ7.get(i));
-        for(int i = 0; i < pListQ8.size(); i++)
-            pList.add(pListQ8.get(i));
-        for(int i = 0; i < pListTravel.size(); i++)
-            pList.add(pListTravel.get(i));
+        for(int i = 0; i < getPListQ1().size(); i++)
+            pList.add(getPListQ1().get(i));
+        for(int i = 0; i < getPListQ2().size(); i++)
+            pList.add(getPListQ2().get(i));
+        for(int i = 0; i < getPListQ3().size(); i++)
+            pList.add(getPListQ3().get(i));
+        for(int i = 0; i < getPListQ4().size(); i++)
+            pList.add(getPListQ4().get(i));
+        for(int i = 0; i < getPListQ5().size(); i++)
+            pList.add(getPListQ5().get(i));
+        for(int i = 0; i < getPListQ6().size(); i++)
+            pList.add(getPListQ6().get(i));
+        for(int i = 0; i < getPListQ7().size(); i++)
+            pList.add(getPListQ7().get(i));
+        for(int i = 0; i < getPListQ8().size(); i++)
+            pList.add(getPListQ8().get(i));
+        for(int i = 0; i < getPListTravel().size(); i++)
+            getPList().add(getPListTravel().get(i));
     }
 
-    public void updateAllDimens(Rectangle updatedRect) //TODO make part of SimBoard
+    public void updateAllDimens(Rectangle updatedRect)
     {
-        dimens = updatedRect;
+        setDimens(updatedRect);
 
-        int width = (dimens.width / 4) - Xshift;
-        int height = (dimens.height / 2) - Yshift;
+        int width = (getDimens().width / 4) - Xshift;
+        int height = (getDimens().height / 2) - Yshift;
 
-        int q1xStart = dimens.x;
-        int q1yStart = dimens.y;
-        int q2xStart = dimens.x + width + Xshift;
-        int q2yStart = dimens.y;
-        int q3xStart = dimens.x + 2*width + 2*Xshift;
-        int q3yStart = dimens.y;
-        int q4xStart = dimens.x + 3*width + 3*Xshift;
-        int q4yStart = dimens.y;
+        int q1xStart = getDimens().x;
+        int q1yStart = getDimens().y;
+        int q2xStart = getDimens().x + width + Xshift;
+        int q2yStart = getDimens().y;
+        int q3xStart = getDimens().x + 2*width + 2*Xshift;
+        int q3yStart = getDimens().y;
+        int q4xStart = getDimens().x + 3*width + 3*Xshift;
+        int q4yStart = getDimens().y;
         int q5xStart = q1xStart;
         int q5yStart = height + 2*Yshift;
         int q6xStart = q2xStart;
@@ -234,16 +234,15 @@ public class SimBoardOcto extends SimBoard{
         int q8xStart = q4xStart;
         int q8yStart = height + 2*Yshift;
 
-
-        q1Dimens = new Rectangle(q1xStart, q1yStart, width, height);
-        q2Dimens = new Rectangle(q2xStart, q2yStart, width, height);
-        q3Dimens = new Rectangle(q3xStart, q3yStart, width, height);
-        q4Dimens = new Rectangle(q4xStart, q4yStart, width, height);
-        q5Dimens = new Rectangle(q5xStart, q5yStart, width, height);
-        q6Dimens = new Rectangle(q6xStart, q6yStart, width, height);
-        q7Dimens = new Rectangle(q7xStart, q7yStart, width, height);
-        q8Dimens = new Rectangle(q8xStart, q8yStart, width, height);
-        travelDimens = dimens;
+        setQ1Dimens(new Rectangle(q1xStart, q1yStart, width, height));
+        setQ2Dimens(new Rectangle(q2xStart, q2yStart, width, height));
+        setQ3Dimens(new Rectangle(q3xStart, q3yStart, width, height));
+        setQ4Dimens(new Rectangle(q4xStart, q4yStart, width, height));
+        setQ5Dimens(new Rectangle(q5xStart, q5yStart, width, height));
+        setQ6Dimens(new Rectangle(q6xStart, q6yStart, width, height));
+        setQ7Dimens(new Rectangle(q7xStart, q7yStart, width, height));
+        setQ8Dimens(new Rectangle(q8xStart, q8yStart, width, height));
+        setTravelDimens(getDimens());
     }
 
     /**
