@@ -37,8 +37,6 @@ public class SimBoardOcto extends SimBoard{
        // listPList.add(pListQ5);
 //        listPList.add(pListQ7);
 //        listPList.add(pListTravel);
-
-
     }
 
     public void constructDimensList()
