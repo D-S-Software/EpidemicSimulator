@@ -47,25 +47,25 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
     @Override
     public void updateAllDimens(Rectangle updatedRect)
     {
-        int xShift = 100, yShift = 20;
+        int xShift = 120, yShift = 10;
 
         setDimens(updatedRect);
 
         width = getDimens().width / 2 - xShift;
         height = getDimens().height / 2 - yShift;
 
-        x2Start = getDimens().x + width + xShift;
+        x2Start = getDimens().x + width + xShift / 6;
         y2Origin = getDimens().height / 2 + yShift;
 
-        quarXOrigin = x2Start + width - xShift /2;
-        quarWidth = 3* xShift;
+        quarXOrigin = x2Start + width + xShift / 5;
+        quarWidth = getDimens().width - quarXOrigin;
 
         quarantine = new Rectangle(quarXOrigin, getDimens().y, quarWidth, getDimens().height);
 
         setQ1Dimens(new Rectangle(getDimens().x, getDimens().y, width, height));
-        setQ2Dimens(new Rectangle(x2Start, getDimens().y, width - xShift, height));
+        setQ2Dimens(new Rectangle(x2Start, getDimens().y, width, height));
         setQ3Dimens(new Rectangle(getDimens().x, y2Origin, width, height));
-        setQ4Dimens(new Rectangle(x2Start, y2Origin, width - xShift, height));
+        setQ4Dimens(new Rectangle(x2Start, y2Origin, width, height));
 
         setTravelDimens(new Rectangle(getDimens().x, getDimens().y, getDimens().width - xShift - quarWidth, getDimens().height));
     }

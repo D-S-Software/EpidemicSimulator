@@ -381,7 +381,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
         contagiousPercentLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        contagiousRangeLabel = new JLabel("Contagious Range");
+        contagiousRangeLabel = new JLabel("<html>Contagious Range (1-20)</html>");
         contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
         contagiousRangeLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
@@ -467,6 +467,18 @@ public class ControlPanel extends JPanel implements ActionListener{
                                 || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
                         {
                             JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
+                            disease = null;
+                        }
+                        if(Integer.parseInt(contagiousRange.getText()) > 20 || Integer.parseInt(contagiousRange.getText()) < 1)
+                        {
+                            JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
+                            disease = null;
+                        }
+                        if(Integer.parseInt(contagiousPercent.getText()) < 0 || Integer.parseInt(baseMortalityRate.getText()) < 0
+                                || Integer.parseInt(baseMinTimeSick.getText()) < 0 || Integer.parseInt(baseMaxTimeSick.getText()) < 0
+                                || Integer.parseInt(startPercentHealthy.getText()) < 0)
+                        {
+                            JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
                             disease = null;
                         }
                         else
