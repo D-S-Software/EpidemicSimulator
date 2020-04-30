@@ -128,6 +128,13 @@ public class SimBoardQuad extends SimBoard {
         for(int i = 0; i < getPListTravel().size(); i++)
             getPList().add(getPListTravel().get(i));
 
+        getListPList().add(getPList());
+        getListPList().add(getPListQ1());
+        getListPList().add(getPListQ2());
+        getListPList().add(getPListQ3());
+        getListPList().add(getPListQ4());
+        getListPList().add(getPListTravel());
+
     }
 
     public void updateAllDimens(Rectangle updatedRect) {

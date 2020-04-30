@@ -32,12 +32,13 @@ public class SimBoardOcto extends SimBoard{
 
     public void constructListPList()
     {
-        System.out.println(("ConstructListPList is called"));
+
         int travelers = (int)(getNumPeople()*getTravelersPer());
 
         int k = 0;
         for(int i = 0; i < getNumPeople() - travelers; i++) {
 
+            System.out.println(("ConstructListPList is called"));
             if(Math.random() < getAsymptomaticChance())
                 asymptomatic = true;
             else
@@ -184,6 +185,20 @@ public class SimBoardOcto extends SimBoard{
             getPList().add(getPListQ8().get(i));
         for(int i = 0; i < getPListTravel().size(); i++)
             getPList().add(getPListTravel().get(i));
+
+
+        //assembling ListPList
+        getListPList().add(getPList());
+        getListPList().add(getPListQ1());
+        getListPList().add(getPListQ2());
+        getListPList().add(getPListQ3());
+        getListPList().add(getPListQ4());
+        getListPList().add(getPListQ5());
+        getListPList().add(getPListQ6());
+        getListPList().add(getPListQ7());
+        getListPList().add(getPListQ8());
+        getListPList().add(getPListTravel());
+
     }
 
     public void updateAllDimens(Rectangle updatedRect)
