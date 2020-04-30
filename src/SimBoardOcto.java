@@ -48,31 +48,31 @@ public class SimBoardOcto extends SimBoard{
                 isSocialDistancing = false;
 
             int personalAge = (int) (getMinAge() + (getMaxAge() - getMinAge()) * Math.random());
-            int personalConditions = (int) (getMinPreExistingConditions() + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
+            int personalConditions = (int) (getMinPreExistingConditions() + (getMaxPreExistingConditions() - getMinPreExistingConditions()) * Math.random());
 
-            int xPos1 = getQ1Dimens().x + (int) (q1Dimens.width * Math.random());
-            int yPos1 = q1Dimens.y + (int) (q1Dimens.height * Math.random());
+            int xPos1 = getQ1Dimens().x + (int) (getQ1Dimens().width * Math.random());
+            int yPos1 = getQ1Dimens().y + (int) (getQ1Dimens().height * Math.random());
 
-            int xPos2 = q2Dimens.x + (int) (q2Dimens.width * Math.random());
-            int yPos2 = q2Dimens.y + (int) (q2Dimens.height * Math.random());
+            int xPos2 = getQ2Dimens().x + (int) (getQ2Dimens().width * Math.random());
+            int yPos2 = getQ2Dimens().y + (int) (getQ2Dimens().height * Math.random());
 
-            int xPos3 = q3Dimens.x + (int) (q3Dimens.width * Math.random());
-            int yPos3 = q3Dimens.y + (int) (q3Dimens.height * Math.random());
+            int xPos3 = getQ3Dimens().x + (int) (getQ3Dimens().width * Math.random());
+            int yPos3 = getQ3Dimens().y + (int) (getQ3Dimens().height * Math.random());
 
-            int xPos4 = q4Dimens.x + (int) (q4Dimens.width * Math.random());
-            int yPos4 = q4Dimens.y + (int) (q4Dimens.height * Math.random());
+            int xPos4 = getQ4Dimens().x + (int) (getQ4Dimens().width * Math.random());
+            int yPos4 = getQ4Dimens().y + (int) (getQ4Dimens().height * Math.random());
 
-            int xPos5 = q5Dimens.x + (int) (q5Dimens.width * Math.random());
-            int yPos5 = q5Dimens.y + (int) (q5Dimens.height * Math.random());
+            int xPos5 = getQ5Dimens().x + (int) (getQ5Dimens().width * Math.random());
+            int yPos5 = getQ5Dimens().y + (int) (getQ5Dimens().height * Math.random());
 
-            int xPos6 = q6Dimens.x + (int) (q6Dimens.width * Math.random());
-            int yPos6 = q6Dimens.y + (int) (q6Dimens.height * Math.random());
+            int xPos6 = getQ6Dimens().x + (int) (getQ6Dimens().width * Math.random());
+            int yPos6 = getQ6Dimens().y + (int) (getQ6Dimens().height * Math.random());
 
-            int xPos7 = q7Dimens.x + (int) (q7Dimens.width * Math.random());
-            int yPos7 = q7Dimens.y + (int) (q7Dimens.height * Math.random());
+            int xPos7 = getQ7Dimens().x + (int) (getQ7Dimens().width * Math.random());
+            int yPos7 = getQ7Dimens().y + (int) (getQ7Dimens().height * Math.random());
 
-            int xPos8 = q8Dimens.x + (int) (q8Dimens.width * Math.random());
-            int yPos8 = q8Dimens.y + (int) (q8Dimens.height * Math.random());
+            int xPos8 = getQ8Dimens().x + (int) (getQ8Dimens().width * Math.random());
+            int yPos8 = getQ8Dimens().y + (int) (getQ8Dimens().height * Math.random());
 
 
             Person person = new Person(personalAge, personalConditions, xPos1, yPos1, dimens, disease, circleRad, asymptomatic, isSocialDistancing);
@@ -80,43 +80,43 @@ public class SimBoardOcto extends SimBoard{
             k++;
             if(k == 1)
             {
-                person.setDimens(q1Dimens);
+                person.setDimens(getQ1Dimens());
                 person.setxPos(xPos1);
                 person.setyPos(yPos1);
                 person.setQuadLocation(1);
-                pListQ1.add(person);
+                getPListQ1().add(person);
             }
             if(k == 2)
             {
-                person.setDimens(q2Dimens);
+                person.setDimens(getQ2Dimens());
                 person.setxPos(xPos2);
                 person.setyPos(yPos2);
                 person.setQuadLocation(2);
-                pListQ2.add(person);
+                getPListQ2().add(person);
             }
             if(k == 3)
             {
-                person.setDimens(q3Dimens);
+                person.setDimens(getQ3Dimens());
                 person.setxPos(xPos3);
                 person.setyPos(yPos3);
                 person.setQuadLocation(3);
-                pListQ3.add(person);
+                getPListQ3().add(person);
             }
             if(k == 4)
             {
-                person.setDimens(q4Dimens);
+                person.setDimens(getQ4Dimens());
                 person.setxPos(xPos4);
                 person.setyPos(yPos4);
                 person.setQuadLocation(4);
-                pListQ4.add(person);
+                getPListQ4().add(person);
             }
             if(k == 5)
             {
-                person.setDimens(q5Dimens);
+                person.setDimens(getQ5Dimens());
                 person.setxPos(xPos5);
                 person.setyPos(yPos5);
                 person.setQuadLocation(5);
-                pListQ5.add(person);
+                getPListQ5().add(person);
             }
             if(k == 6)
             {
