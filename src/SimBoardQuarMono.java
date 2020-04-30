@@ -65,9 +65,4 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
                 g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen);
         }
     }
-
-    public Rectangle getQuarantine()
-    {
-        return quarantine;
-    }
 }

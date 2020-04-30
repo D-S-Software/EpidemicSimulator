@@ -5,9 +5,9 @@ import java.awt.*;
  */
 public interface Quarantinable {
 
-    public void drawQuarLine(Graphics2D g2D);
+    void drawQuarLine(Graphics2D g2D);
 
-    public void quarantineCheck();
+    void quarantineCheck();
 
 
 }

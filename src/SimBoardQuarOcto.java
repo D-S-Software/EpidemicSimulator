@@ -15,48 +15,6 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
         super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer);
         this.timeUntilIsolate = timeUntilIsolate;
         this.quarantineChance = quarantineChance;
-
-        updateAllDimens(dimens);
-
-        for(int i = 0; i < getPList().size(); i++)
-        {
-            if(getPList().get(i).getQuadLocation() == 0)
-            {
-                getPList().get(i).resetDimens(getTravelDimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 1)
-            {
-                getPList().get(i).resetDimens(getQ1Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 2)
-            {
-                getPList().get(i).resetDimens(getQ2Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 3)
-            {
-                getPList().get(i).resetDimens(getQ3Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 4)
-            {
-                getPList().get(i).resetDimens(getQ4Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 5)
-            {
-                getPList().get(i).resetDimens(getQ5Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 6)
-            {
-                getPList().get(i).resetDimens(getQ6Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 7)
-            {
-                getPList().get(i).resetDimens(getQ7Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 8)
-            {
-                getPList().get(i).resetDimens(getQ8Dimens());
-            }
-        }
     }
 
     @Override
@@ -149,7 +107,6 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
         }
     }
 
-
     @Override
     public void drawQuarLine(Graphics2D g2D) {
 
@@ -164,11 +121,5 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
             if(i%2 == 0)
                 g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen );
         }
-
-    }
-
-    public Rectangle getQuarantine()
-    {
-        return quarantine;
     }
 }

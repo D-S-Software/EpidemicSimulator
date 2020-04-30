@@ -241,9 +241,7 @@ public abstract class SimBoard {
                 setNumPeople(getNumPeople() -1);
             }
         }
-
     }
-
 
     public ArrayList<Person> getPList()
     {

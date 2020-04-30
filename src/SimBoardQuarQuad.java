@@ -16,32 +16,6 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
         super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer);
         this.timeUntilIsolate = timeUntilIsolate;
         this.quarantineChance = quarantineChance;
-
-        updateAllDimens(dimens);
-
-        for(int i = 0; i < getPList().size(); i++)
-        {
-            if(getPList().get(i).getQuadLocation() == 0)
-            {
-                getPList().get(i).resetDimens(getTravelDimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 1)
-            {
-                getPList().get(i).resetDimens(getQ1Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 2)
-            {
-                getPList().get(i).resetDimens(getQ2Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 3)
-            {
-                getPList().get(i).resetDimens(getQ3Dimens());
-            }
-            if(getPList().get(i).getQuadLocation() == 4)
-            {
-                getPList().get(i).resetDimens(getQ4Dimens());
-            }
-        }
     }
 
     @Override
@@ -124,11 +98,5 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
             if(i%2 == 0)
                 g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen );
         }
-
-    }
-
-    public Rectangle getQuarantine()
-    {
-        return quarantine;
     }
 }
