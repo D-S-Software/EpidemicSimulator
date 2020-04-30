@@ -489,11 +489,19 @@ public class ControlPanel extends JPanel implements ActionListener{
                         }
                     }
                     boolean goodToStart = false;
+
                     if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
                     || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
                     || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals(""))
                     {
                         JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
+                    }
+                    else if(Integer.parseInt(settingFrame.getTravelers().getText()) < 0 || Integer.parseInt(settingFrame.getTimeUntilQuarantine().getText()) < 0
+                            || Integer.parseInt(settingFrame.getPercentQuarantine().getText()) < 0 || Integer.parseInt(settingFrame.getAsymptomaticChance().getText()) < 0
+                            || Integer.parseInt(settingFrame.getSocialDistanceValue().getText()) < 0 || Integer.parseInt(settingFrame.getPercentSocialDist().getText()) < 0 || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0
+                            || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than 0!");
                     }
                     else goodToStart = true;
 

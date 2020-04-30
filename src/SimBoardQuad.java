@@ -3,9 +3,6 @@ import java.util.ArrayList;
 
 public class SimBoardQuad extends SimBoard {
 
-    private boolean asymptomatic, isSocialDistancing;
-    private int xShift = 30, yShift = 10;
-
     public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
 
@@ -38,6 +35,8 @@ public class SimBoardQuad extends SimBoard {
     }
 
     public void updateAllDimens(Rectangle updatedRect) {
+
+        int xShift = 35, yShift = 10;
 
         setDimens(updatedRect);
 
@@ -73,7 +72,6 @@ public class SimBoardQuad extends SimBoard {
 
     public void drawListPList(Graphics2D g2D)
     {
-
         for(int i = 1; i < getListPList().size(); i++) //
         {
             drawPList(getListPList().get(i), i, g2D); //i

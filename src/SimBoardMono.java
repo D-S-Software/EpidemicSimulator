@@ -3,8 +3,6 @@ import java.util.ArrayList;
 
 public class SimBoardMono extends SimBoard{
 
-    private boolean asymptomatic, isSocialDistancing; //maybe add to super
-
     public SimBoardMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
                         int minPreExistingConditions, int maxPreExistingConditions)
     {

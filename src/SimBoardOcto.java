@@ -3,8 +3,6 @@ import java.util.ArrayList;
 
 public class SimBoardOcto extends SimBoard{
 
-    private boolean asymptomatic, isSocialDistancing;
-
     private int Xshift = 30, Yshift = 10;
 
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
@@ -101,7 +99,6 @@ public class SimBoardOcto extends SimBoard{
 
     public void drawListPList(Graphics2D g2D)
     {
-
         for(int i = 1; i < getListPList().size(); i++) //
         {
             drawPList(getListPList().get(i), i, g2D); //i
