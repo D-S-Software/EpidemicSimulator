@@ -76,7 +76,7 @@ public abstract class SimBoard {
     public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                     int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
-        this(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
+        this(disease, dimens,  numPeople, asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
                 minPreExistingConditions, maxPreExistingConditions);
 
         this.travelersPer = travelersPer;
@@ -134,24 +134,49 @@ public abstract class SimBoard {
 
     private void socialDistanceUpdate()
     {
-        for(int i = 0; i < this.getPList().size(); i++)
+        for(int i = 0; i < pList.size(); i++)
         {
-            for(int j = 0; j < this.getPList().size(); j++)
+            for(int j = 0; j < pList.size(); j++)
             {
-                if(i != j && this.getPList().get(i).isSocialDistancing() && Math.sqrt(Math.pow(this.getPList().get(i).getXPos() - this.getPList().get(j).getXPos(), 2) + Math.pow(this.getPList().get(i).getYPos() - this.getPList().get(j).getYPos(), 2)) < this.getSocialDistanceValue())
-                    this.getPList().get(i).changeDirectionAngle();
+                if(i != j && pList.get(i).isSocialDistancing() && Math.sqrt(Math.pow(pList.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pList.get(i).getYPos() - pList.get(j).getYPos(), 2)) < getSocialDistanceValue())
+                    pList.get(i).changeDirectionAngle();
             }
         }
     }
 
-    public void updatePList(ArrayList<Person> pListQN, ArrayList<Person> pListTotal)
+    public void toggleSocDist(boolean SocialDist)
+    {
+        if(!SocialDist)
+        {
+            for(int i = 0; i < pList.size(); i++)
+            {
+                pList.get(i).setIsSocialDistancing(false);
+            }
+        }
+        else
+        {
+            for(int i = 0; i < pList.size(); i++)
+            {
+                pList.get(i).setIsSocialDistancing(pList.get(i).getIsSocialDistancingSaved());
+            }
+        }
+    }
+    public void everyoneSocialDistance()
+    {
+        for(int i = 0; i < pList.size(); i++)
+        {
+            pList.get(i).setIsSocialDistancing(true);
+        }
+    }
+
+    public void updatePList(ArrayList<Person> pListQN)
     {
         for(int i = 0; i < pListQN.size(); i++)
         {
             boolean isHealthy = pListQN.get(i).getIsHealthy();
             pListQN.get(i).checkCondition();
             if(!pListQN.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pListTotal.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
+                pList.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             pListQN.get(i).move();
             if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
             {
@@ -164,7 +189,7 @@ public abstract class SimBoard {
 
 
     //TODO get rid of all pList getter methods as we have an arrayList for them
-    public ArrayList<Person> getPList() {
+    public ArrayList<Person> pList {
         return pList;
     }
 

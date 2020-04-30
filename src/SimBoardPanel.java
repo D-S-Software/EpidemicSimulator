@@ -29,33 +29,6 @@ public class SimBoardPanel extends JPanel implements ActionListener
         g2D.fillRect(getBounds().x, getBounds().y, getBounds().width, getBounds().height);
     }
 
-
-    public void toggleSocDist(boolean SocialDist)
-    {
-        if(!SocialDist)
-        {
-            for(int i = 0; i < simBoard.getPList().size(); i++)
-            {
-                simBoard.getPList().get(i).setIsSocialDistancing(false);
-            }
-        }
-        else
-        {
-            for(int i = 0; i < simBoard.getPList().size(); i++)
-            {
-                simBoard.getPList().get(i).setIsSocialDistancing(simBoard.getPList().get(i).getIsSocialDistancingSaved());
-            }
-        }
-    }
-    public void everyoneSocialDistance()
-    {
-        for(int i = 0; i < simBoard.getPList().size(); i++)
-        {
-            simBoard.getPList().get(i).setIsSocialDistancing(true);
-        }
-    }
-
-
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
@@ -75,6 +48,11 @@ public class SimBoardPanel extends JPanel implements ActionListener
     public void setReset(boolean reset)
     {
         this.reset = reset;
+    }
+
+    public SimBoard getSimBoard()
+    {
+        return simBoard;
     }
 
     @Override

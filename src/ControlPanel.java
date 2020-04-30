@@ -240,7 +240,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                 {
                     if(isSocialDist)
                     {
-                        gui.getSimBoardPanel().toggleSocDist(false);
+                        gui.getSimBoardPanel().getSimBoard().toggleSocDist(false);
                         toggleSocDist.setToolTipText("No one is social distancing");
                         isSocialDist = false;
                     }
@@ -248,12 +248,12 @@ public class ControlPanel extends JPanel implements ActionListener{
                     {
                         if(settingFrame.getSocialDistanceChanceNum() == 0.0)
                         {
-                            gui.getSimBoardPanel().everyoneSocialDistance();
+                            gui.getSimBoardPanel().getSimBoard().everyoneSocialDistance();
                             toggleSocDist.setToolTipText("Everyone is social distancing");
                         }
                         else
                         {
-                            gui.getSimBoardPanel().toggleSocDist(true);
+                            gui.getSimBoardPanel().getSimBoard().toggleSocDist(true);
                             toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
                         }
                         isSocialDist = true;
