@@ -96,30 +96,12 @@ public class SimBoardMono extends SimBoard{
         }
     }
 
-
-
-    /** For all the Person objects in board, they are checked for sickness, moved and removed if dead */
+    /**
+     * For all the Person objects in board, they are checked for sickness, moved and removed if dead
+     */
     public void updateListPList()
     {
-       updatePList(getPList(),getPList());
+       updatePList(getPList());
     }
 
-
-
-    //public ArrayList<Person> getPList() {
-      //  return pList;
-    //}
-
-    //public Rectangle getDimens() {
-      //  return dimens;
-    //}
-
-    //public int getNumPeople() {
-      //  return numPeople;
-   // }
-
-    //public int getSocialDistanceValue()
-    //{
-     //   return socialDistanceValue;
-    //}
 }

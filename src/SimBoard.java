@@ -189,7 +189,8 @@ public abstract class SimBoard {
 
 
     //TODO get rid of all pList getter methods as we have an arrayList for them
-    public ArrayList<Person> pList {
+    public ArrayList<Person> getPList()
+    {
         return pList;
     }
 
