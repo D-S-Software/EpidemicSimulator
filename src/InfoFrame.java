@@ -1,12 +1,15 @@
 import Library.CustomColor;
 
 import javax.swing.*;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class InfoFrame extends JFrame {
 
@@ -20,8 +23,9 @@ public class InfoFrame extends JFrame {
      * Creates an info frame for the main gui when the info button is clicked
      */
     public InfoFrame() {
+
         setBackground(CustomColor.BACKGROUND);
-        setPreferredSize(new Dimension(850, 600));
+        setPreferredSize(new Dimension(850, 620));
         getContentPane().setBackground(CustomColor.BACKGROUND);
 
         mainPanel.setBackground(CustomColor.BACKGROUND);
@@ -74,7 +78,7 @@ public class InfoFrame extends JFrame {
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 1;
-        gbc.weighty = .1;
+        gbc.weighty = 0;
 
         addTopPanel();
 
@@ -92,7 +96,7 @@ public class InfoFrame extends JFrame {
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 1;
-        gbc.weighty = .1;
+        gbc.weighty = 0;
 
         addBottomPanel();
 
@@ -126,9 +130,27 @@ public class InfoFrame extends JFrame {
      * Creates and adds the middle panel for the info frame
      */
     private void addMiddlePanel() {
+
         java.net.URL url = ClassLoader.getSystemResource("res/EpidemicInfoBio.html");
         JEditorPane middlePane = new JEditorPane();
+        middlePane.setEditorKit(JEditorPane.createEditorKitForContentType("text/html"));
         middlePane.setEditable(false);
+
+        middlePane.addHyperlinkListener(new HyperlinkListener() {
+            public void hyperlinkUpdate(HyperlinkEvent e) {
+                if(e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+                    if(Desktop.isDesktopSupported()) {
+                        try {
+                            Desktop.getDesktop().browse(e.getURL().toURI());
+                        } catch (IOException ioException) {
+                            ioException.printStackTrace();
+                        } catch (URISyntaxException uriSyntaxException) {
+                            uriSyntaxException.printStackTrace();
+                        }
+                    }
+                }
+            }
+        });
 
         if (url != null) {
             try {
@@ -139,8 +161,6 @@ public class InfoFrame extends JFrame {
         } else {
             System.err.println("Couldn't find file: src/res/EpidemicInfoBio.html");
         }
-
-        JPanel middlePanel = new JPanel();
 
         mainPanel.add(middlePane,gbc);
     }
