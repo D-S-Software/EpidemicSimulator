@@ -12,7 +12,7 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable {
     private int quarXOrigin, quarWidth;
     private double quarantineChance;
 
-    /** Creates a backend.simboard.SimBoardQuarMono (one area, quarantine board) to simulate the actions of people that are displayed on gui.gui.SimBoardPanel
+    /** Creates a SimBoardQuarMono (one area, quarantine board) to simulate the actions of people that are displayed on SimBoardPanel
      *
      * @param disease The disease object used for a simulation
      * @param dimens The rectangle that represents the area a person can move in
@@ -35,7 +35,7 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable {
 
     /** Creates an ArrayList of rectangles that represent dimensions of different parts of the sim board (including the quarantine zone)
      *
-     * @param updatedRect The current rectangle for the bounds of the backend.simboard.backend.simboard Panel
+     * @param updatedRect The current rectangle for the bounds of the SimBoardPanel
      */
     @Override
     public void updateDimensList(Rectangle updatedRect)

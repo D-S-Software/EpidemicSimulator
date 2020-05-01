@@ -74,8 +74,8 @@ public class CreateFile {
 
     /**Converts an arrayList of people into a string to be written
      *
-     * @param array
-     * @return
+     * @param array The ArrayList of people to be converted
+     * @return The string representing the ArrayList of Persons
      */
     private String arrayToString(ArrayList<Person> array)
     {

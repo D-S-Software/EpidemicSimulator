@@ -8,6 +8,20 @@ public class SimBoardOcto extends SimBoard{
 
     private int Xshift = 30, Yshift = 10;
 
+    /** Creates a SimBoardOcto (8 areas) to simulate the actions of people that are displayed on SimBoardPanel
+     *
+     * @param disease The disease object used for a simulation
+     * @param dimens The rectangle that represents the area a person can move in
+     * @param numPeople The total number of people in the simulation
+     * @param asymptomaticChance The percent of people who are asymptomatic
+     * @param socialDistanceValue The number of pixels each person tries to stay apart by when social distancing is enabled
+     * @param socialDistanceChance The percent of people who participate in social distancing
+     * @param minAge The minimum age of a person in the simulation
+     * @param maxAge The maximum age of a person in the simulation
+     * @param minPreExistingConditions The minimum pre-existing conditions of a person in the simulation
+     * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
+     * @param travelersPer The percent of people who travel without bound in a quad or octo board
+     */
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
@@ -15,6 +29,9 @@ public class SimBoardOcto extends SimBoard{
             minPreExistingConditions, maxPreExistingConditions, travelersPer);
     }
 
+    /**
+     * Creates an ArrayList of rectangles that represent dimensions of different parts of the sim board
+     */
     public void constructDimensList()
     {
         getDimensList().add(getDimens());
@@ -29,6 +46,9 @@ public class SimBoardOcto extends SimBoard{
         getDimensList().add(getTravelDimens());
     }
 
+    /**
+     * Creates an ArrayList of ArrayLists of people to be used when calling update methods
+     */
     public void constructListPList()
     {
         getListPList().add(getPList());
@@ -47,6 +67,10 @@ public class SimBoardOcto extends SimBoard{
         constructPListTotal(getListPList(), 1);
     }
 
+    /**
+     * Updates the dimensions of each rectangle each tick to keep each person in the correct zone
+     * @param updatedRect The current rectangle for the bounds of the SimBoardPanel
+     */
     public void updateDimensList(Rectangle updatedRect)
     {
         getDimensList().get(0).setRect(updatedRect);

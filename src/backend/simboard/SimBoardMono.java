@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class SimBoardMono extends SimBoard{
 
-    /** Creates a backend.simboard.SimBoardMono (one area) to simulate the actions of people that are displayed on gui.gui.SimBoardPanel
+    /** Creates a SimBoardMono (one area) to simulate the actions of people that are displayed on SimBoardPanel
      *
      * @param disease The disease object used for a simulation
      * @param dimens The rectangle that represents the area a person can move in
@@ -53,7 +53,7 @@ public class SimBoardMono extends SimBoard{
 
     /**
      * Updates the dimensions of each rectangle each tick to keep each person in the correct zone
-     * @param updatedRect The current rectangle for the bounds of the backend.simboard.backend.simboard Panel
+     * @param updatedRect The current rectangle for the bounds of the SimBoardPanel
      */
     public void updateDimensList(Rectangle updatedRect)
     {

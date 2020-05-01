@@ -19,7 +19,7 @@ public abstract class SimBoard {
     private double socialDistanceChance, asymptomaticChance;
     private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers;
 
-    /** Creates a backend.simboard.backend.simboard to simulate the actions of people that are displayed on gui.gui.SimBoardPanel
+    /** Creates a SimBoard to simulate the actions of people that are displayed on SimBoardPanel
      *
      * @param disease The disease object used for a simulation
      * @param dimens The rectangle that represents the area a person can move in
@@ -90,7 +90,7 @@ public abstract class SimBoard {
 
     /**
      * Updates the dimensions of each rectangle each tick to keep each person in the correct zone
-     * @param updatedRect The current rectangle for the bounds of the backend.simboard.backend.simboard Panel
+     * @param updatedRect The current rectangle for the bounds of the SimBoardPanel
      */
     public abstract void updateDimensList(Rectangle updatedRect);
 
@@ -116,7 +116,7 @@ public abstract class SimBoard {
     }
 
     /**
-     * Constructs each backend.Person and adds them to an ArrayList in the listPlist ArrayList
+     * Constructs each Person and adds them to an ArrayList in the listPlist ArrayList
      */
     public void constructPListNonTravel()
     {
@@ -142,11 +142,11 @@ public abstract class SimBoard {
         }
     }
 
-    /**Constructs the backend.Person object (Helper method for the constructPList methods)
+    /**Constructs the Person object (Helper method for the constructPList methods)
      *
      * @param dimensQN The rectangle object that represents the dimensions of the current person's range
      * @param quadLocation The "home" location of the person to return to after quarantine
-     * @return The newly constructed backend.Person
+     * @return The newly constructed Person
      */
     public Person constructPerson(Rectangle dimensQN, int quadLocation)
     {
@@ -183,8 +183,8 @@ public abstract class SimBoard {
     }
 
     /** Updates the simboard by checking the distance from sick for each peron, updating each person list, checking quarantine and social distance
-     * and drawing the person objects on the gui.gui.SimBoardPanel
-     * @param g2D Grapgics object from gui.gui.SimBoardPanel used to draw the peron objects
+     * and drawing the person objects on the SimBoardPanel
+     * @param g2D Grapgics object from SimBoardPanel used to draw the peron objects
      */
     public void updateBoard(Graphics2D g2D)
     {
