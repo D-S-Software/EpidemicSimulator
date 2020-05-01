@@ -64,7 +64,7 @@ public class SimBoardQuad extends SimBoard {
 
         int xShift = 35, yShift = 10;
 
-        int width = getDimensList().get(0).width / 2 - xShift;
+        int width = (getDimensList().get(0).width - xShift) / 2;
         int height = getDimensList().get(0).height / 2 - yShift;
 
         int xS2tart = getDimensList().get(0).x + width + xShift;

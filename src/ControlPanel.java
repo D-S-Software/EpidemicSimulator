@@ -501,7 +501,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                             || Integer.parseInt(settingFrame.getSocialDistanceValue().getText()) < 0 || Integer.parseInt(settingFrame.getPercentSocialDist().getText()) < 0 || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0
                             || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than 0!");
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
                     }
                     else goodToStart = true;
 

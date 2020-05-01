@@ -48,16 +48,16 @@ public class SimBoardOcto extends SimBoard{
     {
         getDimensList().get(0).setRect(updatedRect);
 
-        int width = (getDimens().width / 4) - 4*Xshift;
+        int width = (getDimens().width - 3*Xshift) / 4;
         int height = (getDimens().height / 2) - Yshift;
 
         int q1xStart = getDimens().x;
         int q1yStart = getDimens().y;
-        int q2xStart = getDimens().x + width + 4*Xshift;
+        int q2xStart = getDimens().x + width + Xshift;
         int q2yStart = getDimens().y;
-        int q3xStart = getDimens().x + 2*width + 8*Xshift;
+        int q3xStart = getDimens().x + 2*width + 2*Xshift;
         int q3yStart = getDimens().y;
-        int q4xStart = getDimens().x + 3*width + 12*Xshift;
+        int q4xStart = getDimens().x + 3*width + 3*Xshift;
         int q4yStart = getDimens().y;
         int q5xStart = q1xStart;
         int q5yStart = height + 2*Yshift;

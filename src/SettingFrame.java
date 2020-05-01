@@ -784,7 +784,7 @@ public class SettingFrame extends JFrame implements ActionListener{
                         || Integer.parseInt(getSocialDistanceValue().getText()) < 0 || Integer.parseInt(getPercentSocialDist().getText()) < 0 || Integer.parseInt(getMaxAge().getText()) < 0
                         || Integer.parseInt(getMaxAge().getText()) < 0 || Integer.parseInt(getMinConditions().getText()) < 0 || Integer.parseInt(getMaxConditions().getText()) < 0)
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than 0!");
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
                 }
                 else setVisible(false);
             }
