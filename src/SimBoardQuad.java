@@ -60,21 +60,21 @@ public class SimBoardQuad extends SimBoard {
      */
     public void updateAllDimens(Rectangle updatedRect) {
 
+        getDimensList().get(0).setRect(updatedRect);
+
         int xShift = 35, yShift = 10;
 
-        setDimens(updatedRect);
+        int width = getDimensList().get(0).width / 2 - xShift;
+        int height = getDimensList().get(0).height / 2 - yShift;
 
-        int width = getDimens().width / 2 - xShift;
-        int height = getDimens().height / 2 - yShift;
+        int xS2tart = getDimensList().get(0).x + width + xShift;
+        int y2Start = getDimensList().get(0).y + height + yShift;
 
-        int xS2tart = getDimens().x + width + xShift;
-        int y2Start = getDimens().y + height + yShift;
-
-        setQ1Dimens( new Rectangle(getDimens().x, getDimens().y, width, height));
-        setQ2Dimens( new Rectangle(xS2tart, getDimens().y, width, height));
-        setQ3Dimens( new Rectangle(getDimens().x, y2Start, width, height));
-        setQ4Dimens(new Rectangle(xS2tart, y2Start, width, height));
-        setTravelDimens(getDimens());
+        getDimensList().get(1).setRect(getDimens().x, getDimens().y, width, height);
+        getDimensList().get(2).setRect(xS2tart, getDimens().y, width, height);
+        getDimensList().get(3).setRect(getDimens().x, y2Start, width, height);
+        getDimensList().get(4).setRect(xS2tart, y2Start, width, height);
+        getDimensList().get(5).setRect(getDimens());
     }
 }
 

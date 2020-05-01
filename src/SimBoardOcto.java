@@ -3,20 +3,8 @@ import java.util.ArrayList;
 
 public class SimBoardOcto extends SimBoard{
 
-    /** Creates a SimBoardOcto (8 areas) to simulate the actions of people that are displayed on SimBoardPanel
-     *
-     * @param disease The disease object used for a simulation
-     * @param dimens The rectangle that represents the area a person can move in
-     * @param numPeople The total number of people in the simulation
-     * @param asymptomaticChance The percent of people who are asymptomatic
-     * @param socialDistanceValue The number of pixels each person tries to stay apart by when social distancing is enabled
-     * @param socialDistanceChance The percent of people who participate in social distancing
-     * @param minAge The minimum age of a person in the simulation
-     * @param maxAge The maximum age of a person in the simulation
-     * @param minPreExistingConditions The minimum pre-existing conditions of a person in the simulation
-     * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
-     * @param travelersPer The percent of people who travel without bound in a quad or octo board
-     */
+    private int Xshift = 30, Yshift = 10;
+
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
                         int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
@@ -24,9 +12,6 @@ public class SimBoardOcto extends SimBoard{
             minPreExistingConditions, maxPreExistingConditions, travelersPer);
     }
 
-    /**
-     * Creates an ArrayList of rectangles that represent dimensions of different parts of the sim board
-     */
     public void constructDimensList()
     {
         getDimensList().add(getDimens());
@@ -41,9 +26,6 @@ public class SimBoardOcto extends SimBoard{
         getDimensList().add(getTravelDimens()); //takes place as travel dimens to make things line up. MAYBE getDimens()
     }
 
-    /**
-     * Creates an ArrayList of ArrayLists of people to be used when calling update methods
-     */
     public void constructListPList()
     {
         getListPList().add(getPList());
@@ -62,14 +44,9 @@ public class SimBoardOcto extends SimBoard{
         constructPListTotal(getListPList(), 1);
     }
 
-    /**
-     * Updates the dimensions of each rectangle each tick to keep each person in the correct zone
-     * @param updatedRect The current rectangle for the bounds of the SimBoard Panel
-     */
     public void updateAllDimens(Rectangle updatedRect)
     {
-        setDimens(updatedRect);
-        int Xshift = 30, Yshift = 10;
+        getDimensList().get(0).setRect(updatedRect);
 
         int width = (getDimens().width / 4) - 4*Xshift;
         int height = (getDimens().height / 2) - Yshift;
@@ -91,14 +68,14 @@ public class SimBoardOcto extends SimBoard{
         int q8xStart = q4xStart;
         int q8yStart = height + 2*Yshift;
 
-        setQ1Dimens(new Rectangle(q1xStart, q1yStart, width, height));
-        setQ2Dimens(new Rectangle(q2xStart, q2yStart, width, height));
-        setQ3Dimens(new Rectangle(q3xStart, q3yStart, width, height));
-        setQ4Dimens(new Rectangle(q4xStart, q4yStart, width, height));
-        setQ5Dimens(new Rectangle(q5xStart, q5yStart, width, height));
-        setQ6Dimens(new Rectangle(q6xStart, q6yStart, width, height));
-        setQ7Dimens(new Rectangle(q7xStart, q7yStart, width, height));
-        setQ8Dimens(new Rectangle(q8xStart, q8yStart, width, height));
-        setTravelDimens(getDimens());
+        getDimensList().get(1).setRect(q1xStart, q1yStart, width, height);
+        getDimensList().get(2).setRect(q2xStart, q2yStart, width, height);
+        getDimensList().get(3).setRect(q3xStart, q3yStart, width, height);
+        getDimensList().get(4).setRect(q4xStart, q4yStart, width, height);
+        getDimensList().get(5).setRect(q5xStart, q5yStart, width, height);
+        getDimensList().get(6).setRect(q6xStart, q6yStart, width, height);
+        getDimensList().get(7).setRect(q7xStart, q7yStart, width, height);
+        getDimensList().get(8).setRect(q8xStart, q8yStart, width, height);
+        getDimensList().get(9).setRect(getDimens());
     }
 }

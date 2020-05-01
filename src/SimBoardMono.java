@@ -54,8 +54,8 @@ public class SimBoardMono extends SimBoard{
      */
     public void updateAllDimens(Rectangle updatedRect)
     {
-        setDimens(updatedRect);
-        setQ1Dimens(getDimens());
-        setTravelDimens(getDimens());
+        getDimensList().get(0).setRect(updatedRect);
+        getDimensList().get(1).setRect(updatedRect);
+        getDimensList().get(2).setRect(updatedRect);
     }
 }
