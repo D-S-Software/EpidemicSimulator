@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
 
 public class InfoFrame extends JFrame {
 
@@ -124,24 +125,27 @@ public class InfoFrame extends JFrame {
     /**
      * Creates and adds the middle panel for the info frame
      */
-    private void addMiddlePanel()
-    {
-        JPanel middlePanel = new JPanel(new BorderLayout());
-        middlePanel.setBackground(CustomColor.JET);
-        middlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+    private void addMiddlePanel() {
+        java.net.URL url = InfoFrame.class.getResource("src/res/EpidemicInfoBio.html");
+        JEditorPane middlePane = new JEditorPane();
+        middlePane.setEditable(false);
 
-        JTextArea infoArea = new JTextArea();
-        infoArea.setEditable(false);
-        infoArea.setFont(infoArea.getFont ().deriveFont (18.0f));
-        infoArea.setBackground(CustomColor.JET);
-        infoArea.setForeground(CustomColor.SILVER);
-        infoArea.setText("<html>Explain game and features and write bios here...</html>"); //TODO Fill in info screen in this box
+        if (url != null) {
+            try {
+                middlePane.setPage(url);
+            } catch (IOException e) {
+                System.err.println("Attempted to read a bad URL: " + url);
+            }
+        } else {
+            System.err.println("Couldn't find file: changelog.html");
+        }
 
-        middlePanel.add(infoArea, BorderLayout.BEFORE_FIRST_LINE);
+        JPanel middlePanel = new JPanel();
 
-        mainPanel.add(middlePanel, gbc);
+        mainPanel.add(middlePane,gbc);
+        //middlePanel.add(middlePane);
+
     }
-
     /**
      * Creates and adds the bottom panel for the info frame
      */
