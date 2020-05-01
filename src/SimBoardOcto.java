@@ -78,10 +78,4 @@ public class SimBoardOcto extends SimBoard{
         setQ8Dimens(new Rectangle(q8xStart, q8yStart, width, height));
         setTravelDimens(getDimens());
     }
-
-    /**
-     * Finds the closest sick person to each healthy person and returns the distance between them
-     * Based on the default board size this is from 0 to 1000ish
-     */
-
 }

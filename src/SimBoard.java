@@ -61,10 +61,11 @@ public abstract class SimBoard {
 
     }
 
-
     public abstract void constructDimensList();
 
     public abstract void constructListPList();
+
+    public abstract void updateAllDimens(Rectangle updatedRect);
 
     public void constructPListTotal(ArrayList<ArrayList<Person>> ListPList, int startIndex)
     {
@@ -123,37 +124,6 @@ public abstract class SimBoard {
         return dimens.y + (int)(dimens.height * Math.random());
     }
 
-
-    public void updateDistanceFromSick()
-    {
-        for(int i = 1; i < getListPList().size(); i++)
-            updateDistanceFromSickIteration(getListPList().get(i));
-    }
-
-    public abstract void updateAllDimens(Rectangle updatedRect);
-
-
-    public void drawPList(ArrayList<Person> pList, int dimensNum, Graphics2D g2D) //maybe make private
-    {
-        for(int j = 0; j < pList.size(); j++)
-        {
-            if(pList.get(j).isIsoSick() == false)
-            {
-                pList.get(j).updateDimens(dimensList.get(dimensNum)); //TODO This line of code is broken for some reason
-                System.out.println(dimensList.get(dimensNum).width);
-            }
-            pList.get(j).draw(g2D);
-        }
-    }
-
-    public void drawListPList(Graphics2D g2D)
-    {
-        for(int i = 1; i < listPList.size(); i++)
-        {
-            drawPList(listPList.get(i), i, g2D);
-        }
-    }
-
     public void updateBoard(Graphics2D g2D)
     {
         this.updateDistanceFromSick();
@@ -169,6 +139,90 @@ public abstract class SimBoard {
         this.drawListPList(g2D);
 
         socialDistanceUpdate();
+    }
+
+    public void updateDistanceFromSick()
+    {
+        for(int i = 1; i < getListPList().size(); i++)
+            updateDistanceFromSickIteration(getListPList().get(i));
+    }
+
+    /**
+     * Finds the closest sick person to each healthy person and returns the distance between them
+     */
+    public void updateDistanceFromSickIteration(ArrayList<Person> pListQN)
+    {
+        for(int i = 0; i < pListQN.size(); i++)
+        {
+            double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
+            int closestSickIndex = 0;
+
+            if(!pListQN.get(i).getHasDisease())
+                for(int j = 0; j < pList.size(); j++)
+                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
+                    {
+                        double distTest = Math.sqrt(Math.pow(pListQN.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQN.get(i).getYPos() - pList.get(j).getYPos(), 2));
+                        if(distTest < minDist)
+                        {
+                            minDist = distTest;
+                            closestSickIndex = j;
+                        }
+                    }
+            Double dist = minDist;
+            if(dist.equals(0))
+                minDist = 0.1;
+            pListQN.get(i).setDistanceFromSick(minDist);
+            pListQN.get(i).setClosestSickIndex(closestSickIndex);
+        }
+    }
+
+    public void updateListPList()
+    {
+        for(int i = 1; i < getListPList().size(); i++)
+        {
+            updatePList(getListPList().get(i));
+        }
+    }
+
+    /**
+     * For all the Person objects in board, they are checked for sickness, moved and removed if dead
+     */
+    public void updatePList(ArrayList<Person> pListQN)
+    {
+        for(int i = 0; i < pListQN.size(); i++)
+        {
+            boolean isHealthy = pListQN.get(i).getIsHealthy();
+            pListQN.get(i).checkCondition();
+            if(!pListQN.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
+                pList.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
+            pListQN.get(i).move();
+            if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
+            {
+                pListQN.remove(pListQN.get(i));
+                setNumPeople(getNumPeople() -1);
+            }
+        }
+    }
+
+    public void drawListPList(Graphics2D g2D)
+    {
+        for(int i = 1; i < listPList.size(); i++)
+        {
+            drawPList(listPList.get(i), i, g2D);
+        }
+    }
+
+    public void drawPList(ArrayList<Person> pList, int dimensNum, Graphics2D g2D) //maybe make private
+    {
+        for(int j = 0; j < pList.size(); j++)
+        {
+            if(pList.get(j).isIsoSick() == false)
+            {
+                pList.get(j).updateDimens(dimensList.get(dimensNum)); //TODO This line of code is broken for some reason
+                System.out.println(dimensList.get(dimensNum).width);
+            }
+            pList.get(j).draw(g2D);
+        }
     }
 
     private void socialDistanceUpdate()
@@ -205,57 +259,6 @@ public abstract class SimBoard {
         for(int i = 0; i < pList.size(); i++)
         {
             pList.get(i).setIsSocialDistancing(true);
-        }
-    }
-
-    public void updateDistanceFromSickIteration(ArrayList<Person> pListQN)
-    {
-        for(int i = 0; i < pListQN.size(); i++)
-        {
-            double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
-            int closestSickIndex = 0;
-
-            if(!pListQN.get(i).getHasDisease())
-                for(int j = 0; j < pList.size(); j++)
-                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
-                    {
-                        double distTest = Math.sqrt(Math.pow(pListQN.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQN.get(i).getYPos() - pList.get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
-                            minDist = distTest;
-                            closestSickIndex = j;
-                        }
-                    }
-            Double dist = minDist;
-            if(dist.equals(0))
-                minDist = 0.1;
-            pListQN.get(i).setDistanceFromSick(minDist);
-            pListQN.get(i).setClosestSickIndex(closestSickIndex);
-        }
-    }
-
-    public void updateListPList()
-    {
-        for(int i = 1; i < getListPList().size(); i++)
-        {
-            updatePList(getListPList().get(i));
-        }
-    }
-
-    public void updatePList(ArrayList<Person> pListQN)
-    {
-        for(int i = 0; i < pListQN.size(); i++)
-        {
-            boolean isHealthy = pListQN.get(i).getIsHealthy();
-            pListQN.get(i).checkCondition();
-            if(!pListQN.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQN.get(i).move();
-            if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
-            {
-                pListQN.remove(pListQN.get(i));
-                setNumPeople(getNumPeople() -1);
-            }
         }
     }
 

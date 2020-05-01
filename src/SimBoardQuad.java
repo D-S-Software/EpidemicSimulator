@@ -52,11 +52,5 @@ public class SimBoardQuad extends SimBoard {
         setQ4Dimens(new Rectangle(xS2tart, y2Start, width, height));
         setTravelDimens(getDimens());
     }
-
-    /**
-     * Finds the closest sick person to each healthy person and returns the distance between them
-     * Based on the default board size this is from 0 to 1000ish
-     */
-
 }
 

@@ -36,14 +36,4 @@ public class SimBoardMono extends SimBoard{
         setQ1Dimens(getDimens());
         setTravelDimens(getDimens());
     }
-
-    /**
-     * Finds the closest sick person to each healthy person and returns the distance between them
-     * Based on the default board size this is from 0 to 1000ish
-     */
-
-    /**
-     * For all the Person objects in board, they are checked for sickness, moved and removed if dead
-     */
-
 }
