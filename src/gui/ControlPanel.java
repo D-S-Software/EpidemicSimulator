@@ -495,90 +495,107 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                 if(canStart)
                 {
+                    boolean goodToStart = false;
                     if(custom.isSelected())
                     {
-                        if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
-                                || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
-                                || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
+                        try
                         {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
-                            disease = null;
+                            if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
+                                    || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
+                                    || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
+                            {
+                                JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
+                                goodToStart = false;
+                            }
+                            if(Integer.parseInt(contagiousRange.getText()) > 20 || Integer.parseInt(contagiousRange.getText()) < 1)
+                            {
+                                JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
+                                goodToStart = false;
+                            }
+                            if(Integer.parseInt(contagiousPercent.getText()) < 0 || Integer.parseInt(baseMortalityRate.getText()) < 0
+                                    || Integer.parseInt(baseMinTimeSick.getText()) < 0 || Integer.parseInt(baseMaxTimeSick.getText()) < 0
+                                    || Integer.parseInt(startPercentHealthy.getText()) < 0)
+                            {
+                                JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
+                                goodToStart = false;
+                            }
+                            else
+                            {
+                                disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
+                                        Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()) *100,
+                                        Integer.parseInt(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
+                            }
                         }
-                        if(Integer.parseInt(contagiousRange.getText()) > 20 || Integer.parseInt(contagiousRange.getText()) < 1)
+                        catch (java.lang.NumberFormatException ex)
                         {
-                            JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
-                            disease = null;
-                        }
-                        if(Integer.parseInt(contagiousPercent.getText()) < 0 || Integer.parseInt(baseMortalityRate.getText()) < 0
-                                || Integer.parseInt(baseMinTimeSick.getText()) < 0 || Integer.parseInt(baseMaxTimeSick.getText()) < 0
-                                || Integer.parseInt(startPercentHealthy.getText()) < 0)
-                        {
-                            JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
-                            disease = null;
-                        }
-                        else
-                        {
-                            disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
-                                    Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()) *100,
-                                    Integer.parseInt(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
+                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                            goodToStart = false;
                         }
                     }
-                    boolean goodToStart = false;
-
-                    if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
-                    || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
-                    || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals(""))
+                    try
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
+                        if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
+                                || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
+                                || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals(""))
+                        {
+                            JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
+                            goodToStart = false;
+                        }
+                        else if(Integer.parseInt(settingFrame.getTravelers().getText()) < 0 || Integer.parseInt(settingFrame.getTimeUntilQuarantine().getText()) < 0
+                                || Integer.parseInt(settingFrame.getPercentQuarantine().getText()) < 0 || Integer.parseInt(settingFrame.getAsymptomaticChance().getText()) < 0
+                                || Integer.parseInt(settingFrame.getSocialDistanceValue().getText()) < 0 || Integer.parseInt(settingFrame.getPercentSocialDist().getText()) < 0 || Integer.parseInt(settingFrame.getMinAge().getText()) < 0
+                                || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
+                        {
+                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
+                            goodToStart = false;
+                        }
+                        else if(Integer.parseInt(settingFrame.getMinAge().getText()) > Integer.parseInt(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
+                        {
+                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
+                            goodToStart = false;
+                        }
+                        else goodToStart = true;
+
+                        if(goodToStart)
+                        {
+                            int numPeople;
+                            if("".equals(numPeopleField.getText()))
+                                numPeople = 0;
+                            else
+                                numPeople = Integer.parseInt(numPeopleField.getText());
+
+                            boardType = settingFrame.getBoardTypeNum();
+                            socialDistanceValue = settingFrame.getSocialDistanceValueNum();
+                            minAge = settingFrame.getMinAgeNum();
+                            maxAge = settingFrame.getMaxAgeNum();
+                            minPreExistingConditions = settingFrame.getMinPreExistingConditionsNum();
+                            maxPreExistingConditions = settingFrame.getMaxPreExistingConditionsNum();
+                            timeUntilQuarantine = settingFrame.getTimeUntilQuarantineNum();
+                            asymptomaticChance = settingFrame.getAsymptomaticChanceNum();
+                            socialDistanceChance = settingFrame.getSocialDistanceChanceNum();
+                            quarantineChance = settingFrame.getQuarantineChanceNum();
+                            travelersPer = settingFrame.getTravelersPer();
+                            quarBoard = settingFrame.isQuarBoardBool();
+
+                            gui.getSimBoardPanel().setReset(false);
+                            simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
+                            simEngine.getClock().start();
+                            isPlaying = true;
+                            if(settingFrame.getSocialDistanceChanceNum() > 0)
+                                isSocialDist = true;
+                            else isSocialDist = false;
+                            canStart = false;
+                            gui.getTallyPanel().showGraphModeButton();
+                            backgroundMusic.stop();
+                            changeSong();
+                            backgroundMusic.play();
+
+                            toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
+                        }
                     }
-                    else if(Integer.parseInt(settingFrame.getTravelers().getText()) < 0 || Integer.parseInt(settingFrame.getTimeUntilQuarantine().getText()) < 0
-                            || Integer.parseInt(settingFrame.getPercentQuarantine().getText()) < 0 || Integer.parseInt(settingFrame.getAsymptomaticChance().getText()) < 0
-                            || Integer.parseInt(settingFrame.getSocialDistanceValue().getText()) < 0 || Integer.parseInt(settingFrame.getPercentSocialDist().getText()) < 0 || Integer.parseInt(settingFrame.getMinAge().getText()) < 0
-                            || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
+                    catch (java.lang.NumberFormatException ex)
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
-                    }
-                    else if(Integer.parseInt(settingFrame.getMinAge().getText()) > Integer.parseInt(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
-                    }
-                    else goodToStart = true;
-
-                    if(disease != null && goodToStart)
-                    {
-                        int numPeople;
-                        if("".equals(numPeopleField.getText()))
-                            numPeople = 0;
-                        else
-                            numPeople = Integer.parseInt(numPeopleField.getText());
-
-                        boardType = settingFrame.getBoardTypeNum();
-                        socialDistanceValue = settingFrame.getSocialDistanceValueNum();
-                        minAge = settingFrame.getMinAgeNum();
-                        maxAge = settingFrame.getMaxAgeNum();
-                        minPreExistingConditions = settingFrame.getMinPreExistingConditionsNum();
-                        maxPreExistingConditions = settingFrame.getMaxPreExistingConditionsNum();
-                        timeUntilQuarantine = settingFrame.getTimeUntilQuarantineNum();
-                        asymptomaticChance = settingFrame.getAsymptomaticChanceNum();
-                        socialDistanceChance = settingFrame.getSocialDistanceChanceNum();
-                        quarantineChance = settingFrame.getQuarantineChanceNum();
-                        travelersPer = settingFrame.getTravelersPer();
-                        quarBoard = settingFrame.isQuarBoardBool();
-
-                        gui.getSimBoardPanel().setReset(false);
-                        simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
-                        simEngine.getClock().start();
-                        isPlaying = true;
-                        if(settingFrame.getSocialDistanceChanceNum() > 0)
-                            isSocialDist = true;
-                        else isSocialDist = false;
-                        canStart = false;
-                        gui.getTallyPanel().showGraphModeButton();
-                        backgroundMusic.stop();
-                        changeSong();
-                        backgroundMusic.play();
-
-                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
                     }
                 }
             }
