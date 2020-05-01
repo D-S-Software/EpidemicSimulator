@@ -14,21 +14,27 @@ public class SimBoardMono extends SimBoard{
     public void constructDimensList()
     {
         getDimensList().add(getDimens());
+        getDimensList().add(getQ1Dimens());
+        getDimensList().add(getTravelDimens());
     }
 
     public void constructListPList()
     {
         getListPList().add(getPList());
+        getListPList().add(getPListQ1());
+        getListPList().add(getPListTravel());
 
-        for(int i = 0; i < getNumPeople(); i++)
-        {
-            getPList().add(constructPerson(getDimens(), 0));
-        }
+        constructPListNonTravel();
+        constructPListTravel();
+        constructPListTotal(getListPList(), 1);
+
     }
 
     public void updateAllDimens(Rectangle updatedRect)
     {
         setDimens(updatedRect);
+        setQ1Dimens(getDimens());
+        setTravelDimens(getDimens());
     }
 
     /**
@@ -37,7 +43,8 @@ public class SimBoardMono extends SimBoard{
      */
     public void updateDistanceFromSick()
     {
-        updateDistanceFromSickIteration(getPList());
+        for(int i = 1; i < getListPList().size(); i++)
+            updateDistanceFromSickIteration(getListPList().get(i));
     }
 
     /**
@@ -45,12 +52,15 @@ public class SimBoardMono extends SimBoard{
      */
     public void updateListPList()
     {
-       updatePList(getPList());
+        for(int i = 1; i < getListPList().size(); i++)
+        {
+            updatePList(getListPList().get(i));
+        }
     }
 
     public void drawListPList(Graphics2D g2D)
     {
-        for(int i = 0; i < getListPList().size(); i++)
+        for(int i = 1; i < getListPList().size(); i++)
         {
             drawPList(getListPList().get(i), i, g2D);
         }

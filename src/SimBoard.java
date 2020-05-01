@@ -56,7 +56,9 @@ public abstract class SimBoard {
         pListTravel= new ArrayList<>();
 
         listPList = new ArrayList<>();
+        System.out.print("Here");
         constructListPList();
+
     }
 
 
