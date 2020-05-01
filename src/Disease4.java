@@ -5,7 +5,7 @@ public class Disease4 extends Disease {
      */
     public Disease4()
     {
-        super(5, .05, .5, 1000, 5000, 0);
+        super(10, .02, .5, 1000, 5000, .999);
     }
     //Time is measured in centiseconds
 }
