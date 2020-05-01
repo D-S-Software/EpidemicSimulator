@@ -11,5 +11,6 @@
     <orderEntry type="library" name="openjfx-11.0(1)" level="project" />
     <orderEntry type="library" name="xchart-3.6.2" level="application" />
     <orderEntry type="library" name="xchart-3.6.21" level="application" />
+    <orderEntry type="library" name="xchart-3.6.22" level="application" />
   </component>
 </module>
