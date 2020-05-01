@@ -41,25 +41,24 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
     {
         int xShift = 120, yShift = 10;
 
-        setDimens(updatedRect);
+        getDimensList().get(0).setRect(updatedRect);
 
-        width = getDimens().width / 2 - xShift;
-        height = getDimens().height / 2 - yShift;
+        width = getDimensList().get(0).width / 2 - xShift;
+        height = getDimensList().get(0).height / 2 - yShift;
 
-        x2Start = getDimens().x + width + xShift / 6;
-        y2Origin = getDimens().height / 2 + yShift;
+        x2Start = getDimensList().get(0).x + width + xShift / 6;
+        y2Origin = getDimensList().get(0).height / 2 + yShift;
 
         quarXOrigin = x2Start + width + xShift / 5;
-        quarWidth = getDimens().width - quarXOrigin;
+        quarWidth = getDimensList().get(0).width - quarXOrigin;
 
         quarantine = new Rectangle(quarXOrigin, getDimens().y, quarWidth, getDimens().height);
 
-        setQ1Dimens(new Rectangle(getDimens().x, getDimens().y, width, height));
-        setQ2Dimens(new Rectangle(x2Start, getDimens().y, width, height));
-        setQ3Dimens(new Rectangle(getDimens().x, y2Origin, width, height));
-        setQ4Dimens(new Rectangle(x2Start, y2Origin, width, height));
-
-        setTravelDimens(new Rectangle(getDimens().x, getDimens().y, getDimens().width - xShift - quarWidth, getDimens().height));
+        getDimensList().get(1).setRect(getDimens().x, getDimens().y, width, height);
+        getDimensList().get(2).setRect(x2Start, getDimens().y, width, height);
+        getDimensList().get(3).setRect(getDimens().x, y2Origin, width, height);
+        getDimensList().get(4).setRect(x2Start, y2Origin, width, height);
+        getDimensList().get(5).setRect(getDimens().x, getDimens().y, getDimens().width - xShift - quarWidth, getDimens().height);
     }
 
     /**

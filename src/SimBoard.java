@@ -57,6 +57,7 @@ public abstract class SimBoard {
         constructDimensList();
         updateDimensList(dimens);
 
+
         pList = new ArrayList<>();
         pListQ1 = new ArrayList<>();
         pListQ2 = new ArrayList<>();

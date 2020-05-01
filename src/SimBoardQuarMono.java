@@ -40,10 +40,12 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
     {
         int shift = 150;
 
-        setDimens(new Rectangle(updatedRect.x, updatedRect.y, updatedRect.width - shift - 30, updatedRect.height));
-        quarXOrigin = getDimens().width + getDimens().x + 30;
+        getDimensList().get(0).setRect(updatedRect.x, updatedRect.y, updatedRect.width - shift - 30, updatedRect.height);
+        quarXOrigin = getDimensList().get(0).width + getDimensList().get(0).x + 30;
         quarWidth = shift;
-        quarantine = new Rectangle(quarXOrigin, getDimens().y, quarWidth, getDimens().height);
+        quarantine = new Rectangle(quarXOrigin, getDimensList().get(0).y, quarWidth, getDimensList().get(0).height);
+
+        super.updateDimensList(getDimensList().get(0));
     }
 
     /**

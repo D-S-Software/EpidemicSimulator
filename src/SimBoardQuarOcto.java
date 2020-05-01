@@ -42,31 +42,30 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
 
         setDimens(updatedRect);
 
-        width = getDimens().width / 4 - xShift;
-        height = getDimens().height / 2 - yShift;
+        width = getDimensList().get(0).width / 4 - xShift;
+        height = getDimensList().get(0).height / 2 - yShift;
 
-        x2Origin = getDimens().x + width + xShift / 4;
+        x2Origin = getDimensList().get(0).x + width + xShift / 4;
         y2Origin = height + 2*yShift;
 
-        x3Origin = getDimens().x + 2* width + 2* xShift / 4;
+        x3Origin = getDimensList().get(0).x + 2* width + 2* xShift / 4;
 
-        x4Origin = getDimens().x + 3* width + 3* xShift / 4;
+        x4Origin = getDimensList().get(0).x + 3* width + 3* xShift / 4;
 
         quarXOrigin = x4Origin + width + xShift / 2;
-        quarWidth = getDimens().width - quarXOrigin;
+        quarWidth = getDimensList().get(0).width - quarXOrigin;
 
         quarantine = new Rectangle(quarXOrigin, getDimens().y, quarWidth, getDimens().height);
 
-        setQ1Dimens(new Rectangle(getDimens().x, getDimens().y, width, height));
-        setQ2Dimens(new Rectangle(x2Origin, getDimens().y, width, height));
-        setQ3Dimens(new Rectangle(x3Origin, getDimens().y, width, height));
-        setQ4Dimens(new Rectangle(x4Origin, getDimens().y, width, height));
-        setQ5Dimens(new Rectangle(getDimens().x, y2Origin, width, height));
-        setQ6Dimens(new Rectangle(x2Origin, y2Origin, width, height));
-        setQ7Dimens(new Rectangle(x3Origin, y2Origin, width, height));
-        setQ8Dimens(new Rectangle(x4Origin, y2Origin, width, height));
-
-        setTravelDimens(new Rectangle(getDimens().x, getDimens().y, getDimens().x + x4Origin + width, getDimens().height));
+        getDimensList().get(1).setRect(getDimens().x, getDimens().y, width, height);
+        getDimensList().get(2).setRect(x2Origin, getDimens().y, width, height);
+        getDimensList().get(3).setRect(x3Origin, getDimens().y, width, height);
+        getDimensList().get(4).setRect(x4Origin, getDimens().y, width, height);
+        getDimensList().get(5).setRect(getDimens().x, y2Origin, width, height);
+        getDimensList().get(6).setRect(x2Origin, y2Origin, width, height);
+        getDimensList().get(7).setRect(x3Origin, y2Origin, width, height);
+        getDimensList().get(8).setRect(x4Origin, y2Origin, width, height);
+        getDimensList().get(9).setRect(getDimens().x, getDimens().y, getDimens().x + x4Origin + width, getDimens().height);
     }
 
     /**
