@@ -52,8 +52,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         addButtonPanel();
         addInfoPanel();
 
-        CreateFile logFile = new CreateFile();
-
         musicSongs.add(new Music("BlackOps.wav"));
         musicSongs.add(new Music("BreakingBad.wav"));
         musicSongs.add(new Music("Ceta (Rimworld OST).wav"));
@@ -63,15 +61,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         musicSongs.add(new Music("Riding Out (Rimworld OST).wav"));
         musicSongs.add(new Music("Rough Trail (Rimworld OST).wav"));
         musicSongs.add(new Music("Tribal Assembly (Rimworld OST).wav"));
-
-        logFile.openFile();
-        for(int i = 0; i < musicSongs.size(); i++)
-        {
-            logFile.log(musicSongs.get(i));
-            logFile.addSpace();
-        }
-
-        logFile.closeFile();
 
         changeSong();
 

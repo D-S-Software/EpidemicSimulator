@@ -2,12 +2,15 @@ package backend;
 
 import javax.sound.sampled.*;
 import java.io.File;
+import java.net.URL;
 
 public class Music {
 
         private Clip clip;
         private long clipTimePosition;
-        private AudioInputStream sound;
+        private AudioInputStream input;
+
+    private FloatControl gainControl;
 
     /**Creates a music object that can be used to play sounds on demand
      *
@@ -24,19 +27,24 @@ public class Music {
      */
     private void setFile(String soundFile)
         {
-            try
-            {
-                File file = new File("src/res/" + soundFile);
-                sound = AudioSystem.getAudioInputStream(file);
+            try {
+                URL url = this.getClass().getClassLoader().getResource("res/" + soundFile);
+
+                input = AudioSystem.getAudioInputStream(url);
+
+                AudioFormat baseFormat = input.getFormat();
+                AudioFormat decodeFormat = new AudioFormat(AudioFormat.Encoding.PCM_SIGNED, baseFormat.getSampleRate(), 16,
+                        baseFormat.getChannels(), baseFormat.getChannels() * 2, baseFormat.getSampleRate(), false);
+                AudioInputStream decodedInput = AudioSystem.getAudioInputStream(decodeFormat, input);
                 clip = AudioSystem.getClip();
-                clip.open(sound);
-                FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+                clip.open(decodedInput);
+
+                gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
                 gainControl.setValue(-25); //Lowers volume by x decibels TODO Make this the proper value
                 if(soundFile.equals("BlackOps.wav"))
                     gainControl.setValue(-30);
-            }
-            catch (Exception e)
-            {
+
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
