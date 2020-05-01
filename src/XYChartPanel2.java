@@ -12,8 +12,8 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
 
     /**Creates a chart panel for the total cases line graph
      *
-     * @param c
-     * @param gui
+     * @param c The chart that is being displayed
+     * @param gui The gui object that is displaying the chart panel
      */
     public XYChartPanel2(XYChart c, GUI gui)
     {
@@ -42,7 +42,7 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
     public void actionPerformed(ActionEvent e)
     {
         count++;
-        if(count == 100) //TODO 100 not 99?
+        if(count == 100)
         {
             xychart2.updateXYSeries("cases", gui.getStats().getTimeList(), gui.getStats().getCasesList(),null );
 

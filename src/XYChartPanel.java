@@ -44,7 +44,7 @@ public class XYChartPanel extends XChartPanel implements ActionListener {
     public void actionPerformed(ActionEvent e)
     {
         count++;
-        if(count == 100) //TODO Should this be 99?
+        if(count == 100)
         {
             xychart.updateXYSeries("Healthy", gui.getStats().getTimeList(), gui.getStats().getHealthyList(),null );
             xychart.updateXYSeries("Sick", gui.getStats().getTimeList(), gui.getStats().getSickList(),null );

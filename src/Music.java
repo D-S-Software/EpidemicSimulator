@@ -18,7 +18,7 @@ public class Music {
 
     /**Finds the requested file and loads it to be played
      *
-     * @param soundFile
+     * @param soundFile The location of the sound file
      */
     private void setFile(String soundFile)
         {
@@ -29,7 +29,7 @@ public class Music {
                 clip = AudioSystem.getClip();
                 clip.open(sound);
                 FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
-                gainControl.setValue(-10); //Lowers volume by 10 decibels
+                gainControl.setValue(-25); //Lowers volume by x decibels TODO Make this the proper value
             }
             catch (Exception e)
             {

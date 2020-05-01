@@ -18,7 +18,7 @@ public class MyXYChart {
         // Create Chart
         xychart = new XYChartBuilder().width(400).height(300).title("Population Breakdown vs Time").xAxisTitle("Time (s)").yAxisTitle("Number of People").build();
 
-        // Customize Chart //TODO: Organize
+        // Customize Chart
         xychart.getStyler().setLegendPosition(LegendPosition.OutsideS).setLegendLayout(Styler.LegendLayout.Horizontal);
         xychart.getStyler().setLegendBackgroundColor(CustomColor.JET);
         xychart.getStyler().setPlotBorderColor(CustomColor.JET).setPlotBackgroundColor(CustomColor.JET);
@@ -31,7 +31,6 @@ public class MyXYChart {
         xychart.getStyler().setYAxisTickLabelsColor(CustomColor.CHART_LABEL);
 
         // Series
-        //TODO Change the front size for the line graph
         XYSeries healthy = xychart.addSeries("Healthy",new double[]{0}, new double[]{0});
         healthy.setLineColor(CustomColor.HEALTHY);
         healthy.setMarkerColor(CustomColor.HEALTHY);
