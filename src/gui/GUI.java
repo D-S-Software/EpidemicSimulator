@@ -30,7 +30,7 @@ public class GUI {
     private boolean showPieFirst = true, showCasesFirst = true;
     private int preWidth, preHeight;
 
-    /** Creates the main gui.gui for the simulation
+    /** Creates the main gui for the simulation
      *
      * @param preWidth The predetermined width for the simulation upon launch
      * @param preHeight The predetermined height for the simulation upon launch
@@ -93,7 +93,7 @@ public class GUI {
     }
 
     /**
-     * Creates and adds the Title Panel for the main gui.gui
+     * Creates and adds the Title Panel for the main gui
      */
     private void addTitlePanel()
     {
@@ -119,7 +119,7 @@ public class GUI {
     }
 
     /**
-     * Creates and adds the backend.simboard.backend.simboard Panel for the main gui.gui
+     * Creates and adds the simBoardPanel for the main gui
      */
     private void addBoardPanel()
     {
@@ -139,7 +139,7 @@ public class GUI {
     }
 
     /**
-     * Creates and adds the Control Panel for the main gui.gui
+     * Creates and adds the Control Panel for the main gui
      */
     private void addControlPanel()
     {
@@ -160,7 +160,7 @@ public class GUI {
     }
 
     /**
-     * Creates and adds the Tally Panel for the main gui.gui
+     * Creates and adds the Tally Panel for the main gui
      */
     private void addTallyPanel()
     {
@@ -181,7 +181,7 @@ public class GUI {
     }
 
     /**
-     * Creates and adds the Line Graph (All stats) Panel for the main gui.gui. This is created after the first simulation runs with an engine constructor
+     * Creates and adds the Line Graph (All stats) Panel for the main gui. This is created after the first simulation runs with an engine constructor
      */
     private void addXYChartPanel()
     {
@@ -196,8 +196,8 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
 
-        myXYChart = new MyXYChart(); /** This is not in the constructor because a gui.gui object must be created first,
-                                     *then gui.stats() is called in backend.Engine. Then myChart.setStats(stats) can be called here.*/
+        myXYChart = new MyXYChart(); /** This is not in the constructor because a gui object must be created first,
+                                     *then gui.stats() is called in Engine. Then setStats(stats) can be called here.*/
 
         xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
         xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
@@ -206,7 +206,7 @@ public class GUI {
     }
 
     /**
-     * Creates and adds the Line Graph (total cases) Panel for the main gui.gui. This is created after the first simulation runs with an engine constructor
+     * Creates and adds the Line Graph (total cases) Panel for the main gui. This is created after the first simulation runs with an engine constructor
      */
     private void addXYChartPanel2()
     {
@@ -230,7 +230,7 @@ public class GUI {
     }
 
     /**
-     * Creates and adds the Pie chart Panel for the main gui.gui. This is created after the first simulation runs with an engine constructor
+     * Creates and adds the Pie chart Panel for the main gui. This is created after the first simulation runs with an engine constructor
      */
     private void addPieChartPanel()
     {

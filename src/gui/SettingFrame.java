@@ -1,6 +1,5 @@
 package gui;
 
-import backend.disease.Disease;
 import lib.CustomColor;
 
 import javax.swing.*;

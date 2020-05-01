@@ -34,7 +34,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
     private boolean toPause = true, canStart = true, canType = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
 
-    /**Creates a control Panel object for the gui.gui
+    /**Creates a control Panel object for the gui
      *
      * @param gui The gui object needed to create the engine object when the user starts the simulation
      */

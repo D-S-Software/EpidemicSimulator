@@ -11,7 +11,7 @@ public class MyPieChart {
 
     private PieChart pieChart;
 
-    /**Creates a Pie chart for the gui.chart.PieChartPanel
+    /**Creates a Pie chart for the PieChartPanel
      *
      * @return Returns the pieChart
      */
