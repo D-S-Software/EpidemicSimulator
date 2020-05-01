@@ -1,3 +1,5 @@
+package gui;
+
 import lib.CustomColor;
 
 import javax.swing.*;
