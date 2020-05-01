@@ -21,7 +21,7 @@ public class InfoFrame extends JFrame {
      */
     public InfoFrame() {
         setBackground(CustomColor.BACKGROUND);
-        setPreferredSize(new Dimension(850, 600));
+        setPreferredSize(new Dimension(800, 650));
         getContentPane().setBackground(CustomColor.BACKGROUND);
 
         mainPanel.setBackground(CustomColor.BACKGROUND);
@@ -140,7 +140,7 @@ public class InfoFrame extends JFrame {
             System.err.println("Couldn't find file: src/res/EpidemicInfoBio.html");
         }
 
-        JPanel middlePanel = new JPanel();
+       // JPanel middlePanel = new JPanel();
 
         mainPanel.add(middlePane,gbc);
     }
