@@ -126,7 +126,7 @@ public class InfoFrame extends JFrame {
      * Creates and adds the middle panel for the info frame
      */
     private void addMiddlePanel() {
-        java.net.URL url = InfoFrame.class.getResource("src/res/EpidemicInfoBio.html");
+        java.net.URL url = ClassLoader.getSystemResource("res/EpidemicInfoBio.html");
         JEditorPane middlePane = new JEditorPane();
         middlePane.setEditable(false);
 
@@ -137,14 +137,12 @@ public class InfoFrame extends JFrame {
                 System.err.println("Attempted to read a bad URL: " + url);
             }
         } else {
-            System.err.println("Couldn't find file: changelog.html");
+            System.err.println("Couldn't find file: src/res/EpidemicInfoBio.html");
         }
 
         JPanel middlePanel = new JPanel();
 
         mainPanel.add(middlePane,gbc);
-        //middlePanel.add(middlePane);
-
     }
     /**
      * Creates and adds the bottom panel for the info frame
