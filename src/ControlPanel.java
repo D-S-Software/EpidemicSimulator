@@ -4,6 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import java.util.TimerTask;
 
 public class ControlPanel extends JPanel implements ActionListener{
 
@@ -19,6 +23,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     private Timer checkTick;
     private Music backgroundMusic;
     private SettingFrame settingFrame;
+    private ArrayList<Music> musicSongs = new ArrayList<>();
 
     private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
@@ -35,19 +40,35 @@ public class ControlPanel extends JPanel implements ActionListener{
         settingFrame = new SettingFrame();
         settingFrame.setVisible(false);
 
-        if(Math.random() > .5)
-            backgroundMusic = new Music("BlackOps.wav");
-        else
-            backgroundMusic = new Music("BreakingBad.wav");
-
         addSelectionPanel();
         addSimSettingPanel();
         addParamPanel();
         addButtonPanel();
         addInfoPanel();
 
+        musicSongs.add(new Music("BlackOps.wav"));
+        musicSongs.add(new Music("BreakingBad.wav"));
+        musicSongs.add(new Music("Ceta (Rimworld OST).wav"));
+        musicSongs.add(new Music("I Like It Here (Rimworld OST).wav"));
+        musicSongs.add(new Music("Moving On (Rimworld OST).wav"));
+        musicSongs.add(new Music("Night And Day (Rimworld OST).wav"));
+        musicSongs.add(new Music("Riding Out (Rimworld OST).wav"));
+        musicSongs.add(new Music("Rough Trail (Rimworld OST).wav"));
+        musicSongs.add(new Music("Tribal Assembly (Rimworld OST).wav"));
+
+        changeSong();
+
         checkTick = new Timer(10, this);
         checkTick.start();
+    }
+
+    /**
+     * Changes the current background song
+     */
+    private void changeSong()
+    {
+        int randomIndex = (int)(musicSongs.size()*Math.random());
+        backgroundMusic = musicSongs.get(randomIndex);
     }
 
     /**
@@ -184,20 +205,29 @@ public class ControlPanel extends JPanel implements ActionListener{
         toggleMusic.setFont(toggleMusic.getFont ().deriveFont (18.0f));
         toggleMusic.setForeground(CustomColor.ON_BUTTON_LABEL);
         toggleMusic.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        toggleMusic.setToolTipText("Click to pause / Double click to change song");
 
-        toggleMusic.addActionListener(new ActionListener() {
+        toggleMusic.addMouseListener(new MouseAdapter(){
             @Override
-            public void actionPerformed(ActionEvent e) {
-
-                if(musicPlaying)
+            public void mouseClicked(MouseEvent e){
+                if(e.getClickCount()==2)
                 {
-                    backgroundMusic.pause();
-                    musicPlaying = false;
+                    backgroundMusic.stop();
+                    changeSong();
+                    backgroundMusic.play();
                 }
-                else
+                if(e.getClickCount()==1)
                 {
-                    backgroundMusic.resume();
-                    musicPlaying = true;
+                    if(musicPlaying)
+                    {
+                        backgroundMusic.pause();
+                        musicPlaying = false;
+                    }
+                    else
+                    {
+                        backgroundMusic.resume();
+                        musicPlaying = true;
+                    }
                 }
             }
         });
@@ -534,9 +564,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                             isSocialDist = true;
                         else isSocialDist = false;
                         canStart = false;
-                        checkTick.stop();
                         gui.getTallyPanel().showGraphModeButton();
-                        backgroundMusic.loop();
+                        backgroundMusic.play();
 
                         toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
                     }
@@ -608,7 +637,6 @@ public class ControlPanel extends JPanel implements ActionListener{
                 speedUp.setToolTipText("Increase Speed");
                 slowDown.setToolTipText("Slow Down");
 
-                checkTick.start();
                 backgroundMusic.stop();
             }
         });
@@ -628,7 +656,7 @@ public class ControlPanel extends JPanel implements ActionListener{
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(custom.isSelected() && canType)
+        if(custom.isSelected() && canType && !isPlaying)
         {
             contagiousPercent.setText("");
             contagiousRange.setText("");
@@ -638,7 +666,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             startPercentHealthy.setText("");
             canType = false;
         }
-        if(choice1.isSelected())
+        if(choice1.isSelected() && !isPlaying)
         {
             disease = new Disease1();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -649,7 +677,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
-        if(choice2.isSelected())
+        if(choice2.isSelected() && !isPlaying)
         {
             disease = new Disease2();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -660,7 +688,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
-        if(choice3.isSelected())
+        if(choice3.isSelected() && !isPlaying)
         {
             disease = new Disease3();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -671,7 +699,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
         }
-        if(choice4.isSelected())
+        if(choice4.isSelected() && !isPlaying)
         {
             disease = new Disease4();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -681,6 +709,13 @@ public class ControlPanel extends JPanel implements ActionListener{
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
+        }
+
+        if(backgroundMusic.getClip().getMicrosecondPosition() == backgroundMusic.getClip().getMicrosecondLength()-1)
+        {
+            backgroundMusic.stop();
+            changeSong();
+            backgroundMusic.play();
         }
     }
 
