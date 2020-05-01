@@ -528,7 +528,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         }
                         catch (java.lang.NumberFormatException ex)
                         {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (No Decimals)!");
                             goodToStart = false;
                         }
                     }
@@ -585,17 +585,21 @@ public class ControlPanel extends JPanel implements ActionListener{
                                 isSocialDist = true;
                             else isSocialDist = false;
                             canStart = false;
-                            gui.getTallyPanel().showGraphModeButton();
-                            backgroundMusic.stop();
-                            changeSong();
-                            backgroundMusic.play();
 
-                            toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
+                            if(disease != null)
+                            {
+                                gui.getTallyPanel().showGraphModeButton();
+                                backgroundMusic.stop();
+                                changeSong();
+                                backgroundMusic.play();
+
+                                toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
+                            }
                         }
                     }
                     catch (java.lang.NumberFormatException ex)
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (No Decimals)!");
                     }
                 }
             }
@@ -737,6 +741,16 @@ public class ControlPanel extends JPanel implements ActionListener{
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
             canType = true;
+        }
+        if(!choice1.isSelected() && !choice2.isSelected() && !choice3.isSelected() && !choice4.isSelected() && !custom.isSelected())
+        {
+            contagiousPercent.setText("");
+            contagiousRange.setText("");
+            baseMortalityRate.setText("");
+            baseMinTimeSick.setText("");
+            baseMaxTimeSick.setText("");
+            startPercentHealthy.setText("");
+            canType = false;
         }
 
         if(backgroundMusic.getClip().getMicrosecondPosition() == backgroundMusic.getClip().getMicrosecondLength()-1)

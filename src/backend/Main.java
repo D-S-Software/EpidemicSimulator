@@ -39,5 +39,4 @@ public class Main {
     // First 10 deaths - move less --> just update step and direction in person
     // going to a central location
     // manual trigger
-
 }

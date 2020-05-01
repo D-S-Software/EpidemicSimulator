@@ -798,7 +798,7 @@ public class SettingFrame extends JFrame implements ActionListener{
                 }
                 catch (java.lang.NumberFormatException ex)
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (No Decimals)!");
                 }
             }
         });
