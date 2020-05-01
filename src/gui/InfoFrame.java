@@ -27,7 +27,7 @@ public class InfoFrame extends JFrame {
     public InfoFrame() {
 
         setBackground(CustomColor.BACKGROUND);
-        setPreferredSize(new Dimension(850, 620));
+        setPreferredSize(new Dimension(850, 660));
         getContentPane().setBackground(CustomColor.BACKGROUND);
 
         mainPanel.setBackground(CustomColor.BACKGROUND);
