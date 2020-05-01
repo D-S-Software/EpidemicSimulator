@@ -783,10 +783,14 @@ public class SettingFrame extends JFrame implements ActionListener{
                 }
                 else if(Integer.parseInt(getTravelers().getText()) < 0 || Integer.parseInt(getTimeUntilQuarantine().getText()) < 0
                         || Integer.parseInt(getPercentQuarantine().getText()) < 0 || Integer.parseInt(getAsymptomaticChance().getText()) < 0
-                        || Integer.parseInt(getSocialDistanceValue().getText()) < 0 || Integer.parseInt(getPercentSocialDist().getText()) < 0 || Integer.parseInt(getMaxAge().getText()) < 0
+                        || Integer.parseInt(getSocialDistanceValue().getText()) < 0 || Integer.parseInt(getPercentSocialDist().getText()) < 0 || Integer.parseInt(getMinAge().getText()) < 0
                         || Integer.parseInt(getMaxAge().getText()) < 0 || Integer.parseInt(getMinConditions().getText()) < 0 || Integer.parseInt(getMaxConditions().getText()) < 0)
                 {
                     JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
+                }
+                else if(Integer.parseInt(getMinAge().getText()) > Integer.parseInt(getMaxAge().getText()) || Integer.parseInt(getMinConditions().getText()) > Integer.parseInt(getMaxConditions().getText()))
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
                 }
                 else setVisible(false);
             }

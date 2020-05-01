@@ -533,10 +533,14 @@ public class ControlPanel extends JPanel implements ActionListener{
                     }
                     else if(Integer.parseInt(settingFrame.getTravelers().getText()) < 0 || Integer.parseInt(settingFrame.getTimeUntilQuarantine().getText()) < 0
                             || Integer.parseInt(settingFrame.getPercentQuarantine().getText()) < 0 || Integer.parseInt(settingFrame.getAsymptomaticChance().getText()) < 0
-                            || Integer.parseInt(settingFrame.getSocialDistanceValue().getText()) < 0 || Integer.parseInt(settingFrame.getPercentSocialDist().getText()) < 0 || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0
+                            || Integer.parseInt(settingFrame.getSocialDistanceValue().getText()) < 0 || Integer.parseInt(settingFrame.getPercentSocialDist().getText()) < 0 || Integer.parseInt(settingFrame.getMinAge().getText()) < 0
                             || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
                     {
                         JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
+                    }
+                    else if(Integer.parseInt(settingFrame.getMinAge().getText()) > Integer.parseInt(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
                     }
                     else goodToStart = true;
 
