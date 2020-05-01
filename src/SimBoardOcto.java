@@ -83,25 +83,5 @@ public class SimBoardOcto extends SimBoard{
      * Finds the closest sick person to each healthy person and returns the distance between them
      * Based on the default board size this is from 0 to 1000ish
      */
-    public void updateDistanceFromSick()
-    {
-        for(int i = 1; i < getListPList().size(); i++)
-            updateDistanceFromSickIteration(getListPList().get(i));
-    }
 
-    public void updateListPList()
-    {
-        for(int i = 1; i < getListPList().size(); i++)
-        {
-            updatePList(getListPList().get(i));
-        }
-    }
-
-    public void drawListPList(Graphics2D g2D)
-    {
-        for(int i = 1; i < getListPList().size(); i++) //
-        {
-            drawPList(getListPList().get(i), i, g2D); //i
-        }
-    }
 }

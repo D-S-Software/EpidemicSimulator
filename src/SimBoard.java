@@ -123,9 +123,12 @@ public abstract class SimBoard {
         return dimens.y + (int)(dimens.height * Math.random());
     }
 
-    public abstract void updateListPList();
 
-    public abstract void updateDistanceFromSick();
+    public void updateDistanceFromSick()
+    {
+        for(int i = 1; i < getListPList().size(); i++)
+            updateDistanceFromSickIteration(getListPList().get(i));
+    }
 
     public abstract void updateAllDimens(Rectangle updatedRect);
 
@@ -228,6 +231,14 @@ public abstract class SimBoard {
                 minDist = 0.1;
             pListQN.get(i).setDistanceFromSick(minDist);
             pListQN.get(i).setClosestSickIndex(closestSickIndex);
+        }
+    }
+
+    public void updateListPList()
+    {
+        for(int i = 1; i < getListPList().size(); i++)
+        {
+            updatePList(getListPList().get(i));
         }
     }
 
