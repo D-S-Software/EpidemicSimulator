@@ -565,6 +565,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else isSocialDist = false;
                         canStart = false;
                         gui.getTallyPanel().showGraphModeButton();
+                        changeSong();
                         backgroundMusic.play();
 
                         toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");

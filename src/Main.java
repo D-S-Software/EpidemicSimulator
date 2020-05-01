@@ -23,11 +23,6 @@ public class Main {
     //1. Bouncing is not really there (dimens are off)
 
     //TODO Clean up code (make packages, check parameters ect.) V1
-    //      Maybe try to put updateBoard back in each respective board class
-    //TODO Graphic settings (higher graphics = more chart updates) V1
-    //TODO: Board selection (use array of SimBoard) - V1
-    //TODO Find Diseases and set parameters for Disease 1-4 - V1
-
 
     //TODO Write data to text fil (such as graph data to compare) - V2
     //TODO Make opening screen (start with music) - V2
