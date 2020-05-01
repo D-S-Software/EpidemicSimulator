@@ -570,6 +570,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else isSocialDist = false;
                         canStart = false;
                         gui.getTallyPanel().showGraphModeButton();
+                        backgroundMusic.stop();
                         changeSong();
                         backgroundMusic.play();
 

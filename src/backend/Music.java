@@ -32,6 +32,8 @@ public class Music {
                 clip.open(sound);
                 FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
                 gainControl.setValue(-25); //Lowers volume by x decibels TODO Make this the proper value
+                if(soundFile.equals("BlackOps.wav"))
+                    gainControl.setValue(-30);
             }
             catch (Exception e)
             {
