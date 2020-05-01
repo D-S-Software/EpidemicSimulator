@@ -8,7 +8,6 @@ import org.knowm.xchart.style.Styler.LegendPosition;
 public class MyXYChart {
 
     private XYChart xychart;
-    String unit;
 
     /**Creates the line graph of all the data for the chart panel
      *

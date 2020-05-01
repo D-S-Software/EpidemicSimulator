@@ -55,7 +55,7 @@ public class Statistics implements ActionListener {
     /**
      * Updates the each of the statistics (Called every tick)
      */
-    public void updateStats()
+    private void updateStats()
     {
         int healthyCount = 0;
         int sickCount = 0;
@@ -235,9 +235,6 @@ public class Statistics implements ActionListener {
     public int getTime()
     {
         return time;
-    }
-    public int getNumCases() {
-        return numCases;
     }
 
     public ArrayList<Integer> getTimeList() {

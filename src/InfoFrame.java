@@ -106,7 +106,7 @@ public class InfoFrame extends JFrame {
     /**
      * Creates and adds the top title panel in the info frame
      */
-    public void addTopPanel()
+    private void addTopPanel()
     {
         JPanel topPanel = new JPanel();
         topPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
@@ -124,7 +124,7 @@ public class InfoFrame extends JFrame {
     /**
      * Creates and adds the middle panel for the info frame
      */
-    public void addMiddlePanel()
+    private void addMiddlePanel()
     {
         JPanel middlePanel = new JPanel(new BorderLayout());
         middlePanel.setBackground(CustomColor.JET);
@@ -145,7 +145,7 @@ public class InfoFrame extends JFrame {
     /**
      * Creates and adds the bottom panel for the info frame
      */
-    public void addBottomPanel()
+    private void addBottomPanel()
     {
         JPanel bottomPanel = new JPanel();
         bottomPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);

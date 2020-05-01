@@ -20,7 +20,7 @@ public class Music {
      *
      * @param soundFile
      */
-    public void setFile(String soundFile)
+    private void setFile(String soundFile)
         {
             try
             {

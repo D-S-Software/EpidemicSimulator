@@ -53,7 +53,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     /**
      * Creates and adds the disease selection panel
      */
-    public void addSelectionPanel()
+    private void addSelectionPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
@@ -147,7 +147,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     /**
      * Creates and adds the panel for the info and toggle music buttons
      */
-    public void addInfoPanel()
+    private void addInfoPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 1;
@@ -210,7 +210,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     /**
      * Creates and adds the panel for social distancing, speed up and slow down, and the setting button
      */
-    public void addSimSettingPanel()
+    private void addSimSettingPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 2;
@@ -332,7 +332,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     /**
      * Creates and adds the panel for the disease parameters
      */
-    public void addParamPanel()
+    private void addParamPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 1;
@@ -422,7 +422,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     /**
      * Creates and adds the panel for the number of people text field and the start / pause / reset buttons
      */
-    public void addButtonPanel()
+    private void addButtonPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 1;

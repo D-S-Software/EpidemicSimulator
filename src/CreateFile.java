@@ -75,7 +75,7 @@ public class CreateFile {
      * @param array
      * @return
      */
-    public String arrayToString(ArrayList<Person> array)
+    private String arrayToString(ArrayList<Person> array)
     {
         String output = array.get(0).getHasDisease() + "";
         for(int i = 1; i < array.size(); i++)

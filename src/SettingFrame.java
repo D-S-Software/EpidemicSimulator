@@ -758,7 +758,7 @@ public class SettingFrame extends JFrame implements ActionListener{
     /**
      * Creates and adds the bottom panel for the setting frame
      */
-    public void addBottomPanel()
+    private void addBottomPanel()
     {
         JPanel bottomPanel = new JPanel(new GridBagLayout());
         bottomPanel.setBackground(CustomColor.BACKGROUND);
