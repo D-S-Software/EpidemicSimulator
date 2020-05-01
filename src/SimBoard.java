@@ -7,7 +7,7 @@ public abstract class SimBoard {
     private ArrayList<Rectangle> dimensList;
 
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
-    private ArrayList<ArrayList<Person>> listPList; //may contain anywhere from just pList to all of the pLists depending on mono, quad or octo.
+    private ArrayList<ArrayList<Person>> listPList; //may contain anywhere from just pList to all of the pLists depending on mono, quad or octo
 
     private Disease disease;
 
@@ -70,7 +70,6 @@ public abstract class SimBoard {
 
         listPList = new ArrayList<>();
         constructListPList();
-
     }
 
     /**
