@@ -43,7 +43,7 @@ public class Music {
     public void play()
         {
             clip.setFramePosition(0);
-            //clip.start(); //TODO Add back in
+            clip.start();
         }
 
     /**
@@ -70,11 +70,14 @@ public class Music {
     public void loop()
         {
             clip.setFramePosition(0);
-            //clip.loop(Clip.LOOP_CONTINUOUSLY); //TODO Add back in
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
         }
 
-        public void stop()
-        {
-            clip.stop();
-        }
+    /**
+     * Stops the current sound file from playing
+     */
+    public void stop()
+    {
+        clip.stop();
+    }
 }
