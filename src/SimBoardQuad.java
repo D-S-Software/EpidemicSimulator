@@ -58,7 +58,7 @@ public class SimBoardQuad extends SimBoard {
      * Updates the dimensions of each rectangle each tick to keep each person in the correct zone
      * @param updatedRect The current rectangle for the bounds of the SimBoard Panel
      */
-    public void updateAllDimens(Rectangle updatedRect) {
+    public void updateDimensList(Rectangle updatedRect) {
 
         getDimensList().get(0).setRect(updatedRect);
 

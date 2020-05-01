@@ -44,7 +44,7 @@ public class SimBoardOcto extends SimBoard{
         constructPListTotal(getListPList(), 1);
     }
 
-    public void updateAllDimens(Rectangle updatedRect)
+    public void updateDimensList(Rectangle updatedRect)
     {
         getDimensList().get(0).setRect(updatedRect);
 

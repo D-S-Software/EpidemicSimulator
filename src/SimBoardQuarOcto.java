@@ -36,7 +36,7 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
      * @param updatedRect The current rectangle for the bounds of the SimBoard Panel
      */
     @Override
-    public void updateAllDimens(Rectangle updatedRect)
+    public void updateDimensList(Rectangle updatedRect)
     {
         int xShift = 60, yShift = 30;
 

@@ -36,7 +36,7 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
      * @param updatedRect The current rectangle for the bounds of the SimBoard Panel
      */
     @Override
-    public void updateAllDimens(Rectangle updatedRect)
+    public void updateDimensList(Rectangle updatedRect)
     {
         int shift = 150;
 

@@ -41,7 +41,7 @@ public abstract class SimBoard {
         travelDimens = new Rectangle();
 
         dimensList = new ArrayList<>();
-        updateAllDimens(dimens);
+        updateDimensList(dimens);
         constructDimensList();
 
         pList = new ArrayList<>();
@@ -65,7 +65,7 @@ public abstract class SimBoard {
 
     public abstract void constructListPList();
 
-    public abstract void updateAllDimens(Rectangle updatedRect);
+    public abstract void updateDimensList(Rectangle updatedRect);
 
     public void constructPListTotal(ArrayList<ArrayList<Person>> ListPList, int startIndex)
     {
