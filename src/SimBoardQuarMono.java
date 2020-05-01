@@ -43,7 +43,7 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable{
             }
             if(getPList().get(i).getHasDisease() && getPList().get(i).getIsHealthy() && !getPList().get(i).isIsoRecovered())
             {
-                getPList().get(i).resetDimens(getDimens());
+                getPList().get(i).resetDimens(getDimensList().get(getPList().get(i).getQuadLocation()));
                 getPList().get(i).setIsoRecovered(true);
                 getPList().get(i).setIsoSick(false);
             }

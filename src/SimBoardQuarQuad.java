@@ -58,26 +58,7 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable{
             }
             if(getPList().get(i).getHasDisease() && getPList().get(i).getIsHealthy() && !getPList().get(i).isIsoRecovered())
             {
-                if(getPList().get(i).getQuadLocation() == 1)
-                {
-                    getPList().get(i).resetDimens(getQ1Dimens());
-                }
-                if(getPList().get(i).getQuadLocation() == 2)
-                {
-                    getPList().get(i).resetDimens(getQ2Dimens());
-                }
-                if(getPList().get(i).getQuadLocation() == 3)
-                {
-                    getPList().get(i).resetDimens(getQ3Dimens());
-                }
-                if(getPList().get(i).getQuadLocation() == 4)
-                {
-                    getPList().get(i).resetDimens(getQ4Dimens());
-                }
-                if(getPList().get(i).getQuadLocation() == 5)
-                {
-                    getPList().get(i).resetDimens(getTravelDimens());
-                }
+                getPList().get(i).resetDimens(getDimensList().get(getPList().get(i).getQuadLocation()));
                 getPList().get(i).setIsoRecovered(true);
                 getPList().get(i).setIsoSick(false);
             }
