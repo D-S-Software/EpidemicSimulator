@@ -28,7 +28,7 @@ public class Statistics implements ActionListener {
         numPeople = simBoard.getNumPeople();
         time = -1;
 
-        //x.openFile(); TODO Add back in at some point
+        //x.openFile(); TODO Put back at some point
 
         updateStats();
     }
@@ -89,18 +89,6 @@ public class Statistics implements ActionListener {
             for(int i = 0; i < pList.size(); i++)
                 pList.get(i).setIsSocialDistancing(true);
         */
-
-        /** TODO Add back in at some point
-         boolean close;
-         if(numSick > 0)
-            close = false;
-         else
-            close = true;
-         if(close)
-         {
-            x.closeFile();
-            System.exit(0);
-         }*/
     }
 
     /** Getter and Setter Methods */
