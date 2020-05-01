@@ -80,4 +80,9 @@ public class Music {
     {
         clip.stop();
     }
+
+    public Clip getClip()
+    {
+        return clip;
+    }
 }
