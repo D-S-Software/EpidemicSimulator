@@ -93,22 +93,22 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel(new GridLayout(5, 2));
 
-        choice1 = new JRadioButton("disease 1   ");
+        choice1 = new JRadioButton("Disease 1   ");
         choice1.setFont(choice1.getFont ().deriveFont (16.0f));
         choice1.setBackground(CustomColor.DAVYS_GRAY);
         choice1.setForeground(CustomColor.ON_BUTTON_LABEL);
         choice1.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        choice2 = new JRadioButton("disease 2   ");
+        choice2 = new JRadioButton("Disease 2   ");
         choice2.setFont(choice2.getFont ().deriveFont (16.0f));
         choice2.setBackground(CustomColor.BUTTON);
         choice2.setForeground(CustomColor.ON_BUTTON_LABEL);
         choice2.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        choice3 = new JRadioButton("disease 3   ");
+        choice3 = new JRadioButton("Disease 3   ");
         choice3.setFont(choice3.getFont ().deriveFont (16.0f));
         choice3.setBackground(CustomColor.BUTTON);
         choice3.setForeground(CustomColor.ON_BUTTON_LABEL);
         choice3.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        choice4 = new JRadioButton("disease 4   ");
+        choice4 = new JRadioButton("Disease 4   ");
         choice4.setFont(choice4.getFont ().deriveFont (16.0f));
         choice4.setBackground(CustomColor.BUTTON);
         choice4.setForeground(CustomColor.ON_BUTTON_LABEL);
@@ -205,7 +205,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        toggleMusic = new JButton("Toggle backend.Music");
+        toggleMusic = new JButton("Toggle Music");
         toggleMusic.setBackground(CustomColor.BUTTON);
         toggleMusic.setFont(toggleMusic.getFont ().deriveFont (18.0f));
         toggleMusic.setForeground(CustomColor.ON_BUTTON_LABEL);
