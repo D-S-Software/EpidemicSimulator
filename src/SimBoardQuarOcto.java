@@ -65,10 +65,6 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
             }
             if(getPList().get(i).getHasDisease() && getPList().get(i).getIsHealthy() && !getPList().get(i).isIsoRecovered())
             {
-                if(getPList().get(i).getQuadLocation() == 0)
-                {
-                    getPList().get(i).resetDimens(getTravelDimens());
-                }
                 if(getPList().get(i).getQuadLocation() == 1)
                 {
                     getPList().get(i).resetDimens(getQ1Dimens());
@@ -100,6 +96,10 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
                 if(getPList().get(i).getQuadLocation() == 8)
                 {
                     getPList().get(i).resetDimens(getQ8Dimens());
+                }
+                if(getPList().get(i).getQuadLocation() == 9)
+                {
+                    getPList().get(i).resetDimens(getTravelDimens());
                 }
                 getPList().get(i).setIsoRecovered(true);
                 getPList().get(i).setIsoSick(false);

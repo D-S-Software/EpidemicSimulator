@@ -5,8 +5,6 @@ public class Engine {
 
     private Timer clock;
     private int delay = 10;
-    private SimBoard simBoard;
-    Rectangle boardDimens;
 
     /** Creates and engine object for a run of the simulation. Creates the requested board and sets parameters
      *
@@ -29,8 +27,8 @@ public class Engine {
     public Engine(GUI gui, Disease disease, int numPeople, int boardType, boolean quarBoard,
                   double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, int timeUntilQuarantine, double quarantineChance)
     {
-        boardDimens = new Rectangle(gui.getSimBoardRec());
-        System.out.println(boardDimens);
+        Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
+        SimBoard simBoard;
 
         if(quarBoard) {
             if (boardType == 8)
@@ -52,7 +50,7 @@ public class Engine {
 
         gui.getSimBoardPanel().setBoard(simBoard);
 
-        Statistics stats = new Statistics(simBoard, numPeople);
+        Statistics stats = new Statistics(simBoard);
         gui.setStats(stats);
 
         clock = new Timer(delay, gui.getSimBoardPanel());
