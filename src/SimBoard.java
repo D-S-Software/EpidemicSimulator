@@ -292,7 +292,7 @@ public abstract class SimBoard {
             if(pList.get(j).isIsoSick() == false)
             {
                 pList.get(j).updateDimens(dimensList.get(dimensNum)); //TODO This line of code is broken for some reason
-                System.out.println(dimensList.get(dimensNum).width);
+
             }
             pList.get(j).draw(g2D);
         }
