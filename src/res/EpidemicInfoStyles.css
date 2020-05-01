@@ -21,6 +21,7 @@ div.a{
 }
 
 .footer{
+    position:fixed;
 	font-size: 12px;
 	font-style: arial;      
     bottom: 5px; 
