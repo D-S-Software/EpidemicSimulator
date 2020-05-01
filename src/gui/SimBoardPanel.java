@@ -40,7 +40,7 @@ public class SimBoardPanel extends JPanel implements ActionListener
 
         if(simBoard != null)
         {
-            simBoard.updateDimensList(this.getBounds()); /** Updates The simboard to the dimensions of the gui.gui.SimBoardPanel */
+            simBoard.updateDimensList(this.getBounds()); /** Updates The simboard to the dimensions of the SimBoardPanel */
             simBoard.updateBoard(g2D); /** Updates the simboard's pList(s) ; no simboard object needed */
         }
 
