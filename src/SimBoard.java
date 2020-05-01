@@ -14,7 +14,20 @@ public abstract class SimBoard {
     private double socialDistanceChance, asymptomaticChance;
     private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers;
 
-
+    /** Creates a SimBoard to simulate the actions of people that are displayed on SimBoardPanel
+     *
+     * @param disease The disease object used for a simulation
+     * @param dimens The rectangle that represents the area a person can move in
+     * @param numPeople The total number of people in the simulation
+     * @param asymptomaticChance The percent of people who are asymptomatic
+     * @param socialDistanceValue The number of pixels each person tries to stay apart by when social distancing is enabled
+     * @param socialDistanceChance The percent of people who participate in social distancing
+     * @param minAge The minimum age of a person in the simulation
+     * @param maxAge The maximum age of a person in the simulation
+     * @param minPreExistingConditions The minimum pre-existing conditions of a person in the simulation
+     * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
+     * @param travelersPer The percent of people who travel without bound in a quad or octo board
+     */
     public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
                     int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
@@ -41,8 +54,8 @@ public abstract class SimBoard {
         travelDimens = new Rectangle();
 
         dimensList = new ArrayList<>();
-        updateDimensList(dimens);
         constructDimensList();
+        updateDimensList(dimens);
 
         pList = new ArrayList<>();
         pListQ1 = new ArrayList<>();
@@ -56,29 +69,50 @@ public abstract class SimBoard {
         pListTravel= new ArrayList<>();
 
         listPList = new ArrayList<>();
-        System.out.print("Here");
         constructListPList();
 
     }
 
+    /**
+     * Creates an ArrayList of rectangles that represent dimensions of different parts of the sim board
+     */
     public abstract void constructDimensList();
 
+    /**
+     * Creates an ArrayList of ArrayLists of people to be used when calling update methods
+     */
     public abstract void constructListPList();
 
+    /**
+     * Updates the dimensions of each rectangle each tick to keep each person in the correct zone
+     * @param updatedRect The current rectangle for the bounds of the SimBoard Panel
+     */
     public abstract void updateDimensList(Rectangle updatedRect);
 
+    /**
+     * Helper method used in the constructListPList method
+     * @param ListPList The ArrayList of ArrayLists being constructed
+     * @param startIndex The fist ArrayList of people to be added
+     */
     public void constructPListTotal(ArrayList<ArrayList<Person>> ListPList, int startIndex)
     {
         for(int i = startIndex; i < ListPList.size(); i++)
             constructPListTotalIteration(ListPList.get(i));
     }
 
+    /**
+     * Helper method for constructPListTotal
+     * @param pListQN The current ArrayList of people being created
+     */
     private void constructPListTotalIteration(ArrayList<Person> pListQN)
     {
         for(int i = 0; i < pListQN.size(); i++)
             pList.add(pListQN.get(i));
     }
 
+    /**
+     * Constructs each Person and adds them to an ArrayList in the listPlist ArrayList
+     */
     public void constructPListNonTravel()
     {
         int i = 0;
@@ -92,6 +126,9 @@ public abstract class SimBoard {
         }
     }
 
+    /**
+     * Constructs the ArrayList of people representing the travels (people without boundaries)
+     */
     public void constructPListTravel()
     {
         for(int i = 0; i < travelers; i++)
@@ -100,6 +137,12 @@ public abstract class SimBoard {
         }
     }
 
+    /**Constructs the Person object (Helper method for the constructPList methods)
+     *
+     * @param dimensQN The rectangle object that represents the dimensions of the current person's range
+     * @param quadLocation The "home" location of the person to return to after quarantine
+     * @return The newly constructed Person
+     */
     public Person constructPerson(Rectangle dimensQN, int quadLocation)
     {
         boolean asymptomatic = (Math.random() < asymptomaticChance);
@@ -114,16 +157,30 @@ public abstract class SimBoard {
         return p;
     }
 
+    /**Creates a random X-Coord for a person in their respective Dimension
+     *
+     * @param dimens The dimensions of the person
+     * @return The random X-Coord
+     */
     private int generateXCoord(Rectangle dimens)
     {
         return dimens.x + (int)(dimens.width * Math.random());
     }
 
+    /**Creates a random Y-Coord for a person in their respective Dimension
+     *
+     * @param dimens The dimensions of the person
+     * @return The random Y-Coord
+     */
     private int generateYCoord(Rectangle dimens)
     {
         return dimens.y + (int)(dimens.height * Math.random());
     }
 
+    /** Updates the simBoard by checking the distance from sick for each peron, updating each person list, checking quarantine and social distance
+     * and drawing the person objects on the SimBoardPanel
+     * @param g2D Grapgics object from SimBoardPanel used to draw the peron objects
+     */
     public void updateBoard(Graphics2D g2D)
     {
         this.updateDistanceFromSick();
@@ -141,6 +198,9 @@ public abstract class SimBoard {
         socialDistanceUpdate();
     }
 
+    /**
+     * Calculates the minimum distance a healthy person is from a sick person
+     */
     public void updateDistanceFromSick()
     {
         for(int i = 1; i < getListPList().size(); i++)
@@ -148,7 +208,7 @@ public abstract class SimBoard {
     }
 
     /**
-     * Finds the closest sick person to each healthy person and returns the distance between them
+     * Helper method for updateDistanceFromSick method
      */
     public void updateDistanceFromSickIteration(ArrayList<Person> pListQN)
     {
@@ -176,6 +236,9 @@ public abstract class SimBoard {
         }
     }
 
+    /**
+     * Updates the ArrayList of people and checks for sickness and removed them when dead
+     */
     public void updateListPList()
     {
         for(int i = 1; i < getListPList().size(); i++)
@@ -185,7 +248,7 @@ public abstract class SimBoard {
     }
 
     /**
-     * For all the Person objects in board, they are checked for sickness, moved and removed if dead
+     * Helper method for the updateListPlist method
      */
     public void updatePList(ArrayList<Person> pListQN)
     {
@@ -204,6 +267,10 @@ public abstract class SimBoard {
         }
     }
 
+    /** Draws each person on the simBoard
+     *
+     * @param g2D
+     */
     public void drawListPList(Graphics2D g2D)
     {
         for(int i = 1; i < listPList.size(); i++)
@@ -212,7 +279,13 @@ public abstract class SimBoard {
         }
     }
 
-    public void drawPList(ArrayList<Person> pList, int dimensNum, Graphics2D g2D) //maybe make private
+    /** Helper method for the drawListPList method
+     *
+     * @param pList The current ArrayList of people being drawn
+     * @param dimensNum The dimension of the people in the current ArrayList
+     * @param g2D The graphics object being used to draw the people
+     */
+    public void drawPList(ArrayList<Person> pList, int dimensNum, Graphics2D g2D)
     {
         for(int j = 0; j < pList.size(); j++)
         {
@@ -225,6 +298,9 @@ public abstract class SimBoard {
         }
     }
 
+    /**
+     * Checks if each person who is social distancing is the minimum distance apart. If not, it chooses a random direction to go in to separate as much as possible
+     */
     private void socialDistanceUpdate()
     {
         for(int i = 0; i < pList.size(); i++)
@@ -237,6 +313,10 @@ public abstract class SimBoard {
         }
     }
 
+    /** Switches between making each person (that is told to social distance) actively social distance and having freedom to move
+     *
+     * @param SocialDist Boolean value used to switch social distancing on and off
+     */
     public void toggleSocDist(boolean SocialDist)
     {
         if(!SocialDist)
@@ -254,6 +334,10 @@ public abstract class SimBoard {
             }
         }
     }
+
+    /**
+     * Used to make every person on the simBoard social distance
+     */
     public void everyoneSocialDistance()
     {
         for(int i = 0; i < pList.size(); i++)
@@ -261,6 +345,8 @@ public abstract class SimBoard {
             pList.get(i).setIsSocialDistancing(true);
         }
     }
+
+    /** Getter and Setter Methods*/
 
     public ArrayList<Person> getPList() {
         return pList;
