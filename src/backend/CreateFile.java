@@ -24,11 +24,6 @@ public class CreateFile {
         }
     }
 
-    public void log(Music song)
-    {
-        resultsFile.format("%s", song + "");
-    }
-
     /** Adds the person arrayList contents to the file
      *
      * @param array
