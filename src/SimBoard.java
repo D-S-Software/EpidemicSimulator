@@ -229,7 +229,7 @@ public abstract class SimBoard {
                         }
                     }
             Double dist = minDist;
-            if(dist.equals(0))
+            if(dist.equals(0.0))
                 minDist = 0.1;
             pListQN.get(i).setDistanceFromSick(minDist);
             pListQN.get(i).setClosestSickIndex(closestSickIndex);
@@ -269,7 +269,7 @@ public abstract class SimBoard {
 
     /** Draws each person on the simBoard
      *
-     * @param g2D
+     * @param g2D Graphics object used to draw each person
      */
     public void drawListPList(Graphics2D g2D)
     {
@@ -289,7 +289,7 @@ public abstract class SimBoard {
     {
         for(int j = 0; j < pList.size(); j++)
         {
-            if(pList.get(j).isIsoSick() == false)
+            if(!pList.get(j).isIsoSick())
             {
                 pList.get(j).updateDimens(dimensList.get(dimensNum));
             }
@@ -431,10 +431,6 @@ public abstract class SimBoard {
         return travelDimens;
     }
 
-    public void setTravelDimens(Rectangle travelDimens) {
-        this.travelDimens = travelDimens;
-    }
-
     public ArrayList<Rectangle> getDimensList() {
         return dimensList;
     }
@@ -452,38 +448,6 @@ public abstract class SimBoard {
 
     public void setDimens(Rectangle dimens) {
         this.dimens = dimens;
-    }
-
-    public void setQ1Dimens(Rectangle q1Dimens) {
-        this.q1Dimens = q1Dimens;
-    }
-
-    public void setQ2Dimens(Rectangle q2Dimens) {
-        this.q2Dimens = q2Dimens;
-    }
-
-    public void setQ3Dimens(Rectangle q3Dimens) {
-        this.q3Dimens = q3Dimens;
-    }
-
-    public void setQ4Dimens(Rectangle q4Dimens) {
-        this.q4Dimens = q4Dimens;
-    }
-
-    public void setQ5Dimens(Rectangle q5Dimens) {
-        this.q5Dimens = q5Dimens;
-    }
-
-    public void setQ6Dimens(Rectangle q6Dimens) {
-        this.q6Dimens = q6Dimens;
-    }
-
-    public void setQ7Dimens(Rectangle q7Dimens) {
-        this.q7Dimens = q7Dimens;
-    }
-
-    public void setQ8Dimens(Rectangle q8Dimens) {
-        this.q8Dimens = q8Dimens;
     }
 
     public Disease getDisease() {

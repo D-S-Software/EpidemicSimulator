@@ -34,7 +34,7 @@ public class SimBoardQuad extends SimBoard {
         getDimensList().add(getQ2Dimens());
         getDimensList().add(getQ3Dimens());
         getDimensList().add(getQ4Dimens());
-        getDimensList().add(getTravelDimens()); //takes place as travel dimens to make things line up. MAYBE getDimens()
+        getDimensList().add(getTravelDimens());
     }
 
     /**

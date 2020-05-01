@@ -23,7 +23,7 @@ public class SimBoardOcto extends SimBoard{
         getDimensList().add(getQ6Dimens());
         getDimensList().add(getQ7Dimens());
         getDimensList().add(getQ8Dimens());
-        getDimensList().add(getTravelDimens()); //takes place as travel dimens to make things line up. MAYBE getDimens()
+        getDimensList().add(getTravelDimens());
     }
 
     public void constructListPList()
