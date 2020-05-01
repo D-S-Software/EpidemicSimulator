@@ -262,8 +262,7 @@ public abstract class SimBoard {
         }
     }
 
-    public ArrayList<Person> getPList()
-    {
+    public ArrayList<Person> getPList() {
         return pList;
     }
 
@@ -307,12 +306,7 @@ public abstract class SimBoard {
         return listPList;
     }
 
-    public void setListPList(ArrayList<ArrayList<Person>> listPLists) {
-        this.listPList = listPLists;
-    }
-
-    public Rectangle getDimens()
-    {
+    public Rectangle getDimens() {
         return dimens;
     }
 
@@ -360,70 +354,15 @@ public abstract class SimBoard {
         return dimensList;
     }
 
-    public void setDimensList(ArrayList<Rectangle> dimensList) {
-        this.dimensList = dimensList;
-    }
-
-    public int getNumPeople(){ return numPeople;}
+    public int getNumPeople() {
+        return numPeople;}
 
     public int getSocialDistanceValue() {
         return socialDistanceValue;
     }
 
-    public void setSocialDistanceValue(int socialDitanceValue) {
-        this.socialDistanceValue = socialDitanceValue;
-    }
-
-    public double getSocialDistanceChance() {
-        return socialDistanceChance;
-    }
-
-    public void setSocialDistanceChance(double socialDistanceChance) {
-        this.socialDistanceChance = socialDistanceChance;
-    }
-
     public void setNumPeople(int numPeople) {
         this.numPeople = numPeople;
-    }
-
-    public double getAsymptomaticChance() {
-        return asymptomaticChance;
-    }
-
-    public void setAsymptomaticChance(double asymptomaticChance) {
-        this.asymptomaticChance = asymptomaticChance;
-    }
-
-    public int getMinAge() {
-        return minAge;
-    }
-
-    public void setMinAge(int minAge) {
-        this.minAge = minAge;
-    }
-
-    public int getMaxAge() {
-        return maxAge;
-    }
-
-    public void setMaxAge(int maxAge) {
-        this.maxAge = maxAge;
-    }
-
-    public int getMinPreExistingConditions() {
-        return minPreExistingConditions;
-    }
-
-    public void setMinPreExistingConditions(int minPreExistingConditions) {
-        this.minPreExistingConditions = minPreExistingConditions;
-    }
-
-    public int getMaxPreExistingConditions() {
-        return maxPreExistingConditions;
-    }
-
-    public void setMaxPreExistingConditions(int maxPreExistingConditions) {
-        this.maxPreExistingConditions = maxPreExistingConditions;
     }
 
     public void setDimens(Rectangle dimens) {
@@ -462,46 +401,6 @@ public abstract class SimBoard {
         this.q8Dimens = q8Dimens;
     }
 
-    public void setpList(ArrayList<Person> pList) {
-        this.pList = pList;
-    }
-
-    public void setpListQ1(ArrayList<Person> pListQ1) {
-        this.pListQ1 = pListQ1;
-    }
-
-    public void setpListQ2(ArrayList<Person> pListQ2) {
-        this.pListQ2 = pListQ2;
-    }
-
-    public void setpListQ3(ArrayList<Person> pListQ3) {
-        this.pListQ3 = pListQ3;
-    }
-
-    public void setpListQ4(ArrayList<Person> pListQ4) {
-        this.pListQ4 = pListQ4;
-    }
-
-    public void setpListQ5(ArrayList<Person> pListQ5) {
-        this.pListQ5 = pListQ5;
-    }
-
-    public void setpListQ6(ArrayList<Person> pListQ6) {
-        this.pListQ6 = pListQ6;
-    }
-
-    public void setpListQ7(ArrayList<Person> pListQ7) {
-        this.pListQ7 = pListQ7;
-    }
-
-    public void setpListQ8(ArrayList<Person> pListQ8) {
-        this.pListQ8 = pListQ8;
-    }
-
-    public void setpListTravel(ArrayList<Person> pListTravel) {
-        this.pListTravel = pListTravel;
-    }
-
     public Disease getDisease() {
         return disease;
     }
@@ -509,10 +408,4 @@ public abstract class SimBoard {
     public void setDisease(Disease disease) {
         this.disease = disease;
     }
-
-    public int getTravelers() {
-        return travelers;
-    }
-
-//
 }
