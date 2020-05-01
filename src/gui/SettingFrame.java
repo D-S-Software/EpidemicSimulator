@@ -313,7 +313,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         rightTopPanel.add(paramLabel);
 
         travelers = new JTextField(100);
-        travelers.setText("20");
+        travelers.setText("8");
         travelers.setBackground(CustomColor.FIELD);
         travelers.setForeground(CustomColor.ON_BUTTON_LABEL);
         travelers.setMinimumSize(new Dimension(60, 10));
