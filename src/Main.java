@@ -24,6 +24,7 @@ public class Main {
 
     //TODO Clean up code (make packages, check parameters ect.) V1
 
+
     //TODO Write data to text fil (such as graph data to compare) - V2
     //TODO Make opening screen (start with music) - V2
     //TODO Leaderboard and finding R0 - V2
