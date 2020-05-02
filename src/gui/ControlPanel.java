@@ -417,7 +417,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
         contagiousPercentLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        contagiousRangeLabel = new JLabel("<html>Contagious Range (1-20)</html>");
+        contagiousRangeLabel = new JLabel("<html>Contagious Range\n(1-20)</html>");
         contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
         contagiousRangeLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
