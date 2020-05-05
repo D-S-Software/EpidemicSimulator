@@ -9,7 +9,7 @@ public class Person {
 
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, maxTimeSick, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
-    private double directionAngle, distanceFromSick, mortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02;
+    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02;
     private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic;
     private Rectangle dimens;
     private Disease disease;
@@ -25,7 +25,8 @@ public class Person {
         this.xPos = xPos;
         this.yPos = yPos;
         maxTimeSick = disease.getBaseMaxTimeSick() + 100 * (int)(age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
-        mortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
+        personalMortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
+        baseMortalityRate = personalMortalityRate;
         directionAngle = (int)(360*Math.random());
 
         if(Math.random() > disease.getStartPercentHealthy())
@@ -95,7 +96,7 @@ public class Person {
             //If sick for min time has increasing chance to die / recover until guaranteed at max time
             if(timeSinceSick >  disease.getBaseMinTimeSick() + (int)((maxTimeSick - disease.getBaseMinTimeSick())*Math.random()))
             {
-                if(Math.random() > mortalityRate || asymptomatic)
+                if(Math.random() > personalMortalityRate || asymptomatic)
                     isHealthy = true;    // Recovers
                 else
                     hasDisease = false; //Dies
@@ -126,6 +127,16 @@ public class Person {
 
         xPos = dimens.x + (int) (dimens.width * Math.random());
         yPos = dimens.y + (int) (dimens.height * Math.random());
+    }
+
+    /** Updates the current mortality rate based on the percentage of people sick in a given moment
+     *
+     * @param numSick
+     * @param numPeople
+     */
+    public void updateMortalityRate(int numSick, int numPeople)
+    {
+        personalMortalityRate = baseMortalityRate * (1 + ((double)numSick / numPeople));
     }
 
     /** Draws the person as a circle and decides what color to display based on condition

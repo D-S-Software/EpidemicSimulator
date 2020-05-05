@@ -84,6 +84,9 @@ public class Statistics implements ActionListener {
 
         updateStats();
 
+        for(int i = 0; i < simBoard.getPList().size(); i++)
+            simBoard.getPList().get(i).updateMortalityRate(numSick, numPeople);
+
         //TODO possible implementation of an "Action Event"
         /** if(numDead > 10)
             for(int i = 0; i < pList.size(); i++)
