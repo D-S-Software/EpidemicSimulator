@@ -10,7 +10,7 @@ public class Person {
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
     private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, maxTimeSick;
-    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic;
+    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false;
     private Rectangle dimens;
     private Disease disease;
     private final int circleRad = 8;
@@ -251,6 +251,10 @@ public class Person {
     {
         quadLocation = location;
     }
+
+    public boolean isrAccounted() { return rAccounted;}
+
+    public void setrAccounted(boolean accounted) { rAccounted = accounted;}
 
     /** SimBoardIso Methods*/
 

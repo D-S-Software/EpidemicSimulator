@@ -8,7 +8,8 @@ import java.util.ArrayList;
 
 public class Statistics implements ActionListener {
 
-    private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, averageRValue, count = 99;
+    private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, count = 99;
+    private double averageRValue;
     private static CreateFile x = new CreateFile();
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
@@ -61,6 +62,17 @@ public class Statistics implements ActionListener {
         numHealthy = healthyCount;
         numDead = numPeople - numHealthy - numSick - numRecovered;
         numCases = numSick + numRecovered + numDead;
+
+        if(numDead + numRecovered > 0)
+        {
+            int infectedSum = 0;
+            for(int i = 0; i < simBoard.getRNot().size(); i++)
+            {
+                infectedSum += simBoard.getRNot().get(i);
+            }
+            averageRValue = (double)infectedSum / (numDead + numRecovered);
+            System.out.println(averageRValue);
+        }
     }
 
     /**Calls the update stats methods, calls actions events when needed, and decides when to close a text file (called every tick)
@@ -86,6 +98,8 @@ public class Statistics implements ActionListener {
 
         for(int i = 0; i < simBoard.getPList().size(); i++)
             simBoard.getPList().get(i).updateMortalityRate(numSick, numPeople);
+
+        //System.out.println(averageRValue);
 
         //TODO possible implementation of an "Action Event"
         /** if(numDead > 10)

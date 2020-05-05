@@ -4,12 +4,14 @@ import backend.Person;
 import backend.disease.Disease;
 
 import java.awt.*;
+import java.lang.management.PlatformLoggingMXBean;
 import java.util.ArrayList;
 
 public abstract class SimBoard {
 
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, q5Dimens, q6Dimens, q7Dimens, q8Dimens, travelDimens;
     private ArrayList<Rectangle> dimensList;
+    private ArrayList<Integer> rNot;
 
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
     private ArrayList<ArrayList<Person>> listPList; //may contain anywhere from just pList to all of the pLists depending on mono, quad or octo
@@ -58,6 +60,7 @@ public abstract class SimBoard {
         q8Dimens = new Rectangle();
         travelDimens = new Rectangle();
 
+        rNot = new ArrayList<>();
         dimensList = new ArrayList<>();
         constructDimensList();
         updateDimensList(dimens);
@@ -188,9 +191,11 @@ public abstract class SimBoard {
      */
     public void updateBoard(Graphics2D g2D)
     {
-        this.updateDistanceFromSick();
+        updateDistanceFromSick();
 
-        this.updateListPList();
+        updateListPList();
+
+        updateRNot();
 
         if(this instanceof Quarantinable)
         {
@@ -198,7 +203,7 @@ public abstract class SimBoard {
             ((Quarantinable) this).drawQuarLine(g2D);
         }
 
-        this.drawListPList(g2D);
+        drawListPList(g2D);
 
         socialDistanceUpdate();
     }
@@ -266,10 +271,25 @@ public abstract class SimBoard {
             pListQN.get(i).move();
             if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
             {
+                rNot.add(pList.get(i).getOthersInfected());
+                pList.get(i).setrAccounted(true);
                 pListQN.remove(pListQN.get(i));
-                setNumPeople(getNumPeople() -1);
+                setNumPeople(numPeople -1);
             }
         }
+    }
+
+    /**
+     * When people recover, the total number of people they infected is recorded to calculate Ro
+     */
+    private void updateRNot()
+    {
+        for(int i = 0; i < pList.size(); i++)
+            if(!pList.get(i).isrAccounted() && pList.get(i).getHasDisease() && pList.get(i).getIsHealthy())
+            {
+                rNot.add(pList.get(i).getOthersInfected());
+                pList.get(i).setrAccounted(true);
+            }
     }
 
     /** Draws each person on the simboard
@@ -438,6 +458,10 @@ public abstract class SimBoard {
 
     public ArrayList<Rectangle> getDimensList() {
         return dimensList;
+    }
+
+    public ArrayList<Integer> getRNot() {
+        return rNot;
     }
 
     public int getNumPeople() {
