@@ -30,8 +30,8 @@ public class ControlPanel extends JPanel implements ActionListener{
     private SettingFrame settingFrame;
     private ArrayList<Music> musicSongs = new ArrayList<>();
 
-    private int boardType, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine;
-    private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer;
+    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople;
+    private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine;
     private boolean toPause = true, canStart = true, canType = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
 
     /**Creates a control Panel object for the gui
@@ -118,6 +118,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         custom.setBackground(CustomColor.BUTTON);
         custom.setForeground(CustomColor.ON_BUTTON_LABEL);
         custom.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        custom.setSelected(true);
 
         g1 = new ButtonGroup();
         g1.add(choice1);
@@ -507,28 +508,28 @@ public class ControlPanel extends JPanel implements ActionListener{
                                 JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
                                 goodToStart = false;
                             }
-                            if(Integer.parseInt(contagiousRange.getText()) > 20 || Integer.parseInt(contagiousRange.getText()) < 1)
+                            else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
                             {
                                 JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
                                 goodToStart = false;
                             }
-                            if(Integer.parseInt(contagiousPercent.getText()) < 0 || Integer.parseInt(baseMortalityRate.getText()) < 0
-                                    || Integer.parseInt(baseMinTimeSick.getText()) < 0 || Integer.parseInt(baseMaxTimeSick.getText()) < 0
-                                    || Integer.parseInt(startPercentHealthy.getText()) < 0)
+                            else if(Double.parseDouble(contagiousPercent.getText()) < 0 || Double.parseDouble(baseMortalityRate.getText()) < 0
+                                    || Double.parseDouble(baseMinTimeSick.getText()) < 0 || Double.parseDouble(baseMaxTimeSick.getText()) < 0
+                                    || Double.parseDouble(startPercentHealthy.getText()) < 0)
                             {
                                 JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
                                 goodToStart = false;
                             }
                             else
                             {
-                                disease = new Disease(Integer.parseInt(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
-                                        Double.parseDouble(baseMortalityRate.getText()) / 100, Integer.parseInt(baseMinTimeSick.getText()) *100,
-                                        Integer.parseInt(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
+                                disease = new Disease(Double.parseDouble(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
+                                        Double.parseDouble(baseMortalityRate.getText()) / 100, Double.parseDouble(baseMinTimeSick.getText()) *100,
+                                        Double.parseDouble(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
                             }
                         }
                         catch (java.lang.NumberFormatException ex)
                         {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (No Decimals)!");
+                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
                             goodToStart = false;
                         }
                     }
@@ -541,29 +542,28 @@ public class ControlPanel extends JPanel implements ActionListener{
                             JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
                             goodToStart = false;
                         }
-                        else if(Integer.parseInt(settingFrame.getTravelers().getText()) < 0 || Integer.parseInt(settingFrame.getTimeUntilQuarantine().getText()) < 0
-                                || Integer.parseInt(settingFrame.getPercentQuarantine().getText()) < 0 || Integer.parseInt(settingFrame.getAsymptomaticChance().getText()) < 0
-                                || Integer.parseInt(settingFrame.getSocialDistanceValue().getText()) < 0 || Integer.parseInt(settingFrame.getPercentSocialDist().getText()) < 0 || Integer.parseInt(settingFrame.getMinAge().getText()) < 0
-                                || Integer.parseInt(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
+                        else if(Double.parseDouble(settingFrame.getTravelers().getText()) < 0 || Double.parseDouble(settingFrame.getTimeUntilQuarantine().getText()) < 0
+                                || Double.parseDouble(settingFrame.getPercentQuarantine().getText()) < 0 || Double.parseDouble(settingFrame.getAsymptomaticChance().getText()) < 0
+                                || Double.parseDouble(settingFrame.getSocialDistanceValue().getText()) < 0 || Double.parseDouble(settingFrame.getPercentSocialDist().getText()) < 0 || Double.parseDouble(settingFrame.getMinAge().getText()) < 0
+                                || Double.parseDouble(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
                         {
                             JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
                             goodToStart = false;
                         }
-                        else if(Integer.parseInt(settingFrame.getMinAge().getText()) > Integer.parseInt(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
+                        else if(Double.parseDouble(settingFrame.getMinAge().getText()) > Double.parseDouble(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
                         {
                             JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
+                            goodToStart = false;
+                        }
+                        else if(Integer.parseInt(numPeopleField.getText()) < 1)
+                        {
+                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 0 and an integer!");
                             goodToStart = false;
                         }
                         else goodToStart = true;
 
                         if(goodToStart)
                         {
-                            int numPeople;
-                            if("".equals(numPeopleField.getText()))
-                                numPeople = 0;
-                            else
-                                numPeople = Integer.parseInt(numPeopleField.getText());
-
                             boardType = settingFrame.getBoardTypeNum();
                             socialDistanceValue = settingFrame.getSocialDistanceValueNum();
                             minAge = settingFrame.getMinAgeNum();
@@ -578,16 +578,19 @@ public class ControlPanel extends JPanel implements ActionListener{
                             quarBoard = settingFrame.isQuarBoardBool();
 
                             gui.getSimBoardPanel().setReset(false);
-                            simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
-                            simEngine.getClock().start();
-                            isPlaying = true;
-                            if(settingFrame.getSocialDistanceChanceNum() > 0)
-                                isSocialDist = true;
-                            else isSocialDist = false;
-                            canStart = false;
+
+                            numPeople = Integer.parseInt(numPeopleField.getText());
 
                             if(disease != null)
                             {
+                                simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
+                                simEngine.getClock().start();
+                                isPlaying = true;
+                                if(settingFrame.getSocialDistanceChanceNum() > 0)
+                                    isSocialDist = true;
+                                else isSocialDist = false;
+                                canStart = false;
+
                                 gui.getTallyPanel().showGraphModeButton();
                                 backgroundMusic.stop();
                                 changeSong();
@@ -599,7 +602,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     }
                     catch (java.lang.NumberFormatException ex)
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (No Decimals)!");
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (whole number of people)!");
                     }
                 }
             }

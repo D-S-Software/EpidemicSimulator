@@ -32,11 +32,10 @@ public class Engine {
      * @param quarantineChance The percent of sick people that will go to quarantine
      */
     public Engine(GUI gui, Disease disease, int numPeople, int boardType, boolean quarBoard,
-                  double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, int timeUntilQuarantine, double quarantineChance)
+                  double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double timeUntilQuarantine, double quarantineChance)
     {
         Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
         SimBoard simBoard;
-
         if(quarBoard) {
             if (boardType == 8)
                 simBoard = new SimBoardQuarOcto(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);

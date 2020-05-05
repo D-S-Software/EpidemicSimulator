@@ -8,9 +8,8 @@ import java.awt.*;
 public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable {
 
     private Rectangle quarantine;
-    private int timeUntilIsolate;
     private int width, height, x2Start, y2Origin, quarXOrigin, quarWidth;
-    private double quarantineChance;
+    private double quarantineChance, timeUntilIsolate;
 
     /** Creates a SimBoardQuarQuad (4 areas, quarantine board) to simulate the actions of people that are displayed on SimBoardPanel
      *
@@ -26,8 +25,8 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable {
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
      */
-    public SimBoardQuarQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                            int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, int timeUntilIsolate, double quarantineChance)
+    public SimBoardQuarQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance,
+                            double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double timeUntilIsolate, double quarantineChance)
     {
         super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer);
         this.timeUntilIsolate = timeUntilIsolate;

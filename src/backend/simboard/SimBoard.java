@@ -16,8 +16,8 @@ public abstract class SimBoard {
 
     private Disease disease;
 
-    private double socialDistanceChance, asymptomaticChance;
-    private int numPeople, socialDistanceValue, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelers;
+    private double socialDistanceChance, asymptomaticChance, socialDistanceValue, minAge, maxAge, travelers;
+    private int numPeople, minPreExistingConditions, maxPreExistingConditions;
 
     /** Creates a SimBoard to simulate the actions of people that are displayed on SimBoardPanel
      *
@@ -33,7 +33,7 @@ public abstract class SimBoard {
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
      */
-    public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance, int minAge, int maxAge,
+    public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge,
                     int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
     {
         this.disease = disease;
@@ -443,7 +443,7 @@ public abstract class SimBoard {
     public int getNumPeople() {
         return numPeople;}
 
-    public int getSocialDistanceValue() {
+    public double getSocialDistanceValue() {
         return socialDistanceValue;
     }
 

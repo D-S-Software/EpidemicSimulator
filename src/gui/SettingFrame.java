@@ -8,8 +8,8 @@ import java.awt.event.*;
 
 public class SettingFrame extends JFrame implements ActionListener{
 
-    private int boardTypeNum = 1, socialDistanceValueNum, minAgeNum, maxAgeNum, minPreExistingConditionsNum, maxPreExistingConditionsNum, timeUntilQuarantineNum;
-    private double asymptomaticChanceNum, socialDistanceChanceNum, quarantineChanceNum,travelersPer;
+    private int boardTypeNum = 1, minPreExistingConditionsNum, maxPreExistingConditionsNum;
+    private double asymptomaticChanceNum, socialDistanceChanceNum, quarantineChanceNum, travelersPer, socialDistanceValueNum, minAgeNum, maxAgeNum, timeUntilQuarantineNum;
     private boolean quarBoardBool = false;
 
     JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue, percentSocialDist, minAge, maxAge, minConditions, maxConditions;
@@ -783,14 +783,14 @@ public class SettingFrame extends JFrame implements ActionListener{
                 }
                 try
                 {
-                    if(Integer.parseInt(getTravelers().getText()) < 0 || Integer.parseInt(getTimeUntilQuarantine().getText()) < 0
-                            || Integer.parseInt(getPercentQuarantine().getText()) < 0 || Integer.parseInt(getAsymptomaticChance().getText()) < 0
-                            || Integer.parseInt(getSocialDistanceValue().getText()) < 0 || Integer.parseInt(getPercentSocialDist().getText()) < 0 || Integer.parseInt(getMinAge().getText()) < 0
-                            || Integer.parseInt(getMaxAge().getText()) < 0 || Integer.parseInt(getMinConditions().getText()) < 0 || Integer.parseInt(getMaxConditions().getText()) < 0)
+                    if(Double.parseDouble(getTravelers().getText()) < 0 || Double.parseDouble(getTimeUntilQuarantine().getText()) < 0
+                            || Double.parseDouble(getPercentQuarantine().getText()) < 0 || Double.parseDouble(getAsymptomaticChance().getText()) < 0
+                            || Double.parseDouble(getSocialDistanceValue().getText()) < 0 || Double.parseDouble(getPercentSocialDist().getText()) < 0 || Double.parseDouble(getMinAge().getText()) < 0
+                            || Double.parseDouble(getMaxAge().getText()) < 0 || Integer.parseInt(getMinConditions().getText()) < 0 || Integer.parseInt(getMaxConditions().getText()) < 0)
                     {
                         JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
                     }
-                    else if(Integer.parseInt(getMinAge().getText()) > Integer.parseInt(getMaxAge().getText()) || Integer.parseInt(getMinConditions().getText()) > Integer.parseInt(getMaxConditions().getText()))
+                    else if(Double.parseDouble(getMinAge().getText()) > Double.parseDouble(getMaxAge().getText()) || Integer.parseInt(getMinConditions().getText()) > Integer.parseInt(getMaxConditions().getText()))
                     {
                         JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
                     }
@@ -798,7 +798,7 @@ public class SettingFrame extends JFrame implements ActionListener{
                 }
                 catch (java.lang.NumberFormatException ex)
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly and Condition counts are integers!");
                 }
             }
         });
@@ -846,13 +846,13 @@ public class SettingFrame extends JFrame implements ActionListener{
     private void selectParams()
     {
         travelersPer = Double.parseDouble(travelers.getText()) / 100;
-        timeUntilQuarantineNum = Integer.parseInt(timeUntilQuarantine.getText()) * 100;
+        timeUntilQuarantineNum = Double.parseDouble(timeUntilQuarantine.getText()) * 100;
         quarantineChanceNum = Double.parseDouble(percentQuarantine.getText()) / 100;
         asymptomaticChanceNum = Double.parseDouble(asymptomaticChance.getText()) / 100;
         socialDistanceChanceNum = Double.parseDouble(percentSocialDist.getText()) / 100;
-        socialDistanceValueNum = Integer.parseInt(socialDistanceValue.getText());
-        minAgeNum = Integer.parseInt(minAge.getText());
-        maxAgeNum = Integer.parseInt(maxAge.getText());
+        socialDistanceValueNum = Double.parseDouble(socialDistanceValue.getText());
+        minAgeNum = Double.parseDouble(minAge.getText());
+        maxAgeNum = Double.parseDouble(maxAge.getText());
         minPreExistingConditionsNum = Integer.parseInt(minConditions.getText());
         maxPreExistingConditionsNum = Integer.parseInt(maxConditions.getText());
     }
@@ -868,11 +868,11 @@ public class SettingFrame extends JFrame implements ActionListener{
         return boardTypeNum;
     }
 
-    public int getMinAgeNum() {
+    public double getMinAgeNum() {
         return minAgeNum;
     }
 
-    public int getMaxAgeNum() {
+    public double getMaxAgeNum() {
         return maxAgeNum;
     }
 
@@ -884,11 +884,11 @@ public class SettingFrame extends JFrame implements ActionListener{
         return maxPreExistingConditionsNum;
     }
 
-    public int getSocialDistanceValueNum() {
+    public double getSocialDistanceValueNum() {
         return socialDistanceValueNum;
     }
 
-    public int getTimeUntilQuarantineNum() {
+    public double getTimeUntilQuarantineNum() {
         return timeUntilQuarantineNum;
     }
 

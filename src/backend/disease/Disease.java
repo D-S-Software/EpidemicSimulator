@@ -2,12 +2,12 @@ package backend.disease;
 
 public class Disease {
 
-    private int contagiousRange;
+    private double contagiousRange;
     private double contagiousPercent; //How likely to be infected when in range
     private double baseMortalityRate;
     private double startPercentHealthy;
-    private int baseMinTimeSick; //Time is measured in centiseconds
-    private int baseMaxTimeSick;
+    private double baseMinTimeSick; //Time is measured in centiseconds
+    private double baseMaxTimeSick;
 
     /** Creates a disease object to be handed to each person
      *
@@ -18,7 +18,7 @@ public class Disease {
      * @param baseMaxTimeSick The maximum time sick a person can be sick for
      * @param startPercentHealthy The percent of people that start off as healthy in the simulation
      */
-    public Disease(int contagiousRange, double contagiousPercent, double baseMortalityRate, int baseMinTimeSick, int baseMaxTimeSick, double startPercentHealthy)
+    public Disease(double contagiousRange, double contagiousPercent, double baseMortalityRate, double baseMinTimeSick, double baseMaxTimeSick, double startPercentHealthy)
     {
         this.contagiousRange = contagiousRange;
         this.contagiousPercent = contagiousPercent;
@@ -30,7 +30,7 @@ public class Disease {
 
     /** Getter and Setter Methods*/
 
-    public int getContagiousRange()
+    public double getContagiousRange()
     {
         return contagiousRange;
     }
@@ -46,11 +46,11 @@ public class Disease {
     {
         return startPercentHealthy;
     }
-    public int getBaseMinTimeSick()
+    public double getBaseMinTimeSick()
     {
         return baseMinTimeSick;
     }
-    public int getBaseMaxTimeSick()
+    public double getBaseMaxTimeSick()
     {
         return baseMaxTimeSick;
     }

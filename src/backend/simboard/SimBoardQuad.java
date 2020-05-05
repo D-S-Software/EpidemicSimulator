@@ -20,8 +20,8 @@ public class SimBoardQuad extends SimBoard {
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
      */
-    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, int socialDistanceValue, double socialDistanceChance,
-                        int minAge, int maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
+    public SimBoardQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance,
+                        double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer) {
 
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
                 minPreExistingConditions, maxPreExistingConditions, travelersPer);

@@ -8,14 +8,14 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, maxTimeSick, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
-    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02;
+    private int xPos, yPos, dx, dy, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
+    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, maxTimeSick;
     private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic;
     private Rectangle dimens;
     private Disease disease;
     private final int circleRad = 8;
 
-    public Person(int age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing)
+    public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
@@ -24,7 +24,7 @@ public class Person {
         isSocialDistancingSaved = isSocialDistancing;
         this.xPos = xPos;
         this.yPos = yPos;
-        maxTimeSick = disease.getBaseMaxTimeSick() + 100 * (int)(age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
+        maxTimeSick = disease.getBaseMaxTimeSick() + (100 * age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
         personalMortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         baseMortalityRate = personalMortalityRate;
         directionAngle = (int)(360*Math.random());
@@ -94,7 +94,7 @@ public class Person {
         {
             timeSinceSick++;
             //If sick for min time has increasing chance to die / recover until guaranteed at max time
-            if(timeSinceSick >  disease.getBaseMinTimeSick() + (int)((maxTimeSick - disease.getBaseMinTimeSick())*Math.random()))
+            if(timeSinceSick >  disease.getBaseMinTimeSick() + (maxTimeSick - disease.getBaseMinTimeSick())*Math.random())
             {
                 if(Math.random() > personalMortalityRate || asymptomatic)
                     isHealthy = true;    // Recovers
