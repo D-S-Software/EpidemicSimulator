@@ -6,11 +6,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 public class TallyPanel extends JPanel implements ActionListener {
 
     GUI gui;
-    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel;
+    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, rNotLabel;
     JButton switchGraph, toggle;
     boolean showCases;
 
@@ -46,6 +48,11 @@ public class TallyPanel extends JPanel implements ActionListener {
         numDeadLabel.setFont(numDeadLabel.getFont ().deriveFont (15.0f));
         numDeadLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
         numDeadLabel.setPreferredSize(new Dimension(20, 10));
+
+        rNotLabel = new JLabel("Ro Value: ");
+        rNotLabel.setFont(rNotLabel.getFont ().deriveFont (15.0f));
+        rNotLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
+        rNotLabel.setPreferredSize(new Dimension(20, 10));
 
         toggle = new JButton("Graph Mode");
         toggle.setFont(toggle.getFont ().deriveFont (15.0f));
@@ -114,11 +121,17 @@ public class TallyPanel extends JPanel implements ActionListener {
             }
         });
 
+        JLabel filler = new JLabel();
+        JLabel filler2 = new JLabel();
+
         add(numHealthyLabel);
         add(numRecoveredLabel);
-        add(toggle);
+        add(filler);
         add(numSickLabel);
         add(numDeadLabel);
+        add(toggle);
+        add(rNotLabel);
+        add(filler2);
         add(switchGraph);
     }
 
@@ -149,6 +162,11 @@ public class TallyPanel extends JPanel implements ActionListener {
         numSickLabel.setText("Sick: " + gui.getStats().getNumSick() + "  ");
         numRecoveredLabel.setText("Recov.: " + gui.getStats().getNumRecovered() + "  ");
         numDeadLabel.setText("Dead: " + gui.getStats().getNumDead() + "    ");
+
+        DecimalFormat df = new DecimalFormat("##.###");
+        df.setRoundingMode(RoundingMode.CEILING);
+
+        rNotLabel.setText("Ro Value: " + df.format(gui.getStats().getAverageRValue()) + "    ");
 
         if(gui.getXYChartPanel().isVisible() || gui.getXYChartPanel2().isVisible())
             toggle.setVisible(true);

@@ -29,7 +29,11 @@ public class Statistics implements ActionListener {
         numPeople = simBoard.getNumPeople();
         time = -1;
 
-        //x.openFile(); TODO Put back at some point
+        x.openFile("EpidemicResults.txt");
+        x.addString("Time:");
+        x.addString("NumCases:");
+        x.addString("NumSick:");
+        x.addSpace();
 
         updateStats();
     }
@@ -63,16 +67,26 @@ public class Statistics implements ActionListener {
         numDead = numPeople - numHealthy - numSick - numRecovered;
         numCases = numSick + numRecovered + numDead;
 
-        if(numDead + numRecovered > 0)
+        if(numCases > 0)
         {
             int infectedSum = 0;
             for(int i = 0; i < simBoard.getRNot().size(); i++)
             {
                 infectedSum += simBoard.getRNot().get(i);
             }
-            averageRValue = (double)infectedSum / (numDead + numRecovered);
-            System.out.println(averageRValue);
+            averageRValue = (double)infectedSum / numCases;
         }
+
+        if(numSick > 0)
+            printStats();
+    }
+
+    private void printStats()
+    {
+        x.addStat(time);
+        x.addStat(numCases);
+        x.addStat(numSick);
+        x.addSpace();
     }
 
     /**Calls the update stats methods, calls actions events when needed, and decides when to close a text file (called every tick)
@@ -99,7 +113,8 @@ public class Statistics implements ActionListener {
         for(int i = 0; i < simBoard.getPList().size(); i++)
             simBoard.getPList().get(i).updateMortalityRate(numSick, numPeople);
 
-        //System.out.println(averageRValue);
+        if(numSick == 0)
+            x.closeFile();
 
         //TODO possible implementation of an "Action Event"
         /** if(numDead > 10)
@@ -134,6 +149,10 @@ public class Statistics implements ActionListener {
     public int getTime()
     {
         return time;
+    }
+    public double getAverageRValue()
+    {
+        return averageRValue;
     }
 
     public ArrayList<Integer> getTimeList() {
