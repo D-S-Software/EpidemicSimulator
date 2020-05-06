@@ -8,25 +8,32 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, timeSinceSick, quadLocation, othersInfected, closestSickIndex;
-    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, maxTimeSick;
+    private int xPos, yPos, dx, dy, timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex;
+    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, reInfectRate, antiBodyTime;
     private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false;
     private Rectangle dimens;
     private Disease disease;
     private final int circleRad = 8;
 
-    public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing)
+    public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing, double reInfectRate, double antiBodyTime)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
+
         this.asymptomatic = asymptomatic;
         this.isSocialDistancing = isSocialDistancing;
         isSocialDistancingSaved = isSocialDistancing;
+
         this.xPos = xPos;
         this.yPos = yPos;
-        maxTimeSick = disease.getBaseMaxTimeSick() + (100 * age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
+
+        double maxTimeSick = disease.getBaseMaxTimeSick() + (100 * age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
+        sickTime = disease.getBaseMinTimeSick() + (maxTimeSick - disease.getBaseMinTimeSick())*Math.random();
         personalMortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         baseMortalityRate = personalMortalityRate;
+
+        this.reInfectRate = reInfectRate;
+        this.antiBodyTime = antiBodyTime;
         directionAngle = (int)(360*Math.random());
 
         if(Math.random() > disease.getStartPercentHealthy())
@@ -84,22 +91,38 @@ public class Person {
      */
     public void checkCondition()
     {
-        // if a person is within -- pixels of infected --> --% change of spread
+        // checks if a healthy person should become infected
         if(!hasDisease && Math.random() < disease.getContagiousPercent() && distanceFromSick < disease.getContagiousRange())
         {
             hasDisease = true;
             isHealthy = false;
+            timeSinceSick = 0;
         }
         if(hasDisease && !isHealthy) // if is sick
         {
             timeSinceSick++;
             //If sick for min time has increasing chance to die / recover until guaranteed at max time
-            if(timeSinceSick >  disease.getBaseMinTimeSick() + (maxTimeSick - disease.getBaseMinTimeSick())*Math.random())
+            if(timeSinceSick > sickTime)
             {
                 if(Math.random() > personalMortalityRate || asymptomatic)
+                {
                     isHealthy = true;    // Recovers
+                    timeSinceRecovered = 0;
+                }
                 else
                     hasDisease = false; //Dies
+            }
+        }
+        if(hasDisease && isHealthy) // if recovered
+        {
+            timeSinceRecovered++;
+            //checks if a recovered person should become sick
+            if(timeSinceRecovered > antiBodyTime && Math.random() < reInfectRate && distanceFromSick < disease.getContagiousRange())
+            {
+                isHealthy = false;
+                timeSinceSick = 0;
+                othersInfected = 0;
+                System.out.println("Convert!");
             }
         }
     }

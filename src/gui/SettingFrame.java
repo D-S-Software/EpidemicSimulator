@@ -9,10 +9,10 @@ import java.awt.event.*;
 public class SettingFrame extends JFrame implements ActionListener{
 
     private int boardTypeNum = 1, minPreExistingConditionsNum, maxPreExistingConditionsNum;
-    private double asymptomaticChanceNum, socialDistanceChanceNum, quarantineChanceNum, travelersPer, socialDistanceValueNum, minAgeNum, maxAgeNum, timeUntilQuarantineNum;
+    private double asymptomaticChanceNum, socialDistanceChanceNum, quarantineChanceNum, travelersPer, socialDistanceValueNum, minAgeNum, maxAgeNum, timeUntilQuarantineNum, reinfectRateNum, antiBodyTimeNum;
     private boolean quarBoardBool = false;
 
-    JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue, percentSocialDist, minAge, maxAge, minConditions, maxConditions;
+    JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue, percentSocialDist, minAge, maxAge, minConditions, maxConditions, reinfectRate, antiBodyTime;
 
     JRadioButton generalBoard, quadBoard, eightBoard, quarButton, regButton;
 
@@ -28,7 +28,7 @@ public class SettingFrame extends JFrame implements ActionListener{
     public SettingFrame()
     {
         setBackground(CustomColor.BACKGROUND);
-        setPreferredSize(new Dimension(920, 630));
+        setPreferredSize(new Dimension(920, 680));
         getContentPane().setBackground(CustomColor.BACKGROUND);
 
         mainPanel.setBackground(CustomColor.BACKGROUND);
@@ -353,6 +353,20 @@ public class SettingFrame extends JFrame implements ActionListener{
         percentSocialDist.setMinimumSize(new Dimension(60, 10));
         percentSocialDist.setFont(percentSocialDist.getFont ().deriveFont (15.0f));
 
+        reinfectRate = new JTextField(100);
+        reinfectRate.setText("0");
+        reinfectRate.setBackground(CustomColor.FIELD);
+        reinfectRate.setForeground(CustomColor.ON_BUTTON_LABEL);
+        reinfectRate.setMinimumSize(new Dimension(60, 10));
+        reinfectRate.setFont(reinfectRate.getFont ().deriveFont (15.0f));
+
+        antiBodyTime = new JTextField(100);
+        antiBodyTime.setText("8");
+        antiBodyTime.setBackground(CustomColor.FIELD);
+        antiBodyTime.setForeground(CustomColor.ON_BUTTON_LABEL);
+        antiBodyTime.setMinimumSize(new Dimension(60, 10));
+        antiBodyTime.setFont(antiBodyTime.getFont ().deriveFont (15.0f));
+
         minAge = new JTextField(100);
         minAge.setText("20");
         minAge.setBackground(CustomColor.FIELD);
@@ -405,6 +419,14 @@ public class SettingFrame extends JFrame implements ActionListener{
         socialDisPercentLabel.setForeground(CustomColor.LIGHT_GRAY);
         socialDisPercentLabel.setFont(socialDisPercentLabel.getFont ().deriveFont (16.0f));
 
+        JLabel reinfectRateLabel = new JLabel("Can be reinfected (%)  ");
+        reinfectRateLabel.setForeground(CustomColor.LIGHT_GRAY);
+        reinfectRateLabel.setFont(reinfectRateLabel.getFont ().deriveFont (16.0f));
+
+        JLabel antiBodyTimeLabel = new JLabel("How long antibodies last (s)  ");
+        antiBodyTimeLabel.setForeground(CustomColor.LIGHT_GRAY);
+        antiBodyTimeLabel.setFont(antiBodyTimeLabel.getFont ().deriveFont (16.0f));
+
         JLabel minAgeLabel = new JLabel("Min Age");
         minAgeLabel.setForeground(CustomColor.LIGHT_GRAY);
         minAgeLabel.setFont(minAgeLabel.getFont ().deriveFont (16.0f));
@@ -450,6 +472,16 @@ public class SettingFrame extends JFrame implements ActionListener{
         percentSocialDistA.setMinimumSize(new Dimension(250, 40));
         percentSocialDistA.setForeground(CustomColor.LIGHT_GRAY);
         percentSocialDistA.setFont(percentSocialDistA.getFont ().deriveFont (13.0f));
+
+        JLabel reinfectRateA = new JLabel("<html>     Percent of people who can be<br/>     reinfected (0 to turn off)</html>");
+        reinfectRateA.setMinimumSize(new Dimension(250, 40));
+        reinfectRateA.setForeground(CustomColor.LIGHT_GRAY);
+        reinfectRateA.setFont(reinfectRateA.getFont ().deriveFont (13.0f));
+
+        JLabel antiBodyTimeA = new JLabel("<html>     How long antiBodies last <br/>     (when reinfect rate > 0)</html>");
+        antiBodyTimeA.setMinimumSize(new Dimension(250, 40));
+        antiBodyTimeA.setForeground(CustomColor.LIGHT_GRAY);
+        antiBodyTimeA.setFont(antiBodyTimeA.getFont ().deriveFont (13.0f));
 
         JLabel minAgeA = new JLabel("<html>     The min possible age of a person <br/>     (affects total sick time and mortality rate)</html>");
         minAgeA.setMinimumSize(new Dimension(250, 40));
@@ -754,6 +786,60 @@ public class SettingFrame extends JFrame implements ActionListener{
 
         rightPanel.add(maxConditionsA, gbc);
 
+        gbc.gridx = 0;
+        gbc.gridy = 11;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(reinfectRateLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 11;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(reinfectRate, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 11;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(reinfectRateA, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 12;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXLabel;
+        gbc.weighty = 1;
+
+        rightPanel.add(antiBodyTimeLabel, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 12;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXFeild;
+        gbc.weighty = 1;
+
+        rightPanel.add(antiBodyTime, gbc);
+
+        gbc.gridx = 2;
+        gbc.gridy = 12;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = weightXArea;
+        gbc.weighty = 1;
+
+        rightPanel.add(antiBodyTimeA, gbc);
+
         mainPanel.add(rightPanel, gbcMain);
     }
 
@@ -777,7 +863,7 @@ public class SettingFrame extends JFrame implements ActionListener{
 
                 if(getTravelers().getText().equals("") || getTimeUntilQuarantine().getText().equals("") || getPercentQuarantine().getText().equals("") || getAsymptomaticChance().getText().equals("")
                         || getSocialDistanceValue().getText().equals("") || getPercentSocialDist().getText().equals("") || getMinAge().getText().equals("") || getMaxAge().getText().equals("")
-                        || getMinConditions().getText().equals("") || getMaxConditions().getText().equals(""))
+                        || getMinConditions().getText().equals("") || getMaxConditions().getText().equals("") || getReinfectRate().getText().equals("") || getAntiBodyTime().getText().equals(""))
                 {
                     JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
                 }
@@ -786,7 +872,7 @@ public class SettingFrame extends JFrame implements ActionListener{
                     if(Double.parseDouble(getTravelers().getText()) < 0 || Double.parseDouble(getTimeUntilQuarantine().getText()) < 0
                             || Double.parseDouble(getPercentQuarantine().getText()) < 0 || Double.parseDouble(getAsymptomaticChance().getText()) < 0
                             || Double.parseDouble(getSocialDistanceValue().getText()) < 0 || Double.parseDouble(getPercentSocialDist().getText()) < 0 || Double.parseDouble(getMinAge().getText()) < 0
-                            || Double.parseDouble(getMaxAge().getText()) < 0 || Integer.parseInt(getMinConditions().getText()) < 0 || Integer.parseInt(getMaxConditions().getText()) < 0)
+                            || Double.parseDouble(getMaxAge().getText()) < 0 || Integer.parseInt(getMinConditions().getText()) < 0 || Integer.parseInt(getMaxConditions().getText()) < 0 || Double.parseDouble(getReinfectRate().getText()) < 0 || Double.parseDouble(getAntiBodyTime().getText()) < 0)
                     {
                         JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
                     }
@@ -855,6 +941,8 @@ public class SettingFrame extends JFrame implements ActionListener{
         maxAgeNum = Double.parseDouble(maxAge.getText());
         minPreExistingConditionsNum = Integer.parseInt(minConditions.getText());
         maxPreExistingConditionsNum = Integer.parseInt(maxConditions.getText());
+        reinfectRateNum = Double.parseDouble(reinfectRate.getText()) / 100;
+        antiBodyTimeNum = Double.parseDouble(antiBodyTime.getText()) * 100;
     }
 
     /** Getter and Setter methods*/
@@ -904,6 +992,14 @@ public class SettingFrame extends JFrame implements ActionListener{
         return socialDistanceChanceNum;
     }
 
+    public double getReinfectRateNum() {
+        return reinfectRateNum;
+    }
+
+    public double getAntiBodyTimeNum() {
+        return antiBodyTimeNum;
+    }
+
     public boolean isQuarBoardBool() {
         return quarBoardBool;
     }
@@ -946,5 +1042,13 @@ public class SettingFrame extends JFrame implements ActionListener{
     public JTextField getMaxConditions()
     {
         return maxConditions;
+    }
+    public JTextField getReinfectRate()
+    {
+        return reinfectRate;
+    }
+    public JTextField getAntiBodyTime()
+    {
+        return antiBodyTime;
     }
 }

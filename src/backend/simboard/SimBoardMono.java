@@ -20,11 +20,11 @@ public class SimBoardMono extends SimBoard{
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      */
     public SimBoardMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge,
-                        int minPreExistingConditions, int maxPreExistingConditions)
+                        int minPreExistingConditions, int maxPreExistingConditions, double reinfectRate, double antiBodyTime)
     {
 
         super(disease, dimens,  numPeople, asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-        minPreExistingConditions, maxPreExistingConditions, 0 );
+        minPreExistingConditions, maxPreExistingConditions, 0, reinfectRate, antiBodyTime);
     }
 
     /**

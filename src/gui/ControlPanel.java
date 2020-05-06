@@ -31,7 +31,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     private ArrayList<Music> musicSongs = new ArrayList<>();
 
     private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople;
-    private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine;
+    private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
     private boolean toPause = true, canStart = true, canType = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
 
     /**Creates a control Panel object for the gui
@@ -520,6 +520,11 @@ public class ControlPanel extends JPanel implements ActionListener{
                                 JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
                                 goodToStart = false;
                             }
+                            else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
+                            {
+                                JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
+                                goodToStart = false;
+                            }
                             else
                             {
                                 disease = new Disease(Double.parseDouble(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
@@ -537,7 +542,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     {
                         if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
                                 || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
-                                || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals(""))
+                                || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals("") || settingFrame.getReinfectRate().getText().equals("") || settingFrame.getAntiBodyTime().getText().equals(""))
                         {
                             JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
                             goodToStart = false;
@@ -545,7 +550,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                         else if(Double.parseDouble(settingFrame.getTravelers().getText()) < 0 || Double.parseDouble(settingFrame.getTimeUntilQuarantine().getText()) < 0
                                 || Double.parseDouble(settingFrame.getPercentQuarantine().getText()) < 0 || Double.parseDouble(settingFrame.getAsymptomaticChance().getText()) < 0
                                 || Double.parseDouble(settingFrame.getSocialDistanceValue().getText()) < 0 || Double.parseDouble(settingFrame.getPercentSocialDist().getText()) < 0 || Double.parseDouble(settingFrame.getMinAge().getText()) < 0
-                                || Double.parseDouble(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0)
+                                || Double.parseDouble(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0
+                                || Double.parseDouble(settingFrame.getReinfectRate().getText()) < 0 || Double.parseDouble(settingFrame.getAntiBodyTime().getText()) < 0)
                         {
                             JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
                             goodToStart = false;
@@ -575,6 +581,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                             socialDistanceChance = settingFrame.getSocialDistanceChanceNum();
                             quarantineChance = settingFrame.getQuarantineChanceNum();
                             travelersPer = settingFrame.getTravelersPer();
+                            reinfectRate = settingFrame.getReinfectRateNum();
+                            antiBodyTime = settingFrame.getAntiBodyTimeNum();
                             quarBoard = settingFrame.isQuarBoardBool();
 
                             gui.getSimBoardPanel().setReset(false);
@@ -583,7 +591,7 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                             if(disease != null)
                             {
-                                simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
+                                simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
                                 simEngine.getClock().start();
                                 isPlaying = true;
                                 if(settingFrame.getSocialDistanceChanceNum() > 0)
@@ -670,6 +678,8 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                 speedUp.setToolTipText("Increase Speed");
                 slowDown.setToolTipText("Slow Down");
+
+                gui.getStats().getCreateFile().closeFile();
 
                 backgroundMusic.stop();
             }

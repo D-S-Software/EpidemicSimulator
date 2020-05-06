@@ -25,9 +25,9 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable {
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      */
     public SimBoardQuarMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance,
-                            double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double timeUntilIsolate, double quarantineChance)
+                            double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double timeUntilIsolate, double quarantineChance, double reinfectRate, double antiBodyTime)
     {
-        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
+        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, reinfectRate, antiBodyTime);
         this.timeUntilIsolate = timeUntilIsolate;
         this.quarantineChance = quarantineChance;
     }

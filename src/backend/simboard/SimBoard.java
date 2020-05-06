@@ -18,7 +18,7 @@ public abstract class SimBoard {
 
     private Disease disease;
 
-    private double socialDistanceChance, asymptomaticChance, socialDistanceValue, minAge, maxAge, travelers;
+    private double socialDistanceChance, asymptomaticChance, socialDistanceValue, minAge, maxAge, travelers, reinfectRate, antiBodyTime;
     private int numPeople, minPreExistingConditions, maxPreExistingConditions;
 
     /** Creates a SimBoard to simulate the actions of people that are displayed on SimBoardPanel
@@ -36,7 +36,7 @@ public abstract class SimBoard {
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
      */
     public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge,
-                    int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
+                    int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double reinfectRate, double antiBodyTime)
     {
         this.disease = disease;
         this.numPeople = numPeople;
@@ -66,6 +66,8 @@ public abstract class SimBoard {
         constructDimensList();
         updateDimensList(dimens);
 
+        this.reinfectRate = reinfectRate;
+        this.antiBodyTime = antiBodyTime;
 
         pList = new ArrayList<>();
         pListQ1 = new ArrayList<>();
@@ -161,7 +163,7 @@ public abstract class SimBoard {
         int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - maxPreExistingConditions) * Math.random());
 
 
-        Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing);
+        Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing, reinfectRate, antiBodyTime);
         p.setQuadLocation(quadLocation);
         return p;
     }
@@ -228,7 +230,7 @@ public abstract class SimBoard {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
             int closestSickIndex = 0;
 
-            if(!pListQN.get(i).getHasDisease())
+            if(pListQN.get(i).getIsHealthy())
                 for(int j = 0; j < pList.size(); j++)
                     if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
                     {

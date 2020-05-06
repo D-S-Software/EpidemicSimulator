@@ -125,7 +125,7 @@ public class Statistics implements ActionListener {
 
     /** Getter and Setter Methods */
 
-    public static CreateFile getCreateFile()
+    public CreateFile getCreateFile()
     {
         return x;
     }

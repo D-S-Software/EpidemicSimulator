@@ -32,26 +32,28 @@ public class Engine {
      * @param quarantineChance The percent of sick people that will go to quarantine
      */
     public Engine(GUI gui, Disease disease, int numPeople, int boardType, boolean quarBoard,
-                  double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double timeUntilQuarantine, double quarantineChance)
+                  double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge,
+                  int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double timeUntilQuarantine,
+                  double quarantineChance, double reinfectRate, double antiBodyTime)
     {
         Rectangle boardDimens = new Rectangle(gui.getSimBoardRec());
         SimBoard simBoard;
         if(quarBoard) {
             if (boardType == 8)
-                simBoard = new SimBoardQuarOcto(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
+                simBoard = new SimBoardQuarOcto(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
             else if (boardType == 4)
-                simBoard = new SimBoardQuarQuad(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance);
+                simBoard = new SimBoardQuarQuad(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
             else// if boardType == 1
-                simBoard = new SimBoardQuarMono(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine, quarantineChance);
+                simBoard = new SimBoardQuarMono(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
         }
         else //!quarBoard /
         {
             if (boardType == 8)
-                simBoard = new SimBoardOcto(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer);
+                simBoard = new SimBoardOcto(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, reinfectRate, antiBodyTime);
             else if (boardType == 4)
-                simBoard = new SimBoardQuad(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer);
+                simBoard = new SimBoardQuad(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, reinfectRate, antiBodyTime);
             else //if boardType == 1
-                simBoard = new SimBoardMono(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions);
+                simBoard = new SimBoardMono(disease, boardDimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, reinfectRate, antiBodyTime);
         }
 
         gui.getSimBoardPanel().setBoard(simBoard);

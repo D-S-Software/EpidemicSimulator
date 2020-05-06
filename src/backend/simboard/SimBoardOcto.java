@@ -23,10 +23,10 @@ public class SimBoardOcto extends SimBoard{
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
      */
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance,
-                        double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer)
+                        double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double reinfectRate, double antiBodyTime)
     {
         super(disease, dimens,  numPeople,asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-            minPreExistingConditions, maxPreExistingConditions, travelersPer);
+            minPreExistingConditions, maxPreExistingConditions, travelersPer, reinfectRate, antiBodyTime);
     }
 
     /**
