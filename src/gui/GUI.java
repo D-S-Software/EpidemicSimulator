@@ -196,8 +196,7 @@ public class GUI {
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);
 
-        myXYChart = new MyXYChart(); /** This is not in the constructor because a gui object must be created first,
-                                     *then gui.stats() is called in Engine. Then setStats(stats) can be called here.*/
+        myXYChart = new MyXYChart(); // This is not in the constructor because a gui object must be created first, then gui.stats() is called in Engine. Then setStats(stats) can be called here.
 
         xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
         xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));

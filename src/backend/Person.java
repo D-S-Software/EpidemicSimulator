@@ -15,6 +15,19 @@ public class Person {
     private Disease disease;
     private final int circleRad = 8;
 
+    /** Creates a person object for the simBoard
+     *
+     * @param age The age of the person (affects max time sick and mortality rate)
+     * @param preExistingConditions The number of preexisting conditions (affects mortality rate)
+     * @param xPos The x position of the person
+     * @param yPos They y position of the person
+     * @param dimens The dimensions the person can be in (Rectangle obj)
+     * @param disease The disease object the person has
+     * @param asymptomatic Boolean value if the person can be asymptomatic when sick
+     * @param isSocialDistancing Boolean value if the person is social distancing
+     * @param antiBodyTime How long it takes for antibodies to expire
+     * @param canReInfect Boolean value if the person is able to be reinfected once recovered if antibodies expire
+     */
     public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing, double antiBodyTime, boolean canReInfect)
     {
         this.dimens = new Rectangle(dimens);
