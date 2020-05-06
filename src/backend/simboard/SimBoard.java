@@ -162,8 +162,13 @@ public abstract class SimBoard {
         int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
         int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - maxPreExistingConditions) * Math.random());
 
+        boolean canReinfect;
+        if(Math.random() < reinfectRate)
+            canReinfect = true;
+        else
+            canReinfect = false;
 
-        Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing, reinfectRate, antiBodyTime);
+        Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing, antiBodyTime, canReinfect);
         p.setQuadLocation(quadLocation);
         return p;
     }

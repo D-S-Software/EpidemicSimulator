@@ -9,13 +9,13 @@ public class Person {
 
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex;
-    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, reInfectRate, antiBodyTime;
-    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false;
+    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime;
+    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect;
     private Rectangle dimens;
     private Disease disease;
     private final int circleRad = 8;
 
-    public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing, double reInfectRate, double antiBodyTime)
+    public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing, double antiBodyTime, boolean canReInfect)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
@@ -32,8 +32,8 @@ public class Person {
         personalMortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         baseMortalityRate = personalMortalityRate;
 
-        this.reInfectRate = reInfectRate;
         this.antiBodyTime = antiBodyTime;
+        this.canReInfect = canReInfect;
         directionAngle = (int)(360*Math.random());
 
         if(Math.random() > disease.getStartPercentHealthy())
@@ -113,16 +113,15 @@ public class Person {
                     hasDisease = false; //Dies
             }
         }
-        if(hasDisease && isHealthy) // if recovered
+        if(hasDisease && isHealthy && canReInfect) // if recovered
         {
             timeSinceRecovered++;
             //checks if a recovered person should become sick
-            if(timeSinceRecovered > antiBodyTime && Math.random() < reInfectRate && distanceFromSick < disease.getContagiousRange())
+            if(timeSinceRecovered > antiBodyTime && distanceFromSick < disease.getContagiousRange() && Math.random() < disease.getContagiousPercent())
             {
                 isHealthy = false;
                 timeSinceSick = 0;
                 othersInfected = 0;
-                System.out.println("Convert!");
             }
         }
     }

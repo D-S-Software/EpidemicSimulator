@@ -361,7 +361,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         reinfectRate.setFont(reinfectRate.getFont ().deriveFont (15.0f));
 
         antiBodyTime = new JTextField(100);
-        antiBodyTime.setText("8");
+        antiBodyTime.setText("35");
         antiBodyTime.setBackground(CustomColor.FIELD);
         antiBodyTime.setForeground(CustomColor.ON_BUTTON_LABEL);
         antiBodyTime.setMinimumSize(new Dimension(60, 10));
@@ -478,7 +478,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         reinfectRateA.setForeground(CustomColor.LIGHT_GRAY);
         reinfectRateA.setFont(reinfectRateA.getFont ().deriveFont (13.0f));
 
-        JLabel antiBodyTimeA = new JLabel("<html>     How long antiBodies last <br/>     (when reinfect rate > 0)</html>");
+        JLabel antiBodyTimeA = new JLabel("<html>     How long antiBodies last <br/>     (when % reinfect > 0)</html>");
         antiBodyTimeA.setMinimumSize(new Dimension(250, 40));
         antiBodyTimeA.setForeground(CustomColor.LIGHT_GRAY);
         antiBodyTimeA.setFont(antiBodyTimeA.getFont ().deriveFont (13.0f));
