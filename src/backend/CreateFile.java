@@ -1,8 +1,5 @@
 package backend;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.Formatter;
 
 public class CreateFile {
@@ -12,11 +9,11 @@ public class CreateFile {
     /**
      * opens a new file to be written in
      */
-    public void openFile()
+    public void openFile(String fileName)
     {
         try
         {
-            resultsFile = new Formatter("EpidemicResults.txt");
+            resultsFile = new Formatter(fileName);
         }
         catch(Exception e)
         {
@@ -24,36 +21,22 @@ public class CreateFile {
         }
     }
 
-    /** Adds the person arrayList contents to the file
+    /**Adds a String to a printed text file
      *
-     * @param array
+     * @param s The String to be recorded
      */
-    public void addDiseaseArray(ArrayList<Person> array)
+    public void addString(String s)
     {
-        resultsFile.format("%s%s%s", "[", arrayToString(array), "]");
+        resultsFile.format("%s", s + "\t");
     }
 
-    /**
-     * Adds the time stamps for the data being written
-     * @param time
+    /**Adds a value to a printed text file
+     *
+     * @param stat The value to be recorded
      */
-    public void addTime(int time)
+    public void addStat(int stat)
     {
-        resultsFile.format("%s", "" + time);
-    }
-
-    /**
-     * Adds the percent of people who have been affected by the epidemic
-     * @param decimalPercent
-     */
-    public void addFindAffectedPercent(double decimalPercent)
-    {
-        DecimalFormat df = new DecimalFormat("##.###");
-        df.setRoundingMode(RoundingMode.CEILING);
-
-        decimalPercent *= 100;
-
-        resultsFile.format("%s%s%s", "Affected: ", df.format(decimalPercent), "%");
+        resultsFile.format("%s", stat + "\t");
     }
 
     /**
@@ -70,20 +53,5 @@ public class CreateFile {
     public void closeFile()
     {
         resultsFile.close();
-    }
-
-    /**Converts an arrayList of people into a string to be written
-     *
-     * @param array The ArrayList of people to be converted
-     * @return The string representing the ArrayList of Persons
-     */
-    private String arrayToString(ArrayList<Person> array)
-    {
-        String output = array.get(0).getHasDisease() + "";
-        for(int i = 1; i < array.size(); i++)
-        {
-            output += " " + array.get(i).getHasDisease();
-        }
-        return output;
     }
 }
