@@ -91,7 +91,7 @@ public class Statistics implements ActionListener {
 
     /**Calls the update stats methods, calls actions events when needed, and decides when to close a text file (called every tick)
      *
-     * @param e
+     * @param e event each tick
      */
     public void actionPerformed(ActionEvent e)
     {

@@ -153,8 +153,8 @@ public class Person {
 
     /** Updates the current mortality rate based on the percentage of people sick in a given moment
      *
-     * @param numSick
-     * @param numPeople
+     * @param numSick The current number of people sick in the simulation
+     * @param numPeople The total number of people in the simulation
      */
     public void updateMortalityRate(int numSick, int numPeople)
     {

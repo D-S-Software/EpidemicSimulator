@@ -154,7 +154,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
     /**
      * Updates the stats on the info board based on the stats object
-     * @param e
+     * @param e event each tick
      */
     public void actionPerformed(ActionEvent e)
     {

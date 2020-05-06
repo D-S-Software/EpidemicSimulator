@@ -40,7 +40,7 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
 
     /**
      * Updates the data in the graph each tick and decides when to top updating (when there is no sick people)
-     * @param e
+     * @param e event each tick
      */
     public void actionPerformed(ActionEvent e)
     {

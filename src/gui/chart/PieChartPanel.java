@@ -42,7 +42,7 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
 
     /**
      * Updates the contents of the pie chart every tick and decides when to top updating (when there is no sick people)
-     * @param e
+     * @param e event each tick
      */
     public void actionPerformed(ActionEvent e)
     {

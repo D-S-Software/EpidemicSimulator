@@ -21,6 +21,8 @@ public class SimBoardOcto extends SimBoard{
      * @param minPreExistingConditions The minimum pre-existing conditions of a person in the simulation
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
+     * @param reinfectRate The percentage of people that can be reinfected once they loose resistance
+     * @param antiBodyTime The time it takes for antibodies to expire
      */
     public SimBoardOcto(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance,
                         double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double reinfectRate, double antiBodyTime)

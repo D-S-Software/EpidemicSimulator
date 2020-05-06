@@ -8,6 +8,7 @@ public class CreateFile {
 
     /**
      * opens a new file to be written in
+     * @param fileName The name of the file to look for / create
      */
     public void openFile(String fileName)
     {

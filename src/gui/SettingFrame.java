@@ -896,7 +896,7 @@ public class SettingFrame extends JFrame implements ActionListener{
 
     /**Checks if the setting frame is being used and updates the board type and parameters that are selected each tick
      *
-     * @param e
+     * @param e event each tick
      */
     @Override
     public void actionPerformed(ActionEvent e) {

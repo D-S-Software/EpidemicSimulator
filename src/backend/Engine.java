@@ -30,6 +30,8 @@ public class Engine {
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
      * @param timeUntilQuarantine The time until a sick person will go to quarantine
      * @param quarantineChance The percent of sick people that will go to quarantine
+     * @param reinfectRate The percentage of people that can be reinfected once they loose resistance
+     * @param antiBodyTime The time it takes for antibodies to expire
      */
     public Engine(GUI gui, Disease disease, int numPeople, int boardType, boolean quarBoard,
                   double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge,

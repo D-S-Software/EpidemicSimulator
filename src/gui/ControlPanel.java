@@ -696,7 +696,7 @@ public class ControlPanel extends JPanel implements ActionListener{
 
     /**
      * Sets the text for the disease parameter panel based on the disease parameters
-     * @param e
+     * @param e event each tick
      */
     @Override
     public void actionPerformed(ActionEvent e) {
