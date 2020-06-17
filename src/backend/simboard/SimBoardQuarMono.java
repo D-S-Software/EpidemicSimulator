@@ -9,7 +9,7 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable {
 
     private Rectangle quarantine;
     private int quarXOrigin, quarWidth;
-    private double quarantineChance, timeUntilIsolate;
+    private double timeUntilIsolate;
 
     /** Creates a SimBoardQuarMono (one area, quarantine board) to simulate the actions of people that are displayed on SimBoardPanel
      *
@@ -29,11 +29,10 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable {
      * @param timeUntilIsolate The time it takes for a sick person to go into quarantine
      */
     public SimBoardQuarMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance,
-                            double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double timeUntilIsolate, double quarantineChance, double reinfectRate, double antiBodyTime)
+                            double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double timeUntilIsolate, double reinfectRate, double quarantineChance, double antiBodyTime)
     {
-        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, reinfectRate, antiBodyTime);
+        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, reinfectRate, quarantineChance, antiBodyTime);
         this.timeUntilIsolate = timeUntilIsolate;
-        this.quarantineChance = quarantineChance;
     }
 
     /** Creates an ArrayList of rectangles that represent dimensions of different parts of the sim board (including the quarantine zone)
@@ -62,7 +61,7 @@ public class SimBoardQuarMono extends SimBoardMono  implements Quarantinable {
         {
             if(getPList().get(i).getHasDisease() && !getPList().get(i).isAsymptomatic() && !getPList().get(i).getIsHealthy() && getPList().get(i).getTimeSinceSick() > timeUntilIsolate && !getPList().get(i).isIsoSick())
             {
-                if(Math.random() < quarantineChance)
+                if(getPList().get(i).willQuarantine())
                 {
                     getPList().get(i).resetDimens(quarantine);
                     getPList().get(i).setIsoSick(true);

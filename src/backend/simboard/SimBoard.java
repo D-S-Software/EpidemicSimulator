@@ -18,7 +18,7 @@ public abstract class SimBoard {
 
     private Disease disease;
 
-    private double socialDistanceChance, asymptomaticChance, socialDistanceValue, minAge, maxAge, travelers, reinfectRate, antiBodyTime;
+    private double socialDistanceChance, asymptomaticChance, socialDistanceValue, minAge, maxAge, travelers, reinfectRate, quarantineChance, antiBodyTime;
     private int numPeople, minPreExistingConditions, maxPreExistingConditions;
 
     /** Creates a SimBoard to simulate the actions of people that are displayed on SimBoardPanel
@@ -35,10 +35,11 @@ public abstract class SimBoard {
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      * @param travelersPer The percent of people who travel without bound in a quad or octo board
      * @param reinfectRate The percentage of people that can be reinfected once they loose resistance
+     * @param quarantineChance The percent chance that a person will quarantine when sick
      * @param antiBodyTime The time it takes for antibodies to expire
      */
     public SimBoard(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge,
-                    int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double reinfectRate, double antiBodyTime)
+                    int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double reinfectRate, double quarantineChance, double antiBodyTime)
     {
         this.disease = disease;
         this.numPeople = numPeople;
@@ -50,6 +51,7 @@ public abstract class SimBoard {
         this.minPreExistingConditions = minPreExistingConditions;
         this.maxPreExistingConditions = maxPreExistingConditions;
         this.travelers = (int)(numPeople*travelersPer);
+        this.quarantineChance = quarantineChance;
 
         this.dimens = dimens;
         q1Dimens = new Rectangle();
@@ -170,7 +172,7 @@ public abstract class SimBoard {
         else
             canReinfect = false;
 
-        Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing, antiBodyTime, canReinfect);
+        Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing, antiBodyTime, canReinfect, quarantineChance);
         p.setQuadLocation(quadLocation);
         return p;
     }

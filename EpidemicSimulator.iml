@@ -5,10 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="14 (1)" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="openjfx-11.0(1)" level="project" />
-    <orderEntry type="library" exported="" name="xchart-3.6.2" level="application" />
     <orderEntry type="library" exported="" name="xchart-3.6.22" level="application" />
   </component>
 </module>

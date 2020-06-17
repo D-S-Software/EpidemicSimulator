@@ -10,10 +10,10 @@ public class Person {
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex;
     private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime;
-    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect;
+    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect, willQuarantine;
     private Rectangle dimens;
     private Disease disease;
-    private final int circleRad = 8;
+    private final int circleRad = 5;
 
     /** Creates a person object for the simBoard
      *
@@ -27,8 +27,9 @@ public class Person {
      * @param isSocialDistancing Boolean value if the person is social distancing
      * @param antiBodyTime How long it takes for antibodies to expire
      * @param canReInfect Boolean value if the person is able to be reinfected once recovered if antibodies expire
+     * @param quarantineChance The chance that a person will quarantine
      */
-    public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing, double antiBodyTime, boolean canReInfect)
+    public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing, double antiBodyTime, boolean canReInfect, double quarantineChance)
     {
         this.dimens = new Rectangle(dimens);
         this.disease = disease;
@@ -36,11 +37,12 @@ public class Person {
         this.asymptomatic = asymptomatic;
         this.isSocialDistancing = isSocialDistancing;
         isSocialDistancingSaved = isSocialDistancing;
+        willQuarantine = Math.random() < quarantineChance;
 
         this.xPos = xPos;
         this.yPos = yPos;
 
-        double maxTimeSick = disease.getBaseMaxTimeSick() + (100 * age*Math.random()); /** Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec) */
+        double maxTimeSick = disease.getBaseMaxTimeSick() + (100 * age*Math.random()); // Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec)
         sickTime = disease.getBaseMinTimeSick() + (maxTimeSick - disease.getBaseMinTimeSick())*Math.random();
         personalMortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         baseMortalityRate = personalMortalityRate;
@@ -133,6 +135,7 @@ public class Person {
             if(timeSinceRecovered > antiBodyTime && distanceFromSick < disease.getContagiousRange() && Math.random() < disease.getContagiousPercent())
             {
                 isHealthy = false;
+                isoRecovered = false;
                 timeSinceSick = 0;
                 othersInfected = 0;
             }
@@ -307,6 +310,9 @@ public class Person {
     }
     public boolean isAsymptomatic() {
         return asymptomatic;
+    }
+    public boolean willQuarantine() {
+        return willQuarantine;
     }
 
     public int getQuadLocation()

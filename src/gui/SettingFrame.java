@@ -340,7 +340,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         asymptomaticChance.setFont(asymptomaticChance.getFont ().deriveFont (15.0f));
 
         socialDistanceValue = new JTextField(100);
-        socialDistanceValue.setText("50");
+        socialDistanceValue.setText("30");
         socialDistanceValue.setBackground(CustomColor.FIELD);
         socialDistanceValue.setForeground(CustomColor.ON_BUTTON_LABEL);
         socialDistanceValue.setMinimumSize(new Dimension(60, 10));
@@ -463,7 +463,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         asymptomaticChanceA.setForeground(CustomColor.LIGHT_GRAY);
         asymptomaticChanceA.setFont(asymptomaticChanceA.getFont ().deriveFont (13.0f));
 
-        JLabel socialDistanceValueA = new JLabel("<html>     The amount of space needed during <br/>     social distancing (50 recom.)</html>");
+        JLabel socialDistanceValueA = new JLabel("<html>     The amount of space needed during <br/>     social distancing (30 recom.)</html>");
         socialDistanceValueA.setMinimumSize(new Dimension(250, 40));
         socialDistanceValueA.setForeground(CustomColor.LIGHT_GRAY);
         socialDistanceValueA.setFont(socialDistanceValueA.getFont ().deriveFont (13.0f));

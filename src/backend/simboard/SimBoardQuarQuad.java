@@ -9,7 +9,7 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable {
 
     private Rectangle quarantine;
     private int width, height, x2Start, y2Origin, quarXOrigin, quarWidth;
-    private double quarantineChance, timeUntilIsolate;
+    private double timeUntilIsolate;
 
     /** Creates a SimBoardQuarQuad (4 areas, quarantine board) to simulate the actions of people that are displayed on SimBoardPanel
      *
@@ -30,11 +30,10 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable {
      * @param timeUntilIsolate The time it takes for a sick person to go into quarantine
      */
     public SimBoardQuarQuad(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance,
-                            double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double timeUntilIsolate, double quarantineChance, double reinfectRate, double antiBodyTime)
+                            double minAge, double maxAge, int minPreExistingConditions, int maxPreExistingConditions, double travelersPer, double timeUntilIsolate, double reinfectRate, double quarantineChance, double antiBodyTime)
     {
-        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, reinfectRate, antiBodyTime);
+        super(disease, dimens, numPeople, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, reinfectRate, quarantineChance, antiBodyTime);
         this.timeUntilIsolate = timeUntilIsolate;
-        this.quarantineChance = quarantineChance;
     }
 
     /** Creates an ArrayList of rectangles that represent dimensions of different parts of the sim board (including the quarantine zone)
@@ -75,7 +74,7 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable {
         {
             if(getPList().get(i).getHasDisease() && !getPList().get(i).isAsymptomatic() && !getPList().get(i).getIsHealthy() && getPList().get(i).getTimeSinceSick() > timeUntilIsolate && !getPList().get(i).isIsoSick())
             {
-                if(Math.random() < quarantineChance)
+                if(getPList().get(i).willQuarantine())
                 {
                     getPList().get(i).resetDimens(quarantine);
                     getPList().get(i).setIsoSick(true);

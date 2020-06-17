@@ -19,14 +19,15 @@ public class SimBoardMono extends SimBoard{
      * @param minPreExistingConditions The minimum pre-existing conditions of a person in the simulation
      * @param maxPreExistingConditions The maximum pre-existing conditions of a person in the simulation
      * @param reinfectRate The percentage of people that can be reinfected once they loose resistance
+     * @param quarantineChance The percent of people that will quarantine when sick
      * @param antiBodyTime The time it takes for antibodies to expire
      */
     public SimBoardMono(Disease disease, Rectangle dimens, int numPeople, double asymptomaticChance, double socialDistanceValue, double socialDistanceChance, double minAge, double maxAge,
-                        int minPreExistingConditions, int maxPreExistingConditions, double reinfectRate, double antiBodyTime)
+                        int minPreExistingConditions, int maxPreExistingConditions, double reinfectRate, double quarantineChance, double antiBodyTime)
     {
 
         super(disease, dimens,  numPeople, asymptomaticChance, socialDistanceValue,  socialDistanceChance,  minAge,  maxAge,
-        minPreExistingConditions, maxPreExistingConditions, 0, reinfectRate, antiBodyTime);
+        minPreExistingConditions, maxPreExistingConditions, 0, reinfectRate, quarantineChance, antiBodyTime);
     }
 
     /**
