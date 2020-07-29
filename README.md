@@ -34,7 +34,7 @@ The board can be subdivided with the capability of sending a given percentage in
 ![3rd Demo](EpidemicSimGifs/EpidemicSimAsymptomaticShowcase.gif)
 
 # CSV Capabilities
-Access to data through auto-generated an auto-generated CSV file allows for saving and exporting of any particular simulation
+Access to data through an auto-generated CSV file allows for saving and exporting of any particular simulation
 
 # Frameworks and Libraries used
 - Swing
