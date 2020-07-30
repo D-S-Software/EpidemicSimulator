@@ -30,7 +30,7 @@ public class Statistics implements ActionListener {
         time = -1;
 
         x.openFile("EpidemicResults.txt");
-        x.addString("Time:");
+        x.addString("Time (centi sec):");
         x.addString("NumCases:");
         x.addString("NumSick:");
         x.addSpace();
