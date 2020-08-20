@@ -17,7 +17,7 @@ Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sander
   - Quarantine section
   - Asysmptomatic carriers
 - Easy Setup
-  - Download and extract the zipped folder and run the jar file (Windows only): https://drive.google.com/file/d/1x8S18-JEA57b8MIg2NtItscDaQgyimRl/view?usp=sharing
+  - Download and run installer (Windows only): https://drive.google.com/file/d/1kYLtSxpIpYmeNjdJVcSV9l4wFzby4KG6/view?usp=sharing
   
 
 # Simple Demo
