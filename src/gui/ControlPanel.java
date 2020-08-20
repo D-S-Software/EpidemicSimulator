@@ -206,7 +206,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-        toggleMusic = new JButton("Toggle Music");
+        toggleMusic = new JButton("<html>Toggle<br/>Music</html>");
         toggleMusic.setBackground(CustomColor.BUTTON);
         toggleMusic.setFont(toggleMusic.getFont ().deriveFont (18.0f));
         toggleMusic.setForeground(CustomColor.ON_BUTTON_LABEL);
@@ -262,7 +262,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
 
-        toggleSocDist = new JButton("Social Distancing");
+        toggleSocDist = new JButton("<html>Social<br/>Distancing</html>");
         toggleSocDist.setBackground(CustomColor.BUTTON);
         toggleSocDist.setFont(toggleSocDist.getFont ().deriveFont (18.0f));
         toggleSocDist.setForeground(CustomColor.ON_BUTTON_LABEL);
@@ -413,7 +413,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         startPercentHealthy.setForeground(CustomColor.ON_BUTTON_LABEL);
         startPercentHealthy.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
-        contagiousPercentLabel = new JLabel("Contagious (%)");
+        contagiousPercentLabel = new JLabel("<html>Contagious<br/>(%)</html>");
         contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
         contagiousPercentLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
@@ -421,15 +421,15 @@ public class ControlPanel extends JPanel implements ActionListener{
         contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
         contagiousRangeLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        baseMortalityRateLabel = new JLabel("  Mortality Rate (%)");
+        baseMortalityRateLabel = new JLabel("  Mortality (%)");
         baseMortalityRateLabel.setFont(baseMortalityRateLabel.getFont ().deriveFont (15.0f));
         baseMortalityRateLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        baseMinTimeSickLabel = new JLabel("  Min Time Sick (s)");
+        baseMinTimeSickLabel = new JLabel("  Min Sick (s)");
         baseMinTimeSickLabel.setFont( baseMinTimeSickLabel.getFont ().deriveFont (15.0f));
         baseMinTimeSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        baseMaxTimeSickLabel = new JLabel("  Max Time Sick (s)");
+        baseMaxTimeSickLabel = new JLabel("  Max Sick (s)");
         baseMaxTimeSickLabel.setFont(baseMaxTimeSickLabel.getFont ().deriveFont (15.0f));
         baseMaxTimeSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
 
@@ -472,8 +472,8 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.insets = new Insets(2, 2, 2, 2);
         JPanel p = new JPanel(new GridLayout(1, 5));
 
-        numPeopleLabel = new JLabel("Number of People:  ");
-        numPeopleLabel.setFont(numPeopleLabel.getFont ().deriveFont (20.0f));
+        numPeopleLabel = new JLabel("<html>Number<br/>of People: </html>");
+        numPeopleLabel.setFont(numPeopleLabel.getFont().deriveFont(17.0f));
         numPeopleLabel.setForeground(CustomColor.ON_BLOOD_RED_LABEL);
         p.add(numPeopleLabel);
 

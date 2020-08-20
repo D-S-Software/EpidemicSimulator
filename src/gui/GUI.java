@@ -28,31 +28,25 @@ public class GUI {
     private JFrame frame;
     private Statistics stats;
     private boolean showPieFirst = true, showCasesFirst = true;
-    private int preWidth, preHeight;
+
+    private GridBagConstraints gbc = new GridBagConstraints();
 
     /** Creates the main gui for the simulation
-     *
-     * @param preWidth The predetermined width for the simulation upon launch
-     * @param preHeight The predetermined height for the simulation upon launch
      */
-    public GUI(int preWidth, int preHeight)
+    public GUI()
     {
-        this.preHeight = preHeight;
-        this.preWidth = preWidth;
-
         frame = new JFrame("EpidemicSimulator");
         frame.getContentPane().setBackground(CustomColor.BACKGROUND);
         ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
         Image image1 = pic1.getImage();
         frame.setIconImage(image1);
-        frame.setPreferredSize(new Dimension(preWidth, preHeight));
         frame.setLayout(new GridBagLayout());
         GridBagConstraints gbcMain = new GridBagConstraints();
         gbcMain.gridx = 0;
         gbcMain.gridy = 0;
         gbcMain.gridwidth = 2;
         gbcMain.gridheight = 1;
-        gbcMain.weightx = 0;
+        gbcMain.weightx = 10;
         gbcMain.weighty = 1;
         gbcMain.anchor = GridBagConstraints.CENTER;
         gbcMain.fill = GridBagConstraints.BOTH;
@@ -71,10 +65,11 @@ public class GUI {
         leftPanel.setBackground(CustomColor.BACKGROUND);
         addBoardPanel();
         addControlPanel();
+        leftPanel.setPreferredSize(new Dimension(600,450));
         frame.add(leftPanel, gbcMain);
 
         gbcMain.gridx = 1;
-        gbcMain.weightx = 20;
+        gbcMain.weightx = 1;
 
         rightPanel = new JPanel(new GridBagLayout());
         rightPanel.setBackground(CustomColor.BACKGROUND);
@@ -85,6 +80,7 @@ public class GUI {
         frame.add(rightPanel, gbcMain);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
         frame.pack();
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
@@ -97,7 +93,6 @@ public class GUI {
      */
     private void addTitlePanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 1;
@@ -123,7 +118,6 @@ public class GUI {
      */
     private void addBoardPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 1;
@@ -143,7 +137,6 @@ public class GUI {
      */
     private void addControlPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
@@ -164,7 +157,6 @@ public class GUI {
      */
     private void addTallyPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 1;
@@ -185,7 +177,6 @@ public class GUI {
      */
     private void addXYChartPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
@@ -209,7 +200,6 @@ public class GUI {
      */
     private void addXYChartPanel2()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
@@ -233,7 +223,6 @@ public class GUI {
      */
     private void addPieChartPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = 1;
