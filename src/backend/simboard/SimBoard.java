@@ -135,8 +135,11 @@ public abstract class SimBoard {
         {
             for (int j = 1; j < listPList.size() - 1; j++)
             {
-                listPList.get(j).add(constructPerson(dimensList.get(j), j)); //each pList in the listPList has a corresponding dimens object in dimensList
-                i++;
+                if(i < numPeople - travelers)
+                {
+                    listPList.get(j).add(constructPerson(dimensList.get(j), j)); //each pList in the listPList has a corresponding dimens object in dimensList
+                    i++;
+                }
             }
         }
     }
