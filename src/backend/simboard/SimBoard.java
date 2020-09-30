@@ -86,6 +86,22 @@ public abstract class SimBoard {
 
         listPList = new ArrayList<>();
         constructListPList();
+        boolean hasInfected = false;
+
+        // Makes sure that at least one person is infected in each simulation
+        //TODO still not working
+        if(disease.getStartPercentHealthy() < 1)
+        {
+            for(int i = 1; i < listPList.size(); i++)
+                for(int j = 0; j < listPList.get(i).size(); j++)
+                    if(!listPList.get(i).get(j).getIsHealthy())
+                        hasInfected = true;
+            if(!hasInfected)
+            {
+                listPList.get(1).get(1).setHasDisease();
+                listPList.get(1).get(1).setIsSick();
+            }
+        }
     }
 
     /**

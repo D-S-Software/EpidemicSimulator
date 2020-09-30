@@ -19,16 +19,18 @@ public class InfoFrame extends JFrame {
     GridBagConstraints gbc = new GridBagConstraints();
     JMenuBar mb;
     JPanel p;
+    ControlPanel controlPanel;
     int pX, pY;
 
     /**
      * Creates an info frame for the main gui when the info button is clicked
      */
-    public InfoFrame() {
+    public InfoFrame(ControlPanel controlPanel) {
 
         setBackground(CustomColor.BACKGROUND);
         setPreferredSize(new Dimension(850, 660));
         getContentPane().setBackground(CustomColor.BACKGROUND);
+        this.controlPanel = controlPanel;
 
         mainPanel.setBackground(CustomColor.BACKGROUND);
 
@@ -185,6 +187,8 @@ public class InfoFrame extends JFrame {
             public void actionPerformed(ActionEvent e) {
 
                 setVisible(false);
+                if(controlPanel.isPlaying())
+                    controlPanel.resumeSim();
             }
         });
 

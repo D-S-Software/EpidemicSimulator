@@ -20,16 +20,18 @@ public class SettingFrame extends JFrame implements ActionListener{
     JPanel mainPanel = new JPanel(new GridBagLayout());
     JMenuBar mb;
     JPanel p;
+    ControlPanel controlPanel;
     int pX, pY;
 
     /**
      * Creates a setting frame for the parameters of the simulation when the gear button is clicked
      */
-    public SettingFrame()
+    public SettingFrame(ControlPanel controlPanel)
     {
         setBackground(CustomColor.BACKGROUND);
         setPreferredSize(new Dimension(920, 680));
         getContentPane().setBackground(CustomColor.BACKGROUND);
+        this.controlPanel = controlPanel;
 
         mainPanel.setBackground(CustomColor.BACKGROUND);
 
@@ -879,6 +881,12 @@ public class SettingFrame extends JFrame implements ActionListener{
                     else if(Double.parseDouble(getMinAge().getText()) > Double.parseDouble(getMaxAge().getText()) || Integer.parseInt(getMinConditions().getText()) > Integer.parseInt(getMaxConditions().getText()))
                     {
                         JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
+                    }
+                    else if(controlPanel.isPlaying())
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Reset simulation to enable changes to settings.");
+                        controlPanel.resumeSim();
+                        setVisible(false);
                     }
                     else setVisible(false);
                 }

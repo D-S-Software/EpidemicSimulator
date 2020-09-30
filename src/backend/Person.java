@@ -294,6 +294,16 @@ public class Person {
 
     public void setrAccounted(boolean accounted) { rAccounted = accounted;}
 
+    public void setIsSick()
+    {
+        isHealthy = false;
+    }
+
+    public void setHasDisease()
+    {
+        hasDisease = true;
+    }
+
     /** SimBoardIso Methods*/
 
     public boolean isIsoRecovered() {

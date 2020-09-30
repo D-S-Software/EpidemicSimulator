@@ -29,8 +29,9 @@ public class ControlPanel extends JPanel implements ActionListener{
     private Music backgroundMusic;
     private SettingFrame settingFrame;
     private ArrayList<Music> musicSongs = new ArrayList<>();
+    private ControlPanel controlPanel = this;
 
-    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople;
+    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, previousSong = 1;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
     private boolean toPause = true, canStart = true, canType = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
 
@@ -42,7 +43,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     {
         this.gui = gui;
 
-        settingFrame = new SettingFrame();
+        settingFrame = new SettingFrame(this);
         settingFrame.setVisible(false);
 
         addSelectionPanel();
@@ -73,7 +74,13 @@ public class ControlPanel extends JPanel implements ActionListener{
     private void changeSong()
     {
         int randomIndex = (int)(musicSongs.size()*Math.random());
-        backgroundMusic = musicSongs.get(randomIndex);
+        if(randomIndex == previousSong)
+            changeSong();
+        else
+        {
+            previousSong = randomIndex;
+            backgroundMusic = musicSongs.get(randomIndex);
+        }
     }
 
     /**
@@ -202,7 +209,9 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                InfoFrame infoFrame = new InfoFrame();
+                InfoFrame infoFrame = new InfoFrame(controlPanel);
+                simEngine.getClock().stop();
+                backgroundMusic.pause();
             }
         });
 
@@ -310,6 +319,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             public void actionPerformed(ActionEvent e) {
 
                 settingFrame.setVisible(true);
+                simEngine.getClock().stop();
+                backgroundMusic.pause();
             }
         });
 
@@ -494,124 +505,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if(canStart)
-                {
-                    boolean goodToStart = false;
-                    if(custom.isSelected())
-                    {
-                        try
-                        {
-                            if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
-                                    || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
-                                    || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
-                            {
-                                JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
-                                goodToStart = false;
-                            }
-                            else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
-                            {
-                                JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
-                                goodToStart = false;
-                            }
-                            else if(Double.parseDouble(contagiousPercent.getText()) < 0 || Double.parseDouble(baseMortalityRate.getText()) < 0
-                                    || Double.parseDouble(baseMinTimeSick.getText()) < 0 || Double.parseDouble(baseMaxTimeSick.getText()) < 0
-                                    || Double.parseDouble(startPercentHealthy.getText()) < 0)
-                            {
-                                JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
-                                goodToStart = false;
-                            }
-                            else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
-                            {
-                                JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
-                                goodToStart = false;
-                            }
-                            else
-                            {
-                                disease = new Disease(Double.parseDouble(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
-                                        Double.parseDouble(baseMortalityRate.getText()) / 100, Double.parseDouble(baseMinTimeSick.getText()) *100,
-                                        Double.parseDouble(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
-                            }
-                        }
-                        catch (java.lang.NumberFormatException ex)
-                        {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
-                            goodToStart = false;
-                        }
-                    }
-                    try
-                    {
-                        if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
-                                || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
-                                || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals("") || settingFrame.getReinfectRate().getText().equals("") || settingFrame.getAntiBodyTime().getText().equals(""))
-                        {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
-                            goodToStart = false;
-                        }
-                        else if(Double.parseDouble(settingFrame.getTravelers().getText()) < 0 || Double.parseDouble(settingFrame.getTimeUntilQuarantine().getText()) < 0
-                                || Double.parseDouble(settingFrame.getPercentQuarantine().getText()) < 0 || Double.parseDouble(settingFrame.getAsymptomaticChance().getText()) < 0
-                                || Double.parseDouble(settingFrame.getSocialDistanceValue().getText()) < 0 || Double.parseDouble(settingFrame.getPercentSocialDist().getText()) < 0 || Double.parseDouble(settingFrame.getMinAge().getText()) < 0
-                                || Double.parseDouble(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0
-                                || Double.parseDouble(settingFrame.getReinfectRate().getText()) < 0 || Double.parseDouble(settingFrame.getAntiBodyTime().getText()) < 0)
-                        {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
-                            goodToStart = false;
-                        }
-                        else if(Double.parseDouble(settingFrame.getMinAge().getText()) > Double.parseDouble(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
-                        {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
-                            goodToStart = false;
-                        }
-                        else if(Integer.parseInt(numPeopleField.getText()) < 1)
-                        {
-                            JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 0 and an integer!");
-                            goodToStart = false;
-                        }
-                        else goodToStart = true;
-
-                        if(goodToStart)
-                        {
-                            boardType = settingFrame.getBoardTypeNum();
-                            socialDistanceValue = settingFrame.getSocialDistanceValueNum();
-                            minAge = settingFrame.getMinAgeNum();
-                            maxAge = settingFrame.getMaxAgeNum();
-                            minPreExistingConditions = settingFrame.getMinPreExistingConditionsNum();
-                            maxPreExistingConditions = settingFrame.getMaxPreExistingConditionsNum();
-                            timeUntilQuarantine = settingFrame.getTimeUntilQuarantineNum();
-                            asymptomaticChance = settingFrame.getAsymptomaticChanceNum();
-                            socialDistanceChance = settingFrame.getSocialDistanceChanceNum();
-                            quarantineChance = settingFrame.getQuarantineChanceNum();
-                            travelersPer = settingFrame.getTravelersPer();
-                            reinfectRate = settingFrame.getReinfectRateNum();
-                            antiBodyTime = settingFrame.getAntiBodyTimeNum();
-                            quarBoard = settingFrame.isQuarBoardBool();
-
-                            gui.getSimBoardPanel().setReset(false);
-
-                            numPeople = Integer.parseInt(numPeopleField.getText());
-
-                            if(disease != null)
-                            {
-                                simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
-                                simEngine.getClock().start();
-                                isPlaying = true;
-                                if(settingFrame.getSocialDistanceChanceNum() > 0)
-                                    isSocialDist = true;
-                                else isSocialDist = false;
-                                canStart = false;
-
-                                backgroundMusic.stop();
-                                changeSong();
-                                backgroundMusic.play();
-
-                                toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
-                            }
-                        }
-                    }
-                    catch (java.lang.NumberFormatException ex)
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (whole number of people)!");
-                    }
-                }
+                startSim();
             }
         });
 
@@ -773,7 +667,139 @@ public class ControlPanel extends JPanel implements ActionListener{
         }
     }
 
+    private void startSim()
+    {
+        if(canStart)
+        {
+            boolean goodToStart = false;
+            if(custom.isSelected())
+            {
+                try
+                {
+                    if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
+                            || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
+                            || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
+                        goodToStart = false;
+                    }
+                    else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
+                        goodToStart = false;
+                    }
+                    else if(Double.parseDouble(contagiousPercent.getText()) < 0 || Double.parseDouble(baseMortalityRate.getText()) < 0
+                            || Double.parseDouble(baseMinTimeSick.getText()) < 0 || Double.parseDouble(baseMaxTimeSick.getText()) < 0
+                            || Double.parseDouble(startPercentHealthy.getText()) < 0)
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
+                        goodToStart = false;
+                    }
+                    else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
+                        goodToStart = false;
+                    }
+                    else
+                    {
+                        disease = new Disease(Double.parseDouble(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
+                                Double.parseDouble(baseMortalityRate.getText()) / 100, Double.parseDouble(baseMinTimeSick.getText()) *100,
+                                Double.parseDouble(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
+                    }
+                }
+                catch (java.lang.NumberFormatException ex)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                    goodToStart = false;
+                }
+            }
+            try
+            {
+                if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
+                        || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
+                        || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals("") || settingFrame.getReinfectRate().getText().equals("") || settingFrame.getAntiBodyTime().getText().equals(""))
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
+                    goodToStart = false;
+                }
+                else if(Double.parseDouble(settingFrame.getTravelers().getText()) < 0 || Double.parseDouble(settingFrame.getTimeUntilQuarantine().getText()) < 0
+                        || Double.parseDouble(settingFrame.getPercentQuarantine().getText()) < 0 || Double.parseDouble(settingFrame.getAsymptomaticChance().getText()) < 0
+                        || Double.parseDouble(settingFrame.getSocialDistanceValue().getText()) < 0 || Double.parseDouble(settingFrame.getPercentSocialDist().getText()) < 0 || Double.parseDouble(settingFrame.getMinAge().getText()) < 0
+                        || Double.parseDouble(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0
+                        || Double.parseDouble(settingFrame.getReinfectRate().getText()) < 0 || Double.parseDouble(settingFrame.getAntiBodyTime().getText()) < 0)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
+                    goodToStart = false;
+                }
+                else if(Double.parseDouble(settingFrame.getMinAge().getText()) > Double.parseDouble(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
+                    goodToStart = false;
+                }
+                else if(Integer.parseInt(numPeopleField.getText()) < 2 || Integer.parseInt(numPeopleField.getText()) > 5000)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 1, less than or equal to 5000, and an integer!");
+                    goodToStart = false;
+                }
+                else goodToStart = true;
+
+                if(goodToStart)
+                {
+                    boardType = settingFrame.getBoardTypeNum();
+                    socialDistanceValue = settingFrame.getSocialDistanceValueNum();
+                    minAge = settingFrame.getMinAgeNum();
+                    maxAge = settingFrame.getMaxAgeNum();
+                    minPreExistingConditions = settingFrame.getMinPreExistingConditionsNum();
+                    maxPreExistingConditions = settingFrame.getMaxPreExistingConditionsNum();
+                    timeUntilQuarantine = settingFrame.getTimeUntilQuarantineNum();
+                    asymptomaticChance = settingFrame.getAsymptomaticChanceNum();
+                    socialDistanceChance = settingFrame.getSocialDistanceChanceNum();
+                    quarantineChance = settingFrame.getQuarantineChanceNum();
+                    travelersPer = settingFrame.getTravelersPer();
+                    reinfectRate = settingFrame.getReinfectRateNum();
+                    antiBodyTime = settingFrame.getAntiBodyTimeNum();
+                    quarBoard = settingFrame.isQuarBoardBool();
+
+                    gui.getSimBoardPanel().setReset(false);
+
+                    numPeople = Integer.parseInt(numPeopleField.getText());
+
+                    if(disease != null)
+                    {
+                        simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
+                        simEngine.getClock().start();
+                        isPlaying = true;
+                        if(settingFrame.getSocialDistanceChanceNum() > 0)
+                            isSocialDist = true;
+                        else isSocialDist = false;
+                        canStart = false;
+
+                        backgroundMusic.stop();
+                        changeSong();
+                        backgroundMusic.play();
+
+                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
+                    }
+                }
+            }
+            catch (java.lang.NumberFormatException ex)
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (whole number of people)!");
+            }
+        }
+    }
+
+    public void resumeSim()
+    {
+        simEngine.getClock().start();
+        backgroundMusic.resume();
+    }
+
     public JPanel getMainPanel() {
         return mainPanel;
+    }
+    public boolean isPlaying()
+    {
+        return isPlaying;
     }
 }
