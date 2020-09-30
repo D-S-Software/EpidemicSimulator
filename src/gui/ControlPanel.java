@@ -31,9 +31,9 @@ public class ControlPanel extends JPanel implements ActionListener{
     private ArrayList<Music> musicSongs = new ArrayList<>();
     private ControlPanel controlPanel = this;
 
-    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, previousSong = 1;
+    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, diseaseSel = 5, previousSong = 1;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
-    private boolean toPause = true, canStart = true, canType = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
+    private boolean toPause = true, canStart = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
 
     /**Creates a control Panel object for the gui
      *
@@ -594,7 +594,7 @@ public class ControlPanel extends JPanel implements ActionListener{
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(custom.isSelected() && canType && !isPlaying)
+        if(custom.isSelected() && diseaseSel != 5)
         {
             contagiousPercent.setText("");
             contagiousRange.setText("");
@@ -602,9 +602,9 @@ public class ControlPanel extends JPanel implements ActionListener{
             baseMinTimeSick.setText("");
             baseMaxTimeSick.setText("");
             startPercentHealthy.setText("");
-            canType = false;
+            diseaseSel = 5;
         }
-        if(choice1.isSelected() && !isPlaying)
+        if(choice1.isSelected() && diseaseSel != 1)
         {
             disease = new Disease1();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -613,9 +613,9 @@ public class ControlPanel extends JPanel implements ActionListener{
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
-            canType = true;
+            diseaseSel = 1;
         }
-        if(choice2.isSelected() && !isPlaying)
+        if(choice2.isSelected() && diseaseSel != 2)
         {
             disease = new Disease2();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -624,9 +624,9 @@ public class ControlPanel extends JPanel implements ActionListener{
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
-            canType = true;
+            diseaseSel = 2;
         }
-        if(choice3.isSelected() && !isPlaying)
+        if(choice3.isSelected() && diseaseSel != 3)
         {
             disease = new Disease3();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -635,9 +635,9 @@ public class ControlPanel extends JPanel implements ActionListener{
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
-            canType = true;
+            diseaseSel = 3;
         }
-        if(choice4.isSelected() && !isPlaying)
+        if(choice4.isSelected() && diseaseSel != 4)
         {
             disease = new Disease4();
             contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
@@ -646,17 +646,7 @@ public class ControlPanel extends JPanel implements ActionListener{
             baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
             baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
             startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
-            canType = true;
-        }
-        if(!choice1.isSelected() && !choice2.isSelected() && !choice3.isSelected() && !choice4.isSelected() && !custom.isSelected())
-        {
-            contagiousPercent.setText("");
-            contagiousRange.setText("");
-            baseMortalityRate.setText("");
-            baseMinTimeSick.setText("");
-            baseMaxTimeSick.setText("");
-            startPercentHealthy.setText("");
-            canType = false;
+            diseaseSel = 4;
         }
 
         if(backgroundMusic.getClip().getMicrosecondPosition() == backgroundMusic.getClip().getMicrosecondLength()-1)
@@ -672,46 +662,43 @@ public class ControlPanel extends JPanel implements ActionListener{
         if(canStart)
         {
             boolean goodToStart = false;
-            if(custom.isSelected())
+            try
             {
-                try
+                if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
+                        || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
+                        || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
                 {
-                    if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
-                            || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
-                            || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
-                        goodToStart = false;
-                    }
-                    else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
-                        goodToStart = false;
-                    }
-                    else if(Double.parseDouble(contagiousPercent.getText()) < 0 || Double.parseDouble(baseMortalityRate.getText()) < 0
-                            || Double.parseDouble(baseMinTimeSick.getText()) < 0 || Double.parseDouble(baseMaxTimeSick.getText()) < 0
-                            || Double.parseDouble(startPercentHealthy.getText()) < 0)
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
-                        goodToStart = false;
-                    }
-                    else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
-                        goodToStart = false;
-                    }
-                    else
-                    {
-                        disease = new Disease(Double.parseDouble(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
-                                Double.parseDouble(baseMortalityRate.getText()) / 100, Double.parseDouble(baseMinTimeSick.getText()) *100,
-                                Double.parseDouble(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
-                    }
-                }
-                catch (java.lang.NumberFormatException ex)
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                    JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
                     goodToStart = false;
                 }
+                else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
+                    goodToStart = false;
+                }
+                else if(Double.parseDouble(contagiousPercent.getText()) < 0 || Double.parseDouble(baseMortalityRate.getText()) < 0
+                        || Double.parseDouble(baseMinTimeSick.getText()) < 0 || Double.parseDouble(baseMaxTimeSick.getText()) < 0
+                        || Double.parseDouble(startPercentHealthy.getText()) < 0)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
+                    goodToStart = false;
+                }
+                else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
+                    goodToStart = false;
+                }
+                else
+                {
+                    disease = new Disease(Double.parseDouble(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
+                            Double.parseDouble(baseMortalityRate.getText()) / 100, Double.parseDouble(baseMinTimeSick.getText()) *100,
+                            Double.parseDouble(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
+                }
+            }
+            catch (java.lang.NumberFormatException ex)
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
+                goodToStart = false;
             }
             try
             {

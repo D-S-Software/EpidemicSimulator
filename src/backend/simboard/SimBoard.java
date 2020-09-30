@@ -89,7 +89,6 @@ public abstract class SimBoard {
         boolean hasInfected = false;
 
         // Makes sure that at least one person is infected in each simulation
-        //TODO still not working
         if(disease.getStartPercentHealthy() < 1)
         {
             for(int i = 1; i < listPList.size(); i++)
