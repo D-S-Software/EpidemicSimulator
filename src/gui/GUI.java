@@ -278,6 +278,8 @@ public class GUI {
         return stats;
     }
 
+    public ControlPanel getControlPanel(){return controlPanel;}
+
     public void setStats(Statistics stats)
     {
         this.stats = stats;

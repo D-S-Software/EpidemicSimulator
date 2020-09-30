@@ -84,8 +84,8 @@ public class Engine {
      *  Slows down the simulation by 2 ms
      */
     public void slowDown() {
-        if(clock.getDelay() < 26)
-            clock.setDelay(clock.getDelay() + 2);
+        if(clock.getDelay() < 19)
+            clock.setDelay(clock.getDelay() + 1);
     }
 
     /**
@@ -94,7 +94,7 @@ public class Engine {
     public void speedUp()
     {
         if(clock.getDelay() > 0)
-            clock.setDelay(clock.getDelay() - 2);
+            clock.setDelay(clock.getDelay() - 1);
     }
 
     /**

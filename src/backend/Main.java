@@ -21,7 +21,6 @@ public class Main {
 
     //TODO 5 min fix
     /*
-    - Top Banner have pause and speed status with JLabels (change button color when paused)
     - Contagious Range plays when negative num entered on first run
     - Use space bar to pause and play sim and arrows to speed up and slow down
     - export data button (otherwise each new sim overwrites previous data

@@ -236,11 +236,13 @@ public class ControlPanel extends JPanel implements ActionListener{
                     if(musicPlaying)
                     {
                         backgroundMusic.pause();
+                        toggleMusic.setBackground(CustomColor.DARK_RED);
                         musicPlaying = false;
                     }
                     else
                     {
                         backgroundMusic.resume();
+                        toggleMusic.setBackground(CustomColor.BUTTON);
                         musicPlaying = true;
                     }
                 }
@@ -288,6 +290,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         gui.getSimBoardPanel().getSimBoard().toggleSocDist(false);
                         toggleSocDist.setToolTipText("No one is social distancing");
                         isSocialDist = false;
+                        toggleSocDist.setBackground(CustomColor.BUTTON);
                     }
                     else
                     {
@@ -302,6 +305,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                             toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
                         }
                         isSocialDist = true;
+                        toggleSocDist.setBackground(CustomColor.ARTICHOKE_GREEN);
                     }
                 }
             }
@@ -526,6 +530,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         isPlaying = false;
                         backgroundMusic.pause();
                         musicPlaying = false;
+                        playPause.setBackground(CustomColor.DARK_RED);
                         toPause = false;
                     }
                     else
@@ -534,6 +539,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                         isPlaying = true;
                         backgroundMusic.resume();
                         musicPlaying = true;
+                        playPause.setBackground(CustomColor.BUTTON);
                         toPause = true;
                     }
                     gui.getTallyPanel().showGraphModeButton();
@@ -757,7 +763,10 @@ public class ControlPanel extends JPanel implements ActionListener{
                         simEngine.getClock().start();
                         isPlaying = true;
                         if(settingFrame.getSocialDistanceChanceNum() > 0)
+                        {
                             isSocialDist = true;
+                            toggleSocDist.setBackground(CustomColor.ARTICHOKE_GREEN);
+                        }
                         else isSocialDist = false;
                         canStart = false;
 
@@ -784,6 +793,10 @@ public class ControlPanel extends JPanel implements ActionListener{
 
     public JPanel getMainPanel() {
         return mainPanel;
+    }
+    public int getDelay()
+    {
+        return simEngine.getDelay();
     }
     public boolean isPlaying()
     {
