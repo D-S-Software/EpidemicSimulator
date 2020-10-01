@@ -25,6 +25,7 @@ public class SettingFrame extends JFrame implements ActionListener{
 
     /**
      * Creates a setting frame for the parameters of the simulation when the gear button is clicked
+     * @param controlPanel The controlPanel obj used to pause the simulation when the settings panel is open
      */
     public SettingFrame(ControlPanel controlPanel)
     {

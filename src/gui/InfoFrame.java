@@ -24,6 +24,7 @@ public class InfoFrame extends JFrame {
 
     /**
      * Creates an info frame for the main gui when the info button is clicked
+     * @param controlPanel The controlPanel obj used to pause the simulation when the info panel is open
      */
     public InfoFrame(ControlPanel controlPanel) {
 

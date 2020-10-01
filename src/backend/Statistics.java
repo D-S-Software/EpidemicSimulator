@@ -23,6 +23,7 @@ public class Statistics implements ActionListener {
     /**Creates a statistics object that collects the data from the simulation to be displayed, used in chart, or printed to a text file
      *
      * @param simBoard The simulation board being used in the simulation
+     * @param numStatFile Number of current simulation
      */
     public Statistics(SimBoard simBoard, int numStatFile)
     {
