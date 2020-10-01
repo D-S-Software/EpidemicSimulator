@@ -348,9 +348,13 @@ public class ControlPanel extends JPanel implements ActionListener{
                 {
                     simEngine.speedUp();
                     slowDown.setToolTipText("Slow Down");
+                    slowDown.setVisible(true);
 
                     if(simEngine.getDelay() == 0)
+                    {
                         speedUp.setToolTipText("Max Speed");
+                        speedUp.setVisible(false);
+                    }
                 }
             }
         });
@@ -370,9 +374,13 @@ public class ControlPanel extends JPanel implements ActionListener{
                 {
                     simEngine.slowDown();
                     speedUp.setToolTipText("Increase Speed");
+                    speedUp.setVisible(true);
 
-                    if(simEngine.getDelay() == 26)
+                    if(simEngine.getDelay() == 19)
+                    {
                         slowDown.setToolTipText("Min Speed");
+                        slowDown.setVisible(false);
+                    }
                 }
             }
         });
