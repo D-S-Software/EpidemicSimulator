@@ -7,6 +7,7 @@ import lib.CustomColor;
 import backend.disease.*;
 
 import javax.swing.*;
+import javax.swing.plaf.ColorUIResource;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -21,7 +22,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     private JButton start, playPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp;
     private ButtonGroup g1;
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy, numPeopleField;
-    private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel;
+    private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel, numSimulationLabel;
     private Disease disease;
     private Engine simEngine;
     private GUI gui;
@@ -31,7 +32,7 @@ public class ControlPanel extends JPanel implements ActionListener{
     private ArrayList<Music> musicSongs = new ArrayList<>();
     private ControlPanel controlPanel = this;
 
-    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, diseaseSel = 5, previousSong = 1;
+    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, numStatsFile = 0, diseaseSel = 5, previousSong = 1;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
     private boolean toPause = true, canStart = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
 
@@ -163,6 +164,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         pic3Label.setIcon(edit3);
         pic4Label.setIcon(edit4);
 
+        numSimulationLabel = new JLabel("Simulation:   ");
+        numSimulationLabel.setFont(numSimulationLabel.getFont ().deriveFont (16.0f));
+
         p.add(choice1);
         p.add(pic1Label);
         p.add(choice2);
@@ -172,6 +176,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         p.add(choice4);
         p.add(pic4Label);
         p.add(custom);
+        p.add(numSimulationLabel);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.SPACE_CADET_LIGHT);
@@ -249,8 +254,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
-       p.add(info);
-       p.add(toggleMusic);
+        p.add(info);
+        p.add(toggleMusic);
         mainPanel.add(p, gbc);
     }
 
@@ -582,6 +587,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                 gui.getStats().getCreateFile().closeFile();
 
                 backgroundMusic.stop();
+                toggleSocDist.setBackground(CustomColor.BUTTON);
+                playPause.setBackground(CustomColor.BUTTON);
             }
         });
 
@@ -759,6 +766,8 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                     if(disease != null)
                     {
+                        numStatsFile++; //Used to make an additional results file in Stats class
+                        numSimulationLabel.setText("Simulation: " + numStatsFile);
                         simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
                         simEngine.getClock().start();
                         isPlaying = true;
@@ -801,5 +810,9 @@ public class ControlPanel extends JPanel implements ActionListener{
     public boolean isPlaying()
     {
         return isPlaying;
+    }
+    public int getNumStatsFile()
+    {
+        return numStatsFile;
     }
 }

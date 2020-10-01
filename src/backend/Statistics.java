@@ -4,13 +4,14 @@ import backend.simboard.SimBoard;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.ArrayList;
 
 public class Statistics implements ActionListener {
 
     private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, count = 99;
     private double averageRValue;
-    private static CreateFile x = new CreateFile();
+    private static CreateFile x;
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
     private ArrayList<Integer> sickList = new ArrayList<>();
@@ -23,16 +24,29 @@ public class Statistics implements ActionListener {
      *
      * @param simBoard The simulation board being used in the simulation
      */
-    public Statistics(SimBoard simBoard)
+    public Statistics(SimBoard simBoard, int numStatFile)
     {
         this.simBoard = simBoard;
         numPeople = simBoard.getNumPeople();
         time = -1;
 
-        x.openFile("EpidemicResults.txt");
+        x = new CreateFile();
+        String resultsFolder = "SimulationData";
+
+        if(numStatFile == 1) //Deletes the previous data from last application launch
+        {
+            x.deleteDirectory(new File(resultsFolder));
+            new File("SimulationData").mkdirs();
+        }
+
+        x.openFile("EpidemicResults" + numStatFile + ".txt", resultsFolder);
         x.addString("Time (centi sec):");
         x.addString("NumCases:");
+        x.addString("NumHealthy:");
+        x.addString("NumRecovered:");
+        x.addString("NumDead:");
         x.addString("NumSick:");
+        x.addString("Ro Value:");
         x.addSpace();
 
         updateStats();
@@ -85,7 +99,11 @@ public class Statistics implements ActionListener {
     {
         x.addStat(time);
         x.addStat(numCases);
+        x.addStat(numHealthy);
+        x.addStat(numRecovered);
+        x.addStat(numDead);
         x.addStat(numSick);
+        x.addStat(averageRValue);
         x.addSpace();
     }
 
@@ -117,9 +135,10 @@ public class Statistics implements ActionListener {
             x.closeFile();
 
         //TODO possible implementation of an "Action Event"
-        /** if(numDead > 10)
-            for(int i = 0; i < pList.size(); i++)
-                pList.get(i).setIsSocialDistancing(true);
+        /**if(numDead > 10)
+           for(int i = 0; i < simBoard.getListPList().size(); i++)
+               for(int j = 0; j < simBoard.getListPList().get(i).size(); j++)
+                   simBoard.getListPList().get(i).get(j).setIsSocialDistancing(true);
         */
     }
 

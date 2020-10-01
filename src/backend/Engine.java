@@ -60,7 +60,7 @@ public class Engine {
 
         gui.getSimBoardPanel().setBoard(simBoard);
 
-        Statistics stats = new Statistics(simBoard);
+        Statistics stats = new Statistics(simBoard, gui.getControlPanel().getNumStatsFile());
         gui.setStats(stats);
 
         clock = new Timer(delay, gui.getSimBoardPanel());
