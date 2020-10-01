@@ -27,10 +27,4 @@ public class Main {
 
     //TODO Make opening screen (start with music) - V2
     //TODO Central Market - V2
-    //TODO add display of run speed ( .5x , 1x, 1.5x ...)
-
-    //TODO ACTION EVENTS - V2
-    // First 10 deaths - move less --> just update step and direction in person
-    // going to a central location
-    // manual trigger
 }
