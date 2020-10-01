@@ -1,7 +1,6 @@
 package backend;
 
 import java.io.File;
-import java.nio.file.Files;
 import java.util.Formatter;
 
 public class CreateFile {

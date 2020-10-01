@@ -678,6 +678,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         }
     }
 
+    /**
+     * Starts a simulation if possible (ie checks to make sure parameters are sufficient)
+     */
     private void startSim()
     {
         if(canStart)
@@ -802,6 +805,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         }
     }
 
+    /**
+     * Resumes a simulation after setting or info panel closes
+     */
     public void resumeSim()
     {
         simEngine.getClock().start();
