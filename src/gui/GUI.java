@@ -3,6 +3,8 @@ package gui;
 import backend.Statistics;
 import gui.chart.*;
 import lib.CustomColor;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 
 import javax.swing.*;
 import java.awt.*;
@@ -84,6 +86,10 @@ public class GUI {
         frame.pack();
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
+
+        GraphicsEnvironment graphics = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        GraphicsDevice device = graphics.getDefaultScreenDevice();
+        device.setFullScreenWindow(frame);
 
         tallyPanel.setShowCases(showCasesFirst);
     }
