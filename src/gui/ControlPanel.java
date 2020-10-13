@@ -517,15 +517,15 @@ public class ControlPanel extends JPanel implements ActionListener{
                 try
                 {
                     numPeople = Integer.parseInt(numPeopleField.getText());
-                    if(numPeople < 2)
+                    if(numPeople < 2 || numPeople > 5000)
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 1.");
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 1 and less than 5000.");
                         goodToStart = false;
                     }
                 }
                 catch (java.lang.NumberFormatException ex)
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is a positive integer greater than 1");
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is a positive integer and greater than 1 and less than 5000");
                     goodToStart = false;
                 }
                 try
