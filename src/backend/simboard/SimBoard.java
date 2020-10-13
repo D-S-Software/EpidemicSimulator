@@ -306,12 +306,9 @@ public abstract class SimBoard {
                 pListQN.remove(pListQN.get(i));
                 setNumPeople(numPeople -1);
             }
-            /**if(Math.random() > .9975)
-                pListQN.get(i).moveTarget(dimens.width/2, dimens.height/2);
-            if(pListQN.get(i).hasTarget())
-                pListQN.get(i).moveTarget(dimens.width/2, dimens.height/2);
-            else*/
-                pListQN.get(i).move();
+            if(Math.random() > .99)//.9975 Change at any given tick a person goes to the center
+                pListQN.get(i).setTarget((pListQN.get(i).getDimens().x) + (pListQN.get(i).getDimens().width/2), (pListQN.get(i).getDimens().y) + (pListQN.get(i).getDimens().height/2));
+            pListQN.get(i).move();
         }
     }
 

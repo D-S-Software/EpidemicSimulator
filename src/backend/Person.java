@@ -8,8 +8,8 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int xPos, yPos, dx, dy, timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex;
-    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime;
+    private int timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex, xTarget, yTarget;
+    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime, step = 2, xPos, yPos, dx, dy;
     private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect, willQuarantine, hasTarget = false;
     private Rectangle dimens;
     private Disease disease;
@@ -66,50 +66,37 @@ public class Person {
      */
     public void move()
     {
-        if(Math.random() >= .95)
-            directionAngle = (360*Math.random());
-        dy = (int)(step*Math.sin(directionAngle));
-        dx = (int)(step*Math.cos(directionAngle));
-        checkBoundaries();
-        xPos += dx;
-        yPos += dy;
+        if(hasTarget)
+            moveTarget();
+        else
+        {
+            if(Math.random() >= .95)
+                directionAngle = (360*Math.random());
+            dy = step*Math.sin(directionAngle);
+            dx = step*Math.cos(directionAngle);
+            checkBoundaries();
+            xPos += dx;
+            yPos += dy;
+        }
     }
 
     /**
      * Moves the person to a particular point
      * @return returns if the person is at the desired point
      */
-    public boolean moveTarget(int xTarget, int yTarget)
+    public boolean moveTarget()
     {
-        if(xPos != xTarget)
-            directionAngle = Math.atan((yTarget-yPos)/(xTarget-xPos));
-        if(xPos == xTarget)
-        {
-            if(yPos < yTarget)
-                directionAngle = 90;
-            else
-                directionAngle = -90;
-        }
-        if(yPos == yTarget)
-        {
-            if(xPos < xTarget)
-                directionAngle = 0;
-            else
-                directionAngle = 180;
-        }
-
-        checkBoundaries();
-
         if(xTarget < xPos)
         {
-            dx = (int)(step*Math.cos(directionAngle+180));
-            dy = -(int)(step*Math.sin(directionAngle));
+            dx = -(step*Math.cos(directionAngle));
+            dy = -(step*Math.sin(directionAngle));
         }
         else
         {
-            dx = (int)(step*Math.cos(directionAngle));
-            dy = (int)(step*Math.sin(directionAngle));
+            dx = step*Math.cos(directionAngle);
+            dy = step*Math.sin(directionAngle);
         }
+        checkBoundaries();
 
         if(xPos >= xTarget-(step/2) && xPos <= xTarget+(step/2) && yPos >= yTarget-(step/2) && yPos <= yTarget+(step/2))
         {
@@ -123,6 +110,20 @@ public class Person {
             hasTarget = true;
             return false;
         }
+    }
+
+    /**
+     * Sets the target coordinates for a person to travel to
+     * @param xTarget the x target cord
+     * @param yTarget the y target cord
+     */
+    public void setTarget(int xTarget, int yTarget)
+    {
+        this.xTarget = xTarget;
+        this.yTarget = yTarget;
+        hasTarget = true;
+        if(xTarget != xPos)
+            directionAngle = Math.atan((yTarget-yPos)/(xTarget-xPos));
     }
 
     /**
@@ -254,7 +255,7 @@ public class Person {
 
         g2D.setPaint(color);
 
-        g2D.fillOval(xPos,yPos, circleRad, circleRad);
+        g2D.fillOval((int)xPos, (int)yPos, circleRad, circleRad);
     }
 
     /** Getter and Setter Methods */
@@ -313,12 +314,12 @@ public class Person {
         return closestSickIndex;
     }
 
-    public int getXPos()
+    public double getXPos()
     {
         return xPos;
     }
 
-    public int getYPos()
+    public double getYPos()
     {
         return yPos;
     }
@@ -332,6 +333,11 @@ public class Person {
         this.dimens = dimens;
     }
 
+    public Rectangle getDimens()
+    {
+        return dimens;
+    }
+
     public int getTimeSinceSick()
     {
         return timeSinceSick;
@@ -342,10 +348,6 @@ public class Person {
         quadLocation = location;
     }
 
-    public boolean isrAccounted() { return rAccounted;}
-
-    public void setrAccounted(boolean accounted) { rAccounted = accounted;}
-
     public void setIsSick()
     {
         isHealthy = false;
@@ -354,11 +356,6 @@ public class Person {
     public void setHasDisease()
     {
         hasDisease = true;
-    }
-
-    public boolean hasTarget()
-    {
-        return hasTarget;
     }
 
     /** SimBoardIso Methods*/
