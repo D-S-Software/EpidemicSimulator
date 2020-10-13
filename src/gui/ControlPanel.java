@@ -17,11 +17,9 @@ import java.util.ArrayList;
 public class ControlPanel extends JPanel implements ActionListener{
 
     private JPanel mainPanel = new JPanel(new GridBagLayout());
-    private JRadioButton choice1, choice2, choice3, choice4, custom;
     private JButton start, playPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp;
-    private ButtonGroup g1;
-    private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy, numPeopleField;
-    private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel, numPeopleLabel, numSimulationLabel;
+    private JTextField numPeopleField;
+    private JLabel numPeopleLabel, numSimulationLabel;
     private Disease disease;
     private Engine simEngine;
     private GUI gui;
@@ -46,9 +44,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         settingFrame = new SettingFrame(this);
         settingFrame.setVisible(false);
 
-        addSelectionPanel();
         addSimSettingPanel();
-        addParamPanel();
         addButtonPanel();
         addInfoPanel();
 
@@ -84,116 +80,17 @@ public class ControlPanel extends JPanel implements ActionListener{
     }
 
     /**
-     * Creates and adds the disease selection panel
-     */
-    private void addSelectionPanel()
-    {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 3;
-        gbc.weightx = .1;
-        gbc.weighty = 20;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel(new GridLayout(5, 2));
-
-        choice1 = new JRadioButton("Disease 1   ");
-        choice1.setFont(choice1.getFont ().deriveFont (16.0f));
-        choice1.setBackground(CustomColor.DAVYS_GRAY);
-        choice1.setForeground(CustomColor.ON_BUTTON_LABEL);
-        choice1.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        choice2 = new JRadioButton("Disease 2   ");
-        choice2.setFont(choice2.getFont ().deriveFont (16.0f));
-        choice2.setBackground(CustomColor.BUTTON);
-        choice2.setForeground(CustomColor.ON_BUTTON_LABEL);
-        choice2.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        choice3 = new JRadioButton("Disease 3   ");
-        choice3.setFont(choice3.getFont ().deriveFont (16.0f));
-        choice3.setBackground(CustomColor.BUTTON);
-        choice3.setForeground(CustomColor.ON_BUTTON_LABEL);
-        choice3.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        choice4 = new JRadioButton("Disease 4   ");
-        choice4.setFont(choice4.getFont ().deriveFont (16.0f));
-        choice4.setBackground(CustomColor.BUTTON);
-        choice4.setForeground(CustomColor.ON_BUTTON_LABEL);
-        choice4.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        custom = new JRadioButton("Custom");
-        custom.setFont(custom.getFont ().deriveFont (16.0f));
-        custom.setBackground(CustomColor.BUTTON);
-        custom.setForeground(CustomColor.ON_BUTTON_LABEL);
-        custom.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        custom.setSelected(true);
-
-        g1 = new ButtonGroup();
-        g1.add(choice1);
-        g1.add(choice2);
-        g1.add(choice3);
-        g1.add(choice4);
-        g1.add(custom);
-
-        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
-        Image image1 = pic1.getImage();
-        Image image11 = image1.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit1 = new ImageIcon(image11);
-
-        ImageIcon pic2 = new ImageIcon(ClassLoader.getSystemResource("res/bacteria1.jpg"));
-        Image image2 = pic2.getImage();
-        Image image22 = image2.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit2 = new ImageIcon(image22);
-
-        ImageIcon pic3 = new ImageIcon(ClassLoader.getSystemResource("res/virus4.png"));
-        Image image3 = pic3.getImage();
-        Image image33 = image3.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit3 = new ImageIcon(image33);
-
-        ImageIcon pic4 = new ImageIcon(ClassLoader.getSystemResource("res/virus3.jpg"));
-        Image image4 = pic4.getImage();
-        Image image44 = image4.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit4 = new ImageIcon(image44);
-
-        JLabel pic1Label = new JLabel();
-        JLabel pic2Label = new JLabel();
-        JLabel pic3Label = new JLabel();
-        JLabel pic4Label = new JLabel();
-        pic1Label.setIcon(edit1);
-        pic2Label.setIcon(edit2);
-        pic3Label.setIcon(edit3);
-        pic4Label.setIcon(edit4);
-
-        numSimulationLabel = new JLabel("Simulation:   ");
-        numSimulationLabel.setFont(numSimulationLabel.getFont ().deriveFont (16.0f));
-
-        p.add(choice1);
-        p.add(pic1Label);
-        p.add(choice2);
-        p.add(pic2Label);
-        p.add(choice3);
-        p.add(pic3Label);
-        p.add(choice4);
-        p.add(pic4Label);
-        p.add(custom);
-        p.add(numSimulationLabel);
-
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.SPACE_CADET_LIGHT);
-        mainPanel.add(p, gbc);
-    }
-
-    /**
      * Creates and adds the panel for the info and toggle music buttons
      */
     private void addInfoPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 1;
+        gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 50;
-        gbc.weighty = 10;
+        gbc.weighty = 1;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(2, 2, 2, 2);
@@ -264,12 +161,12 @@ public class ControlPanel extends JPanel implements ActionListener{
     private void addSimSettingPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 2;
+        gbc.gridx = 1;
         gbc.gridy = 0;
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 50;
-        gbc.weighty = 10;
+        gbc.weighty = 1;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(2, 2, 2, 2);
@@ -327,7 +224,8 @@ public class ControlPanel extends JPanel implements ActionListener{
             public void actionPerformed(ActionEvent e) {
 
                 settingFrame.setVisible(true);
-                simEngine.getClock().stop();
+                if(simEngine != null)
+                    simEngine.getClock().stop();
                 backgroundMusic.pause();
             }
         });
@@ -393,107 +291,17 @@ public class ControlPanel extends JPanel implements ActionListener{
     }
 
     /**
-     * Creates and adds the panel for the disease parameters
-     */
-    private void addParamPanel()
-    {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        gbc.gridwidth = 2;
-        gbc.gridheight = 1;
-        gbc.weightx = .1;
-        gbc.weighty = 50;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel(new GridLayout(2, 6));
-
-        contagiousPercent = new JTextField(1);
-        contagiousPercent.setFont(contagiousPercent.getFont ().deriveFont (18.0f));
-        contagiousPercent.setBackground(CustomColor.FIELD);
-        contagiousPercent.setForeground(CustomColor.ON_BUTTON_LABEL);
-        contagiousPercent.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        contagiousRange = new JTextField(1);
-        contagiousRange.setFont(contagiousRange.getFont ().deriveFont (18.0f));
-        contagiousRange.setBackground(CustomColor.FIELD);
-        contagiousRange.setForeground(CustomColor.ON_BUTTON_LABEL);
-        contagiousRange.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        baseMortalityRate = new JTextField(1);
-        baseMortalityRate.setFont(baseMortalityRate.getFont ().deriveFont (18.0f));
-        baseMortalityRate.setBackground(CustomColor.FIELD);
-        baseMortalityRate.setForeground(CustomColor.ON_BUTTON_LABEL);
-        baseMortalityRate.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        baseMinTimeSick = new JTextField(1);
-        baseMinTimeSick.setFont(baseMinTimeSick.getFont ().deriveFont (18.0f));
-        baseMinTimeSick.setBackground(CustomColor.FIELD);
-        baseMinTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
-        baseMinTimeSick.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        baseMaxTimeSick = new JTextField(1);
-        baseMaxTimeSick.setFont(baseMaxTimeSick.getFont ().deriveFont (18.0f));
-        baseMaxTimeSick.setBackground(CustomColor.FIELD);
-        baseMaxTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
-        baseMaxTimeSick.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        startPercentHealthy = new JTextField(1);
-        startPercentHealthy.setFont(startPercentHealthy.getFont ().deriveFont (18.0f));
-        startPercentHealthy.setBackground(CustomColor.FIELD);
-        startPercentHealthy.setForeground(CustomColor.ON_BUTTON_LABEL);
-        startPercentHealthy.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-
-        contagiousPercentLabel = new JLabel("<html>Contagious<br/>(%)</html>");
-        contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
-        contagiousPercentLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
-
-        contagiousRangeLabel = new JLabel("<html>Contagious Range\n(1-20)</html>");
-        contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
-        contagiousRangeLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
-
-        baseMortalityRateLabel = new JLabel("  Mortality (%)");
-        baseMortalityRateLabel.setFont(baseMortalityRateLabel.getFont ().deriveFont (15.0f));
-        baseMortalityRateLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
-
-        baseMinTimeSickLabel = new JLabel("  Min Sick (s)");
-        baseMinTimeSickLabel.setFont( baseMinTimeSickLabel.getFont ().deriveFont (15.0f));
-        baseMinTimeSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
-
-        baseMaxTimeSickLabel = new JLabel("  Max Sick (s)");
-        baseMaxTimeSickLabel.setFont(baseMaxTimeSickLabel.getFont ().deriveFont (15.0f));
-        baseMaxTimeSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
-
-        startPercentHealthyLabel = new JLabel("  Start Healthy (%)");
-        startPercentHealthyLabel.setFont(startPercentHealthyLabel.getFont ().deriveFont (15.0f));
-        startPercentHealthyLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
-
-        p.add(contagiousPercentLabel);
-        p.add(contagiousPercent);
-        p.add(baseMinTimeSickLabel);
-        p.add(baseMinTimeSick);
-        p.add(baseMortalityRateLabel);
-        p.add(baseMortalityRate);
-        p.add(contagiousRangeLabel);
-        p.add(contagiousRange);
-        p.add(baseMaxTimeSickLabel);
-        p.add(baseMaxTimeSick);
-        p.add(startPercentHealthyLabel);
-        p.add(startPercentHealthy);
-
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.SPACE_CADET_LIGHT);
-        mainPanel.add(p, gbc);
-    }
-
-    /**
      * Creates and adds the panel for the number of people text field and the start / pause / reset buttons
      */
     private void addButtonPanel()
     {
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 1;
-        gbc.gridy = 2;
+        gbc.gridx = 0;
+        gbc.gridy = 1;
         gbc.gridwidth = 2;
         gbc.gridheight = 1;
         gbc.weightx = 50;
-        gbc.weighty = .1;
+        gbc.weighty = 1;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(2, 2, 2, 2);
@@ -599,9 +407,13 @@ public class ControlPanel extends JPanel implements ActionListener{
             }
         });
 
+        numSimulationLabel = new JLabel("Simulation:   ");
+        numSimulationLabel.setFont(numSimulationLabel.getFont ().deriveFont (16.0f));
+
         p.add(start);
         p.add(playPause);
         p.add(reset);
+        p.add(numSimulationLabel);
 
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
@@ -614,58 +426,58 @@ public class ControlPanel extends JPanel implements ActionListener{
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(custom.isSelected() && diseaseSel != 5)
+        if(settingFrame.getCustom().isSelected() && diseaseSel != 5)
         {
-            contagiousPercent.setText("");
-            contagiousRange.setText("");
-            baseMortalityRate.setText("");
-            baseMinTimeSick.setText("");
-            baseMaxTimeSick.setText("");
-            startPercentHealthy.setText("");
+            settingFrame.getContagiousPercent().setText("");
+            settingFrame.getContagiousRange().setText("");
+            settingFrame.getBaseMortalityRate().setText("");
+            settingFrame.getBaseMinTimeSick().setText("");
+            settingFrame.getBaseMaxTimeSick().setText("");
+            settingFrame.getStartPercentHealthy().setText("");
             diseaseSel = 5;
         }
-        if(choice1.isSelected() && diseaseSel != 1)
+        if(settingFrame.getChoice1().isSelected() && diseaseSel != 1)
         {
             disease = new Disease1();
-            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
-            contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
-            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
+            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
+            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
+            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
+            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
+            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
+            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
             diseaseSel = 1;
         }
-        if(choice2.isSelected() && diseaseSel != 2)
+        if(settingFrame.getChoice2().isSelected() && diseaseSel != 2)
         {
             disease = new Disease2();
-            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
-            contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
-            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
+            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
+            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
+            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
+            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
+            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
+            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
             diseaseSel = 2;
         }
-        if(choice3.isSelected() && diseaseSel != 3)
+        if(settingFrame.getChoice3().isSelected() && diseaseSel != 3)
         {
             disease = new Disease3();
-            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
-            contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
-            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
+            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
+            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
+            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
+            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
+            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
+            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
             diseaseSel = 3;
         }
-        if(choice4.isSelected() && diseaseSel != 4)
+        if(settingFrame.getChoice4().isSelected() && diseaseSel != 4)
         {
             disease = new Disease4();
-            contagiousPercent.setText(disease.getContagiousPercent() * 100 + "");
-            contagiousRange.setText("" + disease.getContagiousRange());
-            baseMortalityRate.setText(disease.getBaseMortalityRate() * 100 + "");
-            baseMinTimeSick.setText("" + disease.getBaseMinTimeSick() / 100);
-            baseMaxTimeSick.setText("" + disease.getBaseMaxTimeSick() / 100);
-            startPercentHealthy.setText(disease.getStartPercentHealthy() * 100 + "");
+            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
+            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
+            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
+            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
+            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
+            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
             diseaseSel = 4;
         }
 
@@ -684,76 +496,39 @@ public class ControlPanel extends JPanel implements ActionListener{
     {
         if(canStart)
         {
-            boolean goodToStart = false;
-            try
+            boolean goodToStart = true;
+            if(settingFrame.isVisible())
             {
-                if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
-                        || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
-                        || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom before starting!");
-                    goodToStart = false;
-                }
-                else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
-                    goodToStart = false;
-                }
-                else if(Double.parseDouble(contagiousPercent.getText()) < 0 || Double.parseDouble(baseMortalityRate.getText()) < 0
-                        || Double.parseDouble(baseMinTimeSick.getText()) < 0 || Double.parseDouble(baseMaxTimeSick.getText()) < 0
-                        || Double.parseDouble(startPercentHealthy.getText()) < 0)
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
-                    goodToStart = false;
-                }
-                else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
-                    goodToStart = false;
-                }
-                else
-                {
-                    disease = new Disease(Double.parseDouble(contagiousRange.getText()), Double.parseDouble(contagiousPercent.getText()) / 100,
-                            Double.parseDouble(baseMortalityRate.getText()) / 100, Double.parseDouble(baseMinTimeSick.getText()) *100,
-                            Double.parseDouble(baseMaxTimeSick.getText()) *100, Double.parseDouble(startPercentHealthy.getText()) / 100);
-                }
+                JOptionPane.showMessageDialog(new JFrame(), "Finish filling in and closing the settings before starting the simulation.");
             }
-            catch (java.lang.NumberFormatException ex)
+            else
             {
-                JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly!");
-                goodToStart = false;
-            }
-            try
-            {
-                if(settingFrame.getTravelers().getText().equals("") || settingFrame.getTimeUntilQuarantine().getText().equals("") || settingFrame.getPercentQuarantine().getText().equals("") || settingFrame.getAsymptomaticChance().getText().equals("")
-                        || settingFrame.getSocialDistanceValue().getText().equals("") || settingFrame.getPercentSocialDist().getText().equals("") || settingFrame.getMinAge().getText().equals("") || settingFrame.getMaxAge().getText().equals("")
-                        || settingFrame.getMinConditions().getText().equals("") || settingFrame.getMaxConditions().getText().equals("") || settingFrame.getReinfectRate().getText().equals("") || settingFrame.getAntiBodyTime().getText().equals(""))
+                try
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
+                    disease = new Disease(Double.parseDouble(settingFrame.getContagiousRange().getText()), Double.parseDouble(settingFrame.getContagiousPercent().getText()) / 100,
+                            Double.parseDouble(settingFrame.getBaseMortalityRate().getText()) / 100, Double.parseDouble(settingFrame.getBaseMinTimeSick().getText()) *100,
+                            Double.parseDouble(settingFrame.getBaseMaxTimeSick().getText()) *100, Double.parseDouble(settingFrame.getStartPercentHealthy().getText()) / 100);
+                }
+                catch (java.lang.NumberFormatException ex)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters for Disease in settings are numbers and filled in correctly!");
                     goodToStart = false;
                 }
-                else if(Double.parseDouble(settingFrame.getTravelers().getText()) < 0 || Double.parseDouble(settingFrame.getTimeUntilQuarantine().getText()) < 0
-                        || Double.parseDouble(settingFrame.getPercentQuarantine().getText()) < 0 || Double.parseDouble(settingFrame.getAsymptomaticChance().getText()) < 0
-                        || Double.parseDouble(settingFrame.getSocialDistanceValue().getText()) < 0 || Double.parseDouble(settingFrame.getPercentSocialDist().getText()) < 0 || Double.parseDouble(settingFrame.getMinAge().getText()) < 0
-                        || Double.parseDouble(settingFrame.getMaxAge().getText()) < 0 || Integer.parseInt(settingFrame.getMinConditions().getText()) < 0 || Integer.parseInt(settingFrame.getMaxConditions().getText()) < 0
-                        || Double.parseDouble(settingFrame.getReinfectRate().getText()) < 0 || Double.parseDouble(settingFrame.getAntiBodyTime().getText()) < 0)
+                try
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
+                    numPeople = Integer.parseInt(numPeopleField.getText());
+                    if(numPeople < 2)
+                    {
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 1.");
+                        goodToStart = false;
+                    }
+                }
+                catch (java.lang.NumberFormatException ex)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is a positive integer greater than 1");
                     goodToStart = false;
                 }
-                else if(Double.parseDouble(settingFrame.getMinAge().getText()) > Double.parseDouble(settingFrame.getMaxAge().getText()) || Integer.parseInt(settingFrame.getMinConditions().getText()) > Integer.parseInt(settingFrame.getMaxConditions().getText()))
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
-                    goodToStart = false;
-                }
-                else if(Integer.parseInt(numPeopleField.getText()) < 2 || Integer.parseInt(numPeopleField.getText()) > 5000)
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 1, less than or equal to 5000, and an integer!");
-                    goodToStart = false;
-                }
-                else goodToStart = true;
-
-                if(goodToStart)
+                try
                 {
                     boardType = settingFrame.getBoardTypeNum();
                     socialDistanceValue = settingFrame.getSocialDistanceValueNum();
@@ -772,9 +547,7 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                     gui.getSimBoardPanel().setReset(false);
 
-                    numPeople = Integer.parseInt(numPeopleField.getText());
-
-                    if(disease != null)
+                    if(disease != null && goodToStart)
                     {
                         numStatsFile++; //Used to make an additional results file in Stats class
                         numSimulationLabel.setText("Simulation: " + numStatsFile);
@@ -783,25 +556,23 @@ public class ControlPanel extends JPanel implements ActionListener{
                         speedUp.setVisible(true);
                         slowDown.setVisible(true);
                         isPlaying = true;
-                        if(settingFrame.getSocialDistanceChanceNum() > 0)
-                        {
+                        if (settingFrame.getSocialDistanceChanceNum() > 0) {
                             isSocialDist = true;
                             toggleSocDist.setBackground(CustomColor.ARTICHOKE_GREEN);
-                        }
-                        else isSocialDist = false;
+                        } else isSocialDist = false;
                         canStart = false;
 
                         backgroundMusic.stop();
                         changeSong();
                         backgroundMusic.play();
 
-                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
+                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() * 100 + " % of people are set social distancing");
                     }
                 }
-            }
-            catch (java.lang.NumberFormatException ex)
-            {
-                JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly (whole number of people)!");
+                catch (java.lang.NumberFormatException ex)
+                {
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly.");
+                }
             }
         }
     }
