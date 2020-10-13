@@ -87,9 +87,9 @@ public class GUI {
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
 
-        GraphicsEnvironment graphics = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        /**GraphicsEnvironment graphics = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice device = graphics.getDefaultScreenDevice();
-        device.setFullScreenWindow(frame);
+        device.setFullScreenWindow(frame);*/ //TODO fix this
 
         tallyPanel.setShowCases(showCasesFirst);
     }
