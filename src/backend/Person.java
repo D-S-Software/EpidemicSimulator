@@ -10,7 +10,7 @@ public class Person {
     private boolean hasDisease, isHealthy;
     private int xPos, yPos, dx, dy, timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex;
     private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, step = 2, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime;
-    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect, willQuarantine;
+    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect, willQuarantine, hasTarget = false;
     private Rectangle dimens;
     private Disease disease;
     private final int circleRad = 5;
@@ -68,10 +68,68 @@ public class Person {
     {
         if(Math.random() >= .95)
             directionAngle = (360*Math.random());
-
-        dx = (int)(step*Math.cos(directionAngle));
         dy = (int)(step*Math.sin(directionAngle));
+        dx = (int)(step*Math.cos(directionAngle));
+        checkBoundaries();
+        xPos += dx;
+        yPos += dy;
+    }
 
+    /**
+     * Moves the person to a particular point
+     * @return returns if the person is at the desired point
+     */
+    public boolean moveTarget(int xTarget, int yTarget)
+    {
+        if(xPos != xTarget)
+            directionAngle = Math.atan((yTarget-yPos)/(xTarget-xPos));
+        if(xPos == xTarget)
+        {
+            if(yPos < yTarget)
+                directionAngle = 90;
+            else
+                directionAngle = -90;
+        }
+        if(yPos == yTarget)
+        {
+            if(xPos < xTarget)
+                directionAngle = 0;
+            else
+                directionAngle = 180;
+        }
+
+        checkBoundaries();
+
+        if(xTarget < xPos)
+        {
+            dx = (int)(step*Math.cos(directionAngle+180));
+            dy = -(int)(step*Math.sin(directionAngle));
+        }
+        else
+        {
+            dx = (int)(step*Math.cos(directionAngle));
+            dy = (int)(step*Math.sin(directionAngle));
+        }
+
+        if(xPos >= xTarget-(step/2) && xPos <= xTarget+(step/2) && yPos >= yTarget-(step/2) && yPos <= yTarget+(step/2))
+        {
+            hasTarget = false;
+            return true;
+        }
+        else
+        {
+            xPos += dx;
+            yPos += dy;
+            hasTarget = true;
+            return false;
+        }
+    }
+
+    /**
+     * Checks if a person is on the boundry and needs to change direction
+     */
+    private void checkBoundaries()
+    {
         if(xPos + dx > dimens.x + dimens.width - circleRad)
         {
             xPos = dimens.x + dimens.width - circleRad - 1;
@@ -82,7 +140,6 @@ public class Person {
             xPos = dimens.x + circleRad;
             directionAngle += 180;
         }
-        else xPos += dx;
 
         if(yPos + dy > dimens.y + dimens.height  - circleRad)
         {
@@ -93,11 +150,6 @@ public class Person {
         {
             yPos = dimens.y + circleRad;
             directionAngle *= -1;
-        }
-        else
-        {
-            xPos += dx;
-            yPos += dy;
         }
     }
 
@@ -302,6 +354,11 @@ public class Person {
     public void setHasDisease()
     {
         hasDisease = true;
+    }
+
+    public boolean hasTarget()
+    {
+        return hasTarget;
     }
 
     /** SimBoardIso Methods*/

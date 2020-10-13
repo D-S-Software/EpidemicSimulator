@@ -300,13 +300,18 @@ public abstract class SimBoard {
             pListQN.get(i).checkCondition();
             if(!pListQN.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
                 pList.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            pListQN.get(i).move();
             if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
             {
                 rNotDead.add(pList.get(i).getOthersInfected());
                 pListQN.remove(pListQN.get(i));
                 setNumPeople(numPeople -1);
             }
+            /**if(Math.random() > .9975)
+                pListQN.get(i).moveTarget(dimens.width/2, dimens.height/2);
+            if(pListQN.get(i).hasTarget())
+                pListQN.get(i).moveTarget(dimens.width/2, dimens.height/2);
+            else*/
+                pListQN.get(i).move();
         }
     }
 

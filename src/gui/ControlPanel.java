@@ -7,7 +7,6 @@ import lib.CustomColor;
 import backend.disease.*;
 
 import javax.swing.*;
-import javax.swing.plaf.ColorUIResource;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -781,6 +780,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                         numSimulationLabel.setText("Simulation: " + numStatsFile);
                         simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
                         simEngine.getClock().start();
+                        speedUp.setVisible(true);
+                        slowDown.setVisible(true);
                         isPlaying = true;
                         if(settingFrame.getSocialDistanceChanceNum() > 0)
                         {
