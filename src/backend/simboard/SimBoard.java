@@ -18,7 +18,7 @@ public abstract class SimBoard {
 
     private Disease disease;
 
-    private double socialDistanceChance, asymptomaticChance, socialDistanceValue, minAge, maxAge, travelers, reinfectRate, quarantineChance, antiBodyTime;
+    private double socialDistanceChance, asymptomaticChance, socialDistanceValue, minAge, maxAge, travelers, reinfectRate, quarantineChance, antiBodyTime, congestionValue = 1;
     private int numPeople, minPreExistingConditions, maxPreExistingConditions;
 
     /** Creates a SimBoard to simulate the actions of people that are displayed on SimBoardPanel
@@ -306,7 +306,7 @@ public abstract class SimBoard {
                 pListQN.remove(pListQN.get(i));
                 setNumPeople(numPeople -1);
             }
-            if(Math.random() > .99)//.9975 Change at any given tick a person goes to the center
+            if(Math.random() > congestionValue) //Change at any given tick a person goes to the center
                 pListQN.get(i).setTarget((pListQN.get(i).getDimens().x) + (pListQN.get(i).getDimens().width/2), (pListQN.get(i).getDimens().y) + (pListQN.get(i).getDimens().height/2));
             pListQN.get(i).move();
         }
@@ -394,6 +394,18 @@ public abstract class SimBoard {
                 pList.get(i).setIsSocialDistancing(pList.get(i).getIsSocialDistancingSaved());
             }
         }
+    }
+
+    /**
+     * Switches between having people move to the center and purely random motion
+     * @param movingToTarget Boolean for if people should move to center
+     */
+    public void toggleMovingTarget(boolean movingToTarget)
+    {
+        if(!movingToTarget)
+            congestionValue = 1;
+        else
+            congestionValue = .9975;
     }
 
     /**

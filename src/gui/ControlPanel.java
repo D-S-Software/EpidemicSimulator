@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class ControlPanel extends JPanel implements ActionListener{
 
     private JPanel mainPanel = new JPanel(new GridBagLayout());
-    private JButton start, playPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp;
+    private JButton start, playPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp, toggleMove;
     private JTextField numPeopleField;
     private JLabel numPeopleLabel, numSimulationLabel;
     private Disease disease;
@@ -31,7 +31,7 @@ public class ControlPanel extends JPanel implements ActionListener{
 
     private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, numStatsFile = 0, diseaseSel = 5, previousSong = 1;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
-    private boolean toPause = true, canStart = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard;
+    private boolean toPause = true, canStart = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard, toggleMoving;
 
     /**Creates a control Panel object for the gui
      *
@@ -170,7 +170,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel(new GridLayout(1, 4));
+        JPanel p = new JPanel(new GridLayout(1, 5));
         p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         p.setBackground(CustomColor.BLOOD_RED);
 
@@ -207,6 +207,37 @@ public class ControlPanel extends JPanel implements ActionListener{
                         }
                         isSocialDist = true;
                         toggleSocDist.setBackground(CustomColor.ARTICHOKE_GREEN);
+                    }
+                }
+            }
+        });
+
+        toggleMove = new JButton("Toggle Centers");
+        toggleMove.setBackground(CustomColor.BUTTON);
+        toggleMove.setFont(toggleMove.getFont ().deriveFont (18.0f));
+        toggleMove.setForeground(CustomColor.ON_BUTTON_LABEL);
+        toggleMove.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        toggleMove.setToolTipText("Toggle travel to center");
+
+        toggleMove.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if(isPlaying)
+                {
+                    if(toggleMoving)
+                    {
+                        gui.getSimBoardPanel().getSimBoard().toggleMovingTarget(false);
+                        toggleMove.setToolTipText("Toggle travel to center");
+                        toggleMoving = false;
+                        toggleMove.setBackground(CustomColor.BUTTON);
+                    }
+                    else
+                    {
+                        gui.getSimBoardPanel().getSimBoard().toggleMovingTarget(true);
+                        toggleMove.setToolTipText("Stop travel to center");
+                        toggleMoving = true;
+                        toggleMove.setBackground(CustomColor.ARTICHOKE_GREEN);
                     }
                 }
             }
@@ -283,6 +314,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         });
 
         p.add(toggleSocDist);
+        p.add(toggleMove);
         p.add(speedUp);
         p.add(slowDown);
         p.add(settings);
@@ -398,12 +430,14 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                 speedUp.setToolTipText("Increase Speed");
                 slowDown.setToolTipText("Slow Down");
+                toggleMove.setToolTipText("Toggle travel to center");
 
                 gui.getStats().getCreateFile().closeFile();
 
                 backgroundMusic.stop();
                 toggleSocDist.setBackground(CustomColor.BUTTON);
                 playPause.setBackground(CustomColor.BUTTON);
+                toggleMove.setBackground(CustomColor.BUTTON);
             }
         });
 
@@ -564,7 +598,8 @@ public class ControlPanel extends JPanel implements ActionListener{
 
                         backgroundMusic.stop();
                         changeSong();
-                        backgroundMusic.play();
+                        if(musicPlaying)
+                            backgroundMusic.play();
 
                         toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() * 100 + " % of people are set social distancing");
                     }

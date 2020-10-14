@@ -5,7 +5,6 @@ import lib.CustomColor;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.rmi.MarshalledObject;
 
 public class SettingFrame extends JFrame implements ActionListener{
 
