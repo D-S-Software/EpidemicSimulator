@@ -87,7 +87,7 @@ public class GUI {
         frame.setLocationByPlatform(true);
         frame.setVisible(true);
 
-        /**GraphicsEnvironment graphics = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        /*GraphicsEnvironment graphics = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice device = graphics.getDefaultScreenDevice();
         device.setFullScreenWindow(frame);*/ //TODO fix this
 
@@ -129,7 +129,7 @@ public class GUI {
         gbc.gridwidth = 1;
         gbc.gridheight = 1;
         gbc.weightx = 1;
-        gbc.weighty = 20;
+        gbc.weighty = 40;
         gbc.anchor = GridBagConstraints.CENTER;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(5, 5, 5, 5);

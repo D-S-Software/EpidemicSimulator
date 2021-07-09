@@ -51,14 +51,10 @@ public class Person {
         this.canReInfect = canReInfect;
         directionAngle = (int)(360*Math.random());
 
-        if(Math.random() > disease.getStartPercentHealthy())
-            hasDisease = true;
-        else hasDisease = false;
+        hasDisease = Math.random() > disease.getStartPercentHealthy();
 
         // If this person is starting with the disease, then they also start as sick
-        if(hasDisease)
-            isHealthy = false;
-        else isHealthy = true;
+        isHealthy = !hasDisease;
     }
 
     /**
@@ -358,16 +354,22 @@ public class Person {
         hasDisease = true;
     }
 
+    public void removeTarget(){hasTarget = false;}
+
+    public boolean getHasTarget(){return hasTarget;}
+
+    public int[] getTarget(){return new int[]{xTarget, yTarget};}
+
     /** SimBoardIso Methods*/
 
     public boolean isIsoRecovered() {
-        return isoRecovered;
+        return !isoRecovered;
     }
     public void setIsoRecovered(boolean isoRecovered) {
         this.isoRecovered = isoRecovered;
     }
     public boolean isIsoSick() {
-        return isoSick;
+        return !isoSick;
     }
     public void setIsoSick(boolean isoSick) {
         this.isoSick = isoSick;

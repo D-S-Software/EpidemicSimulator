@@ -4,7 +4,6 @@ import backend.Person;
 import backend.disease.Disease;
 
 import java.awt.*;
-import java.lang.management.PlatformLoggingMXBean;
 import java.util.ArrayList;
 
 public abstract class SimBoard {
@@ -136,8 +135,7 @@ public abstract class SimBoard {
      */
     private void constructPListTotalIteration(ArrayList<Person> pListQN)
     {
-        for(int i = 0; i < pListQN.size(); i++)
-            pList.add(pListQN.get(i));
+        for (Person person : pListQN) pList.add(person);
     }
 
     /**
@@ -182,13 +180,10 @@ public abstract class SimBoard {
         boolean isSocialDistancing = (Math.random() < socialDistanceChance);
         //MAYBE make generate traits method
         int personalAge = (int) (minAge + (maxAge - minAge) * Math.random());
-        int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - maxPreExistingConditions) * Math.random());
+        int personalConditions = (int) (minPreExistingConditions + (maxPreExistingConditions - minPreExistingConditions) * Math.random());
 
         boolean canReinfect;
-        if(Math.random() < reinfectRate)
-            canReinfect = true;
-        else
-            canReinfect = false;
+        canReinfect = Math.random() < reinfectRate;
 
         Person p = new Person(personalAge, personalConditions, generateXCoord(dimensQN), generateYCoord(dimensQN), dimensQN, disease, asymptomatic, isSocialDistancing, antiBodyTime, canReinfect, quarantineChance);
         p.setQuadLocation(quadLocation);
@@ -253,27 +248,24 @@ public abstract class SimBoard {
      */
     public void updateDistanceFromSickIteration(ArrayList<Person> pListQN)
     {
-        for(int i = 0; i < pListQN.size(); i++)
-        {
+        for (Person person : pListQN) {
             double minDist = Math.sqrt(Math.pow(dimens.width, 2) + Math.pow(dimens.height, 2));
             int closestSickIndex = 0;
 
-            if(pListQN.get(i).getIsHealthy())
-                for(int j = 0; j < pList.size(); j++)
-                    if(pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy())
-                    {
-                        double distTest = Math.sqrt(Math.pow(pListQN.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pListQN.get(i).getYPos() - pList.get(j).getYPos(), 2));
-                        if(distTest < minDist)
-                        {
+            if (person.getIsHealthy())
+                for (int j = 0; j < pList.size(); j++)
+                    if (pList.get(j).getHasDisease() && !pList.get(j).getIsHealthy()) {
+                        double distTest = Math.sqrt(Math.pow(person.getXPos() - pList.get(j).getXPos(), 2) + Math.pow(person.getYPos() - pList.get(j).getYPos(), 2));
+                        if (distTest < minDist) {
                             minDist = distTest;
                             closestSickIndex = j;
                         }
                     }
             Double dist = minDist;
-            if(dist.equals(0.0))
+            if (dist.equals(0.0))
                 minDist = 0.1;
-            pListQN.get(i).setDistanceFromSick(minDist);
-            pListQN.get(i).setClosestSickIndex(closestSickIndex);
+            person.setDistanceFromSick(minDist);
+            person.setClosestSickIndex(closestSickIndex);
         }
     }
 
@@ -308,6 +300,8 @@ public abstract class SimBoard {
             }
             if(Math.random() > congestionValue) //Change at any given tick a person goes to the center
                 pListQN.get(i).setTarget((pListQN.get(i).getDimens().x) + (pListQN.get(i).getDimens().width/2), (pListQN.get(i).getDimens().y) + (pListQN.get(i).getDimens().height/2));
+            else if(congestionValue == 1) // If toggleCenters is turned off then all people lose their target
+                pListQN.get(i).removeTarget();
             pListQN.get(i).move();
         }
     }
@@ -318,14 +312,12 @@ public abstract class SimBoard {
     private void updateRNot()
     {
         rNot = new ArrayList<>();
-        for(int i = 0; i < pList.size(); i++)
-            if(pList.get(i).getHasDisease())
-            {
-                rNot.add(pList.get(i).getOthersInfected());
+        for (Person person : pList)
+            if (person.getHasDisease()) {
+                rNot.add(person.getOthersInfected());
             }
-        for(int i = 0; i < rNotDead.size(); i++)
-        {
-            rNot.add(rNotDead.get(i));
+        for (Integer integer : rNotDead) {
+            rNot.add(integer);
         }
     }
 
@@ -349,13 +341,11 @@ public abstract class SimBoard {
      */
     public void drawPList(ArrayList<Person> pList, int dimensNum, Graphics2D g2D)
     {
-        for(int j = 0; j < pList.size(); j++)
-        {
-            if(!pList.get(j).isIsoSick())
-            {
-                pList.get(j).updateDimens(dimensList.get(dimensNum));
+        for (Person person : pList) {
+            if (person.isIsoSick()) {
+                person.updateDimens(dimensList.get(dimensNum));
             }
-            pList.get(j).draw(g2D);
+            person.draw(g2D);
         }
     }
 
@@ -382,16 +372,19 @@ public abstract class SimBoard {
     {
         if(!SocialDist)
         {
-            for(int i = 0; i < pList.size(); i++)
-            {
-                pList.get(i).setIsSocialDistancing(false);
+            for (Person person : pList) {
+                person.setIsSocialDistancing(false);
+                if (person.getHasTarget()) //Replaces the target cords for people who had a target
+                {
+                    int[] tarCords = person.getTarget();
+                    person.setTarget(tarCords[0], tarCords[1]);
+                }
             }
         }
         else
         {
-            for(int i = 0; i < pList.size(); i++)
-            {
-                pList.get(i).setIsSocialDistancing(pList.get(i).getIsSocialDistancingSaved());
+            for (Person person : pList) {
+                person.setIsSocialDistancing(person.getIsSocialDistancingSaved());
             }
         }
     }
@@ -413,9 +406,8 @@ public abstract class SimBoard {
      */
     public void everyoneSocialDistance()
     {
-        for(int i = 0; i < pList.size(); i++)
-        {
-            pList.get(i).setIsSocialDistancing(true);
+        for (Person person : pList) {
+            person.setIsSocialDistancing(true);
         }
     }
 

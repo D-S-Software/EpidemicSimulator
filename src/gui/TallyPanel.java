@@ -30,33 +30,33 @@ public class TallyPanel extends JPanel implements ActionListener {
 
         numHealthyLabel = new JLabel("Healthy: ");
         numHealthyLabel.setFont(numHealthyLabel.getFont ().deriveFont (15.0f));
-        numHealthyLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
+        numHealthyLabel.setForeground(CustomColor.SILVER);
         numHealthyLabel.setPreferredSize(new Dimension(20, 10));
 
 
         numSickLabel = new JLabel("Sick: ");
         numSickLabel.setFont(numSickLabel.getFont ().deriveFont (15.0f));
-        numSickLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
+        numSickLabel.setForeground(CustomColor.SILVER);
         numSickLabel.setPreferredSize(new Dimension(20, 10));
 
         numRecoveredLabel = new JLabel("Recov.: ");
         numRecoveredLabel.setFont(numRecoveredLabel.getFont ().deriveFont (15.0f));
-        numRecoveredLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
+        numRecoveredLabel.setForeground(CustomColor.SILVER);
         numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
 
         numDeadLabel = new JLabel("Dead: ");
         numDeadLabel.setFont(numDeadLabel.getFont ().deriveFont (15.0f));
-        numDeadLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
+        numDeadLabel.setForeground(CustomColor.SILVER);
         numDeadLabel.setPreferredSize(new Dimension(20, 10));
 
         rNotLabel = new JLabel("Ro Value: ");
         rNotLabel.setFont(rNotLabel.getFont ().deriveFont (15.0f));
-        rNotLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
+        rNotLabel.setForeground(CustomColor.SILVER);
         rNotLabel.setPreferredSize(new Dimension(20, 10));
 
         speedLabel = new JLabel("Speed: ");
         speedLabel.setFont(speedLabel.getFont ().deriveFont (15.0f));
-        speedLabel.setForeground(CustomColor.ON_BUTTON_LABEL);
+        speedLabel.setForeground(CustomColor.SILVER);
         speedLabel.setPreferredSize(new Dimension(20, 10));
 
         toggle = new JButton("Graph Mode");
@@ -67,26 +67,23 @@ public class TallyPanel extends JPanel implements ActionListener {
         toggle.setToolTipText("Switch to Population Breakdown");
         toggle.setVisible(false);
 
-        toggle.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        toggle.addActionListener(e -> {
 
-                if(gui.getXYChartPanel2().isVisible())
-                {
-                    toggle.setToolTipText("Switch to Total Cases");
-                    gui.getXYChartPanel2().setVisible(false);
-                    gui.getXYChartPanel().setVisible(true);
-                    gui.getPieChartPanel().setVisible(false);
-                    showCases = false;
-                }
-                else
-                {
-                    toggle.setToolTipText("Switch to Population Breakdown");
-                    gui.getXYChartPanel().setVisible(false);
-                    gui.getXYChartPanel2().setVisible(true);
-                    gui.getPieChartPanel().setVisible(false);
-                    showCases = true;
-                }
+            if(gui.getXYChartPanel2().isVisible())
+            {
+                toggle.setToolTipText("Switch to Total Cases");
+                gui.getXYChartPanel2().setVisible(false);
+                gui.getXYChartPanel().setVisible(true);
+                gui.getPieChartPanel().setVisible(false);
+                showCases = false;
+            }
+            else
+            {
+                toggle.setToolTipText("Switch to Population Breakdown");
+                gui.getXYChartPanel().setVisible(false);
+                gui.getXYChartPanel2().setVisible(true);
+                gui.getPieChartPanel().setVisible(false);
+                showCases = true;
             }
         });
 
@@ -97,32 +94,29 @@ public class TallyPanel extends JPanel implements ActionListener {
         switchGraph.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         switchGraph.setToolTipText("Switch to Line Graph");
 
-        switchGraph.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        switchGraph.addActionListener(e -> {
 
-                if(gui.getPieChartPanel().isVisible())
+            if(gui.getPieChartPanel().isVisible())
+            {
+                switchGraph.setToolTipText("Switch to Pie chart");
+                gui.getPieChartPanel().setVisible(false);
+                if(showCases)
                 {
-                    switchGraph.setToolTipText("Switch to Pie chart");
-                    gui.getPieChartPanel().setVisible(false);
-                    if(showCases)
-                    {
-                        gui.getXYChartPanel2().setVisible(true);
-                        gui.getXYChartPanel().setVisible(false);
-                    }
-                    else
-                    {
-                        gui.getXYChartPanel().setVisible(true);
-                        gui.getXYChartPanel2().setVisible(false);
-                    }
+                    gui.getXYChartPanel2().setVisible(true);
+                    gui.getXYChartPanel().setVisible(false);
                 }
                 else
                 {
-                    switchGraph.setToolTipText("Switch to Line Graph");
-                    gui.getPieChartPanel().setVisible(true);
+                    gui.getXYChartPanel().setVisible(true);
                     gui.getXYChartPanel2().setVisible(false);
-                    gui.getXYChartPanel().setVisible(false);
                 }
+            }
+            else
+            {
+                switchGraph.setToolTipText("Switch to Line Graph");
+                gui.getPieChartPanel().setVisible(true);
+                gui.getXYChartPanel2().setVisible(false);
+                gui.getXYChartPanel().setVisible(false);
             }
         });
 
@@ -174,10 +168,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
         rNotLabel.setText("Ro Value: " + df2.format(gui.getStats().getAverageRValue()) + "    ");
 
-        if(gui.getXYChartPanel().isVisible() || gui.getXYChartPanel2().isVisible())
-            toggle.setVisible(true);
-        else
-            toggle.setVisible(false);
+        toggle.setVisible(gui.getXYChartPanel().isVisible() || gui.getXYChartPanel2().isVisible());
     }
 
     /** Getter and Setter Methods*/
