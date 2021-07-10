@@ -432,11 +432,8 @@ public abstract class SimBoard {
             }
         }
         else
-        {
-            for (Person person : pList) {
+            for (Person person : pList)
                 person.setIsSocialDistancing(person.getIsSocialDistancingSaved());
-            }
-        }
     }
 
     /**
