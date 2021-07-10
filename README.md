@@ -17,7 +17,7 @@ Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sander
   - Quarantine section
   - Asysmptomatic carriers
 - Easy Setup
-  - [Download installer](https://drive.google.com/file/d/1kYLtSxpIpYmeNjdJVcSV9l4wFzby4KG6/view?usp=sharing) (Windows only)
+  - [Download installer](https://drive.google.com/file/d/1vgN2d2q1DNbFu_2qun291vnI9C5xQDp6/view?usp=sharing) (Windows only)
   
 
 # Simple Demo
