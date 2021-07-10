@@ -350,7 +350,7 @@ public abstract class SimBoard {
     }
 
     /**
-     * Checks if each person who is social distancing is the minimum distance apart. If not, it chooses a random direction to go in to separate as much as possible
+     * Checks if each person who is social distancing is the minimum distance apart. If not, it finds a direction to separate as much as possible
      */
     private void socialDistanceUpdate()
     {
