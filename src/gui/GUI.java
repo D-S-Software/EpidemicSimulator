@@ -13,7 +13,7 @@ import static java.awt.Font.BOLD;
 
 public class GUI {
 
-    private JPanel topPanel, leftPanel, rightPanel;
+    private JPanel topPanel, leftPanel, rightPanel, maxMinPanel;
     private TitlePanel titlePanel;
     private SimBoardPanel simBoardPanel;
     private ControlPanel controlPanel;
@@ -32,6 +32,8 @@ public class GUI {
     private boolean showPieFirst = true, showCasesFirst = true;
 
     private GridBagConstraints gbc = new GridBagConstraints();
+
+    private static GraphicsDevice device = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()[0];
 
     /** Creates the main gui for the simulation
      */
@@ -67,7 +69,7 @@ public class GUI {
         leftPanel.setBackground(CustomColor.BACKGROUND);
         addBoardPanel();
         addControlPanel();
-        leftPanel.setPreferredSize(new Dimension(600,450));
+        leftPanel.setPreferredSize(new Dimension(900,675));
         frame.add(leftPanel, gbcMain);
 
         gbcMain.gridx = 1;
@@ -81,15 +83,12 @@ public class GUI {
         addPieChartPanel();
         frame.add(rightPanel, gbcMain);
 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
         frame.setLocationByPlatform(true);
+        frame.setLocation(0,0);
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);
-
-        /*GraphicsEnvironment graphics = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice device = graphics.getDefaultScreenDevice();
-        device.setFullScreenWindow(frame);*/ //TODO fix this
 
         tallyPanel.setShowCases(showCasesFirst);
     }

@@ -175,8 +175,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         Image imageSD = picSD.getImage();
         toggleSocDist = new JButton((new ImageIcon(imageSD.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         toggleSocDist.setBackground(CustomColor.BUTTON);
-        toggleSocDist.setFont(toggleSocDist.getFont ().deriveFont (18.0f));
-        toggleSocDist.setForeground(CustomColor.ON_BUTTON_LABEL);
         toggleSocDist.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         toggleSocDist.addActionListener(e -> {
@@ -240,7 +238,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         Image imageSet = picSet.getImage();
         JButton settings = new JButton((new ImageIcon(imageSet.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         settings.setBackground(CustomColor.BUTTON);
-        settings.setForeground(CustomColor.ON_BUTTON_LABEL);
         settings.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         settings.addActionListener(e -> {
@@ -255,8 +252,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         Image imageSU = picSU.getImage();
         speedUp = new JButton((new ImageIcon(imageSU.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         speedUp.setBackground(CustomColor.BUTTON);
-        speedUp.setFont(speedUp.getFont ().deriveFont (18.0f));
-        speedUp.setForeground(CustomColor.ON_BUTTON_LABEL);
         speedUp.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         speedUp.setToolTipText("Increase Speed");
 
@@ -280,8 +275,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         Image imageSlD = picSlD.getImage();
         slowDown = new JButton((new ImageIcon(imageSlD.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         slowDown.setBackground(CustomColor.BUTTON);
-        slowDown.setFont(slowDown.getFont ().deriveFont (18.0f));
-        slowDown.setForeground(CustomColor.ON_BUTTON_LABEL);
         slowDown.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         slowDown.setToolTipText("Slow Down");
 
@@ -382,8 +375,6 @@ public class ControlPanel extends JPanel implements ActionListener{
         Image imageR = picR.getImage();
         reset = new JButton((new ImageIcon(imageR.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         reset.setBackground(CustomColor.BUTTON);
-        reset.setFont(reset.getFont ().deriveFont (18.0f));
-        reset.setForeground(CustomColor.ON_BUTTON_LABEL);
         reset.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
 
         reset.addActionListener(e -> {

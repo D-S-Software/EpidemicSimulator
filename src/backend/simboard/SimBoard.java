@@ -358,10 +358,60 @@ public abstract class SimBoard {
         {
             for(int j = 0; j < pList.size(); j++)
             {
-                if(i != j && pList.get(i).isSocialDistancing() && Math.sqrt(Math.pow(pList.get(i).getXPos() - pList.get(j).getXPos(), 2) + Math.pow(pList.get(i).getYPos() - pList.get(j).getYPos(), 2)) < getSocialDistanceValue())
-                    pList.get(i).changeDirectionAngle();
+                double xDiff = pList.get(i).getXPos() - pList.get(j).getXPos();
+                double yDiff = pList.get(i).getYPos() - pList.get(j).getYPos();
+
+                if(i != j && pList.get(i).isSocialDistancing() && Math.sqrt(Math.pow(xDiff, 2) + Math.pow(yDiff, 2)) < getSocialDistanceValue())
+                {
+                    if(xDiff == 0)
+                    {
+                        if(pList.get(i).getYPos() > pList.get(j).getYPos())
+                            changeDirHelper(i, j, Math.PI/2., -(Math.PI/2.));
+                        else
+                            changeDirHelper(i, j, -(Math.PI/2.), Math.PI/2.);
+                    }
+                    else if(yDiff == 0)
+                    {
+                        if(pList.get(i).getXPos() > pList.get(j).getXPos())
+                            changeDirHelper(i, j, 0, -Math.PI);
+                        else
+                            changeDirHelper(i, j, -Math.PI, 0);
+                    }
+                    else if(xDiff > 5 && yDiff > 5)
+                    {
+                        changeDirHelper(i, j, 0, -Math.PI);
+                        pList.get(i).resetTimeSinceDirChange();
+                        pList.get(j).resetTimeSinceDirChange();
+                    }
+                    else
+                    {
+                        double angle = Math.atan(yDiff/xDiff);
+
+                        if(pList.get(i).getXPos() > pList.get(j).getXPos())
+                            changeDirHelper(i, j, angle, angle+Math.PI);
+                        else
+                            changeDirHelper(i, j, angle+Math.PI, angle);
+                    }
+                }
+                pList.get(i).addTimeSinceDirChange();
+                pList.get(j).addTimeSinceDirChange();
             }
         }
+    }
+
+    /** Helper method for socialDistanceUpdate()
+     *
+     * @param i First person being checked
+     * @param j Second person being checked
+     * @param angleOne Target angle for person one
+     * @param angleTwo Target angle for person two
+     */
+    private void changeDirHelper(int i, int j, double angleOne, double angleTwo)
+    {
+        if(pList.get(i).getTimeSinceDirChange() > 500)
+            pList.get(i).changeDirectionAngle(angleOne);
+        if(pList.get(j).getTimeSinceDirChange() > 500)
+            pList.get(j).changeDirectionAngle(angleTwo);
     }
 
     /** Switches between making each person (that is told to social distance) actively social distance and having freedom to move

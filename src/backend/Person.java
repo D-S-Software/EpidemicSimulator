@@ -8,7 +8,7 @@ import java.awt.*;
 public class Person {
 
     private boolean hasDisease, isHealthy;
-    private int timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex, xTarget, yTarget;
+    private int timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex, xTarget, yTarget, timeSinceDirChange;
     private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime, step = 2, xPos, yPos, dx, dy;
     private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect, willQuarantine, hasTarget = false;
     private Rectangle dimens;
@@ -49,7 +49,7 @@ public class Person {
 
         this.antiBodyTime = antiBodyTime;
         this.canReInfect = canReInfect;
-        directionAngle = (int)(360*Math.random());
+        directionAngle = (int)(2*Math.PI*Math.random());
 
         hasDisease = Math.random() > disease.getStartPercentHealthy();
 
@@ -67,7 +67,7 @@ public class Person {
         else
         {
             if(Math.random() >= .95)
-                directionAngle = (360*Math.random());
+                directionAngle = (2*Math.PI*Math.random());
             dy = step*Math.sin(directionAngle);
             dx = step*Math.cos(directionAngle);
             checkBoundaries();
@@ -82,16 +82,8 @@ public class Person {
      */
     public boolean moveTarget()
     {
-        if(xTarget < xPos)
-        {
-            dx = -(step*Math.cos(directionAngle));
-            dy = -(step*Math.sin(directionAngle));
-        }
-        else
-        {
-            dx = step*Math.cos(directionAngle);
-            dy = step*Math.sin(directionAngle);
-        }
+        dx = step*Math.cos(directionAngle);
+        dy = step*Math.sin(directionAngle);
         checkBoundaries();
 
         if(xPos >= xTarget-(step/2) && xPos <= xTarget+(step/2) && yPos >= yTarget-(step/2) && yPos <= yTarget+(step/2))
@@ -103,7 +95,6 @@ public class Person {
         {
             xPos += dx;
             yPos += dy;
-            hasTarget = true;
             return false;
         }
     }
@@ -118,8 +109,25 @@ public class Person {
         this.xTarget = xTarget;
         this.yTarget = yTarget;
         hasTarget = true;
-        if(xTarget != xPos)
-            directionAngle = Math.atan((yTarget-yPos)/(xTarget-xPos));
+        double xDiff = xPos-xTarget;
+        double yDiff = yPos-yTarget;
+
+        if(xDiff == 0)
+        {
+            if(yPos > yTarget)
+                directionAngle = Math.PI/2.;
+            else
+                directionAngle = -(Math.PI/2.);
+        }
+        else
+        {
+            double angle = Math.atan(yDiff/xDiff);
+
+            if(xPos < xTarget)
+                directionAngle = angle;
+            else
+                directionAngle = angle+Math.PI;
+        }
     }
 
     /**
@@ -130,12 +138,12 @@ public class Person {
         if(xPos + dx > dimens.x + dimens.width - circleRad)
         {
             xPos = dimens.x + dimens.width - circleRad - 1;
-            directionAngle += 180;
+            directionAngle += Math.PI/2.;
         }
         if(xPos + dx < dimens.x + circleRad)
         {
             xPos = dimens.x + circleRad;
-            directionAngle += 180;
+            directionAngle += Math.PI/2;
         }
 
         if(yPos + dy > dimens.y + dimens.height  - circleRad)
@@ -320,9 +328,10 @@ public class Person {
         return yPos;
     }
 
-    public void changeDirectionAngle()
+    public void changeDirectionAngle(double angle)
     {
-        directionAngle += 180;
+        directionAngle = angle;
+        timeSinceDirChange = 0;
     }
 
     public void setDimens(Rectangle dimens) {
@@ -359,6 +368,12 @@ public class Person {
     public boolean getHasTarget(){return hasTarget;}
 
     public int[] getTarget(){return new int[]{xTarget, yTarget};}
+
+    public int getTimeSinceDirChange(){return timeSinceDirChange;}
+
+    public void addTimeSinceDirChange(){timeSinceDirChange++;}
+
+    public void resetTimeSinceDirChange(){timeSinceDirChange = 0;}
 
     /** SimBoardIso Methods*/
 
