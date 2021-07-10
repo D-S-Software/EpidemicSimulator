@@ -27,7 +27,7 @@ public class Person {
      * @param isSocialDistancing Boolean value if the person is social distancing
      * @param antiBodyTime How long it takes for antibodies to expire
      * @param canReInfect Boolean value if the person is able to be reinfected once recovered if antibodies expire
-     * @param quarantineChance The chance that a person will quarantine
+     * @param quarantineChance The chance that a person will go into quarantine
      */
     public Person(double age, int preExistingConditions, int xPos, int yPos, Rectangle dimens, Disease disease, boolean asymptomatic, boolean isSocialDistancing, double antiBodyTime, boolean canReInfect, double quarantineChance)
     {
