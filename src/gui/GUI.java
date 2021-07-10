@@ -13,7 +13,7 @@ import static java.awt.Font.BOLD;
 
 public class GUI {
 
-    private JPanel topPanel, leftPanel, rightPanel, maxMinPanel;
+    private JPanel topPanel, leftPanel, rightPanel;
     private TitlePanel titlePanel;
     private SimBoardPanel simBoardPanel;
     private ControlPanel controlPanel;
