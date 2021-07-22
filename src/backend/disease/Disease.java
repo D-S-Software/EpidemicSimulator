@@ -2,12 +2,12 @@ package backend.disease;
 
 public class Disease {
 
-    private double contagiousRange;
-    private double contagiousPercent; //How likely to be infected when in range
-    private double baseMortalityRate;
-    private double startPercentHealthy;
-    private double baseMinTimeSick; //Time is measured in centiseconds
-    private double baseMaxTimeSick;
+    private int contagiousRange;
+    private int contagiousPercent; //How likely to be infected when in range
+    private int baseMortalityRate;
+    private int startPercentHealthy;
+    private int baseMinTimeSick; //Time is measured in centiseconds
+    private int baseMaxTimeSick;
 
     /** Creates a disease object to be handed to each person
      *
@@ -18,7 +18,7 @@ public class Disease {
      * @param baseMaxTimeSick The maximum time sick a person can be sick for
      * @param startPercentHealthy The percent of people that start off as healthy in the simulation
      */
-    public Disease(double contagiousRange, double contagiousPercent, double baseMortalityRate, double baseMinTimeSick, double baseMaxTimeSick, double startPercentHealthy)
+    public Disease(int contagiousRange, int contagiousPercent, int baseMortalityRate, int baseMinTimeSick, int baseMaxTimeSick, int startPercentHealthy)
     {
         this.contagiousRange = contagiousRange;
         this.contagiousPercent = contagiousPercent;
@@ -30,27 +30,27 @@ public class Disease {
 
     /** Getter and Setter Methods*/
 
-    public double getContagiousRange()
+    public int getContagiousRange()
     {
         return contagiousRange;
     }
-    public double getContagiousPercent()
+    public int getContagiousPercent()
     {
         return contagiousPercent;
     }
-    public double getBaseMortalityRate()
+    public int getBaseMortalityRate()
     {
         return baseMortalityRate;
     }
-    public double getStartPercentHealthy()
+    public int getStartPercentHealthy()
     {
         return startPercentHealthy;
     }
-    public double getBaseMinTimeSick()
+    public int getBaseMinTimeSick()
     {
         return baseMinTimeSick;
     }
-    public double getBaseMaxTimeSick()
+    public int getBaseMaxTimeSick()
     {
         return baseMaxTimeSick;
     }

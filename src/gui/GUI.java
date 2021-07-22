@@ -8,6 +8,7 @@ import java.awt.GraphicsEnvironment;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 import static java.awt.Font.BOLD;
 
@@ -69,7 +70,7 @@ public class GUI {
         leftPanel.setBackground(CustomColor.BACKGROUND);
         addBoardPanel();
         addControlPanel();
-        leftPanel.setPreferredSize(new Dimension(900,675));
+        leftPanel.setPreferredSize(new Dimension(600,450));
         frame.add(leftPanel, gbcMain);
 
         gbcMain.gridx = 1;
@@ -91,6 +92,9 @@ public class GUI {
         frame.setVisible(true);
 
         tallyPanel.setShowCases(showCasesFirst);
+
+        frame.setFocusTraversalKeysEnabled(false);
+        addKeyBindings();
     }
 
     /**
@@ -247,6 +251,75 @@ public class GUI {
         rightPanel.add(pieChartPanel, gbc);
     }
 
+    private void addKeyBindings()
+    {
+        InputMap inputMap = ((JPanel)frame.getContentPane()).getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = ((JPanel)frame.getContentPane()).getActionMap();
+
+        Action openSettings = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controlPanel.settingButton();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("S"), "Open Settings");
+        actionMap.put("Open Settings", openSettings);
+
+        Action openInfo = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controlPanel.infoButton();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("I"), "Open Info");
+        actionMap.put("Open Info", openInfo);
+
+        Action playPause = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controlPanel.playPauseButton();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("SPACE"), "Play/Pause");
+        actionMap.put("Play/Pause", playPause);
+
+        Action speedUp = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controlPanel.speedUpButton();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("RIGHT"), "Speed Up");
+        actionMap.put("Speed Up", speedUp);
+
+        Action slowDown = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controlPanel.slowDownButton();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("LEFT"), "Slow Down");
+        actionMap.put("Slow Down", slowDown);
+
+        Action startSim = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                controlPanel.startSim();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("ENTER"), "Start Sim");
+        actionMap.put("Start Sim", startSim);
+
+        Action switchGraph = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tallyPanel.switchGraphButton();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("TAB"), "Switch Graph");
+        actionMap.put("Switch Graph", switchGraph);
+    }
+
     /** Getter and Setter Methods*/
 
     public SimBoardPanel getSimBoardPanel()
@@ -288,5 +361,10 @@ public class GUI {
     public void setStats(Statistics stats)
     {
         this.stats = stats;
+    }
+
+    public JFrame getFrame()
+    {
+        return frame;
     }
 }

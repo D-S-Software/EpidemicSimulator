@@ -88,12 +88,14 @@ public abstract class SimBoard {
         boolean hasInfected = false;
 
         // Makes sure that at least one person is infected in each simulation
-        if(disease.getStartPercentHealthy() < 1)
+        if(disease.getStartPercentHealthy()/100.0 < 1)
         {
             for(int i = 1; i < listPList.size(); i++)
                 for(int j = 0; j < listPList.get(i).size(); j++)
-                    if(!listPList.get(i).get(j).getIsHealthy())
+                    if (!listPList.get(i).get(j).getIsHealthy()) {
                         hasInfected = true;
+                        break;
+                    }
             if(!hasInfected)
             {
                 listPList.get(1).get(1).setHasDisease();
@@ -135,7 +137,7 @@ public abstract class SimBoard {
      */
     private void constructPListTotalIteration(ArrayList<Person> pListQN)
     {
-        for (Person person : pListQN) pList.add(person);
+        pList.addAll(pListQN);
     }
 
     /**
@@ -316,9 +318,7 @@ public abstract class SimBoard {
             if (person.getHasDisease()) {
                 rNot.add(person.getOthersInfected());
             }
-        for (Integer integer : rNotDead) {
-            rNot.add(integer);
-        }
+        rNot.addAll(rNotDead);
     }
 
     /** Draws each person on the simboard

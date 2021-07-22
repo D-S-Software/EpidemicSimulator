@@ -44,14 +44,14 @@ public class Person {
 
         double maxTimeSick = disease.getBaseMaxTimeSick() + (100 * age*Math.random()); // Random chance to add 1 per year of age up to age. 100 centi Sec = 1 sec)
         sickTime = disease.getBaseMinTimeSick() + (maxTimeSick - disease.getBaseMinTimeSick())*Math.random();
-        personalMortalityRate = disease.getBaseMortalityRate() + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
+        personalMortalityRate = disease.getBaseMortalityRate()/100.0 + ageMortalityFactor*age + conditionsMortalityFactor*preExistingConditions;
         baseMortalityRate = personalMortalityRate;
 
         this.antiBodyTime = antiBodyTime;
         this.canReInfect = canReInfect;
         directionAngle = (int)(2*Math.PI*Math.random());
 
-        hasDisease = Math.random() > disease.getStartPercentHealthy();
+        hasDisease = Math.random() > disease.getStartPercentHealthy()/100.0;
 
         // If this person is starting with the disease, then they also start as sick
         isHealthy = !hasDisease;
@@ -164,7 +164,7 @@ public class Person {
     public void checkCondition()
     {
         // checks if a healthy person should become infected
-        if(!hasDisease && Math.random() < disease.getContagiousPercent() && distanceFromSick < disease.getContagiousRange())
+        if(!hasDisease && Math.random() < disease.getContagiousPercent()/100.0 && distanceFromSick < disease.getContagiousRange())
         {
             hasDisease = true;
             isHealthy = false;
@@ -189,7 +189,7 @@ public class Person {
         {
             timeSinceRecovered++;
             //checks if a recovered person should become sick
-            if(timeSinceRecovered > antiBodyTime && distanceFromSick < disease.getContagiousRange() && Math.random() < disease.getContagiousPercent())
+            if(timeSinceRecovered > antiBodyTime && distanceFromSick < disease.getContagiousRange() && Math.random() < disease.getContagiousPercent()/100.0)
             {
                 isHealthy = false;
                 isoRecovered = false;

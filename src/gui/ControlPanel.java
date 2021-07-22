@@ -4,17 +4,22 @@ import backend.Engine;
 import backend.Music;
 import backend.disease.Disease;
 import lib.CustomColor;
-import backend.disease.*;
 
 import javax.swing.*;
+import javax.swing.text.AbstractDocument;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DocumentFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public class ControlPanel extends JPanel implements ActionListener{
+public class ControlPanel extends JPanel implements ActionListener {
 
     private JPanel mainPanel = new JPanel(new GridBagLayout());
     private JButton start, playPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp, toggleMove;
@@ -27,9 +32,10 @@ public class ControlPanel extends JPanel implements ActionListener{
     private Music backgroundMusic;
     private SettingFrame settingFrame;
     private ArrayList<Music> musicSongs = new ArrayList<>();
+    private InfoFrame infoFrame;
     private ControlPanel controlPanel = this;
 
-    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, numStatsFile = 0, diseaseSel = 5, previousSong = 1;
+    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, numStatsFile = 0, previousSong = 1;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
     private boolean toPause = true, canStart = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard, toggleMoving;
 
@@ -40,7 +46,6 @@ public class ControlPanel extends JPanel implements ActionListener{
     public ControlPanel(GUI gui)
     {
         this.gui = gui;
-
         settingFrame = new SettingFrame(this);
         settingFrame.setVisible(false);
 
@@ -105,13 +110,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         info.setFont(info.getFont ().deriveFont (18.0f));
         info.setForeground(CustomColor.ON_BUTTON_LABEL);
         info.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        info.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
-        info.addActionListener(e -> {
-
-            InfoFrame infoFrame = new InfoFrame(controlPanel);
-            simEngine.getClock().stop();
-            backgroundMusic.pause();
-        });
+        info.addActionListener(e -> infoButton());
 
         toggleMusic = new JButton("<html>Toggle<br/>Music</html>");
         toggleMusic.setBackground(CustomColor.BUTTON);
@@ -119,6 +120,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         toggleMusic.setForeground(CustomColor.ON_BUTTON_LABEL);
         toggleMusic.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         toggleMusic.setToolTipText("Click to pause / Double click to change song");
+        toggleMusic.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
         toggleMusic.addMouseListener(new MouseAdapter(){
             @Override
@@ -176,6 +178,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         toggleSocDist = new JButton((new ImageIcon(imageSD.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         toggleSocDist.setBackground(CustomColor.BUTTON);
         toggleSocDist.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        toggleSocDist.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
         toggleSocDist.addActionListener(e -> {
 
@@ -212,6 +215,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         toggleMove.setForeground(CustomColor.ON_BUTTON_LABEL);
         toggleMove.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         toggleMove.setToolTipText("Toggle travel to center");
+        toggleMove.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
         toggleMove.addActionListener(e -> {
 
@@ -239,14 +243,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         JButton settings = new JButton((new ImageIcon(imageSet.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         settings.setBackground(CustomColor.BUTTON);
         settings.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        settings.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
-        settings.addActionListener(e -> {
-
-            settingFrame.setVisible(true);
-            if(simEngine != null)
-                simEngine.getClock().stop();
-            backgroundMusic.pause();
-        });
+        settings.addActionListener(e -> settingButton());
 
         ImageIcon picSU = new ImageIcon(ClassLoader.getSystemResource("res/speedUpIcon.png"));
         Image imageSU = picSU.getImage();
@@ -254,22 +253,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         speedUp.setBackground(CustomColor.BUTTON);
         speedUp.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         speedUp.setToolTipText("Increase Speed");
+        speedUp.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
-        speedUp.addActionListener(e -> {
-
-            if(isPlaying)
-            {
-                simEngine.speedUp();
-                slowDown.setToolTipText("Slow Down");
-                slowDown.setVisible(true);
-
-                if(simEngine.getDelay() == 0)
-                {
-                    speedUp.setToolTipText("Max Speed");
-                    speedUp.setVisible(false);
-                }
-            }
-        });
+        speedUp.addActionListener(e -> speedUpButton());
 
         ImageIcon picSlD = new ImageIcon(ClassLoader.getSystemResource("res/slowDownIcon.png"));
         Image imageSlD = picSlD.getImage();
@@ -277,22 +263,9 @@ public class ControlPanel extends JPanel implements ActionListener{
         slowDown.setBackground(CustomColor.BUTTON);
         slowDown.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         slowDown.setToolTipText("Slow Down");
+        slowDown.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
-        slowDown.addActionListener(e -> {
-
-            if(isPlaying)
-            {
-                simEngine.slowDown();
-                speedUp.setToolTipText("Increase Speed");
-                speedUp.setVisible(true);
-
-                if(simEngine.getDelay() == 19)
-                {
-                    slowDown.setToolTipText("Min Speed");
-                    slowDown.setVisible(false);
-                }
-            }
-        });
+        slowDown.addActionListener(e -> slowDownButton());
 
         p.add(toggleSocDist);
         p.add(toggleMove);
@@ -330,6 +303,20 @@ public class ControlPanel extends JPanel implements ActionListener{
         numPeopleField.setFont(numPeopleField.getFont ().deriveFont (20.0f));
         numPeopleField.setForeground(CustomColor.SILVER);
         numPeopleField.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+
+        //Only allows Numbers to be entered into text field
+        ((AbstractDocument)numPeopleField.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
         p.add(numPeopleField);
 
         start = new JButton("Start");
@@ -337,6 +324,7 @@ public class ControlPanel extends JPanel implements ActionListener{
         start.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         start.setFont(start.getFont ().deriveFont (18.0f));
         start.setForeground(CustomColor.ON_BUTTON_LABEL);
+        start.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
         start.addActionListener(e -> startSim());
 
@@ -345,37 +333,16 @@ public class ControlPanel extends JPanel implements ActionListener{
         playPause.setFont(playPause.getFont ().deriveFont (18.0f));
         playPause.setForeground(CustomColor.ON_BUTTON_LABEL);
         playPause.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        playPause.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
-        playPause.addActionListener(e -> {
-            if(disease != null && !canStart)
-            {
-                if(toPause)
-                {
-                    simEngine.getClock().stop();
-                    isPlaying = false;
-                    backgroundMusic.pause();
-                    musicPlaying = false;
-                    playPause.setBackground(CustomColor.DARK_RED);
-                    toPause = false;
-                }
-                else
-                {
-                    simEngine.getClock().start();
-                    isPlaying = true;
-                    backgroundMusic.resume();
-                    musicPlaying = true;
-                    playPause.setBackground(CustomColor.BUTTON);
-                    toPause = true;
-                }
-                gui.getTallyPanel().showGraphModeButton();
-            }
-        });
+        playPause.addActionListener(e -> playPauseButton());
 
         ImageIcon picR = new ImageIcon(ClassLoader.getSystemResource("res/resetIcon.png"));
         Image imageR = picR.getImage();
         reset = new JButton((new ImageIcon(imageR.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
         reset.setBackground(CustomColor.BUTTON);
         reset.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        reset.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
         reset.addActionListener(e -> {
 
@@ -425,78 +392,9 @@ public class ControlPanel extends JPanel implements ActionListener{
     }
 
     /**
-     * Sets the text for the disease parameter panel based on the disease parameters
-     * @param e event each tick
-     */
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if(settingFrame.getCustom().isSelected() && diseaseSel != 5)
-        {
-            settingFrame.getContagiousPercent().setText("");
-            settingFrame.getContagiousRange().setText("");
-            settingFrame.getBaseMortalityRate().setText("");
-            settingFrame.getBaseMinTimeSick().setText("");
-            settingFrame.getBaseMaxTimeSick().setText("");
-            settingFrame.getStartPercentHealthy().setText("");
-            diseaseSel = 5;
-        }
-        if(settingFrame.getChoice1().isSelected() && diseaseSel != 1)
-        {
-            disease = new Disease1();
-            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
-            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
-            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
-            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
-            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
-            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
-            diseaseSel = 1;
-        }
-        if(settingFrame.getChoice2().isSelected() && diseaseSel != 2)
-        {
-            disease = new Disease2();
-            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
-            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
-            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
-            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
-            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
-            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
-            diseaseSel = 2;
-        }
-        if(settingFrame.getChoice3().isSelected() && diseaseSel != 3)
-        {
-            disease = new Disease3();
-            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
-            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
-            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
-            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
-            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
-            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
-            diseaseSel = 3;
-        }
-        if(settingFrame.getChoice4().isSelected() && diseaseSel != 4)
-        {
-            disease = new Disease4();
-            settingFrame.getContagiousPercent().setText(disease.getContagiousPercent() * 100 + "");
-            settingFrame.getContagiousRange().setText("" + disease.getContagiousRange());
-            settingFrame.getBaseMortalityRate().setText(disease.getBaseMortalityRate() * 100 + "");
-            settingFrame.getBaseMinTimeSick().setText("" + disease.getBaseMinTimeSick() / 100);
-            settingFrame.getBaseMaxTimeSick().setText("" + disease.getBaseMaxTimeSick() / 100);
-            settingFrame.getStartPercentHealthy().setText(disease.getStartPercentHealthy() * 100 + "");
-            diseaseSel = 4;
-        }
-
-        if(backgroundMusic.getClip().getMicrosecondPosition() == backgroundMusic.getClip().getMicrosecondLength()-1)
-        {
-            backgroundMusic.stop();
-            changeSong();
-            backgroundMusic.play();
-        }
-    }
-
-    /**
      * Starts a simulation if possible (ie checks to make sure parameters are sufficient)
      */
-    private void startSim()
+    public void startSim()
     {
         if(canStart)
         {
@@ -509,13 +407,13 @@ public class ControlPanel extends JPanel implements ActionListener{
             {
                 try
                 {
-                    disease = new Disease(Double.parseDouble(settingFrame.getContagiousRange().getText()), Double.parseDouble(settingFrame.getContagiousPercent().getText()) / 100,
-                            Double.parseDouble(settingFrame.getBaseMortalityRate().getText()) / 100, Double.parseDouble(settingFrame.getBaseMinTimeSick().getText()) *100,
-                            Double.parseDouble(settingFrame.getBaseMaxTimeSick().getText()) *100, Double.parseDouble(settingFrame.getStartPercentHealthy().getText()) / 100);
+                    disease = new Disease(Integer.parseInt(settingFrame.getContagiousRange().getText()), Integer.parseInt(settingFrame.getContagiousPercent().getText()),
+                            Integer.parseInt(settingFrame.getBaseMortalityRate().getText()), Integer.parseInt(settingFrame.getBaseMinTimeSick().getText()) *100,
+                            Integer.parseInt(settingFrame.getBaseMaxTimeSick().getText()) *100, Integer.parseInt(settingFrame.getStartPercentHealthy().getText()));
                 }
                 catch (java.lang.NumberFormatException ex)
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters for Disease in settings are numbers and filled in correctly!");
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters for Disease in settings are filled in correctly!");
                     goodToStart = false;
                 }
                 try
@@ -523,7 +421,7 @@ public class ControlPanel extends JPanel implements ActionListener{
                     numPeople = Integer.parseInt(numPeopleField.getText());
                     if(numPeople < 2 || numPeople > 5000)
                     {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is greater than 1 and less than 5000.");
+                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure the number of people is between 2 and 5000.");
                         goodToStart = false;
                     }
                 }
@@ -572,6 +470,8 @@ public class ControlPanel extends JPanel implements ActionListener{
                             backgroundMusic.play();
 
                         toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() * 100 + " % of people are set social distancing");
+
+                        gui.getFrame().requestFocusInWindow();
                     }
                 }
                 catch (java.lang.NumberFormatException ex)
@@ -582,6 +482,17 @@ public class ControlPanel extends JPanel implements ActionListener{
         }
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        if(backgroundMusic.getClip().getMicrosecondPosition() == backgroundMusic.getClip().getMicrosecondLength()-1)
+        {
+            backgroundMusic.stop();
+            changeSong();
+            backgroundMusic.play();
+        }
+    }
+
     /**
      * Resumes a simulation after setting or info panel closes
      */
@@ -589,6 +500,71 @@ public class ControlPanel extends JPanel implements ActionListener{
     {
         simEngine.getClock().start();
         backgroundMusic.resume();
+    }
+
+    public void infoButton(){
+        infoFrame = new InfoFrame(controlPanel);
+        if(simEngine != null)
+            simEngine.getClock().stop();
+        backgroundMusic.pause();
+    }
+    public void settingButton(){
+        settingFrame.setVisible(true);
+        if(simEngine != null)
+            simEngine.getClock().stop();
+        backgroundMusic.pause();
+    }
+    public void speedUpButton(){
+        if(isPlaying)
+        {
+            simEngine.speedUp();
+            slowDown.setToolTipText("Slow Down");
+            slowDown.setVisible(true);
+
+            if(simEngine.getDelay() == 0)
+            {
+                speedUp.setToolTipText("Max Speed");
+                speedUp.setVisible(false);
+            }
+        }
+    }
+    public void slowDownButton(){
+        if(isPlaying)
+        {
+            simEngine.slowDown();
+            speedUp.setToolTipText("Increase Speed");
+            speedUp.setVisible(true);
+
+            if(simEngine.getDelay() == 19)
+            {
+                slowDown.setToolTipText("Min Speed");
+                slowDown.setVisible(false);
+            }
+        }
+    }
+    public void playPauseButton(){
+        if(disease != null && !canStart)
+        {
+            if(toPause)
+            {
+                simEngine.getClock().stop();
+                isPlaying = false;
+                backgroundMusic.pause();
+                musicPlaying = false;
+                playPause.setBackground(CustomColor.DARK_RED);
+                toPause = false;
+            }
+            else
+            {
+                simEngine.getClock().start();
+                isPlaying = true;
+                backgroundMusic.resume();
+                musicPlaying = true;
+                playPause.setBackground(CustomColor.BUTTON);
+                toPause = true;
+            }
+            gui.getTallyPanel().showGraphModeButton();
+        }
     }
 
     public JPanel getMainPanel() {
@@ -605,5 +581,11 @@ public class ControlPanel extends JPanel implements ActionListener{
     public int getNumStatsFile()
     {
         return numStatsFile;
+    }
+    public SettingFrame getSettingFrame() {
+        return settingFrame;
+    }
+    public InfoFrame getInfoFrame(){
+        return infoFrame;
     }
 }

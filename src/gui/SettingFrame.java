@@ -1,20 +1,32 @@
 package gui;
 
+import backend.disease.Disease;
+import backend.disease.Disease1;
+import backend.disease.Disease2;
+import backend.disease.Disease3;
+import backend.disease.Disease4;
 import lib.CustomColor;
 
 import javax.swing.*;
+import javax.swing.text.AbstractDocument;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DocumentFilter;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SettingFrame extends JFrame implements ActionListener{
 
-    private int boardTypeNum = 1, minPreExistingConditionsNum, maxPreExistingConditionsNum;
+    private int boardTypeNum = 1, minPreExistingConditionsNum, maxPreExistingConditionsNum, diseaseSel;
     private double asymptomaticChanceNum, socialDistanceChanceNum, quarantineChanceNum, travelersPer, socialDistanceValueNum, minAgeNum, maxAgeNum, timeUntilQuarantineNum, reinfectRateNum, antiBodyTimeNum;
     private boolean quarBoardBool = false;
     private JRadioButton choice1, choice2, choice3, choice4, custom;
     private ButtonGroup g1;
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy;
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel;
+    private Disease disease;
 
     JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue, percentSocialDist, minAge, maxAge, minConditions, maxConditions, reinfectRate, antiBodyTime;
 
@@ -43,7 +55,10 @@ public class SettingFrame extends JFrame implements ActionListener{
         try
         {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
-        }catch(Exception e){}
+        }
+        catch(Exception e){
+            //Welp :P
+        }
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -177,6 +192,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         generalBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         generalBoard.setForeground(CustomColor.LIGHT_GRAY);
         generalBoard.setFont(generalBoard.getFont ().deriveFont (16.0f));
+        generalBoard.setSelected(true);
 
         quadBoard = new JRadioButton("Quad    ");
         quadBoard.setBackground(CustomColor.BUTTON);
@@ -205,6 +221,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         regButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         regButton.setForeground(CustomColor.LIGHT_GRAY);
         regButton.setFont(regButton.getFont ().deriveFont (16.0f));
+        regButton.setSelected(true);
 
         ButtonGroup g1 = new ButtonGroup();
         g1.add(generalBoard);
@@ -524,31 +541,108 @@ public class SettingFrame extends JFrame implements ActionListener{
         contagiousPercent.setBackground(CustomColor.FIELD);
         contagiousPercent.setForeground(CustomColor.ON_BUTTON_LABEL);
         contagiousPercent.setMinimumSize(new Dimension(60, 10));
+        ((AbstractDocument)contagiousPercent.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
+
         contagiousRange = new JTextField(1);
         contagiousRange.setFont(contagiousRange.getFont ().deriveFont (15.0f));
         contagiousRange.setBackground(CustomColor.FIELD);
         contagiousRange.setForeground(CustomColor.ON_BUTTON_LABEL);
         contagiousRange.setMinimumSize(new Dimension(60, 10));
+        ((AbstractDocument)contagiousRange.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
+
         baseMortalityRate = new JTextField(1);
         baseMortalityRate.setFont(baseMortalityRate.getFont ().deriveFont (15.0f));
         baseMortalityRate.setBackground(CustomColor.FIELD);
         baseMortalityRate.setForeground(CustomColor.ON_BUTTON_LABEL);
         baseMortalityRate.setMinimumSize(new Dimension(60, 10));
+        ((AbstractDocument)baseMortalityRate.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
+
         baseMinTimeSick = new JTextField(1);
         baseMinTimeSick.setFont(baseMinTimeSick.getFont ().deriveFont (15.0f));
         baseMinTimeSick.setBackground(CustomColor.FIELD);
         baseMinTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
         baseMinTimeSick.setMinimumSize(new Dimension(60, 10));
+        ((AbstractDocument)baseMinTimeSick.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
+
         baseMaxTimeSick = new JTextField(1);
         baseMaxTimeSick.setFont(baseMaxTimeSick.getFont ().deriveFont (15.0f));
         baseMaxTimeSick.setBackground(CustomColor.FIELD);
         baseMaxTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
         baseMaxTimeSick.setMinimumSize(new Dimension(60, 10));
+        ((AbstractDocument)baseMaxTimeSick.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
+
         startPercentHealthy = new JTextField(1);
         startPercentHealthy.setFont(startPercentHealthy.getFont ().deriveFont (15.0f));
         startPercentHealthy.setBackground(CustomColor.FIELD);
         startPercentHealthy.setForeground(CustomColor.ON_BUTTON_LABEL);
         startPercentHealthy.setMinimumSize(new Dimension(60, 10));
+        ((AbstractDocument)startPercentHealthy.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         contagiousPercentLabel = new JLabel("<html>Contagious (%)</html>");
         contagiousPercentLabel.setForeground(CustomColor.LIGHT_GRAY);
@@ -706,6 +800,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         travelers.setForeground(CustomColor.ON_BUTTON_LABEL);
         travelers.setMinimumSize(new Dimension(60, 10));
         travelers.setFont(travelers.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)travelers.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         timeUntilQuarantine = new JTextField(1);
         timeUntilQuarantine.setText("3");
@@ -713,6 +819,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         timeUntilQuarantine.setForeground(CustomColor.ON_BUTTON_LABEL);
         timeUntilQuarantine.setMinimumSize(new Dimension(60, 10));
         timeUntilQuarantine.setFont(timeUntilQuarantine.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)timeUntilQuarantine.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         percentQuarantine = new JTextField(1);
         percentQuarantine.setText("80");
@@ -720,6 +838,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         percentQuarantine.setForeground(CustomColor.ON_BUTTON_LABEL);
         percentQuarantine.setMinimumSize(new Dimension(60, 10));
         percentQuarantine.setFont(percentQuarantine.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)percentQuarantine.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         asymptomaticChance = new JTextField(1);
         asymptomaticChance.setText("0");
@@ -727,6 +857,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         asymptomaticChance.setForeground(CustomColor.ON_BUTTON_LABEL);
         asymptomaticChance.setMinimumSize(new Dimension(60, 10));
         asymptomaticChance.setFont(asymptomaticChance.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)asymptomaticChance.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         socialDistanceValue = new JTextField(1);
         socialDistanceValue.setText("30");
@@ -734,6 +876,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         socialDistanceValue.setForeground(CustomColor.ON_BUTTON_LABEL);
         socialDistanceValue.setMinimumSize(new Dimension(60, 10));
         socialDistanceValue.setFont(socialDistanceValue.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)socialDistanceValue.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         percentSocialDist = new JTextField(1);
         percentSocialDist.setText("0");
@@ -741,6 +895,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         percentSocialDist.setForeground(CustomColor.ON_BUTTON_LABEL);
         percentSocialDist.setMinimumSize(new Dimension(60, 10));
         percentSocialDist.setFont(percentSocialDist.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)percentSocialDist.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         reinfectRate = new JTextField(1);
         reinfectRate.setText("0");
@@ -748,6 +914,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         reinfectRate.setForeground(CustomColor.ON_BUTTON_LABEL);
         reinfectRate.setMinimumSize(new Dimension(60, 10));
         reinfectRate.setFont(reinfectRate.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)reinfectRate.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         antiBodyTime = new JTextField(1);
         antiBodyTime.setText("35");
@@ -755,6 +933,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         antiBodyTime.setForeground(CustomColor.ON_BUTTON_LABEL);
         antiBodyTime.setMinimumSize(new Dimension(60, 10));
         antiBodyTime.setFont(antiBodyTime.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)antiBodyTime.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         minAge = new JTextField(1);
         minAge.setText("20");
@@ -762,6 +952,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         minAge.setForeground(CustomColor.ON_BUTTON_LABEL);
         minAge.setMinimumSize(new Dimension(60, 10));
         minAge.setFont(minAge.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)minAge.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         maxAge = new JTextField(1);
         maxAge.setText("80");
@@ -769,6 +971,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         maxAge.setForeground(CustomColor.ON_BUTTON_LABEL);
         maxAge.setMinimumSize(new Dimension(60, 10));
         maxAge.setFont(maxAge.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)maxAge.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         minConditions = new JTextField(1);
         minConditions.setText("0");
@@ -776,6 +990,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         minConditions.setForeground(CustomColor.ON_BUTTON_LABEL);
         minConditions.setMinimumSize(new Dimension(60, 10));
         minConditions.setFont(minConditions.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)minConditions.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         maxConditions = new JTextField(1);
         maxConditions.setText("3");
@@ -783,6 +1009,18 @@ public class SettingFrame extends JFrame implements ActionListener{
         maxConditions.setForeground(CustomColor.ON_BUTTON_LABEL);
         maxConditions.setMinimumSize(new Dimension(60, 10));
         maxConditions.setFont(maxConditions.getFont ().deriveFont (15.0f));
+        ((AbstractDocument)maxConditions.getDocument()).setDocumentFilter(new DocumentFilter(){
+            Pattern regEx = Pattern.compile("\\d*");
+
+            @Override
+            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
+                Matcher matcher = regEx.matcher(text);
+                if(!matcher.matches()){
+                    return;
+                }
+                super.replace(fb, offset, length, text, attrs);
+            }
+        });
 
         JLabel travelersLabel = new JLabel("Travelers (%)");
         travelersLabel.setForeground(CustomColor.LIGHT_GRAY);
@@ -1230,6 +1468,9 @@ public class SettingFrame extends JFrame implements ActionListener{
         rightPanel.add(antiBodyTimeA, gbc);
 
         mainPanel.add(rightPanel, gbcMain);
+
+        checkDiseaseFields();
+        addKeyBindings();
     }
 
     /**
@@ -1246,71 +1487,31 @@ public class SettingFrame extends JFrame implements ActionListener{
         continueSim.setFont(continueSim.getFont ().deriveFont (16.0f));
         continueSim.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        continueSim.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                try
-                {
-                    if(getTravelers().getText().equals("") || getTimeUntilQuarantine().getText().equals("") || getPercentQuarantine().getText().equals("") || getAsymptomaticChance().getText().equals("")
-                            || getSocialDistanceValue().getText().equals("") || getPercentSocialDist().getText().equals("") || getMinAge().getText().equals("") || getMaxAge().getText().equals("")
-                            || getMinConditions().getText().equals("") || getMaxConditions().getText().equals("") || getReinfectRate().getText().equals("") || getAntiBodyTime().getText().equals(""))
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
-                    }
-                    else if(Double.parseDouble(getTravelers().getText()) < 0 || Double.parseDouble(getTimeUntilQuarantine().getText()) < 0
-                            || Double.parseDouble(getPercentQuarantine().getText()) < 0 || Double.parseDouble(getAsymptomaticChance().getText()) < 0
-                            || Double.parseDouble(getSocialDistanceValue().getText()) < 0 || Double.parseDouble(getPercentSocialDist().getText()) < 0 || Double.parseDouble(getMinAge().getText()) < 0
-                            || Double.parseDouble(getMaxAge().getText()) < 0 || Integer.parseInt(getMinConditions().getText()) < 0 || Integer.parseInt(getMaxConditions().getText()) < 0 || Double.parseDouble(getReinfectRate().getText()) < 0 || Double.parseDouble(getAntiBodyTime().getText()) < 0)
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are greater than or equal to 0!");
-                    }
-                    else if(Double.parseDouble(getMinAge().getText()) > Double.parseDouble(getMaxAge().getText()) || Integer.parseInt(getMinConditions().getText()) > Integer.parseInt(getMaxConditions().getText()))
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
-                    }
-                    else if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
-                            || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
-                            || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom Disease before starting!");
-                    }
-                    else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
-                    }
-                    else if(Double.parseDouble(contagiousPercent.getText()) < 0 || Double.parseDouble(baseMortalityRate.getText()) < 0
-                            || Double.parseDouble(baseMinTimeSick.getText()) < 0 || Double.parseDouble(baseMaxTimeSick.getText()) < 0
-                            || Double.parseDouble(startPercentHealthy.getText()) < 0)
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Each parameter must be greater than or equal to 0");
-                    }
-                    else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
-                    }
-                    else if(controlPanel.isPlaying())
-                    {
-                        JOptionPane.showMessageDialog(new JFrame(), "Reset simulation to enable changes to settings.");
-                        controlPanel.resumeSim();
-                        setVisible(false);
-                    }
-                    else setVisible(false);
-                }
-                catch (java.lang.NumberFormatException ex)
-                {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly and Condition counts are integers!");
-                }
-            }
-        });
+        continueSim.addActionListener(e -> closeSettings());
 
         bottomPanel.add(continueSim);
 
         mainPanel.add(bottomPanel, gbcMain);
     }
 
+    private void addKeyBindings()
+    {
+        InputMap inputMap = ((JPanel)this.getContentPane()).getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = ((JPanel)this.getContentPane()).getActionMap();
+
+        Action closeSettings = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                closeSettings();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("S"), "Close Settings");
+        inputMap.put(KeyStroke.getKeyStroke("ENTER"), "Close Settings");
+        actionMap.put("Close Settings", closeSettings);
+    }
+
     /**Checks if the setting frame is being used and updates the board type and parameters that are selected each tick
-     *
+     * and sets the text for the disease parameter panel based on the disease parameters
      * @param e event each tick
      */
     @Override
@@ -1321,6 +1522,61 @@ public class SettingFrame extends JFrame implements ActionListener{
             selectBoard();
             selectParams();
         }
+        checkDiseaseFields();
+    }
+
+    /**
+     * Helper Method for filling in the text fields when a user changes the selected disease
+     */
+    private void checkDiseaseFields()
+    {
+        if(custom.isSelected() && diseaseSel != 5)
+        {
+            contagiousPercent.setText("");
+            contagiousRange.setText("");
+            baseMortalityRate.setText("");
+            baseMinTimeSick.setText("");
+            baseMaxTimeSick.setText("");
+            startPercentHealthy.setText("");
+            diseaseSel = 5;
+        }
+        if(choice1.isSelected() && diseaseSel != 1)
+        {
+            disease = new Disease1();
+            setDiseaseParameters();
+            diseaseSel = 1;
+        }
+        if(choice2.isSelected() && diseaseSel != 2)
+        {
+            disease = new Disease2();
+            setDiseaseParameters();
+            diseaseSel = 2;
+        }
+        if(choice3.isSelected() && diseaseSel != 3)
+        {
+            disease = new Disease3();
+            setDiseaseParameters();
+            diseaseSel = 3;
+        }
+        if(choice4.isSelected() && diseaseSel != 4)
+        {
+            disease = new Disease4();
+            setDiseaseParameters();
+            diseaseSel = 4;
+        }
+    }
+
+    /**
+     * Helper Method for Disease Parameters in the Settings window
+     */
+    private void setDiseaseParameters()
+    {
+        contagiousPercent.setText(disease.getContagiousPercent() + "");
+        contagiousRange.setText(disease.getContagiousRange() + "");
+        baseMortalityRate.setText(disease.getBaseMortalityRate() + "");
+        baseMinTimeSick.setText("" + Math.round(disease.getBaseMinTimeSick()/100.0));
+        baseMaxTimeSick.setText("" + Math.round(disease.getBaseMaxTimeSick()/100.0));
+        startPercentHealthy.setText(disease.getStartPercentHealthy() + "");
     }
 
     /**
@@ -1358,6 +1614,51 @@ public class SettingFrame extends JFrame implements ActionListener{
         maxPreExistingConditionsNum = Integer.parseInt(maxConditions.getText());
         reinfectRateNum = Double.parseDouble(reinfectRate.getText()) / 100;
         antiBodyTimeNum = Double.parseDouble(antiBodyTime.getText()) * 100;
+    }
+
+    /**
+     * Closes the Settings window
+     */
+    public void closeSettings()
+    {
+        try
+        {
+            if(getTravelers().getText().equals("") || getTimeUntilQuarantine().getText().equals("") || getPercentQuarantine().getText().equals("") || getAsymptomaticChance().getText().equals("")
+                    || getSocialDistanceValue().getText().equals("") || getPercentSocialDist().getText().equals("") || getMinAge().getText().equals("") || getMaxAge().getText().equals("")
+                    || getMinConditions().getText().equals("") || getMaxConditions().getText().equals("") || getReinfectRate().getText().equals("") || getAntiBodyTime().getText().equals(""))
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters in settings before starting!");
+            }
+            else if(Double.parseDouble(getMinAge().getText()) > Double.parseDouble(getMaxAge().getText()) || Integer.parseInt(getMinConditions().getText()) > Integer.parseInt(getMaxConditions().getText()))
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Age is less than or equal to Max Age and Min Conditions is less than or equal to Max Conditions!");
+            }
+            else if(contagiousPercent.getText().equals("") || contagiousRange.getText().equals("")
+                    || baseMortalityRate.getText().equals("") || baseMinTimeSick.getText().equals("")
+                    || baseMaxTimeSick.getText().equals("") || startPercentHealthy.getText().equals(""))
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "Please fill in all parameters for Custom Disease before starting!");
+            }
+            else if(Double.parseDouble(contagiousRange.getText()) > 20 || Double.parseDouble(contagiousRange.getText()) < 1)
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "The contagious range must be between 1 - 20");
+            }
+            else if(Double.parseDouble(baseMinTimeSick.getText()) > Double.parseDouble(baseMaxTimeSick.getText()))
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "Please make sure Min Time Sick is less than or equal to Max Time Sick!");
+            }
+            else if(controlPanel.isPlaying())
+            {
+                JOptionPane.showMessageDialog(new JFrame(), "Reset simulation to enable changes to settings.");
+                controlPanel.resumeSim();
+                setVisible(false);
+            }
+            else setVisible(false);
+        }
+        catch (java.lang.NumberFormatException ex)
+        {
+            JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly and Condition counts are integers!");
+        }
     }
 
     /** Getter and Setter methods*/
@@ -1465,22 +1766,6 @@ public class SettingFrame extends JFrame implements ActionListener{
     public JTextField getAntiBodyTime()
     {
         return antiBodyTime;
-    }
-
-    public JRadioButton getChoice1() {
-        return choice1;
-    }
-    public JRadioButton getChoice2() {
-        return choice2;
-    }
-    public JRadioButton getChoice3() {
-        return choice3;
-    }
-    public JRadioButton getChoice4() {
-        return choice4;
-    }
-    public JRadioButton getCustom() {
-        return custom;
     }
     public JTextField getBaseMaxTimeSick() {
         return baseMaxTimeSick;

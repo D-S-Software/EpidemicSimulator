@@ -65,6 +65,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         toggle.setBackground(CustomColor.BUTTON);
         toggle.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         toggle.setToolTipText("Switch to Population Breakdown");
+        toggle.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
         toggle.setVisible(false);
 
         toggle.addActionListener(e -> {
@@ -93,32 +94,9 @@ public class TallyPanel extends JPanel implements ActionListener {
         switchGraph.setForeground(CustomColor.ON_BUTTON_LABEL);
         switchGraph.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
         switchGraph.setToolTipText("Switch to Line Graph");
+        switchGraph.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
 
-        switchGraph.addActionListener(e -> {
-
-            if(gui.getPieChartPanel().isVisible())
-            {
-                switchGraph.setToolTipText("Switch to Pie chart");
-                gui.getPieChartPanel().setVisible(false);
-                if(showCases)
-                {
-                    gui.getXYChartPanel2().setVisible(true);
-                    gui.getXYChartPanel().setVisible(false);
-                }
-                else
-                {
-                    gui.getXYChartPanel().setVisible(true);
-                    gui.getXYChartPanel2().setVisible(false);
-                }
-            }
-            else
-            {
-                switchGraph.setToolTipText("Switch to Line Graph");
-                gui.getPieChartPanel().setVisible(true);
-                gui.getXYChartPanel2().setVisible(false);
-                gui.getXYChartPanel().setVisible(false);
-            }
-        });
+        switchGraph.addActionListener(e -> switchGraphButton());
 
         JLabel filler = new JLabel();
 
@@ -131,6 +109,35 @@ public class TallyPanel extends JPanel implements ActionListener {
         add(rNotLabel);
         add(speedLabel);
         add(switchGraph);
+    }
+
+    /**
+     * Switches the graph between the line and pie charts
+     */
+    public void switchGraphButton()
+    {
+        if(gui.getPieChartPanel().isVisible())
+        {
+            switchGraph.setToolTipText("Switch to Pie chart");
+            gui.getPieChartPanel().setVisible(false);
+            if(showCases)
+            {
+                gui.getXYChartPanel2().setVisible(true);
+                gui.getXYChartPanel().setVisible(false);
+            }
+            else
+            {
+                gui.getXYChartPanel().setVisible(true);
+                gui.getXYChartPanel2().setVisible(false);
+            }
+        }
+        else
+        {
+            switchGraph.setToolTipText("Switch to Line Graph");
+            gui.getPieChartPanel().setVisible(true);
+            gui.getXYChartPanel2().setVisible(false);
+            gui.getXYChartPanel().setVisible(false);
+        }
     }
 
     /**

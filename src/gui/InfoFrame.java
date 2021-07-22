@@ -38,6 +38,7 @@ public class InfoFrame extends JFrame {
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception e) {
+            //Welp :P
         }
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -111,6 +112,7 @@ public class InfoFrame extends JFrame {
         setLocationByPlatform(true);
         setVisible(true);
         setLocationRelativeTo(null);
+        addKeyBindings();
     }
 
     /**
@@ -141,17 +143,13 @@ public class InfoFrame extends JFrame {
         middlePane.setEditorKit(JEditorPane.createEditorKitForContentType("text/html"));
         middlePane.setEditable(false);
 
-        middlePane.addHyperlinkListener(new HyperlinkListener() {
-            public void hyperlinkUpdate(HyperlinkEvent e) {
-                if(e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
-                    if(Desktop.isDesktopSupported()) {
-                        try {
-                            Desktop.getDesktop().browse(e.getURL().toURI());
-                        } catch (IOException ioException) {
-                            ioException.printStackTrace();
-                        } catch (URISyntaxException uriSyntaxException) {
-                            uriSyntaxException.printStackTrace();
-                        }
+        middlePane.addHyperlinkListener(e -> {
+            if(e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+                if(Desktop.isDesktopSupported()) {
+                    try {
+                        Desktop.getDesktop().browse(e.getURL().toURI());
+                    } catch (IOException | URISyntaxException ioException) {
+                        ioException.printStackTrace();
                     }
                 }
             }
@@ -183,18 +181,32 @@ public class InfoFrame extends JFrame {
         continueSim.setFont(continueSim.getFont ().deriveFont (16.0f));
         continueSim.setForeground(CustomColor.ON_BUTTON_LABEL);
 
-        continueSim.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                setVisible(false);
-                if(controlPanel.isPlaying())
-                    controlPanel.resumeSim();
-            }
-        });
+        continueSim.addActionListener(e -> closeInfo());
 
         bottomPanel.add(continueSim);
 
         mainPanel.add(bottomPanel, gbc);
+    }
+
+    private void addKeyBindings()
+    {
+        InputMap inputMap = ((JPanel)this.getContentPane()).getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = ((JPanel)this.getContentPane()).getActionMap();
+
+        Action closeInfo = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                closeInfo();
+            }
+        };
+        inputMap.put(KeyStroke.getKeyStroke("I"), "Close Info");
+        actionMap.put("Close Info", closeInfo);
+    }
+
+    private void closeInfo()
+    {
+        setVisible(false);
+        if(controlPanel.isPlaying())
+            controlPanel.resumeSim();
     }
 }
