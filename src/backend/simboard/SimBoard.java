@@ -293,17 +293,18 @@ public abstract class SimBoard {
             boolean isHealthy = (pListQN.get(i).getIsHealthy() && !pListQN.get(i).getHasDisease());
             pListQN.get(i).checkCondition();
             if(!pListQN.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
-                pList.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
-            if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
-            {
-                pListQN.remove(pListQN.get(i));
-                setNumPeople(numPeople -1);
-            }
+                if(!pList.get(pListQN.get(i).getClosestSickIndex()).isHasRecoveredOnce()) //Checks if the person who spread the disease has not already recovered once
+                    pList.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             if(Math.random() > congestionValue) //Change at any given tick a person goes to the center
                 pListQN.get(i).setTarget((pListQN.get(i).getDimens().x) + (pListQN.get(i).getDimens().width/2), (pListQN.get(i).getDimens().y) + (pListQN.get(i).getDimens().height/2));
             else if(congestionValue == 1) // If toggleCenters is turned off then all people lose their target
                 pListQN.get(i).removeTarget();
             pListQN.get(i).move();
+            if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
+            {
+                pListQN.remove(pListQN.get(i));
+                setNumPeople(numPeople -1);
+            }
         }
     }
 
@@ -314,7 +315,7 @@ public abstract class SimBoard {
     {
         rNot = new ArrayList<>();
         for (Person person : pList)
-            if (person.hasStartedSick() && !person.isHasRecoveredOnce()) {
+            if (person.hasStartedSick()) {
                 rNot.add(person.getOthersInfected());
             }
     }

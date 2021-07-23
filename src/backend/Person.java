@@ -196,7 +196,6 @@ public class Person {
                 isHealthy = false;
                 isoRecovered = false;
                 timeSinceSick = 0;
-                othersInfected = 0;
                 hasRecoveredOnce = true;
             }
         }
