@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Statistics implements ActionListener {
 
     private int time, numHealthy, numSick, numRecovered, numDead, numPeople, numCases, count = 99;
-    private double averageRValue;
+    private double averageRoValue, rValue;
     private static CreateFile x;
     private ArrayList<Integer> timeList = new ArrayList<>();
     private ArrayList<Integer> healthyList = new ArrayList<>();
@@ -36,7 +36,7 @@ public class Statistics implements ActionListener {
 
         if(numStatFile == 1) //Deletes the previous data from last application launch
         {
-            x.deleteDirectory(new File(resultsFolder));
+            CreateFile.deleteDirectory(new File(resultsFolder));
             new File("SimulationData").mkdirs();
         }
 
@@ -61,6 +61,7 @@ public class Statistics implements ActionListener {
         int healthyCount = 0;
         int sickCount = 0;
         int recoveredCount = 0;
+        int recoveredSusceptible = 0;
 
         for(int i = 1; i < simBoard.getListPList().size(); i++)
         {
@@ -72,6 +73,10 @@ public class Statistics implements ActionListener {
                     sickCount++;
                 if(!simBoard.getListPList().get(i).get(j).getHasDisease() && simBoard.getListPList().get(i).get(j).getIsHealthy())
                     healthyCount++;
+                if(simBoard.getListPList().get(i).get(j).getHasDisease() && simBoard.getListPList().get(i).get(j).getIsHealthy() &&
+                        simBoard.getListPList().get(i).get(j).getCanReinfect() && simBoard.getListPList().get(i).get(j).getTimeSinceRecovered() > simBoard.getAntibodyTime()) {
+                    recoveredSusceptible++;
+                }
             }
         }
 
@@ -82,15 +87,13 @@ public class Statistics implements ActionListener {
         numDead = numPeople - numHealthy - numSick - numRecovered;
         numCases = numSick + numRecovered + numDead;
 
-        if(numCases > 0)
+        int infectedSum = 0;
+        for(int i = 0; i < simBoard.getRNot().size(); i++)
         {
-            int infectedSum = 0;
-            for(int i = 0; i < simBoard.getRNot().size(); i++)
-            {
-                infectedSum += simBoard.getRNot().get(i);
-            }
-            averageRValue = (double)infectedSum / numCases;
+            infectedSum += simBoard.getRNot().get(i);
         }
+        averageRoValue = (double)infectedSum / simBoard.getRNot().size();
+        rValue = averageRoValue * ((numHealthy+recoveredSusceptible)/(double)numPeople);
 
         if(numSick > 0)
             printStats();
@@ -101,10 +104,11 @@ public class Statistics implements ActionListener {
         x.addStat(time);
         x.addStat(numCases);
         x.addStat(numHealthy);
+        x.addStat(numSick);
         x.addStat(numRecovered);
         x.addStat(numDead);
-        x.addStat(numSick);
-        x.addStat(averageRValue);
+        x.addStat(averageRoValue);
+        x.addStat(rValue);
         x.addSpace();
     }
 
@@ -170,10 +174,11 @@ public class Statistics implements ActionListener {
     {
         return time;
     }
-    public double getAverageRValue()
+    public double getAverageRoValue()
     {
-        return averageRValue;
+        return averageRoValue;
     }
+    public double getrValue(){ return rValue; }
 
     public ArrayList<Integer> getTimeList() {
         return timeList;

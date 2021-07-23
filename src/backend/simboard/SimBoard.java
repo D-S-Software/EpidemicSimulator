@@ -10,7 +10,7 @@ public abstract class SimBoard {
 
     private Rectangle dimens, q1Dimens, q2Dimens, q3Dimens, q4Dimens, q5Dimens, q6Dimens, q7Dimens, q8Dimens, travelDimens;
     private ArrayList<Rectangle> dimensList;
-    private ArrayList<Integer> rNot, rNotDead;
+    private ArrayList<Integer> rNot;
 
     private ArrayList<Person> pList, pListQ1, pListQ2, pListQ3, pListQ4, pListQ5, pListQ6, pListQ7, pListQ8, pListTravel;
     private ArrayList<ArrayList<Person>> listPList; //may contain anywhere from just pList to all of the pLists depending on mono, quad or octo
@@ -64,7 +64,6 @@ public abstract class SimBoard {
         travelDimens = new Rectangle();
 
         rNot = new ArrayList<>();
-        rNotDead = new ArrayList<>();
         dimensList = new ArrayList<>();
         constructDimensList();
         updateDimensList(dimens);
@@ -100,6 +99,7 @@ public abstract class SimBoard {
             {
                 listPList.get(1).get(1).setHasDisease();
                 listPList.get(1).get(1).setIsSick();
+                listPList.get(1).get(1).setStartedSick(true);
             }
         }
     }
@@ -290,13 +290,12 @@ public abstract class SimBoard {
     {
         for(int i = 0; i < pListQN.size(); i++)
         {
-            boolean isHealthy = pListQN.get(i).getIsHealthy();
+            boolean isHealthy = (pListQN.get(i).getIsHealthy() && !pListQN.get(i).getHasDisease());
             pListQN.get(i).checkCondition();
             if(!pListQN.get(i).getIsHealthy() && isHealthy) //Checks if a person becomes sick
                 pList.get(pListQN.get(i).getClosestSickIndex()).addOthersInfected(); //Counts how many person someone infects
             if(!pListQN.get(i).getHasDisease() && !pListQN.get(i).getIsHealthy())
             {
-                rNotDead.add(pList.get(i).getOthersInfected());
                 pListQN.remove(pListQN.get(i));
                 setNumPeople(numPeople -1);
             }
@@ -315,10 +314,9 @@ public abstract class SimBoard {
     {
         rNot = new ArrayList<>();
         for (Person person : pList)
-            if (person.getHasDisease()) {
+            if (person.hasStartedSick() && !person.isHasRecoveredOnce()) {
                 rNot.add(person.getOthersInfected());
             }
-        rNot.addAll(rNotDead);
     }
 
     /** Draws each person on the simboard
@@ -574,4 +572,6 @@ public abstract class SimBoard {
     public void setDisease(Disease disease) {
         this.disease = disease;
     }
+
+    public double getAntibodyTime(){ return antiBodyTime; }
 }

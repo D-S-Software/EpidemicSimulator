@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 public class TallyPanel extends JPanel implements ActionListener {
 
     GUI gui;
-    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, rNotLabel, speedLabel;
+    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, rNotLabel, rLabel, speedLabel;
     JButton switchGraph, toggle;
     boolean showCases;
 
@@ -53,6 +53,11 @@ public class TallyPanel extends JPanel implements ActionListener {
         rNotLabel.setFont(rNotLabel.getFont ().deriveFont (15.0f));
         rNotLabel.setForeground(CustomColor.SILVER);
         rNotLabel.setPreferredSize(new Dimension(20, 10));
+
+        rLabel = new JLabel("R Value: ");
+        rLabel.setFont(rLabel.getFont ().deriveFont (15.0f));
+        rLabel.setForeground(CustomColor.SILVER);
+        rLabel.setPreferredSize(new Dimension(20, 10));
 
         speedLabel = new JLabel("Speed: ");
         speedLabel.setFont(speedLabel.getFont ().deriveFont (15.0f));
@@ -98,16 +103,14 @@ public class TallyPanel extends JPanel implements ActionListener {
 
         switchGraph.addActionListener(e -> switchGraphButton());
 
-        JLabel filler = new JLabel();
-
         add(numHealthyLabel);
         add(numRecoveredLabel);
-        add(filler);
+        add(speedLabel);
         add(numSickLabel);
         add(numDeadLabel);
         add(toggle);
         add(rNotLabel);
-        add(speedLabel);
+        add(rLabel);
         add(switchGraph);
     }
 
@@ -173,7 +176,8 @@ public class TallyPanel extends JPanel implements ActionListener {
         DecimalFormat df2 = new DecimalFormat("##.###");
         df2.setRoundingMode(RoundingMode.CEILING);
 
-        rNotLabel.setText("Ro Value: " + df2.format(gui.getStats().getAverageRValue()) + "    ");
+        rNotLabel.setText("Ro Value: " + df2.format(gui.getStats().getAverageRoValue()) + "    ");
+        rLabel.setText("R Value: " + df2.format(gui.getStats().getrValue()) + "    ");
 
         toggle.setVisible(gui.getXYChartPanel().isVisible() || gui.getXYChartPanel2().isVisible());
     }

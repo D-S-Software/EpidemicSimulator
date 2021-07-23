@@ -7,10 +7,10 @@ import java.awt.*;
 
 public class Person {
 
-    private boolean hasDisease, isHealthy;
+    private boolean hasDisease, isHealthy, startedSick = false;
     private int timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex, xTarget, yTarget, timeSinceDirChange;
     private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime, step = 2, xPos, yPos, dx, dy;
-    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, rAccounted = false, canReInfect, willQuarantine, hasTarget = false;
+    private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, canReInfect, willQuarantine, hasTarget = false, hasRecoveredOnce = false;
     private Rectangle dimens;
     private Disease disease;
     private final int circleRad = 5;
@@ -52,6 +52,8 @@ public class Person {
         directionAngle = (int)(2*Math.PI*Math.random());
 
         hasDisease = Math.random() > disease.getStartPercentHealthy()/100.0;
+        if(hasDisease)
+            startedSick = true;
 
         // If this person is starting with the disease, then they also start as sick
         isHealthy = !hasDisease;
@@ -195,6 +197,7 @@ public class Person {
                 isoRecovered = false;
                 timeSinceSick = 0;
                 othersInfected = 0;
+                hasRecoveredOnce = true;
             }
         }
     }
@@ -332,6 +335,31 @@ public class Person {
     {
         directionAngle = angle;
         timeSinceDirChange = 0;
+    }
+
+    public boolean hasStartedSick()
+    {
+        return startedSick;
+    }
+
+    public void setStartedSick(boolean bool)
+    {
+        startedSick = bool;
+    }
+
+    public boolean getCanReinfect()
+    {
+        return canReInfect;
+    }
+
+    public int getTimeSinceRecovered()
+    {
+        return timeSinceRecovered;
+    }
+
+    public boolean isHasRecoveredOnce()
+    {
+        return hasRecoveredOnce;
     }
 
     public void setDimens(Rectangle dimens) {

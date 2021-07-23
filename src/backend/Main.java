@@ -6,7 +6,7 @@ public class Main {
 
     GUI gui;
 
-    /**Creates the simulation gui object when the program is launched
+    /**Creates the simulation object when the program is launched
      */
     public Main()
     {
