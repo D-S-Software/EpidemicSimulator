@@ -10,11 +10,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-import static java.awt.Font.BOLD;
-
 public class GUI {
 
-    private JPanel topPanel, leftPanel, rightPanel;
+    private JPanel topPanel, leftPanel, rightPanel, titleTextPanel;
     private TitlePanel titlePanel;
     private SimBoardPanel simBoardPanel;
     private ControlPanel controlPanel;
@@ -28,7 +26,7 @@ public class GUI {
     private PieChartPanel pieChartPanel;
 
     private GUI gui = this;
-    private JFrame frame;
+    private JFrame frame, titleFrame;
     private Statistics stats;
     private boolean showPieFirst = true, showCasesFirst = true;
 
@@ -89,12 +87,70 @@ public class GUI {
         frame.setLocationByPlatform(true);
         frame.setLocation(0,0);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        frame.setVisible(true);
+        frame.setVisible(false);
 
         tallyPanel.setShowCases(showCasesFirst);
 
         frame.setFocusTraversalKeysEnabled(false);
         addKeyBindings();
+
+        titleFrame = new JFrame();
+        titleFrame.setIconImage(image1);
+        titleFrame.getContentPane().setBackground(CustomColor.BACKGROUND);
+
+       addTitleScreenPanel();
+
+        titleFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        titleFrame.pack();
+        titleFrame.setLocationByPlatform(true);
+        titleFrame.setLocation(0,0);
+        titleFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        titleFrame.setVisible(true);
+    }
+
+    /**
+     * Creates the Title Screen
+     */
+    private void addTitleScreenPanel()
+    {
+        titleTextPanel = new JPanel();
+        titleTextPanel.setBackground(CustomColor.BACKGROUND);
+        titleTextPanel.setLayout(new BoxLayout(titleTextPanel, BoxLayout.Y_AXIS));
+        titleTextPanel.add(Box.createRigidArea(new Dimension(0, (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4)));
+
+        JLabel titleText = new JLabel();
+        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/TitleText.png"));
+        Image image1 = pic1.getImage();
+        ImageIcon edit1 = new ImageIcon(image1);
+        titleText.setIcon(edit1);
+
+        titleTextPanel.add(titleText);
+        titleText.setAlignmentX(Component.CENTER_ALIGNMENT);
+        titleTextPanel.add(Box.createVerticalStrut((int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4));
+
+        JButton begin = new JButton();
+        begin.setBackground(new Color(35,35,35));
+        ImageIcon pic2 = new ImageIcon(ClassLoader.getSystemResource("res/StartPic.png"));
+        Image image2 = pic2.getImage();
+        ImageIcon edit2 = new ImageIcon(image2);
+        begin.setIcon(edit2);
+        begin.addActionListener(e -> showSimulation());
+        titleTextPanel.add(begin);
+        begin.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+        titleFrame.getContentPane().add(titleTextPanel);
+
+        titleFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        titleFrame.setUndecorated(true);
+    }
+
+    /**
+     * Helper method for addTitleScreenPanel (action listener)
+     */
+    private void showSimulation()
+    {
+        frame.setVisible(true);
+        titleFrame.setVisible(false);
     }
 
     /**
@@ -113,10 +169,13 @@ public class GUI {
         gbc.insets = new Insets(5, 5, 5, 5);
         titlePanel = new TitlePanel();
         titlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        JLabel titleFont = new JLabel("Epidemic Simulator");
-        //titleFont.setFont(titleFont.getFont ().deriveFont (32.0f));
-        titleFont.setFont(new Font("Helvetica",BOLD, 36));
-        titleFont.setForeground(CustomColor.SILVER);
+        JLabel titleFont = new JLabel();
+        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/SimTitle.png"));
+        Image image1 = pic1.getImage();
+        ImageIcon edit1 = new ImageIcon(image1);
+        titleFont.setIcon(edit1);
+
+
         titlePanel.add(titleFont);
         titlePanel.setBackground(CustomColor.BLOOD_RED);
         topPanel.add(titlePanel, gbc);

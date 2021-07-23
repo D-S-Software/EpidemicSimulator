@@ -377,7 +377,7 @@ public class ControlPanel extends JPanel implements ActionListener {
             toggleMove.setBackground(CustomColor.BUTTON);
         });
 
-        numSimulationLabel = new JLabel("Simulation:   ");
+        numSimulationLabel = new JLabel("   Simulation:   ");
         numSimulationLabel.setFont(numSimulationLabel.getFont ().deriveFont (16.0f));
         numSimulationLabel.setForeground(CustomColor.SILVER);
 
@@ -452,7 +452,7 @@ public class ControlPanel extends JPanel implements ActionListener {
                     if(disease != null && goodToStart)
                     {
                         numStatsFile++; //Used to make an additional results file in Stats class
-                        numSimulationLabel.setText("Simulation: " + numStatsFile);
+                        numSimulationLabel.setText("   Simulation: " + numStatsFile);
                         simEngine = new Engine(gui, disease, numPeople, boardType, quarBoard, asymptomaticChance, socialDistanceValue, socialDistanceChance, minAge, maxAge, minPreExistingConditions, maxPreExistingConditions, travelersPer, timeUntilQuarantine, quarantineChance, reinfectRate, antiBodyTime);
                         simEngine.getClock().start();
                         speedUp.setVisible(true);
