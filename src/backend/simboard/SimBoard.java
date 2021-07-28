@@ -272,7 +272,8 @@ public abstract class SimBoard {
     }
 
     /**
-     * Updates the ArrayList of people and checks for sickness and removed them when dead
+     * Updates the ArrayList of people and checks for sickness and removed them when dead. Also controls the
+     * moving to centers feature and determines who is the closest sick person to each person (needed for rNot calculation)
      */
     public void updateListPList()
     {
@@ -309,7 +310,7 @@ public abstract class SimBoard {
     }
 
     /**
-     * Calculates the total number of people each person infects when sick or recovered
+     * Calculates the total number of people each person (who was an original case) infects when sick
      */
     private void updateRNot()
     {
