@@ -179,16 +179,16 @@ public class Formatter {
      * Formats a JTextField and only allows digits to be entered into the field
      * @param textField text field object to be formatted
      * @param backgroundColor background color
-     * @param forgroundColor color of text
+     * @param foregroundColor color of text
      * @param borderColor color of the border (if applicable)
      * @param fontSize size of the font
      * @param size minimum size of the text field (if applicable)
      * @param text text to be displayed in the field (if applicable)
      */
-    public void formatTextField(JTextField textField, Color backgroundColor, Color forgroundColor, Color borderColor, float fontSize, Dimension size, String text)
+    public void formatTextField(JTextField textField, Color backgroundColor, Color foregroundColor, Color borderColor, float fontSize, Dimension size, String text)
     {
         textField.setBackground(backgroundColor);
-        textField.setForeground(forgroundColor);
+        textField.setForeground(foregroundColor);
         if(borderColor != null)
             textField.setBorder(BorderFactory.createLineBorder(borderColor));
         textField.setFont(textField.getFont().deriveFont(fontSize));
