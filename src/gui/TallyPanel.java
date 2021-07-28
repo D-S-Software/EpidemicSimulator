@@ -14,63 +14,43 @@ public class TallyPanel extends JPanel implements ActionListener {
     GUI gui;
     JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, rNotLabel, rLabel, speedLabel;
     JButton switchGraph, toggle;
+    Formatter formatter;
     boolean showCases;
 
     /**Creates a tally panel object to be displayed on the main gui
      *
      * @param gui The gui object that displays the tally panel
-     * @param gl The gridLayout being used in this panel
      */
-    public TallyPanel(GUI gui, GridLayout gl)
+    public TallyPanel(GUI gui)
     {
-        super(gl);
+        super();
         this.gui = gui;
-
-        setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        formatter = new Formatter();
+        formatter.formatPanel(this, CustomColor.SPACE_CADET_LIGHT, new Rectangle(8,8,8,8), new GridLayout(3,3));
 
         numHealthyLabel = new JLabel("Healthy: ");
-        numHealthyLabel.setFont(numHealthyLabel.getFont ().deriveFont (15.0f));
-        numHealthyLabel.setForeground(CustomColor.SILVER);
-        numHealthyLabel.setPreferredSize(new Dimension(20, 10));
-
+        formatter.formatLabel(numHealthyLabel, CustomColor.SILVER, 15.0f, new Dimension(20,10));
 
         numSickLabel = new JLabel("Sick: ");
-        numSickLabel.setFont(numSickLabel.getFont ().deriveFont (15.0f));
-        numSickLabel.setForeground(CustomColor.SILVER);
-        numSickLabel.setPreferredSize(new Dimension(20, 10));
+        formatter.formatLabel(numSickLabel, CustomColor.SILVER,15.0f,new Dimension(20,10));
 
         numRecoveredLabel = new JLabel("Recov.: ");
-        numRecoveredLabel.setFont(numRecoveredLabel.getFont ().deriveFont (15.0f));
-        numRecoveredLabel.setForeground(CustomColor.SILVER);
-        numRecoveredLabel.setPreferredSize(new Dimension(20, 10));
+        formatter.formatLabel(numRecoveredLabel,CustomColor.SILVER,15.0f,new Dimension(20,10));
 
         numDeadLabel = new JLabel("Dead: ");
-        numDeadLabel.setFont(numDeadLabel.getFont ().deriveFont (15.0f));
-        numDeadLabel.setForeground(CustomColor.SILVER);
-        numDeadLabel.setPreferredSize(new Dimension(20, 10));
+        formatter.formatLabel(numDeadLabel,CustomColor.SILVER,15.0f,new Dimension(20,10));
 
         rNotLabel = new JLabel("Ro Value: ");
-        rNotLabel.setFont(rNotLabel.getFont ().deriveFont (15.0f));
-        rNotLabel.setForeground(CustomColor.SILVER);
-        rNotLabel.setPreferredSize(new Dimension(20, 10));
+        formatter.formatLabel(rNotLabel, CustomColor.SILVER,15.0f,new Dimension(20,10));
 
         rLabel = new JLabel("R Value: ");
-        rLabel.setFont(rLabel.getFont ().deriveFont (15.0f));
-        rLabel.setForeground(CustomColor.SILVER);
-        rLabel.setPreferredSize(new Dimension(20, 10));
+        formatter.formatLabel(rLabel,CustomColor.SILVER,15.0f,new Dimension(20,10));
 
         speedLabel = new JLabel("Speed: ");
-        speedLabel.setFont(speedLabel.getFont ().deriveFont (15.0f));
-        speedLabel.setForeground(CustomColor.SILVER);
-        speedLabel.setPreferredSize(new Dimension(20, 10));
+        formatter.formatLabel(speedLabel,CustomColor.SILVER,15.0f,new Dimension(20,10));
 
         toggle = new JButton("Graph Mode");
-        toggle.setFont(toggle.getFont ().deriveFont (15.0f));
-        toggle.setForeground(CustomColor.ON_BUTTON_LABEL);
-        toggle.setBackground(CustomColor.BUTTON);
-        toggle.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        toggle.setToolTipText("Switch to Population Breakdown");
-        toggle.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
+        formatter.formatButton(toggle, CustomColor.BUTTON, CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,15.0f,"Switch to Population Breakdown");
         toggle.setVisible(false);
 
         toggle.addActionListener(e -> {
@@ -94,13 +74,7 @@ public class TallyPanel extends JPanel implements ActionListener {
         });
 
         switchGraph = new JButton("Switch Graph");
-        switchGraph.setFont(switchGraph.getFont ().deriveFont (15.0f));
-        switchGraph.setBackground(CustomColor.BUTTON);
-        switchGraph.setForeground(CustomColor.ON_BUTTON_LABEL);
-        switchGraph.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        switchGraph.setToolTipText("Switch to Line Graph");
-        switchGraph.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
+        formatter.formatButton(switchGraph, CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,15.0f,"Switch to Line Graph");
         switchGraph.addActionListener(e -> switchGraphButton());
 
         add(numHealthyLabel);

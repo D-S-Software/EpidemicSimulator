@@ -3,6 +3,8 @@ package gui.chart;
 import gui.GUI;
 import org.knowm.xchart.XChartPanel;
 import org.knowm.xchart.PieChart;
+
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -23,6 +25,7 @@ public class PieChartPanel extends XChartPanel implements ActionListener{
         super(pc);
         this.gui = gui;
         this.pc = pc;
+        setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
     }
 
     /**

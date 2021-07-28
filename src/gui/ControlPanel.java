@@ -6,25 +6,19 @@ import backend.disease.Disease;
 import lib.CustomColor;
 
 import javax.swing.*;
-import javax.swing.text.AbstractDocument;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DocumentFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class ControlPanel extends JPanel implements ActionListener {
 
-    private JPanel mainPanel = new JPanel(new GridBagLayout());
-    private JButton start, playPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp, toggleMove;
+    private JPanel mainPanel;
+    private JButton startPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp, toggleCenters;
     private JTextField numPeopleField;
-    private JLabel numPeopleLabel, numSimulationLabel;
+    private JLabel numPeopleLabel, numSimulationLabel, filler;
     private Disease disease;
     private Engine simEngine;
     private GUI gui;
@@ -34,6 +28,8 @@ public class ControlPanel extends JPanel implements ActionListener {
     private ArrayList<Music> musicSongs = new ArrayList<>();
     private InfoFrame infoFrame;
     private ControlPanel controlPanel = this;
+    private Formatter formatter;
+    GridBagConstraints gbc;
 
     private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, numStatsFile = 0, previousSong = 1;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
@@ -46,8 +42,12 @@ public class ControlPanel extends JPanel implements ActionListener {
     public ControlPanel(GUI gui)
     {
         this.gui = gui;
+        formatter = new Formatter();
+        gbc = new GridBagConstraints();
         settingFrame = new SettingFrame(this);
-        settingFrame.setVisible(false);
+
+        mainPanel = new JPanel(new GridBagLayout());
+        formatter.formatPanel(mainPanel, CustomColor.BACKGROUND, new Rectangle(8,8,8,8), null);
 
         addSimSettingPanel();
         addButtonPanel();
@@ -89,39 +89,16 @@ public class ControlPanel extends JPanel implements ActionListener {
      */
     private void addInfoPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 50;
-        gbc.weighty = 1;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel(new GridLayout(1, 2));
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED);
+        formatter.setGBC(gbc, 0,0,1,1,10,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2));
+        JPanel p = new JPanel();
+        formatter.formatPanel(p, CustomColor.BLOOD_RED, new Rectangle(8,8,8,8), new GridLayout(1,2));
 
-        ImageIcon picInfo = new ImageIcon(ClassLoader.getSystemResource("res/infoIcon.png"));
-        Image imageInfo = picInfo.getImage();
-        JButton info = new JButton((new ImageIcon(imageInfo.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
-        info.setBackground(CustomColor.BUTTON);
-        info.setFont(info.getFont ().deriveFont (18.0f));
-        info.setForeground(CustomColor.ON_BUTTON_LABEL);
-        info.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        info.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
+        JButton info = new JButton();
+        formatter.formatButton(info, CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"infoIcon.png", null);
         info.addActionListener(e -> infoButton());
 
-        toggleMusic = new JButton("<html>Toggle<br/>Music</html>");
-        toggleMusic.setBackground(CustomColor.BUTTON);
-        toggleMusic.setFont(toggleMusic.getFont ().deriveFont (18.0f));
-        toggleMusic.setForeground(CustomColor.ON_BUTTON_LABEL);
-        toggleMusic.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        toggleMusic.setToolTipText("Click to pause / Double click to change song");
-        toggleMusic.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
+        toggleMusic = new JButton();
+        formatter.formatButton(toggleMusic,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"musicIcon.png","Click to pause / Double click to change song");
         toggleMusic.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseClicked(MouseEvent e){
@@ -129,6 +106,8 @@ public class ControlPanel extends JPanel implements ActionListener {
                 {
                     backgroundMusic.stop();
                     changeSong();
+                    toggleMusic.setBackground(CustomColor.BUTTON);
+                    musicPlaying = true; //Makes sure that the first click does not stop the music
                     backgroundMusic.play();
                 }
                 if(e.getClickCount()==1)
@@ -159,116 +138,33 @@ public class ControlPanel extends JPanel implements ActionListener {
      */
     private void addSimSettingPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 1;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 50;
-        gbc.weighty = 1;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel(new GridLayout(1, 5));
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED);
+        formatter.setGBC(gbc,1,0,1,1,50,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2));
 
-        ImageIcon picSD = new ImageIcon(ClassLoader.getSystemResource("res/socialDistanceIcon.png"));
-        Image imageSD = picSD.getImage();
-        toggleSocDist = new JButton((new ImageIcon(imageSD.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
-        toggleSocDist.setBackground(CustomColor.BUTTON);
-        toggleSocDist.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        toggleSocDist.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
+        JPanel p = new JPanel();
+        formatter.formatPanel(p,CustomColor.BLOOD_RED,new Rectangle(8,8,8,8), new GridLayout(1,5));
 
-        toggleSocDist.addActionListener(e -> {
+        toggleSocDist = new JButton();
+        formatter.formatButton(toggleSocDist,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"socialDistanceIcon.png", null);
+        toggleSocDist.addActionListener(e -> socialDistButton());
 
-            if(isPlaying)
-            {
-                if(isSocialDist)
-                {
-                    gui.getSimBoardPanel().getSimBoard().toggleSocDist(false);
-                    toggleSocDist.setToolTipText("No one is social distancing");
-                    isSocialDist = false;
-                    toggleSocDist.setBackground(CustomColor.BUTTON);
-                }
-                else
-                {
-                    if(settingFrame.getSocialDistanceChanceNum() == 0.0)
-                    {
-                        gui.getSimBoardPanel().getSimBoard().everyoneSocialDistance();
-                        toggleSocDist.setToolTipText("Everyone is social distancing");
-                    }
-                    else
-                    {
-                        gui.getSimBoardPanel().getSimBoard().toggleSocDist(true);
-                        toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
-                    }
-                    isSocialDist = true;
-                    toggleSocDist.setBackground(CustomColor.ARTICHOKE_GREEN);
-                }
-            }
-        });
+        toggleCenters = new JButton();
+        formatter.formatButton(toggleCenters,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"centersIcon.png","Toggle travel to center");
+        toggleCenters.addActionListener(e -> toggleCentersButton());
 
-        toggleMove = new JButton("Toggle Centers");
-        toggleMove.setBackground(CustomColor.BUTTON);
-        toggleMove.setFont(toggleMove.getFont ().deriveFont (18.0f));
-        toggleMove.setForeground(CustomColor.ON_BUTTON_LABEL);
-        toggleMove.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        toggleMove.setToolTipText("Toggle travel to center");
-        toggleMove.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
-        toggleMove.addActionListener(e -> {
-
-            if(isPlaying)
-            {
-                if(toggleMoving)
-                {
-                    gui.getSimBoardPanel().getSimBoard().toggleMovingTarget(false);
-                    toggleMove.setToolTipText("Toggle travel to center");
-                    toggleMoving = false;
-                    toggleMove.setBackground(CustomColor.BUTTON);
-                }
-                else
-                {
-                    gui.getSimBoardPanel().getSimBoard().toggleMovingTarget(true);
-                    toggleMove.setToolTipText("Stop travel to center");
-                    toggleMoving = true;
-                    toggleMove.setBackground(CustomColor.ARTICHOKE_GREEN);
-                }
-            }
-        });
-
-        ImageIcon picSet = new ImageIcon(ClassLoader.getSystemResource("res/settingsicon.png"));
-        Image imageSet = picSet.getImage();
-        JButton settings = new JButton((new ImageIcon(imageSet.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
-        settings.setBackground(CustomColor.BUTTON);
-        settings.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        settings.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
+        JButton settings = new JButton();
+        formatter.formatButton(settings,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"settingsicon.png", null);
         settings.addActionListener(e -> settingButton());
 
-        ImageIcon picSU = new ImageIcon(ClassLoader.getSystemResource("res/speedUpIcon.png"));
-        Image imageSU = picSU.getImage();
-        speedUp = new JButton((new ImageIcon(imageSU.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
-        speedUp.setBackground(CustomColor.BUTTON);
-        speedUp.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        speedUp.setToolTipText("Increase Speed");
-        speedUp.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
+        speedUp = new JButton();
+        formatter.formatButton(speedUp,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"speedUpIcon.png","Increase Speed");
         speedUp.addActionListener(e -> speedUpButton());
 
-        ImageIcon picSlD = new ImageIcon(ClassLoader.getSystemResource("res/slowDownIcon.png"));
-        Image imageSlD = picSlD.getImage();
-        slowDown = new JButton((new ImageIcon(imageSlD.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
-        slowDown.setBackground(CustomColor.BUTTON);
-        slowDown.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        slowDown.setToolTipText("Slow Down");
-        slowDown.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
+        slowDown = new JButton();
+        formatter.formatButton(slowDown, CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"slowDownIcon.png","Slow Down");
         slowDown.addActionListener(e -> slowDownButton());
 
         p.add(toggleSocDist);
-        p.add(toggleMove);
+        p.add(toggleCenters);
         p.add(speedUp);
         p.add(slowDown);
         p.add(settings);
@@ -281,113 +177,37 @@ public class ControlPanel extends JPanel implements ActionListener {
      */
     private void addButtonPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 2;
-        gbc.gridheight = 1;
-        gbc.weightx = 50;
-        gbc.weighty = 1;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-        JPanel p = new JPanel(new GridLayout(1, 5));
+        formatter.setGBC(gbc,0,1,2,1,50,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2));
+        JPanel p = new JPanel();
+        formatter.formatPanel(p,CustomColor.BLOOD_RED,new Rectangle(8,8,8,8),new GridLayout(1,5));
 
         numPeopleLabel = new JLabel("<html>Number<br/>of People: </html>");
-        numPeopleLabel.setFont(numPeopleLabel.getFont().deriveFont(17.0f));
-        numPeopleLabel.setForeground(CustomColor.SILVER);
+        formatter.formatLabel(numPeopleLabel,CustomColor.SILVER,17.0f,null);
         p.add(numPeopleLabel);
 
         numPeopleField = new JTextField(1);
-        numPeopleField.setBackground(CustomColor.FIELD);
-        numPeopleField.setFont(numPeopleField.getFont ().deriveFont (20.0f));
-        numPeopleField.setForeground(CustomColor.SILVER);
-        numPeopleField.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-
-        //Only allows Numbers to be entered into text field
-        ((AbstractDocument)numPeopleField.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(numPeopleField,CustomColor.FIELD, CustomColor.SILVER,CustomColor.ON_BUTTON_LABEL, 20.0f, null,null);
         p.add(numPeopleField);
 
-        start = new JButton("Start");
-        start.setBackground(CustomColor.BUTTON);
-        start.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        start.setFont(start.getFont ().deriveFont (18.0f));
-        start.setForeground(CustomColor.ON_BUTTON_LABEL);
-        start.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
+        startPause = new JButton();
+        formatter.formatButton(startPause, CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"playIcon.png",null);
+        startPause.addActionListener(e -> startSim());
 
-        start.addActionListener(e -> startSim());
-
-        playPause = new JButton("Play/Pause");
-        playPause.setBackground(CustomColor.BUTTON);
-        playPause.setFont(playPause.getFont ().deriveFont (18.0f));
-        playPause.setForeground(CustomColor.ON_BUTTON_LABEL);
-        playPause.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        playPause.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
-        playPause.addActionListener(e -> playPauseButton());
-
-        ImageIcon picR = new ImageIcon(ClassLoader.getSystemResource("res/resetIcon.png"));
-        Image imageR = picR.getImage();
-        reset = new JButton((new ImageIcon(imageR.getScaledInstance(50,50, java.awt.Image.SCALE_SMOOTH))));
-        reset.setBackground(CustomColor.BUTTON);
-        reset.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        reset.getInputMap().put(KeyStroke.getKeyStroke("SPACE"), "none");
-
-        reset.addActionListener(e -> {
-
-            simEngine.getClock().stop();
-            isPlaying = false;
-
-            gui.getTallyPanel().setNumHealthyLabel("NumHealthy: ");
-            gui.getTallyPanel().setNumSickLabel("NumSick: ");
-            gui.getTallyPanel().setNumRecoveredLabel("NumRecovered: ");
-            gui.getTallyPanel().setNumDeadLabel("NumDead: ");
-
-            disease = null;
-            canStart = true;
-
-            gui.getSimBoardPanel().setReset(true);
-
-            gui.getSimBoardPanel().repaint();
-
-            gui.getXYChartPanel().resetXY();
-            gui.getXYChartPanel2().resetXY();
-            gui.getPieChartPanel().resetPie();
-
-            speedUp.setToolTipText("Increase Speed");
-            slowDown.setToolTipText("Slow Down");
-            toggleMove.setToolTipText("Toggle travel to center");
-
-            gui.getStats().getCreateFile().closeFile();
-
-            backgroundMusic.stop();
-            toggleSocDist.setBackground(CustomColor.BUTTON);
-            playPause.setBackground(CustomColor.BUTTON);
-            toggleMove.setBackground(CustomColor.BUTTON);
-        });
+        reset = new JButton();
+        formatter.formatButton(reset,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"resetIcon.png",null);
+        reset.addActionListener(e -> resetButton());
 
         numSimulationLabel = new JLabel("   Simulation:   ");
-        numSimulationLabel.setFont(numSimulationLabel.getFont ().deriveFont (16.0f));
-        numSimulationLabel.setForeground(CustomColor.SILVER);
+        formatter.formatLabel(numSimulationLabel,CustomColor.SILVER,16.0f,null);
 
-        p.add(start);
-        p.add(playPause);
+        filler = new JLabel();
+        formatter.formatLabel(filler,CustomColor.SILVER,16.0f,null);
+
+        p.add(startPause);
         p.add(reset);
+        p.add(filler);
         p.add(numSimulationLabel);
 
-        p.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        p.setBackground(CustomColor.BLOOD_RED);
         mainPanel.add(p, gbc);
     }
 
@@ -470,18 +290,25 @@ public class ControlPanel extends JPanel implements ActionListener {
                             backgroundMusic.play();
 
                         toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() * 100 + " % of people are set social distancing");
+                        formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"pauseIcon.png",null);
 
                         gui.getFrame().requestFocusInWindow();
                     }
                 }
                 catch (java.lang.NumberFormatException ex)
                 {
-                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are numbers and filled in correctly.");
+                    JOptionPane.showMessageDialog(new JFrame(), "Please make sure all parameters are filled in correctly.");
                 }
             }
         }
+        else
+            playPauseButton();
     }
 
+    /**
+     * Method checks if song is finished and plays another one
+     * @param e event tick
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -494,7 +321,7 @@ public class ControlPanel extends JPanel implements ActionListener {
     }
 
     /**
-     * Resumes a simulation after setting or info panel closes
+     * Helper method for resuming a simulation after setting or info panel closes
      */
     public void resumeSim()
     {
@@ -503,18 +330,85 @@ public class ControlPanel extends JPanel implements ActionListener {
             backgroundMusic.resume();
     }
 
+    /**
+     * Helper method for opening the info screen
+     */
     public void infoButton(){
         infoFrame = new InfoFrame(controlPanel);
         if(simEngine != null)
             simEngine.getClock().stop();
         backgroundMusic.pause();
     }
+
+    /**
+     * Helper method for toggling social distance feature
+     */
+    public void socialDistButton()
+    {
+        if(isPlaying)
+        {
+            if(isSocialDist)
+            {
+                gui.getSimBoardPanel().getSimBoard().toggleSocDist(false);
+                toggleSocDist.setToolTipText("No one is social distancing");
+                isSocialDist = false;
+                toggleSocDist.setBackground(CustomColor.BUTTON);
+            }
+            else
+            {
+                if(settingFrame.getSocialDistanceChanceNum() == 0.0)
+                {
+                    gui.getSimBoardPanel().getSimBoard().everyoneSocialDistance();
+                    toggleSocDist.setToolTipText("Everyone is social distancing");
+                }
+                else
+                {
+                    gui.getSimBoardPanel().getSimBoard().toggleSocDist(true);
+                    toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum()*100 + " % of people are set social distancing");
+                }
+                isSocialDist = true;
+                toggleSocDist.setBackground(CustomColor.ARTICHOKE_GREEN);
+            }
+        }
+    }
+
+    /**
+     * Helper method for toggling move to center feature
+     */
+    public void toggleCentersButton()
+    {
+        if(isPlaying)
+        {
+            if(toggleMoving)
+            {
+                gui.getSimBoardPanel().getSimBoard().toggleMovingTarget(false);
+                toggleCenters.setToolTipText("Toggle travel to center");
+                toggleMoving = false;
+                toggleCenters.setBackground(CustomColor.BUTTON);
+            }
+            else
+            {
+                gui.getSimBoardPanel().getSimBoard().toggleMovingTarget(true);
+                toggleCenters.setToolTipText("Stop travel to center");
+                toggleMoving = true;
+                toggleCenters.setBackground(CustomColor.ARTICHOKE_GREEN);
+            }
+        }
+    }
+
+    /**
+     * Helper method for opening the settings window
+     */
     public void settingButton(){
         settingFrame.setVisible(true);
         if(simEngine != null)
             simEngine.getClock().stop();
         backgroundMusic.pause();
     }
+
+    /**
+     * Helper method for speeding up the simulation
+     */
     public void speedUpButton(){
         if(isPlaying)
         {
@@ -529,6 +423,10 @@ public class ControlPanel extends JPanel implements ActionListener {
             }
         }
     }
+
+    /**
+     * Helper method for slowing down the simulation
+     */
     public void slowDownButton(){
         if(isPlaying)
         {
@@ -543,6 +441,10 @@ public class ControlPanel extends JPanel implements ActionListener {
             }
         }
     }
+
+    /**
+     * Helper method for starting the simulation / pausing it
+     */
     public void playPauseButton(){
         if(disease != null && !canStart)
         {
@@ -552,7 +454,7 @@ public class ControlPanel extends JPanel implements ActionListener {
                 isPlaying = false;
                 backgroundMusic.pause();
                 musicPlaying = false;
-                playPause.setBackground(CustomColor.DARK_RED);
+                formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"playIcon.png",null);
                 toPause = false;
             }
             else
@@ -561,12 +463,50 @@ public class ControlPanel extends JPanel implements ActionListener {
                 isPlaying = true;
                 backgroundMusic.resume();
                 musicPlaying = true;
-                playPause.setBackground(CustomColor.BUTTON);
+                formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"pauseIcon.png",null);
                 toPause = true;
             }
             gui.getTallyPanel().showGraphModeButton();
         }
     }
+
+    /**
+     * Helper method for resetting the simulation
+     */
+    public void resetButton()
+    {
+        simEngine.getClock().stop();
+        isPlaying = false;
+
+        gui.getTallyPanel().setNumHealthyLabel("NumHealthy: ");
+        gui.getTallyPanel().setNumSickLabel("NumSick: ");
+        gui.getTallyPanel().setNumRecoveredLabel("NumRecovered: ");
+        gui.getTallyPanel().setNumDeadLabel("NumDead: ");
+
+        disease = null;
+        canStart = true;
+
+        gui.getSimBoardPanel().setReset(true);
+
+        gui.getSimBoardPanel().repaint();
+
+        gui.getXYChartPanel().resetXY();
+        gui.getXYChartPanel2().resetXY();
+        gui.getPieChartPanel().resetPie();
+
+        speedUp.setToolTipText("Increase Speed");
+        slowDown.setToolTipText("Slow Down");
+        toggleCenters.setToolTipText("Toggle travel to center");
+
+        gui.getStats().getCreateFile().closeFile();
+
+        backgroundMusic.stop();
+        toggleSocDist.setBackground(CustomColor.BUTTON);
+        formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"playIcon.png",null);
+        toggleCenters.setBackground(CustomColor.BUTTON);
+    }
+
+    /** Getter and Setter Methods */
 
     public JPanel getMainPanel() {
         return mainPanel;
@@ -582,11 +522,5 @@ public class ControlPanel extends JPanel implements ActionListener {
     public int getNumStatsFile()
     {
         return numStatsFile;
-    }
-    public SettingFrame getSettingFrame() {
-        return settingFrame;
-    }
-    public InfoFrame getInfoFrame(){
-        return infoFrame;
     }
 }

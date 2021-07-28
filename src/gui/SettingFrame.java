@@ -8,14 +8,8 @@ import backend.disease.Disease4;
 import lib.CustomColor;
 
 import javax.swing.*;
-import javax.swing.text.AbstractDocument;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DocumentFilter;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class SettingFrame extends JFrame implements ActionListener{
 
@@ -27,17 +21,15 @@ public class SettingFrame extends JFrame implements ActionListener{
     private JTextField contagiousRange, contagiousPercent, baseMortalityRate, baseMinTimeSick, baseMaxTimeSick, startPercentHealthy;
     private JLabel contagiousRangeLabel, contagiousPercentLabel, baseMortalityRateLabel, baseMinTimeSickLabel, baseMaxTimeSickLabel, startPercentHealthyLabel;
     private Disease disease;
+    private Formatter formatter;
+    private GridBagConstraints gbcMain, gbc;
 
     JTextField travelers, timeUntilQuarantine, percentQuarantine, asymptomaticChance, socialDistanceValue, percentSocialDist, minAge, maxAge, minConditions, maxConditions, reinfectRate, antiBodyTime;
 
     JRadioButton generalBoard, quadBoard, eightBoard, quarButton, regButton;
 
-    GridBagConstraints gbcMain = new GridBagConstraints();
-    JPanel centerPanel, mainPanel = new JPanel(new GridBagLayout());
-    JMenuBar mb;
-    JPanel p;
+    JPanel centerPanel, mainPanel;
     ControlPanel controlPanel;
-    int pX, pY;
 
     /**
      * Creates a setting frame for the parameters of the simulation when the gear button is clicked
@@ -45,95 +37,27 @@ public class SettingFrame extends JFrame implements ActionListener{
      */
     public SettingFrame(ControlPanel controlPanel)
     {
-        setBackground(CustomColor.BACKGROUND);
-        setPreferredSize(new Dimension(1120, 680));
-        getContentPane().setBackground(CustomColor.BACKGROUND);
+        setVisible(false);
         this.controlPanel = controlPanel;
+        gbcMain = new GridBagConstraints();
+        gbc = new GridBagConstraints();
+        formatter = new Formatter();
+        formatter.formatFrame(this, CustomColor.BACKGROUND, new Dimension(1120, 680), new GridBagLayout(), "corona.jpg");
+        formatter.setMenuBar(this);
 
-        mainPanel.setBackground(CustomColor.BACKGROUND);
+        mainPanel = new JPanel();
+        formatter.formatPanel(mainPanel, CustomColor.BACKGROUND, null, new GridBagLayout());
 
-        try
-        {
-            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
-        }
-        catch(Exception e){
-            //Welp :P
-        }
-
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setUndecorated(true);
-
-        // Create JMenuBar
-        mb=new JMenuBar();
-        mb.setBackground(CustomColor.CINEROUS);
-        mb.setLayout(new BorderLayout());
-
-        // Create panel
-        p=new JPanel();
-        p.setPreferredSize(new Dimension(10, 25));
-        p.setOpaque(false);
-
-        // To west, mac style!
-        mb.add(p,BorderLayout.WEST);
-
-        // Add mouse listener for JMenuBar mb
-        mb.addMouseListener(new MouseAdapter(){
-            public void mousePressed(MouseEvent me)
-            {
-                pX=me.getX();
-                pY=me.getY();
-            }
-        });
-
-        // Add MouseMotionListener for detecting drag
-        mb.addMouseMotionListener(new MouseAdapter(){
-            public void mouseDragged(MouseEvent me)
-            {
-                setLocation(getLocation().x+me.getX()-pX,getLocation().y+me.getY()-pY);
-            }
-        });
-
-        // Set the menu bar
-        setJMenuBar(mb);
-
-        setLayout(new GridBagLayout());
-        gbcMain.gridx = 0;
-        gbcMain.gridy = 0;
-        gbcMain.gridwidth = 1;
-        gbcMain.gridheight = 1;
-        gbcMain.weightx = 5;
-        gbcMain.weighty = 1;
-        gbcMain.anchor = GridBagConstraints.CENTER;
-        gbcMain.fill = GridBagConstraints.BOTH;
-        gbcMain.insets = new Insets(2, 2, 2, 2);
-
+        formatter.setGBC(gbcMain,0,0,1,1,5,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2));
         addLeftPanel();
 
-        gbcMain.gridx = 1;
-        gbcMain.gridy = 0;
-        gbcMain.gridwidth = 1;
-        gbcMain.gridheight = 1;
-        gbcMain.weightx = 1;
-        gbcMain.weighty = 1;
-
+        formatter.setGBC(gbcMain,1,0,1,1,1,1);
         addCenterPanel();
 
-        gbcMain.gridx = 2;
-        gbcMain.gridy = 0;
-        gbcMain.gridwidth = 1;
-        gbcMain.gridheight = 1;
-        gbcMain.weightx = 10;
-        gbcMain.weighty = 1;
-
+        formatter.setGBC(gbcMain,2,0,1,1,10,1);
         addRightPanel();
 
-        gbcMain.gridx = 0;
-        gbcMain.gridy = 1;
-        gbcMain.gridwidth = 3;
-        gbcMain.gridheight = 1;
-        gbcMain.weightx = 10;
-        gbcMain.weighty = 2;
-
+        formatter.setGBC(gbcMain,0,1,3,1,10,2);
         addBottomPanel();
 
         add(mainPanel);
@@ -143,7 +67,6 @@ public class SettingFrame extends JFrame implements ActionListener{
 
         pack();
         setLocationByPlatform(true);
-        setVisible(true);
         setLocationRelativeTo(null);
     }
 
@@ -152,75 +75,33 @@ public class SettingFrame extends JFrame implements ActionListener{
      */
     private void addLeftPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-
-        JPanel leftPanel = new JPanel(new GridBagLayout());
-        leftPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
-        leftPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        JPanel leftPanel = new JPanel();
+        formatter.formatPanel(leftPanel,CustomColor.SPACE_CADET_LIGHT,new Rectangle(8,8,8,8),new GridBagLayout());
 
         JPanel leftTopPanel = new JPanel();
-        leftTopPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
+        formatter.formatPanel(leftTopPanel,CustomColor.SPACE_CADET_LIGHT,null,null);
         leftTopPanel.setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, CustomColor.BACKGROUND));
 
         JLabel boardSelection = new JLabel("Select Board");
-        boardSelection.setForeground(CustomColor.LIGHT_GRAY);
-        boardSelection.setFont(boardSelection.getFont ().deriveFont (18.0f));
+        formatter.formatLabel(boardSelection,CustomColor.LIGHT_GRAY,18.0f,null);
 
         leftTopPanel.add(boardSelection);
 
-        ImageIcon singlePic = new ImageIcon(ClassLoader.getSystemResource("res/SimBoardMono.png"));
-        Image singleIm = singlePic.getImage();
-        Image singleIm2 = singleIm.getScaledInstance(250,140, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon single = new ImageIcon(singleIm2);
-
-        ImageIcon quadPic = new ImageIcon(ClassLoader.getSystemResource("res/SimBoardQuad.png"));
-        Image quadIm = quadPic.getImage();
-        Image quadIm2 = quadIm.getScaledInstance(250,140, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon quad = new ImageIcon(quadIm2);
-
-        ImageIcon octPic = new ImageIcon(ClassLoader.getSystemResource("res/SimBoardOcto.png"));
-        Image octIm = octPic.getImage();
-        Image octIm2 = octIm.getScaledInstance(250,140, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon oct = new ImageIcon(octIm2);
-
         generalBoard = new JRadioButton("Mono    ");
-        generalBoard.setBackground(CustomColor.BUTTON);
-        generalBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
-        generalBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        generalBoard.setForeground(CustomColor.LIGHT_GRAY);
-        generalBoard.setFont(generalBoard.getFont ().deriveFont (16.0f));
+        formatter.formatRadioButton(generalBoard,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
         generalBoard.setSelected(true);
 
         quadBoard = new JRadioButton("Quad    ");
-        quadBoard.setBackground(CustomColor.BUTTON);
-        quadBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
-        quadBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        quadBoard.setForeground(CustomColor.LIGHT_GRAY);
-        quadBoard.setFont(quadBoard.getFont ().deriveFont (16.0f));
+        formatter.formatRadioButton(quadBoard,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
 
         eightBoard = new JRadioButton("Octo    ");
-        eightBoard.setBackground(CustomColor.BUTTON);
-        eightBoard.setForeground(CustomColor.ON_BUTTON_LABEL);
-        eightBoard.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        eightBoard.setForeground(CustomColor.LIGHT_GRAY);
-        eightBoard.setFont(eightBoard.getFont ().deriveFont (16.0f));
+        formatter.formatRadioButton(eightBoard,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
 
         quarButton = new JRadioButton("Quarantine");
-        quarButton.setBackground(CustomColor.BUTTON);
-        quarButton.setForeground(CustomColor.ON_BUTTON_LABEL);
-        quarButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        quarButton.setForeground(CustomColor.LIGHT_GRAY);
-        quarButton.setFont(quarButton.getFont ().deriveFont (16.0f));
+        formatter.formatRadioButton(quarButton,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
 
         regButton = new JRadioButton("Standard");
-        regButton.setBackground(CustomColor.BUTTON);
-        regButton.setForeground(CustomColor.ON_BUTTON_LABEL);
-        regButton.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
-        regButton.setForeground(CustomColor.LIGHT_GRAY);
-        regButton.setFont(regButton.getFont ().deriveFont (16.0f));
+        formatter.formatRadioButton(regButton,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
         regButton.setSelected(true);
 
         ButtonGroup g1 = new ButtonGroup();
@@ -233,7 +114,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         g2.add(regButton);
 
         JLabel monoLabel = new JLabel();
-        monoLabel.setIcon(single);
+        formatter.formatLabel(monoLabel,"SimBoardMono.png", 250,140);
         monoLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -242,7 +123,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         });
 
         JLabel quadLabel = new JLabel();
-        quadLabel.setIcon(quad);
+        formatter.formatLabel(quadLabel,"SimBoardQuad.png", 250,140);
         quadLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -251,7 +132,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         });
 
         JLabel octoLabel = new JLabel();
-        octoLabel.setIcon(oct);
+        formatter.formatLabel(octoLabel,"SimBoardOcto.png", 250,140);
         octoLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -259,79 +140,31 @@ public class SettingFrame extends JFrame implements ActionListener{
             }
         });
 
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 2;
-        gbc.gridheight = 1;
-        gbc.weightx = 5;
-        gbc.weighty = .1;
-
+        formatter.setGBC(gbc,0,0,2,1,5,.1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2));
         leftPanel.add(leftTopPanel, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 0;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,1,1,1,0,1);
         leftPanel.add(generalBoard, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 10;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,1,1,1,10,1);
         leftPanel.add(monoLabel, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 0;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,2,1,1,0,1);
         leftPanel.add(quadBoard, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 10;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,2,1,1,10,1);
         leftPanel.add(quadLabel, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 0;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,3,1,1,0,1);
         leftPanel.add(eightBoard, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 10;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,3,1,1,10,1);
         leftPanel.add(octoLabel, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 4;
-        gbc.gridwidth = 2;
-        gbc.gridheight = 1;
-        gbc.weightx = 5;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,4,2,1,5,1);
 
-        JPanel quarPanel = new JPanel(new GridLayout(1, 2));
-        quarPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        quarPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
+        JPanel quarPanel = new JPanel();
+        formatter.formatPanel(quarPanel,CustomColor.SPACE_CADET_LIGHT,new Rectangle(8,8,8,8),new GridLayout(1,2));
         quarPanel.add(quarButton);
         quarPanel.add(regButton);
 
@@ -345,51 +178,29 @@ public class SettingFrame extends JFrame implements ActionListener{
      */
     private void addCenterPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-
-        centerPanel = new JPanel(new GridBagLayout());
-        centerPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
-        centerPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        centerPanel = new JPanel();
+        formatter.formatPanel(centerPanel,CustomColor.SPACE_CADET_LIGHT,new Rectangle(8,8,8,8), new GridBagLayout());
 
         JPanel centerTitlePanel = new JPanel();
-        centerTitlePanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
+        formatter.formatPanel(centerTitlePanel,CustomColor.SPACE_CADET_LIGHT,null, null);
         centerTitlePanel.setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, CustomColor.BACKGROUND));
 
         JLabel diseaseSelection = new JLabel("Select Disease");
-        diseaseSelection.setForeground(CustomColor.LIGHT_GRAY);
-        diseaseSelection.setFont(diseaseSelection.getFont ().deriveFont (18.0f));
+        formatter.formatLabel(diseaseSelection,CustomColor.LIGHT_GRAY,18.0f,null);
 
         centerTitlePanel.add(diseaseSelection);
 
         choice1 = new JRadioButton("Disease 1");
-        choice1.setFont(choice1.getFont ().deriveFont (16.0f));
-        choice1.setBackground(CustomColor.DAVYS_GRAY);
-        choice1.setForeground(CustomColor.LIGHT_GRAY);
-        choice1.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        formatter.formatRadioButton(choice1,CustomColor.DAVYS_GRAY,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
         choice1.setSelected(true);
         choice2 = new JRadioButton("Disease 2");
-        choice2.setFont(choice2.getFont ().deriveFont (16.0f));
-        choice2.setBackground(CustomColor.BUTTON);
-        choice2.setForeground(CustomColor.LIGHT_GRAY);
-        choice2.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        formatter.formatRadioButton(choice2, CustomColor.BUTTON, CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
         choice3 = new JRadioButton("Disease 3");
-        choice3.setFont(choice3.getFont ().deriveFont (16.0f));
-        choice3.setBackground(CustomColor.BUTTON);
-        choice3.setForeground(CustomColor.LIGHT_GRAY);
-        choice3.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        formatter.formatRadioButton(choice3,CustomColor.BUTTON,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
         choice4 = new JRadioButton("Disease 4");
-        choice4.setFont(choice4.getFont ().deriveFont (16.0f));
-        choice4.setBackground(CustomColor.BUTTON);
-        choice4.setForeground(CustomColor.LIGHT_GRAY);
-        choice4.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        formatter.formatRadioButton(choice4,CustomColor.BUTTON,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
         custom = new JRadioButton("Custom");
-        custom.setFont(custom.getFont ().deriveFont (16.0f));
-        custom.setBackground(CustomColor.BUTTON);
-        custom.setForeground(CustomColor.LIGHT_GRAY);
-        custom.setBorder(BorderFactory.createLineBorder(CustomColor.ON_BUTTON_LABEL));
+        formatter.formatRadioButton(custom,CustomColor.BUTTON,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
 
         g1 = new ButtonGroup();
         g1.add(choice1);
@@ -398,53 +209,32 @@ public class SettingFrame extends JFrame implements ActionListener{
         g1.add(choice4);
         g1.add(custom);
 
-        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
-        Image image1 = pic1.getImage();
-        Image image11 = image1.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit1 = new ImageIcon(image11);
-
-        ImageIcon pic2 = new ImageIcon(ClassLoader.getSystemResource("res/bacteria1.jpg"));
-        Image image2 = pic2.getImage();
-        Image image22 = image2.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit2 = new ImageIcon(image22);
-
-        ImageIcon pic3 = new ImageIcon(ClassLoader.getSystemResource("res/virus4.png"));
-        Image image3 = pic3.getImage();
-        Image image33 = image3.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit3 = new ImageIcon(image33);
-
-        ImageIcon pic4 = new ImageIcon(ClassLoader.getSystemResource("res/virus3.jpg"));
-        Image image4 = pic4.getImage();
-        Image image44 = image4.getScaledInstance(40,40, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon edit4 = new ImageIcon(image44);
-
         JLabel pic1Label = new JLabel();
-        JLabel pic2Label = new JLabel();
-        JLabel pic3Label = new JLabel();
-        JLabel pic4Label = new JLabel();
-
-        pic1Label.setIcon(edit1);
+        formatter.formatLabel(pic1Label,"corona.jpg", 40,40);
         pic1Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 choice1.setSelected(true);
             }
         });
-        pic2Label.setIcon(edit2);
+        JLabel pic2Label = new JLabel();
+        formatter.formatLabel(pic2Label, "bacteria1.jpg", 40,40);
         pic2Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 choice2.setSelected(true);
             }
         });
-        pic3Label.setIcon(edit3);
+        JLabel pic3Label = new JLabel();
+        formatter.formatLabel(pic3Label, "virus4.png", 40,40);
         pic3Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 choice3.setSelected(true);
             }
         });
-        pic4Label.setIcon(edit4);
+        JLabel pic4Label = new JLabel();
+        formatter.formatLabel(pic4Label,"virus3.jpg",40,40);
         pic4Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -452,320 +242,107 @@ public class SettingFrame extends JFrame implements ActionListener{
             }
         });
 
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 2;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = .2;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-
+        formatter.setGBC(gbc,0,0,2,1,1,.2,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2));
         centerPanel.add(centerTitlePanel, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,1,1,1,1,1);
         centerPanel.add(choice1, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,1,1,1,1,1);
         centerPanel.add(pic1Label, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,2,1,1,1,1);
         centerPanel.add(choice2, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,2,1,1,1,1);
         centerPanel.add(pic2Label, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,3,1,1,1,1);
         centerPanel.add(choice3, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc, 1,3,1,1,1,1);
         centerPanel.add(pic3Label, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 4;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,4,1,1,1,1);
         centerPanel.add(choice4, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 4;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,4,1,1,1,1);
         centerPanel.add(pic4Label, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 5;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 2;
+        formatter.setGBC(gbc,0,5,1,1,1,2);
         centerPanel.add(custom, gbc);
 
         contagiousPercent = new JTextField(1);
-        contagiousPercent.setFont(contagiousPercent.getFont ().deriveFont (15.0f));
-        contagiousPercent.setBackground(CustomColor.FIELD);
-        contagiousPercent.setForeground(CustomColor.ON_BUTTON_LABEL);
-        contagiousPercent.setMinimumSize(new Dimension(60, 10));
-        ((AbstractDocument)contagiousPercent.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(contagiousPercent,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60, 10),null);
 
         contagiousRange = new JTextField(1);
-        contagiousRange.setFont(contagiousRange.getFont ().deriveFont (15.0f));
-        contagiousRange.setBackground(CustomColor.FIELD);
-        contagiousRange.setForeground(CustomColor.ON_BUTTON_LABEL);
-        contagiousRange.setMinimumSize(new Dimension(60, 10));
-        ((AbstractDocument)contagiousRange.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(contagiousRange,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60, 10),null);
 
         baseMortalityRate = new JTextField(1);
-        baseMortalityRate.setFont(baseMortalityRate.getFont ().deriveFont (15.0f));
-        baseMortalityRate.setBackground(CustomColor.FIELD);
-        baseMortalityRate.setForeground(CustomColor.ON_BUTTON_LABEL);
-        baseMortalityRate.setMinimumSize(new Dimension(60, 10));
-        ((AbstractDocument)baseMortalityRate.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(baseMortalityRate,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60, 10),null);
 
         baseMinTimeSick = new JTextField(1);
-        baseMinTimeSick.setFont(baseMinTimeSick.getFont ().deriveFont (15.0f));
-        baseMinTimeSick.setBackground(CustomColor.FIELD);
-        baseMinTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
-        baseMinTimeSick.setMinimumSize(new Dimension(60, 10));
-        ((AbstractDocument)baseMinTimeSick.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(baseMinTimeSick,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60, 10),null);
 
         baseMaxTimeSick = new JTextField(1);
-        baseMaxTimeSick.setFont(baseMaxTimeSick.getFont ().deriveFont (15.0f));
-        baseMaxTimeSick.setBackground(CustomColor.FIELD);
-        baseMaxTimeSick.setForeground(CustomColor.ON_BUTTON_LABEL);
-        baseMaxTimeSick.setMinimumSize(new Dimension(60, 10));
-        ((AbstractDocument)baseMaxTimeSick.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(baseMaxTimeSick,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60, 10),null);
 
         startPercentHealthy = new JTextField(1);
-        startPercentHealthy.setFont(startPercentHealthy.getFont ().deriveFont (15.0f));
-        startPercentHealthy.setBackground(CustomColor.FIELD);
-        startPercentHealthy.setForeground(CustomColor.ON_BUTTON_LABEL);
-        startPercentHealthy.setMinimumSize(new Dimension(60, 10));
-        ((AbstractDocument)startPercentHealthy.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(startPercentHealthy,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60, 10),null);
 
         contagiousPercentLabel = new JLabel("<html>Contagious (%)</html>");
-        contagiousPercentLabel.setForeground(CustomColor.LIGHT_GRAY);
-        contagiousPercentLabel.setFont(contagiousPercentLabel.getFont ().deriveFont (15.0f));
+        formatter.formatLabel(contagiousPercentLabel,CustomColor.LIGHT_GRAY,15.0f,null);
 
         contagiousRangeLabel = new JLabel("<html>Contagious Range<br>(1-20)</html>");
-        contagiousRangeLabel.setForeground(CustomColor.LIGHT_GRAY);
-        contagiousRangeLabel.setFont(contagiousRangeLabel.getFont ().deriveFont (15.0f));
+        formatter.formatLabel(contagiousRangeLabel,CustomColor.LIGHT_GRAY,15.0f,null);
 
         baseMortalityRateLabel = new JLabel("Mortality (%)");
-        baseMortalityRateLabel.setForeground(CustomColor.LIGHT_GRAY);
-        baseMortalityRateLabel.setFont(baseMortalityRateLabel.getFont ().deriveFont (15.0f));
+        formatter.formatLabel(baseMortalityRateLabel,CustomColor.LIGHT_GRAY,15.0f,null);
 
         baseMinTimeSickLabel = new JLabel("Min Sick (s)");
-        baseMinTimeSickLabel.setForeground(CustomColor.LIGHT_GRAY);
-        baseMinTimeSickLabel.setFont(baseMinTimeSickLabel.getFont ().deriveFont (15.0f));
+        formatter.formatLabel(baseMinTimeSickLabel,CustomColor.LIGHT_GRAY,15.0f,null);
 
         baseMaxTimeSickLabel = new JLabel("Max Sick (s)");
-        baseMaxTimeSickLabel.setForeground(CustomColor.LIGHT_GRAY);
-        baseMaxTimeSickLabel.setFont(baseMaxTimeSickLabel.getFont ().deriveFont (15.0f));
+        formatter.formatLabel(baseMaxTimeSickLabel,CustomColor.LIGHT_GRAY,15.0f,null);
 
         startPercentHealthyLabel = new JLabel("Start Healthy (%)");
-        startPercentHealthyLabel.setForeground(CustomColor.LIGHT_GRAY);
-        startPercentHealthyLabel.setFont(startPercentHealthyLabel.getFont ().deriveFont (15.0f));
+        formatter.formatLabel(startPercentHealthyLabel,CustomColor.LIGHT_GRAY,15.0f,null);
 
-        gbc.gridx = 0;
-        gbc.gridy = 6;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,6,1,1,1,1);
         centerPanel.add(contagiousPercentLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 6;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,6,1,1,1,1);
         centerPanel.add(contagiousPercent, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 7;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,7,1,1,1,1);
         centerPanel.add(baseMinTimeSickLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 7;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,7,1,1,1,1);
         centerPanel.add(baseMinTimeSick, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 8;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,8,1,1,1,1);
         centerPanel.add(baseMortalityRateLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 8;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,8,1,1,1,1);
         centerPanel.add(baseMortalityRate, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 9;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,9,1,1,1,1);
         centerPanel.add(contagiousRangeLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 9;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,9,1,1,1,1);
         centerPanel.add(contagiousRange, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 10;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,10,1,1,1,1);
         centerPanel.add(baseMaxTimeSickLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 10;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,10,1,1,1,1);
         centerPanel.add(baseMaxTimeSick, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 11;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,0,11,1,1,1,1);
         centerPanel.add(startPercentHealthyLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 11;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        formatter.setGBC(gbc,1,11,1,1,1,1);
         centerPanel.add(startPercentHealthy, gbc);
-
-        centerPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        centerPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
 
         mainPanel.add(centerPanel, gbcMain);
     }
@@ -775,696 +352,239 @@ public class SettingFrame extends JFrame implements ActionListener{
      */
     private void addRightPanel()
     {
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-
-        JPanel rightPanel = new JPanel(new GridBagLayout());
-        rightPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
-        rightPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        JPanel rightPanel = new JPanel();
+        formatter.formatPanel(rightPanel,CustomColor.SPACE_CADET_LIGHT,new Rectangle(8,8,8,8),new GridBagLayout());
 
         JPanel rightTopPanel = new JPanel();
-        rightTopPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
+        formatter.formatPanel(rightTopPanel,CustomColor.SPACE_CADET_LIGHT,null,null);
         rightTopPanel.setBorder(BorderFactory.createMatteBorder(8, 8, 8, 8, CustomColor.BACKGROUND));
 
         JLabel paramLabel = new JLabel("Select the Parameters");
-        paramLabel.setForeground(CustomColor.LIGHT_GRAY);
-        paramLabel.setFont(paramLabel.getFont ().deriveFont (18.0f));
+        formatter.formatLabel(paramLabel,CustomColor.LIGHT_GRAY,18.0f,null);
 
         rightTopPanel.add(paramLabel);
 
         travelers = new JTextField(100);
-        travelers.setText("8");
-        travelers.setBackground(CustomColor.FIELD);
-        travelers.setForeground(CustomColor.ON_BUTTON_LABEL);
-        travelers.setMinimumSize(new Dimension(60, 10));
-        travelers.setFont(travelers.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)travelers.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(travelers,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"8");
 
         timeUntilQuarantine = new JTextField(1);
-        timeUntilQuarantine.setText("3");
-        timeUntilQuarantine.setBackground(CustomColor.FIELD);
-        timeUntilQuarantine.setForeground(CustomColor.ON_BUTTON_LABEL);
-        timeUntilQuarantine.setMinimumSize(new Dimension(60, 10));
-        timeUntilQuarantine.setFont(timeUntilQuarantine.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)timeUntilQuarantine.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(timeUntilQuarantine,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"3");
 
         percentQuarantine = new JTextField(1);
-        percentQuarantine.setText("80");
-        percentQuarantine.setBackground(CustomColor.FIELD);
-        percentQuarantine.setForeground(CustomColor.ON_BUTTON_LABEL);
-        percentQuarantine.setMinimumSize(new Dimension(60, 10));
-        percentQuarantine.setFont(percentQuarantine.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)percentQuarantine.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(percentQuarantine,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"80");
 
         asymptomaticChance = new JTextField(1);
-        asymptomaticChance.setText("0");
-        asymptomaticChance.setBackground(CustomColor.FIELD);
-        asymptomaticChance.setForeground(CustomColor.ON_BUTTON_LABEL);
-        asymptomaticChance.setMinimumSize(new Dimension(60, 10));
-        asymptomaticChance.setFont(asymptomaticChance.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)asymptomaticChance.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(asymptomaticChance,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10), "0");
 
         socialDistanceValue = new JTextField(1);
-        socialDistanceValue.setText("30");
-        socialDistanceValue.setBackground(CustomColor.FIELD);
-        socialDistanceValue.setForeground(CustomColor.ON_BUTTON_LABEL);
-        socialDistanceValue.setMinimumSize(new Dimension(60, 10));
-        socialDistanceValue.setFont(socialDistanceValue.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)socialDistanceValue.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(socialDistanceValue,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10), "30");
 
         percentSocialDist = new JTextField(1);
-        percentSocialDist.setText("0");
-        percentSocialDist.setBackground(CustomColor.FIELD);
-        percentSocialDist.setForeground(CustomColor.ON_BUTTON_LABEL);
-        percentSocialDist.setMinimumSize(new Dimension(60, 10));
-        percentSocialDist.setFont(percentSocialDist.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)percentSocialDist.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(percentSocialDist,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"0");
 
         reinfectRate = new JTextField(1);
-        reinfectRate.setText("0");
-        reinfectRate.setBackground(CustomColor.FIELD);
-        reinfectRate.setForeground(CustomColor.ON_BUTTON_LABEL);
-        reinfectRate.setMinimumSize(new Dimension(60, 10));
-        reinfectRate.setFont(reinfectRate.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)reinfectRate.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(reinfectRate,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"0");
 
         antiBodyTime = new JTextField(1);
-        antiBodyTime.setText("35");
-        antiBodyTime.setBackground(CustomColor.FIELD);
-        antiBodyTime.setForeground(CustomColor.ON_BUTTON_LABEL);
-        antiBodyTime.setMinimumSize(new Dimension(60, 10));
-        antiBodyTime.setFont(antiBodyTime.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)antiBodyTime.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(antiBodyTime,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"35");
 
         minAge = new JTextField(1);
-        minAge.setText("20");
-        minAge.setBackground(CustomColor.FIELD);
-        minAge.setForeground(CustomColor.ON_BUTTON_LABEL);
-        minAge.setMinimumSize(new Dimension(60, 10));
-        minAge.setFont(minAge.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)minAge.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(minAge,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"20");
 
         maxAge = new JTextField(1);
-        maxAge.setText("80");
-        maxAge.setBackground(CustomColor.FIELD);
-        maxAge.setForeground(CustomColor.ON_BUTTON_LABEL);
-        maxAge.setMinimumSize(new Dimension(60, 10));
-        maxAge.setFont(maxAge.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)maxAge.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(maxAge,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"80");
 
         minConditions = new JTextField(1);
-        minConditions.setText("0");
-        minConditions.setBackground(CustomColor.FIELD);
-        minConditions.setForeground(CustomColor.ON_BUTTON_LABEL);
-        minConditions.setMinimumSize(new Dimension(60, 10));
-        minConditions.setFont(minConditions.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)minConditions.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(minConditions,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"0");
 
         maxConditions = new JTextField(1);
-        maxConditions.setText("3");
-        maxConditions.setBackground(CustomColor.FIELD);
-        maxConditions.setForeground(CustomColor.ON_BUTTON_LABEL);
-        maxConditions.setMinimumSize(new Dimension(60, 10));
-        maxConditions.setFont(maxConditions.getFont ().deriveFont (15.0f));
-        ((AbstractDocument)maxConditions.getDocument()).setDocumentFilter(new DocumentFilter(){
-            Pattern regEx = Pattern.compile("\\d*");
-
-            @Override
-            public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-                Matcher matcher = regEx.matcher(text);
-                if(!matcher.matches()){
-                    return;
-                }
-                super.replace(fb, offset, length, text, attrs);
-            }
-        });
+        formatter.formatTextField(maxConditions,CustomColor.FIELD,CustomColor.ON_BUTTON_LABEL,null,15.0f,new Dimension(60,10),"3");
 
         JLabel travelersLabel = new JLabel("Travelers (%)");
-        travelersLabel.setForeground(CustomColor.LIGHT_GRAY);
-        travelersLabel.setFont(travelersLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(travelersLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel timeQuarLabel = new JLabel("Time until sick quarantine (s)");
-        timeQuarLabel.setForeground(CustomColor.LIGHT_GRAY);
-        timeQuarLabel.setFont(timeQuarLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(timeQuarLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel percentQuarLabel = new JLabel("Sick who quarantine (%)");
-        percentQuarLabel.setForeground(CustomColor.LIGHT_GRAY);
-        percentQuarLabel.setFont(percentQuarLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(percentQuarLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel asPercentLabel = new JLabel("Asymptomatic People (%)");
-        asPercentLabel.setForeground(CustomColor.LIGHT_GRAY);
-        asPercentLabel.setFont(asPercentLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(asPercentLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel socDistValLabel = new JLabel("Social Distance");
-        socDistValLabel.setForeground(CustomColor.LIGHT_GRAY);
-        socDistValLabel.setFont(socDistValLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(socDistValLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel socialDisPercentLabel = new JLabel("Social Dist. Participation (%)  ");
-        socialDisPercentLabel.setForeground(CustomColor.LIGHT_GRAY);
-        socialDisPercentLabel.setFont(socialDisPercentLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(socialDisPercentLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel reinfectRateLabel = new JLabel("Can be reinfected (%)  ");
-        reinfectRateLabel.setForeground(CustomColor.LIGHT_GRAY);
-        reinfectRateLabel.setFont(reinfectRateLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(reinfectRateLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel antiBodyTimeLabel = new JLabel("How long antibodies last (s)  ");
-        antiBodyTimeLabel.setForeground(CustomColor.LIGHT_GRAY);
-        antiBodyTimeLabel.setFont(antiBodyTimeLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(antiBodyTimeLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel minAgeLabel = new JLabel("Min Age");
-        minAgeLabel.setForeground(CustomColor.LIGHT_GRAY);
-        minAgeLabel.setFont(minAgeLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(minAgeLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel maxAgeLabel = new JLabel("Max Age");
-        maxAgeLabel.setForeground(CustomColor.LIGHT_GRAY);
-        maxAgeLabel.setFont(maxAgeLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(maxAgeLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel minCondLabel = new JLabel("Min Conditions");
-        minCondLabel.setForeground(CustomColor.LIGHT_GRAY);
-        minCondLabel.setFont(minCondLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(minCondLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel maxCondLabel = new JLabel("Max Conditions");
-        maxCondLabel.setForeground(CustomColor.LIGHT_GRAY);
-        maxCondLabel.setFont(maxCondLabel.getFont ().deriveFont (16.0f));
+        formatter.formatLabel(maxCondLabel,CustomColor.LIGHT_GRAY,16.0f,null);
 
         JLabel travelersA = new JLabel("<html>     The percent of people who can move <br/>     without bound in a divided board</html>");
-        travelersA.setMinimumSize(new Dimension(250, 40));
-        travelersA.setForeground(CustomColor.LIGHT_GRAY);
-        travelersA.setFont(travelersA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(travelersA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel timeUntilQuarantineA = new JLabel("<html>     The amount of time until a <br/>     sick person quarantines</html>");
-        timeUntilQuarantineA.setMinimumSize(new Dimension(250, 40));
-        timeUntilQuarantineA.setForeground(CustomColor.LIGHT_GRAY);
-        timeUntilQuarantineA.setFont(timeUntilQuarantineA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(timeUntilQuarantineA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel percentQuarantineA = new JLabel("<html>     The percent of sick people <br/>     who will quarantine</html>");
-        percentQuarantineA.setMinimumSize(new Dimension(250, 40));
-        percentQuarantineA.setForeground(CustomColor.LIGHT_GRAY);
-        percentQuarantineA.setFont(percentQuarantineA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(percentQuarantineA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel asymptomaticChanceA = new JLabel("<html>     The percent of people asymptomatic <br/>     (no quarantine or dying, yet contagious)</html>");
-        asymptomaticChanceA.setMinimumSize(new Dimension(250, 40));
-        asymptomaticChanceA.setForeground(CustomColor.LIGHT_GRAY);
-        asymptomaticChanceA.setFont(asymptomaticChanceA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(asymptomaticChanceA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel socialDistanceValueA = new JLabel("<html>     The amount of space needed during <br/>     social distancing (30 recom.)</html>");
-        socialDistanceValueA.setMinimumSize(new Dimension(250, 40));
-        socialDistanceValueA.setForeground(CustomColor.LIGHT_GRAY);
-        socialDistanceValueA.setFont(socialDistanceValueA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(socialDistanceValueA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel percentSocialDistA = new JLabel("<html>     Percent of people who social <br/>     distance (0 to turn off)</html>");
-        percentSocialDistA.setMinimumSize(new Dimension(250, 40));
-        percentSocialDistA.setForeground(CustomColor.LIGHT_GRAY);
-        percentSocialDistA.setFont(percentSocialDistA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(percentSocialDistA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
-        JLabel reinfectRateA = new JLabel("<html>     Percent of people who can be<br/>     reinfected (0 to turn off)</html>");
-        reinfectRateA.setMinimumSize(new Dimension(250, 40));
-        reinfectRateA.setForeground(CustomColor.LIGHT_GRAY);
-        reinfectRateA.setFont(reinfectRateA.getFont ().deriveFont (13.0f));
+        JLabel reinfectRateA = new JLabel("<html>     Percent of people who can be reinfected<br/>     when antibodies wear off (0 to turn off)</html>");
+        formatter.formatLabelMin(reinfectRateA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel antiBodyTimeA = new JLabel("<html>     How long antibodies last <br/>     (when % reinfect > 0)</html>");
-        antiBodyTimeA.setMinimumSize(new Dimension(250, 40));
-        antiBodyTimeA.setForeground(CustomColor.LIGHT_GRAY);
-        antiBodyTimeA.setFont(antiBodyTimeA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(antiBodyTimeA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel minAgeA = new JLabel("<html>     The min possible age of a person <br/>     (affects total sick time and mortality rate)</html>");
-        minAgeA.setMinimumSize(new Dimension(250, 40));
-        minAgeA.setForeground(CustomColor.LIGHT_GRAY);
-        minAgeA.setFont(minAgeA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(minAgeA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel maxAgeA = new JLabel("<html>     The max possible age of a person <br>     (affects total sick time and mortality rate)</html>");
-        maxAgeA.setMinimumSize(new Dimension(250, 40));
-        maxAgeA.setForeground(CustomColor.LIGHT_GRAY);
-        maxAgeA.setFont(maxAgeA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(maxAgeA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel minConditionsA = new JLabel("<html>     The min possible preexisting condition <br/>      a person can have (affects mortality rate)</html>");
-        minConditionsA.setMinimumSize(new Dimension(250, 40));
-        minConditionsA.setForeground(CustomColor.LIGHT_GRAY);
-        minConditionsA.setFont(minConditionsA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(minConditionsA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         JLabel maxConditionsA = new JLabel("<html>     The max possible preexisting condition <br/>     a person can have (affects mortality rate)</html>");
-        maxConditionsA.setMinimumSize(new Dimension(250, 40));
-        maxConditionsA.setForeground(CustomColor.LIGHT_GRAY);
-        maxConditionsA.setFont(maxConditionsA.getFont ().deriveFont (13.0f));
+        formatter.formatLabelMin(maxConditionsA,CustomColor.LIGHT_GRAY,13.0f,new Dimension(250,40));
 
         double weightXLabel = 5;
-        double weightXFeild = 5;
+        double weightXField = 5;
         double weightXArea = 5;
 
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 3;
-        gbc.gridheight = 1;
-        gbc.weightx = 10;
-        gbc.weighty = .1;
-
+        formatter.setGBC(gbc,0,0,3,1,10,.1);
         rightPanel.add(rightTopPanel, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,1,1,1,weightXLabel,1);
         rightPanel.add(travelersLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,1,1,1,weightXField,1);
         rightPanel.add(travelers, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,1,1,1,weightXArea,1);
         rightPanel.add(travelersA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,2,1,1,weightXLabel,1);
         rightPanel.add(timeQuarLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,2,1,1,weightXField,1);
         rightPanel.add(timeUntilQuarantine, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,2,1,1,weightXArea,1);
         rightPanel.add(timeUntilQuarantineA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,3,1,1,weightXLabel,1);
         rightPanel.add(percentQuarLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,3,1,1,weightXField,1);
         rightPanel.add(percentQuarantine, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,3,1,1,weightXArea,1);
         rightPanel.add(percentQuarantineA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 4;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,4,1,1,weightXLabel,1);
         rightPanel.add(asPercentLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 4;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,4,1,1,weightXField,1);
         rightPanel.add(asymptomaticChance, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 4;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,4,1,1,weightXArea,1);
         rightPanel.add(asymptomaticChanceA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 5;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,5,1,1,weightXLabel,1);
         rightPanel.add(socDistValLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 5;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,5,1,1,weightXField,1);
         rightPanel.add(socialDistanceValue, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 5;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,5,1,1,weightXArea,1);
         rightPanel.add(socialDistanceValueA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 6;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,6,1,1,weightXLabel,1);
         rightPanel.add(socialDisPercentLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 6;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,6,1,1,weightXField,1);
         rightPanel.add(percentSocialDist, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 6;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,6,1,1,weightXArea,1);
         rightPanel.add(percentSocialDistA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 7;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,7,1,1,weightXLabel,1);
         rightPanel.add(minAgeLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 7;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,7,1,1,weightXField,1);
         rightPanel.add(minAge, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 7;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,7,1,1,weightXArea,1);
         rightPanel.add(minAgeA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 8;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,8,1,1,weightXLabel,1);
         rightPanel.add(maxAgeLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 8;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,8,1,1,weightXField,1);
         rightPanel.add(maxAge, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 8;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,8,1,1,weightXArea,1);
         rightPanel.add(maxAgeA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 9;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,9,1,1,weightXLabel,1);
         rightPanel.add(minCondLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 9;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,9,1,1,weightXField,1);
         rightPanel.add(minConditions, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 9;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,9,1,1,weightXArea,1);
         rightPanel.add(minConditionsA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 10;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,10,1,1,weightXLabel,1);
         rightPanel.add(maxCondLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 10;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,10,1,1,weightXField,1);
         rightPanel.add(maxConditions, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 10;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,10,1,1,weightXArea,1);
         rightPanel.add(maxConditionsA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 11;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,11,1,1,weightXLabel,1);
         rightPanel.add(reinfectRateLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 11;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,11,1,1,weightXField,1);
         rightPanel.add(reinfectRate, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 11;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,11,1,1,weightXArea,1);
         rightPanel.add(reinfectRateA, gbc);
 
-        gbc.gridx = 0;
-        gbc.gridy = 12;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXLabel;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,0,12,1,1,weightXLabel,1);
         rightPanel.add(antiBodyTimeLabel, gbc);
 
-        gbc.gridx = 1;
-        gbc.gridy = 12;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXFeild;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,1,12,1,1,weightXField,1);
         rightPanel.add(antiBodyTime, gbc);
 
-        gbc.gridx = 2;
-        gbc.gridy = 12;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = weightXArea;
-        gbc.weighty = 1;
-
+        formatter.setGBC(gbc,2,12,1,1,weightXArea,1);
         rightPanel.add(antiBodyTimeA, gbc);
 
         mainPanel.add(rightPanel, gbcMain);
@@ -1478,14 +598,11 @@ public class SettingFrame extends JFrame implements ActionListener{
      */
     private void addBottomPanel()
     {
-        JPanel bottomPanel = new JPanel(new GridBagLayout());
-        bottomPanel.setBackground(CustomColor.BACKGROUND);
-        bottomPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        JPanel bottomPanel = new JPanel();
+        formatter.formatPanel(bottomPanel,CustomColor.BACKGROUND,new Rectangle(8,8,8,8),new GridBagLayout());
 
         JButton continueSim = new JButton("Continue");
-        continueSim.setBackground(CustomColor.BUTTON);
-        continueSim.setFont(continueSim.getFont ().deriveFont (16.0f));
-        continueSim.setForeground(CustomColor.ON_BUTTON_LABEL);
+        formatter.formatButton(continueSim,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,null,16.0f);
 
         continueSim.addActionListener(e -> closeSettings());
 
@@ -1494,6 +611,9 @@ public class SettingFrame extends JFrame implements ActionListener{
         mainPanel.add(bottomPanel, gbcMain);
     }
 
+    /**
+     * Adds keybindings to the setting frame - including 's' and 'enter' keys to close the window
+     */
     private void addKeyBindings()
     {
         InputMap inputMap = ((JPanel)this.getContentPane()).getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);

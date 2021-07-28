@@ -100,12 +100,15 @@ public class Statistics implements ActionListener {
             infectedSum += simBoard.getRNot().get(i);
         }
         averageRoValue = (double)infectedSum / numStartedSick;
-        rValue = averageRoValue * ((numHealthy+recoveredSusceptible)/(double)numPeople);
+        rValue = averageRoValue * ((numHealthy+recoveredSusceptible)/(double)(numPeople-numDead));
 
         if(numSick > 0)
             printStats();
     }
 
+    /**
+     * Prints the statistics to the created text file
+     */
     private void printStats()
     {
         x.addStat(time);
@@ -141,7 +144,7 @@ public class Statistics implements ActionListener {
         updateStats();
 
         for(int i = 0; i < simBoard.getPList().size(); i++)
-            simBoard.getPList().get(i).updateMortalityRate(numSick, numPeople);
+            simBoard.getPList().get(i).updateMortalityRate(numSick, numPeople-numDead);
 
         if(numSick == 0)
             x.closeFile();

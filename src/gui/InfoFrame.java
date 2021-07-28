@@ -15,12 +15,10 @@ import java.net.URISyntaxException;
 
 public class InfoFrame extends JFrame {
 
-    JPanel mainPanel = new JPanel(new GridBagLayout());
+    JPanel mainPanel;
     GridBagConstraints gbc = new GridBagConstraints();
-    JMenuBar mb;
-    JPanel p;
     ControlPanel controlPanel;
-    int pX, pY;
+    Formatter formatter;
 
     /**
      * Creates an info frame for the main gui when the info button is clicked
@@ -28,82 +26,21 @@ public class InfoFrame extends JFrame {
      */
     public InfoFrame(ControlPanel controlPanel) {
 
-        setBackground(CustomColor.BACKGROUND);
-        setPreferredSize(new Dimension(850, 660));
-        getContentPane().setBackground(CustomColor.BACKGROUND);
         this.controlPanel = controlPanel;
+        formatter = new Formatter();
+        formatter.formatFrame(this, CustomColor.BACKGROUND, new Dimension(850, 660), new GridLayout(), "corona.jpg");
+        formatter.setMenuBar(this);
 
-        mainPanel.setBackground(CustomColor.BACKGROUND);
+        mainPanel = new JPanel();
+        formatter.formatPanel(mainPanel,CustomColor.BACKGROUND, null, new GridBagLayout());
 
-        try {
-            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
-        } catch (Exception e) {
-            //Welp :P
-        }
-
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setUndecorated(true);
-
-        // Create JMenuBar
-        mb = new JMenuBar();
-        mb.setBackground(CustomColor.CINEROUS);
-        mb.setLayout(new BorderLayout());
-
-        // Create panel
-        p = new JPanel();
-        p.setPreferredSize(new Dimension(10, 25));
-        p.setOpaque(false);
-
-        // To west, mac style!
-        mb.add(p, BorderLayout.WEST);
-
-        // Add mouse listener for JMenuBar mb
-        mb.addMouseListener(new MouseAdapter() {
-            public void mousePressed(MouseEvent me) {
-                pX = me.getX();
-                pY = me.getY();
-            }
-        });
-
-        // Add MouseMotionListener for detecting drag
-        mb.addMouseMotionListener(new MouseAdapter() {
-            public void mouseDragged(MouseEvent me) {
-                setLocation(getLocation().x + me.getX() - pX, getLocation().y + me.getY() - pY);
-            }
-        });
-
-        // Set the menu bar
-        setJMenuBar(mb);
-
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(2, 2, 2, 2);
-
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 0;
-
+        formatter.setGBC(gbc,0,0,1,1,1,0,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(2,2,2,2));
         addTopPanel();
 
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 20;
-
+        formatter.setGBC(gbc,0,1,1,1,1,20);
         addMiddlePanel();
 
-        gbc.gridx = 0;
-        gbc.gridy = 3;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 0;
-
+        formatter.setGBC(gbc,0,3,1,1,1,0);
         addBottomPanel();
 
         add(mainPanel);
@@ -121,13 +58,10 @@ public class InfoFrame extends JFrame {
     private void addTopPanel()
     {
         JPanel topPanel = new JPanel();
-        topPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
-        topPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        formatter.formatPanel(topPanel,CustomColor.SPACE_CADET_LIGHT,new Rectangle(8, 8, 8, 8), null);
 
         JLabel title = new JLabel("Epidemic Simulator Info");
-        title.setForeground(CustomColor.LIGHT_GRAY);
-        title.setFont(title.getFont ().deriveFont (25.0f));
-
+        formatter.formatLabel(title, CustomColor.LIGHT_GRAY,25.0f, null);
         topPanel.add(title);
 
         mainPanel.add(topPanel, gbc);
@@ -173,21 +107,19 @@ public class InfoFrame extends JFrame {
     private void addBottomPanel()
     {
         JPanel bottomPanel = new JPanel();
-        bottomPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
-        bottomPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        formatter.formatPanel(bottomPanel,CustomColor.SPACE_CADET_LIGHT,new Rectangle(8,8,8,8),null);
 
         JButton continueSim = new JButton("Close");
-        continueSim.setBackground(CustomColor.BUTTON);
-        continueSim.setFont(continueSim.getFont ().deriveFont (16.0f));
-        continueSim.setForeground(CustomColor.ON_BUTTON_LABEL);
-
+        formatter.formatButton(continueSim,CustomColor.BUTTON, CustomColor.ON_BUTTON_LABEL, null,16.0f);
         continueSim.addActionListener(e -> closeInfo());
-
         bottomPanel.add(continueSim);
 
         mainPanel.add(bottomPanel, gbc);
     }
 
+    /**
+     * Adds keybindings to the info frame - including 'i' to close the window
+     */
     private void addKeyBindings()
     {
         InputMap inputMap = ((JPanel)this.getContentPane()).getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);

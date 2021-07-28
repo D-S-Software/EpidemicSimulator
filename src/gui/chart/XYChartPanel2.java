@@ -3,6 +3,8 @@ package gui.chart;
 import gui.GUI;
 import org.knowm.xchart.XChartPanel;
 import org.knowm.xchart.XYChart;
+
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -23,6 +25,7 @@ public class XYChartPanel2 extends XChartPanel implements ActionListener {
         super(c);
         this.gui = gui;
         xychart2 = c;
+        setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
     }
 
     /**

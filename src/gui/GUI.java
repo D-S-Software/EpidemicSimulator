@@ -12,7 +12,7 @@ import java.awt.event.ActionEvent;
 
 public class GUI {
 
-    private JPanel topPanel, leftPanel, rightPanel, titleTextPanel;
+    private JPanel topPanel, leftPanel, rightPanel;
     private TitlePanel titlePanel;
     private SimBoardPanel simBoardPanel;
     private ControlPanel controlPanel;
@@ -25,8 +25,8 @@ public class GUI {
     private MyPieChart myPieChart;
     private PieChartPanel pieChartPanel;
 
-    private GUI gui = this;
-    private JFrame frame, titleFrame;
+    private Formatter formatter;
+    private JFrame frame;
     private Statistics stats;
     private boolean showPieFirst = true, showCasesFirst = true;
 
@@ -39,50 +39,34 @@ public class GUI {
     public GUI()
     {
         frame = new JFrame("EpidemicSimulator");
-        frame.getContentPane().setBackground(CustomColor.BACKGROUND);
-        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/corona.jpg"));
-        Image image1 = pic1.getImage();
-        frame.setIconImage(image1);
-        frame.setLayout(new GridBagLayout());
+        formatter = new Formatter();
+        formatter.formatFrame(frame, CustomColor.BACKGROUND, null, new GridBagLayout(), "corona.jpg");
+
         GridBagConstraints gbcMain = new GridBagConstraints();
-        gbcMain.gridx = 0;
-        gbcMain.gridy = 0;
-        gbcMain.gridwidth = 2;
-        gbcMain.gridheight = 1;
-        gbcMain.weightx = 10;
-        gbcMain.weighty = 1;
-        gbcMain.anchor = GridBagConstraints.CENTER;
-        gbcMain.fill = GridBagConstraints.BOTH;
-        gbcMain.insets = new Insets(2, 2, 2, 2);
+        formatter.setGBC(gbcMain, 0,0,2,1,10,1,GridBagConstraints.CENTER, GridBagConstraints.BOTH, new Insets(2,2,2,2));
 
         topPanel = new JPanel(new GridBagLayout());
         topPanel.setBackground(CustomColor.BACKGROUND);
         addTitlePanel();
         frame.add(topPanel, gbcMain);
 
-        gbcMain.gridy = 1;
-        gbcMain.gridwidth = 1;
-        gbcMain.weighty = 40;
+        formatter.setGBC(gbcMain, 0,1,1,1,10,40);
 
         leftPanel = new JPanel(new GridBagLayout());
         leftPanel.setBackground(CustomColor.BACKGROUND);
+        leftPanel.setPreferredSize(new Dimension(600,450));
         addBoardPanel();
         addControlPanel();
-        leftPanel.setPreferredSize(new Dimension(600,450));
         frame.add(leftPanel, gbcMain);
 
-        gbcMain.gridx = 1;
-        gbcMain.weightx = 1;
+        formatter.setGBC(gbcMain, 1,1,1,1,1,40);
 
         rightPanel = new JPanel(new GridBagLayout());
         rightPanel.setBackground(CustomColor.BACKGROUND);
         addTallyPanel();
-        addXYChartPanel2();
-        addXYChartPanel();
-        addPieChartPanel();
+        addChartPanels();
         frame.add(rightPanel, gbcMain);
 
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
         frame.setLocationByPlatform(true);
         frame.setLocation(0,0);
@@ -94,63 +78,7 @@ public class GUI {
         frame.setFocusTraversalKeysEnabled(false);
         addKeyBindings();
 
-        titleFrame = new JFrame();
-        titleFrame.setIconImage(image1);
-        titleFrame.getContentPane().setBackground(CustomColor.BACKGROUND);
-
-       addTitleScreenPanel();
-
-        titleFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        titleFrame.pack();
-        titleFrame.setLocationByPlatform(true);
-        titleFrame.setLocation(0,0);
-        titleFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        titleFrame.setVisible(true);
-    }
-
-    /**
-     * Creates the Title Screen
-     */
-    private void addTitleScreenPanel()
-    {
-        titleTextPanel = new JPanel();
-        titleTextPanel.setBackground(CustomColor.BACKGROUND);
-        titleTextPanel.setLayout(new BoxLayout(titleTextPanel, BoxLayout.Y_AXIS));
-        titleTextPanel.add(Box.createRigidArea(new Dimension(0, (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4)));
-
-        JLabel titleText = new JLabel();
-        ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/TitleText.png"));
-        Image image1 = pic1.getImage();
-        ImageIcon edit1 = new ImageIcon(image1);
-        titleText.setIcon(edit1);
-
-        titleTextPanel.add(titleText);
-        titleText.setAlignmentX(Component.CENTER_ALIGNMENT);
-        titleTextPanel.add(Box.createVerticalStrut((int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4));
-
-        JButton begin = new JButton();
-        begin.setBackground(new Color(35,35,35));
-        ImageIcon pic2 = new ImageIcon(ClassLoader.getSystemResource("res/StartPic.png"));
-        Image image2 = pic2.getImage();
-        ImageIcon edit2 = new ImageIcon(image2);
-        begin.setIcon(edit2);
-        begin.addActionListener(e -> showSimulation());
-        titleTextPanel.add(begin);
-        begin.setAlignmentX(Component.CENTER_ALIGNMENT);
-
-        titleFrame.getContentPane().add(titleTextPanel);
-
-        titleFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        titleFrame.setUndecorated(true);
-    }
-
-    /**
-     * Helper method for addTitleScreenPanel (action listener)
-     */
-    private void showSimulation()
-    {
-        frame.setVisible(true);
-        titleFrame.setVisible(false);
+        TitleFrame titleFrame = new TitleFrame(frame);
     }
 
     /**
@@ -158,26 +86,17 @@ public class GUI {
      */
     private void addTitlePanel()
     {
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(5, 5, 5, 5);
+        formatter.setGBC(gbc,0,0,1,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
         titlePanel = new TitlePanel();
-        titlePanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        formatter.formatPanel(titlePanel,CustomColor.BLOOD_RED,new Rectangle(8,8,8,8),null);
+
         JLabel titleFont = new JLabel();
         ImageIcon pic1 = new ImageIcon(ClassLoader.getSystemResource("res/SimTitle.png"));
         Image image1 = pic1.getImage();
         ImageIcon edit1 = new ImageIcon(image1);
         titleFont.setIcon(edit1);
 
-
         titlePanel.add(titleFont);
-        titlePanel.setBackground(CustomColor.BLOOD_RED);
         topPanel.add(titlePanel, gbc);
     }
 
@@ -186,17 +105,8 @@ public class GUI {
      */
     private void addBoardPanel()
     {
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 40;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(5, 5, 5, 5);
+        formatter.setGBC(gbc,0,0,1,1,1,40,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
         simBoardPanel = new SimBoardPanel();
-        simBoardPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         leftPanel.add(simBoardPanel, gbc);
     }
 
@@ -205,18 +115,8 @@ public class GUI {
      */
     private void addControlPanel()
     {
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(5, 5, 5, 5);
+        formatter.setGBC(gbc,0,1,1,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
         controlPanel = new ControlPanel(this);
-        controlPanel.getMainPanel().setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-        controlPanel.getMainPanel().setBackground(CustomColor.BACKGROUND);
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }
 
@@ -225,91 +125,37 @@ public class GUI {
      */
     private void addTallyPanel()
     {
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 5;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(5, 5, 5, 5);
-        tallyPanel = new TallyPanel(this, new GridLayout(3, 3));
-        tallyPanel.setBackground(CustomColor.SPACE_CADET_LIGHT);
-
+        formatter.setGBC(gbc,0,0,1,1,1,5,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
+        tallyPanel = new TallyPanel(this);
         rightPanel.add(tallyPanel, gbc);
     }
 
     /**
-     * Creates and adds the Line Graph (All stats) Panel for the main gui. This is created after the first simulation runs with an engine constructor
+     * Creates and adds the Graph Panels for the main gui.
      */
-    private void addXYChartPanel()
+    private void addChartPanels()
     {
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 20;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(5, 5, 5, 5);
+        formatter.setGBC(gbc,0,1,1,1,1,20,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
 
         myXYChart = new MyXYChart(); // This is not in the constructor because a gui object must be created first, then gui.stats() is called in Engine. Then setStats(stats) can be called here.
-
         xyChartPanel = new XYChartPanel(myXYChart.getXYChart(), this);
-        xyChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         xyChartPanel.setVisible(!showPieFirst & !showCasesFirst);
         rightPanel.add(xyChartPanel, gbc);
-    }
-
-    /**
-     * Creates and adds the Line Graph (total cases) Panel for the main gui. This is created after the first simulation runs with an engine constructor
-     */
-    private void addXYChartPanel2()
-    {
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 20;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(5, 5, 5, 5);
 
         myXYChart2 = new MyXYChart2();
-
         xyChartPanel2 = new XYChartPanel2(myXYChart2.getXYChart(), this);
-        xyChartPanel2.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
         xyChartPanel2.setVisible(!showPieFirst && showCasesFirst);
         rightPanel.add(xyChartPanel2, gbc);
-    }
-
-    /**
-     * Creates and adds the Pie chart Panel for the main gui. This is created after the first simulation runs with an engine constructor
-     */
-    private void addPieChartPanel()
-    {
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 20;
-        gbc.anchor = GridBagConstraints.CENTER;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(5, 5, 5, 5);
 
         myPieChart = new MyPieChart();
-
         pieChartPanel = new PieChartPanel(myPieChart.getMyPieChart(),this);
-        pieChartPanel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-
         pieChartPanel.setVisible(showPieFirst);
         rightPanel.add(pieChartPanel, gbc);
     }
 
+    /**
+     * Adds keybindings to the main frame - including multiple keys for accessing the control panel
+     */
     private void addKeyBindings()
     {
         InputMap inputMap = ((JPanel)frame.getContentPane()).getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);

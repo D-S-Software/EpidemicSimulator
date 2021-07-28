@@ -3,7 +3,6 @@ package backend;
 import backend.disease.Disease;
 import gui.GUI;
 import backend.simboard.*;
-import gui.chart.*;
 
 import javax.swing.*;
 import java.awt.*;
