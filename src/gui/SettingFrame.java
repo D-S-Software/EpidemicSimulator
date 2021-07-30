@@ -42,7 +42,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         gbcMain = new GridBagConstraints();
         gbc = new GridBagConstraints();
         formatter = new Formatter();
-        formatter.formatFrame(this, CustomColor.BACKGROUND, new Dimension(1120, 680), new GridBagLayout(), "corona.jpg");
+        formatter.formatFrame(this, CustomColor.BACKGROUND, new Dimension(1120, 680), new GridBagLayout(), "virus1Logo.png");
         formatter.setMenuBar(this);
 
         mainPanel = new JPanel();
@@ -210,7 +210,7 @@ public class SettingFrame extends JFrame implements ActionListener{
         g1.add(custom);
 
         JLabel pic1Label = new JLabel();
-        formatter.formatLabel(pic1Label,"corona.jpg", 40,40);
+        formatter.formatLabel(pic1Label,"virus1.jpg", 40,40);
         pic1Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -218,7 +218,7 @@ public class SettingFrame extends JFrame implements ActionListener{
             }
         });
         JLabel pic2Label = new JLabel();
-        formatter.formatLabel(pic2Label, "bacteria1.jpg", 40,40);
+        formatter.formatLabel(pic2Label, "virus2.jpg", 40,40);
         pic2Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -226,7 +226,7 @@ public class SettingFrame extends JFrame implements ActionListener{
             }
         });
         JLabel pic3Label = new JLabel();
-        formatter.formatLabel(pic3Label, "virus4.png", 40,40);
+        formatter.formatLabel(pic3Label, "virus3.jpg", 40,40);
         pic3Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -234,7 +234,7 @@ public class SettingFrame extends JFrame implements ActionListener{
             }
         });
         JLabel pic4Label = new JLabel();
-        formatter.formatLabel(pic4Label,"virus3.jpg",40,40);
+        formatter.formatLabel(pic4Label,"virus4.jpg",40,40);
         pic4Label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

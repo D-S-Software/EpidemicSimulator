@@ -10,6 +10,8 @@ public class TitleFrame extends JFrame {
     Formatter formatter;
     JPanel textPanel;
     JFrame frame;
+    JButton begin;
+    boolean canStart = false;
 
     /**
      * Creates the TitleScreen window when the application is launched
@@ -18,7 +20,7 @@ public class TitleFrame extends JFrame {
         super();
         this.frame = frame;
         formatter = new Formatter();
-        formatter.formatFrame(this, CustomColor.BACKGROUND, null, new GridLayout(), "corona.jpg");
+        formatter.formatFrame(this, CustomColor.BACKGROUND, null, new GridLayout(), "virus1Logo.png");
 
         addTitleScreenPanel();
 
@@ -44,9 +46,10 @@ public class TitleFrame extends JFrame {
         titleText.setAlignmentX(Component.CENTER_ALIGNMENT);
         textPanel.add(Box.createVerticalStrut((int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4));
 
-        JButton begin = new JButton();
+        begin = new JButton();
         formatter.formatButton(begin,new Color(35,35,35), "StartPic.png");
         begin.addActionListener(e -> showSimulation());
+        begin.setVisible(false);
         textPanel.add(begin);
         begin.setAlignmentX(Component.CENTER_ALIGNMENT);
 
@@ -61,7 +64,19 @@ public class TitleFrame extends JFrame {
      */
     private void showSimulation()
     {
-        frame.setVisible(true);
-        setVisible(false);
+        if(canStart)
+        {
+            frame.setVisible(true);
+            setVisible(false);
+        }
+    }
+
+    /**
+     * Gui can let the title screen know that everything is finished loading and the simulation can start
+     */
+    public void setCanStart()
+    {
+        canStart = true;
+        begin.setVisible(true);
     }
 }

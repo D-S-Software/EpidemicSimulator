@@ -39,8 +39,9 @@ public class GUI {
     public GUI()
     {
         frame = new JFrame("EpidemicSimulator");
+        TitleFrame titleFrame = new TitleFrame(frame);
         formatter = new Formatter();
-        formatter.formatFrame(frame, CustomColor.BACKGROUND, null, new GridBagLayout(), "corona.jpg");
+        formatter.formatFrame(frame, CustomColor.BACKGROUND, null, new GridBagLayout(), "virus1Logo.png");
 
         GridBagConstraints gbcMain = new GridBagConstraints();
         formatter.setGBC(gbcMain, 0,0,2,1,10,1,GridBagConstraints.CENTER, GridBagConstraints.BOTH, new Insets(2,2,2,2));
@@ -77,8 +78,7 @@ public class GUI {
 
         frame.setFocusTraversalKeysEnabled(false);
         addKeyBindings();
-
-        TitleFrame titleFrame = new TitleFrame(frame);
+        titleFrame.setCanStart();
     }
 
     /**

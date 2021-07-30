@@ -28,7 +28,7 @@ public class InfoFrame extends JFrame {
 
         this.controlPanel = controlPanel;
         formatter = new Formatter();
-        formatter.formatFrame(this, CustomColor.BACKGROUND, new Dimension(850, 660), new GridLayout(), "corona.jpg");
+        formatter.formatFrame(this, CustomColor.BACKGROUND, new Dimension(850, 660), new GridLayout(), "virus1Logo.png");
         formatter.setMenuBar(this);
 
         mainPanel = new JPanel();
