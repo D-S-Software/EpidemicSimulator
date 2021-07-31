@@ -105,7 +105,7 @@ public class GUI {
      */
     private void addBoardPanel()
     {
-        formatter.setGBC(gbc,0,0,1,1,1,40,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
+        formatter.setGBC(gbc,0,0,1,1,1,80,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
         simBoardPanel = new SimBoardPanel();
         leftPanel.add(simBoardPanel, gbc);
     }
@@ -115,7 +115,7 @@ public class GUI {
      */
     private void addControlPanel()
     {
-        formatter.setGBC(gbc,0,1,1,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(5,5,5,5));
+        formatter.setGBC(gbc,0,1,1,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.BOTH,new Insets(0,5,0,5));
         controlPanel = new ControlPanel(this);
         leftPanel.add(controlPanel.getMainPanel(), gbc);
     }

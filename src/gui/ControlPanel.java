@@ -165,8 +165,8 @@ public class ControlPanel extends JPanel implements ActionListener {
 
         p.add(toggleSocDist);
         p.add(toggleCenters);
-        p.add(speedUp);
         p.add(slowDown);
+        p.add(speedUp);
         p.add(settings);
 
         mainPanel.add(p, gbc);
