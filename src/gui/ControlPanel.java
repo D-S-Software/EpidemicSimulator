@@ -54,6 +54,9 @@ public class ControlPanel extends JPanel implements ActionListener {
         addInfoPanel();
 
         musicSongs.add(new Music("BlackOps.wav"));
+        musicSongs.add(new Music("ColeAcoustic.wav"));
+
+        /* Temporarily commented out
         musicSongs.add(new Music("BreakingBad.wav"));
         musicSongs.add(new Music("Ceta (Rimworld OST).wav"));
         musicSongs.add(new Music("I Like It Here (Rimworld OST).wav"));
@@ -63,6 +66,8 @@ public class ControlPanel extends JPanel implements ActionListener {
         musicSongs.add(new Music("Rough Trail (Rimworld OST).wav"));
         musicSongs.add(new Music("Tribal Assembly (Rimworld OST).wav"));
 
+
+         */
         changeSong();
 
         checkTick = new Timer(10, this);
