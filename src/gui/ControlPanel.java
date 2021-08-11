@@ -23,15 +23,13 @@ public class ControlPanel extends JPanel implements ActionListener {
     private Engine simEngine;
     private GUI gui;
     private Timer checkTick;
-    private Music backgroundMusic;
     private SettingFrame settingFrame;
-    private ArrayList<Music> musicSongs = new ArrayList<>();
     private InfoFrame infoFrame;
     private ControlPanel controlPanel = this;
     private Formatter formatter;
     GridBagConstraints gbc;
 
-    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, numStatsFile = 0, previousSong = 1;
+    private int boardType, minPreExistingConditions, maxPreExistingConditions, numPeople, numStatsFile = 0;
     private double asymptomaticChance, socialDistanceChance, quarantineChance, travelersPer, socialDistanceValue, minAge, maxAge, timeUntilQuarantine, reinfectRate, antiBodyTime;
     private boolean toPause = true, canStart = true, musicPlaying = true, isPlaying = false, isSocialDist, quarBoard, toggleMoving;
 
@@ -53,41 +51,12 @@ public class ControlPanel extends JPanel implements ActionListener {
         addButtonPanel();
         addInfoPanel();
 
-        musicSongs.add(new Music("BlackOps.wav"));
-        musicSongs.add(new Music("ColeAcoustic.wav"));
-
-        /* Temporarily commented out
-        musicSongs.add(new Music("BreakingBad.wav"));
-        musicSongs.add(new Music("Ceta (Rimworld OST).wav"));
-        musicSongs.add(new Music("I Like It Here (Rimworld OST).wav"));
-        musicSongs.add(new Music("Moving On (Rimworld OST).wav"));
-        musicSongs.add(new Music("Night And Day (Rimworld OST).wav"));
-        musicSongs.add(new Music("Riding Out (Rimworld OST).wav"));
-        musicSongs.add(new Music("Rough Trail (Rimworld OST).wav"));
-        musicSongs.add(new Music("Tribal Assembly (Rimworld OST).wav"));
-
-
-         */
-        changeSong();
 
         checkTick = new Timer(10, this);
         checkTick.start();
     }
 
-    /**
-     * Changes the current background song
-     */
-    private void changeSong()
-    {
-        int randomIndex = (int)(musicSongs.size()*Math.random());
-        if(randomIndex == previousSong)
-            changeSong();
-        else
-        {
-            previousSong = randomIndex;
-            backgroundMusic = musicSongs.get(randomIndex);
-        }
-    }
+
 
     /**
      * Creates and adds the panel for the info and toggle music buttons
@@ -109,23 +78,23 @@ public class ControlPanel extends JPanel implements ActionListener {
             public void mouseClicked(MouseEvent e){
                 if(e.getClickCount()==2)
                 {
-                    backgroundMusic.stop();
-                    changeSong();
+                    Music.stop();
+                    Music.changeSong();
                     toggleMusic.setBackground(CustomColor.BUTTON);
                     musicPlaying = true; //Makes sure that the first click does not stop the music
-                    backgroundMusic.play();
+                    Music.play();
                 }
                 if(e.getClickCount()==1)
                 {
                     if(musicPlaying)
                     {
-                        backgroundMusic.pause();
+                        Music.pause();
                         toggleMusic.setBackground(CustomColor.DARK_RED);
                         musicPlaying = false;
                     }
                     else
                     {
-                        backgroundMusic.resume();
+                        Music.resume();
                         toggleMusic.setBackground(CustomColor.BUTTON);
                         musicPlaying = true;
                     }
@@ -192,6 +161,7 @@ public class ControlPanel extends JPanel implements ActionListener {
 
         numPeopleField = new JTextField(1);
         formatter.formatTextField(numPeopleField,CustomColor.FIELD, CustomColor.SILVER,CustomColor.ON_BUTTON_LABEL, 20.0f, null,null);
+        numPeopleField.setHorizontalAlignment(JTextField.CENTER);
         p.add(numPeopleField);
 
         startPause = new JButton();
@@ -289,11 +259,6 @@ public class ControlPanel extends JPanel implements ActionListener {
                         } else isSocialDist = false;
                         canStart = false;
 
-                        backgroundMusic.stop();
-                        changeSong();
-                        if(musicPlaying)
-                            backgroundMusic.play();
-
                         toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() * 100 + " % of people are set social distancing");
                         formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"pauseIcon.png",null);
 
@@ -317,11 +282,11 @@ public class ControlPanel extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        if(backgroundMusic.getClip().getMicrosecondPosition() == backgroundMusic.getClip().getMicrosecondLength()-1)
+        if(Music.getClip().getMicrosecondPosition() == Music.getClip().getMicrosecondLength()-1)
         {
-            backgroundMusic.stop();
-            changeSong();
-            backgroundMusic.play();
+            Music.stop();
+            Music.changeSong();
+            Music.play();
         }
     }
 
@@ -332,7 +297,7 @@ public class ControlPanel extends JPanel implements ActionListener {
     {
         simEngine.getClock().start();
         if(musicPlaying)
-            backgroundMusic.resume();
+            Music.resume();
     }
 
     /**
@@ -342,7 +307,6 @@ public class ControlPanel extends JPanel implements ActionListener {
         infoFrame = new InfoFrame(controlPanel);
         if(simEngine != null)
             simEngine.getClock().stop();
-        backgroundMusic.pause();
     }
 
     /**
@@ -408,7 +372,6 @@ public class ControlPanel extends JPanel implements ActionListener {
         settingFrame.setVisible(true);
         if(simEngine != null)
             simEngine.getClock().stop();
-        backgroundMusic.pause();
     }
 
     /**
@@ -457,7 +420,6 @@ public class ControlPanel extends JPanel implements ActionListener {
             {
                 simEngine.getClock().stop();
                 isPlaying = false;
-                backgroundMusic.pause();
                 musicPlaying = false;
                 formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"playIcon.png",null);
                 toPause = false;
@@ -466,7 +428,6 @@ public class ControlPanel extends JPanel implements ActionListener {
             {
                 simEngine.getClock().start();
                 isPlaying = true;
-                backgroundMusic.resume();
                 musicPlaying = true;
                 formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"pauseIcon.png",null);
                 toPause = true;
@@ -505,7 +466,6 @@ public class ControlPanel extends JPanel implements ActionListener {
 
         gui.getStats().getCreateFile().closeFile();
 
-        backgroundMusic.stop();
         toggleSocDist.setBackground(CustomColor.BUTTON);
         formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"playIcon.png",null);
         toggleCenters.setBackground(CustomColor.BUTTON);

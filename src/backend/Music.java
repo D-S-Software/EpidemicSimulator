@@ -3,32 +3,29 @@ package backend;
 import javax.sound.sampled.*;
 import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class Music {
 
-        private Clip clip;
-        private long clipTimePosition;
-        private AudioInputStream input;
+    private static Clip clip;
+    private static long clipTimePosition;
+    private static AudioInputStream input;
+    private static String[] songs= {"ColeAcoustic.wav", "BlackOps.wav"};
+    private static int previousSong = 1;
 
-    private FloatControl gainControl;
+    private static FloatControl gainControl;
 
-    /**Creates a music object that can be used to play sounds on demand
-     *
-     * @param filename The name of the sound file to be played
-     */
-    public Music(String filename)
-        {
-            setFile(filename);
-        }
 
     /**Finds the requested file and loads it to be played
      *
      * @param soundFile The location of the sound file
      */
-    private void setFile(String soundFile)
+    private static void setFile(String soundFile)
         {
+            System.out.println(songs.length);
             try {
-                URL url = this.getClass().getClassLoader().getResource("res/" + soundFile);
+                URL url = Music.class.getClassLoader().getResource("res/" + soundFile);
+                //URL url = new URL("res/" + soundFile);
 
                 input = AudioSystem.getAudioInputStream(url);
 
@@ -52,7 +49,7 @@ public class Music {
     /**
      * Plays the sound file
      */
-    public void play()
+    public static void play()
         {
             clip.setFramePosition(0);
             clip.start();
@@ -61,7 +58,7 @@ public class Music {
     /**
      * Pauses the sound file
      */
-    public void pause()
+    public static void pause()
         {
            clipTimePosition = clip.getMicrosecondPosition();
             clip.stop();
@@ -70,7 +67,7 @@ public class Music {
     /**
      * Resumes the sound file after it is paused
      */
-    public void resume()
+    public static void resume()
         {
             clip.setMicrosecondPosition(clipTimePosition);
             clip.start();
@@ -88,13 +85,28 @@ public class Music {
     /**
      * Stops the current sound file from playing
      */
-    public void stop()
+    public static void stop()
     {
         clip.stop();
     }
 
-    public Clip getClip()
+    public static Clip getClip()
     {
         return clip;
+    }
+
+    /**
+     * Changes the current background song
+     */
+    public static void changeSong()
+    {
+        int randomIndex = (int)(songs.length*Math.random());
+        if(randomIndex == previousSong)
+            changeSong();
+        else
+        {
+            previousSong = randomIndex;
+            setFile(songs[randomIndex]);
+        }
     }
 }

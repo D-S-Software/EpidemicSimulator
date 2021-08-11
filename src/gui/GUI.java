@@ -79,6 +79,7 @@ public class GUI {
         frame.setFocusTraversalKeysEnabled(false);
         addKeyBindings();
         titleFrame.setCanStart();
+
     }
 
     /**
@@ -96,7 +97,10 @@ public class GUI {
         ImageIcon edit1 = new ImageIcon(image1);
         titleFont.setIcon(edit1);
 
+        JButton closeButton = new JButton("X");
+
         titlePanel.add(titleFont);
+
         topPanel.add(titlePanel, gbc);
     }
 

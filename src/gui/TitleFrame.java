@@ -1,5 +1,6 @@
 package gui;
 
+import backend.Music;
 import lib.CustomColor;
 
 import javax.swing.*;
@@ -23,6 +24,9 @@ public class TitleFrame extends JFrame {
         formatter.formatFrame(this, CustomColor.BACKGROUND, null, new GridLayout(), "virus1Logo.png");
 
         addTitleScreenPanel();
+
+        Music.changeSong();
+        Music.play();
 
         pack();
         setLocationByPlatform(true);
