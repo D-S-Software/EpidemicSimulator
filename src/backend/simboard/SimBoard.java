@@ -121,6 +121,12 @@ public abstract class SimBoard {
     public abstract void updateDimensList(Rectangle updatedRect);
 
     /**
+     * Draws a line to separate each subsection
+     * @param g2D graphics object used to draw the line
+     */
+    public abstract void drawSepLines(Graphics2D g2D);
+
+    /**
      * Helper method used in the constructListPList method
      * @param ListPList The ArrayList of ArrayLists being constructed
      * @param startIndex The fist ArrayList of people to be added
@@ -229,6 +235,9 @@ public abstract class SimBoard {
             ((Quarantinable) this).quarantineCheck();
             ((Quarantinable) this).drawQuarLine(g2D);
         }
+
+        if(this instanceof SimBoardQuad || this instanceof SimBoardOcto)
+            this.drawSepLines(g2D);
 
         drawListPList(g2D);
 

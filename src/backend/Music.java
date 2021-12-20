@@ -10,7 +10,7 @@ public class Music {
     private static Clip clip;
     private static long clipTimePosition;
     private static AudioInputStream input;
-    private static String[] songs= {"ColeAcoustic.wav", "BlackOps.wav"};
+    private static String[] songs= {"ColeAcoustic.wav", "MarchOfMidnight.wav", "ActionEpic.wav", "TheSummoning.wav"};
     private static int previousSong = 1;
 
     private static FloatControl gainControl;

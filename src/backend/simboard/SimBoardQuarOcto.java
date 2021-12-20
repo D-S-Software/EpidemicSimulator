@@ -8,7 +8,7 @@ import java.awt.*;
 public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
 
     private Rectangle quarantine;
-    private int width, height, x2Origin, y2Origin, x3Origin, x4Origin, quarXOrigin, quarWidth;
+    private int width, height, xShift, yShift, x2Origin, y2Origin, x3Origin, x4Origin, quarXOrigin, quarWidth;
     private double timeUntilIsolate;
 
     /** Creates a SimBoardQuarOcto (8 areas, quarantine board) to simulate the actions of people that are displayed on SimBoardPanel
@@ -43,7 +43,8 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
     @Override
     public void updateDimensList(Rectangle updatedRect)
     {
-        int xShift = 60, yShift = 30;
+        xShift = 60;
+        yShift = 30;
 
         setDimens(updatedRect);
 
@@ -104,16 +105,40 @@ public class SimBoardQuarOcto extends SimBoardOcto implements Quarantinable {
     @Override
     public void drawQuarLine(Graphics2D g2D) {
 
-        int segmentWidth = 4;
+      int segmentWidth = 4;
         int xBuffer = 12;
-        int segmentLen = getDimens().height/15;
 
         g2D.setColor(CustomColor.EERIE_BLACK);
 
-        for(int i = 0; i < 17; i++)
+        g2D.fillRect(quarantine.x - xBuffer, quarantine.y, segmentWidth, quarantine.height);
+    }
+
+    /**
+     * Draws a line to separate each subsection
+     * @param g2D graphics object used to draw the line
+     */
+    @Override
+    public void drawSepLines(Graphics2D g2D) {
+
+        int segmentWidth = 4;
+        int segmentYLen = getDimens().height/25;
+        int segmentXLen = (getDimens().width - quarantine.width)/31;
+
+        g2D.setColor(CustomColor.EERIE_BLACK);
+
+        for(int i = 0; i < 25; i++)
         {
             if(i%2 == 0)
-                g2D.fillRect(quarantine.x - xBuffer, quarantine.y + i*segmentLen, segmentWidth, segmentLen );
+            {
+                g2D.fillRect(x2Origin - xShift/8, getDimens().y + i*segmentYLen, segmentWidth, segmentYLen );
+                g2D.fillRect(x3Origin - xShift/8, getDimens().y + i*segmentYLen, segmentWidth, segmentYLen );
+                g2D.fillRect(x4Origin - xShift/8, getDimens().y + i*segmentYLen, segmentWidth, segmentYLen );
+            }
+        }
+        for(int i = 0; i < 31; i++)
+        {
+            if(i%2 == 0)
+                g2D.fillRect(getDimens().x + i*segmentXLen, getDimens().height/2, segmentXLen, segmentWidth );
         }
     }
 }

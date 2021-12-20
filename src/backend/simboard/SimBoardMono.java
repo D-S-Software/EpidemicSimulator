@@ -64,4 +64,12 @@ public class SimBoardMono extends SimBoard{
         getDimensList().get(1).setRect(updatedRect);
         getDimensList().get(2).setRect(updatedRect);
     }
+
+    /**
+     * Null Method for this instance
+     */
+    public void drawSepLines(Graphics2D g2D) {
+
+        //Null Method
+    }
 }

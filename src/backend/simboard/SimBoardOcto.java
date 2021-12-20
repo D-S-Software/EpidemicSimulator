@@ -1,12 +1,14 @@
 package backend.simboard;
 
 import backend.disease.Disease;
+import lib.CustomColor;
 
 import java.awt.*;
 
 public class SimBoardOcto extends SimBoard{
 
-    private int Xshift = 30, Yshift = 10;
+    private int width, height, xShift = 30, yShift = 10, q1xStart, q1yStart, q2xStart, q2yStart, q3xStart, q3yStart;
+    private int q4xStart, q4yStart, q5xStart, q5yStart, q6xStart, q6yStart, q7xStart, q7yStart, q8xStart, q8yStart;
 
     /** Creates a SimBoardOcto (8 areas) to simulate the actions of people that are displayed on SimBoardPanel
      *
@@ -78,25 +80,25 @@ public class SimBoardOcto extends SimBoard{
     {
         getDimensList().get(0).setRect(updatedRect);
 
-        int width = (getDimens().width - 3*Xshift) / 4;
-        int height = (getDimens().height / 2) - Yshift;
+        width = (getDimens().width - 3* xShift) / 4;
+        height = (getDimens().height / 2) - yShift;
 
-        int q1xStart = getDimens().x;
-        int q1yStart = getDimens().y;
-        int q2xStart = getDimens().x + width + Xshift;
-        int q2yStart = getDimens().y;
-        int q3xStart = getDimens().x + 2*width + 2*Xshift;
-        int q3yStart = getDimens().y;
-        int q4xStart = getDimens().x + 3*width + 3*Xshift;
-        int q4yStart = getDimens().y;
-        int q5xStart = q1xStart;
-        int q5yStart = height + 2*Yshift;
-        int q6xStart = q2xStart;
-        int q6yStart = height + 2*Yshift;
-        int q7xStart = q3xStart;
-        int q7yStart = height + 2*Yshift;
-        int q8xStart = q4xStart;
-        int q8yStart = height + 2*Yshift;
+        q1xStart = getDimens().x;
+        q1yStart = getDimens().y;
+        q2xStart = getDimens().x + width + xShift;
+        q2yStart = getDimens().y;
+        q3xStart = getDimens().x + 2*width + 2* xShift;
+        q3yStart = getDimens().y;
+        q4xStart = getDimens().x + 3*width + 3* xShift;
+        q4yStart = getDimens().y;
+        q5xStart = q1xStart;
+        q5yStart = height + 2* yShift;
+        q6xStart = q2xStart;
+        q6yStart = height + 2* yShift;
+        q7xStart = q3xStart;
+        q7yStart = height + 2* yShift;
+        q8xStart = q4xStart;
+        q8yStart = height + 2* yShift;
 
         getDimensList().get(1).setRect(q1xStart, q1yStart, width, height);
         getDimensList().get(2).setRect(q2xStart, q2yStart, width, height);
@@ -107,5 +109,33 @@ public class SimBoardOcto extends SimBoard{
         getDimensList().get(7).setRect(q7xStart, q7yStart, width, height);
         getDimensList().get(8).setRect(q8xStart, q8yStart, width, height);
         getDimensList().get(9).setRect(getDimens());
+    }
+
+    /**
+     * Draws a line to separate each subsection
+     * @param g2D graphics object used to draw the line
+     */
+    public void drawSepLines(Graphics2D g2D) {
+
+        int segmentWidth = 4;
+        int segmentYLen = getDimens().height/25;
+        int segmentXLen = getDimens().width/31;
+
+        g2D.setColor(CustomColor.EERIE_BLACK);
+
+        for(int i = 0; i < 25; i++)
+        {
+            if(i%2 == 0)
+            {
+                g2D.fillRect(q2xStart - xShift /2, getDimens().y + i*segmentYLen, segmentWidth, segmentYLen );
+                g2D.fillRect(q3xStart - xShift /2, getDimens().y + i*segmentYLen, segmentWidth, segmentYLen );
+                g2D.fillRect(q4xStart - xShift /2, getDimens().y + i*segmentYLen, segmentWidth, segmentYLen );
+            }
+        }
+        for(int i = 0; i < 31; i++)
+        {
+            if(i%2 == 0)
+                g2D.fillRect(getDimens().x + i*segmentXLen, getDimens().height/2, segmentXLen, segmentWidth );
+        }
     }
 }
