@@ -96,7 +96,6 @@ public class SimBoardQuad extends SimBoard {
         int segmentWidth = 4;
         int segmentYLen = getDimens().height/25;
         int segmentXLen = getDimens().width/31;
-
         g2D.setColor(CustomColor.EERIE_BLACK);
 
         for(int i = 0; i < 25; i++)
