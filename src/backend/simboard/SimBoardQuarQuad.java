@@ -114,7 +114,7 @@ public class SimBoardQuarQuad extends SimBoardQuad implements Quarantinable {
 
         int segmentWidth = 4;
         int segmentYLen = getDimens().height/25;
-        int segmentXLen = (getDimens().width - quarantine.width)/31;
+        int segmentXLen = (getDimens().width - quarantine.width - xShift/5)/31;
         g2D.setColor(CustomColor.EERIE_BLACK);
 
         for(int i = 0; i < 25; i++)
