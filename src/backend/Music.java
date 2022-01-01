@@ -10,7 +10,7 @@ public class Music {
     private static Clip clip;
     private static long clipTimePosition;
     private static AudioInputStream input;
-    private static String[] songs= {"ColeAcoustic.wav", "MarchOfMidnight.wav", "ActionEpic.wav", "TheSummoning.wav"};
+    private static String[] songs = {"ColeAcoustic.wav", "MarchOfMidnight.wav", "ActionEpic.wav", "TheSummoning.wav"};
     private static int previousSong = 1;
 
     private static FloatControl gainControl;
@@ -38,8 +38,6 @@ public class Music {
 
                 gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
                 gainControl.setValue(-25); //Lowers volume by x decibels
-                if(soundFile.equals("BlackOps.wav"))
-                    gainControl.setValue(-30);
 
             } catch (Exception e) {
                 e.printStackTrace();
