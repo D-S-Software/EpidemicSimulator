@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 public class TallyPanel extends JPanel implements ActionListener {
 
     GUI gui;
-    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, rNotLabel, rLabel, speedLabel;
+    JLabel numHealthyLabel, numSickLabel, numRecoveredLabel, numDeadLabel, rNotLabel, rLabel, filler;
     JButton switchGraph, toggle;
     Formatter formatter;
     boolean showCases;
@@ -46,8 +46,8 @@ public class TallyPanel extends JPanel implements ActionListener {
         rLabel = new JLabel("R Value: ");
         formatter.formatLabel(rLabel,CustomColor.SILVER,15.0f,new Dimension(20,10));
 
-        speedLabel = new JLabel("Speed: ");
-        formatter.formatLabel(speedLabel,CustomColor.SILVER,15.0f,new Dimension(20,10));
+        filler = new JLabel();
+        formatter.formatLabel(filler,CustomColor.SILVER,16.0f,null);
 
         toggle = new JButton("Graph Mode");
         formatter.formatButton(toggle, CustomColor.BUTTON, CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,15.0f,"Switch to Population Breakdown");
@@ -79,7 +79,7 @@ public class TallyPanel extends JPanel implements ActionListener {
 
         add(numHealthyLabel);
         add(numRecoveredLabel);
-        add(speedLabel);
+        add(filler);
         add(numSickLabel);
         add(numDeadLabel);
         add(toggle);
@@ -144,8 +144,6 @@ public class TallyPanel extends JPanel implements ActionListener {
         numSickLabel.setText("Sick: " + gui.getStats().getNumSick() + "  ");
         numRecoveredLabel.setText("Recov.: " + gui.getStats().getNumRecovered() + "  ");
         numDeadLabel.setText("Dead: " + gui.getStats().getNumDead() + "    ");
-        DecimalFormat df = new DecimalFormat("#.#");
-        speedLabel.setText("Speed: " + df.format(2 - gui.getControlPanel().getDelay()/10.0) + "x   ");
 
         DecimalFormat df2 = new DecimalFormat("##.###");
         df2.setRoundingMode(RoundingMode.CEILING);

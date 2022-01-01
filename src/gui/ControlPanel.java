@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class ControlPanel extends JPanel implements ActionListener {
@@ -18,7 +19,7 @@ public class ControlPanel extends JPanel implements ActionListener {
     private JPanel mainPanel;
     private JButton startPause, reset, toggleMusic, toggleSocDist, slowDown, speedUp, toggleCenters;
     private JTextField numPeopleField;
-    private JLabel numPeopleLabel, numSimulationLabel, filler;
+    private JLabel numPeopleLabel, numSimulationLabel, speedLabel;
     private Disease disease;
     private Engine simEngine;
     private GUI gui;
@@ -172,15 +173,15 @@ public class ControlPanel extends JPanel implements ActionListener {
         formatter.formatButton(reset,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"resetIcon.png",null);
         reset.addActionListener(e -> resetButton());
 
+        speedLabel = new JLabel("   Speed: ");
+        formatter.formatLabel(speedLabel,CustomColor.SILVER,15.0f,new Dimension(20,10));
+
         numSimulationLabel = new JLabel("   Simulation:   ");
         formatter.formatLabel(numSimulationLabel,CustomColor.SILVER,16.0f,null);
 
-        filler = new JLabel();
-        formatter.formatLabel(filler,CustomColor.SILVER,16.0f,null);
-
         p.add(startPause);
         p.add(reset);
-        p.add(filler);
+        p.add(add(speedLabel));
         p.add(numSimulationLabel);
 
         mainPanel.add(p, gbc);
@@ -261,6 +262,8 @@ public class ControlPanel extends JPanel implements ActionListener {
 
                         toggleSocDist.setToolTipText(settingFrame.getSocialDistanceChanceNum() * 100 + " % of people are set social distancing");
                         formatter.formatButton(startPause,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,"pauseIcon.png",null);
+                        DecimalFormat df = new DecimalFormat("#.#");
+                        speedLabel.setText("   Speed: " + df.format(2 - simEngine.getDelay()/10.0) + "x   ");
 
                         gui.getFrame().requestFocusInWindow();
                     }
@@ -281,7 +284,6 @@ public class ControlPanel extends JPanel implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-
         if(Music.getClip().getMicrosecondPosition() == Music.getClip().getMicrosecondLength()-1)
         {
             Music.stop();
@@ -383,6 +385,8 @@ public class ControlPanel extends JPanel implements ActionListener {
             simEngine.speedUp();
             slowDown.setToolTipText("Slow Down");
             slowDown.setVisible(true);
+            DecimalFormat df = new DecimalFormat("#.#");
+            speedLabel.setText("   Speed: " + df.format(2 - simEngine.getDelay()/10.0) + "x   ");
 
             if(simEngine.getDelay() == 0)
             {
@@ -401,6 +405,8 @@ public class ControlPanel extends JPanel implements ActionListener {
             simEngine.slowDown();
             speedUp.setToolTipText("Increase Speed");
             speedUp.setVisible(true);
+            DecimalFormat df = new DecimalFormat("#.#");
+            speedLabel.setText("   Speed: " + df.format(2 - simEngine.getDelay()/10.0) + "x   ");
 
             if(simEngine.getDelay() == 19)
             {
