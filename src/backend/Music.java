@@ -24,7 +24,6 @@ public class Music {
             System.out.println(songs.length);
             try {
                 URL url = Music.class.getClassLoader().getResource("res/" + soundFile);
-                //URL url = new URL("res/" + soundFile);
 
                 input = AudioSystem.getAudioInputStream(url);
 
