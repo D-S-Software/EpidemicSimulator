@@ -15,7 +15,6 @@ public class Music {
 
     private static FloatControl gainControl;
 
-
     /**Finds the requested file and loads it to be played
      *
      * @param soundFile The location of the sound file
