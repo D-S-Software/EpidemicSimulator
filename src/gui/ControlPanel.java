@@ -298,8 +298,6 @@ public class ControlPanel extends JPanel implements ActionListener {
     public void resumeSim()
     {
         simEngine.getClock().start();
-        if(!musicPlaying)
-            Music.resume();
     }
 
     /**

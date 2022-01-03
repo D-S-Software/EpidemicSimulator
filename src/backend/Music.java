@@ -57,7 +57,7 @@ public class Music {
     public static void pause()
         {
            clipTimePosition = clip.getMicrosecondPosition();
-            clip.stop();
+           clip.stop();
         }
 
     /**
