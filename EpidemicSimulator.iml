@@ -16,6 +16,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="openjfx-17.0.1_windows-x64_bin-sdk" level="project" />
+    <orderEntry type="library" name="javafx-sdk-17.0" level="project" />
+    <orderEntry type="library" name="xchart-3.6.21" level="application" />
   </component>
 </module>

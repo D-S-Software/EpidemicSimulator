@@ -4,7 +4,7 @@
     <root id="archive" name="EpidemicSimulator.jar">
       <element id="module-output" name="EpidemicSimulator" />
       <element id="extracted-dir" path="$PROJECT_DIR$/src/lib/xchart-3.6.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/openjfx-17.0.1_windows-x64_bin-sdk.zip" path-in-jar="/" />
+      <element id="library" level="project" name="javafx-sdk-17.0" />
     </root>
   </artifact>
 </component>

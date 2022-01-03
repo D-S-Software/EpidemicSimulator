@@ -9,7 +9,7 @@ public class Person {
 
     private boolean hasDisease, isHealthy, startedSick = false;
     private int timeSinceSick, timeSinceRecovered, quadLocation, othersInfected, closestSickIndex, xTarget, yTarget, timeSinceDirChange;
-    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime, step = 2, xPos, yPos, dx, dy;
+    private double directionAngle, distanceFromSick, personalMortalityRate, baseMortalityRate, ageMortalityFactor = 0.0007, conditionsMortalityFactor = 0.02, sickTime, antiBodyTime, step = 1, xPos, yPos, dx, dy;
     private boolean isSocialDistancing, isSocialDistancingSaved, isoRecovered = false, isoSick = false, asymptomatic, canReInfect, willQuarantine, hasTarget = false, hasRecoveredOnce = false;
     private Rectangle dimens;
     private Disease disease;
