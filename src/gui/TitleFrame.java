@@ -2,7 +2,6 @@ package gui;
 
 import backend.Music;
 import lib.CustomColor;
-
 import javax.swing.*;
 import java.awt.*;
 
