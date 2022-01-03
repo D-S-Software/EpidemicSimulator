@@ -35,7 +35,7 @@ The board can be subdivided into seperate sections with and adjustable percentag
 # Asympotmatic Individuals Demo
 A percentage of cases can be set to asympotmatic that ignore the set quarantine procedures:
 
-![3rd Demo](EpidemicSimGifs/EpidemicSimAsymptShowcase.gif)
+![3rd Demo](EpidemicSimGifs/EpidemicSimAsymptomaticShowcase.gif)
 
 # CSV Capabilities
 Access to data through an auto-generated CSV file in program folder allows for saving and exporting of any particular simulation.
