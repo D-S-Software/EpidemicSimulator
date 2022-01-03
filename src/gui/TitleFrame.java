@@ -51,7 +51,7 @@ public class TitleFrame extends JFrame {
         textPanel.add(Box.createVerticalStrut((int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4));
 
         begin = new JButton();
-        formatter.formatButton(begin,new Color(35,35,35), "StartPic.png");
+        formatter.formatButton(begin,new Color(35,35,35), "startPic.png");
         begin.addActionListener(e -> showSimulation());
         begin.setVisible(false);
         textPanel.add(begin);
