@@ -88,20 +88,20 @@ public class SettingFrame extends JFrame implements ActionListener{
         leftTopPanel.add(boardSelection);
 
         generalBoard = new JRadioButton("Mono    ");
-        formatter.formatRadioButton(generalBoard,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
+        formatter.formatRadioButton(generalBoard,CustomColor.DAVYS_GRAY,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
         generalBoard.setSelected(true);
 
         quadBoard = new JRadioButton("Quad    ");
-        formatter.formatRadioButton(quadBoard,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
+        formatter.formatRadioButton(quadBoard,CustomColor.DAVYS_GRAY,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
 
         eightBoard = new JRadioButton("Octo    ");
-        formatter.formatRadioButton(eightBoard,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
+        formatter.formatRadioButton(eightBoard,CustomColor.DAVYS_GRAY,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
 
         quarButton = new JRadioButton("Quarantine");
-        formatter.formatRadioButton(quarButton,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
+        formatter.formatRadioButton(quarButton,CustomColor.DAVYS_GRAY,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
 
         regButton = new JRadioButton("Standard");
-        formatter.formatRadioButton(regButton,CustomColor.BUTTON,CustomColor.ON_BUTTON_LABEL,CustomColor.ON_BUTTON_LABEL,16.0f);
+        formatter.formatRadioButton(regButton,CustomColor.DAVYS_GRAY,CustomColor.LIGHT_GRAY,CustomColor.ON_BUTTON_LABEL,16.0f);
         regButton.setSelected(true);
 
         ButtonGroup g1 = new ButtonGroup();
