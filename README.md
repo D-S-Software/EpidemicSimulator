@@ -16,6 +16,7 @@ Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sander
       - Variable percentage of "Roamers" who wander between the subsections
   - Quarantine section
   - Asysmptomatic carriers
+  - Many others!
 - Easy Setup
   - [Download installer](https://drive.google.com/file/d/1AD1f-tfJXl2NTRmCviCTjXnpBmgJyiR-/view?usp=sharing) (Windows only)
   
@@ -26,13 +27,14 @@ The application can be configured to represent a rectanglular board for a variou
 ![Simple Demo](EpidemicSimGifs/EpidemicSimGeneralShowcase.gif)
 
 # Board Divisions and Quarantine Demo
-The board can be subdivided with the capability of sending a given percentage individuals to the quarantine section:
+The board can be subdivided into seperate sections with and adjustable percentage of people able to move between boards. With a quarantine board, there is the capability of sending a given percentage individuals to the quarantine section:
 
 ![2nd Demo](EpidemicSimGifs/EpidemicSimQuadQuarShowcase.gif)
 
 # Asympotmatic Individuals Demo
+A percentage of cases can be set to asympotmatic that ignore the set quarantine procedures:
 
-![3rd Demo](EpidemicSimGifs/EpidemicSimAsymptomaticShowcase.gif)
+![3rd Demo](EpidemicSimGifs/EpidemicSimAsymptShowcase.gif)
 
 # CSV Capabilities
 Access to data through an auto-generated CSV file in program folder allows for saving and exporting of any particular simulation.
