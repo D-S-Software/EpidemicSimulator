@@ -1,6 +1,6 @@
 # Epidemic Simulator
 A Java application created to model the spread of diseases. Various parameters such as infectivity, asymptomatic carriers, and levels of social distancing can be adjusted by the user.
-Link to download the [installer](https://drive.google.com/file/d/1AD1f-tfJXl2NTRmCviCTjXnpBmgJyiR-/view?usp=sharing) for v.1.5.0
+Link to download the [installer](https://github.com/D-S-Software/EpidemicSimulator/releases/download/v1.5.0/EpidemicSimulatorSetup_v1.5.0.exe) for v.1.5.0
 
 # Motivation and Inspiration
 Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sanderson's of [3Blue1Brown epidemic simulation](https://www.youtube.com/watch?v=gxAaO2rsdIs), this application was created in order to further explore and model the effect of various adjustments to a disease outbreak scenario.
@@ -18,7 +18,7 @@ Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sander
   - Asysmptomatic carriers
   - Many others!
 - Easy Setup
-  - [Download installer](https://drive.google.com/file/d/1AD1f-tfJXl2NTRmCviCTjXnpBmgJyiR-/view?usp=sharing) (Windows only)
+  - [Download installer](https://github.com/D-S-Software/EpidemicSimulator/releases/download/v1.5.0/EpidemicSimulatorSetup_v1.5.0.exe) (Windows only)
   
 
 # Simple Demo
