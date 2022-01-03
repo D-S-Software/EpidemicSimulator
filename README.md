@@ -22,6 +22,7 @@ Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sander
   
 
 # Simple Demo
+*Note Demos are accelerated to show effects
 The application can be configured to represent a rectanglular board for a various number of individuals to inhabit: 
 
 ![Simple Demo](EpidemicSimGifs/EpidemicSimGeneralShowcase.gif)
