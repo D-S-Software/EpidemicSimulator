@@ -15,7 +15,10 @@ Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sander
   - Single, quad and octo board subdivision
       - Variable percentage of "Travelers" who wander between the subsections
   - Quarantine section
+  - Modeling cities
+      - Varying population density using Toggle Center button
   - Asysmptomatic carriers
+  - Reinfection rates
   - Many others!
 - Easy Setup
   - [Download installer](https://github.com/D-S-Software/EpidemicSimulator/releases/download/v1.5.0/EpidemicSimulatorSetup_v1.5.0.exe) (Windows only)
