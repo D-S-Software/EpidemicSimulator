@@ -13,7 +13,7 @@ Created during the COVID-19 lockdown of spring 2020 and inspired by Grant Sander
   - Number of people
   - Disease lethality and infectivity
   - Single, quad and octo board subdivision
-      - Variable percentage of "Roamers" who wander between the subsections
+      - Variable percentage of "Travelers" who wander between the subsections
   - Quarantine section
   - Asysmptomatic carriers
   - Many others!
